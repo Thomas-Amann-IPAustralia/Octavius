@@ -20,7 +20,8 @@ jobs:
     # 3. Install Dependencies
     - name: Install libraries
       run: |
-        pip install -r requirements.txt
+        python -m pip install --upgrade pip setuptools wheel
+        pip install -r requirements.txt --prefer-binary
         python -m spacy download en_core_web_sm
 
     # 4. Run a System Integrity Test
