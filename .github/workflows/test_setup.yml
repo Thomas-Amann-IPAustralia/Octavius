@@ -1,0 +1,54 @@
+name: Phase 1 System Check
+
+on: [push]  # This runs every time you commit code
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Check out your code onto the server
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # 2. Set up Python
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.9"
+
+    # 3. Install Dependencies
+    - name: Install libraries
+      run: |
+        pip install -r requirements.txt
+        python -m spacy download en_core_web_sm
+
+    # 4. Run a System Integrity Test
+    # We will create a small temporary python script here to simulate 'app.py' logic
+    # without needing to launch the full web server.
+    - name: Verify Trinity.json Loading
+      run: |
+        python -c "
+        import json
+        import os
+        
+        print('--- STARTING DIAGNOSTIC ---')
+        
+        # Check 1: File Existence
+        if os.path.exists('data/Trinity.json'):
+            print('✅ Trinity.json found.')
+        else:
+            print('❌ Trinity.json MISSING.')
+            exit(1)
+            
+        # Check 2: JSON Validity
+        try:
+            with open('data/Trinity.json', 'r') as f:
+                rules = json.load(f)
+            print(f'✅ JSON is valid. Loaded {len(rules)} rule sets.')
+        except Exception as e:
+            print(f'❌ JSON Corruption: {e}')
+            exit(1)
+            
+        print('--- DIAGNOSTIC COMPLETE ---')
+        "
