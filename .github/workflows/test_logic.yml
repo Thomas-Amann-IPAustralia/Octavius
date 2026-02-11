@@ -1,0 +1,71 @@
+name: Phase 2 Logic Verification
+
+on: [push]
+
+jobs:
+  test-linter-logic:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.9"
+
+    - name: Install Dependencies
+      run: |
+        pip install spacy
+        python -m spacy download en_core_web_sm
+
+    - name: Run Unit Test
+      run: |
+        python -c "
+        import json
+        import sys
+        # Add current directory to path so we can import local modules
+        sys.path.append('.')
+        from logic.lint import lint_text
+
+        # 1. Setup Test Data
+        test_sentence = 'The form was submitted.'
+        print(f'Testing Sentence: \"{test_sentence}\"')
+
+        # 2. Load Rules (Simulated)
+        # We manually define the Passive Voice rule to test the heuristic mapping
+        rules = [{
+            'id': 'APS-GPC-Partsofsentences-H-009',
+            'category': 'heuristic',
+            'severity': 'warn',
+            'message': 'Reserve passive voice for good reasons.'
+        }]
+
+        # 3. Run Linter
+        print('Running linter...')
+        findings = lint_text(test_sentence, rules)
+        print(f'Findings: {json.dumps(findings, indent=2)}')
+
+        # 4. Assertions
+        # 'was' is at index 9-12, 'submitted' is at 13-22
+        # The passive check typically flags the aux ('was') or the verb ('submitted') or both.
+        # Our implementation flags token by token.
+        
+        has_error = len(findings) > 0
+        if has_error:
+            print('✅ SUCCESS: Passive voice detected.')
+        else:
+            print('❌ FAILURE: Passive voice NOT detected.')
+            exit(1)
+            
+        # Verify indices for 'submitted' (starts at 13)
+        # We expect at least one finding to overlap with the word 'submitted'
+        found_target = any(f['start'] == 13 for f in findings)
+        
+        if found_target:
+             print('✅ SUCCESS: Correct character offset found (13).')
+        else:
+             print('❌ FAILURE: Incorrect offsets.')
+             exit(1)
+        "
