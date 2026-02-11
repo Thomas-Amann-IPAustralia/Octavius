@@ -5,7 +5,8 @@ on:
     paths:
       - 'frontend/**'  # Only runs when you change frontend files
       - '.github/workflows/build_frontend.yml'
-
+  workflow_dispatch:
+  
 jobs:
   build-component:
     runs-on: ubuntu-latest
