@@ -1,0 +1,47 @@
+name: Phase 3 Frontend Build
+
+on:
+  push:
+    paths:
+      - 'frontend/**'  # Only runs when you change frontend files
+      - '.github/workflows/build_frontend.yml'
+
+jobs:
+  build-component:
+    runs-on: ubuntu-latest
+    
+    steps:
+    # 1. Get your code
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    # 2. Set up Node.js (The JavaScript Runtime)
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    # 3. Install JavaScript Libraries (from package.json)
+    - name: Install Dependencies
+      run: |
+        cd frontend
+        npm install
+
+    # 4. Compile the React Code
+    # This turns your TypeScript/React code into standard JS/CSS
+    # If this step fails, there is a bug in your OctaviusEditor.tsx
+    - name: Build Component
+      run: |
+        cd frontend
+        npm run build --if-present
+
+    # 5. List the Build Files (Verification)
+    - name: Verify Build Artifacts
+      run: |
+        if [ -d "frontend/build" ]; then
+          echo "✅ Build Successful! 'frontend/build' directory created."
+          ls -R frontend/build
+        else
+          echo "❌ Build Failed: Directory not found."
+          exit 1
+        fi
