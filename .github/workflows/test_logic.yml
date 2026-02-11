@@ -1,6 +1,7 @@
 name: Phase 2 Logic Verification
 
-on: [push]
+on:
+  workflow_dispatch:
 
 jobs:
   test-linter-logic:
