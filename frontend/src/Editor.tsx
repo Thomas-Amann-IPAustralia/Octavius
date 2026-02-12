@@ -9,7 +9,7 @@ interface State {
   text: string
 }
 
-class OctaviusEditor extends StreamlitComponentBase<State> {
+class Editor extends StreamlitComponentBase<State> {
   public state = { text: "" }
 
   render() {
@@ -89,4 +89,4 @@ class OctaviusEditor extends StreamlitComponentBase<State> {
   }
 }
 
-export default withStreamlitConnection(OctaviusEditor)
+export default withStreamlitConnection(Editor)
