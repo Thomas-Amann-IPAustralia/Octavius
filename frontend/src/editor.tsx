@@ -9,7 +9,7 @@ interface State {
   text: string
 }
 
-class Editor extends StreamlitComponentBase<State> {
+class editor extends StreamlitComponentBase<State> {
   public state = { text: "" }
 
   render() {
@@ -20,7 +20,7 @@ class Editor extends StreamlitComponentBase<State> {
     // 2. Render the text with highlights
     return (
       <div style={{ fontFamily: "sans-serif", padding: "10px" }}>
-        <h3>Octavius Editor</h3>
+        <h3>Octavius editor</h3>
         <div
           contentEditable={true}
           suppressContentEditableWarning={true}
@@ -89,4 +89,4 @@ class Editor extends StreamlitComponentBase<State> {
   }
 }
 
-export default withStreamlitConnection(Editor)
+export default withStreamlitConnection(editor)
