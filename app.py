@@ -1,65 +1,63 @@
-import streamlit as st
-import streamlit.components.v1 as components
 import json
-import os
-import sys
+from pathlib import Path
+import streamlit as st
 
-# Add logic folder to path
-sys.path.append('.')
-from logic.lint import lint_text
+from logic.lint import audit_text  # we'll create this next
+from logic.docx_parser import parse_docx_to_hansel_markdown  # placeholder for now
 
 st.set_page_config(page_title="Octavius", layout="wide")
-st.title("Octavius: APS Style Auditor")
+st.title("Octavius (Hansel Web Port)")
 
-# --- 1. Load Rules ---
-if 'rules' not in st.session_state:
-    try:
-        with open('data/Trinity.json', 'r') as f:
-            st.session_state['rules'] = json.load(f)
-    except FileNotFoundError:
-        st.error("❌ Trinity.json missing.")
-        st.stop()
+# Load rules once into session state
+if "rules" not in st.session_state:
+    rules_path = Path("data/Trinity.json")
+    with rules_path.open("r", encoding="utf-8") as f:
+        st.session_state["rules"] = json.load(f)
 
-# --- 2. Setup the Frontend Component ---
-# In development (local), we would use url="http://localhost:3000"
-# In production (web), we point to the built static files
-# Since we haven't built it yet, we will put a placeholder here for now.
-COMPONENT_PATH = os.path.join(os.path.dirname(__file__), "frontend", "build")
+if "text" not in st.session_state:
+    st.session_state["text"] = ""
 
-def octavius_editor(text, highlights, key=None):
-    # This function declares the custom component
-    if os.path.exists(COMPONENT_PATH):
-        # Load the built component
-        component = components.declare_component("octavius_editor", path=COMPONENT_PATH)
-        return component(text=text, highlights=highlights, key=key, default=text)
+# Sidebar
+st.sidebar.header("Controls")
+mode = st.sidebar.radio("Input mode", ["Paste text", "Upload DOCX"])
+show_raw_findings = st.sidebar.checkbox("Show raw findings JSON", value=True)
+
+# Input
+if mode == "Paste text":
+    st.session_state["text"] = st.text_area(
+        "Drafting area",
+        value=st.session_state["text"],
+        height=300,
+        placeholder="Paste APS-style content here..."
+    )
+else:
+    uploaded = st.file_uploader("Upload a .docx file", type=["docx"])
+    if uploaded is not None:
+        try:
+            st.session_state["text"] = parse_docx_to_hansel_markdown(uploaded)
+            st.success("DOCX parsed into Hansel-style semantic text.")
+            st.text_area("Parsed text (read-only preview)", st.session_state["text"], height=250, disabled=True)
+        except Exception as e:
+            st.error(f"Failed to parse DOCX: {e}")
+
+# Run linter
+if st.button("Run audit") or st.session_state["text"]:
+    text = st.session_state["text"]
+    if text.strip():
+        try:
+            findings = audit_text(text=text, rules=st.session_state["rules"])
+            st.subheader(f"Findings ({len(findings)})")
+
+            for i, f in enumerate(findings, start=1):
+                st.markdown(
+                    f"**{i}.** `{f.get('rule_id', 'UNKNOWN')}` | "
+                    f"chars **{f.get('start_char')}–{f.get('end_char')}**  \n"
+                    f"{f.get('message', '')}"
+                )
+
+            if show_raw_findings:
+                st.json(findings)
+        except Exception as e:
+            st.error(f"Linter error: {e}")
     else:
-        # Fallback if build is missing (Phase 3 transition state)
-        st.warning("⚠️ Frontend not built. Using standard text area.")
-        return st.text_area("Input Text", value=text, key=key, height=300)
-
-# --- 3. App Logic ---
-
-# Initialize text state
-if 'doc_text' not in st.session_state:
-    st.session_state['doc_text'] = "The form was submitted. The large red car."
-
-# Run Linter
-findings = lint_text(st.session_state['doc_text'], st.session_state['rules'])
-
-# Display Component
-# The component takes 'text' and 'highlights' as input
-# It returns the 'new_text' whenever the user types
-new_text = octavius_editor(
-    text=st.session_state['doc_text'], 
-    highlights=findings,
-    key="editor"
-)
-
-# Update state if text changed
-if new_text != st.session_state['doc_text']:
-    st.session_state['doc_text'] = new_text
-    st.rerun()
-
-# Debug Area
-with st.expander("Debug: Raw Findings"):
-    st.json(findings)
+        st.info("Paste text or upload a DOCX to begin.")
