@@ -1,15 +1,14 @@
 # logic/lint.py
 import re
 import spacy
-from typing import List, Dict, Any, Pattern
+from typing import List, Dict, Any
 from spacy.tokens import Doc
-from spacy.matcher import Matcher
 from spacy.symbols import ORTH
 
 # --- Global Logic Variables ---
 try:
     nlp = spacy.load("en_core_web_sm")
-    
+
     # Add semantic placeholders to tokenizer to prevent splitting them
     placeholder_texts = [
         "__SEMANTIC_ITALIC_START__", "__SEMANTIC_ITALIC_END__",
@@ -27,12 +26,25 @@ except OSError:
     print("⚠️ Warning: spaCy model 'en_core_web_sm' not found. Run 'python -m spacy download en_core_web_sm'")
     nlp = None
 
+
 # --- Helper Functions ---
 
-def _add_finding(findings: List[Dict], start: int, end: int, rule_id: str, message: str, severity: str, suggestion: str = None):
+def _add_finding(
+    findings: List[Dict[str, Any]],
+    start: int,
+    end: int,
+    rule_id: str,
+    message: str,
+    severity: str,
+    suggestion: str = None
+):
     """Adds a finding to the list, deduping based on exact character overlap."""
     for f in findings:
-        if f.get('start_char') == start and f.get('end_char') == end and f.get('rule_id') == rule_id:
+        if (
+            f.get("start_char") == start
+            and f.get("end_char") == end
+            and f.get("rule_id") == rule_id
+        ):
             return
 
     finding = {
@@ -45,47 +57,72 @@ def _add_finding(findings: List[Dict], start: int, end: int, rule_id: str, messa
     }
     findings.append(finding)
 
+
 # --- Heuristic Checks ---
 
 def check_passive_voice(doc: Doc) -> List[Dict[str, Any]]:
-    """Flags passive voice. Returns list of dicts with 'start', 'end', 'text'."""
-    results = []
+    """
+    Flags passive voice.
+    Returns list of intermediate dicts with 'start_char', 'end_char', 'text'.
+    """
+    results: List[Dict[str, Any]] = []
     for token in doc:
         # Check for the auxiliary verb in a passive construction
         if token.dep_ == "auxpass":
             head = token.head
-            
+
             # Combine the auxiliary token and its head verb into a single continuous span
             start_idx = min(token.idx, head.idx)
             end_idx = max(token.idx + len(token.text), head.idx + len(head.text))
-            
+
             # Extract the actual text for the combined phrase
             phrase_text = doc.text[start_idx:end_idx]
-            
-            results.append({"start": start_idx, "end": end_idx, "text": phrase_text})
-            
+
+            results.append({
+                "start_char": start_idx,
+                "end_char": end_idx,
+                "text": phrase_text
+            })
+
     return results
+
 
 # Map of Heuristic IDs to Functions
 HEURISTIC_FUNCTIONS = {
     "APS-GPC-Partsofsentences-H-009": check_passive_voice,
 }
 
+
 # --- Main Linting Function ---
 
 def lint_text(text: str, rules: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """
     The main entry point for the Web App.
+
     Args:
         text: The raw string to audit.
         rules: The list of rule dictionaries loaded from Trinity.json.
+
     Returns:
-        A list of findings with 'start', 'end', 'message', etc.
+        list[dict]: Findings in canonical format:
+            - start_char (int)
+            - end_char (int)
+            - rule_id (str)
+            - message (str)
+            - severity (str)
+            - suggestion (str | None)
     """
-    findings = []
-    
+    findings: List[Dict[str, Any]] = []
+
     if not nlp:
-        return [{"message": "System Error: Language model not loaded.", "severity": "error", "start": 0, "end": 0}]
+        return [{
+            "start_char": 0,
+            "end_char": 0,
+            "rule_id": "SYSTEM-SPACY-NOT-LOADED",
+            "message": "System Error: Language model not loaded.",
+            "severity": "error",
+            "suggestion": "Install spaCy model: python -m spacy download en_core_web_sm"
+        }]
 
     doc = nlp(text)
 
@@ -102,18 +139,25 @@ def lint_text(text: str, rules: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
                     flags = re.MULTILINE
                     if "(?i)" not in pattern:
                         flags |= re.IGNORECASE
-                    
+
                     for match in re.finditer(pattern, text, flags):
                         _add_finding(findings, match.start(), match.end(), rule_id, message, severity)
                 except re.error:
-                    continue 
+                    continue
 
         elif category == "heuristic":
             if rule_id in HEURISTIC_FUNCTIONS:
                 logic_function = HEURISTIC_FUNCTIONS[rule_id]
                 results = logic_function(doc)
-                
-                for res in results:
-                    _add_finding(findings, res['start'], res['end'], rule_id, message, severity)
 
-    return sorted(findings, key=lambda x: x.get('start_char', 0))
+                for res in results:
+                    _add_finding(
+                        findings,
+                        res["start_char"],
+                        res["end_char"],
+                        rule_id,
+                        message,
+                        severity
+                    )
+
+    return sorted(findings, key=lambda x: x.get("start_char", 0))
