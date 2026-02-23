@@ -19,6 +19,10 @@ if "rules" not in st.session_state:
             all_rules.extend(ruleset.get("rules", []))
         st.session_state["rules"] = all_rules
 
+# ---> MAKE SURE THIS BLOCK IS HERE <---
+if "text" not in st.session_state:
+    st.session_state["text"] = ""
+
 # Sidebar
 st.sidebar.header("Controls")
 mode = st.sidebar.radio("Input mode", ["Paste text", "Upload DOCX"])
