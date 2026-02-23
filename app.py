@@ -12,10 +12,12 @@ st.title("Octavius (Hansel Web Port)")
 if "rules" not in st.session_state:
     rules_path = Path("data/Trinity.json")
     with rules_path.open("r", encoding="utf-8") as f:
-        st.session_state["rules"] = json.load(f)
-
-if "text" not in st.session_state:
-    st.session_state["text"] = ""
+        raw_data = json.load(f)
+        # Flatten the nested RuleSet structure into a single list of rules
+        all_rules = []
+        for ruleset in raw_data:
+            all_rules.extend(ruleset.get("rules", []))
+        st.session_state["rules"] = all_rules
 
 # Sidebar
 st.sidebar.header("Controls")
