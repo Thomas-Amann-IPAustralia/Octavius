@@ -48,12 +48,12 @@ class editor extends StreamlitComponentBase<State> {
     const nodes: ReactNode[] = []
 
     // Sort highlights by start position
-    const sorted = [...highlights].sort((a, b) => a.start - b.start)
+    const sorted = [...highlights].sort((a, b) => a.start_char - b.start_char)
 
     sorted.forEach((h, i) => {
       // Push text before the error
-      if (h.start > lastIndex) {
-        nodes.push(text.slice(lastIndex, h.start))
+      if (h.start_char > lastIndex) {
+        nodes.push(text.slice(lastIndex, h.start_char))
       }
 
       // Push the error text (wrapped in style)
@@ -67,11 +67,11 @@ class editor extends StreamlitComponentBase<State> {
           }}
           title={h.message} // Simple tooltip
         >
-          {text.slice(h.start, h.end)}
+          {text.slice(h.start_char, h.end_char)}
         </span>
       )
 
-      lastIndex = h.end
+      lastIndex = h.end_char
     })
 
     // Push remaining text
