@@ -9,6 +9,15 @@ interface State {
   text: string
 }
 
+interface Finding {
+  start_char: number
+  end_char: number
+  rule_id?: string
+  message: string
+  severity?: string
+  suggestion?: string | null
+}
+
 class editor extends StreamlitComponentBase<State> {
   public state = { text: "" }
 
@@ -40,23 +49,27 @@ class editor extends StreamlitComponentBase<State> {
     )
   }
 
-  // Helper to slice text and wrap errors in red spans
-  renderHighlightedText = (text: string, highlights: any[]): ReactNode[] => {
+  // Helper to slice text and wrap findings in styled spans
+  renderHighlightedText = (text: string, highlights: Finding[]): ReactNode[] => {
     if (!highlights || highlights.length === 0) return [text]
 
     let lastIndex = 0
     const nodes: ReactNode[] = []
 
-    // Sort highlights by start position
+    // Sort highlights by start position (Python schema uses start_char/end_char)
     const sorted = [...highlights].sort((a, b) => a.start_char - b.start_char)
 
     sorted.forEach((h, i) => {
-      // Push text before the error
-      if (h.start_char > lastIndex) {
-        nodes.push(text.slice(lastIndex, h.start_char))
+      // Clamp ranges for safety
+      const start = Math.max(0, Math.min(h.start_char, text.length))
+      const end = Math.max(start, Math.min(h.end_char, text.length))
+
+      // Push text before the finding
+      if (start > lastIndex) {
+        nodes.push(text.slice(lastIndex, start))
       }
 
-      // Push the error text (wrapped in style)
+      // Push the finding text (wrapped in style)
       nodes.push(
         <span
           key={i}
@@ -65,13 +78,13 @@ class editor extends StreamlitComponentBase<State> {
             backgroundColor: "rgba(255, 75, 75, 0.1)",
             cursor: "pointer"
           }}
-          title={h.message} // Simple tooltip
+          title={h.message}
         >
-          {text.slice(h.start_char, h.end_char)}
+          {text.slice(start, end)}
         </span>
       )
 
-      lastIndex = h.end_char
+      lastIndex = end
     })
 
     // Push remaining text
