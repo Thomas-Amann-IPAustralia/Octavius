@@ -1031,8 +1031,12 @@ def lint_text(text: str, rules: List[Dict[str, Any]]) -> List[Finding]:
     doc = nlp(text)
 
     for rule in rules:
+        # Respect session-level rule controls
+        if not rule.get("enabled", True):
+            continue
+
         rule_id = rule.get("id")
-        severity = rule.get("severity", "info")
+        severity = rule.get("severity_override") or rule.get("severity", "info")
         message = rule.get("message", "Style violation found.")
         suggestion = rule.get("suggestion")
         category = rule.get("category")
