@@ -1,7 +1,7 @@
 # logic/lint.py
 import re
 import spacy
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional, TypedDict
 from spacy.tokens import Doc
 from spacy.symbols import ORTH
 
@@ -26,11 +26,22 @@ except OSError:
     print("⚠️ Warning: spaCy model 'en_core_web_sm' not found. Run 'python -m spacy download en_core_web_sm'")
     nlp = None
 
+def get_spacy_status() -> bool:
+    """Returns True if the spaCy model is loaded."""
+    return nlp is not None
+
+class Finding(TypedDict):
+    start_char: int
+    end_char: int
+    rule_id: str
+    message: str
+    severity: str
+    suggestion: Optional[str]
 
 # --- Helper Functions ---
 
 def _add_finding(
-    findings: List[Dict[str, Any]],
+    findings: List[Finding],
     start: int,
     end: int,
     rule_id: str,
@@ -95,7 +106,7 @@ HEURISTIC_FUNCTIONS = {
 
 # --- Main Linting Function ---
 
-def lint_text(text: str, rules: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+def lint_text(text: str, rules: List[Dict[str, Any]]) -> List[Finding]:
     """
     The main entry point for the Web App.
 
@@ -104,15 +115,9 @@ def lint_text(text: str, rules: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         rules: The list of rule dictionaries loaded from Trinity.json.
 
     Returns:
-        list[dict]: Findings in canonical format:
-            - start_char (int)
-            - end_char (int)
-            - rule_id (str)
-            - message (str)
-            - severity (str)
-            - suggestion (str | None)
+        list[Finding]: Findings in canonical format.
     """
-    findings: List[Dict[str, Any]] = []
+    findings: List[Finding] = []
 
     if not nlp:
         return [{
@@ -130,6 +135,7 @@ def lint_text(text: str, rules: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         rule_id = rule.get("id")
         severity = rule.get("severity", "info")
         message = rule.get("message", "Style violation found.")
+        suggestion = rule.get("suggestion")
         category = rule.get("category")
 
         if category == "regex":
@@ -137,13 +143,30 @@ def lint_text(text: str, rules: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
             if pattern:
                 try:
                     flags = re.MULTILINE
+                    # Support both explicit (?i) and default case-insensitivity
                     if "(?i)" not in pattern:
                         flags |= re.IGNORECASE
 
                     for match in re.finditer(pattern, text, flags):
-                        _add_finding(findings, match.start(), match.end(), rule_id, message, severity)
-                except re.error:
-                    continue
+                        _add_finding(
+                            findings,
+                            match.start(),
+                            match.end(),
+                            rule_id,
+                            message,
+                            severity,
+                            suggestion
+                        )
+                except re.error as e:
+                    _add_finding(
+                        findings,
+                        0,
+                        0,
+                        f"SYS-REGEX-ERROR-{rule_id}",
+                        f"Invalid regex pattern in rule {rule_id}: {e}",
+                        "error",
+                        "Check the 'pattern' field in Trinity.json for this rule."
+                    )
 
         elif category == "heuristic":
             if rule_id in HEURISTIC_FUNCTIONS:
@@ -157,7 +180,8 @@ def lint_text(text: str, rules: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
                         res["end_char"],
                         rule_id,
                         message,
-                        severity
+                        severity,
+                        suggestion
                     )
 
     return sorted(findings, key=lambda x: x.get("start_char", 0))
