@@ -993,7 +993,7 @@ HEURISTIC_FUNCTIONS: Dict[str, Callable[[Doc], List[Dict[str, Any]]]] = {
     "APS-GPC-Adjectives-H-003": check_predicate_hyphenation,
     "APS-GPC-Adjectives-H-004": check_adjective_strings,
     "APS-GPC-Adverbs-H-002": check_adjective_as_adverb,
-    "APS-GPC-Punctuationandcapitalisation-H-001": check_punctuation_in_structural_tags,
+    "APS-GPC-Fullstops-H-003": check_punctuation_in_structural_tags,
     "APS-GPC-Plantsandanimals-H-007": check_gene_vs_protein,
     "APS-GPC-Choosingnumeralsorwords-H-002": check_fractions_as_words,
     "APS-GPC-Percentages-H-001": check_sentence_starting_percent,
@@ -1060,10 +1060,6 @@ def lint_text(text: str, rules: List[Dict[str, Any]]) -> List[Finding]:
             if pattern:
                 try:
                     flags = re.MULTILINE
-                    # Support both explicit (?i) and default case-insensitivity
-                    if "(?i)" not in pattern:
-                        flags |= re.IGNORECASE
-
                     for match in re.finditer(pattern, text, flags):
                         _add_finding(
                             findings,

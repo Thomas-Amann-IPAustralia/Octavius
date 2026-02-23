@@ -1565,7 +1565,7 @@
         "title": "Use Unicode minus, not hyphen",
         "category": "regex",
         "severity": "error",
-        "pattern": "\\b\\d+\\s*-\\s*\\d+\\b|(?<=^|\\s)-\\d+",
+        "pattern": "\\b\\d+\\s*-\\s*\\d+\\b|(?:^|(?<=\\s))-\\d+",
         "message": "Use the true minus (−, U+2212) for subtraction and negative numbers, not hyphen-minus (-)."
       },
       {
@@ -1581,7 +1581,7 @@
         "title": "Addition spaced; positive sign unspaced",
         "category": "regex",
         "severity": "warn",
-        "pattern": "\\b\\d+\\+\\d+\\b|(?<=^|\\s)\\+\\s+\\d",
+        "pattern": "\\b\\d+\\+\\d+\\b|(?:^|(?<=\\s))\\+\\s+\\d",
         "message": "Use spaces around + for operations (e.g. 2 + 10) and no space after + for positive values (+3)."
       },
       {
@@ -1589,7 +1589,7 @@
         "title": "Subtraction spaced; negative sign unspaced",
         "category": "regex",
         "severity": "warn",
-        "pattern": "\\b\\d+−\\d+\\b|(?<=^|\\s)−\\s+\\d",
+        "pattern": "\\b\\d+−\\d+\\b|(?:^|(?<=\\s))−\\s+\\d",
         "message": "Use spaces around − for subtraction (e.g. 12 − 4) and no space after − for negative values (−5)."
       },
       {
@@ -1597,7 +1597,7 @@
         "title": "Use × for multiplication (not x, *, ⋅)",
         "category": "regex",
         "severity": "error",
-        "pattern": "(?i)(?<=\\b|\\))\\s*[x*⋅]\\s*(?=\\b|\\()",
+        "pattern": "(?i)(?:(?<=\\b)|(?<=\\)))\\s*[x*⋅]\\s*(?:(?=\\b)|(?=\\())",
         "message": "Use × (U+00D7) for multiplication in prose; avoid letter x, asterisk, or dot operator."
       },
       {
@@ -2910,7 +2910,7 @@
         "title": "Sentence ends with full stop",
         "category": "regex",
         "severity": "error",
-        "pattern": "^[^!?]+$",
+        "pattern": "^.*(?<![.!?])$",
         "message": "End sentences with a full stop unless they are questions or exclamations."
       },
       {
@@ -2979,7 +2979,7 @@
         "title": "No stop after hashtags/handles/emojis/URLs",
         "category": "regex",
         "severity": "warn",
-        "pattern": "(#\\w+|@[A-Za-z0-9_]+|https?:\\/\\/\\S+|\\p{Emoji_Presentation})\\.",
+        "pattern": "(#\\w+|@[A-Za-z0-9_]+|https?:\\/\\/\\S+)\\.",
         "message": "Do not add a full stop if a post ends with a hashtag, handle, emoji, or URL."
       },
       {
@@ -3143,7 +3143,7 @@
         "title": "No full stops in headings, headers, captions",
         "category": "regex",
         "severity": "warn",
-        "pattern": "^.{1,}$",
+        "pattern": "^#+\\s+.*\\.$",
         "message": "Do not end headings, page headers, footers, or captions with a full stop."
       },
       {
@@ -3174,7 +3174,7 @@
         "title": "No full stop at abbreviation end",
         "category": "regex",
         "severity": "warn",
-        "pattern": "\\b[a-zA-Z]{2,}\\.",
+        "pattern": "\\b[a-zA-Z]{2,}\\.(?=\\s+[a-z])",
         "message": "Most abbreviations should not take a final full stop."
       },
       {
@@ -3446,7 +3446,7 @@
         "title": "No full stop after abbreviations",
         "category": "regex",
         "severity": "warn",
-        "pattern": "\\b[A-Za-z]+\\.(?=\\s|$)",
+        "pattern": "\\b[A-Za-z]+\\.(?=\\s+[a-z])",
         "message": "Don’t end abbreviations with a full stop, except in listed exceptions."
       },
       {
@@ -3527,7 +3527,7 @@
         "title": "No full stop endings",
         "category": "regex",
         "severity": "error",
-        "pattern": "\\b[A-Z]{2,}\\.(?!\\w)",
+        "pattern": "\\b[A-Z]{2,}\\.(?=\\s+[a-z])",
         "message": "Do not end acronyms and initialisms with a full stop unless at sentence end."
       },
       {
@@ -5000,7 +5000,7 @@
         "title": "Coordinated subject uses ‘I’",
         "category": "regex",
         "severity": "warn",
-        "pattern": "^(?i).*\\b(?:and\\s+me)\\s+(?:[a-z]+)\\b",
+        "pattern": "(?i)^.*\\b(?:and\\s+me)\\s+(?:[a-z]+)\\b",
         "message": "In subject position, use ‘and I’, not ‘and me’."
       },
       {
@@ -5022,7 +5022,7 @@
         "title": "Don’t use reflexives as subjects",
         "category": "regex",
         "severity": "error",
-        "pattern": "^(?i)(?:myself|yourself|herself|himself|themselves|themself|ourselves|itself)\\b",
+        "pattern": "(?i)^(?:myself|yourself|herself|himself|themselves|themself|ourselves|itself)\\b",
         "message": "Use a standard subject pronoun (I/you/he/… ), not a reflexive."
       },
       {
