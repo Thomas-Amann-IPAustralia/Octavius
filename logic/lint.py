@@ -32,13 +32,13 @@ except OSError:
 def _add_finding(findings: List[Dict], start: int, end: int, rule_id: str, message: str, severity: str, suggestion: str = None):
     """Adds a finding to the list, deduping based on exact character overlap."""
     for f in findings:
-        if f['start'] == start and f['end'] == end and f['ruleId'] == rule_id:
+        if f.get('start_char') == start and f.get('end_char') == end and f.get('rule_id') == rule_id:
             return
 
     finding = {
-        "start": start,
-        "end": end,
-        "ruleId": rule_id,
+        "start_char": start,
+        "end_char": end,
+        "rule_id": rule_id,
         "message": message,
         "severity": severity,
         "suggestion": suggestion
@@ -112,4 +112,4 @@ def lint_text(text: str, rules: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
                 for res in results:
                     _add_finding(findings, res['start'], res['end'], rule_id, message, severity)
 
-    return sorted(findings, key=lambda x: x['start'])
+    return sorted(findings, key=lambda x: x.get('start_char', 0))
