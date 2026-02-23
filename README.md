@@ -75,3 +75,29 @@ Octavius is developed entirely in the cloud, requiring zero local environment se
 4. **View:** Refresh the live application URL ([https://0ctavius.streamlit.app/](https://0ctavius.streamlit.app/)) to view and test the results of your code changes.
 
 *(Note: Because of this loop, print statements or console errors must be debugged either through the Streamlit UI or the Streamlit Cloud dashboard logs).*
+
+---
+
+## 5. Repository Structure
+
+This clearly outlines the separation of concerns between the Streamlit root (app.py), the Python auditing engine (logic/), the React custom component (frontend/), and the configuration files (data/).
+
+Octavius-main/
+├── app.py                       # Main Streamlit controller and entry point
+├── README.md                    # The primary technical documentation (you are here!)
+├── requirements.txt             # Python dependencies for the Streamlit backend
+├── data/
+│   └── Trinity.json             # The core JSON ruleset containing APS guidelines
+├── frontend/                    # Custom React component for the visual editor
+│   ├── folderbuilder            # Utility script/binary for frontend scaffolding
+│   ├── package.json             # Node.js dependencies for the React frontend
+│   ├── public/
+│   │   └── index.html           # HTML template for the React component
+│   └── src/
+│       ├── editor.tsx           # Main React component handling text and highlights
+│       ├── index.tsx            # React application entry point
+│       └── style.css            # Custom styling for the editor and tooltips
+└── logic/                       # Python backend logic and processing
+    ├── __init__.py
+    ├── docx_parser.py           # Parser for MS Word documents and semantic tagging
+    └── lint.py                  # The auditing engine (NLP and Regex logic)
