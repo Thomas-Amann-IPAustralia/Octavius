@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 import streamlit as st
 
-from logic.lint import audit_text  # we'll create this next
+from logic.lint import lint_text  # we'll create this next
 from logic.docx_parser import parse_docx_to_hansel_markdown  # placeholder for now
 
 st.set_page_config(page_title="Octavius", layout="wide")
@@ -45,7 +45,7 @@ if st.button("Run audit") or st.session_state["text"]:
     text = st.session_state["text"]
     if text.strip():
         try:
-            findings = audit_text(text=text, rules=st.session_state["rules"])
+            findings = lint_text(text=text, rules=st.session_state["rules"])
             st.subheader(f"Findings ({len(findings)})")
 
             for i, f in enumerate(findings, start=1):
