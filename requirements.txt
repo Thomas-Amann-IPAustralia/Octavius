@@ -1,4 +1,4 @@
 streamlit
 spacy
 python-docx
-streamlit-annotated-text
+st-annotated-text
