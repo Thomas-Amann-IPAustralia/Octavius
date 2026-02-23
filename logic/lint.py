@@ -51,14 +51,18 @@ def check_passive_voice(doc: Doc) -> List[Dict[str, Any]]:
     """Flags passive voice. Returns list of dicts with 'start', 'end', 'text'."""
     results = []
     for token in doc:
-        # Check for the auxiliary verb in a passive construction (e.g., 'was' in 'was submitted')
+        # Check for the auxiliary verb in a passive construction
         if token.dep_ == "auxpass":
-            # 1. Flag the auxiliary itself ("was")
-            results.append({"start": token.idx, "end": token.idx + len(token.text), "text": token.text})
-            
-            # 2. Flag the main verb ("submitted"), which is the parent (head) of the auxiliary
             head = token.head
-            results.append({"start": head.idx, "end": head.idx + len(head.text), "text": head.text})
+            
+            # Combine the auxiliary token and its head verb into a single continuous span
+            start_idx = min(token.idx, head.idx)
+            end_idx = max(token.idx + len(token.text), head.idx + len(head.text))
+            
+            # Extract the actual text for the combined phrase
+            phrase_text = doc.text[start_idx:end_idx]
+            
+            results.append({"start": start_idx, "end": end_idx, "text": phrase_text})
             
     return results
 
