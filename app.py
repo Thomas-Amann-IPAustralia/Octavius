@@ -19,16 +19,7 @@ if "rules" not in st.session_state:
             # Flatten the nested RuleSet structure into a single list of rules
             all_rules = []
             for ruleset in raw_data:
-                # Capture hierarchical info
-                book = ruleset.get("Book", "Unknown")
-                chapter = ruleset.get("Chapter", "Unknown")
-                rs_name = ruleset.get("RuleSet", "Unknown")
-
                 for rule in ruleset.get("rules", []):
-                    # Add hierarchy to rule
-                    rule["book"] = book
-                    rule["chapter"] = chapter
-                    rule["ruleset"] = rs_name
                     # Initialize session-only controls
                     rule["enabled"] = True
                     rule["severity_override"] = None
@@ -70,55 +61,53 @@ st.sidebar.info(f"Rules loaded: {rule_count}")
 if mode == "Upload DOCX":
     st.sidebar.caption("DOCX parsing is currently placeholder output for pipeline testing.")
 
-# Input area (shared)
-if mode == "Paste text":
-    st.session_state["text"] = st.text_area(
-        "Drafting area",
-        value=st.session_state["text"],
-        height=300,
-        placeholder="Paste APS-style content here..."
-    )
-else:
-    uploaded = st.file_uploader("Upload a .docx file", type=["docx"])
-    if uploaded is not None:
-        try:
-            st.session_state["text"] = parse_docx_to_hansel_markdown(uploaded)
-            st.info("DOCX upload received. Placeholder parser is active (not final Hansel semantic parsing yet).")
-            st.text_area(
-                "Parser output preview (placeholder)",
-                st.session_state["text"],
-                height=250,
-                disabled=True
-            )
-        except Exception as e:
-            st.error(f"Failed to parse DOCX: {e}")
-
-# Run linter (button-trigger only; no automatic rerun on every text change)
-run_audit = st.button("Run audit", use_container_width=True)
-
-if run_audit:
-    text = st.session_state["text"]
-    if text.strip():
-        try:
-            start_time = time.perf_counter()
-            findings = lint_text(text=text, rules=st.session_state["rules"])
-            duration = time.perf_counter() - start_time
-
-            st.session_state["findings"] = findings
-            st.session_state["audit_duration"] = duration
-        except Exception as e:
-            st.error(f"Linter error: {e}")
-            st.session_state["findings"] = []
-    else:
-        st.info("Paste text or upload a DOCX to begin.")
-        st.session_state["findings"] = []
-        st.session_state["audit_duration"] = 0
-
-st.divider()
-
-tab_audit, tab_advanced = st.tabs(["Audit Findings", "Advanced Rule Controls"])
+tab_audit, tab_advanced = st.tabs(["Audit", "Advanced Mode"])
 
 with tab_audit:
+    # Input
+    if mode == "Paste text":
+        st.session_state["text"] = st.text_area(
+            "Drafting area",
+            value=st.session_state["text"],
+            height=300,
+            placeholder="Paste APS-style content here..."
+        )
+    else:
+        uploaded = st.file_uploader("Upload a .docx file", type=["docx"])
+        if uploaded is not None:
+            try:
+                st.session_state["text"] = parse_docx_to_hansel_markdown(uploaded)
+                st.info("DOCX upload received. Placeholder parser is active (not final Hansel semantic parsing yet).")
+                st.text_area(
+                    "Parser output preview (placeholder)",
+                    st.session_state["text"],
+                    height=250,
+                    disabled=True
+                )
+            except Exception as e:
+                st.error(f"Failed to parse DOCX: {e}")
+
+    # Run linter (button-trigger only; no automatic rerun on every text change)
+    run_audit = st.button("Run audit")
+
+    if run_audit:
+        text = st.session_state["text"]
+        if text.strip():
+            try:
+                start_time = time.perf_counter()
+                findings = lint_text(text=text, rules=st.session_state["rules"])
+                duration = time.perf_counter() - start_time
+
+                st.session_state["findings"] = findings
+                st.session_state["audit_duration"] = duration
+            except Exception as e:
+                st.error(f"Linter error: {e}")
+                st.session_state["findings"] = []
+        else:
+            st.info("Paste text or upload a DOCX to begin.")
+            st.session_state["findings"] = []
+            st.session_state["audit_duration"] = 0
+
     # Findings display (persists across reruns)
     findings = st.session_state.get("findings", [])
     duration = st.session_state.get("audit_duration", 0)
@@ -144,79 +133,20 @@ with tab_audit:
             st.json(findings)
 
 with tab_advanced:
-    st.header("Advanced Rule Controls")
+    st.header("Advanced Mode")
 
-    # --- Hierarchical Bulk Controls ---
-    st.subheader("Bulk Controls (Hierarchy)")
-    st.caption("Select groups of rules to enable or disable them all at once.")
-
-    rules_data = st.session_state["rules"]
-    df_full = pd.DataFrame(rules_data)
-
-    col1, col2, col3 = st.columns(3)
-
-    with col1:
-        books = sorted(df_full["book"].unique())
-        sel_books = st.multiselect("Filter by Book", books)
-
-    with col2:
-        if sel_books:
-            chapters = sorted(df_full[df_full["book"].isin(sel_books)]["chapter"].unique())
-        else:
-            chapters = sorted(df_full["chapter"].unique())
-        sel_chapters = st.multiselect("Filter by Chapter", chapters)
-
-    with col3:
-        if sel_chapters:
-            rs_query = df_full["chapter"].isin(sel_chapters)
-            if sel_books:
-                rs_query &= df_full["book"].isin(sel_books)
-            rulesets = sorted(df_full[rs_query]["ruleset"].unique())
-        elif sel_books:
-            rulesets = sorted(df_full[df_full["book"].isin(sel_books)]["ruleset"].unique())
-        else:
-            rulesets = sorted(df_full["ruleset"].unique())
-        sel_rulesets = st.multiselect("Filter by RuleSet", rulesets)
-
-    # Calculate matches for bulk action
-    bulk_mask = pd.Series([True] * len(df_full))
-    if sel_books:
-        bulk_mask &= df_full["book"].isin(sel_books)
-    if sel_chapters:
-        bulk_mask &= df_full["chapter"].isin(sel_chapters)
-    if sel_rulesets:
-        bulk_mask &= df_full["ruleset"].isin(sel_rulesets)
-
-    match_count = bulk_mask.sum()
-    st.write(f"Matched **{match_count}** rules based on above hierarchy filters.")
-
-    bc_col1, bc_col2 = st.columns(2)
-    with bc_col1:
-        if st.button(f"Enable all {match_count} matched rules", disabled=(match_count == 0)):
-            for i in df_full[bulk_mask].index:
-                st.session_state["rules"][i]["enabled"] = True
-            st.rerun()
-    with bc_col2:
-        if st.button(f"Disable all {match_count} matched rules", disabled=(match_count == 0)):
-            for i in df_full[bulk_mask].index:
-                st.session_state["rules"][i]["enabled"] = False
-            st.rerun()
-
-    st.divider()
-
-    # --- Individual Rule Browser ---
-    st.subheader("Individual Rule Browser")
-    st.caption("Inspect, toggle, or override specific rules. Use the search bar for quick filtering.")
+    st.subheader("Rule Browser")
+    st.caption("Inspect, enable/disable, or override rule severities for this session.")
 
     # 1. Search/Filter
-    search_query = st.text_input("Search rules (ID, Title, Message, Category)", placeholder="Enter keyword...")
+    search_query = st.text_input("Search rules (ID, Title, Message)", placeholder="Enter keyword...")
 
     # 2. Rule Browser (Table)
-    # Refresh df_rules from session state (which might have been updated by bulk actions)
-    df_rules = pd.DataFrame(st.session_state["rules"])
+    rules_data = st.session_state["rules"]
+    df_rules = pd.DataFrame(rules_data)
 
-    # Reorder columns for better UI, including hierarchy now
-    display_cols = ["enabled", "id", "book", "chapter", "ruleset", "severity", "severity_override", "category", "title", "message"]
+    # Reorder columns for better UI
+    display_cols = ["enabled", "id", "severity", "severity_override", "category", "title", "message"]
     # Ensure all requested columns exist in the DF
     actual_cols = [c for c in display_cols if c in df_rules.columns]
     df_rules = df_rules[actual_cols]
@@ -238,29 +168,30 @@ with tab_advanced:
             ),
             "severity": st.column_config.TextColumn("Default Severity", disabled=True),
             "id": st.column_config.TextColumn("ID", disabled=True),
-            "book": st.column_config.TextColumn("Book", disabled=True),
-            "chapter": st.column_config.TextColumn("Chapter", disabled=True),
-            "ruleset": st.column_config.TextColumn("RuleSet", disabled=True),
             "category": st.column_config.TextColumn("Category", disabled=True),
             "title": st.column_config.TextColumn("Title", disabled=True),
             "message": st.column_config.TextColumn("Message", disabled=True),
         },
-        disabled=["id", "book", "chapter", "ruleset", "severity", "category", "title", "message"],
+        disabled=["id", "severity", "category", "title", "message"],
         hide_index=True,
         use_container_width=True,
-        key="rules_editor_ui_v2"
+        key="rules_editor_ui"
     )
 
     # 3. Apply changes back to session state
-    if st.button("Apply individual changes"):
+    if st.button("Apply changes to session"):
         # Map IDs to indices in st.session_state["rules"]
         id_to_idx = {r["id"]: i for i, r in enumerate(st.session_state["rules"])}
+        # We use edited_df which contains all rows if not filtered, OR filtered rows.
+        # But wait, if it's filtered, we only see a subset.
+        # st.data_editor when filtered only returns the filtered subset.
+        # So we update only what's in edited_df.
         for _, row in edited_df.iterrows():
             idx = id_to_idx.get(row["id"])
             if idx is not None:
                 st.session_state["rules"][idx]["enabled"] = row["enabled"]
                 st.session_state["rules"][idx]["severity_override"] = row["severity_override"] if row["severity_override"] else None
-        st.success("Individual rule changes applied.")
+        st.success(f"Updated {len(edited_df)} rules in session state.")
 
     st.divider()
     st.subheader("Regex Sandbox")
