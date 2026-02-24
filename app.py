@@ -1,8 +1,10 @@
 import json
 import time
+import io
 from pathlib import Path
 import streamlit as st
 import pandas as pd
+from annotated_text import annotated_text
 
 from logic.lint import lint_text, get_spacy_status
 from logic.docx_parser import parse_docx_to_hansel_markdown
@@ -65,8 +67,6 @@ else:
 rule_count = len(st.session_state.get("rules", []))
 st.sidebar.info(f"Rules loaded: {rule_count}")
 
-if mode == "Upload DOCX":
-    st.sidebar.caption("DOCX parsing is currently placeholder output for pipeline testing.")
 
 # Shared Input Area
 if mode == "Paste text":
@@ -81,13 +81,7 @@ else:
     if uploaded is not None:
         try:
             st.session_state["text"] = parse_docx_to_hansel_markdown(uploaded)
-            st.info("DOCX upload received. Placeholder parser is active (not final Hansel semantic parsing yet).")
-            st.text_area(
-                "Parser output preview (placeholder)",
-                st.session_state["text"],
-                height=250,
-                disabled=True
-            )
+            st.success("DOCX file uploaded and parsed successfully.")
         except Exception as e:
             st.error(f"Failed to parse DOCX: {e}")
 
@@ -116,13 +110,67 @@ tab_audit, tab_advanced = st.tabs(["Audit", "Advanced Mode"])
 
 with tab_audit:
     # Findings display (persists across reruns)
-    findings = st.session_state.get("findings", [])
+    all_findings = st.session_state.get("findings", [])
     duration = st.session_state.get("audit_duration", 0)
 
-    if findings:
-        st.subheader(f"Findings ({len(findings)})")
+    if all_findings:
+        col1, col2 = st.columns(2)
+        with col1:
+            severity_filter = st.multiselect(
+                "Filter by Severity",
+                options=["ERROR", "WARN", "INFO"],
+                default=["ERROR", "WARN", "INFO"]
+            )
+        with col2:
+            categories = sorted(list(set(f.get("category", "unknown") for f in all_findings)))
+            category_filter = st.multiselect(
+                "Filter by Category",
+                options=categories,
+                default=categories
+            )
+
+        # Apply filters
+        findings = [
+            f for f in all_findings
+            if f.get("severity", "info").upper() in severity_filter
+            and f.get("category", "unknown") in category_filter
+        ]
+
+        st.subheader(f"Findings ({len(findings)} / {len(all_findings)})")
         if duration > 0:
             st.caption(f"Audit completed in {duration:.3f} seconds")
+
+        if findings:
+            st.divider()
+            st.subheader("Jump to finding")
+
+            finding_options = [
+                f"{i+1}. [{f['severity'].upper()}] {f['rule_id']} at char {f['start_char']}"
+                for i, f in enumerate(findings)
+            ]
+            selected_idx = st.selectbox("Select a finding to preview", range(len(findings)), format_func=lambda x: finding_options[x])
+
+            if selected_idx is not None:
+                selected_finding = findings[selected_idx]
+                start = selected_finding["start_char"]
+                end = selected_finding["end_char"]
+                full_text = st.session_state["text"]
+
+                # Context snippet
+                snippet_start = max(0, start - 50)
+                snippet_end = min(len(full_text), end + 50)
+
+                prefix = full_text[snippet_start:start]
+                match = full_text[start:end]
+                suffix = full_text[end:snippet_end]
+
+                st.markdown("**Preview:**")
+                annotated_text(
+                    prefix,
+                    (match, selected_finding["rule_id"], "#faa"),
+                    suffix
+                )
+            st.divider()
 
         for i, f in enumerate(findings, start=1):
             severity = f.get('severity', 'info').upper()
@@ -138,6 +186,30 @@ with tab_audit:
 
         if show_raw_findings:
             st.json(findings)
+
+        st.divider()
+        st.subheader("Export Findings")
+
+        # JSON Export
+        json_data = json.dumps(findings, indent=2)
+        st.download_button(
+            label="Download Findings as JSON",
+            data=json_data,
+            file_name="findings.json",
+            mime="application/json"
+        )
+
+        # CSV Export
+        if findings:
+            df_export = pd.DataFrame(findings)
+            csv_buffer = io.StringIO()
+            df_export.to_csv(csv_buffer, index=False)
+            st.download_button(
+                label="Download Findings as CSV",
+                data=csv_buffer.getvalue(),
+                file_name="findings.csv",
+                mime="text/csv"
+            )
 
 with tab_advanced:
     st.header("Advanced Mode")

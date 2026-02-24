@@ -68,6 +68,7 @@ class Finding(TypedDict):
     start_char: int
     end_char: int
     rule_id: str
+    category: str
     message: str
     severity: str
     suggestion: Optional[str]
@@ -91,6 +92,7 @@ def _add_finding(
     start: int,
     end: int,
     rule_id: str,
+    category: str,
     message: str,
     severity: str,
     suggestion: str = None
@@ -108,6 +110,7 @@ def _add_finding(
         "start_char": start,
         "end_char": end,
         "rule_id": rule_id,
+        "category": category,
         "message": message,
         "severity": severity,
         "suggestion": suggestion
@@ -1052,6 +1055,7 @@ def lint_text(text: str, rules: List[Dict[str, Any]]) -> List[Finding]:
                     res["start_char"],
                     res["end_char"],
                     rule_id,
+                    category,
                     message,
                     severity,
                     res.get("suggestion") or suggestion
@@ -1070,6 +1074,7 @@ def lint_text(text: str, rules: List[Dict[str, Any]]) -> List[Finding]:
                             match.start(),
                             match.end(),
                             rule_id,
+                            category,
                             message,
                             severity,
                             suggestion
@@ -1080,6 +1085,7 @@ def lint_text(text: str, rules: List[Dict[str, Any]]) -> List[Finding]:
                         0,
                         0,
                         f"SYS-REGEX-ERROR-{rule_id}",
+                        "system",
                         f"Invalid regex pattern in rule {rule_id}: {e}",
                         "error",
                         "Check the 'pattern' field in Trinity.json for this rule."
