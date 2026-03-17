@@ -43,6 +43,7 @@ RULES = [
         "title": "Passive voice detected",
         "message": "Passive voice can reduce clarity. Consider rewriting in active voice.",
         "severity": "warn",
+        "category": "Grammar",
         "suggestion": None,
         "check": check_passive_voice,
     },
