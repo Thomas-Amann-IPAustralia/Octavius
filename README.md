@@ -4,7 +4,7 @@ A plain-language linter for Australian Public Service (APS) content, built with 
 
 Paste a block of text, click **Run audit**, and Octavius highlights style violations inline and lists each finding with a suggested fix.
 
-> **Current scope:** This is a *vertical-slice MVP* focused on a single rule — passive voice detection — to validate the core architecture before the rule set is expanded.
+> **Architecture:** Python + spaCy NLP backend, React 18 + TypeScript + Tailwind CSS frontend (embedded as a Streamlit custom component). Rule content is sourced from the Australian Government Style Manual, catalogued in `library_of_rules/`.
 
 ---
 
@@ -40,14 +40,29 @@ pytest tests/ -v
 
 ```
 Octavius/
-├── app.py              # Streamlit UI — page layout, session state, result rendering
-├── requirements.txt    # Python dependencies
+├── app.py                    # Streamlit UI — page layout, session state, result rendering
+├── requirements.txt          # Python dependencies
 ├── logic/
-│   ├── engine.py       # lint_text() — runs rules against a spaCy Doc
-│   └── rules.py        # RULES list + individual rule check functions
+│   ├── engine.py             # lint_text() — runs rules against a spaCy Doc
+│   └── rules.py              # RULES list + individual rule check functions
+├── frontend/
+│   ├── src/
+│   │   ├── OctaviusEditor.tsx        # Root React component (state, layout)
+│   │   ├── components/               # TextEditor, FindingsPanel, FindingCard, etc.
+│   │   ├── hooks/useHighlights.ts    # Text segmentation for inline highlights
+│   │   └── types.ts                  # Shared TypeScript types
+│   └── build/                        # Compiled component (loaded by Streamlit)
+├── library_of_rules/         # Reference rule content from the Australian Government Style Manual
+│   ├── Grammar, Punctuation and conventions/
+│   ├── Accessible and inclusive content/
+│   ├── Writing and designing content/
+│   ├── Structuring content/
+│   ├── Referencing and attribution/
+│   ├── Handbook/
+│   └── SiteMap.md            # Navigation index for the rule library
 ├── tests/
-│   └── test_engine.py  # Unit tests for the linting engine
-└── archive/            # Previous implementations (reference only)
+│   └── test_engine.py        # Unit tests for the linting engine
+└── archive/                  # Previous implementations (reference only)
 ```
 
 ---

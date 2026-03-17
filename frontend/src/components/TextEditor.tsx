@@ -32,22 +32,66 @@ export const TextEditor: React.FC<Props> = ({
   const [tooltipFinding, setTooltipFinding] = useState<Finding | null>(null)
   const [tooltipAnchor, setTooltipAnchor] = useState<HTMLElement | null>(null)
 
-  // When findings are present, React renders highlighted segments as <span>
-  // elements inside the contentEditable div. However, the browser's native
-  // text nodes from the paste/input operation remain in the DOM alongside
-  // React's rendered spans, causing the text to appear duplicated.
-  // Remove those stale text nodes after React has rendered the segments.
-  const hasHighlights = segments.some(s => s.finding !== null)
+  // After React renders segments as <span> elements inside the contentEditable
+  // div, the browser's native text nodes from prior input events remain in the
+  // DOM alongside React's spans, causing the text to appear duplicated.
+  // Remove those stale text nodes after every render, preserving the caret.
   useLayoutEffect(() => {
     const el = editorRef.current
-    if (!el || !hasHighlights) return
+    if (!el) return
 
+    // Check if any stale text nodes exist at the top level of the editor
+    let hasTextNodes = false
+    for (let i = 0; i < el.childNodes.length; i++) {
+      if (el.childNodes[i].nodeType === Node.TEXT_NODE) {
+        hasTextNodes = true
+        break
+      }
+    }
+    if (!hasTextNodes) return
+
+    // Save the caret offset (character index from the start of the editor)
+    const sel = window.getSelection()
+    let savedOffset = -1
+    if (sel && sel.rangeCount > 0) {
+      const range = sel.getRangeAt(0)
+      if (el.contains(range.startContainer)) {
+        const preRange = document.createRange()
+        preRange.selectNodeContents(el)
+        preRange.setEnd(range.startContainer, range.startOffset)
+        savedOffset = preRange.toString().length
+      }
+    }
+
+    // Remove stale text nodes
     for (let i = el.childNodes.length - 1; i >= 0; i--) {
       if (el.childNodes[i].nodeType === Node.TEXT_NODE) {
         el.removeChild(el.childNodes[i])
       }
     }
-  }, [segments, hasHighlights])
+
+    // Restore the caret inside the remaining span elements
+    if (savedOffset >= 0 && sel) {
+      let remaining = savedOffset
+      for (const child of Array.from(el.childNodes)) {
+        const len = child.textContent?.length ?? 0
+        if (remaining <= len) {
+          const target = child.nodeType === Node.TEXT_NODE ? child : child.firstChild
+          if (target) {
+            try {
+              const r = document.createRange()
+              r.setStart(target, Math.min(remaining, (target as Text).length))
+              r.collapse(true)
+              sel.removeAllRanges()
+              sel.addRange(r)
+            } catch { /* ignore stale range errors */ }
+          }
+          break
+        }
+        remaining -= len
+      }
+    }
+  }, [segments])
 
   // Send updated plain text back to Streamlit on each input event
   const handleInput = useCallback(() => {
