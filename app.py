@@ -1,7 +1,7 @@
-"""Octavius — plain-language linter (vertical slice)."""
+"""Octavius — plain-language linter with React visual editor."""
 
 import streamlit as st
-from annotated_text import annotated_text
+import streamlit.components.v1 as components
 
 from logic.engine import get_spacy_status, lint_text
 from logic.rules import RULES
@@ -9,14 +9,39 @@ from logic.rules import RULES
 # ── Page config ──────────────────────────────────────────────────────
 st.set_page_config(page_title="Octavius", layout="wide")
 
+# ── Register the custom React component ──────────────────────────────
+_octavius_editor = components.declare_component(
+    "octavius_editor",
+    path="frontend/build",
+)
+
+
+def st_octavius_editor(
+    text: str,
+    findings: list,
+    rules: list,
+    key: str | None = None,
+) -> dict | None:
+    """Render the React visual editor and return the latest value dict."""
+    return _octavius_editor(
+        text=text,
+        findings=findings,
+        rules=rules,
+        key=key,
+        default=None,
+    )
+
+
 # ── Sidebar ──────────────────────────────────────────────────────────
 with st.sidebar:
     st.title("Octavius")
-    st.caption("Plain-language linter — vertical slice")
+    st.caption("Plain-language linter")
     st.divider()
     spacy_ok = get_spacy_status()
     st.metric("spaCy model", "loaded" if spacy_ok else "missing")
-    st.metric("Active rules", len(RULES))
+    st.metric("Rules loaded", len(RULES))
+    if not spacy_ok:
+        st.error("spaCy model missing — run:\npython -m spacy download en_core_web_sm")
 
 # ── Session state defaults ───────────────────────────────────────────
 if "text" not in st.session_state:
@@ -24,53 +49,33 @@ if "text" not in st.session_state:
 if "findings" not in st.session_state:
     st.session_state["findings"] = []
 
-# ── Main area ────────────────────────────────────────────────────────
-st.header("Audit")
+# ── Serialise rules for the React component (metadata only) ──────────
+rules_meta = [
+    {
+        "id":       r["id"],
+        "title":    r["title"],
+        "severity": r["severity"],
+        "category": r.get("category", "General"),
+    }
+    for r in RULES
+]
 
-text = st.text_area(
-    "Paste your text below",
-    height=200,
-    key="text_input",
-    value=st.session_state["text"],
+# ── Render the visual editor ─────────────────────────────────────────
+result = st_octavius_editor(
+    text=st.session_state["text"],
+    findings=[dict(f) for f in st.session_state["findings"]],
+    rules=rules_meta,
+    key="editor",
 )
 
-if st.button("Run audit", type="primary"):
-    st.session_state["text"] = text
-    st.session_state["findings"] = lint_text(text, RULES)
+# ── Handle Analyse button clicks from React ───────────────────────────
+# React sends { text, activeRuleIds } when the user clicks Analyse.
+if result is not None:
+    new_text: str       = result.get("text", "")
+    active_ids: list    = result.get("activeRuleIds", [r["id"] for r in RULES])
 
-findings = st.session_state["findings"]
+    active_rules = [r for r in RULES if r["id"] in active_ids]
 
-# ── Results ──────────────────────────────────────────────────────────
-if findings:
-    st.subheader(f"Findings ({len(findings)})")
-
-    # Build annotated-text tokens
-    parts: list = []
-    prev = 0
-    for f in findings:
-        if f["start_char"] > prev:
-            parts.append(text[prev : f["start_char"]])
-        parts.append(
-            (text[f["start_char"] : f["end_char"]], f["severity"].upper(), "#ffa500")
-        )
-        prev = f["end_char"]
-    if prev < len(text):
-        parts.append(text[prev:])
-
-    annotated_text(*parts)
-
-    st.divider()
-
-    for i, f in enumerate(findings, 1):
-        severity_color = {"error": "red", "warn": "orange", "info": "blue"}.get(
-            f["severity"], "grey"
-        )
-        st.markdown(
-            f"**:{severity_color}[{f['severity'].upper()}]** "
-            f"`{f['rule_id']}` — {f['message']}"
-        )
-        if f.get("suggestion"):
-            st.caption(f.get("suggestion"))
-
-elif st.session_state["text"]:
-    st.success("No findings — looking good!")
+    st.session_state["text"]     = new_text
+    st.session_state["findings"] = lint_text(new_text, active_rules)
+    st.rerun()
