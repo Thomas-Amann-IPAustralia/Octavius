@@ -72,7 +72,32 @@ The React component lives in `frontend/` and is compiled to `frontend/build/`. S
 | `tests/test_engine.py` | Pytest unit tests for the linting engine |
 | `frontend/src/OctaviusEditor.tsx` | Root React component |
 | `frontend/src/components/` | TextEditor, FindingsPanel, FindingCard, etc. |
+| `frontend/src/hooks/useHighlights.ts` | Slices text into plain/highlighted segments |
 | `frontend/src/types.ts` | Shared TypeScript types (Finding, Rule) |
+| `library_of_rules/` | Reference rule content from the Australian Government Style Manual |
+| `library_of_rules/SiteMap.md` | Navigation index for the rule library |
+| `library_of_rules/Octavius_Rulebook_Column_Reference.docx` | Column reference for rule authoring |
+
+---
+
+## Rule library (`library_of_rules/`)
+
+The `library_of_rules/` directory contains reference content sourced from the Australian Government Style Manual. It is organised by topic and provides the authoritative source material for rules implemented in `logic/rules.py`.
+
+```
+library_of_rules/
+├── Grammar, Punctuation and conventions/   # Parts of sentences, punctuation, spelling, etc.
+├── Accessible and inclusive content/       # Accessibility and inclusion guidance
+├── Writing and designing content/          # Plain language, voice, tone, editing
+├── Structuring content/                    # Headings, lists, paragraphs, tables, links
+├── Referencing and attribution/            # Legal material and citation guidance
+├── Handbook/                               # Plain English writing handbook summaries
+├── SiteMap.md                              # Navigation index for the rule library
+├── Octavius_Rulebook_Column_Reference.docx # Column reference for rule authoring
+└── Australian Government Style Manual_index.txt  # Full style manual index
+```
+
+When implementing a new rule, consult the relevant markdown files in this directory for the authoritative guidance text to use in `message` and `suggestion` fields.
 
 ---
 
