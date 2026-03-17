@@ -1,5 +1,6 @@
 """Octavius — plain-language linter with React visual editor."""
 
+from pathlib import Path
 import streamlit as st
 import streamlit.components.v1 as components
 
@@ -10,9 +11,13 @@ from logic.rules import RULES
 st.set_page_config(page_title="Octavius", layout="wide")
 
 # ── Register the custom React component ──────────────────────────────
+# Use an absolute path so the component loads correctly regardless of
+# the working directory (important on Streamlit Community Cloud).
+_BUILD_DIR = Path(__file__).parent / "frontend" / "build"
+
 _octavius_editor = components.declare_component(
     "octavius_editor",
-    path="frontend/build",
+    path=str(_BUILD_DIR),
 )
 
 
