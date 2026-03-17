@@ -2,6 +2,7 @@
   "name": "octavius-editor",
   "version": "0.2.0",
   "private": true,
+  "homepage": ".",
   "main": "build/index.js",
   "dependencies": {
     "ajv": "^8.18.0",
