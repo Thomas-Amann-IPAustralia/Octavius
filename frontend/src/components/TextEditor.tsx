@@ -32,13 +32,16 @@ export const TextEditor: React.FC<Props> = ({
   const [tooltipFinding, setTooltipFinding] = useState<Finding | null>(null)
   const [tooltipAnchor, setTooltipAnchor] = useState<HTMLElement | null>(null)
 
-  // After React renders segments as <span> elements inside the contentEditable
-  // div, the browser's native text nodes from prior input events remain in the
-  // DOM alongside React's spans, causing the text to appear duplicated.
-  // Remove those stale text nodes after every render, preserving the caret.
+  // When findings are present, React renders highlighted segments as <span>
+  // elements inside the contentEditable div. The browser's native text nodes
+  // from prior input events remain alongside React's spans, causing duplicated
+  // text. Remove those stale text nodes after render, preserving the caret.
+  // This cleanup only runs when highlights exist — without highlights, the
+  // browser and React reconcile naturally and cleanup causes text reversal.
+  const hasHighlights = segments.some(s => s.finding !== null)
   useLayoutEffect(() => {
     const el = editorRef.current
-    if (!el) return
+    if (!el || !hasHighlights) return
 
     // Check if any stale text nodes exist at the top level of the editor
     let hasTextNodes = false
@@ -91,7 +94,7 @@ export const TextEditor: React.FC<Props> = ({
         remaining -= len
       }
     }
-  }, [segments])
+  }, [segments, hasHighlights])
 
   // Send updated plain text back to Streamlit on each input event
   const handleInput = useCallback(() => {
