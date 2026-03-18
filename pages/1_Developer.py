@@ -3,39 +3,15 @@
 from __future__ import annotations
 
 import re
-from pathlib import Path
 
 import streamlit as st
-import streamlit.components.v1 as components
 
+from logic.components import st_octavius_editor
 from logic.engine import get_spacy_status, lint_text
 from logic.sandbox import build_regex_check, execute_rule_code
 
 # ── Page config ──────────────────────────────────────────────────────
 st.set_page_config(page_title="Octavius — Developer", layout="wide")
-
-# ── Register the React component (same build, different key) ─────────
-_BUILD_DIR = Path(__file__).parent.parent / "frontend" / "build"
-
-_octavius_editor = components.declare_component(
-    "octavius_editor",
-    path=str(_BUILD_DIR),
-)
-
-
-def st_octavius_editor(
-    text: str,
-    findings: list,
-    rules: list,
-    key: str | None = None,
-) -> dict | None:
-    return _octavius_editor(
-        text=text,
-        findings=findings,
-        rules=rules,
-        key=key,
-        default=None,
-    )
 
 
 # ── Sidebar ──────────────────────────────────────────────────────────
