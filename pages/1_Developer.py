@@ -38,7 +38,6 @@ with st.sidebar:
 2. Copy the AI prompt in **Step 2** and paste it into Claude or ChatGPT
 3. Paste the code you get back into **Step 3**
 4. Click **Test Rule** in **Step 4** to see it in action
-5. Copy the export block in **Step 5** and send it to your developer
 """
     )
     with st.expander("System status"):
@@ -207,39 +206,6 @@ Return only the Python function, no explanation needed.\
                 "✅ Rule compiled. No matches in the test text — "
                 "try different sentences, or check that the rule logic is correct."
             )
-
-    st.divider()
-
-    # ── Step 5 — Copy for export ─────────────────────────────────────
-    st.subheader("Step 5 — Copy for export")
-
-    dev_rule = st.session_state["dev_rule"]
-    if dev_rule is None:
-        st.info("Complete Steps 1–4 first. Once your rule works, the export block will appear here.")
-    else:
-        st.success(
-            "Your rule is working! Copy the two blocks below and send them to your developer."
-        )
-
-        # Derive the function name from the compiled callable
-        check_fn_name = dev_rule["check"].__name__
-
-        st.markdown("**The rule function** (from Step 3):")
-        st.code(code, language="python")
-
-        st.markdown("**The rule registration block** (add this to `logic/rules.py`):")
-        export_block = (
-            f'{{\n'
-            f'    "id": "{dev_rule["id"]}",\n'
-            f'    "title": "{dev_rule["title"]}",\n'
-            f'    "message": "{dev_rule["message"]}",\n'
-            f'    "severity": "{dev_rule["severity"]}",\n'
-            f'    "category": "Custom",\n'
-            f'    "suggestion": None,\n'
-            f'    "check": {check_fn_name},\n'
-            f'}}'
-        )
-        st.code(export_block, language="python")
 
     st.divider()
 
