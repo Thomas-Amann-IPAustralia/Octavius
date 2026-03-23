@@ -35,6 +35,7 @@ _SANDBOX_GLOBALS: dict[str, Any] = {
     "re": re,
     "spacy": spacy,
     "Doc": Doc,
+    "Any": Any,
     "__builtins__": _SAFE_BUILTINS,
 }
 
