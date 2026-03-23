@@ -14,17 +14,6 @@ from octavius_component import st_octavius_editor
 st.set_page_config(page_title="Octavius — Rule Builder", layout="wide")
 
 
-# ── Helpers ──────────────────────────────────────────────────────────
-def _make_rule_id(title: str) -> str:
-    """Convert a human title to a slug-style rule ID, e.g. MY-RULE-001."""
-    slug = _re.sub(r"[^a-zA-Z0-9]+", "-", title).upper().strip("-")
-    return f"{slug}-001" if slug else "MY-RULE-001"
-
-
-_SEVERITY_LABELS = {"Warning": "warn", "Error": "error", "Info": "info"}
-_SEVERITY_LABEL_DEFAULT = "Warning"
-
-
 # ── Sidebar ──────────────────────────────────────────────────────────
 with st.sidebar:
     st.title("Octavius")
@@ -34,10 +23,8 @@ with st.sidebar:
         """
 **How it works:**
 
-1. Describe your rule in **Step 1**
-2. Copy the AI prompt in **Step 2** and paste it into Claude or ChatGPT
-3. Paste the code you get back into **Step 3**
-4. Click **Test Rule** in **Step 4** to see it in action
+1. Paste the rule code into **Step 1**
+2. Click **Test Rule** in **Step 2** to see it in action
 """
     )
     with st.expander("System status"):
@@ -56,13 +43,18 @@ _DEFAULTS: dict = {
     "dev_error": None,
     "dev_rule": None,
     "dev_code": "",
-    "dev_title": "My custom rule",
-    "dev_message": "This pattern was detected.",
-    "dev_severity_label": _SEVERITY_LABEL_DEFAULT,
 }
 for _k, _v in _DEFAULTS.items():
     if _k not in st.session_state:
         st.session_state[_k] = _v
+
+# Fixed rule metadata used when executing/testing
+_RULE_META = {
+    "id": "DEV-RULE-001",
+    "title": "Custom rule",
+    "message": "This pattern was detected.",
+    "severity": "warn",
+}
 
 
 # ── Layout ───────────────────────────────────────────────────────────
@@ -75,74 +67,8 @@ left_col, right_col = st.columns(2, gap="large")
 # ════════════════════════════════════════════════════════════════════
 with left_col:
 
-    # ── Step 1 — Describe your rule ──────────────────────────────────
-    st.subheader("Step 1 — Describe your rule")
-
-    meta_title = st.text_input(
-        "Rule name",
-        value=st.session_state["dev_title"],
-        key="dev_title",
-        help="A short name for the rule, e.g. 'Passive voice' or 'Jargon words'.",
-    )
-    meta_message = st.text_area(
-        "What should it tell the user?",
-        value=st.session_state["dev_message"],
-        key="dev_message",
-        height=80,
-        help="The message shown when the rule fires, e.g. 'Avoid passive voice — rewrite in active voice.'",
-    )
-    severity_label = st.selectbox(
-        "How serious is this issue?",
-        list(_SEVERITY_LABELS.keys()),
-        index=list(_SEVERITY_LABELS.keys()).index(
-            st.session_state["dev_severity_label"]
-        ),
-        key="dev_severity_label",
-        help="**Warning** — common style issue. **Error** — must fix. **Info** — helpful note.",
-    )
-    meta_severity = _SEVERITY_LABELS[severity_label]
-    rule_id = _make_rule_id(meta_title)
-    st.caption(f"Rule ID (auto-generated): `{rule_id}`")
-
-    rule_meta = {
-        "id": rule_id,
-        "title": meta_title,
-        "message": meta_message,
-        "severity": meta_severity,
-    }
-
-    st.divider()
-
-    # ── Step 2 — Get the code from an AI assistant ───────────────────
-    st.subheader("Step 2 — Get the code from an AI assistant")
-    st.markdown(
-        "Copy the prompt below and paste it into **Claude** or **ChatGPT**. "
-        "It's already filled in with what you entered above."
-    )
-
-    ai_prompt = f"""\
-Write a Python function for a plain-language linter rule called "{meta_title}".
-
-The function must:
-- Be named check_something (any name starting with check_)
-- Accept a single argument: doc (a spaCy Doc object)
-- Return a list of dicts, each with: start_char (int), end_char (int), and optionally suggestion (str)
-
-Rule purpose: {meta_message}
-
-Use spaCy token attributes such as token.dep_, token.pos_, token.lemma_, token.text, and token.idx.
-To highlight a span of tokens: use span.start_char and span.end_char.
-Do not import anything — spaCy's Doc, re, and standard Python builtins are already available.
-
-Return only the Python function, no explanation needed.\
-"""
-
-    st.code(ai_prompt, language=None)
-
-    st.divider()
-
-    # ── Step 3 — Paste the generated code ───────────────────────────
-    st.subheader("Step 3 — Paste the generated code")
+    # ── Step 1 — Paste the generated code ───────────────────────────
+    st.subheader("Step 1 — Paste the generated code")
     st.markdown("Paste the code you received from your AI assistant into the box below.")
 
     code = st.text_area(
@@ -156,8 +82,8 @@ Return only the Python function, no explanation needed.\
 
     st.divider()
 
-    # ── Step 4 — Test the rule ───────────────────────────────────────
-    st.subheader("Step 4 — Test the rule")
+    # ── Step 2 — Test the rule ───────────────────────────────────────
+    st.subheader("Step 2 — Test the rule")
     st.markdown(
         "Enter some example sentences below. "
         "Anything the rule should flag will be highlighted in the preview on the right."
@@ -174,12 +100,12 @@ Return only the Python function, no explanation needed.\
         if not code.strip():
             st.session_state["dev_error"] = (
                 "The code box is empty. "
-                "Complete Step 2 to get code from an AI assistant, then paste it in Step 3."
+                "Paste the generated code into Step 1 first."
             )
             st.session_state["dev_findings"] = []
             st.session_state["dev_rule"] = None
         else:
-            rule, error = execute_rule_code(code, rule_meta)
+            rule, error = execute_rule_code(code, _RULE_META)
             if error:
                 st.session_state["dev_error"] = translate_error(error)
                 st.session_state["dev_findings"] = []
@@ -224,10 +150,7 @@ Return only the Python function, no explanation needed.\
             try:
                 check_fn = build_regex_check(pattern)
                 adv_rule = {
-                    "id": rule_meta["id"],
-                    "title": rule_meta["title"],
-                    "message": rule_meta["message"],
-                    "severity": rule_meta["severity"],
+                    **_RULE_META,
                     "suggestion": None,
                     "check": check_fn,
                 }
@@ -306,10 +229,10 @@ with right_col:
         else:
             st.session_state["dev_findings"] = []
             st.session_state["dev_error"] = (
-                "Test your rule first (Step 4) before using the Analyse button."
+                "Test your rule first (Step 2) before using the Analyse button."
             )
 
         st.rerun()
 
     if dev_rule is None and not st.session_state["dev_error"]:
-        st.info("Complete Step 4 to see findings highlighted here.")
+        st.info("Complete Step 2 to see findings highlighted here.")
