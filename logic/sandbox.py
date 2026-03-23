@@ -2,15 +2,37 @@
 
 from __future__ import annotations
 
+import collections
 import re
 import traceback
-from typing import Any, Callable
+from typing import Any, Callable, List
 
 import spacy
 from spacy.tokens import Doc
 
+# Modules that user code may import.
+_ALLOWED_MODULES: dict[str, Any] = {
+    "re": re,
+    "collections": collections,
+    "math": __import__("math"),
+    "string": __import__("string"),
+}
+
+
+def _safe_import(name: str, *args: Any, **kwargs: Any) -> Any:
+    """Restricted import that only allows whitelisted modules."""
+    mod = _ALLOWED_MODULES.get(name)
+    if mod is not None:
+        return mod
+    raise ImportError(
+        f"Module '{name}' is not available. "
+        f"Allowed imports: {', '.join(sorted(_ALLOWED_MODULES))}."
+    )
+
+
 # Builtins exposed to user code — deliberately minimal.
 _SAFE_BUILTINS: dict[str, Any] = {
+    "__import__": _safe_import,
     "len": len,
     "range": range,
     "enumerate": enumerate,
@@ -29,6 +51,21 @@ _SAFE_BUILTINS: dict[str, Any] = {
     "isinstance": isinstance,
     "zip": zip,
     "print": print,
+    "reversed": reversed,
+    "sorted": sorted,
+    "map": map,
+    "filter": filter,
+    "abs": abs,
+    "sum": sum,
+    "round": round,
+    "hasattr": hasattr,
+    "getattr": getattr,
+    "type": type,
+    "ValueError": ValueError,
+    "TypeError": TypeError,
+    "KeyError": KeyError,
+    "IndexError": IndexError,
+    "StopIteration": StopIteration,
 }
 
 _SANDBOX_GLOBALS: dict[str, Any] = {
@@ -36,6 +73,9 @@ _SANDBOX_GLOBALS: dict[str, Any] = {
     "spacy": spacy,
     "Doc": Doc,
     "Any": Any,
+    "List": List,
+    "collections": collections,
+    "defaultdict": collections.defaultdict,
     "__builtins__": _SAFE_BUILTINS,
 }
 
