@@ -25,20 +25,56 @@ body {
 }
 .custom-scroll::-webkit-scrollbar-thumb:hover { background: #a78bfa; }
 
-/* ── Text editor ──────────────────────────────────────────────────── */
-.octavius-editor-content {
-  white-space: pre-wrap;
-  word-break: break-word;
-  outline: none;
-  caret-color: #7c3aed;
-  line-height: 1.75;
+/* ── Text editor (textarea + highlight overlay) ──────────────────── */
+.octavius-editor-container {
+  position: relative;
+  overflow: hidden;
   min-height: 200px;
 }
 
-.octavius-editor-content:empty::before {
-  content: attr(data-placeholder);
-  color: #94a3b8;
+.octavius-editor-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem 1.25rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.75;
+  font-size: 0.875rem;
+  font-family: inherit;
+  color: #1e293b;
+  overflow-y: auto;
   pointer-events: none;
+}
+
+.octavius-editor-textarea {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 1.25rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.75;
+  font-size: 0.875rem;
+  font-family: inherit;
+  color: transparent;
+  caret-color: #7c3aed;
+  background: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  overflow-y: auto;
+  min-height: 200px;
+}
+
+.octavius-editor-textarea::placeholder {
+  color: #94a3b8;
+}
+
+.octavius-editor-textarea::selection {
+  background: rgba(124, 58, 237, 0.15);
 }
 
 /* ── Highlight spans ──────────────────────────────────────────────── */
@@ -46,30 +82,24 @@ body {
   background-color: #fff1f2;
   border-bottom: 2px solid #f43f5e;
   border-radius: 2px 2px 0 0;
-  cursor: pointer;
   transition: background-color 0.15s;
 }
-.highlight-error:hover,
 .highlight-error.is-active { background-color: #ffe4e6; }
 
 .highlight-warn {
   background-color: #fffbeb;
   border-bottom: 2px solid #f59e0b;
   border-radius: 2px 2px 0 0;
-  cursor: pointer;
   transition: background-color 0.15s;
 }
-.highlight-warn:hover,
 .highlight-warn.is-active { background-color: #fef3c7; }
 
 .highlight-info {
   background-color: #f5f3ff;
   border-bottom: 2px solid #8b5cf6;
   border-radius: 2px 2px 0 0;
-  cursor: pointer;
   transition: background-color 0.15s;
 }
-.highlight-info:hover,
 .highlight-info.is-active { background-color: #ede9fe; }
 
 /* ── Tooltip ──────────────────────────────────────────────────────── */
