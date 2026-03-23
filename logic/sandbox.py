@@ -40,6 +40,24 @@ _SANDBOX_GLOBALS: dict[str, Any] = {
 }
 
 
+def translate_error(raw: str) -> str:
+    """Convert a raw sandbox error string into a plain-language message."""
+    if raw.startswith("Syntax error on line"):
+        return raw.replace("Syntax error", "Typo or formatting issue in the code")
+    if raw.startswith("Runtime error:"):
+        return (
+            "The code ran but hit a problem. "
+            "Details below — share with your developer:\n" + raw
+        )
+    if "No function starting with 'check_'" in raw:
+        return (
+            "The pasted code doesn't contain a rule function. "
+            "Make sure you copied the complete code from your AI assistant, "
+            "including the line that starts with 'def check_'."
+        )
+    return raw
+
+
 def build_regex_check(pattern: str) -> Callable[[Doc], list[dict[str, Any]]]:
     """Return a check function that finds all regex matches in doc.text.
 
