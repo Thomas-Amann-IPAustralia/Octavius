@@ -7,14 +7,22 @@ import re as _re
 import streamlit as st
 
 from logic.engine import get_spacy_status, lint_text
-from logic.sandbox import (
-    build_regex_check,
-    execute_rule_code,
-    parse_rules_entry,
-    parse_test_examples,
-    preprocess_code,
-    translate_error,
-)
+try:
+    from logic.sandbox import (
+        build_regex_check,
+        execute_rule_code,
+        parse_rules_entry,
+        parse_test_examples,
+        preprocess_code,
+        translate_error,
+    )
+except ImportError as _sandbox_err:
+    st.error(
+        f"**Developer tools failed to load.**\n\n"
+        f"`logic/sandbox.py` could not be imported: `{_sandbox_err}`\n\n"
+        "Ensure `logic/sandbox.py` is present and all dependencies are installed."
+    )
+    st.stop()
 from octavius_component import st_octavius_editor
 
 # ── Page config ──────────────────────────────────────────────────────
