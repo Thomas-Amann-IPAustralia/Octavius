@@ -1,0 +1,54 @@
+name: Phase 6 — Publish Rulebook
+
+on:
+  # Manual trigger only — requires explicit approval before publishing
+  workflow_dispatch:
+    inputs:
+      tag_release:
+        description: 'Tag this publish as a versioned release (e.g. rulebook-v1)'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: requirements-pipeline.txt
+
+      - name: Install pipeline dependencies
+        run: pip install -r requirements-pipeline.txt
+
+      - name: Publish rulebook as Parquet
+        run: python src/publish.py
+
+      - name: Push committed files
+        run: |
+          git pull --rebase origin HEAD || true
+          git push origin HEAD
+
+      - name: Tag release (optional)
+        if: ${{ inputs.tag_release != '' }}
+        run: |
+          git tag "${{ inputs.tag_release }}"
+          git push origin "${{ inputs.tag_release }}"
+
+      - name: Display publication metadata
+        run: |
+          echo "## Rulebook Published" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          cat published/rulebook_metadata.json >> $GITHUB_STEP_SUMMARY

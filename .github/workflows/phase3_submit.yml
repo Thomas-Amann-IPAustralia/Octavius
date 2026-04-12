@@ -1,0 +1,51 @@
+name: Phase 3 — Generate Rules as Code (Submit)
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Phase 2 — Rule Extraction (Collect)"]
+    types:
+      - completed
+
+permissions:
+  contents: write
+
+concurrency:
+  group: phase-3-submit
+  cancel-in-progress: false
+
+jobs:
+  submit:
+    # Run on manual dispatch, or when Phase 2 collect completed successfully.
+    # The script itself checks whether Phase 2 collect has actually finished
+    # (batch_state.json empty) and exits gracefully if not.
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: requirements-pipeline.txt
+
+      - name: Install pipeline dependencies
+        run: pip install -r requirements-pipeline.txt
+
+      - name: Submit Phase 3 code generation batches
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MAX_UNASSIGNED_RATIO: ${{ vars.MAX_UNASSIGNED_RATIO || '0.05' }}
+        run: python src/generate_code.py submit
+
+      - name: Push committed changes
+        run: git push origin HEAD

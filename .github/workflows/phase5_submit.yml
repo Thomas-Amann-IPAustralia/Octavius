@@ -1,0 +1,50 @@
+name: Phase 5 — Correct Erroneous Rules (Submit)
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Phase 4 — Run Tests"]
+    types:
+      - completed
+
+permissions:
+  contents: write
+
+concurrency:
+  group: phase-5-submit
+  cancel-in-progress: false
+
+jobs:
+  submit:
+    # Run on manual dispatch, or when Phase 4 completed successfully.
+    # The script checks whether any test_result: fail rows exist and exits
+    # gracefully if there is nothing to correct.
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: requirements-pipeline.txt
+
+      - name: Install pipeline dependencies
+        run: pip install -r requirements-pipeline.txt
+
+      - name: Submit Phase 5 correction batches
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python src/correct_rules.py submit
+
+      - name: Push committed changes
+        run: git push origin HEAD
