@@ -1,0 +1,56 @@
+name: Phase 4 — Run Tests
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Phase 3 — Generate Rules as Code (Collect)"]
+    types:
+      - completed
+
+permissions:
+  contents: write
+
+concurrency:
+  group: phase-4-test
+  cancel-in-progress: false
+
+jobs:
+  test:
+    # Run on manual dispatch, or when Phase 3 collect completed successfully.
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: requirements-pipeline.txt
+
+      - name: Install pipeline dependencies
+        run: pip install -r requirements-pipeline.txt
+
+      - name: Run Phase 4 tests
+        run: python src/run_tests.py
+
+      - name: Upload test report as artefact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-report-${{ github.run_id }}
+          path: test_report.md
+          retention-days: 30
+
+      - name: Push committed changes
+        run: |
+          git pull --rebase origin HEAD || true
+          git push origin HEAD
