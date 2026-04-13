@@ -126,6 +126,45 @@ The engine and UI pick it up automatically — no other changes needed.
 
 ---
 
+## Rulebook creation pipeline (`src/`)
+
+The `src/` directory holds the six-phase GitHub Actions pipeline that builds
+the rulebook from the Australian Government Style Manual. The canonical
+reference for this pipeline is `CLAUDE_Octavius Rulebook Creation Pipeline.md`.
+Workflows live in `.github/workflows/phase*.yml`.
+
+| File | Phase | Role |
+|------|-------|------|
+| `src/scrape.py` | 1 — Markdown Clone | Fetch sitemap, mirror pages to `content/` |
+| `src/extract_rules.py` | 2 — Rule Extraction | LLM batch: page markdown → JSONL rules |
+| `src/generate_code.py` | 3 — Rules as Code | LLM batch: rule → executable trigger code |
+| `src/run_tests.py` | 4 — Test | Execute trigger code against test strings |
+| `src/correct_rules.py` | 5 — Correct | LLM batch (Opus): fix failing rules |
+| `src/publish.py` | 6 — Publish | JSONL → `published/rulebook.parquet` |
+
+### Phase 1 scraping notes
+
+`src/scrape.py` is the Phase 1 entry point. A few conventions it must uphold
+(learned from past failures):
+
+- **Sitemap fetch uses `requests`, not Selenium.** The descriptive
+  `OctaviusRulebookBot/1.0` User-Agent identifies us on non-browser requests,
+  and `requests` avoids Chrome's built-in XML viewer altering the raw bytes
+  via `XMLSerializer`. Selenium is reserved for page fetches, where JS
+  rendering and the stealth User-Agent are needed.
+- **Sitemap indexes are resolved recursively.** The Style Manual is Drupal
+  and its `/sitemap.xml` is typically a `<sitemapindex>` pointing at
+  paginated child sitemaps (`?page=1`, `?page=2`, …). `parse_sitemap` handles
+  both `<urlset>` and `<sitemapindex>` roots and recurses into each nested
+  sitemap, aggregating URLs. A previous regression only searched for `<url>`
+  entries at the root and silently found zero URLs.
+- **Fail loudly on zero URLs.** If parsing yields no URLs, Phase 1 aborts
+  with `SystemExit` and logs a snippet of the response body, so a
+  misconfigured `SITEMAP_URL` or unexpected response can be diagnosed from
+  the Actions log rather than producing a no-op success.
+
+---
+
 ## Testing guidance
 
 - Tests live in `tests/test_engine.py` and use pytest.
