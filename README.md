@@ -116,6 +116,31 @@ User input (Streamlit text area)
 
 ---
 
+## Rulebook creation pipeline
+
+The `src/` directory contains the six-phase GitHub Actions pipeline that builds
+the rulebook from the Australian Government Style Manual. The full design lives
+in `CLAUDE_Octavius Rulebook Creation Pipeline.md`; the scraping step in
+particular is worth knowing about:
+
+**Phase 1 — `src/scrape.py`** mirrors the Style Manual to markdown in
+`content/`. It:
+
+- Fetches the sitemap via `requests` using the `OctaviusRulebookBot/1.0`
+  User-Agent (Selenium is reserved for JS-rendered page fetches, where a
+  browser-like User-Agent is needed).
+- Handles both `<urlset>` and `<sitemapindex>` roots. If the sitemap is an
+  index (as is the case for Drupal's paginated sitemaps), nested sitemaps are
+  fetched and parsed recursively.
+- Aborts with a clear error (and logs a snippet of the response) if parsing
+  yields zero URLs, so a misconfigured `SITEMAP_URL` or unexpected root
+  element is surfaced immediately rather than silently doing nothing.
+
+The sitemap URL is supplied via the `SITEMAP_URL` GitHub Actions secret; the
+workflow lives in `.github/workflows/phase1_scrape.yml`.
+
+---
+
 ## Contributing
 
 Contributions are welcome. The most impactful place to start is adding new rules to `logic/rules.py` — see the section above for how rules are structured.

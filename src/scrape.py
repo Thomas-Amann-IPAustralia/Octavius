@@ -208,28 +208,44 @@ def fetch_with_retry(url: str, driver: webdriver.Chrome) -> Optional[str]:
     return None
 
 
-def fetch_sitemap_with_retry(url: str, driver: webdriver.Chrome) -> Optional[bytes]:
-    """Fetch sitemap XML via Selenium with exponential backoff.
+SITEMAP_NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
 
-    Using Selenium (rather than requests) shares the browser session so the
-    same User-Agent and cookie jar are used for every request, reducing the
-    chance that a WAF silently drops the connection.
+
+def fetch_sitemap_with_retry(url: str) -> Optional[bytes]:
+    """Fetch a sitemap XML document via ``requests`` with exponential backoff.
+
+    The pipeline design (see CLAUDE_Octavius Rulebook Creation Pipeline.md)
+    prescribes using ``requests`` for robots.txt and sitemap fetches so that
+    the descriptive OctaviusRulebookBot User-Agent is sent — and so Chrome's
+    in-browser XML viewer does not interfere with the raw bytes. Full-page
+    fetches continue to use Selenium.
     """
     for attempt in range(3):
         try:
-            driver.get(url)
-            WebDriverWait(driver, PAGE_LOAD_TIMEOUT).until(
-                EC.presence_of_element_located((By.TAG_NAME, "body"))
+            resp = requests.get(
+                url,
+                headers={
+                    "User-Agent": BOT_USER_AGENT,
+                    "Accept": "application/xml,text/xml;q=0.9,*/*;q=0.8",
+                },
+                timeout=30,
             )
-            # XMLSerializer retrieves the raw XML regardless of any in-browser
-            # viewer stylesheet Chrome may apply to .xml responses.
-            xml_text: str = driver.execute_script(
-                "return new XMLSerializer().serializeToString(document)"
-            )
-            if xml_text:
-                return xml_text.encode("utf-8")
-            log.warning("Sitemap fetch returned empty content on attempt %d", attempt + 1)
-        except WebDriverException as e:
+            if resp.status_code in (429, 503):
+                wait = 30 * (2 ** attempt)
+                log.warning(
+                    "Sitemap fetch rate-limited (HTTP %s) on attempt %d. Waiting %ds.",
+                    resp.status_code, attempt + 1, wait,
+                )
+                time.sleep(wait)
+                continue
+            resp.raise_for_status()
+            if not resp.content:
+                log.warning(
+                    "Sitemap fetch returned empty body on attempt %d", attempt + 1
+                )
+                continue
+            return resp.content
+        except requests.RequestException as e:
             wait = 30 * (2 ** attempt)
             log.warning(
                 "Sitemap fetch failed (attempt %d): %s. Waiting %ds.",
@@ -239,6 +255,91 @@ def fetch_sitemap_with_retry(url: str, driver: webdriver.Chrome) -> Optional[byt
 
     log.error("All retries exhausted for sitemap %s", url)
     return None
+
+
+def _local(tag: str) -> str:
+    """Return the local name of an XML tag (strip any ``{ns}`` prefix)."""
+    return tag.split("}", 1)[1] if "}" in tag else tag
+
+
+def parse_sitemap(
+    xml_bytes: bytes,
+    source_url: str,
+    seen: Optional[set] = None,
+) -> list[dict]:
+    """Parse a sitemap XML document and return a list of ``{loc, lastmod}`` dicts.
+
+    Handles both ``<urlset>`` and ``<sitemapindex>`` roots. For sitemap
+    indexes the nested sitemaps are fetched via ``fetch_sitemap_with_retry``
+    and parsed recursively. The ``seen`` set guards against cycles.
+    """
+    if seen is None:
+        seen = set()
+    seen.add(source_url)
+
+    try:
+        root = ET.fromstring(xml_bytes)
+    except ET.ParseError as e:
+        log.error("Failed to parse sitemap XML from %s: %s", source_url, e)
+        log.error("First 500 bytes of response: %r", xml_bytes[:500])
+        return []
+
+    ns = {"sm": SITEMAP_NS}
+    root_local = _local(root.tag).lower()
+
+    urls: list[dict] = []
+
+    if root_local == "sitemapindex":
+        # Nested sitemaps — recurse into each.
+        nested_locs: list[str] = []
+        for sm in root.findall("sm:sitemap", ns) or root.findall("sitemap"):
+            loc = sm.findtext("sm:loc", namespaces=ns)
+            if loc is None:
+                loc_el = sm.find("loc")
+                loc = loc_el.text if loc_el is not None else None
+            if loc:
+                nested_locs.append(loc.strip())
+
+        log.info(
+            "Sitemap at %s is an index with %d nested sitemap(s)",
+            source_url, len(nested_locs),
+        )
+
+        for loc in nested_locs:
+            if loc in seen:
+                log.debug("Skipping already-seen nested sitemap %s", loc)
+                continue
+            log.info("Fetching nested sitemap: %s", loc)
+            nested_bytes = fetch_sitemap_with_retry(loc)
+            if nested_bytes is None:
+                log.warning("Failed to fetch nested sitemap %s — skipping", loc)
+                continue
+            urls.extend(parse_sitemap(nested_bytes, loc, seen))
+            # Small politeness delay between nested sitemap fetches.
+            time.sleep(random.uniform(1, 2))
+        return urls
+
+    if root_local == "urlset":
+        url_elems = root.findall("sm:url", ns) or root.findall("url")
+        for url_elem in url_elems:
+            loc = url_elem.findtext("sm:loc", namespaces=ns)
+            if loc is None:
+                loc_el = url_elem.find("loc")
+                loc = loc_el.text if loc_el is not None else None
+            lastmod = url_elem.findtext("sm:lastmod", namespaces=ns)
+            if lastmod is None:
+                lm_el = url_elem.find("lastmod")
+                lastmod = lm_el.text if lm_el is not None else None
+            if loc:
+                urls.append({"loc": loc.strip(), "lastmod": lastmod})
+        return urls
+
+    log.error(
+        "Unexpected sitemap root element <%s> at %s — expected <urlset> or <sitemapindex>",
+        root.tag, source_url,
+    )
+    log.error("First 500 bytes of response: %r", xml_bytes[:500])
+    return []
 
 
 def url_to_filepath(url: str) -> Path:
@@ -298,33 +399,29 @@ def main() -> None:
     if not check_robots_txt(base_url):
         raise SystemExit("robots.txt check failed. Aborting scrape.")
 
-    # Initialise Selenium driver early — reused for both the sitemap fetch and
-    # individual page fetches so the same browser session/cookies are shared.
+    # Fetch the sitemap via `requests` first (per the pipeline design) so the
+    # descriptive bot User-Agent is used and Chrome's in-browser XML viewer
+    # cannot interfere with the raw bytes. Resolve sitemap indexes recursively.
+    log.info("Fetching sitemap from %s", sitemap_url)
+    sitemap_bytes = fetch_sitemap_with_retry(sitemap_url)
+    if sitemap_bytes is None:
+        raise SystemExit("Failed to fetch sitemap after retries. Aborting.")
+
+    urls = parse_sitemap(sitemap_bytes, sitemap_url)
+    log.info("Found %d URLs in sitemap", len(urls))
+
+    if not urls:
+        raise SystemExit(
+            "Sitemap parsed but yielded 0 URLs. Check the sitemap root element "
+            "and namespace — see the error logs above for a content snippet."
+        )
+
+    # Initialise Selenium driver for per-page fetches (JS rendering + stealth).
     driver = initialize_driver()
     if not driver:
         raise RuntimeError("Failed to initialize WebDriver")
 
     try:
-        # Fetch sitemap XML via Selenium with exponential backoff so a transient
-        # timeout does not immediately fail the entire Phase 1 run.
-        log.info("Fetching sitemap from %s", sitemap_url)
-        sitemap_bytes = fetch_sitemap_with_retry(sitemap_url, driver)
-        if sitemap_bytes is None:
-            raise SystemExit("Failed to fetch sitemap after retries. Aborting.")
-
-        # Parse sitemap
-        root = ET.fromstring(sitemap_bytes)
-        ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
-
-        urls = []
-        for url_elem in root.findall(".//sm:url", ns):
-            loc = url_elem.findtext("sm:loc", namespaces=ns)
-            lastmod = url_elem.findtext("sm:lastmod", namespaces=ns)
-            if loc:
-                urls.append({"loc": loc, "lastmod": lastmod})
-
-        log.info("Found %d URLs in sitemap", len(urls))
-
         # Load sitemap state
         if SITEMAP_STATE_FILE.exists():
             with open(SITEMAP_STATE_FILE) as f:
