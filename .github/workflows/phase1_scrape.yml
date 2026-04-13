@@ -39,7 +39,9 @@ jobs:
 
       - name: Run Phase 1 — scrape Style Manual
         env:
-          SITEMAP_URL: ${{ secrets.SITEMAP_URL }}
+          # src/scrape.py defaults to https://www.stylemanual.gov.au/sitemap.xml.
+          # Override SITEMAP_URL only for testing against a mirror.
+          SITEMAP_URL: ${{ vars.SITEMAP_URL }}
           PROXY_HOST: ${{ secrets.PROXY_HOST }}
           PROXY_PORT: ${{ secrets.PROXY_PORT }}
           PROXY_USER: ${{ secrets.PROXY_USER }}

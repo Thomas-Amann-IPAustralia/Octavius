@@ -126,17 +126,22 @@ particular is worth knowing about:
 **Phase 1 — `src/scrape.py`** mirrors the Style Manual to markdown in
 `content/`. It:
 
-- Fetches the sitemap via `requests` using the `OctaviusRulebookBot/1.0`
-  User-Agent (Selenium is reserved for JS-rendered page fetches, where a
-  browser-like User-Agent is needed).
-- Handles both `<urlset>` and `<sitemapindex>` roots. If the sitemap is an
-  index (as is the case for Drupal's paginated sitemaps), nested sitemaps are
-  fetched and parsed recursively.
-- Aborts with a clear error (and logs a snippet of the response) if parsing
-  yields zero URLs, so a misconfigured `SITEMAP_URL` or unexpected root
-  element is surfaced immediately rather than silently doing nothing.
+- Tries the sitemap with `requests` + the `OctaviusRulebookBot/1.0`
+  User-Agent first, and falls back to Selenium if the WAF drops the
+  request (as `stylemanual.gov.au` started doing in April 2026). Page
+  fetches always use Selenium, where a browser-like User-Agent and JS
+  rendering are needed.
+- Accepts either raw XML or the XSLT-rendered HTML table that browsers
+  receive for the Style Manual's `/sitemap.xml`. Both shapes flow through
+  the same `parse_sitemap` entry point; nested / paginated sitemaps are
+  followed recursively in either case.
+- Aborts with a clear error (and logs a snippet of the response) if
+  parsing yields zero URLs, so a misconfigured `SITEMAP_URL` or unexpected
+  response is surfaced immediately rather than silently doing nothing.
 
-The sitemap URL is supplied via the `SITEMAP_URL` GitHub Actions secret; the
+The sitemap URL defaults to `https://www.stylemanual.gov.au/sitemap.xml`
+and can be overridden via the `SITEMAP_URL` environment variable (set as a
+repository variable, not a secret) for testing against a mirror. The
 workflow lives in `.github/workflows/phase1_scrape.yml`.
 
 ---

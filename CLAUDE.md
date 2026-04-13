@@ -147,17 +147,23 @@ Workflows live in `.github/workflows/phase*.yml`.
 `src/scrape.py` is the Phase 1 entry point. A few conventions it must uphold
 (learned from past failures):
 
-- **Sitemap fetch uses `requests`, not Selenium.** The descriptive
-  `OctaviusRulebookBot/1.0` User-Agent identifies us on non-browser requests,
-  and `requests` avoids Chrome's built-in XML viewer altering the raw bytes
-  via `XMLSerializer`. Selenium is reserved for page fetches, where JS
-  rendering and the stealth User-Agent are needed.
-- **Sitemap indexes are resolved recursively.** The Style Manual is Drupal
-  and its `/sitemap.xml` is typically a `<sitemapindex>` pointing at
-  paginated child sitemaps (`?page=1`, `?page=2`, …). `parse_sitemap` handles
-  both `<urlset>` and `<sitemapindex>` roots and recurses into each nested
-  sitemap, aggregating URLs. A previous regression only searched for `<url>`
-  entries at the root and silently found zero URLs.
+- **Sitemap URL is a hard-coded default.** `src/scrape.py` defaults to
+  `https://www.stylemanual.gov.au/sitemap.xml`. The `SITEMAP_URL` environment
+  variable may override it for testing / mirrors, but it is no longer a
+  GitHub Actions secret — the Style Manual is a public government site.
+- **Sitemap fetch tries `requests` first, then Selenium.** The descriptive
+  `OctaviusRulebookBot/1.0` User-Agent identifies us on non-browser
+  requests. In April 2026 the Style Manual's WAF started silently dropping
+  those requests (every fetch timed out after 30s), so `scrape.py` now falls
+  back to Selenium for the sitemap and `robots.txt` whenever `requests`
+  fails. Page fetches continue to use Selenium exclusively.
+- **Sitemap payload may be XML *or* XSLT-rendered HTML.** The Style Manual's
+  `/sitemap.xml` carries an XSLT stylesheet, so Selenium receives a
+  fully-rendered `<table class="sitemap">` with one row per URL instead of
+  raw XML. `parse_sitemap` sniffs the payload: XML goes through the
+  namespaced `ElementTree` path; HTML goes through a BeautifulSoup table
+  parser that treats the first `<td>` as the URL and the second as
+  `lastmod`. Nested / paginated sitemaps are followed from either shape.
 - **Fail loudly on zero URLs.** If parsing yields no URLs, Phase 1 aborts
   with `SystemExit` and logs a snippet of the response body, so a
   misconfigured `SITEMAP_URL` or unexpected response can be diagnosed from

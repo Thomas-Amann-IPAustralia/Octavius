@@ -107,9 +107,16 @@ All phases that use the Batch API read and write this single file. The schema mu
 
 **What to build in `src/scrape.py`:**
 
-1. Fetch the Style Manual sitemap XML (URL stored as GitHub Actions secret `SITEMAP_URL`).
-2. Before scraping, check `robots.txt` at the sitemap's root domain. If the relevant paths are disallowed or a `Crawl-delay` directive is present, abort with a clear error message and do not proceed. Log the robots.txt response for inspection.
-3. Parse every `<url>` entry; extract `<loc>` and `<lastmod>`.
+1. Fetch the Style Manual sitemap. The URL defaults to
+   `https://www.stylemanual.gov.au/sitemap.xml`; the `SITEMAP_URL`
+   environment variable overrides it for testing against a mirror.
+   (`SITEMAP_URL` is a plain repository variable, not a secret — the Style
+   Manual is public.) Try `requests` with the descriptive
+   `OctaviusRulebookBot/1.0` User-Agent first; if the request is dropped
+   by the site's WAF (as `stylemanual.gov.au` does as of 2026), fall back
+   to the Selenium driver.
+2. Before scraping, check `robots.txt` at the sitemap's root domain. If the relevant paths are disallowed or a `Crawl-delay` directive is present, abort with a clear error message and do not proceed. Log the robots.txt response for inspection. `robots.txt` uses the same `requests`-then-Selenium fallback as the sitemap fetch.
+3. Parse the response as either raw XML (`<urlset>` / `<sitemapindex>`) or the XSLT-rendered HTML table the Style Manual's sitemap serves to browsers (a `<table class="sitemap">` with one row per URL: URL / Last modification date / Change frequency / Priority). Extract `loc` and `lastmod` from each entry. Nested and paginated sitemaps are followed recursively in either shape.
 4. Load `sitemap_state.json` from repo root. On first run, treat all pages as new.
 5. For each new/changed URL: fetch rendered HTML via **Selenium headless Chrome** (see driver initialisation below), strip noise via **BeautifulSoup**, then pass the cleaned HTML through **trafilatura** to convert to clean markdown.
    - **Politeness delay:** Use `time.sleep(random.uniform(2, 4))` between page fetches — randomised to appear more human. Never request two pages back-to-back with no delay.
@@ -222,11 +229,11 @@ WebDriverWait(driver, PAGE_LOAD_TIMEOUT).until(
 ```
 Use `PAGE_LOAD_TIMEOUT = 25` (seconds). After the wait, perform scroll simulation before extracting `driver.page_source`.
 
-**Descriptive User-Agent for robots.txt / sitemap fetch:** When fetching `robots.txt` and the sitemap XML (via `requests`, not Selenium), set a descriptive `User-Agent` that identifies the bot:
+**Descriptive User-Agent for robots.txt / sitemap fetch:** When fetching `robots.txt` and the sitemap via `requests`, set a descriptive `User-Agent` that identifies the bot:
 ```
 OctaviusRulebookBot/1.0 (+https://github.com/<your-org>/octavius-rulebook)
 ```
-This is separate from the stealth User-Agent used in the Chrome driver.
+This is separate from the stealth User-Agent used in the Chrome driver. If the descriptive UA is blocked (as happens on `stylemanual.gov.au`), `scrape.py` falls back to Selenium using the stealth UA so the pipeline still completes.
 
 **Dependencies:** `selenium`, `selenium-stealth`, `webdriver-manager`, `beautifulsoup4`, `lxml`, `trafilatura`, `requests`, `hashlib` (standard library).
 
