@@ -1,5 +1,5 @@
 # Pipeline dependencies for the Octavius Rulebook Creation Pipeline
-anthropic>=0.49.0
+openai>=1.0.0
 selenium>=4.20.0
 selenium-stealth>=1.0.6
 webdriver-manager>=4.0.0

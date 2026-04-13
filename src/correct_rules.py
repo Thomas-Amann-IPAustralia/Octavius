@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Phase 5: Correct failed rules via Anthropic Batch API (Opus model)."""
+"""Phase 5: Correct failed rules via OpenAI Batch API."""
 
+import io
 import json
 import logging
 import os
@@ -10,7 +11,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-import anthropic
+import openai
 
 log = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
@@ -20,7 +21,7 @@ BATCH_STATE_FILE = REPO_ROOT / "batch_state.json"
 RULES_DRAFT_FILE = REPO_ROOT / "rules_working_draft.jsonl"
 AMENDMENT_LOG_FILE = REPO_ROOT / "amendment_log.json"
 
-MODEL = "claude-opus-4-5"
+MODEL = "gpt-4o"
 BUNDLE_SIZE = 3
 
 CORRECTION_SYSTEM_PROMPT = """You are a code-correction specialist for the Octavius plain-language linter.
@@ -40,7 +41,7 @@ Return a JSON array — one object per rule, no preamble, no markdown fences:
     "trigger_code": "<corrected code string, or null if uncorrectable>",
     "issue_summary": "Plain-English description of what was wrong.",
     "correction_summary": "Plain-English description of what was changed.",
-    "correction_model": "claude-opus-4-5"
+    "correction_model": "gpt-4o"
   }
 ]
 ```
@@ -49,7 +50,7 @@ Return a JSON array — one object per rule, no preamble, no markdown fences:
 
 1. Echo `rule_id` EXACTLY from the input — do not modify, shorten, or reformat it.
 2. If a rule cannot be fixed, return `trigger_code: null` and explain clearly in `issue_summary` why it cannot be corrected automatically.
-3. `correction_model` must always be the literal string `"claude-opus-4-5"`.
+3. `correction_model` must always be the literal string `"gpt-4o"`.
 4. Return a JSON array ONLY — no preamble, no explanation, no markdown code fences.
 5. Every rule provided must have a corresponding object in the output array.
 """
@@ -152,8 +153,8 @@ def submit() -> None:
 
     log.info("Submitting %d failed rules for correction", len(failed_rules))
 
-    client = anthropic.Anthropic()
-    batch_requests: list[anthropic.types.message_create_params.Request] = []
+    client = openai.OpenAI()
+    batch_requests: list[dict] = []
 
     for i in range(0, len(failed_rules), BUNDLE_SIZE):
         bundle = failed_rules[i:i + BUNDLE_SIZE]
@@ -170,25 +171,36 @@ def submit() -> None:
             for r in bundle
         ]
 
-        batch_requests.append(
-            anthropic.types.message_create_params.Request(
-                custom_id=f"correction-bundle-{i // BUNDLE_SIZE:04d}",
-                params=anthropic.types.message_create_params.MessageCreateParamsNonStreaming(
-                    model=MODEL,
-                    max_tokens=8192,
-                    system=CORRECTION_SYSTEM_PROMPT,
-                    messages=[{
+        batch_requests.append({
+            "custom_id": f"correction-bundle-{i // BUNDLE_SIZE:04d}",
+            "method": "POST",
+            "url": "/v1/chat/completions",
+            "body": {
+                "model": MODEL,
+                "max_tokens": 8192,
+                "messages": [
+                    {"role": "system", "content": CORRECTION_SYSTEM_PROMPT},
+                    {
                         "role": "user",
                         "content": (
                             f"Fix the following {len(bundle)} failed rules:\n\n"
                             f"{json.dumps(bundle_for_llm, indent=2)}"
                         ),
-                    }],
-                ),
-            )
-        )
+                    },
+                ],
+            },
+        })
 
-    batch = client.messages.batches.create(requests=batch_requests)
+    jsonl_content = "\n".join(json.dumps(r) for r in batch_requests)
+    batch_file = client.files.create(
+        file=io.BytesIO(jsonl_content.encode()),
+        purpose="batch",
+    )
+    batch = client.batches.create(
+        input_file_id=batch_file.id,
+        endpoint="/v1/chat/completions",
+        completion_window="24h",
+    )
     batch_ids = [batch.id]
     log.info("Created batch %s (%d requests)", batch.id, len(batch_requests))
 
@@ -211,12 +223,14 @@ def collect() -> None:
         sys.exit(0)
 
     batch_ids: list[str] = state.get("batch_ids", [])
-    client = anthropic.Anthropic()
+    client = openai.OpenAI()
 
+    # Poll all batches — exit early if any are not yet complete
+    terminal_statuses = {"completed", "failed", "expired", "cancelled"}
     for batch_id in batch_ids:
-        batch = client.messages.batches.retrieve(batch_id)
-        log.info("Batch %s status: %s", batch_id, batch.processing_status)
-        if batch.processing_status != "ended":
+        batch = client.batches.retrieve(batch_id)
+        log.info("Batch %s status: %s", batch_id, batch.status)
+        if batch.status not in terminal_statuses:
             log.info("Batch %s not yet complete. Exiting — cron will retry.", batch_id)
             sys.exit(0)
 
@@ -229,20 +243,28 @@ def collect() -> None:
     amendments: list[dict] = []
 
     for batch_id in batch_ids:
-        for result in client.messages.batches.results(batch_id):
-            if result.result.type != "succeeded":
+        batch = client.batches.retrieve(batch_id)
+        if batch.status != "completed" or not batch.output_file_id:
+            log.warning("Batch %s ended with status %s — skipping", batch_id, batch.status)
+            continue
+        file_content = client.files.content(batch.output_file_id).text
+        for raw_line in file_content.splitlines():
+            raw_line = raw_line.strip()
+            if not raw_line:
+                continue
+            result = json.loads(raw_line)
+            custom_id = result.get("custom_id", "")
+            if result.get("error") or result.get("response", {}).get("status_code") != 200:
                 log.warning(
                     "Batch result error for custom_id=%s: %s",
-                    result.custom_id,
-                    result.result,
+                    custom_id,
+                    result.get("error") or result.get("response"),
                 )
                 continue
 
-            content = result.result.message.content
-            if not content or content[0].type != "text":
-                continue
-
-            text = strip_code_fences(content[0].text)
+            text = strip_code_fences(
+                result["response"]["body"]["choices"][0]["message"]["content"]
+            )
 
             try:
                 returned_objects = json.loads(text)
@@ -251,7 +273,7 @@ def collect() -> None:
             except json.JSONDecodeError as e:
                 log.error(
                     "Could not parse correction response (custom_id=%s): %s\nText: %.300s",
-                    result.custom_id,
+                    custom_id,
                     e,
                     text,
                 )
@@ -262,7 +284,7 @@ def collect() -> None:
                 if not rule_id:
                     log.error(
                         "Correction response missing rule_id (custom_id=%s): %.120s",
-                        result.custom_id,
+                        custom_id,
                         str(obj),
                     )
                     continue
@@ -270,7 +292,7 @@ def collect() -> None:
                     log.error(
                         "Returned rule_id '%s' not found in draft (custom_id=%s) — skipping",
                         rule_id,
-                        result.custom_id,
+                        custom_id,
                     )
                     continue
 

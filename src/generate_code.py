@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Phase 3: Generate executable trigger code for each rule via Anthropic Batch API."""
+"""Phase 3: Generate executable trigger code for each rule via OpenAI Batch API."""
 
+import io
 import json
 import logging
 import os
@@ -11,7 +12,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
-import anthropic
+import openai
 import tiktoken
 
 log = logging.getLogger(__name__)
@@ -22,7 +23,7 @@ BATCH_STATE_FILE = REPO_ROOT / "batch_state.json"
 RULES_DRAFT_FILE = REPO_ROOT / "rules_working_draft.jsonl"
 PROMPTS_DIR = REPO_ROOT / "prompts"
 
-MODEL = "claude-sonnet-4-6"
+MODEL = "gpt-4o"
 
 VALID_TAXONOMIES = frozenset({
     "regex", "spacy", "structural", "lookup",
@@ -179,8 +180,8 @@ def submit() -> None:
 
     log.info("Submitting %d rules for code generation", len(submittable))
 
-    client = anthropic.Anthropic()
-    all_batch_requests: list[anthropic.types.message_create_params.Request] = []
+    client = openai.OpenAI()
+    all_batch_requests: list[dict] = []
 
     # Group by taxonomy so the correct prompt file is used per bundle
     by_taxonomy: dict[str, list[dict]] = {}
@@ -215,25 +216,36 @@ def submit() -> None:
                 "Each object MUST include `rule_id` echoed exactly from input."
             )
 
-            all_batch_requests.append(
-                anthropic.types.message_create_params.Request(
-                    custom_id=f"{taxonomy}--bundle-{i // BUNDLE_SIZE:04d}",
-                    params=anthropic.types.message_create_params.MessageCreateParamsNonStreaming(
-                        model=MODEL,
-                        max_tokens=8192,
-                        system=system_prompt,
-                        messages=[{"role": "user", "content": user_message}],
-                    ),
-                )
-            )
+            all_batch_requests.append({
+                "custom_id": f"{taxonomy}--bundle-{i // BUNDLE_SIZE:04d}",
+                "method": "POST",
+                "url": "/v1/chat/completions",
+                "body": {
+                    "model": MODEL,
+                    "max_tokens": 8192,
+                    "messages": [
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": user_message},
+                    ],
+                },
+            })
 
-    # Submit as one or more batches (Anthropic limit: 10k requests per batch)
+    # Submit as one or more batches (OpenAI limit: 50k requests per batch)
     BATCH_REQUEST_LIMIT = 10000
     batch_ids: list[str] = []
 
     for i in range(0, len(all_batch_requests), BATCH_REQUEST_LIMIT):
         chunk = all_batch_requests[i:i + BATCH_REQUEST_LIMIT]
-        batch = client.messages.batches.create(requests=chunk)
+        jsonl_content = "\n".join(json.dumps(r) for r in chunk)
+        batch_file = client.files.create(
+            file=io.BytesIO(jsonl_content.encode()),
+            purpose="batch",
+        )
+        batch = client.batches.create(
+            input_file_id=batch_file.id,
+            endpoint="/v1/chat/completions",
+            completion_window="24h",
+        )
         batch_ids.append(batch.id)
         log.info("Created batch %s (%d requests)", batch.id, len(chunk))
 
@@ -257,12 +269,14 @@ def collect() -> None:
         sys.exit(0)
 
     batch_ids: list[str] = state.get("batch_ids", [])
-    client = anthropic.Anthropic()
+    client = openai.OpenAI()
 
+    # Poll all batches — exit early if any are not yet complete
+    terminal_statuses = {"completed", "failed", "expired", "cancelled"}
     for batch_id in batch_ids:
-        batch = client.messages.batches.retrieve(batch_id)
-        log.info("Batch %s status: %s", batch_id, batch.processing_status)
-        if batch.processing_status != "ended":
+        batch = client.batches.retrieve(batch_id)
+        log.info("Batch %s status: %s", batch_id, batch.status)
+        if batch.status not in terminal_statuses:
             log.info("Batch %s not yet complete. Exiting — cron will retry.", batch_id)
             sys.exit(0)
 
@@ -275,20 +289,28 @@ def collect() -> None:
     updated_count = 0
 
     for batch_id in batch_ids:
-        for result in client.messages.batches.results(batch_id):
-            if result.result.type != "succeeded":
+        batch = client.batches.retrieve(batch_id)
+        if batch.status != "completed" or not batch.output_file_id:
+            log.warning("Batch %s ended with status %s — skipping", batch_id, batch.status)
+            continue
+        file_content = client.files.content(batch.output_file_id).text
+        for raw_line in file_content.splitlines():
+            raw_line = raw_line.strip()
+            if not raw_line:
+                continue
+            result = json.loads(raw_line)
+            custom_id = result.get("custom_id", "")
+            if result.get("error") or result.get("response", {}).get("status_code") != 200:
                 log.warning(
                     "Batch result error for custom_id=%s: %s",
-                    result.custom_id,
-                    result.result,
+                    custom_id,
+                    result.get("error") or result.get("response"),
                 )
                 continue
 
-            content = result.result.message.content
-            if not content or content[0].type != "text":
-                continue
-
-            text = strip_code_fences(content[0].text)
+            text = strip_code_fences(
+                result["response"]["body"]["choices"][0]["message"]["content"]
+            )
 
             try:
                 returned_objects = json.loads(text)
@@ -297,7 +319,7 @@ def collect() -> None:
             except json.JSONDecodeError as e:
                 log.error(
                     "Could not parse JSON response for custom_id=%s: %s\nText: %.300s",
-                    result.custom_id,
+                    custom_id,
                     e,
                     text,
                 )
@@ -308,7 +330,7 @@ def collect() -> None:
                 if not rule_id:
                     log.error(
                         "Response object missing rule_id (custom_id=%s): %.120s",
-                        result.custom_id,
+                        custom_id,
                         str(obj),
                     )
                     continue
@@ -316,7 +338,7 @@ def collect() -> None:
                     log.error(
                         "Returned rule_id '%s' not found in draft — skipping (custom_id=%s)",
                         rule_id,
-                        result.custom_id,
+                        custom_id,
                     )
                     continue
 

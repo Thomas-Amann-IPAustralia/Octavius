@@ -36,7 +36,7 @@ jobs:
 
       - name: Collect Phase 5 correction results and re-test
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python src/correct_rules.py collect
 
       - name: Upload post-correction test report
