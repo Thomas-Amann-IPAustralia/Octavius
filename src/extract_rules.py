@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Phase 2: Extract style rules from markdown content via Anthropic Batch API."""
+"""Phase 2: Extract style rules from markdown content via OpenAI Batch API."""
 
+import io
 import json
 import logging
 import os
@@ -10,7 +11,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-import anthropic
+import openai
 
 log = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
@@ -21,7 +22,7 @@ BATCH_STATE_FILE = REPO_ROOT / "batch_state.json"
 RULES_DRAFT_FILE = REPO_ROOT / "rules_working_draft.jsonl"
 CONTENT_MANIFEST_FILE = REPO_ROOT / "content_manifest.json"
 
-MODEL = "claude-sonnet-4-6"
+MODEL = "gpt-4o"
 
 # Taxonomy Registry — canonical list included verbatim in extraction prompts
 TAXONOMY_REGISTRY_TABLE = """
@@ -141,10 +142,10 @@ def submit() -> None:
 
     log.info("Preparing to submit %d files for extraction", len(all_files))
 
-    client = anthropic.Anthropic()
+    client = openai.OpenAI()
 
     # Build one batch request per markdown file
-    batch_requests: list[anthropic.types.message_create_params.Request] = []
+    batch_requests: list[dict] = []
     file_custom_ids: list[str] = []
 
     for md_file in all_files:
@@ -163,17 +164,19 @@ def submit() -> None:
             "Return one JSON object per line."
         )
 
-        batch_requests.append(
-            anthropic.types.message_create_params.Request(
-                custom_id=rel_path,
-                params=anthropic.types.message_create_params.MessageCreateParamsNonStreaming(
-                    model=MODEL,
-                    max_tokens=4096,
-                    system=EXTRACTION_SYSTEM_PROMPT,
-                    messages=[{"role": "user", "content": user_message}],
-                ),
-            )
-        )
+        batch_requests.append({
+            "custom_id": rel_path,
+            "method": "POST",
+            "url": "/v1/chat/completions",
+            "body": {
+                "model": MODEL,
+                "max_tokens": 4096,
+                "messages": [
+                    {"role": "system", "content": EXTRACTION_SYSTEM_PROMPT},
+                    {"role": "user", "content": user_message},
+                ],
+            },
+        })
         file_custom_ids.append(rel_path)
 
     # Submit in batches of up to 500 requests each
@@ -188,7 +191,16 @@ def submit() -> None:
             (len(batch_requests) + BATCH_REQUEST_LIMIT - 1) // BATCH_REQUEST_LIMIT,
             len(chunk),
         )
-        batch = client.messages.batches.create(requests=chunk)
+        jsonl_content = "\n".join(json.dumps(r) for r in chunk)
+        batch_file = client.files.create(
+            file=io.BytesIO(jsonl_content.encode()),
+            purpose="batch",
+        )
+        batch = client.batches.create(
+            input_file_id=batch_file.id,
+            endpoint="/v1/chat/completions",
+            completion_window="24h",
+        )
         batch_ids.append(batch.id)
         log.info("Created batch: %s", batch.id)
 
@@ -219,13 +231,14 @@ def collect() -> None:
     if not batch_ids:
         raise SystemExit("No batch IDs found in batch_state.json")
 
-    client = anthropic.Anthropic()
+    client = openai.OpenAI()
 
     # Poll all batches — exit early if any are not yet complete
+    terminal_statuses = {"completed", "failed", "expired", "cancelled"}
     for batch_id in batch_ids:
-        batch = client.messages.batches.retrieve(batch_id)
-        log.info("Batch %s status: %s", batch_id, batch.processing_status)
-        if batch.processing_status != "ended":
+        batch = client.batches.retrieve(batch_id)
+        log.info("Batch %s status: %s", batch_id, batch.status)
+        if batch.status not in terminal_statuses:
             log.info("Batch %s not yet complete. Exiting — cron will retry.", batch_id)
             sys.exit(0)
 
@@ -248,20 +261,26 @@ def collect() -> None:
     new_rules: list[dict] = []
 
     for batch_id in batch_ids:
-        for result in client.messages.batches.results(batch_id):
-            if result.result.type != "succeeded":
+        batch = client.batches.retrieve(batch_id)
+        if batch.status != "completed" or not batch.output_file_id:
+            log.warning("Batch %s ended with status %s — skipping", batch_id, batch.status)
+            continue
+        file_content = client.files.content(batch.output_file_id).text
+        for raw_line in file_content.splitlines():
+            raw_line = raw_line.strip()
+            if not raw_line:
+                continue
+            result = json.loads(raw_line)
+            custom_id = result.get("custom_id", "")
+            if result.get("error") or result.get("response", {}).get("status_code") != 200:
                 log.warning(
                     "Batch result error for custom_id=%s: %s",
-                    result.custom_id,
-                    result.result,
+                    custom_id,
+                    result.get("error") or result.get("response"),
                 )
                 continue
 
-            content = result.result.message.content
-            if not content or content[0].type != "text":
-                continue
-
-            text = content[0].text.strip()
+            text = result["response"]["body"]["choices"][0]["message"]["content"].strip()
             for line in text.splitlines():
                 line = line.strip()
                 if not line:
@@ -271,7 +290,7 @@ def collect() -> None:
                 except json.JSONDecodeError:
                     log.warning(
                         "Could not parse line as JSON (custom_id=%s): %s",
-                        result.custom_id,
+                        custom_id,
                         line[:120],
                     )
                     continue
@@ -284,7 +303,7 @@ def collect() -> None:
                 if not rule_id:
                     log.warning(
                         "Missing rule_id in extracted object (custom_id=%s): %s",
-                        result.custom_id,
+                        custom_id,
                         str(obj)[:120],
                     )
                     continue
