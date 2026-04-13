@@ -1,0 +1,1 @@
+Be clear by being grammatical Keep it simple: plain language Use structure to make it readable: bullet lists Make it accessible and inclusive
