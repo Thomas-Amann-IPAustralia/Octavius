@@ -136,8 +136,8 @@ def check_robots_txt(base_url: str) -> bool:
                     log.warning("robots.txt specifies Crawl-delay: %s. Will respect this.", delay)
         return True
     except Exception as e:
-        log.error("Failed to fetch robots.txt: %s", e)
-        return False
+        log.warning("Could not fetch robots.txt: %s — proceeding anyway.", e)
+        return True
 
 
 def strip_noise(html: str) -> str:
