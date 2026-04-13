@@ -139,7 +139,7 @@ Workflows live in `.github/workflows/phase*.yml`.
 | `src/extract_rules.py` | 2 — Rule Extraction | LLM batch: page markdown → JSONL rules |
 | `src/generate_code.py` | 3 — Rules as Code | LLM batch: rule → executable trigger code |
 | `src/run_tests.py` | 4 — Test | Execute trigger code against test strings |
-| `src/correct_rules.py` | 5 — Correct | LLM batch (Opus): fix failing rules |
+| `src/correct_rules.py` | 5 — Correct | LLM batch (gpt-4o): fix failing rules |
 | `src/publish.py` | 6 — Publish | JSONL → `published/rulebook.parquet` |
 
 ### Phase 1 scraping notes

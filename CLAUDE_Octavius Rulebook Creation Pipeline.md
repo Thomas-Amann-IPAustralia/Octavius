@@ -14,10 +14,10 @@ Six sequential phases, each a discrete GitHub Actions job:
 2. **Rule Extraction** — Submit LLM batch; poll; collect → JSONL of individual rules
 3. **Rules as Code** — Submit LLM batch; poll; collect → executable trigger code per rule
 4. **Test** — Run trigger code against test strings
-5. **Correct** — Submit LLM batch (Opus); poll; collect; re-test via `run_tests.py --only-corrected`
+5. **Correct** — Submit LLM batch (gpt-4o); poll; collect; re-test via `run_tests.py --only-corrected`
 6. **Publish** — JSONL → Parquet snapshot (manual trigger only)
 
-Phases 2, 3, and 5 use the Anthropic Batch API, which can take up to 24 hours. Each is split into a **submit** job and a **collect** job. The collect job is triggered by a cron schedule (hourly poll) that checks batch status and exits early if not yet complete.
+Phases 2, 3, and 5 use the OpenAI Batch API, which can take up to 24 hours. Each is split into a **submit** job and a **collect** job. The collect job is triggered by a cron schedule (hourly poll) that checks batch status and exits early if not yet complete.
 
 Working format throughout: `rules_working_draft.jsonl` (one JSON object per line, Git-committed).
 
@@ -258,7 +258,7 @@ This is separate from the stealth User-Agent used in the Chrome driver. If the d
 1. Verify `content_manifest.json` exists. If it is absent, abort with: `"Phase 2 cannot proceed: content_manifest.json not found. Phase 1 may not have completed successfully."` This guards against reading a partial or uncommitted content state.
 2. Read all `.md` files from `content/`. **Skip any file whose path is already recorded in `batch_state.json` → `processed_files`** (see deduplication below). This prevents re-extraction on re-runs.
 3. For each unprocessed file, construct a prompt that instructs the LLM to identify every discrete style rule and return each as a separate JSONL object. The `taxonomy` field must be drawn from the **Taxonomy Registry** above — include the registry table in the prompt verbatim.
-4. Submit via **Anthropic Batch API**, grouping by sitemap section.
+4. Submit via **OpenAI Batch API**, grouping by sitemap section.
 5. Write to `batch_state.json`:
    ```json
    {
@@ -420,7 +420,7 @@ Supports two modes:
     "trigger_code": "<corrected code string>",
     "issue_summary": "Plain-English description of what was wrong.",
     "correction_summary": "Plain-English description of what was changed.",
-    "correction_model": "claude-opus-4-5"
+    "correction_model": "gpt-4o"
   }
 ]
 ```
@@ -441,7 +441,7 @@ Supports two modes:
      "amended_at": "2025-04-09T10:30:00Z",
      "issue_summary": "Regex over-matched possessive 'its' due to missing word boundary assertion.",
      "correction_summary": "Added \\b boundary anchors around the pattern.",
-     "correction_model": "claude-opus-4-5"
+     "correction_model": "gpt-4o"
    }
    ```
 
