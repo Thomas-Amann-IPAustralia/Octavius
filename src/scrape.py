@@ -208,6 +208,39 @@ def fetch_with_retry(url: str, driver: webdriver.Chrome) -> Optional[str]:
     return None
 
 
+def fetch_sitemap_with_retry(url: str, driver: webdriver.Chrome) -> Optional[bytes]:
+    """Fetch sitemap XML via Selenium with exponential backoff.
+
+    Using Selenium (rather than requests) shares the browser session so the
+    same User-Agent and cookie jar are used for every request, reducing the
+    chance that a WAF silently drops the connection.
+    """
+    for attempt in range(3):
+        try:
+            driver.get(url)
+            WebDriverWait(driver, PAGE_LOAD_TIMEOUT).until(
+                EC.presence_of_element_located((By.TAG_NAME, "body"))
+            )
+            # XMLSerializer retrieves the raw XML regardless of any in-browser
+            # viewer stylesheet Chrome may apply to .xml responses.
+            xml_text: str = driver.execute_script(
+                "return new XMLSerializer().serializeToString(document)"
+            )
+            if xml_text:
+                return xml_text.encode("utf-8")
+            log.warning("Sitemap fetch returned empty content on attempt %d", attempt + 1)
+        except WebDriverException as e:
+            wait = 30 * (2 ** attempt)
+            log.warning(
+                "Sitemap fetch failed (attempt %d): %s. Waiting %ds.",
+                attempt + 1, e, wait,
+            )
+            time.sleep(wait)
+
+    log.error("All retries exhausted for sitemap %s", url)
+    return None
+
+
 def url_to_filepath(url: str) -> Path:
     """Convert a URL to a relative content/ filepath."""
     parsed = urlparse(url)
@@ -265,57 +298,58 @@ def main() -> None:
     if not check_robots_txt(base_url):
         raise SystemExit("robots.txt check failed. Aborting scrape.")
 
-    # Fetch sitemap XML with descriptive bot user-agent
-    log.info("Fetching sitemap from %s", sitemap_url)
-    resp = requests.get(
-        sitemap_url, headers={"User-Agent": BOT_USER_AGENT}, timeout=30
-    )
-    resp.raise_for_status()
-
-    # Parse sitemap
-    root = ET.fromstring(resp.content)
-    ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
-
-    urls = []
-    for url_elem in root.findall(".//sm:url", ns):
-        loc = url_elem.findtext("sm:loc", namespaces=ns)
-        lastmod = url_elem.findtext("sm:lastmod", namespaces=ns)
-        if loc:
-            urls.append({"loc": loc, "lastmod": lastmod})
-
-    log.info("Found %d URLs in sitemap", len(urls))
-
-    # Load sitemap state
-    if SITEMAP_STATE_FILE.exists():
-        with open(SITEMAP_STATE_FILE) as f:
-            sitemap_state = json.load(f)
-    else:
-        sitemap_state = {}
-
-    # Determine which URLs are new or changed
-    urls_to_scrape = [
-        entry for entry in urls
-        if entry["loc"] not in sitemap_state
-        or sitemap_state[entry["loc"]] != entry.get("lastmod")
-    ]
-
-    log.info("%d URLs need scraping (new or changed)", len(urls_to_scrape))
-
-    if not urls_to_scrape:
-        log.info("No new/changed pages. Exiting.")
-        return
-
-    # Initialise Selenium driver
+    # Initialise Selenium driver early — reused for both the sitemap fetch and
+    # individual page fetches so the same browser session/cookies are shared.
     driver = initialize_driver()
     if not driver:
         raise RuntimeError("Failed to initialize WebDriver")
 
-    CONTENT_DIR.mkdir(parents=True, exist_ok=True)
-
-    failed_urls: list[str] = []
-    scraped_files: list[str] = []
-
     try:
+        # Fetch sitemap XML via Selenium with exponential backoff so a transient
+        # timeout does not immediately fail the entire Phase 1 run.
+        log.info("Fetching sitemap from %s", sitemap_url)
+        sitemap_bytes = fetch_sitemap_with_retry(sitemap_url, driver)
+        if sitemap_bytes is None:
+            raise SystemExit("Failed to fetch sitemap after retries. Aborting.")
+
+        # Parse sitemap
+        root = ET.fromstring(sitemap_bytes)
+        ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+
+        urls = []
+        for url_elem in root.findall(".//sm:url", ns):
+            loc = url_elem.findtext("sm:loc", namespaces=ns)
+            lastmod = url_elem.findtext("sm:lastmod", namespaces=ns)
+            if loc:
+                urls.append({"loc": loc, "lastmod": lastmod})
+
+        log.info("Found %d URLs in sitemap", len(urls))
+
+        # Load sitemap state
+        if SITEMAP_STATE_FILE.exists():
+            with open(SITEMAP_STATE_FILE) as f:
+                sitemap_state = json.load(f)
+        else:
+            sitemap_state = {}
+
+        # Determine which URLs are new or changed
+        urls_to_scrape = [
+            entry for entry in urls
+            if entry["loc"] not in sitemap_state
+            or sitemap_state[entry["loc"]] != entry.get("lastmod")
+        ]
+
+        log.info("%d URLs need scraping (new or changed)", len(urls_to_scrape))
+
+        if not urls_to_scrape:
+            log.info("No new/changed pages. Exiting.")
+            return
+
+        CONTENT_DIR.mkdir(parents=True, exist_ok=True)
+
+        failed_urls: list[str] = []
+        scraped_files: list[str] = []
+
         for i, entry in enumerate(urls_to_scrape):
             url = entry["loc"]
             log.info("[%d/%d] Scraping %s", i + 1, len(urls_to_scrape), url)
