@@ -23,7 +23,7 @@ BATCH_STATE_FILE = REPO_ROOT / "batch_state.json"
 RULES_DRAFT_FILE = REPO_ROOT / "rules_working_draft.jsonl"
 PROMPTS_DIR = REPO_ROOT / "prompts"
 
-MODEL = "gpt-4o"
+MODEL = "gpt-5.4-mini"
 
 VALID_TAXONOMIES = frozenset({
     "regex", "spacy", "structural", "lookup",
