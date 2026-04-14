@@ -4,7 +4,6 @@
 import io
 import json
 import logging
-import os
 import re
 import subprocess
 import sys
@@ -309,7 +308,11 @@ def collect() -> None:
                     "correction_model": obj.get("correction_model", MODEL),
                 })
 
-    write_rules(list(rules_by_id.values()))
+    # `rules_by_id` values are the same dict instances as in `rules`, so
+    # updates above are reflected by writing the original list. Writing
+    # `rules` (not `rules_by_id.values()`) preserves original row order and
+    # keeps any rows that lack a rule_id (logged, not dropped).
+    write_rules(rules)
     append_amendments(amendments)
 
     write_batch_state({})

@@ -40,10 +40,10 @@ Return a **JSON array** — one object per rule in the input bundle. No preamble
 
 ## Constraints
 
-1. **Function signature is mandatory:** `trigger_code` MUST define `def check_rule(doc):` where `doc` is a `spacy.tokens.Doc`.
-2. **Return value contract:** Return a non-empty list/truthy on match, empty list/falsy on no match.
-3. **Use spaCy `Matcher` or `DependencyMatcher`** for pattern-based detection where possible. Fallback to token-level iteration for complex logic.
-4. **Import spaCy inside the function** if needed. The `nlp` object is available as a global in the exec namespace.
+1. **Function signature is mandatory:** `trigger_code` MUST define `def check_rule(doc):` where `doc` is a `spacy.tokens.Doc`. The caller tokenises the input via `nlp(text)` before invoking the function — do not call `nlp` on `doc` inside `check_rule`.
+2. **Return value contract:** Return a non-empty list/truthy on match, empty list/falsy on no match. Where possible, return `(start_char, end_char)` tuples so the Octavius UI can highlight the offending span.
+3. **Use spaCy `Matcher` or `DependencyMatcher`** for pattern-based detection where possible. Fallback to token-level iteration for complex logic. If you need `Matcher(nlp.vocab)`, the pre-loaded `nlp` pipeline is exposed as a module-level global in the exec namespace — reference it as `nlp` inside `check_rule` without re-initialising.
+4. **Do not re-load spaCy models.** Never call `spacy.load(...)` inside `trigger_code`; it is expensive and the caller has already loaded `en_core_web_sm`.
 5. **Do not use external libraries** beyond spaCy and Python stdlib.
 6. **Return `trigger_code: null`** if the rule requires semantic understanding beyond spaCy's capabilities.
 7. **Provide at least 3 `test_fire` and 3 `test_no_fire` strings.**
