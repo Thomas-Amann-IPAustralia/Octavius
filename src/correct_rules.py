@@ -20,7 +20,7 @@ BATCH_STATE_FILE = REPO_ROOT / "batch_state.json"
 RULES_DRAFT_FILE = REPO_ROOT / "rules_working_draft.jsonl"
 AMENDMENT_LOG_FILE = REPO_ROOT / "amendment_log.json"
 
-MODEL = "gpt-4o"
+MODEL = "gpt-5.4"
 BUNDLE_SIZE = 3
 
 CORRECTION_SYSTEM_PROMPT = """You are a code-correction specialist for the Octavius plain-language linter.
