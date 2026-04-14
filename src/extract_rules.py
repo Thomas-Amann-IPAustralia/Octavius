@@ -73,7 +73,7 @@ Your task: read the provided markdown content and identify every discrete, enfor
 
 def read_batch_state() -> dict:
     if BATCH_STATE_FILE.exists():
-        with (BATCH_STATE_FILE) as f:
+        with open(BATCH_STATE_FILE) as f:
             content = f.read().strip()
             return json.loads(content) if content else {}
     return {}
