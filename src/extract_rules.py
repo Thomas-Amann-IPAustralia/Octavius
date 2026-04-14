@@ -4,8 +4,6 @@
 import io
 import json
 import logging
-import os
-import re
 import subprocess
 import sys
 from datetime import datetime, timezone
@@ -73,15 +71,6 @@ Your task: read the provided markdown content and identify every discrete, enfor
 """
 
 
-def slugify_path(path_str: str) -> str:
-    """Convert a URL path to a rule_id-safe slug."""
-    slug = path_str.strip("/").replace("/", "--")
-    slug = re.sub(r"[^a-z0-9\-]", "-", slug.lower())
-    slug = re.sub(r"-{2,}", "--", slug)  # preserve -- for path separator
-    slug = slug.strip("-")
-    return slug
-
-
 def read_batch_state() -> dict:
     if BATCH_STATE_FILE.exists():
         with open(BATCH_STATE_FILE) as f:
@@ -93,6 +82,33 @@ def read_batch_state() -> dict:
 def write_batch_state(state: dict) -> None:
     with open(BATCH_STATE_FILE, "w") as f:
         json.dump(state, f, indent=2)
+
+
+def extracted_source_files() -> set[str]:
+    """Return the set of ``source_file`` paths already recorded in the draft.
+
+    ``rules_working_draft.jsonl`` is the persistent record of completed
+    extraction. ``batch_state.json`` is cleared between cycles, so we cannot
+    rely on it alone to avoid re-submitting already-processed pages. Any
+    markdown file that has at least one rule in the draft is considered
+    already extracted and should be skipped on subsequent submits.
+    """
+    seen: set[str] = set()
+    if not RULES_DRAFT_FILE.exists():
+        return seen
+    with open(RULES_DRAFT_FILE) as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                obj = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            source_file = obj.get("source_file")
+            if source_file:
+                seen.add(source_file)
+    return seen
 
 
 def git_commit(message: str, files: list[str]) -> None:
@@ -128,19 +144,33 @@ def submit() -> None:
         )
         sys.exit(0)
 
-    already_processed: set[str] = set(state.get("processed_files", []))
+    # Persistent dedup source: any markdown file that has already produced
+    # rules in rules_working_draft.jsonl has been extracted and must not be
+    # resubmitted. `in_flight` covers the narrower case of a submit that was
+    # retried before its own collect completed.
+    already_extracted = extracted_source_files()
+    in_flight: set[str] = set(state.get("processed_files", []))
+    skip_set = already_extracted | in_flight
 
     # Find all markdown files not yet processed
     all_files = sorted(
         p for p in CONTENT_DIR.rglob("*.md")
-        if str(p.relative_to(REPO_ROOT)) not in already_processed
+        if str(p.relative_to(REPO_ROOT)) not in skip_set
     )
 
     if not all_files:
-        log.info("No new files to process. All content already submitted.")
+        log.info(
+            "No new files to process. %d file(s) already extracted; "
+            "%d file(s) currently in flight.",
+            len(already_extracted), len(in_flight),
+        )
         return
 
-    log.info("Preparing to submit %d files for extraction", len(all_files))
+    log.info(
+        "Preparing to submit %d files for extraction "
+        "(skipping %d already-extracted, %d in-flight)",
+        len(all_files), len(already_extracted), len(in_flight),
+    )
 
     client = openai.OpenAI()
 
@@ -204,12 +234,15 @@ def submit() -> None:
         batch_ids.append(batch.id)
         log.info("Created batch: %s", batch.id)
 
-    # Write batch_state.json
+    # Write batch_state.json. `processed_files` records the paths that are
+    # currently in flight so a retried submit (before collect) does not
+    # double-submit the same files. Persistent dedup across cycles is handled
+    # by extracted_source_files() reading from rules_working_draft.jsonl.
     new_state = {
         "phase": "2",
         "batch_ids": batch_ids,
         "submitted_at": datetime.now(timezone.utc).isoformat(),
-        "processed_files": list(already_processed) + file_custom_ids,
+        "processed_files": sorted(in_flight | set(file_custom_ids)),
     }
     write_batch_state(new_state)
     git_commit("Phase 2: submit extraction batches", ["batch_state.json"])

@@ -1,11 +1,12 @@
 name: Phase 3 — Generate Rules as Code (Submit)
 
+# Manual dispatch only. This job submits an OpenAI Batch API request, which
+# costs tokens — auto-chaining from Phase 2 collect is deliberately disabled
+# so batch submissions only happen when the repo owner explicitly approves
+# them. The script itself checks whether Phase 2 collect has finished
+# (batch_state.json empty) and exits gracefully if not.
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows: ["Phase 2 — Rule Extraction (Collect)"]
-    types:
-      - completed
 
 permissions:
   contents: write
@@ -16,12 +17,6 @@ concurrency:
 
 jobs:
   submit:
-    # Run on manual dispatch, or when Phase 2 collect completed successfully.
-    # The script itself checks whether Phase 2 collect has actually finished
-    # (batch_state.json empty) and exits gracefully if not.
-    if: >
-      github.event_name == 'workflow_dispatch' ||
-      github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
 
     steps:

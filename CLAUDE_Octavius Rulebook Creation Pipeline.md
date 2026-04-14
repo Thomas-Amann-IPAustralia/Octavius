@@ -19,6 +19,26 @@ Six sequential phases, each a discrete GitHub Actions job:
 
 Phases 2, 3, and 5 use the OpenAI Batch API, which can take up to 24 hours. Each is split into a **submit** job and a **collect** job. The collect job is triggered by a cron schedule (hourly poll) that checks batch status and exits early if not yet complete.
 
+### Manual-only LLM submit
+
+**The three `*_submit.yml` workflows (Phases 2, 3, 5) are `workflow_dispatch`
+only** — they are never auto-chained from the previous phase. Only the repo
+owner triggers them, which is the only way a token-consuming batch is ever
+sent. Cron-driven `*_collect.yml` jobs and the test job (Phase 4) do not
+consume tokens, so they continue to run automatically:
+
+| Workflow | Trigger | Costs tokens? |
+|---|---|---|
+| `phase1_scrape.yml` | manual + monthly cron | no |
+| `phase2_submit.yml` | manual only | **yes** |
+| `phase2_collect.yml` | manual + hourly cron | no (polls only) |
+| `phase3_submit.yml` | manual only | **yes** |
+| `phase3_collect.yml` | manual + hourly cron | no (polls only) |
+| `phase4_test.yml` | manual + after Phase 3 collect | no |
+| `phase5_submit.yml` | manual only | **yes** |
+| `phase5_collect.yml` | manual + hourly cron | no (polls + re-test) |
+| `phase6_publish.yml` | manual only | no |
+
 Working format throughout: `rules_working_draft.jsonl` (one JSON object per line, Git-committed).
 
 ---
@@ -250,13 +270,13 @@ This is separate from the stealth User-Agent used in the Chrome driver. If the d
 
 ### Phase 2 — Rule Extraction
 
-**Trigger:** `phase2_submit.yml` runs after Phase 1 (or manual dispatch). `phase2_collect.yml` runs on hourly cron, checks batch status, exits early if not complete.
+**Trigger:** `phase2_submit.yml` is `workflow_dispatch` only — it never auto-chains from Phase 1 because batch submission consumes LLM tokens. `phase2_collect.yml` runs on hourly cron (plus manual dispatch), checks batch status, and exits early if not complete.
 
 **What to build in `src/extract_rules.py`:**
 
 **Submit mode** (`extract_rules.py submit`):
 1. Verify `content_manifest.json` exists. If it is absent, abort with: `"Phase 2 cannot proceed: content_manifest.json not found. Phase 1 may not have completed successfully."` This guards against reading a partial or uncommitted content state.
-2. Read all `.md` files from `content/`. **Skip any file whose path is already recorded in `batch_state.json` → `processed_files`** (see deduplication below). This prevents re-extraction on re-runs.
+2. Read all `.md` files from `content/`. **Skip any file that already has rules in `rules_working_draft.jsonl`** (matched by the `source_file` field — this is the persistent dedup source across pipeline cycles) and any file currently in flight (`batch_state.json` → `processed_files`, which guards against a retried submit before its own collect completes). This prevents re-extraction — and so prevents wasted tokens — on re-runs.
 3. For each unprocessed file, construct a prompt that instructs the LLM to identify every discrete style rule and return each as a separate JSONL object. The `taxonomy` field must be drawn from the **Taxonomy Registry** above — include the registry table in the prompt verbatim.
 4. Submit via **OpenAI Batch API**, grouping by sitemap section.
 5. Write to `batch_state.json`:
@@ -270,7 +290,7 @@ This is separate from the stealth User-Agent used in the Chrome driver. If the d
      ]
    }
    ```
-   `processed_files` lists every source file included in this submission. On re-runs, files already listed here are skipped.
+   `processed_files` lists every source file included in the current in-flight submission. Cross-cycle persistence of "already extracted" is provided by `rules_working_draft.jsonl` — on a fresh cycle `batch_state.json` is `{}`, but files are still skipped if they already have rules in the draft.
 6. Git-commit `batch_state.json`.
 
 **Collect mode** (`extract_rules.py collect`):
@@ -297,7 +317,7 @@ This is separate from the stealth User-Agent used in the Chrome driver. If the d
 
 ### Phase 3 — Generate Rules as Code
 
-**Trigger:** `phase3_submit.yml` runs after Phase 2 collect completes. `phase3_collect.yml` runs on hourly cron.
+**Trigger:** `phase3_submit.yml` is `workflow_dispatch` only — batch submission consumes LLM tokens, so it never auto-chains from Phase 2 collect. `phase3_collect.yml` runs on hourly cron (plus manual dispatch).
 
 **What to build in `src/generate_code.py`:**
 
@@ -392,7 +412,7 @@ Supports two modes:
 
 ### Phase 5 — Correct Erroneous Rules
 
-**Trigger:** `phase5_submit.yml` runs after Phase 4 when any `test_result: fail` rows exist. `phase5_collect.yml` runs on hourly cron.
+**Trigger:** `phase5_submit.yml` is `workflow_dispatch` only — batch submission consumes LLM tokens, so it never auto-chains from Phase 4. The script exits gracefully if there are no `test_result: fail` rows to correct. `phase5_collect.yml` runs on hourly cron (plus manual dispatch).
 
 **What to build in `src/correct_rules.py`:**
 

@@ -1,11 +1,10 @@
 name: Phase 2 — Rule Extraction (Submit)
 
+# Manual dispatch only. This job submits an OpenAI Batch API request, which
+# costs tokens — auto-chaining from Phase 1 is deliberately disabled so that
+# batch submissions only happen when the repo owner explicitly approves them.
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows: ["Phase 1 — Markdown Clone"]
-    types:
-      - completed
 
 permissions:
   contents: write
@@ -16,10 +15,6 @@ concurrency:
 
 jobs:
   submit:
-    # Run on manual dispatch, or when Phase 1 completed successfully
-    if: >
-      github.event_name == 'workflow_dispatch' ||
-      github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
 
     steps:

@@ -1,11 +1,12 @@
 name: Phase 5 — Correct Erroneous Rules (Submit)
 
+# Manual dispatch only. This job submits an OpenAI Batch API request, which
+# costs tokens — auto-chaining from Phase 4 is deliberately disabled so that
+# batch submissions only happen when the repo owner explicitly approves them.
+# The script itself checks whether any test_result: fail rows exist and
+# exits gracefully if there is nothing to correct.
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows: ["Phase 4 — Run Tests"]
-    types:
-      - completed
 
 permissions:
   contents: write
@@ -16,12 +17,6 @@ concurrency:
 
 jobs:
   submit:
-    # Run on manual dispatch, or when Phase 4 completed successfully.
-    # The script checks whether any test_result: fail rows exist and exits
-    # gracefully if there is nothing to correct.
-    if: >
-      github.event_name == 'workflow_dispatch' ||
-      github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
 
     steps:
