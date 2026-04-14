@@ -20,7 +20,7 @@ BATCH_STATE_FILE = REPO_ROOT / "batch_state.json"
 RULES_DRAFT_FILE = REPO_ROOT / "rules_working_draft.jsonl"
 CONTENT_MANIFEST_FILE = REPO_ROOT / "content_manifest.json"
 
-MODEL = "gpt-4o"
+MODEL = "gpt-5.4-mini"
 
 # Taxonomy Registry — canonical list included verbatim in extraction prompts
 TAXONOMY_REGISTRY_TABLE = """
@@ -73,7 +73,7 @@ Your task: read the provided markdown content and identify every discrete, enfor
 
 def read_batch_state() -> dict:
     if BATCH_STATE_FILE.exists():
-        with open(BATCH_STATE_FILE) as f:
+        with (BATCH_STATE_FILE) as f:
             content = f.read().strip()
             return json.loads(content) if content else {}
     return {}
