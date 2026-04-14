@@ -222,7 +222,7 @@ def submit() -> None:
                 "url": "/v1/chat/completions",
                 "body": {
                     "model": MODEL,
-                    "max_tokens": 8192,
+                    "max_completion_tokens": 8192,
                     "messages": [
                         {"role": "system", "content": system_prompt},
                         {"role": "user", "content": user_message},
