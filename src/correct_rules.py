@@ -40,7 +40,7 @@ Return a JSON array — one object per rule, no preamble, no markdown fences:
     "trigger_code": "<corrected code string, or null if uncorrectable>",
     "issue_summary": "Plain-English description of what was wrong.",
     "correction_summary": "Plain-English description of what was changed.",
-    "correction_model": "gpt-4o"
+    "correction_model": "gpt-5.4"
   }
 ]
 ```
@@ -49,7 +49,7 @@ Return a JSON array — one object per rule, no preamble, no markdown fences:
 
 1. Echo `rule_id` EXACTLY from the input — do not modify, shorten, or reformat it.
 2. If a rule cannot be fixed, return `trigger_code: null` and explain clearly in `issue_summary` why it cannot be corrected automatically.
-3. `correction_model` must always be the literal string `"gpt-4o"`.
+3. `correction_model` must always be the literal string `"gpt-5.4"`.
 4. Return a JSON array ONLY — no preamble, no explanation, no markdown code fences.
 5. Every rule provided must have a corresponding object in the output array.
 """
@@ -176,7 +176,7 @@ def submit() -> None:
             "url": "/v1/chat/completions",
             "body": {
                 "model": MODEL,
-                "max_tokens": 8192,
+                "max_completion_tokens": 8192,
                 "messages": [
                     {"role": "system", "content": CORRECTION_SYSTEM_PROMPT},
                     {
