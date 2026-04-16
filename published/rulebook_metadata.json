@@ -1,0 +1,18 @@
+{
+  "published_at": "2026-04-16T17:30:52.788736+00:00",
+  "total_rules": 3114,
+  "by_taxonomy": {
+    "semantic": 1497,
+    "lookup": 529,
+    "structural": 504,
+    "regex": 197,
+    "contextual": 191,
+    "discretionary": 188,
+    "multi-modal": 8
+  },
+  "fail_count": 61,
+  "skip_count": 2064,
+  "frozen_count": 188,
+  "unassigned_count": 0,
+  "sha256": "b81a6d3806baa30352de94a7597db09e6e0ae3cce2f1cfae53402729c66bf39c"
+}
