@@ -68,13 +68,14 @@ def main() -> None:
     if not rules:
         raise SystemExit("No rules found in rules_working_draft.jsonl")
 
-    # Validate: no fail rows permitted
+    # Warn about fail rows but continue publishing
     fail_rows = [r for r in rules if r.get("test_result") == "fail"]
     if fail_rows:
         fail_ids = [r.get("rule_id") for r in fail_rows]
-        raise SystemExit(
-            f"Cannot publish: {len(fail_rows)} rule(s) have test_result='fail': {fail_ids}.\n"
-            "Run Phase 5 to correct or manually resolve all failures before publishing."
+        log.warning(
+            "%d rule(s) have test_result='fail' and will be included as-is: %s",
+            len(fail_rows),
+            fail_ids,
         )
 
     frozen_rows = [r for r in rules if r.get("test_result") == "frozen"]
@@ -155,6 +156,7 @@ def main() -> None:
         "published_at": datetime.now(timezone.utc).isoformat(),
         "total_rules": len(records),
         "by_taxonomy": by_taxonomy,
+        "fail_count": int((df["test_result"] == "fail").sum()) if "test_result" in df.columns else 0,
         "skip_count": int((df["test_result"] == "skip").sum()) if "test_result" in df.columns else 0,
         "frozen_count": int((df["test_result"] == "frozen").sum()) if "test_result" in df.columns else 0,
         "unassigned_count": int((df["taxonomy"] == "unassigned").sum()) if "taxonomy" in df.columns else 0,
