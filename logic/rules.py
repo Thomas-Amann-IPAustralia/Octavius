@@ -1,10 +1,12 @@
-"""Octavius rules — vertical slice: passive voice only."""
+"""Octavius rules — passive voice plus all passing rules from rulebook.parquet."""
 
 from __future__ import annotations
 
 from typing import Any, List
 
 from spacy.tokens import Doc
+
+from logic.rulebook_loader import load_rulebook_rules
 
 
 def check_passive_voice(doc: Doc) -> List[dict[str, Any]]:
@@ -37,14 +39,14 @@ def check_passive_voice(doc: Doc) -> List[dict[str, Any]]:
     return results
 
 
-RULES = [
-    {
-        "id": "PASSIVE-VOICE-001",
-        "title": "Passive voice detected",
-        "message": "Passive voice can reduce clarity. Consider rewriting in active voice.",
-        "severity": "warn",
-        "category": "Grammar",
-        "suggestion": None,
-        "check": check_passive_voice,
-    },
-]
+_PASSIVE_VOICE_RULE = {
+    "id": "PASSIVE-VOICE-001",
+    "title": "Passive voice detected",
+    "message": "Passive voice can reduce clarity. Consider rewriting in active voice.",
+    "severity": "warn",
+    "category": "Grammar",
+    "suggestion": None,
+    "check": check_passive_voice,
+}
+
+RULES = [_PASSIVE_VOICE_RULE] + load_rulebook_rules()
