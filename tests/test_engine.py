@@ -1,7 +1,8 @@
-"""Tests for the Octavius linting engine and passive-voice rule."""
+"""Tests for the Octavius linting engine and rules."""
 
 from logic.engine import get_spacy_status, lint_text
-from logic.rules import RULES
+from logic.rules import RULES, _PASSIVE_VOICE_RULE
+from logic.rulebook_loader import load_rulebook_rules
 
 
 def test_spacy_loads():
@@ -10,7 +11,7 @@ def test_spacy_loads():
 
 def test_passive_voice_detected():
     text = "The report was written by the team."
-    findings = lint_text(text, RULES)
+    findings = lint_text(text, [_PASSIVE_VOICE_RULE])
     assert len(findings) >= 1
     assert findings[0]["rule_id"] == "PASSIVE-VOICE-001"
     assert findings[0]["severity"] == "warn"
@@ -19,13 +20,13 @@ def test_passive_voice_detected():
 
 def test_active_voice_clean():
     text = "The team wrote the report."
-    findings = lint_text(text, RULES)
+    findings = lint_text(text, [_PASSIVE_VOICE_RULE])
     assert findings == []
 
 
 def test_multiple_passives():
     text = "The cake was eaten and the song was sung."
-    findings = lint_text(text, RULES)
+    findings = lint_text(text, [_PASSIVE_VOICE_RULE])
     assert len(findings) == 2
 
 
@@ -40,3 +41,26 @@ def test_finding_keys():
 def test_empty_text():
     findings = lint_text("", RULES)
     assert findings == []
+
+
+def test_rulebook_loads():
+    rules = load_rulebook_rules()
+    assert len(rules) > 0
+    rule = rules[0]
+    assert {"id", "title", "message", "severity", "category", "suggestion", "check"}.issubset(rule.keys())
+    assert callable(rule["check"])
+
+
+def test_lookup_rule_fires():
+    rules = load_rulebook_rules()
+    abbrev_rules = [r for r in rules if r["id"] == "about-style-manual--changelog-003"]
+    assert len(abbrev_rules) == 1, "Abbreviation rule should be loaded from parquet"
+
+    text_with_abbrev = "The meeting is scheduled for Tue."
+    findings = lint_text(text_with_abbrev, abbrev_rules)
+    assert len(findings) >= 1
+    assert findings[0]["rule_id"] == "about-style-manual--changelog-003"
+
+    text_without_abbrev = "The meeting is scheduled for Tuesday."
+    findings_clean = lint_text(text_without_abbrev, abbrev_rules)
+    assert findings_clean == []
