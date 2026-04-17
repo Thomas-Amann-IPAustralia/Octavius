@@ -5,8 +5,9 @@
 Octavius is a plain-language linter for Australian Public Service (APS) content. It analyzes text for style violations (e.g. passive voice) and highlights them inline with suggestions and detailed findings.
 
 The stack is:
-- **Backend:** Python + spaCy NLP + Streamlit
-- **Frontend:** React 18 + TypeScript + Tailwind CSS (embedded as a Streamlit custom component)
+- **Backend:** Python + spaCy NLP + FastAPI (primary) / Streamlit (legacy)
+- **Frontend:** Vanilla HTML/JS single-page app (`index.html`) served by FastAPI (primary) / React 18 + TypeScript + Tailwind CSS embedded as a Streamlit custom component (legacy)
+- **Rulebook:** 3 114 rules published to `published/rulebook.parquet` by a six-phase GitHub Actions pipeline
 
 This is a vertical-slice MVP. The passive voice rule is the proof-of-concept; the architecture is designed for easy rule expansion.
 
@@ -14,7 +15,14 @@ This is a vertical-slice MVP. The passive voice rule is the proof-of-concept; th
 
 ## Commands
 
-### Run the app
+### Run the app (FastAPI — primary)
+```bash
+uvicorn main:app --reload
+# API at http://localhost:8000
+# Open index.html in a browser pointing to http://localhost:8000
+```
+
+### Run the app (Streamlit — legacy)
 ```bash
 streamlit run app.py
 # Opens at http://localhost:8501
@@ -38,6 +46,31 @@ cd frontend && npm run build
 ---
 
 ## Architecture
+
+### Primary (FastAPI + vanilla JS)
+
+```
+User types in index.html (300 ms debounce)
+        │
+        ▼  POST /check  {text, rule_groups}
+   main.py  ──►  logic/engine.lint_text(text, active_rules)
+                        │
+                        ▼
+               spaCy NLP pipeline (en_core_web_sm)
+                        │
+                        ▼
+           logic/rules.check_*(doc)  ×N rules
+                        │
+                        ▼
+     Findings [{rule_id, group, message, start, end, severity, suggestion}]
+                        │
+                        ▼
+       index.html — overlay highlights + findings panel + rule-group toggles
+```
+
+`main.py` also exposes `GET /groups` which returns the distinct rule categories and their counts so the frontend can render the filter checkboxes.
+
+### Legacy (Streamlit)
 
 ```
 User input (Streamlit text area)
@@ -66,17 +99,91 @@ The React component lives in `frontend/` and is compiled to `frontend/build/`. S
 
 | File | Role |
 |------|------|
-| `app.py` | Streamlit entry point — layout, session state, passing data to React |
+| `main.py` | FastAPI entry point — `/groups` and `/check` endpoints |
+| `index.html` | Standalone vanilla HTML/JS frontend (861 LOC) |
+| `render.yaml` | Render.com deployment config (uvicorn, Python 3.11) |
+| `app.py` | Legacy Streamlit entry point — layout, session state, passing data to React |
 | `logic/engine.py` | `lint_text(text, rules)` — runs all rules against a spaCy Doc |
 | `logic/rules.py` | `RULES` list + individual `check_*` functions |
 | `tests/test_engine.py` | Pytest unit tests for the linting engine |
-| `frontend/src/OctaviusEditor.tsx` | Root React component |
-| `frontend/src/components/` | TextEditor, FindingsPanel, FindingCard, etc. |
+| `frontend/src/OctaviusEditor.tsx` | Root React component (legacy) |
+| `frontend/src/components/` | TextEditor, FindingsPanel, FindingCard, RulesPanel, StatsHeader, SeverityBadge, Tooltip |
 | `frontend/src/hooks/useHighlights.ts` | Slices text into plain/highlighted segments |
-| `frontend/src/types.ts` | Shared TypeScript types (Finding, Rule) |
+| `frontend/src/types.ts` | Shared TypeScript types (Finding, RuleMeta, ComponentArgs) |
 | `library_of_rules/` | Reference rule content from the Australian Government Style Manual |
 | `library_of_rules/SiteMap.md` | Navigation index for the rule library |
 | `library_of_rules/Octavius_Rulebook_Column_Reference.docx` | Column reference for rule authoring |
+| `published/rulebook.parquet` | Published rulebook — 3 114 rules (see schema below) |
+| `published/rulebook_metadata.json` | Counts by taxonomy, test result, etc. |
+
+---
+
+## Frontend (`index.html`)
+
+The standalone frontend is a single HTML file with embedded CSS and JavaScript. No build step is required.
+
+**Layout:** three-pane split
+- **Editor pane** — `<textarea>` overlaid by a `<div>` backdrop that renders coloured `<span>` highlights in exact typographic alignment
+- **Issues tab** — filterable list of finding cards (error / warn / info), each showing rule ID, message, and suggestion
+- **Rules tab** — rule-group checkboxes with enabled/total counts; selections persist in `localStorage`
+
+**Key behaviours:**
+- Linting is debounced 300 ms after each keystroke; in-flight requests are aborted before a new one fires
+- Clicking a highlight in the editor scrolls to and activates the corresponding finding card, and vice versa
+- Hovering over a highlight shows a tooltip with rule ID, severity, message, and suggestion
+- The `API_BASE` constant at the top of the script (defaults to `""`, i.e. same origin) can be changed for local development
+
+**Severity colour scheme:**
+
+| Severity | Highlight colour | Badge colour |
+|----------|-----------------|--------------|
+| `error`  | Rose            | Rose         |
+| `warning`| Amber           | Amber        |
+| `info`   | Violet          | Violet       |
+
+---
+
+## Parquet / JSONL schema
+
+`published/rulebook.parquet` and `rules_working_draft.jsonl` share the same column schema. This is the canonical shape of a rule record throughout the pipeline.
+
+| Column | Type | Description |
+|--------|------|-------------|
+| `rule_id` | string | Unique identifier, e.g. `"grammar--active-voice-001"` |
+| `source_url` | string | Style Manual page the rule was extracted from |
+| `source_file` | string | Local mirrored path, e.g. `"content/grammar/active-voice.md"` |
+| `rule_summary` | string | One-sentence plain-English summary of the rule |
+| `rule_detail` | string | Longer explanation used in the UI message |
+| `taxonomy` | string | Detection family: `lookup` \| `regex` \| `structural` \| `semantic` \| `contextual` \| `discretionary` \| `multi-modal` |
+| `discretionary_flag` | bool | `true` if the rule is advisory / not enforced |
+| `method` | string | Concrete detection method (mirrors taxonomy) |
+| `requires` | list[string] | Rule IDs that must fire first (dependency list) |
+| `method_notes` | string | Notes on the detection approach written during Phase 3 |
+| `trigger_code` | string | Executable Python: `def check_rule(text, lookup_list) -> list[dict]` |
+| `ui_flag` | string | Message displayed in the UI when the rule fires |
+| `test_fire` | list[string] | Strings that **must** trigger the rule (Phase 4 positive tests) |
+| `test_no_fire` | list[string] | Strings that **must not** trigger the rule (Phase 4 negative tests) |
+| `lookup_list` | list[string] | Terms to match for `lookup`-taxonomy rules (empty for other methods) |
+| `test_result` | string | `"pass"` \| `"fail"` \| `"skip"` \| `"frozen"` |
+| `error_log` | string | Error or failure detail from Phase 4 / Phase 5 |
+| `correction_model` | string | Model used to correct the rule in Phase 5, if applicable |
+| `extracted_at` | string | ISO 8601 timestamp — Phase 2 extraction |
+| `code_generated_at` | string | ISO 8601 timestamp — Phase 3 code generation |
+| `test_run_at` | string | ISO 8601 timestamp — Phase 4 test execution |
+
+The parquet file is written by `src/publish.py` using PyArrow with an explicit schema; the JSONL file is the line-delimited JSON equivalent written by `src/run_tests.py` and `src/correct_rules.py`.
+
+**Taxonomy distribution (current published rulebook, 3 114 rules):**
+
+| Taxonomy | Count |
+|----------|-------|
+| semantic | 1 497 |
+| lookup | 529 |
+| structural | 504 |
+| regex | 197 |
+| contextual | 191 |
+| discretionary | 188 |
+| multi-modal | 8 |
 
 ---
 
@@ -185,3 +292,5 @@ Workflows live in `.github/workflows/phase*.yml`.
 **Python:** Use type hints (TypedDict, list, Optional). Follow existing module structure. No linter is configured; match the style of surrounding code.
 
 **TypeScript:** Strict mode is enabled. Use the existing `Finding` and `Rule` types from `types.ts`. Style with Tailwind utility classes.
+
+**HTML/JS (`index.html`):** Vanilla ES2020. No build step. Keep all logic in the single file; extract constants to the top of the `<script>` block.
