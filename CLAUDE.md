@@ -171,6 +171,45 @@ Workflows live in `.github/workflows/phase*.yml`.
 
 ---
 
+## Rulebook schema (JSONL and Parquet)
+
+The working draft (`rules_working_draft.jsonl`) and the published artefact
+(`published/rulebook.parquet`) share the same column schema. The JSONL is the
+mutable, line-delimited format used throughout Phases 2–5; Phase 6
+(`src/publish.py`) converts it to Parquet (Snappy-compressed) with proper Arrow
+types for list columns.
+
+| Column | Type | Set by | Description |
+|--------|------|--------|-------------|
+| `rule_id` | string | Phase 2 | Unique stable identifier, e.g. `about-style-manual--changelog-001` |
+| `source_url` | string | Phase 2 | Base URL of the Style Manual page the rule came from |
+| `source_file` | string | Phase 2 | Relative path to the mirrored markdown file in `content/` |
+| `rule_summary` | string | Phase 2 | One-sentence plain-English statement of the rule |
+| `rule_detail` | string | Phase 2 | 1–3 sentence expansion with rationale |
+| `taxonomy` | string | Phase 2 | Detection category: `regex`, `spacy`, `structural`, `lookup`, `semantic`, `contextual`, `discretionary`, `multi-modal`, or `unassigned` |
+| `discretionary_flag` | boolean | Phase 2 | `true` when the source uses permissive language ("may", "consider", "optional") |
+| `extracted_at` | string | Phase 2 | ISO 8601 timestamp of extraction |
+| `method` | string | Phase 3 | Concrete detection approach (`regex`, `spacy`, `lookup`, `structural`, `manual`, …) |
+| `requires` | list[string] | Phase 3 | Python packages or spaCy components the trigger code depends on |
+| `method_notes` | string | Phase 3 | Implementation notes for the detection method |
+| `trigger_code` | string\|null | Phase 3 | Executable Python snippet; `null` for `semantic`, `discretionary`, and `multi-modal` rules that cannot be auto-detected |
+| `ui_flag` | string | Phase 3 | Short user-facing message shown in the findings panel |
+| `test_fire` | list[string] | Phase 3 | Example strings where the rule **should** trigger |
+| `test_no_fire` | list[string] | Phase 3 | Example strings where the rule **should not** trigger |
+| `lookup_list` | list[string] | Phase 3 | Reference word/phrase list for `lookup`-taxonomy rules |
+| `code_generated_at` | string | Phase 3 | ISO 8601 timestamp of code generation |
+| `test_result` | string | Phase 4 | Last test outcome: `pass`, `fail`, `skip`, or `frozen` |
+| `test_run_at` | string | Phase 4 | ISO 8601 timestamp of last test run |
+| `error_log` | string\|null | Phase 4 | Error output captured during testing; `null` on success |
+| `correction_model` | string\|null | Phase 5 | Model identifier used when Phase 5 rewrote the trigger code; `null` if no correction was needed |
+
+> **Parquet-only note:** `requires`, `test_fire`, `test_no_fire`, and
+> `lookup_list` are stored as `list<string>` Arrow arrays in the Parquet file.
+> The JSONL represents them as JSON arrays (or `null`); `src/publish.py`
+> normalises `null` → `[]` and bare strings → `[value]` before writing.
+
+---
+
 ## Testing guidance
 
 - Tests live in `tests/test_engine.py` and use pytest.
