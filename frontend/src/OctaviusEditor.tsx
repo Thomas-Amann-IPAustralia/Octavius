@@ -1,106 +1,36 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import { Streamlit, withStreamlitConnection, ComponentProps } from 'streamlit-component-lib'
 import { FileText, Sliders } from 'lucide-react'
 import type { Finding, PanelTab, ComponentArgs } from './types'
+import { useOctaviusState } from './hooks/useOctaviusState'
 import { StatsHeader } from './components/StatsHeader'
 import { TextEditor } from './components/TextEditor'
 import { FindingsPanel } from './components/FindingsPanel'
 import { RulesPanel } from './components/RulesPanel'
 
-type StreamlitValue = { text: string; activeRuleIds: string[] }
-
-const DEBOUNCE_MS = 1000
-
 const OctaviusEditor: React.FC<ComponentProps> = (props) => {
   const { text = '', findings = [], rules = [] } = (props.args ?? {}) as ComponentArgs
 
-  // Active rule IDs — initialised to all rules enabled
-  const [activeRuleIds, setActiveRuleIds] = useState<Set<string>>(
-    () => new Set(rules.map((r) => r.id))
-  )
-
-  // Keep activeRuleIds in sync if rules list changes (e.g., new rules added)
-  useEffect(() => {
-    setActiveRuleIds(prev => {
-      const next = new Set(prev)
-      rules.forEach(r => { if (!next.has(r.id)) next.add(r.id) })
-      return next
-    })
-  }, [rules])
+  const state = useOctaviusState(text, findings, rules)
+  const { handleFindingClick: stateHandleFindingClick } = state
 
   const [activeTab, setActiveTab] = useState<PanelTab>('issues')
-  const [activeFindingId, setActiveFindingId] = useState<string | null>(null)
-  const [localText, setLocalText] = useState<string>(text)
-  const [isAnalysing, setIsAnalysing] = useState(false)
-
-  // Track the last text we sent to Python for analysis
-  const lastSentTextRef = useRef<string>(text)
-
-  // Sync incoming text prop — only if it matches what we last sent
-  // (prevents overwriting user's in-progress edits during round-trip)
-  useEffect(() => {
-    if (text === lastSentTextRef.current) {
-      setLocalText(text)
-    }
-  }, [text])
 
   // Adjust Streamlit frame height to fit content
   useEffect(() => { Streamlit.setFrameHeight() })
 
-  const handleTextChange = useCallback((newText: string) => {
-    setLocalText(newText)
-  }, [])
-
-  // Debounced auto-analysis: send to Streamlit 1s after typing stops
-  useEffect(() => {
-    if (!localText.trim() || localText === lastSentTextRef.current) return
-    const timer = setTimeout(() => {
-      lastSentTextRef.current = localText
-      setIsAnalysing(true)
-      const value: StreamlitValue = {
-        text: localText,
-        activeRuleIds: Array.from(activeRuleIds),
-      }
-      Streamlit.setComponentValue(value)
-      setTimeout(() => setIsAnalysing(false), 600)
-    }, DEBOUNCE_MS)
-    return () => clearTimeout(timer)
-  }, [localText, activeRuleIds])
-
-  // Manual Analyse button — force immediate analysis
-  const handleAnalyse = useCallback(() => {
-    lastSentTextRef.current = localText
-    setIsAnalysing(true)
-    const value: StreamlitValue = {
-      text: localText,
-      activeRuleIds: Array.from(activeRuleIds),
-    }
-    Streamlit.setComponentValue(value)
-    setTimeout(() => setIsAnalysing(false), 600)
-  }, [localText, activeRuleIds])
-
+  // Switch to issues tab when a finding is clicked
   const handleFindingClick = useCallback((finding: Finding) => {
-    setActiveFindingId(finding.rule_id)
+    stateHandleFindingClick(finding)
     setActiveTab('issues')
-  }, [])
-
-  const handleToggleRule = useCallback((ruleId: string) => {
-    setActiveRuleIds(prev => {
-      const next = new Set(prev)
-      next.has(ruleId) ? next.delete(ruleId) : next.add(ruleId)
-      return next
-    })
-  }, [])
-
-  // Only show findings when text matches what was analyzed (not stale)
-  const effectiveFindings = localText === lastSentTextRef.current ? findings : []
+  }, [stateHandleFindingClick])
 
   const TABS: { id: PanelTab; label: string; icon: React.ReactNode; count?: number }[] = [
     {
       id: 'issues',
       label: 'Issues',
       icon: <FileText size={13} />,
-      count: effectiveFindings.length,
+      count: state.effectiveFindings.length,
     },
     {
       id: 'rules',
@@ -115,30 +45,27 @@ const OctaviusEditor: React.FC<ComponentProps> = (props) => {
       className="flex flex-col bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm"
       style={{ fontFamily: '"Plus Jakarta Sans", Inter, system-ui, sans-serif', minHeight: 480 }}
     >
-      {/* ── Header ──────────────────────────────────────────────── */}
       <StatsHeader
-        findings={effectiveFindings}
-        isAnalysing={isAnalysing}
-        onAnalyse={handleAnalyse}
+        findings={state.effectiveFindings}
+        isAnalysing={state.isAnalysing}
+        onAnalyse={state.handleAnalyse}
       />
 
-      {/* ── Two-column body ──────────────────────────────────────── */}
       <div className="flex flex-1 overflow-hidden" style={{ minHeight: 420 }}>
 
         {/* Left: Text editor */}
         <div className="flex-1 flex flex-col overflow-hidden border-r border-slate-200 bg-white">
           <TextEditor
-            text={localText}
-            findings={effectiveFindings}
-            activeId={activeFindingId}
-            onTextChange={handleTextChange}
+            text={state.localText}
+            findings={state.effectiveFindings}
+            activeId={state.activeFindingId}
+            onTextChange={state.handleTextChange}
             onFindingClick={handleFindingClick}
           />
         </div>
 
         {/* Right: Findings + Rules panel */}
         <div className="w-80 flex-shrink-0 flex flex-col bg-white overflow-hidden">
-          {/* Tab bar */}
           <div className="flex border-b border-slate-100 px-4 pt-2 gap-1">
             {TABS.map(tab => (
               <button
@@ -163,19 +90,18 @@ const OctaviusEditor: React.FC<ComponentProps> = (props) => {
             ))}
           </div>
 
-          {/* Panel content */}
           <div className="flex-1 overflow-hidden">
             {activeTab === 'issues' ? (
               <FindingsPanel
-                findings={effectiveFindings}
-                activeId={activeFindingId}
+                findings={state.effectiveFindings}
+                activeId={state.activeFindingId}
                 onFindingClick={handleFindingClick}
               />
             ) : (
               <RulesPanel
                 rules={rules}
-                activeRuleIds={activeRuleIds}
-                onToggle={handleToggleRule}
+                activeRuleIds={state.activeRuleIds}
+                onToggle={state.handleToggleRule}
               />
             )}
           </div>

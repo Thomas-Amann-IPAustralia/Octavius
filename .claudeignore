@@ -1,0 +1,17 @@
+# Pipeline scripts — see CLAUDE_Octavius Rulebook Creation Pipeline.md
+src/
+
+# Generated pipeline artefacts
+content/
+published/
+archive/
+prompts/
+
+# Pipeline state files (committed artefacts, not webpage code)
+amendment_log.json
+batch_state.json
+sitemap_state.json
+rules_working_draft.jsonl
+
+# Reference documents (not code)
+library_of_rules/

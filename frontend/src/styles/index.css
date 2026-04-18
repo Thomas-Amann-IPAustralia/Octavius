@@ -102,19 +102,6 @@ body {
 }
 .highlight-info.is-active { background-color: #ede9fe; }
 
-/* ── Tooltip ──────────────────────────────────────────────────────── */
-.octavius-tooltip {
-  position: fixed;
-  z-index: 9999;
-  pointer-events: none;
-  animation: tooltipFadeIn 0.12s ease-out;
-}
-
-@keyframes tooltipFadeIn {
-  from { opacity: 0; transform: translateY(4px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
 /* ── Finding card active state ────────────────────────────────────── */
 .finding-card.is-active {
   border-color: #a78bfa;
