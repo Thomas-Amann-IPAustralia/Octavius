@@ -198,9 +198,9 @@ Dixon JC and Bolitho B (2005–2019) *Course notes and exercises: Editing and pr
 
 Murphy EM with Cadman H (2014) *Effective writing: plain English at work*, 2nd edition, Lacuna, 2014.
 
-Perlman M (2017) ‘[How to properly use [sic]](https://archives.cjr.org/language_corner/language_corner_080914.php)’, *Columbia Journalism Review,* viewed 19 December 2019,
+Perlman M (2017) ‘How to properly use [sic]’, *Columbia Journalism Review,* viewed 19 December 2019.
 
-Perlman M (2017) ‘[Pardon my parentheticals](https://www.cjr.org/language_corner/parentheticals.php)’, *Columbia Journalism Review,* viewed 19 December 2019,
+Perlman M (2017) ‘[Pardon my parentheticals](https://www.cjr.org/language_corner/parentheticals.php)’, *Columbia Journalism Review,* viewed 19 December 2019.
 
 Seely J (2001) *Oxford everyday grammar*, Oxford Paperback Reference.
 
@@ -208,7 +208,7 @@ Stilman S (2004) *Grammatically correct*, Writer’s Digest Books, 2004; revised
 
 Truss L (2003) *Eats, shoots and leaves: the zero tolerance approach to punctuation*, Profile Books, London, 2003.
 
-U.S. Government Publishing Office (2016) ‘8: punctuation’, * Government Publishing Office style manual*, U.S. Government Publishing Office, accessed 13 May 2020.
+U.S. Government Publishing Office (2016) ‘8: punctuation’, [ Government Publishing Office style manual](https://www.govinfo.gov/collection/gpo-style-manual?path=/gpo/U.S.%20Government%20Publishing%20Office%20Style%20Manual/2016), U.S. Government Publishing Office, accessed 13 May 2020.
 
 ### Last updated
 
