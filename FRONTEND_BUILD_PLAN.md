@@ -202,53 +202,212 @@ Out of scope for this branch: Aho-Corasick, web workers, vector embeddings, LLM 
 
 ---
 
-## 4. Prompt to give Claude Code
+## 4. Prompts to give Claude Code (one per session)
 
-Paste the block below as a single prompt. It is self-contained — do not rely on chat history. Read it once, then send it.
+### 4.0 Why split this across sessions
 
-> **Build the Octavius V1 rulebook frontend on branch `claude/create-frontend-interface-gHRNo`.**
->
-> **Context — read these first, in this order:**
-> 1. `octavius_frontend_spec.md` — the contract for the frontend (Option A, FastAPI + static HTML, debounced `/check`, overlay highlights, GitHub Pages + Render).
-> 2. `A-synch_SuggestionForApproach.md` — note the "Important note" at the bottom: V1 scope is **only** the rules whose `test_result == "pass"`, with per-`rule_id` and per-taxonomy disable controls. Do **not** implement the Aho-Corasick / vector / LLM waterfall — those are explicitly future state.
-> 3. `FRONTEND_BUILD_PLAN.md` — the architectural plan and build sequence. Follow the file layout in §2.2 and the build sequence in §3 unless you find a specific reason not to (state the reason if so).
-> 4. `CLAUDE.md` — project conventions, commands, rule schema.
->
-> **Inputs you can rely on:**
-> - `published/rulebook.parquet` (3,114 rows; filter `test_result == "pass"` → 801 rules: 415 lookup, 124 regex, 262 structural).
-> - Existing `main.py` (FastAPI), `index.html` (vanilla frontend), `logic/engine.py`, `logic/sandbox.py`, `render.yaml`. **Extend, do not rewrite from scratch.**
->
-> **Deliverables (one branch, one push, no PR unless I ask):**
-> 1. New backend module tree under `logic/rulebook/` (`loader.py`, `adapters.py`, `spans.py`, `types.py`) and `routes/` (`check.py`, `rules.py`).
-> 2. A `dispatcher.run_rules(text, disabled_rule_ids, disabled_taxonomies)` that returns `list[Finding]`, sorted by `(start, rule_id)`.
-> 3. Three taxonomy adapters:
->    - `regex`: precompile the bare pattern, `finditer` for spans.
->    - `lookup`: execute the trigger code's `check_rule(text, lookup_list)`; for each returned term, recover offsets via `\b<re.escape(term)>\b` (case-insensitive); if no span recoverable, emit a **document-level** finding (`start=0, end=0, document_level=true`).
->    - `structural`: execute `check_rule(text)` inside a restricted-builtins namespace patterned on `logic/sandbox.py`; treat returned items the same way as lookup — span if recoverable, document-level otherwise.
-> 4. Rewrite `main.py` so it composes the new routes, keeps CORS open, and **fails loudly on parquet load errors** (no silent fallback to `logic.rules.RULES`).
-> 5. New endpoints: `GET /rules` (full catalogue: `rule_id, taxonomy, ui_flag, rule_summary, source_url`), `GET /taxonomies` (counts). `POST /check` accepts `{ text, disabled_rule_ids?, disabled_taxonomies? }` and returns the legacy spec fields plus additive fields (`taxonomy, ui_flag, source_url, document_level`). Keep accepting the legacy `rule_groups` field but ignore it with a single deprecation log line on startup.
-> 6. Extend `index.html` (do **not** introduce a build step):
->    - Replace the Rules panel's group checkboxes with a searchable, taxonomy-grouped list of all rules. Per-rule checkbox + per-taxonomy bulk toggle. Persist `octavius.disabledRuleIds` and `octavius.disabledTaxonomies` in `localStorage`. Migrate the legacy `octavius-groups` key on first load.
->    - Findings panel shows `ui_flag` as the headline, `rule_summary` underneath, and links the `rule_id` to `source_url`. Document-level findings render with a "Document" badge instead of scroll-to.
->    - Add `window.OCTAVIUS_API_BASE` override (defaults to the existing constant) so GitHub Pages can point at Render without editing the file.
-> 7. Tests under `tests/`:
->    - `test_rulebook_loader.py`: every passing rule compiles; loader is loud on bad input.
->    - `test_adapters_regex.py`, `test_adapters_lookup.py`, `test_adapters_structural.py`: pick 5 rules per taxonomy, run their own `test_fire` examples through the adapter and assert at least one finding; run their `test_no_fire` examples and assert none.
->    - `test_dispatcher.py`: smoke-run all 800 rules over a multi-paragraph document; assert no exceptions and that disabling a taxonomy zeroes its findings.
->    Run `pytest tests/ -v` and make every test pass before you commit.
-> 8. Add `pyarrow` to `requirements.txt`. Verify `render.yaml` still works (no edits expected).
-> 9. Add `.github/workflows/deploy_pages.yml` that publishes `index.html` to the `gh-pages` branch on push to `main`. Do **not** trigger it from this branch.
-> 10. Manually smoke-test locally: `uvicorn main:app --reload`, open `index.html` in a browser, type sentences that should fire one rule from each taxonomy, confirm highlights for `regex`/`lookup` and a document-level entry for `structural`. Note the smoke-test results in your final summary.
->
-> **Hard constraints:**
-> - Develop only on `claude/create-frontend-interface-gHRNo`. Commit in logical chunks (loader+adapters → dispatcher+routes → frontend → tests → workflow). Push when done. Do **not** open a PR.
-> - Do not modify the `src/` pipeline, the `.github/workflows/phase*.yml` files, the `archive/` directory, the `library_of_rules/` content, or `rules_working_draft.jsonl`.
-> - Do not introduce any V1.5/V2 features (Aho-Corasick, web workers, embeddings, LLM stages, auth, persistence, React).
-> - The published parquet is the runtime source of truth. Do **not** read `rules_working_draft.jsonl` at runtime.
-> - Keep the `Finding` field set additive: existing `index.html` users (and any later React port) must keep working without changes.
->
-> **Definition of done:** all tests pass, `uvicorn main:app` boots in <5 s with the 800-rule rulebook loaded, the local smoke test highlights findings from each taxonomy, and the branch is pushed. Reply with a short summary listing files added, files changed, test counts, and any deviations from this plan.
+A single prompt for the full build is risky:
+
+- **Context budget.** Reading the spec, the A-synch doc, the plan, `main.py`, `index.html`, `logic/sandbox.py`, sample parquet rows, plus generating the new modules and tests, will eat a large fraction of any single session's context.
+- **Verifiability.** Each phase has a clean external check (`python -c "from logic.dispatcher import run_rules; ..."` for S1, `curl localhost:8000/check` for S2, opening `index.html` in a browser for S3). You — the user — should run that check between sessions and only proceed if it passes.
+- **Scope discipline.** Three focused sessions are far less likely to drift into "while I'm here, let me also..." territory than one open-ended one.
+
+The work is split into three sessions, each with its own self-contained prompt below. **Run them in order.** Each session commits and pushes its own slice, then stops. Hand the next prompt to a **fresh Claude Code session** — do not continue in the same session, since the value of the split is the context reset.
+
+| Session | Slice | Definition of done |
+|---|---|---|
+| **S1 — Engine** | `logic/rulebook/` loader + adapters + spans + types, `logic/dispatcher.py`, plus their unit tests. No FastAPI changes, no frontend changes. | `pytest tests/` green, and `python -c "from logic.dispatcher import run_rules; print(len(run_rules('The cat was chased by the dog.')))"` returns a non-empty list. |
+| **S2 — Service** | Rewrite `main.py`, add `routes/check.py` and `routes/rules.py`, `pyarrow` in `requirements.txt`. Backend smoke tests via curl. | `uvicorn main:app` boots in <5 s, `curl /rules` returns 800 entries, `curl -X POST /check` returns findings with the new additive fields, legacy `rule_groups` payload still accepted. |
+| **S3 — Delivery** | Extend `index.html`, add `.github/workflows/deploy_pages.yml`, end-to-end smoke test in a browser. | One regex highlight, one lookup highlight, and one structural document-level finding visible in the UI; per-rule and per-taxonomy disable persists across reload. Branch pushed. |
+
+If a session hits a real blocker (e.g. a rule's trigger code panics on import), record it in the commit message and stop — do not paper over it. The next session's prompt assumes the previous session's outputs are correct.
 
 ---
 
-*End of plan. Save this file (`FRONTEND_BUILD_PLAN.md`) and use the §4 prompt to drive the implementation in a fresh Claude Code session.*
+### 4.1 Session 1 — Engine (loader + adapters + dispatcher)
+
+> **Octavius V1 frontend rebuild — Session 1 of 3 (Engine).**
+>
+> **Read in this order, then start coding:**
+> 1. `FRONTEND_BUILD_PLAN.md` — read §1, §2, and §3 in full. The file layout in §2.2 and the adapter contracts in §2.3 are the authoritative spec for this session.
+> 2. `octavius_frontend_spec.md` — context only; no API work in this session.
+> 3. `A-synch_SuggestionForApproach.md` — **mandatory**: note the "Important note" at the bottom. V1 scope is **only** rules with `test_result == "pass"`. Do not implement Aho-Corasick, dirty-range tracking, vector embeddings, or LLM stages.
+> 4. `CLAUDE.md` — project conventions.
+> 5. `logic/engine.py`, `logic/rules.py`, `logic/sandbox.py` — the existing engine layer. Re-use the sandbox pattern; do not duplicate it.
+> 6. `src/run_tests.py` — confirms the trigger-code calling conventions per taxonomy (`check_rule(text, lookup_list)` for lookup, `check_rule(text)` for structural, bare regex string for regex).
+> 7. Inspect a few rows of `published/rulebook.parquet` (e.g. `python -c "import pyarrow.parquet as pq; t = pq.read_table('published/rulebook.parquet'); print(t.schema); print(t.to_pandas().head(2).to_dict())"`).
+>
+> **Branch:** Develop on `claude/create-frontend-interface-gHRNo`. It already exists; check it out.
+>
+> **Scope of this session — engine only. Do NOT touch `main.py`, `index.html`, or any FastAPI/route file.**
+>
+> **Deliverables:**
+> 1. `logic/rulebook/__init__.py`, `logic/rulebook/types.py` (`CompiledRule` TypedDict matching §2.3).
+> 2. `logic/rulebook/loader.py`:
+>    - Reads `published/rulebook.parquet` via `pyarrow`.
+>    - Filters `test_result == "pass"` → expect 801 rules (415 lookup, 124 regex, 262 structural). Log the counts at INFO level.
+>    - Calls the right adapter per taxonomy and returns `list[CompiledRule]`.
+>    - Fails loudly (raises) on missing parquet, unknown taxonomy, or any rule whose trigger code fails to compile. Never silently swallow.
+> 3. `logic/rulebook/spans.py`:
+>    - `find_term_spans(text: str, term: str) -> list[tuple[int, int]]` using `\b` + `re.escape(term)` + `\b`, case-insensitive.
+> 4. `logic/rulebook/adapters.py` — three pure functions, each `dict -> CompiledRule`:
+>    - `compile_regex(rule)` — precompile pattern with `re.IGNORECASE`; `check(text)` returns one Finding per `finditer` match.
+>    - `compile_lookup(rule)` — `compile()` the trigger code once into a restricted namespace (mirror `logic/sandbox._SANDBOX_GLOBALS`); the cached `check_rule` is invoked with `(text, lookup_list)`; for each returned term, attach offsets via `spans.find_term_spans` (one Finding per occurrence). If a returned term yields no span, emit a single document-level Finding (`start=0, end=0, document_level=True`).
+>    - `compile_structural(rule)` — same compile-once approach; call `check_rule(text)`; treat each returned item as lookup (span if recoverable, document-level otherwise).
+>    - The Finding produced by every adapter must include: `start_char`, `end_char`, `rule_id`, `taxonomy`, `ui_flag`, `rule_summary`, `source_url`, `severity`, `document_level`. Default `severity` is `"warning"`; if `discretionary_flag == True`, use `"info"`.
+> 5. `logic/dispatcher.py`:
+>    - On import, calls the loader once and caches the rule list at module scope.
+>    - `run_rules(text: str, disabled_rule_ids: set[str] | None = None, disabled_taxonomies: set[str] | None = None) -> list[Finding]` — runs every enabled rule sequentially; sorts findings by `(start_char, rule_id)`; never raises on a single rule failure (catch, log, continue — but the loader has already validated the rule list, so this is a defence-in-depth measure).
+> 6. Add `pyarrow` to `requirements.txt`.
+> 7. Tests under `tests/`:
+>    - `test_rulebook_loader.py`: assert 801 rules load; assert taxonomy counts (415/124/262); assert loader raises on a tampered parquet path.
+>    - `test_adapters_regex.py`, `test_adapters_lookup.py`, `test_adapters_structural.py`: for 5 rules per taxonomy, run each rule's own `test_fire` examples through the adapter and assert ≥1 finding; run `test_no_fire` examples and assert 0 findings. Use parametrize.
+>    - `test_dispatcher.py`: smoke-run all 800 rules over a paragraph that includes at least one trigger phrase per taxonomy; assert no exceptions; assert `disabled_taxonomies={"structural"}` zeroes structural findings.
+>
+> **Run `pytest tests/ -v` and make every test pass before committing.**
+>
+> **Hard constraints:**
+> - Do not modify `main.py`, `index.html`, `routes/`, `frontend/`, `app.py`, `pages/`, `src/`, `archive/`, `library_of_rules/`, or `rules_working_draft.jsonl`.
+> - Do not introduce future-state features (Aho-Corasick, web workers, embeddings, LLM, spaCy/Doc rules — there are zero passing spaCy rules, so do not branch for them).
+> - The published parquet is the runtime source of truth.
+> - Keep `logic/engine.py` and `logic/rules.py` working as they are; the legacy single-rule path must still pass `pytest tests/test_engine.py`.
+>
+> **Commit and push:**
+> - One or two commits is fine. Push to `claude/create-frontend-interface-gHRNo` with `git push -u origin claude/create-frontend-interface-gHRNo`.
+> - Do **not** open a PR.
+>
+> **Definition of done — reply with this exact summary block:**
+> ```
+> S1 ENGINE — DONE
+> rules loaded: <count> (<lookup>/<regex>/<structural>)
+> tests:        <pass> passed, <fail> failed
+> files added:  <list>
+> files changed:<list>
+> deviations:   <none | bullets>
+> next:         hand off to S2 (Service)
+> ```
+
+---
+
+### 4.2 Session 2 — Service (FastAPI routes)
+
+> **Octavius V1 frontend rebuild — Session 2 of 3 (Service). S1 (Engine) is already complete on this branch — verify before extending.**
+>
+> **Read in this order:**
+> 1. `FRONTEND_BUILD_PLAN.md` — re-read §2.4 (API contract) and §3 steps 4–5.
+> 2. `octavius_frontend_spec.md` — §5 (API contract) is binding for backwards compatibility.
+> 3. The S1 outputs on this branch: `logic/rulebook/`, `logic/dispatcher.py`. Confirm they import cleanly and that `pytest tests/test_rulebook_loader.py tests/test_adapters_*.py tests/test_dispatcher.py -v` is green. If anything is broken, fix it before continuing.
+> 4. The current `main.py` and `index.html`, especially the existing `/check` and `/groups` shapes — `index.html` will keep talking to this backend until S3 ships the new frontend, so the old request shape must keep working.
+>
+> **Branch:** continue on `claude/create-frontend-interface-gHRNo`. Pull the latest first.
+>
+> **Scope of this session — backend service only. Do NOT touch `index.html` or any frontend file.**
+>
+> **Deliverables:**
+> 1. `routes/__init__.py`, `routes/check.py`, `routes/rules.py`:
+>    - `GET /rules` returns the full catalogue from the dispatcher's cached rule list — `rule_id, taxonomy, ui_flag, rule_summary, source_url, severity` per entry.
+>    - `GET /taxonomies` returns `[{"id": "lookup", "rule_count": 415}, ...]`.
+>    - `POST /check` accepts a Pydantic `CheckRequest` with `text: str`, optional `disabled_rule_ids: list[str]`, optional `disabled_taxonomies: list[str]`, and the legacy optional `rule_groups: list[str]` (accepted but ignored, with a single startup deprecation log).
+>    - `POST /check` calls `dispatcher.run_rules` and returns objects shaped as: `{rule_id, group, taxonomy, ui_flag, rule_summary, source_url, message, start, end, severity, document_level}`. `group` mirrors `taxonomy` for legacy `index.html` compatibility. `message` is the `ui_flag` (so legacy frontends still surface something readable). `start`/`end` are the Finding's `start_char`/`end_char`.
+> 2. Rewrite `main.py`:
+>    - Compose the routes from `routes/`.
+>    - Keep CORS `allow_origins=["*"]` for now (the spec allows narrowing later).
+>    - On startup: import `logic.dispatcher` (forces the loader to run); on parquet failure, **fail boot** rather than starting in a broken state.
+>    - Keep the legacy `GET /groups` route as a thin alias that returns the same shape `index.html` currently consumes (taxonomy id + name + rule_count) so the unmodified frontend keeps loading until S3.
+>    - Remove the now-obsolete category-based logic that read `logic.rules.RULES` for `/groups` — but keep `logic/rules.py` itself untouched (S1 invariant).
+> 3. New tests under `tests/`:
+>    - `test_routes_rules.py`: `GET /rules` returns 800 entries with the expected fields. `GET /taxonomies` returns three taxonomies with correct counts.
+>    - `test_routes_check.py`: `POST /check` with a sentence that fires one rule per taxonomy returns a finding for each; disabled_rule_ids removes a specific rule from the response; disabled_taxonomies removes a whole taxonomy; legacy `rule_groups` payload is accepted without error.
+>    Use `fastapi.testclient.TestClient`. Run `pytest tests/ -v` and make every test pass.
+> 4. **Manual smoke test** (record exact output in your final summary):
+>    - `uvicorn main:app --port 8000` in the background.
+>    - `curl -s localhost:8000/rules | python -m json.tool | head -40`.
+>    - `curl -s localhost:8000/taxonomies`.
+>    - `curl -s -X POST localhost:8000/check -H 'Content-Type: application/json' -d '{"text":"The meeting is on Tue and Thu. The cat was chased by the dog."}'`.
+>    - Stop the server.
+>
+> **Hard constraints:**
+> - Do not modify S1 outputs except to fix bugs you discover. Note any such fix in the summary.
+> - Do not modify `index.html`, `frontend/`, `app.py`, `pages/`, `src/`, `archive/`, `library_of_rules/`, or `rules_working_draft.jsonl`.
+> - The Finding field set is additive — never remove fields the legacy frontend reads (`rule_id`, `group`, `message`, `start`, `end`, `severity`).
+>
+> **Commit and push:** one commit per logical chunk (routes → main.py rewrite → tests). Push to `claude/create-frontend-interface-gHRNo`. Do not open a PR.
+>
+> **Definition of done — reply with this exact summary block:**
+> ```
+> S2 SERVICE — DONE
+> uvicorn boot:    <seconds>
+> /rules count:    <n>
+> /taxonomies:     <list>
+> /check sample:   <one-line excerpt of the smoke-test response>
+> tests:           <pass> passed, <fail> failed
+> files added:     <list>
+> files changed:   <list>
+> S1 fixes:        <none | bullets>
+> deviations:      <none | bullets>
+> next:            hand off to S3 (Delivery)
+> ```
+
+---
+
+### 4.3 Session 3 — Delivery (frontend + deploy)
+
+> **Octavius V1 frontend rebuild — Session 3 of 3 (Delivery). S1 (Engine) and S2 (Service) are already complete on this branch — verify before extending.**
+>
+> **Read in this order:**
+> 1. `FRONTEND_BUILD_PLAN.md` — re-read §2.5 (frontend changes) and §3 steps 7–10.
+> 2. `octavius_frontend_spec.md` — §6 (frontend behaviour) and §7 (build plan) are binding.
+> 3. Current `index.html` end-to-end. The existing overlay-highlight rendering, debounce, AbortController, tabbed sidebar, and tooltip all stay. You are extending, not replacing.
+> 4. The S2 outputs: `routes/`, the new `main.py`. Confirm `pytest tests/ -v` is green and that `uvicorn main:app` boots locally before changing the frontend.
+>
+> **Branch:** continue on `claude/create-frontend-interface-gHRNo`. Pull the latest first.
+>
+> **Scope of this session — frontend, deploy workflow, and end-to-end verification only. Do NOT change backend code unless you find a bug; if you do, note it in the summary.**
+>
+> **Deliverables:**
+> 1. Extend `index.html` (single file, no build step):
+>    - **API_BASE override.** At the top of the script: `const API_BASE = window.OCTAVIUS_API_BASE || '<existing constant>';` so a `<script>window.OCTAVIUS_API_BASE = '...'</script>` injected by the GitHub Pages build can retarget the backend without editing the HTML.
+>    - **Rules panel.** Replace the current taxonomy-checkbox UI with: a search input (filters by `rule_id` / `ui_flag` substring, case-insensitive), three collapsible sections (one per taxonomy) each with a header-level "disable all in this taxonomy" toggle, and per-rule checkboxes inside each section. Source the catalogue from `GET /rules` and the counts from `GET /taxonomies`.
+>    - **State persistence.** `localStorage["octavius.disabledRuleIds"]` and `localStorage["octavius.disabledTaxonomies"]`, each a JSON-stringified array. On load, if the legacy `octavius-groups` key exists, migrate it (treat each old "group" as a taxonomy disable if the user had unchecked it) and remove the legacy key.
+>    - **Request shape.** `POST /check` body becomes `{ text, disabled_rule_ids: [...], disabled_taxonomies: [...] }`. Drop `rule_groups`.
+>    - **Findings panel.** Each finding card shows `ui_flag` (headline), `rule_summary` (secondary), and a small "View source" link to `source_url` (target=`_blank`, `rel="noopener"`). Document-level findings (`document_level === true`) render with a "Document" pill instead of a click-to-scroll behaviour and do not draw an inline highlight.
+>    - **Performance.** With 800 rules, do not render 800 raw DOM checkboxes naively if it makes the panel laggy. Acceptable shortcuts: render only the currently-filtered subset, or virtualise. Pick the simplest one that keeps interaction snappy.
+> 2. `.github/workflows/deploy_pages.yml`:
+>    - Triggers on `push` to `main` only — **not** on this branch.
+>    - Copies `index.html` (and any sibling assets it references; right now it's standalone) to a `gh-pages` branch using `peaceiris/actions-gh-pages` or equivalent.
+>    - Sets `window.OCTAVIUS_API_BASE` injection via a workflow secret `RENDER_API_BASE` (default to the existing constant if the secret is unset).
+> 3. **End-to-end smoke test** (record verbatim in your final summary):
+>    - Boot the backend: `uvicorn main:app --port 8000` in the background.
+>    - Open `index.html` in a browser (`xdg-open` or `open`, or just print the file:// URL).
+>    - Type a single paragraph that contains: a known regex trigger, a known lookup trigger (e.g. "The meeting is on Tue and Thu."), and a known structural trigger.
+>    - Confirm: ≥1 inline highlight from regex; ≥1 inline highlight from lookup; ≥1 document-level entry from structural; the findings panel shows `ui_flag` headlines and `View source` links; toggling a rule's checkbox immediately removes it from the next `/check` response; reloading the page preserves the disabled state.
+>    - Stop the server.
+>    - If a browser is genuinely unavailable, fall back to `curl` against the running backend with the new payload shape and document that fallback explicitly.
+>
+> **Hard constraints:**
+> - Do not introduce a build step. `index.html` must remain a single deployable file.
+> - Do not modify backend code unless fixing a bug; note any such fix in the summary.
+> - Do not introduce React, Vite, web workers, embeddings, or any V1.5+ feature.
+> - Do not modify `src/`, `.github/workflows/phase*.yml`, `archive/`, `library_of_rules/`, `rules_working_draft.jsonl`, `app.py`, `pages/`, or `frontend/`.
+> - The deploy workflow must trigger only on `main`, never on the build branch.
+>
+> **Commit and push:** one commit per logical chunk (frontend extension → deploy workflow → smoke-test notes if any). Push to `claude/create-frontend-interface-gHRNo`. Do not open a PR — the user will request one separately.
+>
+> **Definition of done — reply with this exact summary block:**
+> ```
+> S3 DELIVERY — DONE
+> regex highlight:      <observed | n/a + reason>
+> lookup highlight:     <observed | n/a + reason>
+> structural doc-level: <observed | n/a + reason>
+> persistence verified: <yes | no + reason>
+> deploy workflow:      <path, trigger summary>
+> files added:          <list>
+> files changed:        <list>
+> S1/S2 fixes:          <none | bullets>
+> deviations:           <none | bullets>
+> ready for PR:         <yes | no + reason>
+> ```
+
+---
+
+*End of plan. Save this file (`FRONTEND_BUILD_PLAN.md`) as the source of truth. Run §4.1, §4.2, §4.3 in order, each in a fresh Claude Code session, verifying the prior session's output before the next begins.*
