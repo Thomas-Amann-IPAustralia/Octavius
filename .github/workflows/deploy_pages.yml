@@ -1,0 +1,44 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare dist
+        run: |
+          mkdir -p dist
+          API_URL="${{ secrets.RENDER_API_BASE }}"
+          if [ -n "$API_URL" ]; then
+            python3 - "$API_URL" <<'PYEOF'
+import sys, pathlib
+
+api_url = sys.argv[1]
+content = pathlib.Path("index.html").read_text()
+injection = f'<script>window.OCTAVIUS_API_BASE = "{api_url}";</script>'
+content = content.replace("</head>", injection + "\n</head>", 1)
+pathlib.Path("dist/index.html").write_text(content)
+PYEOF
+          else
+            # RENDER_API_BASE not set — copy as-is; frontend falls back to
+            # the http://localhost:8000 default in the script constant.
+            cp index.html dist/index.html
+          fi
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages

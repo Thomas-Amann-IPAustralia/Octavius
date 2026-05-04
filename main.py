@@ -2,16 +2,27 @@
 
 from __future__ import annotations
 
-from collections import Counter
+import logging
+import sys
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
 
-from logic.engine import lint_text
-from logic.rules import RULES
+logger = logging.getLogger(__name__)
 
-app = FastAPI(title="Octavius", version="0.1.0")
+# Import dispatcher at module load time so the parquet is read and all rules
+# are compiled before the first request.  A missing or unreadable parquet is a
+# hard failure — we prefer an explicit crash over silently serving no results.
+try:
+    import logic.dispatcher as _dispatcher
+except Exception as exc:  # noqa: BLE001
+    logger.critical("Failed to load rulebook — aborting boot: %s", exc)
+    sys.exit(1)
+
+from routes.check import router as check_router
+from routes.rules import router as rules_router
+
+app = FastAPI(title="Octavius", version="0.2.0")
 
 app.add_middleware(
     CORSMiddleware,
@@ -20,59 +31,21 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-SEVERITY_MAP = {"warn": "warning"}
-
-_category_index: dict[str, list[dict]] = {}
-for _rule in RULES:
-    _cat = (_rule.get("category") or "General").lower()
-    _category_index.setdefault(_cat, []).append(_rule)
+app.include_router(check_router)
+app.include_router(rules_router)
 
 
-class CheckRequest(BaseModel):
-    text: str
-    rule_groups: list[str] | None = None
-
+# ---------------------------------------------------------------------------
+# Legacy /groups alias — keeps the unmodified index.html working until S3.
+# Returns taxonomy id + name + rule_count, which is the shape index.html
+# currently consumes.
+# ---------------------------------------------------------------------------
 
 @app.get("/groups")
 def get_groups() -> list[dict]:
-    counts: Counter[str] = Counter()
-    names: dict[str, str] = {}
-    for rule in RULES:
-        cat = (rule.get("category") or "General")
-        key = cat.lower()
-        counts[key] += 1
-        names[key] = cat
+    from collections import Counter
+    counts: Counter[str] = Counter(r["taxonomy"] for r in _dispatcher.get_rules())
     return [
-        {"id": key, "name": names[key], "rule_count": counts[key]}
-        for key in sorted(counts)
-    ]
-
-
-@app.post("/check")
-def check_text(req: CheckRequest) -> list[dict]:
-    if req.rule_groups is not None:
-        active_keys = {g.lower() for g in req.rule_groups}
-        active_rules = [
-            r for cat, rules in _category_index.items()
-            if cat in active_keys
-            for r in rules
-        ]
-    else:
-        active_rules = list(RULES)
-
-    findings = lint_text(req.text, active_rules)
-
-    rule_cat = {r["id"]: (r.get("category") or "General").lower() for r in RULES}
-
-    return [
-        {
-            "rule_id": f["rule_id"],
-            "group": rule_cat.get(f["rule_id"], "general"),
-            "message": f["message"],
-            "start": f["start_char"],
-            "end": f["end_char"],
-            "severity": SEVERITY_MAP.get(f["severity"], f["severity"]),
-            "suggestion": f.get("suggestion"),
-        }
-        for f in findings
+        {"id": tax, "name": tax.capitalize(), "rule_count": counts[tax]}
+        for tax in sorted(counts)
     ]
