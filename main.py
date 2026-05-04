@@ -7,6 +7,7 @@ import sys
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
 
 logger = logging.getLogger(__name__)
 
@@ -33,6 +34,11 @@ app.add_middleware(
 
 app.include_router(check_router)
 app.include_router(rules_router)
+
+
+@app.get("/")
+def serve_frontend() -> FileResponse:
+    return FileResponse("index.html", media_type="text/html")
 
 
 # ---------------------------------------------------------------------------
