@@ -109,21 +109,18 @@ _NLP: Any = None
 
 
 def _get_nlp() -> Any:
-    """Return a process-local spaCy pipeline used only for sentence splitting.
+    """Return a process-local spaCy pipeline for sentence splitting and POS/dep parse.
 
-    Phase 1 only needs sentence counts, so the pipeline is built around the
-    rule-based ``sentencizer`` for speed (≤ a few ms per kilobyte). Phase 2
-    re-runs the full parser when it needs token-level features — caching a
-    fully-parsed Doc here would blow the 50 ms preprocess budget.
+    Uses ``en_core_web_sm`` with NER and lemmatizer disabled for quality
+    sentence boundary detection and dependency labels (Phase 2 reuses
+    ``doc.spacy_doc`` for per-segment linguistic feature extraction).
     """
     global _NLP
     if _NLP is None:
         try:
             import spacy  # type: ignore[import-untyped]
 
-            _NLP = spacy.blank("en")
-            if "sentencizer" not in _NLP.pipe_names:
-                _NLP.add_pipe("sentencizer")
+            _NLP = spacy.load("en_core_web_sm", disable=["ner", "lemmatizer"])
         except Exception:  # pragma: no cover - spaCy missing entirely
             _NLP = None
     return _NLP
@@ -194,9 +191,15 @@ def _segment_markdown(text: str) -> tuple[list[Segment], list[tuple[int, int]]]:
             )
         elif ttype == "paragraph_open":
             start, end = _slice_for_map(text, line_starts, tok.map)
+            # Paragraphs inside a list item take the containing list's kind so
+            # ZONE_LIST_BULLET / ZONE_LIST_NUMBERED fire correctly in Phase 2.
+            if ancestors and ancestors[-1] in ("list_bullet", "list_numbered"):
+                seg_kind: str = ancestors[-1]
+            else:
+                seg_kind = "paragraph"
             segments.append(
                 Segment(
-                    kind="paragraph",
+                    kind=seg_kind,
                     text=text[start:end],
                     offset=start,
                     lintable=True,

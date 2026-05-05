@@ -1,17 +1,24 @@
-"""Phase 1 preprocessing perf budget: 500-word document under 150 ms.
+"""Phase 2 feature extraction perf budget: 500-word document under 100 ms.
 
-Budget raised from 50 ms to 150 ms after swapping the spaCy pipeline from
-spacy.blank("en") + sentencizer to en_core_web_sm (disable=["ner","lemmatizer"]).
-The full tok2vec + tagger + dependency parser costs ~65 ms on the warm test
-document; 150 ms gives 2× headroom. Quality (richer POS/dep parse available
-to Phase 2) was chosen over raw latency per the project decision log.
+The budget covers the full extract() call on a pre-built PreprocessedDoc
+(preprocessing time is measured separately in test_preprocess_perf.py).
+The warm minimum of 5 runs must stay under 100 ms.
 """
 
 from __future__ import annotations
 
 import time
 
+import pytest
+
+from logic.features.extractor import extract
 from logic.preprocess import preprocess
+
+
+@pytest.fixture(scope="module")
+def nlp():
+    import spacy
+    return spacy.load("en_core_web_sm", disable=["ner", "lemmatizer"])
 
 
 def _build_500_word_doc() -> str:
@@ -32,17 +39,21 @@ def _build_500_word_doc() -> str:
     return text
 
 
-def test_preprocess_500_words_under_50ms():
+def test_feature_extraction_500_words_under_100ms(nlp):
     text = _build_500_word_doc()
-    preprocess(text)  # warm caches (lazy spaCy load, regex compile)
+    doc = preprocess(text)
+
+    # Warm: ensure spaCy model and any lazy lists are loaded
+    extract(doc, nlp)
 
     runs = 5
     elapsed = []
     for _ in range(runs):
         t0 = time.perf_counter()
-        preprocess(text)
+        extract(doc, nlp)
         elapsed.append(time.perf_counter() - t0)
+
     best = min(elapsed)
-    assert best < 0.150, (
-        f"preprocess took {best * 1000:.2f}ms; budget is 150 ms"
+    assert best < 0.100, (
+        f"feature extraction took {best * 1000:.2f}ms; budget is 100 ms"
     )

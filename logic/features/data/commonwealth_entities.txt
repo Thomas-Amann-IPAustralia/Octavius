@@ -1,0 +1,27 @@
+# Commonwealth entities and statutory agencies
+# Source: library_of_rules references and Australian Government directory
+Australian Public Service Commission
+Australian Taxation Office
+Australian Electoral Commission
+Australian Bureau of Statistics
+National Archives of Australia
+Australian Competition and Consumer Commission
+Reserve Bank of Australia
+Australian Securities and Investments Commission
+Australian Prudential Regulation Authority
+Australian Federal Police
+Australian Border Force
+Australian Signals Directorate
+Australian Security Intelligence Organisation
+Australian Criminal Intelligence Commission
+Productivity Commission
+Fair Work Commission
+Administrative Appeals Tribunal
+Australian Human Rights Commission
+Australian Information Commissioner
+Commonwealth Ombudsman
+Inspector-General of Intelligence and Security
+National Disability Insurance Agency
+Services Australia
+Medicare
+Centrelink
