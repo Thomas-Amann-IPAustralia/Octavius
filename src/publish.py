@@ -53,6 +53,24 @@ def ensure_list(val) -> list:
     return [str(val)]
 
 
+def split_required_features(val) -> tuple[list | None, list | None, list | None]:
+    """Split a required_features dict into (all_of, any_of, none_of) lists.
+
+    Returns (None, None, None) when val is null — callers write null Arrow
+    list cells so Phase 6 consumers can distinguish "not populated" from
+    "populated with empty constraints".
+    """
+    if val is None:
+        return None, None, None
+    if not isinstance(val, dict):
+        return None, None, None
+    return (
+        ensure_list(val.get("all_of")),
+        ensure_list(val.get("any_of")),
+        ensure_list(val.get("none_of")),
+    )
+
+
 def main() -> None:
     rules: list[dict] = []
     if RULES_DRAFT_FILE.exists():
@@ -87,8 +105,10 @@ def main() -> None:
         )
 
     # Build normalised records
-    records = [
-        {
+    records = []
+    for r in rules:
+        rf_all, rf_any, rf_none = split_required_features(r.get("required_features"))
+        records.append({
             "rule_id": r.get("rule_id"),
             "source_url": r.get("source_url"),
             "source_file": r.get("source_file"),
@@ -110,13 +130,22 @@ def main() -> None:
             "extracted_at": r.get("extracted_at"),
             "code_generated_at": r.get("code_generated_at"),
             "test_run_at": r.get("test_run_at"),
-        }
-        for r in rules
-    ]
+            # Phase 3.5 columns — null when not yet populated
+            "required_features_all_of": rf_all,
+            "required_features_any_of": rf_any,
+            "required_features_none_of": rf_none,
+            "mutation_class": r.get("mutation_class"),
+        })
 
     df = pd.DataFrame(records)
 
-    # Define Parquet schema with correct column types
+    # Define Parquet schema with correct column types.
+    # required_features is stored as three separate list<string> columns
+    # (required_features_all_of, _any_of, _none_of) rather than a struct because
+    # pa.Table.from_pandas with struct schemas requires careful None/dict handling
+    # that varies across PyArrow versions. Three plain list columns are portable
+    # and loader.py reconstructs the FeatureRequirements dict at load time.
+    # See docs/REFACTOR_LOG.md — Phase 3.5 for the rationale.
     schema = pa.schema([
         ("rule_id", pa.string()),
         ("source_url", pa.string()),
@@ -139,6 +168,11 @@ def main() -> None:
         ("extracted_at", pa.string()),
         ("code_generated_at", pa.string()),
         ("test_run_at", pa.string()),
+        # Phase 3.5 columns
+        ("required_features_all_of", pa.list_(pa.string())),
+        ("required_features_any_of", pa.list_(pa.string())),
+        ("required_features_none_of", pa.list_(pa.string())),
+        ("mutation_class", pa.string()),
     ])
 
     PUBLISHED_DIR.mkdir(parents=True, exist_ok=True)
@@ -152,6 +186,15 @@ def main() -> None:
     if "taxonomy" in df.columns:
         by_taxonomy = {k: int(v) for k, v in df["taxonomy"].value_counts().items()}
 
+    pass_mask = df["test_result"] == "pass" if "test_result" in df.columns else pd.Series([False] * len(df))
+    pass_count = int(pass_mask.sum())
+    rf_annotated = int(df.loc[pass_mask, "required_features_all_of"].notna().sum()) if "required_features_all_of" in df.columns else 0
+    mc_annotated = int(df.loc[pass_mask, "mutation_class"].notna().sum()) if "mutation_class" in df.columns else 0
+
+    mc_dist: dict[str, int] = {}
+    if "mutation_class" in df.columns:
+        mc_dist = {k: int(v) for k, v in df["mutation_class"].value_counts(dropna=True).items()}
+
     metadata = {
         "published_at": datetime.now(timezone.utc).isoformat(),
         "total_rules": len(records),
@@ -161,6 +204,11 @@ def main() -> None:
         "frozen_count": int((df["test_result"] == "frozen").sum()) if "test_result" in df.columns else 0,
         "unassigned_count": int((df["taxonomy"] == "unassigned").sum()) if "taxonomy" in df.columns else 0,
         "sha256": sha256_file(PARQUET_FILE),
+        # Phase 3.5
+        "pass_count": pass_count,
+        "required_features_annotated": rf_annotated,
+        "mutation_class_annotated": mc_annotated,
+        "mutation_class_distribution": mc_dist,
     }
 
     with open(METADATA_FILE, "w") as f:

@@ -1,0 +1,44 @@
+name: Phase 3.5 — Feature Authoring (Submit)
+
+# Manual dispatch only. This job submits an OpenAI Batch API request that
+# costs tokens — auto-chaining is disabled so submissions only happen when
+# explicitly approved. The script exits gracefully if there are no passing
+# rules left to annotate or a batch is already in flight.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: phase-3-5-submit
+  cancel-in-progress: false
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: requirements-pipeline.txt
+
+      - name: Install pipeline dependencies
+        run: pip install -r requirements-pipeline.txt
+
+      - name: Submit Phase 3.5 feature-authoring batches
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python src/extract_features.py submit
+
+      - name: Push committed changes
+        run: git push origin HEAD

@@ -295,6 +295,97 @@ not generate `required_features` that reference them:
   the model is loaded once per process.
 
 
+## Phase 3.5 — Feature Authoring (2026-05-05)
+
+### Shipped
+- **`src/extract_features.py`** — Phase 3.5 script (submit + collect). Reads
+  `rules_working_draft.jsonl`, submits one batch request per passing rule to
+  `gpt-5.4-mini` (the cost-effective mini model), parses and validates each
+  response, and writes `required_features` + `mutation_class` back to the JSONL.
+  Dedup: rules that already have both fields non-null are skipped; in-flight
+  rule IDs are persisted in `batch_state.json` (`"phase": "3.5"`).
+- **`prompts/features.md`** — Prompt template with: (a) the full 118-feature
+  vocabulary with one-line descriptions, (b) slot semantics (`all_of`,
+  `any_of`, `none_of`), (c) mutation-class table, (d) conservatism guidance,
+  (e) four worked examples covering all three mutation classes, (f) JSON schema
+  for the output. The vocabulary section is generated from
+  `logic/features/vocabulary.py` to stay in sync.
+- **`.github/workflows/phase3_5_submit.yml`** and
+  **`.github/workflows/phase3_5_collect.yml`** — GitHub Actions workflows
+  modelled on Phase 5's shape. Cron for collect runs at `:45` past each hour
+  (offset from Phase 5's `:30` to avoid collision).
+- **`src/publish.py`** updated to split `required_features` into three separate
+  `list<string>` Parquet columns: `required_features_all_of`,
+  `required_features_any_of`, `required_features_none_of`. Also adds nullable
+  `mutation_class: string`. Metadata now includes `required_features_annotated`,
+  `mutation_class_annotated`, and `mutation_class_distribution` counts.
+- **`logic/rulebook/loader.py`** updated to reconstruct the `FeatureRequirements`
+  dict from the three split columns. Legacy single-column `required_features`
+  (pre-3.5 Parquet) is accepted as a fallback so the loader is backwards
+  compatible. A null `required_features_all_of` column → `None` (dispatcher
+  falls back to "always retrieve").
+- **`CLAUDE.md`** pipeline table and schema section updated with Phase 3.5
+  entries.
+- **`tests/test_extract_features.py`** — 16 tests covering: all four worked-example
+  mutation classes, six validation-rejection cases (EXEMPT_* in all_of/any_of,
+  unknown feature, threshold-encoded feature, unknown mutation_class, missing
+  keys, non-JSON), mocked-client JSONL output assertions, and submit dedup.
+- **`tests/test_publish_required_features.py`** — 7 round-trip tests: full
+  annotation, null annotation, mixed annotated/unannotated, all three
+  mutation-class values, and the acceptance-check column-presence assertion.
+
+### Design decision: three split columns instead of struct
+
+PyArrow's `pa.Table.from_pandas()` with a `pa.struct` schema requires all
+column values to be dicts (or `None`) and the exact key set must match. In
+practice, pandas object columns with mixed dict/None values and
+version-specific PyArrow casting rules make this fragile. Three plain
+`list<string>` columns are portable across PyArrow versions ≥12, require no
+special handling in `from_pandas`, and are distinguishable from "populated
+with empty constraints" (three populated empty lists) vs "not populated" (three
+null list cells).
+
+The loader reconstructs `FeatureRequirements` at read time — one dict
+allocation per rule is negligible compared to the compilation cost.
+
+### Validation rules enforced by collect()
+1. `validate_feature(name)` from `logic.features.vocabulary` — rejects unknown
+   names and threshold-encoded names (e.g. `LING_LONG_SENTENCE_25P`).
+2. `EXEMPT_*` features may appear **only** in `none_of`. Any `EXEMPT_*` name in
+   `all_of` or `any_of` → null + `features_error_log`.
+3. `mutation_class` must be exactly one of: `safe_replace`, `requires_rewrite`,
+   `human_review`. Any other value → null + `features_error_log`.
+4. Non-JSON LLM output → null + `features_error_log` (JSON parse error logged).
+5. API-level errors in the batch result → null + `features_error_log`.
+
+### Deferred (to Phase 3 round 2 or later)
+- **Top-10 candidate new PATTERN_* features** — to be populated after the
+  production batch runs and validation-failure `features_error_log` entries are
+  collected and analysed. Placeholder: run the batch, grep for
+  `features_error_log` entries containing `"Unknown feature name"`, tally the
+  invented names, and record the top 10 here.
+- **Phase 3.5 reporting stats** (total processed, % validated, mutation_class
+  distribution, top-10 most-required/forbidden features, unused vocabulary
+  features) — deferred until the production batch completes. These will be added
+  to this entry when `phase3_5_collect.yml` finishes.
+- **Deferred vocabulary features in prompt** — six features marked ⚠ in
+  `prompts/features.md` (ZONE_BLOCKQUOTE, ZONE_FOOTNOTE, ZONE_REFERENCE_LIST,
+  ANCESTOR_TABLE, ANCESTOR_FOOTNOTE, ANCESTOR_HEADING_SECTION) are noted as
+  "never emitted by the current preprocessor". The prompt instructs the model
+  not to place them in `all_of` or `any_of`, which avoids over-constraining
+  rules that would then never fire.
+
+### Cost estimate
+- 801 passing rules × ~600 tokens/request (system prompt ~400 tokens + rule
+  context ~200 tokens + output ~100 tokens) ≈ 481k input tokens.
+- gpt-5.4-mini pricing: $0.15/1M input, $0.60/1M output.
+- Estimated batch cost (50 % discount applies to Batch API): ≈ $0.04 input +
+  $0.02 output ≈ **$0.06 total** for the full corpus. Adding `mutation_class`
+  to the same prompt (vs a second batch) saves this cost again — confirmed the
+  shared-context design is correct.
+
+---
+
 ## Deferred features (revisit triggers)
 - COUNT_* family: revisit if Phase 5 telemetry shows ranking failures that boolean count thresholds would fix. Replacement plan = integer counts in PreprocessedDoc.counts plus a `min_count` slot on FeatureRequirements.
 - COST_* execution classes: revisit if Phase 4 latency tests miss the 200 ms p50 target.
