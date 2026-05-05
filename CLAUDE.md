@@ -137,6 +137,7 @@ Workflows live in `.github/workflows/phase*.yml`.
 | `src/scrape.py` | 1 — Markdown Clone | Fetch sitemap, mirror pages to `content/` |
 | `src/extract_rules.py` | 2 — Rule Extraction | LLM batch: page markdown → JSONL rules |
 | `src/generate_code.py` | 3 — Rules as Code | LLM batch: rule → executable trigger code |
+| `src/extract_features.py` | 3.5 — Feature Authoring | LLM batch: rule → `required_features` + `mutation_class` |
 | `src/run_tests.py` | 4 — Test | Execute trigger code against test strings |
 | `src/correct_rules.py` | 5 — Correct | LLM batch (gpt-4o): fix failing rules |
 | `src/publish.py` | 6 — Publish | JSONL → `published/rulebook.parquet` |
@@ -201,11 +202,19 @@ types for list columns.
 | `test_run_at` | string | Phase 4 | ISO 8601 timestamp of last test run |
 | `error_log` | string\|null | Phase 4 | Error output captured during testing; `null` on success |
 | `correction_model` | string\|null | Phase 5 | Model identifier used when Phase 5 rewrote the trigger code; `null` if no correction was needed |
+| `required_features` | object\|null | Phase 3.5 | Feature gate: `{"all_of": [...], "any_of": [...], "none_of": [...]}`. `null` → dispatcher always retrieves the rule. In Parquet, stored as three separate `list<string>` columns: `required_features_all_of`, `required_features_any_of`, `required_features_none_of`. |
+| `mutation_class` | string\|null | Phase 3.5 | How the rule's fix should be applied: `safe_replace`, `requires_rewrite`, or `human_review`. `null` → frontend shows generic "Acknowledge" button. |
 
 > **Parquet-only note:** `requires`, `test_fire`, `test_no_fire`, and
 > `lookup_list` are stored as `list<string>` Arrow arrays in the Parquet file.
 > The JSONL represents them as JSON arrays (or `null`); `src/publish.py`
 > normalises `null` → `[]` and bare strings → `[value]` before writing.
+>
+> `required_features` is stored in JSONL as a nested object (or `null`) and
+> split by `src/publish.py` into three separate `list<string>` Parquet columns
+> (`required_features_all_of`, `_any_of`, `_none_of`). `logic/rulebook/loader.py`
+> reconstructs the `FeatureRequirements` dict at load time. See
+> `docs/REFACTOR_LOG.md` Phase 3.5 for the rationale.
 
 ---
 

@@ -77,9 +77,23 @@ def load_rules(parquet_path: str | Path | None = None) -> list[CompiledRule]:
 
         rule = adapter(row)
 
-        # Phase 0: pass through optional inverted-index columns when present.
-        # These are populated by Phase 3; missing columns default to ``None``.
-        rule["required_features"] = row.get("required_features")
+        # Phase 3.5: reconstruct required_features from the three split columns
+        # written by publish.py (required_features_all_of/any_of/none_of).
+        # A null all_of column means the rule has not been annotated yet;
+        # loader returns None so the dispatcher falls back to "always retrieve".
+        # The legacy single-column "required_features" is also accepted for
+        # backwards compatibility with pre-3.5 Parquet files.
+        rf_all = row.get("required_features_all_of")
+        if rf_all is not None:
+            rule["required_features"] = {
+                "all_of": rf_all or [],
+                "any_of": row.get("required_features_any_of") or [],
+                "none_of": row.get("required_features_none_of") or [],
+            }
+        else:
+            # Fallback: accept legacy struct column if present
+            rule["required_features"] = row.get("required_features")
+
         rule["mutation_class"] = row.get("mutation_class")
 
         rules.append(rule)
