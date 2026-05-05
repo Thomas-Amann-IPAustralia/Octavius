@@ -1,16 +1,16 @@
 # Octavius
 
-A plain-language linter for Australian Public Service (APS) content, built with Streamlit and spaCy.
+A plain-language linter for Australian Public Service (APS) content, built with FastAPI and spaCy.
 
 Paste a block of text, click **Run audit**, and Octavius highlights style violations inline and lists each finding with a suggested fix.
 
-> **Architecture:** Python + spaCy NLP backend, React 18 + TypeScript + Tailwind CSS frontend (embedded as a Streamlit custom component). Rule content is sourced from the Australian Government Style Manual, catalogued in `library_of_rules/`.
+> **Architecture:** Python + spaCy NLP backend served via FastAPI, with a React 18 + TypeScript + Tailwind CSS frontend served as a static page from the same app. Rule content is sourced from the Australian Government Style Manual, catalogued in `library_of_rules/`.
 
 ---
 
 ## Getting started
 
-**Prerequisites:** Python 3.9+
+**Prerequisites:** Python 3.11+
 
 ```bash
 # 1. Clone and enter the repo
@@ -21,10 +21,10 @@ cd Octavius
 pip install -r requirements.txt
 
 # 3. Start the app
-streamlit run app.py
+uvicorn main:app --reload
 ```
 
-The app opens at `http://localhost:8501`.
+The app opens at `http://localhost:8000`.
 
 ---
 
@@ -40,18 +40,19 @@ pytest tests/ -v
 
 ```
 Octavius/
-├── app.py                    # Streamlit UI — page layout, session state, result rendering
+├── main.py                   # FastAPI entry point — wires routers, serves index.html
+├── routes/                   # FastAPI routers (POST /check, GET /rules, ...)
 ├── requirements.txt          # Python dependencies
 ├── logic/
-│   ├── engine.py             # lint_text() — runs rules against a spaCy Doc
-│   └── rules.py              # RULES list + individual rule check functions
+│   ├── dispatcher.py         # run_rules() — loads compiled rulebook, runs every rule
+│   └── rulebook/             # parquet loader + per-taxonomy adapters
 ├── frontend/
 │   ├── src/
 │   │   ├── OctaviusEditor.tsx        # Root React component (state, layout)
 │   │   ├── components/               # TextEditor, FindingsPanel, FindingCard, etc.
 │   │   ├── hooks/useHighlights.ts    # Text segmentation for inline highlights
 │   │   └── types.ts                  # Shared TypeScript types
-│   └── build/                        # Compiled component (loaded by Streamlit)
+│   └── build/                        # Compiled bundle served by FastAPI
 ├── library_of_rules/         # Reference rule content from the Australian Government Style Manual
 │   ├── Grammar, Punctuation and conventions/
 │   ├── Accessible and inclusive content/
@@ -69,48 +70,33 @@ Octavius/
 
 ## How rules work
 
-Each rule in `logic/rules.py` is a plain dict:
+The rulebook is built by the `src/` pipeline (see "Rulebook creation
+pipeline" below) and published as `published/rulebook.parquet`. At app
+boot, `logic/dispatcher.py` loads the parquet, filters to rows with
+`test_result == "pass"`, and compiles each rule into a uniform
+`CompiledRule` via the per-taxonomy adapters in `logic/rulebook/`.
 
-```python
-{
-    "id": "PASSIVE-VOICE-001",
-    "title": "Passive voice detected",
-    "message": "Passive voice can reduce clarity. Consider rewriting in active voice.",
-    "severity": "warn",   # "error" | "warn" | "info"
-    "suggestion": None,
-    "check": check_passive_voice,   # fn(doc: spacy.Doc) -> list[dict]
-}
-```
-
-The `check` function receives a spaCy `Doc` and returns a list of findings, each with `start_char` and `end_char` (character offsets into the original text) plus an optional `suggestion` string.
-
-To add a new rule:
-
-1. Write a `check_*` function in `logic/rules.py` that analyses the `Doc` and returns findings.
-2. Append a rule dict to `RULES`.
-
-The engine and UI pick it up automatically — no other changes needed.
+POST `/check` calls `dispatcher.run_rules(text, ...)`, which executes
+every enabled rule against the text and returns sorted findings.
 
 ---
 
 ## Architecture
 
 ```
-User input (Streamlit text area)
+User input (frontend text area)
         │
         ▼
-   app.py  ──►  logic/engine.lint_text(text, RULES)
-                        │
-                        ▼
-               spaCy NLP pipeline
-                        │
-                        ▼
-           logic/rules.check_*(doc)  ×N rules
-                        │
-                        ▼
-            Findings (start_char, end_char, message, …)
-                        │
-                        ▼
+   POST /check  ──►  logic.dispatcher.run_rules(text, ...)
+                              │
+                              ▼
+                   compiled rules (loaded once at boot
+                   from published/rulebook.parquet)
+                              │
+                              ▼
+            Findings (start_char, end_char, ui_flag, …)
+                              │
+                              ▼
         Annotated display + per-finding detail cards
 ```
 
@@ -187,6 +173,8 @@ types for list columns.
 
 ## Contributing
 
-Contributions are welcome. The most impactful place to start is adding new rules to `logic/rules.py` — see the section above for how rules are structured.
+Contributions are welcome. The rulebook is generated by the six-phase
+pipeline in `src/` and published as `published/rulebook.parquet`; see
+`CLAUDE_Octavius Rulebook Creation Pipeline.md` for the full flow.
 
 Please run `pytest tests/ -v` before opening a pull request.

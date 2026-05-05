@@ -3,17 +3,56 @@
 from __future__ import annotations
 
 import logging
+import os
+from types import ModuleType
 
+import logic.dispatcher as _legacy_dispatcher
 from fastapi import APIRouter
 from pydantic import BaseModel
-
-import logic.dispatcher as dispatcher
 
 logger = logging.getLogger(__name__)
 
 router = APIRouter()
 
 _RULE_GROUPS_DEPRECATION_LOGGED = False
+
+# ---------------------------------------------------------------------------
+# OCTAVIUS_DISPATCHER env-flag plumbing
+# ---------------------------------------------------------------------------
+# Phase 0: both ``legacy`` and ``indexed`` resolve to ``logic.dispatcher``.
+# The ``indexed`` backend lands in a later phase; for now we log a warning
+# so anyone setting it early sees that the request was a no-op.
+
+_VALID_DISPATCHERS = ("legacy", "indexed")
+
+
+def _resolve_dispatcher(name: str | None) -> ModuleType:
+    """Return the dispatcher module for the given env-flag value.
+
+    Unknown values fall back to ``legacy`` with a warning. Phase 0 has no
+    indexed backend yet, so ``indexed`` also resolves to ``logic.dispatcher``
+    and emits a warning.
+    """
+    choice = (name or "legacy").strip().lower()
+    if choice not in _VALID_DISPATCHERS:
+        logger.warning(
+            "OCTAVIUS_DISPATCHER=%r is not recognised; falling back to 'legacy'. "
+            "Valid values: %s",
+            name,
+            _VALID_DISPATCHERS,
+        )
+        choice = "legacy"
+
+    if choice == "indexed":
+        logger.warning(
+            "OCTAVIUS_DISPATCHER='indexed' requested but the indexed dispatcher "
+            "is not implemented in Phase 0; using legacy dispatcher."
+        )
+
+    return _legacy_dispatcher
+
+
+dispatcher = _resolve_dispatcher(os.environ.get("OCTAVIUS_DISPATCHER"))
 
 
 class CheckRequest(BaseModel):
