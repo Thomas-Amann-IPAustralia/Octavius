@@ -1,0 +1,20 @@
+# Australian ministerial and parliamentary titles
+# Source: library_of_rules/Grammar, Punctuation and conventions/Titles, honours, forms of address/Parliaments and councils.md
+prime minister
+deputy prime minister
+minister for
+minister of
+minister at the table
+assistant minister for
+assistant minister to
+parliamentary secretary
+attorney-general
+treasurer
+deputy treasurer
+solicitor-general
+secretary-general
+minister of state
+governor-general
+governor
+premier
+chief minister

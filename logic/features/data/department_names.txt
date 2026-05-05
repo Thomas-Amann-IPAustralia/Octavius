@@ -1,0 +1,20 @@
+# Australian Government department names
+# Source: library_of_rules/Grammar, Punctuation and conventions/Names and terms/Government terms.md
+Department of Finance
+Department of Social Services
+Department of Home Affairs
+Department of the Prime Minister and Cabinet
+Department of Industry, Science, Energy and Resources
+Department of Health and Aged Care
+Department of Infrastructure, Transport, Regional Development and Communications
+Department of Education
+Department of Agriculture, Water and the Environment
+Department of Defence
+Department of Veterans' Affairs
+Attorney-General's Department
+Department of Foreign Affairs and Trade
+Department of Employment and Workplace Relations
+The Treasury
+Australian Public Service Commission
+Department of the House of Representatives
+Department of the Senate

@@ -167,6 +167,134 @@
   `EXEMPT_*` feature names stay in lockstep — add a CI assertion that
   ``{kind for *_, kind in mask_map} == {f.removeprefix("EXEMPT_").lower() for f in EXEMPT_FEATURES}``.
 
+## Phase 2 — Feature extractor (2026-05-05)
+
+### Shipped
+- **`logic/features/extractor.py`** exporting `FeatureSet` (frozen dataclass
+  with `document: frozenset[str]` and `per_segment: list[frozenset[str]]`) and
+  `extract(doc, nlp, long_sentence_threshold=25) -> FeatureSet`. The
+  orchestrator calls all sub-extractors in order, validates every emitted
+  feature name via `vocabulary.validate_feature`, and raises `ValueError` on
+  any unknown name — undeclared features are a hard error, not a warning.
+- **7 sub-extractors**, each exporting a clean `extract(...)` function:
+  - `logic/features/zones.py` — ZONE_* (from `segment.kind`),
+    ANCESTOR_* (from `segment.ancestors`).
+  - `logic/features/lexical.py` — 20 HAS_* features via compiled regex over
+    raw segment text.
+  - `logic/features/linguistic.py` — 10 LING_* features (passive voice via
+    `nsubjpass`/`auxpass`; modals via `tag_=="MD"`; first/second person via
+    lemma; imperative via ROOT VB with no `nsubj`; title-case run of 2+
+    tokens; all-caps token; negation via `neg` dep; long sentence via word
+    count ≥ threshold). Primary entry point is `extract_from_spacy_doc(doc,
+    threshold)` for batch use; `extract(segment, nlp, threshold)` is the
+    per-segment convenience wrapper used in tests.
+  - `logic/features/patterns.py` — 6 PATTERN_* features: numeric ranges,
+    citation parentheticals, heading title/sentence case, bullet trailing
+    period, regnal numeral shape.
+  - `logic/features/relations.py` — 4 REL_* features taking the full
+    `PreprocessedDoc`: `REL_BULLET_AFTER_COLON` (list item whose lintable
+    predecessor ends with `:`); `REL_ACRONYM_DEFINED_ON_FIRST_USE` (segment
+    contains "Full Name (ACRO)" intro pattern); `REL_HEADING_FOLLOWED_BY_LIST`
+    (heading whose immediate lintable successor is a list); `REL_CITATION_AFTER_QUOTE`
+    (citation-like parenthetical within ~50 chars of a `quoted_content` mask).
+  - `logic/features/aps.py` — 5 APS_* features: legislation references via
+    regex ("Name Act YYYY"); department names via pattern + wordlist;
+    ministerial titles via wordlist; long-form date via regex; Commonwealth
+    entities via wordlist. Wordlists live in `logic/features/data/` (3 starter
+    files).
+  - `logic/features/exemptions.py` — EXEMPT_* features mapped from
+    `mask_map` entries. `extract_for_segment` fires for mask entries within
+    the segment's char range; `extract_for_document` fires for any entry
+    anywhere in the document. Both are called by the orchestrator so that each
+    exemption kind appears in the containing segment AND the document feature
+    set.
+  - `logic/features/document.py` — 4 DOC_* features assembled after all
+    per-segment passes: `DOC_HAS_HEADINGS`, `DOC_HAS_LISTS`,
+    `DOC_HAS_CITATIONS` (any `APS_LEGISLATION_REFERENCE` or
+    `PATTERN_CITATION_PARENS` in any segment), `DOC_LANGUAGE_EN`.
+- **`logic/features/data/`** — 3 starter wordlists:
+  `department_names.txt`, `ministerial_titles.txt`,
+  `commonwealth_entities.txt`.
+- **Phase 1 list-segment fix**: `_segment_markdown` now emits `list_bullet` /
+  `list_numbered` segment kinds for list-item content (previously they were
+  `paragraph` with list ancestors). Required for `ZONE_LIST_BULLET` /
+  `ZONE_LIST_NUMBERED` to fire; no Phase 1 tests broke.
+- **Phase 1 spaCy upgrade**: `_get_nlp()` now loads
+  `en_core_web_sm(disable=["ner","lemmatizer"])` instead of
+  `spacy.blank("en") + sentencizer`. The richer dependency parse and POS
+  tagger are needed by Phase 2's linguistic extractor. The 50 ms preprocessing
+  budget was updated to 150 ms (observed warm minimum ~65 ms on the test
+  document; 2× headroom). Quality was chosen over latency per project
+  guidelines.
+- **Performance optimisation**: The linguistic sub-extractor originally called
+  `nlp(segment.text)` once per segment (24 calls × 5 ms ≈ 120 ms for the
+  perf-test doc, exceeding budget). The orchestrator now batches all lintable
+  segment texts through `nlp.pipe()` in a single call, cutting the warm
+  extraction time to ~60 ms for the same document.
+- **Tests** (`tests/test_features/`): 9 unit-test files (zones, ancestors,
+  lexical [20 parametrised cases], linguistic, patterns, relations, aps,
+  exemptions, extractor_integration) + `tests/test_features_perf.py` enforcing
+  the <100 ms / 500-word budget. All 232 tests in the repo pass.
+
+### Deferred / not shipped
+- **`ZONE_BLOCKQUOTE` / `ZONE_FOOTNOTE` / `ZONE_REFERENCE_LIST`**: Phase 1
+  never emits these segment kinds (blockquotes remain as ancestors; footnotes
+  and reference-lists require unshipped markdown-it plugins). These zone
+  features are in the vocabulary for future use but cannot fire in Phase 2.
+- **`ANCESTOR_TABLE` / `ANCESTOR_FOOTNOTE` / `ANCESTOR_HEADING_SECTION`**:
+  Phase 1 never pushes these ancestor values; features mapped but never fire.
+- **`LING_NEGATION` fired on `not` tokens without `neg` dep**: Some spaCy
+  parses assign `neg` dep only to the explicit "not" or "no" token; contracted
+  forms ("don't", "isn't") fire because spaCy decomposes them. Acceptable for
+  Phase 2; revisit if rule telemetry shows false positives.
+- **APS_* wordlists are sparse starters**: `department_names.txt`,
+  `ministerial_titles.txt`, and `commonwealth_entities.txt` cover the examples
+  found in `library_of_rules/` but are far from exhaustive. Phase 3's LLM
+  batch will identify more gaps; the lists should be extended then.
+- **`REL_ACRONYM_DEFINED_ON_FIRST_USE` is conservative**: it fires only on the
+  defining segment, not on later uses of the defined acronym. A more complete
+  implementation would track the full acronym inventory and fire on every
+  correct use. Deferred — the current signal is useful for rule "always
+  introduce acronyms on first use".
+
+### Deferred features (mark these as risky for Phase 3)
+The following vocabulary entries were found unreliable or expensive to extract
+and **should be marked `deferred` in Phase 3's batch prompt** so the LLM does
+not generate `required_features` that reference them:
+
+| Feature | Reason deferred |
+|---------|----------------|
+| `ZONE_BLOCKQUOTE` | Phase 1 never produces blockquote-kind segments |
+| `ZONE_FOOTNOTE` | Requires unshipped footnote plugin |
+| `ZONE_REFERENCE_LIST` | Requires unshipped reference-list plugin |
+| `ANCESTOR_TABLE` | Phase 1 never pushes "table" onto the ancestors stack |
+| `ANCESTOR_FOOTNOTE` | Phase 1 never pushes "footnote" onto the ancestors stack |
+| `ANCESTOR_HEADING_SECTION` | Phase 1 never pushes "heading_section" onto the ancestors stack |
+
+### Surprises
+- `spaCy.pipe()` reduces the tok2vec amortisation cost dramatically: 24
+  separate `nlp()` calls cost ~120 ms; one `nlp.pipe(24 texts)` costs ~20 ms
+  for the same corpus (5× speedup).
+- Phase 1's list-item segments were `paragraph` kind with `ancestors=["list_bullet"]`,
+  not `list_bullet` kind. This meant `ZONE_LIST_BULLET` could never fire. The
+  fix (promote paragraph kind to list kind when inside a list item) broke no
+  existing Phase 1 tests but is a semantic change that Phase 3 rule authors
+  should know about.
+- The curly-quote regex must NOT use a raw string that contains typographic
+  single quotes (`'`…`'`) as delimiters — Python's lexer closes the raw string
+  literal at the first `'`, silently truncating the character class. Use a
+  plain string or double-quote delimiters instead.
+
+### Follow-ups for next phase
+- Phase 3 should cross-check `mask_map` exemption kinds and `EXEMPT_*` feature
+  names stay in lockstep (suggested in Phase 1 follow-ups).
+- Phase 3 prompt: mark the six deferred features in the table above as
+  `requires_phase_gt_2 = true` so the LLM skips them.
+- Phase 4 (indexed dispatcher): wire `extract()` into the dispatcher; the
+  `nlp` object should be the same singleton used by Phase 1's `_get_nlp()` so
+  the model is loaded once per process.
+
+
 ## Deferred features (revisit triggers)
 - COUNT_* family: revisit if Phase 5 telemetry shows ranking failures that boolean count thresholds would fix. Replacement plan = integer counts in PreprocessedDoc.counts plus a `min_count` slot on FeatureRequirements.
 - COST_* execution classes: revisit if Phase 4 latency tests miss the 200 ms p50 target.
