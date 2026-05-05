@@ -2,13 +2,15 @@
 
 ## Project overview
 
-Octavius is a plain-language linter for Australian Public Service (APS) content. It analyzes text for style violations (e.g. passive voice) and highlights them inline with suggestions and detailed findings.
+Octavius is a plain-language linter for Australian Public Service (APS) content. It analyzes text for style violations and highlights them inline with suggestions and detailed findings.
 
 The stack is:
-- **Backend:** Python + spaCy NLP + Streamlit
-- **Frontend:** React 18 + TypeScript + Tailwind CSS (embedded as a Streamlit custom component)
+- **Backend:** Python + spaCy NLP, served via FastAPI (`main.py`, `routes/`)
+- **Frontend:** React 18 + TypeScript + Tailwind CSS, built to `frontend/build/` and served as a static page from FastAPI
 
-This is a vertical-slice MVP. The passive voice rule is the proof-of-concept; the architecture is designed for easy rule expansion.
+Rules are sourced from the Australian Government Style Manual via the
+six-phase pipeline in `src/`, published as `published/rulebook.parquet`,
+and loaded at boot by `logic/dispatcher.py`.
 
 ---
 
@@ -16,8 +18,8 @@ This is a vertical-slice MVP. The passive voice rule is the proof-of-concept; th
 
 ### Run the app
 ```bash
-streamlit run app.py
-# Opens at http://localhost:8501
+uvicorn main:app --reload
+# Opens at http://localhost:8000
 ```
 
 ### Run tests
@@ -40,25 +42,24 @@ cd frontend && npm run build
 ## Architecture
 
 ```
-User input (Streamlit text area)
+User input (frontend text area)
         │
         ▼
-   app.py  ──►  logic/engine.lint_text(text, RULES)
-                        │
-                        ▼
-               spaCy NLP pipeline (en_core_web_sm)
-                        │
-                        ▼
-           logic/rules.check_*(doc)  ×N rules
-                        │
-                        ▼
-            Findings (start_char, end_char, message, …)
-                        │
-                        ▼
+   POST /check  ──►  logic.dispatcher.run_rules(text, ...)
+                              │
+                              ▼
+                   compiled rules (loaded once at boot
+                   from published/rulebook.parquet)
+                              │
+                              ▼
+            Findings (start_char, end_char, ui_flag, …)
+                              │
+                              ▼
         React component (inline highlights + findings panel)
 ```
 
-The React component lives in `frontend/` and is compiled to `frontend/build/`. Streamlit loads it as a custom component and passes findings from Python via props.
+The React frontend lives in `frontend/`, builds to `frontend/build/`, and
+is served as a static page by FastAPI alongside the JSON `/check` route.
 
 ---
 
@@ -66,10 +67,15 @@ The React component lives in `frontend/` and is compiled to `frontend/build/`. S
 
 | File | Role |
 |------|------|
-| `app.py` | Streamlit entry point — layout, session state, passing data to React |
-| `logic/engine.py` | `lint_text(text, rules)` — runs all rules against a spaCy Doc |
-| `logic/rules.py` | `RULES` list + individual `check_*` functions |
-| `tests/test_engine.py` | Pytest unit tests for the linting engine |
+| `main.py` | FastAPI entry point — wires routers, serves `index.html` |
+| `routes/check.py` | POST `/check` — runs the dispatcher and returns findings |
+| `routes/rules.py` | GET `/rules` and related rule-metadata endpoints |
+| `logic/dispatcher.py` | Loads compiled rules at boot; `run_rules()` executes them |
+| `logic/rulebook/loader.py` | Reads `published/rulebook.parquet` and compiles each row |
+| `logic/rulebook/adapters.py` | Per-taxonomy adapters (regex / lookup / structural) |
+| `logic/rulebook/types.py` | `Finding`, `CompiledRule`, `FeatureRequirements` TypedDicts |
+| `logic/features/vocabulary.py` | Inverted-index feature vocabulary + validator (Phase 0) |
+| `tests/` | Pytest unit and integration tests |
 | `frontend/src/OctaviusEditor.tsx` | Root React component |
 | `frontend/src/components/` | TextEditor, FindingsPanel, FindingCard, etc. |
 | `frontend/src/hooks/useHighlights.ts` | Slices text into plain/highlighted segments |
@@ -77,12 +83,13 @@ The React component lives in `frontend/` and is compiled to `frontend/build/`. S
 | `library_of_rules/` | Reference rule content from the Australian Government Style Manual |
 | `library_of_rules/SiteMap.md` | Navigation index for the rule library |
 | `library_of_rules/Octavius_Rulebook_Column_Reference.docx` | Column reference for rule authoring |
+| `docs/REFACTOR_LOG.md` | Decision log for the inverted-index refactor |
 
 ---
 
 ## Rule library (`library_of_rules/`)
 
-The `library_of_rules/` directory contains reference content sourced from the Australian Government Style Manual. It is organised by topic and provides the authoritative source material for rules implemented in `logic/rules.py`.
+The `library_of_rules/` directory contains reference content sourced from the Australian Government Style Manual. It is organised by topic and provides the authoritative source material for rules in the published rulebook (`published/rulebook.parquet`).
 
 ```
 library_of_rules/
@@ -103,26 +110,18 @@ When implementing a new rule, consult the relevant markdown files in this direct
 
 ## Adding a new rule
 
-1. Write a `check_*` function in `logic/rules.py`:
-   ```python
-   def check_my_rule(doc) -> list[dict]:
-       findings = []
-       # analyse doc, append dicts with start_char, end_char, suggestion
-       return findings
-   ```
-2. Append a rule dict to `RULES`:
-   ```python
-   {
-       "id": "MY-RULE-001",
-       "title": "Short title",
-       "message": "Explanation shown to the user.",
-       "severity": "warn",   # "error" | "warn" | "info"
-       "suggestion": None,   # or a static suggestion string
-       "check": check_my_rule,
-   }
-   ```
+Rules are no longer hand-written in Python. They are produced by the
+six-phase pipeline in `src/`: a Style Manual page is mirrored to markdown,
+extracted into a JSONL row, given executable trigger code, tested,
+corrected, and finally published as a row in
+`published/rulebook.parquet`. The dispatcher loads the parquet at boot
+and compiles every passing row via the per-taxonomy adapters in
+`logic/rulebook/adapters.py`.
 
-The engine and UI pick it up automatically — no other changes needed.
+To iterate locally, edit `rules_working_draft.jsonl` and re-run the
+relevant phases (`src/run_tests.py`, `src/correct_rules.py`,
+`src/publish.py`); see `CLAUDE_Octavius Rulebook Creation Pipeline.md`
+for the full flow.
 
 ---
 

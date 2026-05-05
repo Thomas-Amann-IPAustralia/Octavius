@@ -75,7 +75,14 @@ def load_rules(parquet_path: str | Path | None = None) -> list[CompiledRule]:
                 f"Supported: {list(_ADAPTER_MAP)}"
             )
 
-        rules.append(adapter(row))
+        rule = adapter(row)
+
+        # Phase 0: pass through optional inverted-index columns when present.
+        # These are populated by Phase 3; missing columns default to ``None``.
+        rule["required_features"] = row.get("required_features")
+        rule["mutation_class"] = row.get("mutation_class")
+
+        rules.append(rule)
 
     counts = Counter(r["taxonomy"] for r in rules)
     logger.info(
