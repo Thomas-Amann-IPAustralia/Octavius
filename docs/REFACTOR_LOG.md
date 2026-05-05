@@ -69,6 +69,104 @@
   every name in every rule's `required_features` slot.
 
 
+## Phase 1 — Preprocessing layer (2026-05-05)
+### Shipped
+- New `logic/preprocess.py` exporting `Segment`, `PreprocessedDoc`, and
+  `preprocess(text)`. Segmentation is driven by `markdown-it-py` (the
+  parser is enabled with the GFM `table` extension). The walker emits
+  `Segment`s for headings, paragraphs, code fences (lintable=False),
+  and table cells; `bullet_list_open` / `ordered_list_open` push the
+  appropriate `list_bullet` / `list_numbered` ancestor onto the stack
+  at `list_item_open` so a paragraph nested in a blockquote inside a
+  bullet item ends up with `ancestors=["list_bullet", "blockquote"]`.
+- Token masking via priority-ordered regex over the original text:
+  inline code → `$`/`>>>` REPL lines → URLs → branch names → file
+  paths → mentions/hashtags → hyphenated product names → snake / camel
+  / dotted identifiers → env vars (skipped at sentence start) →
+  standalone Title-Case product-name heuristic → quoted content. Each
+  match is replaced with the private-use sentinel `` of equal
+  length, and `len(masked) == len(original)` is asserted by the offset
+  test suite.
+- `mask_map` records `(start, end, original, exemption_kind)` where
+  `exemption_kind` is the lowercased `EXEMPT_*` feature stem
+  (`url`, `filepath`, `branchname`, `identifier`, `env_var`,
+  `product_name`, `mention_or_hashtag`, `code_snippet`,
+  `quoted_content`).
+- `counts: dict[str, int]` populated via lightweight regex counting on
+  the original text (`sentence`, `cardinal`, `acronym`,
+  `proper_noun_likely`, `paren_pair`). Reserved for the future
+  `min_count` requirement type — no Phase 1 consumer.
+- Sentence counting and cached `spacy_doc` via a blank `en` pipeline
+  with the rule-based `sentencizer` (~5 ms for a 500-word document).
+  Loading the full `en_core_web_sm` parser pushed a 500-word document
+  past the 50 ms budget, so we ship the lightweight pipeline now and
+  let Phase 2 re-parse with the full pipeline if its features need it.
+- ASCII-letter language heuristic (`logic.preprocess._detect_language`)
+  in lieu of `langdetect`: the `langdetect` sdist failed to build in
+  the project's CI environment (no working C++ toolchain for the
+  `six`-backed wheel), and APS content is overwhelmingly ASCII English.
+  Heuristic returns `"en"` when ≥80 % of letter chars are ASCII,
+  `"und"` otherwise; defaults to `"en"` on empty input or any error.
+- New `logic/sentence_cache.py` with `SentenceCache(max_entries=10_000)`
+  exposing `get_or_compute(sentence, compute)`. Keys are SHA-256
+  truncated to 16 hex chars; eviction is FIFO via `OrderedDict`. The
+  cache is process-local and intended to be instantiated by the
+  Phase 4 indexed dispatcher.
+- `markdown-it-py==4.0.0` pinned in `requirements.txt`.
+- `tests/test_preprocess.py` (14 tests covering offset preservation,
+  fence/inline-code/quote/url/path/branch masking, ancestor chains,
+  the Step 1 noisy example, counts, language defaults, sentence-cache
+  FIFO eviction and idempotency, and `has_structure`) plus
+  `tests/test_preprocess_perf.py` enforcing the 50 ms / 500-word
+  budget. All 93 tests in the repo pass.
+
+### Deferred / punted
+- **Footnote and reference-list segments.** `markdown-it-py` does not
+  emit these without optional plugins; the `Segment` Literal includes
+  both kinds but the walker never produces them in this phase. Will
+  enable the `footnote_plugin` if a Phase 2 rule needs it.
+- **Inline code ancestors.** `inline_code` segments are emitted with
+  `ancestors=[]` rather than the chain of containing block kinds. The
+  exact lineage was not required by Phase 2's `ANCESTOR_*` feature
+  set, and re-deriving it from the inline-token offset would add
+  complexity for no current consumer.
+- **Standalone Title-Case product-name heuristic.** The strict
+  spec (`Title-Case-Hyphenated chains length ≥2`) does not match the
+  `Render` token in the Step 1 example. We added a lenient
+  side-pattern (`\b[A-Z][a-z]{4,}\b`, only when not at a sentence
+  start) that masks single Title-Case words ≥5 chars mid-sentence as
+  `product_name`. This over-masks ordinary proper nouns
+  (e.g. "Sydney", "Canberra"); revisit when Phase 2 ships
+  `LING_PROPER_NOUN` and we can decide whether masking is still
+  desired.
+- **Contraction-aware single-quote detection.** The straight-quote
+  pattern uses `(?<!\w)'…'(?!\w)` to avoid matching contractions
+  (`don't`), but adjacent dialog like `said 'no.'` may still produce
+  surprising spans. Acceptable for Phase 1; will be tightened if
+  telemetry shows quote-mismatch noise.
+- **Full spaCy parse caching.** As above, only the rule-based
+  sentencizer runs in Phase 1. Phase 2 will need to decide whether to
+  upgrade the cached pipeline (and pay the latency) or run its own
+  full parse on the masked paragraph text.
+
+### Surprises
+- markdown-it-py's `paragraph_open` `map` covers the entire wrapped
+  block (e.g. two soft-break-joined lines) — exactly what we want for
+  segment text — but for `td_open` / `th_open` the `map` is sometimes
+  ``None`` and we have to fall back to the inline child's map.
+- `[A-Z][a-z]+` is a noisy proper-noun signal, but it is good enough
+  for `counts.proper_noun_likely`. `min_count`-style gating in a future
+  phase can layer on stricter rules.
+
+### Follow-ups for next phase
+- Phase 2 reads `PreprocessedDoc.spacy_doc` for token-level features.
+  If the sentencizer-only Doc isn't enough, swap the Phase 1 loader
+  back to `en_core_web_sm` (with `disable=["ner", "lemmatizer"]`) and
+  re-measure the 500-word budget, or run the full parse lazily.
+- Phase 3 should cross-check that `mask_map` exemption kinds and
+  `EXEMPT_*` feature names stay in lockstep — add a CI assertion that
+  ``{kind for *_, kind in mask_map} == {f.removeprefix("EXEMPT_").lower() for f in EXEMPT_FEATURES}``.
+
 ## Deferred features (revisit triggers)
 - COUNT_* family: revisit if Phase 5 telemetry shows ranking failures that boolean count thresholds would fix. Replacement plan = integer counts in PreprocessedDoc.counts plus a `min_count` slot on FeatureRequirements.
 - COST_* execution classes: revisit if Phase 4 latency tests miss the 200 ms p50 target.
