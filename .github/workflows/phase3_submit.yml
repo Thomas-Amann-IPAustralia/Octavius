@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: phase-3-submit
@@ -35,6 +36,11 @@ jobs:
 
       - name: Install pipeline dependencies
         run: pip install -r requirements-pipeline.txt
+
+      - name: Enable collect workflow to begin polling
+        run: gh workflow enable phase3_collect.yml
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Submit Phase 3 code generation batches
         env:

@@ -4,6 +4,7 @@
 import io
 import json
 import logging
+import os
 import subprocess
 import sys
 from datetime import datetime, timezone
@@ -69,6 +70,14 @@ Your task: read the provided markdown content and identify every discrete, enfor
 3. If a page contains no extractable rules, return exactly: {{"no_rules": true, "source_url": "<url>"}}
 4. Return ONLY the JSONL lines. No preamble, no explanation, no markdown code fences.
 """
+
+
+def write_github_output(key: str, value: str) -> None:
+    """Write a key=value pair to GITHUB_OUTPUT when running inside GitHub Actions."""
+    github_output = os.environ.get("GITHUB_OUTPUT")
+    if github_output:
+        with open(github_output, "a") as f:
+            f.write(f"{key}={value}\n")
 
 
 def read_batch_state() -> dict:
@@ -254,10 +263,19 @@ def collect() -> None:
     """Collect Phase 2 batch results and append to rules_working_draft.jsonl."""
     state = read_batch_state()
     if state.get("phase") != "2":
-        log.info(
-            "batch_state.json phase is '%s', expected '2'. Nothing to collect.",
-            state.get("phase"),
-        )
+        state_phase = state.get("phase")
+        if state_phase is None:
+            log.info(
+                "No active Phase 2 batch state found. "
+                "Either Phase 2 submit has not run yet, or the previous collect already completed."
+            )
+        else:
+            log.info(
+                "Active batch belongs to Phase %s, not Phase 2. "
+                "Phase 2 submit has not been run in this cycle.",
+                state_phase,
+            )
+        write_github_output("collected", "false")
         sys.exit(0)
 
     batch_ids: list[str] = state.get("batch_ids", [])
@@ -272,7 +290,12 @@ def collect() -> None:
         batch = client.batches.retrieve(batch_id)
         log.info("Batch %s status: %s", batch_id, batch.status)
         if batch.status not in terminal_statuses:
-            log.info("Batch %s not yet complete. Exiting — cron will retry.", batch_id)
+            log.info(
+                "Batch %s not yet complete (status: %s). Exiting — cron will retry.",
+                batch_id,
+                batch.status,
+            )
+            write_github_output("collected", "false")
             sys.exit(0)
 
     log.info("All batches complete. Collecting results.")
@@ -365,6 +388,8 @@ def collect() -> None:
             str(RULES_DRAFT_FILE.relative_to(REPO_ROOT)),
         ],
     )
+
+    write_github_output("collected", "true")
 
 
 def main() -> None:
