@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: phase-3-collect
@@ -35,6 +36,7 @@ jobs:
         run: pip install -r requirements-pipeline.txt
 
       - name: Collect Phase 3 code generation results
+        id: collect
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python src/generate_code.py collect
@@ -43,3 +45,9 @@ jobs:
         run: |
           git pull --rebase origin HEAD || true
           git push origin HEAD
+
+      - name: Disable collect schedule after successful retrieval
+        if: steps.collect.outputs.collected == 'true'
+        run: gh workflow disable phase3_collect.yml
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

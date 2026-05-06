@@ -9,6 +9,7 @@ half the cost of two separate batches).
 import io
 import json
 import logging
+import os
 import subprocess
 import sys
 from datetime import datetime, timezone
@@ -38,6 +39,14 @@ def _import_vocab():
         _sys.path.insert(0, str(REPO_ROOT))
     from logic.features.vocabulary import validate_feature, EXEMPT_FEATURES
     return validate_feature, EXEMPT_FEATURES
+
+
+def write_github_output(key: str, value: str) -> None:
+    """Write a key=value pair to GITHUB_OUTPUT when running inside GitHub Actions."""
+    github_output = os.environ.get("GITHUB_OUTPUT")
+    if github_output:
+        with open(github_output, "a") as f:
+            f.write(f"{key}={value}\n")
 
 
 def read_batch_state() -> dict:
@@ -262,11 +271,23 @@ def collect() -> None:
     """Collect Phase 3.5 results and write required_features + mutation_class back to JSONL."""
     state = read_batch_state()
     if state.get("phase") != PHASE:
-        log.info(
-            "batch_state.json phase is '%s', expected '%s'. Nothing to collect.",
-            state.get("phase"),
-            PHASE,
-        )
+        state_phase = state.get("phase")
+        if state_phase is None:
+            log.info(
+                "No active Phase %s batch state found. "
+                "Either Phase %s submit has not run yet, or the previous collect already completed.",
+                PHASE,
+                PHASE,
+            )
+        else:
+            log.info(
+                "Active batch belongs to Phase %s, not Phase %s. "
+                "Phase %s submit has not been run in this cycle.",
+                state_phase,
+                PHASE,
+                PHASE,
+            )
+        write_github_output("collected", "false")
         sys.exit(0)
 
     batch_ids: list[str] = state.get("batch_ids", [])
@@ -282,7 +303,12 @@ def collect() -> None:
         batch = client.batches.retrieve(batch_id)
         log.info("Batch %s status: %s", batch_id, batch.status)
         if batch.status not in terminal_statuses:
-            log.info("Batch %s not yet complete. Exiting — cron will retry.", batch_id)
+            log.info(
+                "Batch %s not yet complete (status: %s). Exiting — cron will retry.",
+                batch_id,
+                batch.status,
+            )
+            write_github_output("collected", "false")
             sys.exit(0)
 
     log.info("All batches complete. Collecting feature-authoring results.")
@@ -385,6 +411,8 @@ def collect() -> None:
         success_count,
         failure_count,
     )
+
+    write_github_output("collected", "true")
 
     # Emit summary statistics
     rules = read_rules()

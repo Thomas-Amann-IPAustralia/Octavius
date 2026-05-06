@@ -51,6 +51,14 @@ def count_tokens(text: Optional[str]) -> int:
     return len(TOKENIZER.encode(str(text)))
 
 
+def write_github_output(key: str, value: str) -> None:
+    """Write a key=value pair to GITHUB_OUTPUT when running inside GitHub Actions."""
+    github_output = os.environ.get("GITHUB_OUTPUT")
+    if github_output:
+        with open(github_output, "a") as f:
+            f.write(f"{key}={value}\n")
+
+
 def read_batch_state() -> dict:
     if BATCH_STATE_FILE.exists():
         with open(BATCH_STATE_FILE) as f:
@@ -262,10 +270,19 @@ def collect() -> None:
     """Collect Phase 3 batch results and update rules_working_draft.jsonl."""
     state = read_batch_state()
     if state.get("phase") != "3":
-        log.info(
-            "batch_state.json phase is '%s', expected '3'. Nothing to collect.",
-            state.get("phase"),
-        )
+        state_phase = state.get("phase")
+        if state_phase is None:
+            log.info(
+                "No active Phase 3 batch state found. "
+                "Either Phase 3 submit has not run yet, or the previous collect already completed."
+            )
+        else:
+            log.info(
+                "Active batch belongs to Phase %s, not Phase 3. "
+                "Phase 3 submit has not been run in this cycle.",
+                state_phase,
+            )
+        write_github_output("collected", "false")
         sys.exit(0)
 
     batch_ids: list[str] = state.get("batch_ids", [])
@@ -277,7 +294,12 @@ def collect() -> None:
         batch = client.batches.retrieve(batch_id)
         log.info("Batch %s status: %s", batch_id, batch.status)
         if batch.status not in terminal_statuses:
-            log.info("Batch %s not yet complete. Exiting — cron will retry.", batch_id)
+            log.info(
+                "Batch %s not yet complete (status: %s). Exiting — cron will retry.",
+                batch_id,
+                batch.status,
+            )
+            write_github_output("collected", "false")
             sys.exit(0)
 
     log.info("All batches complete. Collecting results.")
@@ -415,6 +437,8 @@ def collect() -> None:
         ],
     )
     log.info("Updated %d rules with trigger code", updated_count)
+
+    write_github_output("collected", "true")
 
 
 def main() -> None:
