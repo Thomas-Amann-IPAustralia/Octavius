@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-05-05T11:43:06.520188+00:00",
+  "published_at": "2026-05-06T08:47:13.266717+00:00",
   "total_rules": 3114,
   "by_taxonomy": {
     "semantic": 1497,
@@ -14,9 +14,13 @@
   "skip_count": 2064,
   "frozen_count": 188,
   "unassigned_count": 0,
-  "sha256": "26b6d9ed6f0caf88a55e27787d447f99d2cccae1781d33bb67b757dff058f88c",
+  "sha256": "a25fbad308efe7074dacd2ceb96f675e35970179a78d39870c40d4c1d2282f78",
   "pass_count": 801,
-  "required_features_annotated": 0,
-  "mutation_class_annotated": 0,
-  "mutation_class_distribution": {}
+  "required_features_annotated": 796,
+  "mutation_class_annotated": 796,
+  "mutation_class_distribution": {
+    "safe_replace": 407,
+    "human_review": 315,
+    "requires_rewrite": 74
+  }
 }
