@@ -19,9 +19,6 @@ _RULE_GROUPS_DEPRECATION_LOGGED = False
 # ---------------------------------------------------------------------------
 # OCTAVIUS_DISPATCHER env-flag plumbing
 # ---------------------------------------------------------------------------
-# Phase 0: both ``legacy`` and ``indexed`` resolve to ``logic.dispatcher``.
-# The ``indexed`` backend lands in a later phase; for now we log a warning
-# so anyone setting it early sees that the request was a no-op.
 
 _VALID_DISPATCHERS = ("legacy", "indexed")
 
@@ -29,9 +26,9 @@ _VALID_DISPATCHERS = ("legacy", "indexed")
 def _resolve_dispatcher(name: str | None) -> ModuleType:
     """Return the dispatcher module for the given env-flag value.
 
-    Unknown values fall back to ``legacy`` with a warning. Phase 0 has no
-    indexed backend yet, so ``indexed`` also resolves to ``logic.dispatcher``
-    and emits a warning.
+    ``legacy`` → ``logic.dispatcher`` (default).
+    ``indexed`` → ``logic.indexed_dispatcher`` (Phase 4+).
+    Unknown values fall back to ``legacy`` with a warning.
     """
     choice = (name or "legacy").strip().lower()
     if choice not in _VALID_DISPATCHERS:
@@ -44,10 +41,8 @@ def _resolve_dispatcher(name: str | None) -> ModuleType:
         choice = "legacy"
 
     if choice == "indexed":
-        logger.warning(
-            "OCTAVIUS_DISPATCHER='indexed' requested but the indexed dispatcher "
-            "is not implemented in Phase 0; using legacy dispatcher."
-        )
+        import logic.indexed_dispatcher as _indexed_dispatcher
+        return _indexed_dispatcher
 
     return _legacy_dispatcher
 
@@ -92,6 +87,8 @@ def check_text(req: CheckRequest) -> list[dict]:
             "end": f["end_char"],
             "severity": f["severity"],
             "document_level": f["document_level"],
+            "mutation_class": f.get("mutation_class"),
+            "grouped_rules": f.get("grouped_rules"),
         }
         for f in findings
     ]
