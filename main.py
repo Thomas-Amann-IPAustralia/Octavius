@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+import os
 import sys
 
 from fastapi import FastAPI
@@ -24,6 +25,12 @@ from routes.check import router as check_router
 from routes.rules import router as rules_router
 
 app = FastAPI(title="Octavius", version="0.2.0")
+
+# Register debug endpoints only when explicitly opted in.
+if os.environ.get("OCTAVIUS_DEBUG_ENDPOINTS") == "1":
+    from routes.debug import router as debug_router
+    app.include_router(debug_router)
+    logger.info("Debug endpoints enabled (OCTAVIUS_DEBUG_ENDPOINTS=1)")
 
 app.add_middleware(
     CORSMiddleware,
