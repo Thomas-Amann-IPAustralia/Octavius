@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import logging
 import os
+from typing import Any
 from types import ModuleType
 
 import logic.dispatcher as _legacy_dispatcher
@@ -24,12 +25,7 @@ _VALID_DISPATCHERS = ("legacy", "indexed")
 
 
 def _resolve_dispatcher(name: str | None) -> ModuleType:
-    """Return the dispatcher module for the given env-flag value.
-
-    ``legacy`` → ``logic.dispatcher`` (default).
-    ``indexed`` → ``logic.indexed_dispatcher`` (Phase 4+).
-    Unknown values fall back to ``legacy`` with a warning.
-    """
+    """Return the dispatcher module for the given env-flag value."""
     choice = (name or "legacy").strip().lower()
     if choice not in _VALID_DISPATCHERS:
         logger.warning(
@@ -50,8 +46,19 @@ def _resolve_dispatcher(name: str | None) -> ModuleType:
 dispatcher = _resolve_dispatcher(os.environ.get("OCTAVIUS_DISPATCHER"))
 
 
+class ZoneIn(BaseModel):
+    kind: str
+    text: str
+    offset: int
+    length: int
+    ancestors: list[str] = []
+    lintable: bool = True
+
+
 class CheckRequest(BaseModel):
     text: str
+    plain_text: str | None = None      # alias used by Tiptap frontend
+    zones: list[ZoneIn] | None = None  # structural zones from the frontend
     disabled_rule_ids: list[str] | None = None
     disabled_taxonomies: list[str] | None = None
     # Legacy field — accepted but ignored.
@@ -68,11 +75,41 @@ def check_text(req: CheckRequest) -> list[dict]:
         )
         _RULE_GROUPS_DEPRECATION_LOGGED = True
 
-    findings = dispatcher.run_rules(
-        req.text,
-        disabled_rule_ids=set(req.disabled_rule_ids) if req.disabled_rule_ids else None,
-        disabled_taxonomies=set(req.disabled_taxonomies) if req.disabled_taxonomies else None,
-    )
+    effective_text = req.plain_text or req.text
+
+    # When the frontend supplies structural zones, build the PreprocessedDoc
+    # directly from them, bypassing markdown segmentation.
+    _doc: Any = None
+    if req.zones:
+        from logic.preprocess import from_zones
+        _doc = from_zones(
+            effective_text,
+            [z.model_dump() for z in req.zones],
+        )
+
+    # The legacy dispatcher does not support _doc; only the indexed one does.
+    if _doc is not None and hasattr(dispatcher, "run_rules"):
+        import inspect
+        sig = inspect.signature(dispatcher.run_rules)
+        if "_doc" in sig.parameters:
+            findings = dispatcher.run_rules(
+                effective_text,
+                disabled_rule_ids=set(req.disabled_rule_ids) if req.disabled_rule_ids else None,
+                disabled_taxonomies=set(req.disabled_taxonomies) if req.disabled_taxonomies else None,
+                _doc=_doc,
+            )
+        else:
+            findings = dispatcher.run_rules(
+                effective_text,
+                disabled_rule_ids=set(req.disabled_rule_ids) if req.disabled_rule_ids else None,
+                disabled_taxonomies=set(req.disabled_taxonomies) if req.disabled_taxonomies else None,
+            )
+    else:
+        findings = dispatcher.run_rules(
+            effective_text,
+            disabled_rule_ids=set(req.disabled_rule_ids) if req.disabled_rule_ids else None,
+            disabled_taxonomies=set(req.disabled_taxonomies) if req.disabled_taxonomies else None,
+        )
 
     return [
         {
@@ -85,10 +122,13 @@ def check_text(req: CheckRequest) -> list[dict]:
             "message": f["ui_flag"],  # legacy compatibility
             "start": f["start_char"],
             "end": f["end_char"],
+            "start_char": f["start_char"],
+            "end_char": f["end_char"],
             "severity": f["severity"],
             "document_level": f["document_level"],
             "mutation_class": f.get("mutation_class"),
             "grouped_rules": f.get("grouped_rules"),
+            "suggestion": f.get("suggestion"),
         }
         for f in findings
     ]
