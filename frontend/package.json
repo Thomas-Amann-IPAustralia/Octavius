@@ -5,8 +5,16 @@
   "homepage": ".",
   "main": "build/index.js",
   "dependencies": {
+    "@tiptap/extension-link": "^3.22.5",
+    "@tiptap/extension-placeholder": "^3.22.5",
+    "@tiptap/extension-table": "^3.22.5",
+    "@tiptap/pm": "^3.22.5",
+    "@tiptap/react": "^3.22.5",
+    "@tiptap/starter-kit": "^3.22.5",
     "ajv": "^8.18.0",
+    "docx": "^9.6.1",
     "lucide-react": "^0.400.0",
+    "mammoth": "^1.12.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "streamlit-component-lib": "^2.0.0"
@@ -31,6 +39,7 @@
       "react-app"
     ]
   },
+  "proxy": "http://localhost:8000",
   "browserslist": {
     "production": [
       ">0.2%",

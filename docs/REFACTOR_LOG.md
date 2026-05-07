@@ -476,3 +476,100 @@ Phase 3.5-annotated rules to the parquet and re-measure the index efficiency.
 - COST_* execution classes: revisit if Phase 4 latency tests miss the 200 ms p50 target.
 - Additional PATTERN_* features: add as Phase 3's batch surfaces gaps in its responses.
 - General relational sub-language: only the four REL_* features ship in Phase 0; expand if telemetry justifies it.
+
+---
+
+## Document Runtime Rebuild
+
+*Branch: `claude/document-runtime-rebuild-nH9k5` — May 2026*
+
+### Motivation
+
+The original frontend was a React textarea that sent raw Markdown to `/check` and received findings as character-offset spans.  This worked for plain text but offered no path to:
+
+- structured document editing (headings, lists, tables)
+- Word import/export
+- structural mutations (applying linter suggestions as AST transforms)
+- a document outline sidebar
+- inline highlights backed by ProseMirror decorations
+
+The rebuild introduces a **canonical document runtime** (`frontend/src/runtime/`) that sits between Tiptap and the linting backend, and extends the backend to accept pre-segmented zones from the frontend.
+
+---
+
+### Key decisions
+
+#### 1. Single-pass serialiser with guaranteed zone-offset invariant
+
+The serialiser (`serialisers.ts`) walks the ProseMirror AST once and emits both `plainText` and `InternalZone[]` from the same traversal state.  Because every zone's `offset` is set to `state.text.length` *before* appending `nodeText + '\n'` and `length` equals `nodeText.length` (without the newline), the invariant
+
+```
+plainText.slice(zone.offset, zone.offset + zone.length) === zone.text
+```
+
+is mechanically enforced by the construction, not by a post-hoc assertion.  The 20+ fixture tests in `serialisers.test.ts` validate this for every document shape.
+
+`InternalZone` extends `Zone` with `pmStart`/`pmEnd` (ProseMirror positions) to support mutations without a second tree walk.
+
+#### 2. Headless runtime core
+
+Files in `frontend/src/runtime/` import only `@tiptap/pm/model` and `@tiptap/pm/state`, which are the ProseMirror packages bundled by Tiptap and are DOM-independent.  `OctaviusDocument.fromHTML()` deliberately throws in Node.js; all other factory methods and projections work in any JavaScript environment.  The `headless.test.ts` suite (`@jest-environment node`) verifies this constraint.
+
+#### 3. Backend zone seam: `from_zones()`
+
+Rather than re-running markdown segmentation on the frontend's pre-segmented text, `logic/preprocess.py` exposes `from_zones(text, zones)`.  This function converts the frontend zone dicts directly to `Segment` objects, extracts `code_ranges` from non-lintable zones, runs masking and inline-code detection, deduplicates any `inline_code` zones the frontend supplied (so the regex pass does not double them), and runs spaCy — then returns a `PreprocessedDoc` identical in shape to what `preprocess()` returns.
+
+The `indexed_dispatcher.run_rules()` signature was extended with `_doc: PreprocessedDoc | None = None`; `routes/check.py` passes the pre-built doc when zones are present, avoiding a second preprocessing call.
+
+#### 4. Tiptap/backend zone vocabulary disagreements
+
+| Frontend node | Backend zone kind | Notes |
+|---|---|---|
+| `bullet_list > list_item > paragraph` | `list_bullet` | Resolved by `paragraphKind(ancestors)` in serialiser |
+| `ordered_list > list_item > paragraph` | `list_numbered` | Same mechanism |
+| `blockquote > paragraph` | `paragraph` + `ancestors=["blockquote"]` | Markdown path only; zone path can emit `kind="blockquote"` directly |
+| `code_block` | `code_fence` | Direct mapping; `lintable=false` |
+| `table_cell` / `table_header` | `table_cell` | Header collapsed to same kind |
+| `reference_block` | `reference_list` | Custom Tiptap node → backend kind |
+
+Rules that use `ZONE_BLOCKQUOTE` only fire on the zone path; rules that use `ZONE_PARAGRAPH + ANCESTOR_BLOCKQUOTE` only fire on the markdown path.  Both are valid — the difference is documented in `from_zones()` and in `test_from_zones_blockquote_kind_accepted`.
+
+#### 5. Word import fidelity (mammoth)
+
+mammoth converts `.docx` → HTML using its built-in style map plus a custom map for `Heading 1`–`Heading 6`.  Images are dropped (inline data URIs create very large editor state).  The resulting HTML is parsed by ProseMirror's `DOMParser` with the Octavius schema, which handles unknown elements gracefully.
+
+Known gaps: complex table styles, footnotes, and tracked-changes markup are not preserved.
+
+#### 6. Word export fidelity (docx)
+
+`html-to-docx` was initially chosen but is incompatible with Create React App's webpack 5 configuration because it depends on Node.js `stream` polyfills that CRA does not bundle.  The replacement is the `docx` npm package, which is a pure browser library.  A custom HTML walker (using `DOMParser`) converts the clean HTML produced by `toCleanHTML()` into `docx` `Paragraph`, `TextRun`, `Table`, and `TableRow` objects.
+
+Known gaps: nested lists produce flat output; complex table borders are not reproduced; images are dropped.
+
+#### 7. Structural-transform routing
+
+The Tiptap binding (`OctaviusEditor.tsx`) routes findings through `applySentenceCaseHeading` when a finding's rule_id contains `heading-case` or the suggestion indicates a case correction.  All other `safe_replace` findings use `applyFinding`, which maps `start_char`/`end_char` through `plainPosToPm()` and applies a ProseMirror `insertText` transaction.
+
+The new document is synced to Tiptap via `editor.commands.setContent(newDoc.toJSON(), { emitUpdate: false })` to prevent a redundant lint cycle.
+
+#### 8. Findings decorations
+
+A ProseMirror Plugin (`makeFindingsPlugin`) maintains a `DecorationSet` keyed by a `PluginKey`.  On each transaction the set is mapped forward (`decorations.map(tr.mapping, tr.doc)`) to track cursor movement and text edits.  When a lint result arrives, `dispatchTransaction` is called with plugin meta to rebuild decorations from scratch.
+
+Active (clicked) findings receive an `octavius-highlight-active` class in addition to the severity-keyed class.
+
+#### 9. Tiptap 3.x API changes
+
+Tiptap 3 changed `editor.commands.setContent(content, emitUpdate: boolean)` to `setContent(content, options?: SetContentOptions)`.  All call sites use the new options-object form.
+
+Table extensions (`TableRow`, `TableHeader`, `TableCell`) are all exported from `@tiptap/extension-table` — importing from sub-paths like `@tiptap/extension-table/src/table-row` does not work in the bundled package.
+
+---
+
+### Open follow-ups
+
+- **Nested list export**: the docx export walker flattens nested lists; a recursive `buildListItems` helper would fix this.
+- **Image round-trip**: mammoth drops images on import; a base64 data-URI pass could preserve inline images.
+- **Zone vocabulary gaps**: footnote and reference_list zone kinds are emitted by the serialiser but have no corresponding backend rules yet.
+- **Bundle size**: `mammoth` adds ~350 KB gzipped; lazy-loading the import handler on user action would reduce initial bundle size.
+- **Indexed dispatcher smoke test**: `test_code_fence_zone_not_linted_indexed` is skipped when the legacy dispatcher is active; a CI matrix run with `OCTAVIUS_DISPATCHER=indexed` would catch regressions in the zone-aware path.

@@ -7,6 +7,9 @@ interface Props {
   findings: Finding[]
   activeId: string | null
   onFindingClick: (finding: Finding) => void
+  onApply?: (finding: Finding, replacement?: string) => void
+  onAcknowledge?: (finding: Finding) => void
+  acknowledged?: Set<string>
 }
 
 const FILTERS: { label: string; value: SeverityFilter }[] = [
@@ -16,7 +19,10 @@ const FILTERS: { label: string; value: SeverityFilter }[] = [
   { label: 'Info',  value: 'info'  },
 ]
 
-export const FindingsPanel: React.FC<Props> = ({ findings, activeId, onFindingClick }) => {
+export const FindingsPanel: React.FC<Props> = ({
+  findings, activeId, onFindingClick,
+  onApply, onAcknowledge, acknowledged = new Set(),
+}) => {
   const [filter, setFilter] = useState<SeverityFilter>('all')
 
   const visible = filter === 'all' ? findings : findings.filter(f => f.severity === filter)
@@ -59,7 +65,7 @@ export const FindingsPanel: React.FC<Props> = ({ findings, activeId, onFindingCl
             </p>
             <p className="text-xs text-slate-400 mt-1">
               {findings.length === 0
-                ? 'Paste text above and click Analyse'
+                ? 'Type or paste text to analyse'
                 : `${findings.length} issue${findings.length > 1 ? 's' : ''} hidden by filter`}
             </p>
           </div>
@@ -69,16 +75,15 @@ export const FindingsPanel: React.FC<Props> = ({ findings, activeId, onFindingCl
               key={`${f.rule_id}-${f.start_char}`}
               finding={f}
               index={i}
-              isActive={isActive(f, activeId)}
+              isActive={f.rule_id === activeId}
               onClick={() => onFindingClick(f)}
+              onApply={onApply}
+              onAcknowledge={onAcknowledge}
+              acknowledged={acknowledged.has(`${f.rule_id}-${f.start_char}`)}
             />
           ))
         )}
       </div>
     </div>
   )
-}
-
-function isActive(finding: Finding, activeId: string | null): boolean {
-  return finding.rule_id === activeId
 }

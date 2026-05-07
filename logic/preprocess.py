@@ -544,11 +544,119 @@ def preprocess(text: str) -> PreprocessedDoc:
     )
 
 
+def from_zones(text: str, zones: list[dict]) -> PreprocessedDoc:
+    """Build a :class:`PreprocessedDoc` from frontend-supplied zone data.
+
+    Skips markdown segmentation and uses the provided zone list directly as
+    the segment list.  All other preprocessing steps run unchanged: masking,
+    counts, language detection, and spaCy sentence parsing.
+
+    Parameters
+    ----------
+    text:
+        The plain text of the document (same string whose character offsets the
+        zones reference).
+    zones:
+        A list of zone dicts matching the frontend Zone type:
+        ``{kind, text, offset, length, ancestors, lintable}``.
+
+    Notes on differences from the markdown path
+    -------------------------------------------
+    * ``blockquote`` zones are emitted with their own ``kind`` here (the
+      Tiptap serialiser walks into blockquote children with
+      ``ancestors=["blockquote"]``), whereas the markdown path promotes them to
+      ``paragraph`` with ``ancestors=["blockquote"]``.  Rules that rely on
+      ``ZONE_PARAGRAPH + ANCESTOR_BLOCKQUOTE`` will not fire on the zone path;
+      rules that rely on ``ZONE_BLOCKQUOTE`` will.
+    * Inline-code zones supplied by the frontend take precedence over the
+      regex-derived ones; duplicates (same offset) are deduplicated.
+    """
+    if text is None:
+        text = ""
+
+    # Build code_ranges from code_fence / inline_code zones so the masker
+    # skips inline-code detection inside those regions.
+    segments: list[Segment] = []
+    code_ranges: list[tuple[int, int]] = []
+
+    for z in zones:
+        kind: str = z.get("kind", "paragraph")
+        offset: int = z.get("offset", 0)
+        zone_text: str = z.get("text", "")
+        lintable: bool = z.get("lintable", kind not in ("code_fence", "inline_code"))
+        ancestors: list[str] = list(z.get("ancestors") or [])
+
+        segments.append(
+            Segment(
+                kind=kind,  # type: ignore[arg-type]
+                text=zone_text,
+                offset=offset,
+                lintable=lintable,
+                ancestors=ancestors,
+            )
+        )
+        if kind in ("code_fence", "inline_code"):
+            code_ranges.append((offset, offset + len(zone_text)))
+
+    masked, mask_map, inline_segs = _build_masks_and_inline_segments(
+        text, code_ranges
+    )
+
+    # Merge regex-derived inline_code segments that the frontend didn't supply.
+    existing_inline_offsets = {
+        s.offset for s in segments if s.kind == "inline_code"
+    }
+    for seg in inline_segs:
+        if seg.offset not in existing_inline_offsets:
+            segments.append(seg)
+
+    segments.sort(key=lambda s: (s.offset, 0 if s.lintable else 1))
+
+    paragraph_text = "\n\n".join(
+        s.text for s in segments if s.kind == "paragraph"
+    )
+    spacy_doc = None
+    sentence_count = 0
+    nlp = _get_nlp()
+    if nlp is not None and paragraph_text.strip():
+        try:
+            spacy_doc = nlp(paragraph_text)
+            sentence_count = sum(1 for _ in spacy_doc.sents)
+        except Exception:
+            logger.info("spaCy parse failed; falling back to regex sentencizer")
+            sentence_count = _count_sentences_fallback(paragraph_text)
+    elif paragraph_text.strip():
+        sentence_count = _count_sentences_fallback(paragraph_text)
+
+    has_structure = any(
+        s.kind in ("heading", "list_bullet", "list_numbered", "code_fence")
+        or "list_bullet" in s.ancestors
+        or "list_numbered" in s.ancestors
+        for s in segments
+    )
+
+    counts = _build_counts(text, sentence_count)
+    language = _detect_language(text)
+
+    return PreprocessedDoc(
+        original=text,
+        masked=masked,
+        segments=segments,
+        mask_map=mask_map,
+        counts=counts,
+        sentence_count=sentence_count,
+        has_structure=has_structure,
+        language=language,
+        spacy_doc=spacy_doc,
+    )
+
+
 __all__ = [
     "Segment",
     "SegmentKind",
     "ExemptionKind",
     "PreprocessedDoc",
     "preprocess",
+    "from_zones",
     "MASK_CHAR",
 ]

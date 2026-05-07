@@ -55,7 +55,7 @@ from typing import Any
 
 from logic.features.extractor import extract
 from logic.features.vocabulary import EXEMPT_FEATURES
-from logic.preprocess import Segment, preprocess
+from logic.preprocess import PreprocessedDoc, Segment, preprocess
 from logic.rulebook.loader import load_rules
 from logic.rulebook.types import CompiledRule, Finding, MutationClass
 from logic.sentence_cache import SentenceCache
@@ -431,6 +431,7 @@ def run_rules(
     text: str,
     disabled_rule_ids: set[str] | None = None,
     disabled_taxonomies: set[str] | None = None,
+    _doc: PreprocessedDoc | None = None,
 ) -> list[Finding]:
     """Run all enabled rules against *text* via the inverted-index dispatcher.
 
@@ -453,7 +454,7 @@ def run_rules(
     skip_taxs = disabled_taxonomies or set()
 
     # --- Preprocess ---
-    doc = preprocess(text)
+    doc = _doc if _doc is not None else preprocess(text)
 
     # --- Extract features ---
     nlp = _get_nlp()

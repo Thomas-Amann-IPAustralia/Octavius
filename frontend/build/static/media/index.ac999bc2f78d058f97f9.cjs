@@ -1,0 +1,1 @@
+"use strict";function _createStarExport(e){Object.keys(e).filter(e=>"default"!==e&&"__esModule"!==e).forEach(r=>{exports.hasOwnProperty(r)||Object.defineProperty(exports,r,{enumerable:!0,configurable:!0,get:()=>e[r]})})}Object.defineProperty(exports,"__esModule",{value:!0});var _prosemirrormodel=require("prosemirror-model");_createStarExport(_prosemirrormodel);
