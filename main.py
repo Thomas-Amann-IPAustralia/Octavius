@@ -6,9 +6,12 @@ import logging
 import os
 import sys
 
+from pathlib import Path
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 
 logger = logging.getLogger(__name__)
 
@@ -43,8 +46,26 @@ app.include_router(check_router)
 app.include_router(rules_router)
 
 
+# ---------------------------------------------------------------------------
+# Frontend serving
+# ---------------------------------------------------------------------------
+# The Tiptap-based React frontend is built to ``frontend/build/`` (committed
+# to git so Render does not need a Node toolchain at deploy time). When that
+# build exists, mount its hashed assets at ``/static`` and serve its
+# ``index.html`` at ``/``. Otherwise fall back to the legacy hand-written
+# ``index.html`` at the repo root.
+_FRONTEND_BUILD = Path(__file__).parent / "frontend" / "build"
+_FRONTEND_INDEX = _FRONTEND_BUILD / "index.html"
+_FRONTEND_STATIC = _FRONTEND_BUILD / "static"
+
+if _FRONTEND_STATIC.is_dir():
+    app.mount("/static", StaticFiles(directory=str(_FRONTEND_STATIC)), name="static")
+
+
 @app.get("/")
 def serve_frontend() -> FileResponse:
+    if _FRONTEND_INDEX.is_file():
+        return FileResponse(str(_FRONTEND_INDEX), media_type="text/html")
     return FileResponse("index.html", media_type="text/html")
 
 
