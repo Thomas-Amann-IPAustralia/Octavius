@@ -17,9 +17,9 @@ For example, inclusive content accommodates:
 - diversity of abilities among users
 - how users interact with technology in different contexts.
 
-The Australian Government's aim is that all government services are digital first. This aim is described in the [Government Digital Strategy](https://www.dta.gov.au/digital-government-strategy).
+Australian Government digital services must be usable, inclusive, accessible and responsive. This is outlined in [ The data and digital government strategy [PDF 1.93KB]](https://www.dataanddigital.gov.au/sites/default/files/documents/2025-10/Data%20and%20Digital%20Government%20Strategy%20v1.0_0.pdf) and is a requirement under the
 
-Australian Government digital services must be usable and accessible – a requirement under the [Digital Service Standard](https://www.dta.gov.au/help-and-advice/about-digital-service-standard).
+[Digital Service Standard](https://www.digital.gov.au/policy/digital-experience/digital-service-standard).
 
 Follow accessibility guidance in context
 
@@ -81,4 +81,4 @@ W3C WAI (2015) ‘[Writing for web accessibility](https://www.w3.org/WAI/tips/wr
 
 ### Last updated
 
-This page was updated Friday 7 July 2023.
+This page was updated Monday 18 May 2026.

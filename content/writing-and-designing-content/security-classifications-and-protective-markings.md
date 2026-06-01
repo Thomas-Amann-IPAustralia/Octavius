@@ -32,6 +32,10 @@ When you write for the Australian Government, be aware of [PSPF requirements for
 
 Agency implementation of the PSPF is supported by the [Department of Home Affairs](https://www.protectivesecurity.gov.au/).
 
+The PSPF framework requires people who access classified information to hold a security clearance. There are 4 clearance levels, which permit different levels of access: Baseline, Negative Vetting 1, Negative Vetting 2 and Positive Vetting.
+
+The Australian Government Security Vetting Agency has more information about [security clearance definitions](https://www.agsva.gov.au/about/security-clearance-definitions).
+
 Use initial capitals to write about protective markings
 
 In general content, use an initial capital unless you are reporting how the protective marking actually appears on the page. In that instance, write the marking as it appears and use quotation marks.
@@ -44,7 +48,7 @@ The field report was stamped ‘TOP SECRET’.
 
 Release notes
 
-The digital edition provides detailed information about security classifications and information management obligations in the digital environment. It has been updated to include PSPF Annual Release 2024.
+The digital edition provides information about security classifications and information management obligations in the digital environment. It has been updated to include classification changes described in PSPF Annual Release 2024. The digital edition also includes a new sentence about the 4 levels of security clearance.
 
 The sixth edition did not include information about the Australian Government protective security policy, the classification of information or protective markings. The chapter ‘Restrictions on publishing’ in the sixth edition focused on legal protections such as copyright, privacy and defamation.
 
@@ -54,19 +58,18 @@ About this page
 
 ### References
 
-Department of Home Affairs (n.d.) [ About PSPF](https://www.protectivesecurity.gov.au/about), protectivesecurity.gov.au, accessed 13 March 2025.
+Department of Home Affairs (n.d.) [ About PSPF](https://www.protectivesecurity.gov.au/about), protectivesecurity.gov.au, accessed 20 May 2026.
 
-Department of Home Affairs (2024) [ PSPF annual release](https://www.protectivesecurity.gov.au/pspf-annual-release), protectivesecurity.gov.au, accessed 6 March 2025.
+Department of Home Affairs (2025) [ PSPF annual release](https://www.protectivesecurity.gov.au/pspf-annual-release), protectivesecurity.gov.au, accessed 20 May 2026.
 
-Department of Home Affairs (2024) [ PSPF guidelines](https://www.protectivesecurity.gov.au/pspf-annual-release/pspf-guidelines), protectivesecurity.gov.au, accessed 13 March 2025.
+Department of Home Affairs (2025) [ PSPF guidelines](https://www.protectivesecurity.gov.au/pspf-annual-release/pspf-guidelines), protectivesecurity.gov.au, accessed 20 May 2026.
 
-Department of Home Affairs (n.d.) [ PSPF standards](https://www.protectivesecurity.gov.au/pspf-annual-release/pspf-standards), protectivesecurity.gov.au, accessed 13 March 2025.
+Department of Home Affairs (n.d.) [ PSPF standards](https://www.protectivesecurity.gov.au/pspf-annual-release/pspf-standards), protectivesecurity.gov.au, accessed 20 May 2026.
 
 ### Co-created by
 
-- This page was co-created by Attorney-General's Department
-- and Department of Defence.
+- This page was co-created by Department of Home Affairs.
 
 ### Last updated
 
-This page was updated Friday 14 March 2025.
+This page was updated Monday 25 May 2026.

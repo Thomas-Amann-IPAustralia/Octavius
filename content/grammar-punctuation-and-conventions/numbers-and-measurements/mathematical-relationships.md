@@ -425,4 +425,4 @@ White JG (20 April 2020) ‘[The accessibility of mathematical notation on the w
 
 ### Last updated
 
-This page was updated Wednesday 10 September 2025.
+This page was updated Tuesday 26 May 2026.

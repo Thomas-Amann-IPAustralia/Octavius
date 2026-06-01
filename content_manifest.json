@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-01T03:35:47.251910+00:00",
+  "generated_at": "2026-06-01T04:16:26.400222+00:00",
   "files": {
     "content/about-style-manual/acknowledgements.md": "4bbcad697201b0a00dc5e6ec68334a7973935e56862de60b04e7741d65ade4d3",
     "content/about-style-manual/changelog.md": "4ff179f2af72e8d4097cdfd1d16f7e695cf25bf56f117af11e9b6c49f8de4826",
@@ -19,7 +19,7 @@
     "content/accessible-and-inclusive-content/inclusive-language/gender-and-sexual-diversity.md": "aebe3c2436afd18fe59edfd0cea8036683da9f18c8ef3176d675ff3e6a106d0e",
     "content/accessible-and-inclusive-content/inclusive-language.md": "212acd371c88fd0b85c2aacb8c03b79547a606b772f2417a4887c44e350e4ace",
     "content/accessible-and-inclusive-content/literacy-and-access.md": "04082849265f3221417c4d18a78550ec9d92bdaf5a02652de276474bb232ea31",
-    "content/accessible-and-inclusive-content/make-content-accessible.md": "c391bfa7aba4dc954df59fc6ae850b3090a8fe110f18264ced6ab7f1c7352b9a",
+    "content/accessible-and-inclusive-content/make-content-accessible.md": "67ce653fae1f5db55ef9d43ad0ecccacfd468f1c1bf8283b17e92f13861e17bd",
     "content/accessible-and-inclusive-content.md": "dcd87ff4a1dc6b5365b4444bdd59b41044c5719b2fe27c5a6956b0d1f2ae6b82",
     "content/content-types/blogs.md": "3ac9a6dd65d1462f60c414ae9d37f10149a82f7e0a8bb984a27f3f65eb5d8163",
     "content/content-types/easy-read.md": "d6c922ee6e7d82adad35f500a154d78dc250be1a78dc38a1361476f924c1d64e",
@@ -51,13 +51,13 @@
     "content/grammar-punctuation-and-conventions/numbers-and-measurements/currency.md": "1409a34eadbfd3c118d18ab9cde430cda51519f687763f2b58dc0ad0f31f517d",
     "content/grammar-punctuation-and-conventions/numbers-and-measurements/dates-and-time.md": "f7dcfe42a3859eb72944b44345c68cc1776e9858f7ca59b285e33d90eec001f9",
     "content/grammar-punctuation-and-conventions/numbers-and-measurements/fractions-and-decimals.md": "9885ebf700a5e3b19257456f76831681323b31207e96e485375b84493105ec74",
-    "content/grammar-punctuation-and-conventions/numbers-and-measurements/mathematical-relationships.md": "4d3d2e8b101d940a255fca8af786c6fece7f4eab2ea01c3363a8ab522031904a",
+    "content/grammar-punctuation-and-conventions/numbers-and-measurements/mathematical-relationships.md": "d2ae1ebe23a32ecae81fd5d47106b19fe058ffeaad67a1cae78062134b2691d3",
     "content/grammar-punctuation-and-conventions/numbers-and-measurements/measurement-and-units.md": "5b7b7e425d54d40c3aadd11735a9e0f70d3767a1f3fae4a402137823fe5926d8",
     "content/grammar-punctuation-and-conventions/numbers-and-measurements/ordinal-numbers.md": "035e209f6b93cb866b02b77579437c78fc98ce5198cfecc3d3876d0d3354dda5",
     "content/grammar-punctuation-and-conventions/numbers-and-measurements/percentages.md": "63547da7682f60bdd217f80f33edc26b713ef7c0f5f5b33bdd3cf73a1d8502e9",
     "content/grammar-punctuation-and-conventions/numbers-and-measurements/telephone-numbers.md": "ea0a9a9540a7e15fb7e8478b738637561954a12ea4c90da7fa104d8bf038809e",
     "content/grammar-punctuation-and-conventions/numbers-and-measurements.md": "9e6a3629f26679f7fc6e871836138999357259566c2e07ea44d395c6c6e6e9ad",
-    "content/grammar-punctuation-and-conventions/parts-sentences/clauses.md": "2b5a0dbfcf7d0556207747a7287097ba3943ed9822a8403986e8a32c788300f0",
+    "content/grammar-punctuation-and-conventions/parts-sentences/clauses.md": "ce384f1e62869ec18da79a544602d1c2b1d28bbf22fb423747492de6d9dcaa5e",
     "content/grammar-punctuation-and-conventions/parts-sentences/phrases.md": "25f061dbc5b6b53d7d3b4bb1fa6f9a930418b02bb02309d1329b4c13cb891a0f",
     "content/grammar-punctuation-and-conventions/parts-sentences.md": "ab42a7105ab98cba196edb8cecb48e7f3a7d099d68dd0380d03218a9d89b0fc8",
     "content/grammar-punctuation-and-conventions/punctuation/apostrophes.md": "c034d8b65173a9e9e49f9f1070c3dda68316fe83a57bfc97c3b9279fbc6ab83c",
@@ -184,7 +184,7 @@
     "content/writing-and-designing-content/findable-content/page-optimisation.md": "4e3045d9b7169aa8549eb4bbd4d423778886199cb0ecc652fa6ae15337f53c42",
     "content/writing-and-designing-content/findable-content/understanding-search-engines.md": "b3536610aa6b760e30696958d076790c1833ec81d9a30f4b2dc73f3d934da2d8",
     "content/writing-and-designing-content/findable-content.md": "fe553d1f0e40fd09752fc94ed727194dbee91b55b7a69caf8ee4c59cdb1903ff",
-    "content/writing-and-designing-content/security-classifications-and-protective-markings.md": "65e5e391e309a17d2417859559ea70abb84cdef259f33f9639610244f74e8bed",
+    "content/writing-and-designing-content/security-classifications-and-protective-markings.md": "c7b28d1518a56f8205bad0e2cf9d3e96a8ba168a86e6e15d96aa69a5250dbd95",
     "content/writing-and-designing-content/user-research-and-content.md": "359e689a2281d9b0af1853e315d8c22ace765188be11cddd1c0b38c27f5712a5",
     "content/writing-and-designing-content.md": "16fad45079d1e44b1d9889f6a600e88ef0e16503b72585a1b6930ece0f5cb1d9"
   }
