@@ -1,6 +1,5 @@
 Cite cases, rulings and determinations using the correct style. Accuracy helps people find the source material. Specify the law report or online legal authority that hosts the relevant judgment or decision.
 
-Style for case names is title case, not always italics
 
 A case is a matter to be settled at law. It is also an instance or the process of making a claim in a court of law. Legal authorities are published sources of legal reasoning, doctrine and rulings made by courts and similar bodies.
 
@@ -16,11 +15,9 @@ Always write the names as they appear in your source.
 
 ### Example
 
-- In
-*Commonwealth v Tasmania …* - The article discusses an important case in the High Court,
-*Commonwealth v Tasmania*.
+- In *Commonwealth v Tasmania …*
+- The article discusses an important case in the High Court, *Commonwealth v Tasmania*.
 
-The abbreviated title is in italics
 
 Cases are often known by an abbreviated title. On first mention of the case name, follow it with the abbreviated title in parentheses. For in-text references, write this title in italics and use title case (maximal capitalisation). You can then use the abbreviated title throughout the content.
 
@@ -28,16 +25,14 @@ Do not capitalise ‘the case’ or ‘this case’.
 
 ### Example
 
-- … the important case in the High Court,
-*Commonwealth v Tasmania*(*Tasmanian Dam Case*). The case saw the Commonwealth … *… the State of New South Wales v The Commonwealth*(*Wheat Case*). The*Wheat Case*…
+- … the important case in the High Court, *Commonwealth v Tasmania*(*Tasmanian Dam Case*). The case saw the Commonwealth …
+- *… the State of New South Wales v The Commonwealth*(- *Wheat Case*). The- *Wheat Case*…
 
-The full citation gives users detail they might need
 
 Most government writing about cases requires a full citation. Citations show people where to find the published authorised judgments and decisions of courts, commissions and tribunals. They also tell people who made the decision and what year it was made.
 
 Citations can be in text or in notes, depending on organisational style and the format of the content.
 
-Decisions are either reported or unreported
 
 Reported decisions are published in authorised law reports (a report series). For example:
 
@@ -61,13 +56,13 @@ Use parentheses (round brackets) for reported decisions that use consecutive vol
 
 Reported decision with consecutive volume numbers for the whole series:
 
-- name of the case:
-*The State of New South Wales v The Commonwealth* - year of decision: (1915)
+- name of the case: *The State of New South Wales v The Commonwealth*
+- year of decision: (1915)
 - volume of report series: 20
 - report series abbreviation: CLR
 - page number where the report begins: 54
 
-[The full in-text citation or note is *The State of New South Wales v The Commonwealth* (1915) 20 CLR 54 (*Wheat Case*).]
+[The full in-text citation or note is *The State of New South Wales v The Commonwealth* (1915) 20 CLR 54 (*Wheat Case*).]
 
 Use square brackets for reported decisions that use the year as a volume number. This means you must look for the year first, then for volume 1, 2 and so on. Other years would also have a volume 1.
 
@@ -77,13 +72,13 @@ The authorised report of a case might have been published some time after the de
 
 Reported decision with the year as a volume number:
 
-- name of the case:
-*Kashemije Stud Pty Ltd v Hawkes* - year of report: [1978]
+- name of the case: *Kashemije Stud Pty Ltd v Hawkes*
+- year of report: [1978]
 - volume of report series: 1
 - report series abbreviation: NSWLR
 - page number where the report begins: 143
 
-[The full in-text citation or note is *Kashemije Stud Pty Ltd v Hawkes* [1978] 1 NSWLR 143. It tells you when the authorised report was published in the New South Wales Law Reports. This might not be the year the NSW Supreme Court handed down the decision.]
+[The full in-text citation or note is *Kashemije Stud Pty Ltd v Hawkes* [1978] 1 NSWLR 143. It tells you when the authorised report was published in the New South Wales Law Reports. This might not be the year the NSW Supreme Court handed down the decision.]
 
 Unreported decisions are always in square brackets. There is no volume number, as the case is not part of an authorised report series. The legal authority publishes the report in its own series.
 
@@ -91,15 +86,14 @@ Unreported decisions are always in square brackets. There is no volume number, a
 
 Unreported decision with no volume number:
 
-- name of the case:
-*The State of NSW v The Commonwealth* - year of decision: [1915]
+- name of the case: *The State of NSW v The Commonwealth*
+- year of decision: [1915]
 - volume of report series: (not reported in a volume)
 - report series abbreviation: HCA
 - judgment number [relates to year of decision]: 17
 
-[The full in-text citation or note is *The State of New South Wales v The Commonwealth* [1915] HCA 17 (*Wheat Case*). This citation tells you the High Court of Australia published the decision.]
+[The full in-text citation or note is *The State of New South Wales v The Commonwealth* [1915] HCA 17 (*Wheat Case*). This citation tells you the High Court of Australia published the decision.]
 
-Civil and criminal case titles have different elements
 
 Civil and criminal cases have specific citation elements. They differ.
 
@@ -126,9 +120,11 @@ Other parties are sometimes noted by the phrases:
 
 #### Example
 
-*SZIBU and Another v Minister for Immigration and Citizenship and Another*[2007] FCA 108*The State of Victoria and Others v The Commonwealth*(1926) 38 CLR 399*Cunningham & Ors v Commonwealth of Australia & Anor*[2016] HCA 39
+- *SZIBU and Another v Minister for Immigration and Citizenship and Another*[2007] FCA 108
+- *The State of Victoria and Others v The Commonwealth*(1926) 38 CLR 399
+- *Cunningham & Ors v Commonwealth of Australia & Anor*[2016] HCA 39
 
-### In civil cases, use sentence case and italics for ‘*Re*’ and ‘*Ex parte*’* *
+### In civil cases, use sentence case and italics for ‘*Re*’ and ‘*Ex parte*’* *
 
 Sometimes the title of cases includes the terms ‘*Re*’ and* ‘Ex parte*’. Use sentence case and write both in italics.
 
@@ -138,7 +134,7 @@ Sometimes the title of cases includes the terms ‘*Re*’ and* ‘Ex parte*’.
 
 #### Example
 
-*Nduta v Minister for Immigration & Border Protection* [2016] FCA 1596; *Re Minister for Immigration and Multicultural Affairs; Ex parte Durairajasingham* [2000] HCA 1; 74 ALJR 405.
+*Nduta v Minister for Immigration & Border Protection* [2016] FCA 1596; *Re Minister for Immigration and Multicultural Affairs; Ex parte Durairajasingham* [2000] HCA 1; 74 ALJR 405.
 
 An *Ex parte* application of Commissioner of the Australian Federal Police ...
 
@@ -152,7 +148,8 @@ If prosecuting, the Crown is signified by an ‘R’ without a full stop. This i
 
 #### Example
 
-*R v Bayda, R v Namoa*(No 8) [2019] NSWSC 24 [The Crown against Bayda and Namoa as defendants]*R v Alice Lynne Chamberlain and Michael Leigh Chamberlain*[1982] NTSC [The Crown against Alice (Lindy) and Michael Chamberlain as defendants]
+- *R v Bayda, R v Namoa*(No 8) [2019] NSWSC 24 [The Crown against Bayda and Namoa as defendants]
+- *R v Alice Lynne Chamberlain and Michael Leigh Chamberlain*[1982] NTSC [The Crown against Alice (Lindy) and Michael Chamberlain as defendants]
 
 If the Crown is the respondent in a criminal appeal, reverse the parties and write ‘Appellant v The King’ (not ‘R’). If the Crown is the appellant, ‘The King’ is the first party cited.
 
@@ -160,17 +157,18 @@ If the Crown is the respondent in a criminal appeal, reverse the parties and wri
 
 #### Example
 
-*Chamberlain v The Queen*(1984) 153 CLR 521*The Queen v Baden-Clay*[2016] HCA 35*House v The King*(1936) 55 CLR 49
+- *Chamberlain v The Queen*(1984) 153 CLR 521
+- *The Queen v Baden-Clay*[2016] HCA 35
+- *House v The King*(1936) 55 CLR 49
 
-Subsequent citations in notes use the first party
 
 When citing cases using notes, always use a full citation as the first citation. After that, you can use the name of the first party, followed by the case citation.
 
 ### Example
 
-1*Steinmetz**v Shannon*(2019) 99 NSWLR 687. [The full citation the first time]8*Steinmetz*(2019) 99 NSWLR 687. [Only the first party to the case in a subsequent note]
+- 1- *Steinmetz*- *v Shannon*(2019) 99 NSWLR 687. [The full citation the first time]
+- 8- *Steinmetz*(2019) 99 NSWLR 687. [Only the first party to the case in a subsequent note]
 
-Pinpoint citations use ‘at’ for page and paragraph numbers
 
 If you use notes, write pinpoint page numbers for the citation using ‘at [page number]’.
 
@@ -180,9 +178,10 @@ Use a comma to list separate pinpoint citations.
 
 ### Example
 
-1*Ruddock v Vadarlis*(2001) 110 FCR 491 at 1191. [The pinpoint citation is on page 1191.]2*Rojoda Pty Ltd v Commissioner of State Revenue*(2018) 368 ALR 734 at 737 [10], 760 [108]. [The pinpoint citations are at page 737 (paragraph 10) and page 760 (paragraph 108).]3*Gedeon v The Queen*(2013) 237 A Crim R 326 at 361–362 [174]–[178]. [The pinpoint citation is for pages 361 to 362 (paragraphs 174 to 178).]
+- 1- *Ruddock v Vadarlis*(2001) 110 FCR 491 at 1191. [The pinpoint citation is on page 1191.]
+- 2- *Rojoda Pty Ltd v Commissioner of State Revenue*(2018) 368 ALR 734 at 737 [10], 760 [108]. [The pinpoint citations are at page 737 (paragraph 10) and page 760 (paragraph 108).]
+- 3- *Gedeon v The Queen*(2013) 237 A Crim R 326 at 361–362 [174]–[178]. [The pinpoint citation is for pages 361 to 362 (paragraphs 174 to 178).]
 
-Decisions can differ between judges or magistrates
 
 Identify the judicial officer whose judgment you are citing. Cite the case fully and add ‘per [name] [judicial office abbreviation]’.
 
@@ -198,9 +197,11 @@ Use these abbreviations:
 
 ### Example
 
-*UBS AG v Tyne*(2018) 92 ALJR 968 at 979 [45] per Kiefel CJ, Bell and Keane JJ, [61] per Gageler J.*Mabo v Queensland [No 2]*(1992) 175 CLR 1 at 106–107 per Deane and Gaudron JJ.1*Ward v The Queen*[2000] WASCA 413; (2000) 23 WAR 254 at 25 per Kennedy J.- Chief Justice Kiefel and Bell and Edelman JJ accepted that such agreements would be excluded.
+- *UBS AG v Tyne*(2018) 92 ALJR 968 at 979 [45] per Kiefel CJ, Bell and Keane JJ, [61] per Gageler J.
+- *Mabo v Queensland [No 2]*(1992) 175 CLR 1 at 106–107 per Deane and Gaudron JJ.
+- 1- *Ward v The Queen*[2000] WASCA 413; (2000) 23 WAR 254 at 25 per Kennedy J.
+- Chief Justice Kiefel and Bell and Edelman JJ accepted that such agreements would be excluded.
 
-Titles for Commonwealth tribunal decisions are in italics
 
 Write the title of all tribunal decisions in italics.
 
@@ -221,17 +222,16 @@ The president and members of a tribunal can be judges. For example, the Presiden
 
 ### Find the decision title on the tribunal website or an alternative
 
-Decisions are published on tribunal websites, on the [Federal Court of Australia’s website](https://www.fedcourt.gov.au/digital-law-library/judgments/search) or on [AustLII](http://www.austlii.edu.au/).
+Decisions are published on tribunal websites, on the [Federal Court of Australia’s website](https://www.fedcourt.gov.au/digital-law-library/judgments/search) or on [AustLII](http://www.austlii.edu.au/).
 
 There are a large number of Commonwealth tribunals, including:
 
-- the
-[Administrative Appeals Tribunal (AAT)](https://www.aat.gov.au/) - the
-[Australian Competition Tribunal](https://www.competitiontribunal.gov.au/) - the
-[Copyright Tribunal of Australia](https://www.copyrighttribunal.gov.au/) - the
-[Defence Force Discipline Appeal Tribunal](https://www.defenceappeals.gov.au/practice-directions) - the
-[Fair Work Commission](https://www.fwc.gov.au/) - the
-[National Native Title Tribunal](https://www.nntt.gov.au/Pages/Home-Page.aspx).
+- the [Administrative Appeals Tribunal (AAT)](https://www.aat.gov.au/)
+- the [Australian Competition Tribunal](https://www.competitiontribunal.gov.au/)
+- the [Copyright Tribunal of Australia](https://www.copyrighttribunal.gov.au/)
+- the [Defence Force Discipline Appeal Tribunal](https://www.defenceappeals.gov.au/practice-directions)
+- the [Fair Work Commission](https://www.fwc.gov.au/)
+- the [National Native Title Tribunal](https://www.nntt.gov.au/Pages/Home-Page.aspx).
 
 The AAT has an authorised report series – the Administrative Law Decisions (ALD). The AAT’s unauthorised report series, AATA, is available on AustLII.
 
@@ -241,9 +241,13 @@ Always cite the authorised report if it has been published and you have access t
 
 #### Example
 
-*Minister for Home Affairs v AYJ17*[2019] FCA 591; 165 ALD 64 [Administrative Appeals Tribunal decision, also published by the Federal Court of Australia as decision 591 of 2019]*Application by Flexigroup Limited*[2020] ACompT 1 [Australian Competition Tribunal decision]*Application by Isentia Pty Limited*[2018] ACopyT 4 [Copyright Tribunal of Australia decision]*McCleave v Chief of Navy*[2019] ADFDAT 1 [Defence Force Discipline Appeal Tribunal decision]*David Thomas and Frederick (Junior) Faamausili Ailua v Virgin Australia Airlines Pty Ltd t/a Virgin Australia*[2019] FWC 4464 [Fair Work Commission decision]*Kyburra Munda Yalga Aboriginal Corporation RNTBC v Rock Solid Holdings Pty Ltd & Another*[2020] NNTTA 31 (11 March 2020) [National Native Title Tribunal decision]
+- *Minister for Home Affairs v AYJ17*[2019] FCA 591; 165 ALD 64 [Administrative Appeals Tribunal decision, also published by the Federal Court of Australia as decision 591 of 2019]
+- *Application by Flexigroup Limited*[2020] ACompT 1 [Australian Competition Tribunal decision]
+- *Application by Isentia Pty Limited*[2018] ACopyT 4 [Copyright Tribunal of Australia decision]
+- *McCleave v Chief of Navy*[2019] ADFDAT 1 [Defence Force Discipline Appeal Tribunal decision]
+- *David Thomas and Frederick (Junior) Faamausili Ailua v Virgin Australia Airlines Pty Ltd t/a Virgin Australia*[2019] FWC 4464 [Fair Work Commission decision]
+- *Kyburra Munda Yalga Aboriginal Corporation RNTBC v Rock Solid Holdings Pty Ltd & Another*[2020] NNTTA 31 (11 March 2020) [National Native Title Tribunal decision]
 
-Titles for Tax Commissioner rulings have unique elements
 
 The Commissioner of Taxation has the power to make rulings – public, private and oral – that interpret the laws administered by the Australian Taxation Office (ATO).
 
@@ -253,8 +257,7 @@ The full titles of public rulings have 3 elements that appear in a set order:
 
 - a ruling or determination type – for example, ‘Goods and Services Tax Ruling’
 - a number – for example, ‘GSTR 2019/1’
-- a title in italics – for example,
-*Goods and services tax: supply of anything other than goods or real property connected with the indirect tax zone (Australia)*.
+- a title in italics – for example, *Goods and services tax: supply of anything other than goods or real property connected with the indirect tax zone (Australia)*.
 
 Write the full title at first mention.
 
@@ -270,7 +273,7 @@ Use an initial capital when you refer to specific rulings.
 
 #### Example
 
-Class Ruling CR 2019/19 *Income tax: Department for Health and Wellbeing South Australia Early Retirement Program 2019* [A full citation of the title for a ruling]
+Class Ruling CR 2019/19 *Income tax: Department for Health and Wellbeing South Australia Early Retirement Program 2019* [A full citation of the title for a ruling]
 
 Options for subsequent mentions of this Ruling:
 
@@ -278,7 +281,7 @@ Options for subsequent mentions of this Ruling:
 - ‘the Ruling’
 - ‘CR 2019/19’.
 
-Taxation Determination TD 2019/13 *Income tax: what is an *‘*employee share trust*’*? *[A full citation of the title for a determination]
+Taxation Determination TD 2019/13 *Income tax: what is an *‘*employee share trust*’*? *[A full citation of the title for a determination]
 
 Options for subsequent mentions of this Determination:
 
@@ -296,9 +299,9 @@ For subsequent notes for the same public ruling, cite the number (and paragraphs
 
 #### Example
 
-4Australian Taxation Office, Fuel Tax Determination FTD 2019/1*Fuel tax: fuel tax credits*–*vehicles and satisfying environmental criteria*, ATO Legal Database, para [4]. [The full citation the first time; specifies the source and pinpoints paragraph 4]15FTD 2019/1, paras [6]–[8]. [Only the determination number in a subsequent note; pinpoints paragraphs 6 to 8 for the citation]
+- 4Australian Taxation Office, Fuel Tax Determination FTD 2019/1- *Fuel tax: fuel tax credits*–- *vehicles and satisfying environmental criteria*, ATO Legal Database, para [4]. [The full citation the first time; specifies the source and pinpoints paragraph 4]
+- 15FTD 2019/1, paras [6]–[8]. [Only the determination number in a subsequent note; pinpoints paragraphs 6 to 8 for the citation]
 
-Release notes
 
 The digital edition has considerable advice on how to cite legal material. It includes new material on Commonwealth tribunals and Australian Tax Office rulings. It expands on sixth edition information on treaties.
 
@@ -308,42 +311,41 @@ These departures are informed by legal material and general publications from Au
 
 The Content Guide briefly mentioned legislation in relation to capitalisation. There was no detailed guidance about how to cite legislation.
 
-About this page
 
 ### References
 
-Attorney-General’s Department (n.d.) [ Legal system: publications](https://www.ag.gov.au/legal-system/publications), Attorney-General’s Department website, accessed 16 June 2020.
+Attorney-General’s Department (n.d.) [ Legal system: publications](https://www.ag.gov.au/legal-system/publications), Attorney-General’s Department website, accessed 16 June 2020.
 
-Attorney-General’s Department (2017) *Style guide*, Australian Government, Canberra.
+Attorney-General’s Department (2017) *Style guide*, Australian Government, Canberra.
 
 Australasian Legal Information Institute (AustLII) (n.d.) [ LawCite](http://www.austlii.edu.au/LawCite/), AustLII website, accessed 19 October 2022.
 
-Australian Government Solicitor (n.d.) [ Publications](https://www.ags.gov.au/publications/index.html), Australian Government Solicitor website, accessed 16 June 2020.
+Australian Government Solicitor (n.d.) [ Publications](https://www.ags.gov.au/publications/index.html), Australian Government Solicitor website, accessed 16 June 2020.
 
-Australian National University Library (2018) [ Authorised law reports](https://libguides.anu.edu.au/c.php?g=634887&p=4446802), ANU Library Libguides, Australian National University, accessed 16 June 2020.
+Australian National University Library (2018) [ Authorised law reports](https://libguides.anu.edu.au/c.php?g=634887&p=4446802), ANU Library Libguides, Australian National University, accessed 16 June 2020.
 
-Coppard A et al. (2018) [ New Zealand law style guide](https://www.lawfoundation.org.nz/style-guide2019/index.html), 3rd edn, Thomson Reuters New Zealand.
+Coppard A et al. (2018) [ New Zealand law style guide](https://lawfoundation.org.nz/style-guide2019/index.html), 3rd edn, The New Zealand Law Foundation, Thomson Reuters, accessed 4 June 2026.
 
-Council of Australasian Tribunals and the Standing Committee of Attorneys-General (2017) *Practice manual for tribunals*, 4th edn, Council of Australasian Tribunals, accessed 16 June 2020.
+Council of Australasian Tribunals and the Standing Committee of Attorneys-General (2017) *Practice manual for tribunals*, 4th edn, Council of Australasian Tribunals, accessed 16 June 2020.
 
-Hansard (2020) *Hansard style guide*, Department of Parliamentary Services, Parliament of Australia, Canberra.
+Hansard (2020) *Hansard style guide*, Department of Parliamentary Services, Parliament of Australia, Canberra.
 
-High Court of Australia (2020) [ Judgments](https://www.hcourt.gov.au/publications/judgments), High Court of Australia website, accessed 16 June 2020.
+High Court of Australia (2020) [ Judgments](https://www.hcourt.gov.au/publications/judgments), High Court of Australia website, accessed 16 June 2020.
 
-Maddy (17 April 2017) ‘[Referencing hack #2 — square vs round brackets](https://blogs.qut.edu.au/library/2017/04/17/referencing-hack-2-square-vs-round-brackets/)’, *Queensland University of Technology Library blog*, accessed 16 June 2020.
+Maddy (17 April 2017) ‘[Referencing hack #2 — square vs round brackets](https://blogs.qut.edu.au/library/2017/04/17/referencing-hack-2-square-vs-round-brackets/)’, *Queensland University of Technology Library blog*, accessed 16 June 2020.
 
-Melbourne University Law Review Association Inc and Melbourne Journal of International Law (2018) [ Australian guide to legal citation](https://law.unimelb.edu.au/mulr/aglc/about), 4th edn, Melbourne University Law Review Association Inc, accessed 16 June 2020.
+Melbourne University Law Review Association Inc and Melbourne Journal of International Law (2018) [ Australian guide to legal citation](https://law.unimelb.edu.au/mulr/aglc/about), 4th edn, Melbourne University Law Review Association Inc, accessed 16 June 2020.
 
 *R v Alice Lynne Chamberlain and Michael Leigh Chamberlain* [1982] NTSC [The Crown against Alice (Lindy) and Michael Chamberlain as defendants].
 
 University of Oxford Law Faculty (2012) [ OSCOLA](https://www.law.ox.ac.uk/oscola), 4th edn, Hart Publishing, Oxford.
 
-University of Technology Sydney and University of New South Wales Faculties of Law (n.d.) [ Australasian Legal Information Institute (AustLII)](http://www.austlii.edu.au/), AustLII website, accessed 16 June 2020.
+University of Technology Sydney and University of New South Wales Faculties of Law (n.d.) [ Australasian Legal Information Institute (AustLII)](http://www.austlii.edu.au/), AustLII website, accessed 16 June 2020.
 
-Whitbread D and Leary K (2016a) *AGS editorial style guide*, Australian Government Solicitor, Canberra.
+Whitbread D and Leary K (2016a) *AGS editorial style guide*, Australian Government Solicitor, Canberra.
 
-Whitbread D and Leary K (2016b) *AGS style guide: summary*, Australian Government Solicitor, Canberra.
+Whitbread D and Leary K (2016b) *AGS style guide: summary*, Australian Government Solicitor, Canberra.
 
 ### Last updated
 
-This page was updated Monday 23 December 2024.
+This page was updated Thursday 4 June 2026.

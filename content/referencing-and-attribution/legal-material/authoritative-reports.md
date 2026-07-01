@@ -90,11 +90,9 @@ If the law report has no authorised version, you might need to use the abbreviat
 - HCA (High Court of Australia)
 - NNTA (National Native Title Tribunal).
 
-Release notes
 
 Guidance on citing legal material lists abbreviations for authorised and unauthorised reports. This is new content that did not appear in the sixth edition or the Content Guide
 
-About this page
 
 ### References
 
@@ -106,14 +104,14 @@ Greenleaf G (2005) ‘[Australian law report series](http://www2.austlii.edu.au/
 
 Melbourne University Law Review Association Inc and Melbourne Journal of International Law (2018) ‘2.3.2 Abbreviations for report series’ [ Australian guide to legal citation](https://law.unimelb.edu.au/mulr/aglc/about), 4th edn, Melbourne University Law Review Association Inc, accessed 15 June 2020.
 
-The University of Melbourne (2020) ‘Authorised law reports: Australia: Commonwealth’, *Library guides*, The University of Melbourne website, accessed 15 June 2020.
+The University of Melbourne (2020) ‘Authorised law reports: Australia: Commonwealth’, *Library guides*, The University of Melbourne website, accessed 15 June 2020.
 
-The University of Melbourne (2020) ‘Authorised law reports: Australia: states & territories’, *Library guides*, The University of Melbourne website, accessed 15 June 2020.
+The University of Melbourne (2020) ‘Authorised law reports: Australia: states & territories’, *Library guides*, The University of Melbourne website, accessed 15 June 2020.
 
 The University of Sydney (2020) ‘[Law reports: Australia](http://libguides.library.usyd.edu.au/legal_abbreviations/Australian_law_reports)’, *Library subject guides*, The University of Sydney website, accessed 15 June 2020.
 
-Thomson Reuters Australia (2017) ‘[Legislation and commentary table of abbreviations](https://support.thomsonreuters.com.au/product/westlaw-au/articles/westlaw-au-guide-legislation-and-commentary-table-abbreviations)’, *Westlaw AU Guides*, Thomson Reuters Australia, accessed 16 June 2020.
+Thomson Reuters (2026) [ Abbreviations guide [PDF 9 MB]](https://training-aem.thomsonreuters.com/media/Abbreviations Guide/1_rryus78g?mode=fullscreen), Westlaw Advantage Australia, accessed 4 June 2026.
 
 ### Last updated
 
-This page was updated Monday 23 December 2024.
+This page was updated Thursday 4 June 2026.

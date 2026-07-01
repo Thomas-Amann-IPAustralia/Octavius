@@ -1,6 +1,5 @@
 Refer to Acts of parliament using the correct style so people can find the source material. Choose when to cite the short and long titles, series numbers, jurisdiction and sections.
 
-Style for Act titles is title case, not always italics
 
 Use title case (maximal capitalisation) for the titles of Acts. Use italics for the first mention of these titles.
 
@@ -20,20 +19,24 @@ Include all the words in the title. If the title begins with ‘The’, ‘An’
 
 ### Example
 
-*A New Tax System (Goods and Services Tax) Act 1999**The Commercial Bank of Australia Limited (Merger) Act 1982*(NSW)
+- *A New Tax System (Goods and Services Tax) Act 1999*
+- *The Commercial Bank of Australia Limited (Merger) Act 1982*(NSW)
 
-If the Act’s title has a number, include the number exactly as written. The contraction ‘No.’ retains the full stop in this situation, which is an exception to the [general rule for the shortened form for ‘number’](/node/191#only_use_the_contraction_no_with_numerals).
+If the Act’s title has a number, include the number exactly as written. The contraction ‘No.’ retains the full stop in this situation, which is an exception to the [general rule for the shortened form for ‘number’](/node/191#only_use_the_contraction_no_with_numerals).
 
 ### Example
 
-*Supply Act (No. 1) 2019–2020**Farm Household Support Amendment (Relief Measures) Act (No. 2) 2019*
+- *Supply Act (No. 1) 2019–2020*
+- *Farm Household Support Amendment (Relief Measures) Act (No. 2) 2019*
 
 An Act has a short title (its name) and long title (a description). Both appear after the list of contents in the text of the Act. The long title appears as a heading before section 1 of the Act. The short title is named in section 1.
 
 ### Example
 
-**An Act relating to Currency, Coinage and Legal Tender**[Long title]**Part I—Preliminary****1 Short title**- This Act may be cited as the
-*Currency Act 1965*. [Short title]
+- **An Act relating to Currency, Coinage and Legal Tender**[Long title]
+- **Part I—Preliminary**
+- **1 Short title**
+- This Act may be cited as the *Currency Act 1965*. [Short title]
 
 ### At first mention, use the short title in italics
 
@@ -53,10 +56,9 @@ Add the shortened form in parentheses at the first mention if it does more than 
 
 #### Example
 
-- … was convicted of federal offences under the
-*Crimes Act 1914*. The Crimes Act specifies … - … was convicted of federal offences under the
-*Criminal Code Act 1995.*The Criminal Code has a constitutional basis ... - Comcare administers the
-*Work Health and Safety Act 2011*(WHS Act). The WHS Act requires that a person who ... [The shortened form goes with the first mention as it removes more than the year from the title.]
+- … was convicted of federal offences under the *Crimes Act 1914*. The Crimes Act specifies …
+- … was convicted of federal offences under the *Criminal Code Act 1995.*The Criminal Code has a constitutional basis ...
+- Comcare administers the *Work Health and Safety Act 2011*(WHS Act). The WHS Act requires that a person who ... [The shortened form goes with the first mention as it removes more than the year from the title.]
 
 ### Or use the informal title in roman type
 
@@ -68,10 +70,9 @@ Use title case and roman type for the informal title.
 
 #### Example
 
-- … in the
-*Public Governance, Performance and Accountability Act 2013*(PGPA Act). … Section 10 of the PGPA Act defines a Commonwealth entity as … *Freedom of Information Act 1982*(FOI Act)
+- … in the *Public Governance, Performance and Accountability Act 2013*(PGPA Act). … Section 10 of the PGPA Act defines a Commonwealth entity as …
+- *Freedom of Information Act 1982*(FOI Act)
 
-Each Act has a series number to use in citations
 
 Acts are also identified by series. Every Act made in a year is given a number starting at 1.
 
@@ -83,7 +84,6 @@ Using the series in general content helps people identify the particular Act and
 
 The *Australian Citizenship Act 2007*, by virtue of amendments made in 2013 (Act No. 57 of 2013), gives the Minister the discretionary power to …
 
-Jurisdiction is an important detail
 
 It is important to identify the jurisdiction of the Act – that is, whether it is an Act of:
 
@@ -98,9 +98,8 @@ The first way is to write a sentence that explains where the Act originates. Thi
 
 #### Example
 
-- The Tasmanian
-*Local Government Act 1993*gave councils greater autonomy to act independently of the state government. - Tasmania’s
-*Local Government Act 1993*…
+- The Tasmanian *Local Government Act 1993*gave councils greater autonomy to act independently of the state government.
+- Tasmania’s *Local Government Act 1993*…
 
 ### Use the shortened form of the jurisdiction in the Act’s title in roman type and in parentheses
 
@@ -122,11 +121,9 @@ None of these shortened forms for jurisdictions are punctuated.
 
 #### Example
 
-- Australia’s water resources in the Murray–Darling Basin are managed by laws of the Commonwealth and Basin States. Among others, this legislation includes the
-*Water Act 2007*(Cth),*Water Resources Act 2007*(ACT),*Water Management Act 2000*(NSW),*Water Act 2000*(Qld),*Natural Resources Management Act 2004*(SA) and*Water Act 1989*(Vic). - Dugong are defined as ‘fish’ for the purposes of the
-*Marine Act 1981*(NT).
+- Australia’s water resources in the Murray–Darling Basin are managed by laws of the Commonwealth and Basin States. Among others, this legislation includes the *Water Act 2007*(Cth),*Water Resources Act 2007*(ACT),*Water Management Act 2000*(NSW),*Water Act 2000*(Qld),*Natural Resources Management Act 2004*(SA) and*Water Act 1989*(Vic).
+- Dugong are defined as ‘fish’ for the purposes of the *Marine Act 1981*(NT).
 
-An initial capital is correct, whether the reference is generic or not
 
 Always use capitals for the words ‘Act’ and ‘Acts’ when you write about Acts of parliament. This avoids possible confusion in publications, even those that are mostly about the law. The words ‘act’ and ‘acts’ have several meanings.
 
@@ -134,7 +131,6 @@ Always use capitals for the words ‘Act’ and ‘Acts’ when you write about 
 
 Staff must read the Act to understand their compliance responsibilities.
 
-The basic unit of an Act is a section (s)
 
 An Act contains sections, which are often divided into subsections. Subsections might be divided into paragraphs and subparagraphs.
 
@@ -173,21 +169,20 @@ The units of an Act are written in long or shortened form (an abbreviation or co
 
 Don’t use a full stop after the shortened form when you use it in a citation or note.
 
-| Long form | Example | Shortened form | Example |
+| Long form | Example | Shortened form | Example | 
 |---|---|---|---|
-| Part | The Auditor-General’s main functions and powers are defined in Part 4 of the Act. | Pt | ... the Auditor-General Act 1997 (Cth), Pts 4 and 6. |
-| Division | … under Division 2 of Part 9 of the Law Enforcement (Powers and Responsibilities) Act 2002 | Div | ... the LEPRA, Div 2, Pt 9. |
-| Subdivision | … under Subdivision 20-A of the Commonwealth Tax Agent Services Act 2009 (TASA). | Subdiv | ... the TASA, Subdiv 20-A. |
-| section | Section 476B of the Migration Act 1958 (Cth) provides … | s | ... the Copyright Act 1968, s 4. |
-| sections | Civil penalty provisions are contained in sections 4, 5 and 7 of the Act. | ss | ... the Law Enforcement (Powers and Responsibilities) Act 2002 (NSW), ss 4, 99, 105, 109, 113. |
-| subsection | Subsection 7(7) of the Remuneration Tribunal Act 1973. | subs | The Remuneration Tribunal Act 1973, subs 7(7) requires … |
-| subsections | Subsections 6 and 6A require the Tribunal to … | subss | ... to the Chief Minister of the ACT (subss 6, 6A). |
-| paragraph | ... is described in paragraph 21(3)(a). | para | … the offences as defined (para 11.2A(1)). |
-| paragraphs | Paragraphs 17(1)(a)–(c) outline ... | paras | ... produce documents when required (paras 17(1)(a)–(c)). |
-| subparagraph | Subparagraph 2A (a)(iv) allows ... | subpara | ... the Crimes Act 1914, subpara 2A(a)(iv). |
-| subparagraphs | Under subparagraphs 8ZD(2)(b)(i)–(ii) ... | subparas | ... the Taxation Administration Act 1953, subparas 8ZD(2)(b)(i)–(ii). |
+| Part | The Auditor-General’s main functions and powers are defined in Part 4 of the Act. | Pt | ... theAuditor-General Act 1997(Cth), Pts 4 and 6. | 
+| Division | … under Division 2 of Part 9 of the Law Enforcement (Powers and Responsibilities) Act 2002 | Div | ... the LEPRA, Div 2, Pt 9. | 
+| Subdivision | … under Subdivision 20-A of the Commonwealth Tax Agent Services Act 2009(TASA). | Subdiv | ... the TASA, Subdiv 20-A. | 
+| section | Section 476B of the Migration Act 1958(Cth) provides … | s | ... the Copyright Act 1968, s 4. | 
+| sections | Civil penalty provisions are contained in sections 4, 5 and 7 of the Act. | ss | ... the Law Enforcement (Powers and Responsibilities) Act 2002 (NSW), ss 4, 99, 105, 109, 113. | 
+| subsection | Subsection 7(7) of the Remuneration Tribunal Act 1973. | subs | The Remuneration Tribunal Act 1973, subs 7(7) requires … | 
+| subsections | Subsections 6 and 6A require the Tribunal to … | subss | ... to the Chief Minister of the ACT (subss 6, 6A). | 
+| paragraph | ... is described in paragraph 21(3)(a). | para | … the offences as defined (para 11.2A(1)). | 
+| paragraphs | Paragraphs 17(1)(a)–(c) outline ... | paras | ... produce documents when required (paras 17(1)(a)–(c)). | 
+| subparagraph | Subparagraph 2A (a)(iv) allows ... | subpara | ... the Crimes Act 1914, subpara 2A(a)(iv). | 
+| subparagraphs | Under subparagraphs 8ZD(2)(b)(i)–(ii) ... | subparas | ... the Taxation Administration Act 1953, subparas 8ZD(2)(b)(i)–(ii). | 
 
-Titles of Acts from other countries are in roman type
 
 Write all legislation from foreign countries in roman type, followed by the country abbreviation.
 
@@ -201,7 +196,6 @@ If you’re not sure of an abbreviation, write the sentence to make the jurisdic
 - Foreign Investment Act 1999 (FIJ)
 - Fiji’s Foreign Investment Act 1999
 
-Reference to Australia’s Constitution needs capitalisation only
 
 Always capitalise ‘Constitution’ when writing about Australia’s Constitution.
 
@@ -216,7 +210,6 @@ How you refer to Australia’s Constitution depends on the context.
 - Write ‘the Constitution’ when it’s clear that you’re referring to Australia’s Constitution.
 - If you’re unsure, use ‘the Australian Constitution’ so there’s no confusion.
 
-Release notes
 
 The digital edition has considerable advice on how to cite legal material. It includes new material on Commonwealth tribunals and Australian Tax Office rulings. It expands on sixth edition information on treaties.
 
@@ -226,42 +219,41 @@ These departures are informed by legal material and general publications from Au
 
 The Content Guide briefly mentioned legislation in relation to capitalisation. There was no detailed guidance about how to cite legislation.
 
-About this page
 
 ### References
 
-Attorney-General’s Department (2017) *Style guide*, Australian Government, Canberra.
+Attorney-General’s Department (2017) *Style guide*, Australian Government, Canberra.
 
-Department of the House of Representatives (2018) ‘[Bills — the parliamentary process](https://www.aph.gov.au/About_Parliament/House_of_Representatives/Powers_practice_and_procedure/Practice7/HTML/Chapter10/Bills%E2%80%94the_parliamentary_process)’, in Elder DR (ed) *House of Representatives practice*, 7th edn, Department of the House of Representatives, accessed 16 June 2020.
+Department of the House of Representatives (2018) ‘[Bills — the parliamentary process](https://www.aph.gov.au/About_Parliament/House_of_Representatives/Powers_practice_and_procedure/Practice7/HTML/Chapter10/Bills%E2%80%94the_parliamentary_process)’, in Elder DR (ed) *House of Representatives practice*, 7th edn, Department of the House of Representatives, accessed 16 June 2020.
 
-Department of the Senate (2016) ‘[Chapter 12: legislation](https://www.aph.gov.au/About_Parliament/Senate/Powers_practice_n_procedures/Odgers_Australian_Senate_Practice/Chapter_12)’, in Laing R (ed) *Odgers’ Senate practice*, 14th edn, Department of the Senate, accessed 16 June 2020.
+Department of the Senate (2016) ‘[Chapter 12: legislation](https://www.aph.gov.au/About_Parliament/Senate/Powers_practice_n_procedures/Odgers_Australian_Senate_Practice/Chapter_12)’, in Laing R (ed) *Odgers’ Senate practice*, 14th edn, Department of the Senate, accessed 16 June 2020.
 
-Hansard (2020) *Hansard style guide*, Department of Parliamentary Services, Parliament of Australia, Canberra.
+Hansard (2020) *Hansard style guide*, Department of Parliamentary Services, Parliament of Australia, Canberra.
 
-Melbourne University Law Review Association Inc and Melbourne Journal of International Law (2018) [ Australian guide to legal citation](https://law.unimelb.edu.au/mulr/aglc/about), 4th edn, Melbourne University Law Review Association Inc, accessed 16 June 2020.
+Melbourne University Law Review Association Inc and Melbourne Journal of International Law (2018) [ Australian guide to legal citation](https://law.unimelb.edu.au/mulr/aglc/about), 4th edn, Melbourne University Law Review Association Inc, accessed 16 June 2020.
 
-OPC (n.d.) [ Drafting directions](https://www.opc.gov.au/drafting-resources/drafting-directions), OPC website, accessed 16 June 2020.
+OPC (n.d.) [ Drafting directions](https://www.opc.gov.au/drafting-resources/drafting-directions), OPC website, accessed 16 June 2020.
 
-OPC (n.d.) [ Drafting manuals](https://www.opc.gov.au/drafting-resources/drafting-manuals), OPC, accessed 16 June 2020.
+OPC (n.d.) [ Drafting manuals](https://www.opc.gov.au/drafting-resources/drafting-manuals), OPC, accessed 16 June 2020.
 
-OPC (n.d.) [ Glossary](https://www.legislation.gov.au/content/whatisit), Federal Register of Legislation website, accessed 16 June 2020.
+OPC (n.d.) [ Glossary](https://www.legislation.gov.au/content/whatisit), Federal Register of Legislation website, accessed 16 June 2020.
 
-OPC (n.d.) [ Information](https://www.legislation.gov.au/Content/Help), Federal Register of Legislation website, accessed 16 June 2020.
+OPC (n.d.) [ Information](https://www.legislation.gov.au/Content/Help), Federal Register of Legislation website, accessed 16 June 2020.
 
-Parliamentary Library (n.d.) *Key internet links on Australian law*, Parliament of Australia website, accessed 16 June 2020.
+Parliamentary Library (n.d.) *Key internet links on Australian law*, Parliament of Australia website, accessed 16 June 2020.
 
-Parliamentary Library (2017) *The 45th Parliament: parliamentary handbook of the Commonwealth of Australia 2017*, Department of Parliamentary Services, Parliament of Australia, accessed 16 June 2020.
+Parliamentary Library (2017) *The 45th Parliament: parliamentary handbook of the Commonwealth of Australia 2017*, Department of Parliamentary Services, Parliament of Australia, accessed 16 June 2020.
 
-PM&C (Department of the Prime Minister and Cabinet) (2017) [ Legislation handbook](https://www.pmc.gov.au/resource-centre/government/legislation-handbook), PM&C, accessed 16 June 2020.
+PM&C (Department of the Prime Minister and Cabinet) (2017) [ Legislation handbook](https://www.pmc.gov.au/resource-centre/government/legislation-handbook), PM&C, accessed 16 June 2020.
 
-Thomson Reuters Australia (2017) ‘[Legislation and commentary table of abbreviations](https://support.thomsonreuters.com.au/product/westlaw-au/articles/westlaw-au-guide-legislation-and-commentary-table-abbreviations)’, *Westlaw AU Guides*, Thomson Reuters Australia, accessed 16 June 2020.
+Thomson Reuters (2026) [ Abbreviations guide [PDF 9 MB]](https://training-aem.thomsonreuters.com/media/Abbreviations Guide/1_rryus78g?mode=fullscreen), Westlaw Advantage Australia, accessed 4 June 2026.
 
-University of Technology Sydney and University of New South Wales Faculties of Law (n.d.) [ Australasian Legal Information Institute (AustLII)](http://www.austlii.edu.au/), AustLII website, accessed 16 June 2020.
+University of Technology Sydney and University of New South Wales Faculties of Law (n.d.) [ Australasian Legal Information Institute (AustLII)](http://www.austlii.edu.au/), AustLII website, accessed 16 June 2020.
 
-Whitbread D and Leary K (2016a) *AGS editorial style guide*, Australian Government Solicitor, Canberra.
+Whitbread D and Leary K (2016a) *AGS editorial style guide*, Australian Government Solicitor, Canberra.
 
-Whitbread D and Leary K (2016b) *AGS style guide: summary*, Australian Government Solicitor, Canberra.
+Whitbread D and Leary K (2016b) *AGS style guide: summary*, Australian Government Solicitor, Canberra.
 
 ### Last updated
 
-This page was updated Tuesday 4 February 2025.
+This page was updated Thursday 4 June 2026.

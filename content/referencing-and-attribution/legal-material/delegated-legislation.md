@@ -1,6 +1,5 @@
 Follow the correct style to cite delegated legislation made under the authority of an Act. This will help people find the source material.
 
-Delegated legislation comes in many forms
 
 Delegated legislation is made under the authority of an Act, not by the Act directly. For example, parliament may delegate this authority to a minister, statutory bodies or office holders.
 
@@ -17,13 +16,12 @@ Regulations are the most common type of delegated legislation. There are many ot
 
 Some jurisdictions refer to delegated legislation as ‘subordinate legislation’, ‘subsidiary legislation’ or ‘statutory rules’.
 
-Some, but not all, types of delegated legislation are [legislative instruments](https://www.legislation.gov.au/Browse/ByTitle/LegislativeInstruments/)*. *‘Legislative instrument’* *is defined in section 8 of the * Legislation Act 2003.* All legislative instruments are registered on the
+Some, but not all, types of delegated legislation are [legislative instruments](https://www.legislation.gov.au/Browse/ByTitle/LegislativeInstruments/)*. *‘Legislative instrument’* *is defined in section 8 of the * Legislation Act 2003.* All legislative instruments are registered on the 
 
 [Legislation Register](https://www.legislation.gov.au/Home). Regulations are legislative instruments.
 
 The Legislation Register also contains [notifiable instruments](https://www.legislation.gov.au/Browse/ByTitle/NotifiableInstruments/). These are not legislative, but are notices about legal matters of interest to the public. An example is the Order to Call Out the Australian Defence Force Reserves [No. 2], made during Australia’s bushfire crisis in 2020.
 
-Style for regulations titles is roman type, title case
 
 Use title case (maximal capitalisation) and roman type for the titles of regulations.
 
@@ -33,11 +31,10 @@ Cite the title exactly without altering the spelling. The year forms part of the
 
 ### Example
 
-- The Ombudsman Regulations 2017 is an instrument made under the
-*Ombudsman Act 1976*. These Regulations … - Superannuation Industry Supervision Regulations 1994 (Cth)
+- The Ombudsman Regulations 2017 is an instrument made under the *Ombudsman Act 1976*. These Regulations …
+- Superannuation Industry Supervision Regulations 1994 (Cth)
 - Workers’ Compensation and Injury Management Regulations 1982 (WA)
 
-The basic unit of regulations is a regulation (reg)
 
 Regulations are compilations made up of individual regulations. Each regulation might be divided into subregulations.
 
@@ -60,15 +57,14 @@ The shortened forms of regulations and subregulations are:
 
 ### Example
 
-An authorised officer under the *Water Act 2007* will be issued with an identity card … The associated regulations specify other mandatory features of the card, including the Commonwealth Coat of Arms (Water Regulations 2008, reg 10.1).
+An authorised officer under the *Water Act 2007* will be issued with an identity card … The associated regulations specify other mandatory features of the card, including the Commonwealth Coat of Arms (Water Regulations 2008, reg 10.1).
 
-Regulations receive a unique identifier when registered on the Legislation Register *–* for example, F2019C00400 (Ombudsman Regulations 2017). You can use the identifier to search for regulations or to point users to earlier superseded regulations.
+Regulations receive a unique identifier when registered on the Legislation Register *–* for example, F2019C00400 (Ombudsman Regulations 2017). You can use the identifier to search for regulations or to point users to earlier superseded regulations.
 
 ### Example
 
 … the licence variations prescribed in the Water Amendment Regulation 2012 (No. 1) (F2012L01015).
 
-Other delegated legislation follows title case, no italics
 
 Style for all other titles of delegated legislation is the same as for regulations.
 
@@ -164,7 +160,6 @@ Sittings of a Full Court are held at places and on days fixed by rule of Court o
 
 If an appeal relates to a private ruling by the ATO Commissioner, the sealed copy of the notice of appeal must be served within 6 days after filing (Federal Court Rules 2011, r 33.03.5).
 
-Release notes
 
 The digital edition has considerable advice on how to cite legal material. It includes new material on Commonwealth tribunals and Australian Tax Office rulings. It expands on sixth edition information on treaties.
 
@@ -174,38 +169,37 @@ These departures are informed by legal material and general publications from Au
 
 The Content Guide briefly mentioned legislation in relation to capitalisation. There was no detailed guidance about how to cite legislation.
 
-About this page
 
 ### References
 
-Attorney-General’s Department (n.d.) * Legal system: publications*, Attorney-General’s Department website, accessed 16 June 2020.
+Attorney-General’s Department (n.d.) [ Legal system: publications](https://www.ag.gov.au/legal-system/publications), Attorney-General’s Department website, accessed 16 June 2020.
 
-Attorney-General’s Department (2017) *Style guide*, Australian Government, Canberra.
+Attorney-General’s Department (2017) *Style guide*, Australian Government, Canberra.
 
-Australian Government Solicitor (n.d.) * Publications*, Australian Government Solicitor website, accessed 16 June 2020.
+Australian Government Solicitor (n.d.) [ Publications](https://www.ags.gov.au/publications/index.html), Australian Government Solicitor website, accessed 16 June 2020.
 
-Hansard (2020) *Hansard style guide*, Department of Parliamentary Services, Parliament of Australia, Canberra.
+Hansard (2020) *Hansard style guide*, Department of Parliamentary Services, Parliament of Australia, Canberra.
 
-Melbourne University Law Review Association Inc and Melbourne Journal of International Law (2018) * Australian guide to legal citation*, 4th edn, Melbourne University Law Review Association Inc, accessed 16 June 2020.
+Melbourne University Law Review Association Inc and Melbourne Journal of International Law (2018) [ Australian guide to legal citation](https://law.unimelb.edu.au/mulr/aglc/about), 4th edn, Melbourne University Law Review Association Inc, accessed 16 June 2020.
 
-OPC (Office of Parliamentary Counsel) (n.d.) * Drafting Direction No. 3.8: subordinate legislation*, OPC website, accessed 16 June 2020.
+OPC (Office of Parliamentary Counsel) (n.d.) [ Drafting Direction No. 3.8: subordinate legislation](https://www.opc.gov.au/drafting-resources/drafting-directions), OPC website, accessed 16 June 2020.
 
-OPC (n.d.) * Drafting manuals*, OPC, accessed 16 June 2020.
+OPC (n.d.) [ Drafting manuals](https://www.opc.gov.au/drafting-resources/drafting-manuals), OPC, accessed 16 June 2020.
 
-OPC (n.d.) * Glossary*, Federal Register of Legislation website, accessed 16 June 2020.
+OPC (n.d.) [ Glossary](https://www.legislation.gov.au/content/whatisit), Federal Register of Legislation website, accessed 16 June 2020.
 
-OPC (2019) * Instruments handbook*, OPC, accessed 16 June 2020.
+OPC (2019) [ Instruments handbook](https://www.opc.gov.au/publications/opc-instruments-handbook), OPC, accessed 16 June 2020.
 
-PM&C (Department of the Prime Minister and Cabinet) (2017) * Legislation handbook*, PM&C, accessed 16 June 2020.
+PM&C (Department of the Prime Minister and Cabinet) (2017) [ Legislation handbook](https://www.pmc.gov.au/resource-centre/government/legislation-handbook), PM&C, accessed 16 June 2020.
 
-PM&C (2019) * Federal Executive Council handbook 2019*, PM&C, accessed 16 June 2020.
+PM&C (2019) [ Federal Executive Council handbook 2019](https://www.pmc.gov.au/sites/default/files/publications/federal-executive-council-handbook-2019.pdf), PM&C, accessed 16 June 2020.
 
-Thomson Reuters Australia (2017) ‘[Legislation and commentary table of abbreviations](https://support.thomsonreuters.com.au/product/westlaw-au/articles/westlaw-au-guide-legislation-and-commentary-table-abbreviations)’, *Westlaw AU Guides*, Thomson Reuters Australia, accessed 16 June 2020.
+Thomson Reuters (2026) [ Abbreviations guide [PDF 9 MB]](https://training-aem.thomsonreuters.com/media/Abbreviations Guide/1_rryus78g?mode=fullscreen), Westlaw Advantage Australia, accessed 4 June 2026.
 
-University of Technology Sydney and University of New South Wales Faculties of Law (n.d.) * Australasian Legal Information Institute (AustLII)*, AustLII website, accessed 16 June 2020.
+University of Technology Sydney and University of New South Wales Faculties of Law (n.d.) [ Australasian Legal Information Institute (AustLII)](http://www.austlii.edu.au/), AustLII website, accessed 16 June 2020.
 
-Whitbread D and Leary K (2016) *AGS editorial style guide*, Australian Government Solicitor, Canberra.
+Whitbread D and Leary K (2016) *AGS editorial style guide*, Australian Government Solicitor, Canberra.
 
 ### Last updated
 
-This page was updated Thursday 10 June 2021.
+This page was updated Thursday 4 June 2026.
