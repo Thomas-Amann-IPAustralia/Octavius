@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A plain-language, interactive explainer of how Octavius builds its rulebook and applies it to your writing.">
+<title>How Octavius Works</title>
+<style>
+  :root {
+    /* ---- palette: ink on paper, two working accents ---- */
+    --paper:     #EBE8E0;
+    --surface:   #F4F2EC;
+    --surface-2: #FBFAF5;
+    --ink:       #1F2637;
+    --ink-soft:  #565F71;
+    --ink-faint: #8A8577;
+    --line:      #D8D2C4;
+    --line-soft: #E4DFD3;
+    --build:     #A9761F;   /* ochre — building the rulebook */
+    --build-bg:  #F3E9D4;
+    --apply:     #2C6E68;   /* eucalypt teal — applying it */
+    --apply-bg:  #DCEAE6;
+    --flag:      #BC4235;   /* proofreader red — findings only */
+    --flag-bg:   #F5DED9;
+
+    --serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, 'Times New Roman', serif;
+    --sans: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, 'SF Mono', 'Cascadia Code', 'JetBrains Mono', Menlo, Consolas, monospace;
+
+    --wrap: 1080px;
+    --prose: 40rem;
+    --radius: 4px;
+    --shadow: 0 1px 2px rgba(31,38,55,.06), 0 8px 24px rgba(31,38,55,.06);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper:     #12151C;
+      --surface:   #1A1E27;
+      --surface-2: #222732;
+      --ink:       #ECE8DE;
+      --ink-soft:  #9EA5B4;
+      --ink-faint: #6E7482;
+      --line:      #313949;
+      --line-soft: #262C38;
+      --build:     #D6A44C;
+      --build-bg:  #2C2415;
+      --apply:     #52A79D;
+      --apply-bg:  #14282A;
+      --flag:      #E06B5E;
+      --flag-bg:   #33201D;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.35);
+    }
+  }
+  /* explicit toggle overrides the media query in both directions */
+  :root[data-theme="light"] {
+    --paper:#EBE8E0; --surface:#F4F2EC; --surface-2:#FBFAF5;
+    --ink:#1F2637; --ink-soft:#565F71; --ink-faint:#8A8577;
+    --line:#D8D2C4; --line-soft:#E4DFD3;
+    --build:#A9761F; --build-bg:#F3E9D4; --apply:#2C6E68; --apply-bg:#DCEAE6;
+    --flag:#BC4235; --flag-bg:#F5DED9;
+    --shadow:0 1px 2px rgba(31,38,55,.06), 0 8px 24px rgba(31,38,55,.06);
+  }
+  :root[data-theme="dark"] {
+    --paper:#12151C; --surface:#1A1E27; --surface-2:#222732;
+    --ink:#ECE8DE; --ink-soft:#9EA5B4; --ink-faint:#6E7482;
+    --line:#313949; --line-soft:#262C38;
+    --build:#D6A44C; --build-bg:#2C2415; --apply:#52A79D; --apply-bg:#14282A;
+    --flag:#E06B5E; --flag-bg:#33201D;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.35);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* subtle paper grain via layered gradients */
+  body::before {
+    content: "";
+    position: fixed; inset: 0;
+    pointer-events: none; z-index: 0;
+    background:
+      radial-gradient(1200px 500px at 90% -10%, color-mix(in srgb, var(--build) 8%, transparent), transparent 70%),
+      radial-gradient(1000px 500px at -10% 110%, color-mix(in srgb, var(--apply) 8%, transparent), transparent 70%);
+  }
+
+  .wrap { position: relative; z-index: 1; max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
+  .prose { max-width: var(--prose); }
+
+  /* ---------- typography ---------- */
+  h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.1; text-wrap: balance; margin: 0; }
+  p { margin: 0; }
+  a { color: var(--apply); text-underline-offset: 3px; }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: .72rem;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: 0 0 .9rem;
+  }
+  .eyebrow.build { color: var(--build); }
+  .eyebrow.apply { color: var(--apply); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: clamp(56px, 12vh, 128px) 0 40px; }
+  .hero h1 {
+    font-size: clamp(2.9rem, 8vw, 5.4rem);
+    letter-spacing: -.015em;
+    margin: 0 0 .4rem;
+  }
+  .hero .kicker {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: clamp(1.15rem, 3vw, 1.7rem);
+    color: var(--ink-soft);
+    margin-bottom: 1.6rem;
+  }
+  .hero .lede { font-size: 1.16rem; color: var(--ink-soft); max-width: 34rem; }
+  .hero .lede strong { color: var(--ink); font-weight: 600; }
+
+  .rule-hr { height: 1px; background: var(--line); border: 0; margin: 0; }
+
+  /* ---------- two-jobs split ---------- */
+  .jobs { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 44px; }
+  @media (max-width: 720px) { .jobs { grid-template-columns: 1fr; } }
+  .job {
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 24px 24px 26px;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+  }
+  .job::before { content:""; position:absolute; left:0; top:0; bottom:0; width:4px; }
+  .job.build::before { background: var(--build); }
+  .job.apply::before { background: var(--apply); }
+  .job .tag {
+    font-family: var(--mono); font-size: .7rem; letter-spacing: .12em; text-transform: uppercase;
+    display: inline-block; padding: 3px 9px; border-radius: 999px; margin-bottom: 12px;
+  }
+  .job.build .tag { color: var(--build); background: var(--build-bg); }
+  .job.apply .tag { color: var(--apply); background: var(--apply-bg); }
+  .job h3 { font-size: 1.4rem; margin-bottom: 8px; }
+  .job p { color: var(--ink-soft); font-size: .98rem; }
+  .job .when { margin-top: 14px; font-family: var(--mono); font-size: .72rem; color: var(--ink-faint); letter-spacing: .03em; }
+
+  /* ---------- section frame ---------- */
+  section { padding: clamp(48px, 9vh, 96px) 0; }
+  .section-head { max-width: 44rem; margin-bottom: 44px; }
+  .section-head h2 { font-size: clamp(1.9rem, 4.4vw, 2.9rem); letter-spacing: -.01em; margin-bottom: .6rem; }
+  .section-head p { color: var(--ink-soft); font-size: 1.08rem; }
+
+  .divider { border-top: 1px solid var(--line); }
+
+  /* ---------- build pipeline (vertical spine) ---------- */
+  .pipeline { position: relative; margin-left: 6px; }
+  .pipeline::before {
+    content: ""; position: absolute; left: 21px; top: 8px; bottom: 8px; width: 2px;
+    background: linear-gradient(var(--build), color-mix(in srgb, var(--build) 35%, transparent));
+  }
+  @media (max-width: 560px){ .pipeline::before { left: 17px; } }
+  .phase { position: relative; padding: 0 0 26px 62px; }
+  @media (max-width: 560px){ .phase { padding-left: 52px; } }
+  .phase:last-child { padding-bottom: 0; }
+  .phase .node {
+    position: absolute; left: 0; top: 2px;
+    width: 44px; height: 44px; border-radius: 50%;
+    display: grid; place-items: center;
+    font-family: var(--serif); font-weight: 600; font-size: 1.02rem;
+    color: var(--build); background: var(--surface-2);
+    border: 2px solid var(--build);
+    box-shadow: 0 0 0 5px var(--paper);
+  }
+  @media (max-width: 560px){ .phase .node { width: 36px; height: 36px; font-size: .85rem; } }
+  .phase.gate .node { color: var(--flag); border-color: var(--flag); background: var(--flag-bg); }
+  .phase-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+  }
+  .phase.gate .phase-card { border-color: color-mix(in srgb, var(--flag) 45%, var(--line)); }
+  .phase-card h3 { font-size: 1.18rem; margin-bottom: 4px; }
+  .phase-card .io {
+    font-family: var(--mono); font-size: .72rem; letter-spacing: .02em; color: var(--build);
+    display: inline-flex; align-items: center; gap: 7px; flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .phase-card .io .arrow { opacity: .55; }
+  .phase-card p { color: var(--ink-soft); font-size: .96rem; }
+  .gate-note {
+    margin-top: 12px; padding: 10px 14px; border-radius: var(--radius);
+    background: var(--flag-bg); color: color-mix(in srgb, var(--flag) 80%, var(--ink));
+    font-size: .9rem; font-weight: 500;
+    border-left: 3px solid var(--flag);
+  }
+  .kinds { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+  .kind {
+    font-family: var(--mono); font-size: .68rem; letter-spacing: .03em;
+    padding: 3px 9px; border-radius: 3px; border: 1px solid var(--line);
+    color: var(--ink-soft); background: var(--surface-2);
+  }
+
+  /* ---------- apply flow ---------- */
+  .flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  @media (max-width: 900px){ .flow { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 520px){ .flow { grid-template-columns: 1fr; } }
+  .stage {
+    position: relative;
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 16px 16px 18px;
+    box-shadow: var(--shadow);
+  }
+  .stage .num {
+    font-family: var(--mono); font-size: .7rem; color: var(--apply);
+    letter-spacing: .1em; display: block; margin-bottom: 8px;
+  }
+  .stage h3 { font-size: 1.04rem; margin-bottom: 6px; }
+  .stage p { color: var(--ink-soft); font-size: .88rem; line-height: 1.5; }
+  .stage .glyph { font-size: 1rem; }
+
+  /* ---------- inverted-index mini-viz ---------- */
+  .index-viz {
+    margin-top: 40px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 28px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    align-items: center;
+    gap: 20px;
+  }
+  @media (max-width: 860px){ .index-viz { grid-template-columns: 1fr; gap: 24px; text-align: center; } .index-viz .conn { transform: rotate(90deg); justify-self: center; } }
+  .iv-col .iv-label {
+    font-family: var(--mono); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--ink-faint); margin-bottom: 12px;
+  }
+  .tagset { display: flex; flex-wrap: wrap; gap: 7px; }
+  @media (max-width: 860px){ .tagset { justify-content: center; } }
+  .ftag {
+    font-family: var(--mono); font-size: .74rem;
+    padding: 5px 11px; border-radius: 999px;
+    background: var(--apply-bg); color: var(--apply);
+    border: 1px solid color-mix(in srgb, var(--apply) 30%, transparent);
+  }
+  .conn { color: var(--apply); font-size: 1.5rem; justify-self: center; }
+  .rulehit {
+    background: var(--surface-2); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 9px 12px; font-size: .86rem; margin-bottom: 8px;
+    display: flex; align-items: center; gap: 9px;
+  }
+  .rulehit .check { color: var(--apply); font-weight: 700; }
+  .iv-foot { grid-column: 1 / -1; margin-top: 8px; padding-top: 16px; border-top: 1px dashed var(--line);
+    font-size: .9rem; color: var(--ink-soft); text-align: center; }
+  .iv-foot b { color: var(--ink); }
+
+  /* ---------- interactive walkthrough ---------- */
+  .demo {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+  .demo-top { padding: 22px 26px; border-bottom: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .demo-top .doc-label { font-family: var(--mono); font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-faint); }
+  .demo-heading {
+    font-family: var(--serif); font-size: clamp(1.6rem, 4vw, 2.3rem); margin-top: 8px;
+    display: inline-flex; gap: .4ch; flex-wrap: wrap;
+  }
+  .demo-heading .w { position: relative; transition: color .3s, background .3s; padding: 0 2px; border-radius: 3px; }
+  .demo-heading .w.flag-spell { color: var(--flag); box-shadow: inset 0 -2px 0 var(--flag); }
+  .demo-heading .w.flag-case { background: color-mix(in srgb, var(--build) 20%, transparent); }
+  .demo-badge {
+    font-family: var(--mono); font-size: .68rem; letter-spacing: .08em; text-transform: uppercase;
+    padding: 4px 10px; border-radius: 999px; background: var(--apply-bg); color: var(--apply);
+    opacity: 0; transform: translateY(-4px); transition: opacity .35s, transform .35s;
+  }
+  .demo-badge.show { opacity: 1; transform: none; }
+
+  .demo-body { display: grid; grid-template-columns: 240px 1fr; }
+  @media (max-width: 720px){ .demo-body { grid-template-columns: 1fr; } }
+  .rail { border-right: 1px solid var(--line); padding: 10px; }
+  @media (max-width: 720px){ .rail { border-right: 0; border-bottom: 1px solid var(--line); display: flex; overflow-x: auto; gap: 6px; } }
+  .rail-step {
+    display: flex; align-items: center; gap: 11px; width: 100%;
+    padding: 11px 12px; border-radius: var(--radius); border: 0; background: transparent;
+    font: inherit; font-size: .9rem; color: var(--ink-soft); text-align: left; cursor: pointer;
+    white-space: nowrap;
+  }
+  .rail-step:hover { background: var(--surface-2); }
+  .rail-step .dot {
+    width: 24px; height: 24px; border-radius: 50%; flex: 0 0 24px;
+    display: grid; place-items: center; font-family: var(--mono); font-size: .72rem;
+    border: 1.5px solid var(--line); color: var(--ink-faint); background: var(--surface-2);
+    transition: all .25s;
+  }
+  .rail-step[aria-current="true"] { color: var(--ink); font-weight: 600; }
+  .rail-step[aria-current="true"] .dot { border-color: var(--apply); color: #fff; background: var(--apply); }
+  .rail-step.done .dot { border-color: var(--apply); color: var(--apply); background: var(--apply-bg); }
+
+  .stageview { padding: 26px; min-height: 250px; display: flex; flex-direction: column; }
+  .stageview .sv-eyebrow { font-family: var(--mono); font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: var(--apply); margin-bottom: 10px; }
+  .stageview h3 { font-size: 1.5rem; margin-bottom: 10px; }
+  .stageview .sv-body { color: var(--ink-soft); font-size: 1rem; }
+  .sv-panel { margin-top: 18px; }
+  .sv-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .fix {
+    background: var(--surface-2); border: 1px solid var(--line); border-left: 3px solid var(--apply);
+    border-radius: var(--radius); padding: 13px 15px; margin-top: 12px;
+  }
+  .fix.rewrite { border-left-color: var(--build); }
+  .fix .fx-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 5px; }
+  .fix .fx-title { font-weight: 600; font-size: .95rem; }
+  .fix .fx-pill { font-family: var(--mono); font-size: .64rem; letter-spacing: .06em; text-transform: uppercase; padding: 3px 8px; border-radius: 999px; white-space: nowrap; }
+  .fix .fx-pill.safe { background: var(--apply-bg); color: var(--apply); }
+  .fix .fx-pill.rw { background: var(--build-bg); color: var(--build); }
+  .fix .fx-detail { font-size: .9rem; color: var(--ink-soft); }
+  .fix .fx-detail code { font-family: var(--mono); font-size: .84em; background: var(--surface); padding: 1px 5px; border-radius: 3px; border: 1px solid var(--line); }
+
+  .demo-controls { display: flex; align-items: center; gap: 10px; padding: 16px 26px; border-top: 1px solid var(--line); background: var(--surface-2); }
+  .btn {
+    font: inherit; font-size: .9rem; font-weight: 600; cursor: pointer;
+    border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+    padding: 9px 16px; border-radius: var(--radius); transition: background .2s, border-color .2s;
+  }
+  .btn:hover { border-color: var(--apply); }
+  .btn.primary { background: var(--apply); color: #fff; border-color: var(--apply); }
+  .btn.primary:hover { filter: brightness(1.06); }
+  .btn:disabled { opacity: .4; cursor: default; }
+  .btn.primary:disabled { background: var(--apply); }
+  .progress-label { margin-left: auto; font-family: var(--mono); font-size: .74rem; color: var(--ink-faint); letter-spacing: .05em; }
+
+  /* ---------- legend / footer ---------- */
+  .legend { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); }
+  .legend .li { display: flex; align-items: center; gap: 9px; font-size: .86rem; color: var(--ink-soft); }
+  .legend .sw { width: 14px; height: 14px; border-radius: 3px; }
+  .sw.build { background: var(--build); } .sw.apply { background: var(--apply); } .sw.flag { background: var(--flag); }
+
+  footer { padding: 60px 0 80px; color: var(--ink-faint); font-size: .9rem; }
+  footer a { color: var(--apply); }
+
+  /* ---------- theme toggle ---------- */
+  .toggle {
+    position: fixed; top: 16px; right: 16px; z-index: 20;
+    font: inherit; font-size: .8rem; cursor: pointer;
+    background: var(--surface-2); color: var(--ink-soft);
+    border: 1px solid var(--line); border-radius: 999px; padding: 7px 13px;
+    display: flex; align-items: center; gap: 7px; box-shadow: var(--shadow);
+  }
+  .toggle:hover { color: var(--ink); }
+
+  /* ---------- reveal ---------- */
+  html.js .reveal { opacity: 0; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease; }
+  html.js .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    html.js .reveal { opacity: 1 !important; transform: none !important; transition: none; }
+    * { scroll-behavior: auto !important; }
+  }
+
+  :focus-visible { outline: 2px solid var(--apply); outline-offset: 2px; border-radius: 3px; }
+</style>
+<style>/* minimal reset */ html,body{margin:0;padding:0} img{max-width:100%;height:auto} button{font-family:inherit}</style>
+</head>
+<body>
+<button class="toggle" id="themeToggle" aria-label="Switch colour theme">
+  <span id="themeIcon">◐</span><span id="themeText">Theme</span>
+</button>
+
+<div class="wrap">
+
+  <!-- HERO -->
+  <header class="hero">
+    <p class="eyebrow reveal">A plain-language explainer</p>
+    <h1 class="reveal">How Octavius Works</h1>
+    <p class="kicker reveal">From building the rulebook to marking up your writing.</p>
+    <p class="lede reveal">Octavius is a proofreading assistant for Australian Public Service content. It turns the
+      <strong>Australian Government Style Manual</strong> into hundreds of precise, tested checks — then runs them
+      across your document and underlines what needs attention, with a reason and a fix for each one.</p>
+  </header>
+
+  <div class="jobs">
+    <div class="job build reveal">
+      <span class="tag">Job one</span>
+      <h3>Building the rulebook</h3>
+      <p>Reading the whole Style Manual and turning each piece of advice into a check a computer can run — carefully, and once.</p>
+      <p class="when">Happens occasionally, behind the scenes</p>
+    </div>
+    <div class="job apply reveal">
+      <span class="tag">Job two</span>
+      <h3>Applying the rulebook</h3>
+      <p>Taking your document, running the finished checks against it, and showing you the results — live.</p>
+      <p class="when">Happens the instant you stop typing</p>
+    </div>
+  </div>
+</div>
+
+<div class="wrap" style="margin-top:56px"><hr class="rule-hr"></div>
+
+<!-- ============ BUILD PIPELINE ============ -->
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow build">Job one · Building the rulebook</p>
+      <h2>An assembly line that turns guidance into tested checks</h2>
+      <p>The Style Manual is a large website written for people. A six-step pipeline reads it and refines it,
+        one stage at a time, into a sealed rulebook the app can load. Every rule traces back to a real page.</p>
+    </div>
+
+    <div class="pipeline">
+      <div class="phase reveal">
+        <div class="node">1</div>
+        <div class="phase-card">
+          <div class="io">Style&nbsp;Manual&nbsp;site <span class="arrow">→</span> local&nbsp;copy</div>
+          <h3>Copy the pages</h3>
+          <p>Save a tidy local snapshot of every Style Manual page, so the work runs against something stable.
+            When the site refuses an automated visit, Octavius loads the page in a real browser, just like a person would.</p>
+        </div>
+      </div>
+
+      <div class="phase reveal">
+        <div class="node">2</div>
+        <div class="phase-card">
+          <div class="io">a&nbsp;page <span class="arrow">→</span> individual&nbsp;rules</div>
+          <h3>Extract the rules</h3>
+          <p>Read each page and pull out its distinct pieces of advice as separate, self-contained rules —
+            each with a plain summary, the reason behind it, and a link back to its source page.</p>
+        </div>
+      </div>
+
+      <div class="phase reveal">
+        <div class="node">3</div>
+        <div class="phase-card">
+          <div class="io">a&nbsp;rule <span class="arrow">→</span> a&nbsp;runnable&nbsp;check</div>
+          <h3>Write the check</h3>
+          <p>Turn each plain rule into a precise test. How it's checked depends on the kind of issue:</p>
+          <div class="kinds">
+            <span class="kind">pattern — spot a run of characters</span>
+            <span class="kind">word-list — scan for listed terms</span>
+            <span class="kind">structure — check the shape</span>
+            <span class="kind">human judgement — flag, don't automate</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="phase reveal">
+        <div class="node">3.5</div>
+        <div class="phase-card">
+          <div class="io">a&nbsp;rule <span class="arrow">→</span> when&nbsp;it&nbsp;applies</div>
+          <h3>Describe when to check</h3>
+          <p>Tag each rule with the kinds of text it cares about — and the kinds it must ignore (like web addresses
+            or code). Also record how fixable it is: safe to auto-fix, needs a rewrite, or needs a human.</p>
+        </div>
+      </div>
+
+      <div class="phase gate reveal">
+        <div class="node">4</div>
+        <div class="phase-card">
+          <div class="io" style="color:var(--flag)">every&nbsp;rule <span class="arrow">→</span> pass&nbsp;or&nbsp;fail</div>
+          <h3>Test every rule</h3>
+          <p>Each rule sits an exam against practice sentences: some it should catch, some it must leave alone.
+            A rule passes only if it gets every one right.</p>
+          <div class="gate-note">The quality gate — only rules that pass their exam are ever allowed into the finished rulebook.</div>
+        </div>
+      </div>
+
+      <div class="phase reveal">
+        <div class="node">5</div>
+        <div class="phase-card">
+          <div class="io">a&nbsp;failed&nbsp;rule <span class="arrow">→</span> a&nbsp;second&nbsp;attempt</div>
+          <h3>Fix the failures</h3>
+          <p>Any rule that failed gets rewritten and re-tested. Every correction is logged, so there's always a
+            record of what changed and why.</p>
+        </div>
+      </div>
+
+      <div class="phase reveal">
+        <div class="node">6</div>
+        <div class="phase-card">
+          <div class="io">passing&nbsp;rules <span class="arrow">→</span> the&nbsp;sealed&nbsp;rulebook</div>
+          <h3>Publish</h3>
+          <p>Pack all the passing rules into one compact, sealed file — the finished rulebook, and the only rule
+            file the running app ever loads.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><hr class="rule-hr"></div>
+
+<!-- ============ APPLY FLOW ============ -->
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow apply">Job two · Applying the rulebook</p>
+      <h2>What happens the moment you stop typing</h2>
+      <p>Everything below runs in a fraction of a second, each time you pause. The clever part is the middle:
+        Octavius describes your text first, then runs only the handful of rules that could possibly apply.</p>
+    </div>
+
+    <div class="flow">
+      <div class="stage reveal">
+        <span class="num">Step 1</span>
+        <h3><span class="glyph">✍️</span> Your document</h3>
+        <p>You type in a rich editor that knows its own structure. Octavius waits about 0.4s after you stop before checking.</p>
+      </div>
+      <div class="stage reveal">
+        <span class="num">Step 2</span>
+        <h3><span class="glyph">🧩</span> Split into zones</h3>
+        <p>Break the document into natural pieces — headings, paragraphs, bullets, table cells. Code is set aside, untouched.</p>
+      </div>
+      <div class="stage reveal">
+        <span class="num">Step 3</span>
+        <h3><span class="glyph">🩹</span> Mask what to ignore</h3>
+        <p>Cover up web addresses, code, quotes and names so they're never proofread as if they were ordinary prose.</p>
+      </div>
+      <div class="stage reveal">
+        <span class="num">Step 4</span>
+        <h3><span class="glyph">🔖</span> Take a fingerprint</h3>
+        <p>Jot down what each piece <em>is like</em>: a heading? contains a date? written in passive voice? — just facts, no judgement yet.</p>
+      </div>
+      <div class="stage reveal">
+        <span class="num">Step 5</span>
+        <h3><span class="glyph">🗂️</span> Shortlist the rules</h3>
+        <p>Use the fingerprint to look up only the rules that could apply to text like this — skipping the rest instantly.</p>
+      </div>
+      <div class="stage reveal">
+        <span class="num">Step 6</span>
+        <h3><span class="glyph">🔎</span> Run the checks</h3>
+        <p>Run the shortlisted rules and note every spot they apply. Results for unchanged text are remembered, not redone.</p>
+      </div>
+      <div class="stage reveal">
+        <span class="num">Step 7</span>
+        <h3><span class="glyph">🧹</span> Tidy the results</h3>
+        <p>Cap repeats, drop duplicates, merge overlaps, and hush whole-document rules on drafts that are too short to judge.</p>
+      </div>
+      <div class="stage reveal">
+        <span class="num">Step 8</span>
+        <h3><span class="glyph">🖍️</span> Show you</h3>
+        <p>Underline the exact words in place, and list every finding with its reason, a Style Manual link, and a fix.</p>
+      </div>
+    </div>
+
+    <!-- inverted-index mini viz -->
+    <div class="index-viz reveal">
+      <div class="iv-col">
+        <div class="iv-label">The fingerprint of one heading</div>
+        <div class="tagset">
+          <span class="ftag">is a heading</span>
+          <span class="ftag">title case</span>
+          <span class="ftag">American spelling</span>
+        </div>
+      </div>
+      <div class="conn" aria-hidden="true">→</div>
+      <div class="iv-col">
+        <div class="iv-label">Look up: which rules care?</div>
+        <div style="font-family:var(--mono);font-size:.8rem;color:var(--ink-soft);line-height:1.5">
+          Like the index at the back of a book — jump straight to the relevant rules instead of reading every one.
+        </div>
+      </div>
+      <div class="conn" aria-hidden="true">→</div>
+      <div class="iv-col">
+        <div class="iv-label">The shortlist</div>
+        <div class="rulehit"><span class="check">✓</span> Use Australian spelling</div>
+        <div class="rulehit"><span class="check">✓</span> Headings use sentence case</div>
+      </div>
+      <p class="iv-foot"><b>2 rules run — not hundreds.</b> Describing the text first is what keeps Octavius both fast and quiet, even with a large rulebook.</p>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><hr class="rule-hr"></div>
+
+<!-- ============ INTERACTIVE WALKTHROUGH ============ -->
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Try it · one sentence, start to finish</p>
+      <h2>Walk a real heading through the pipeline</h2>
+      <p>Here's a heading with two problems hiding in it. Step through to watch Octavius take it apart and mark it up.</p>
+    </div>
+
+    <div class="demo reveal" id="demo">
+      <div class="demo-top">
+        <div>
+          <div class="doc-label">Your heading</div>
+          <div class="demo-heading" id="demoHeading">
+            <span class="w" data-w="1">Finalizing</span>
+            <span class="w" data-w="2">The</span>
+            <span class="w" data-w="3">Report</span>
+          </div>
+        </div>
+        <span class="demo-badge" id="zoneBadge">Zone: heading</span>
+      </div>
+
+      <div class="demo-body">
+        <nav class="rail" id="rail" aria-label="Walkthrough steps"></nav>
+        <div class="stageview" id="stageview" aria-live="polite">
+          <!-- filled by script -->
+        </div>
+      </div>
+
+      <div class="demo-controls">
+        <button class="btn" id="prevBtn">← Back</button>
+        <button class="btn primary" id="nextBtn">Step through →</button>
+        <button class="btn" id="resetBtn">Reset</button>
+        <span class="progress-label" id="progress">Step 1 / 6</span>
+      </div>
+    </div>
+
+    <div class="legend reveal">
+      <div class="li"><span class="sw build"></span> Building the rulebook</div>
+      <div class="li"><span class="sw apply"></span> Applying the rulebook</div>
+      <div class="li"><span class="sw flag"></span> A finding (something to fix)</div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><hr class="rule-hr"></div>
+
+<footer>
+  <div class="wrap prose">
+    <p>This is a companion to the written guide <b>How Octavius Works</b>, and to the technical docs in
+      <code>CLAUDE.md</code> and <code>README.md</code>. Rules are sourced from the
+      <a href="https://www.stylemanual.gov.au/" target="_blank" rel="noopener">Australian Government Style Manual</a>.</p>
+  </div>
+</footer>
+
+<script>
+  document.documentElement.classList.add('js');
+
+  /* ---------- theme toggle ---------- */
+  (function(){
+    var root = document.documentElement, btn = document.getElementById('themeToggle');
+    var icon = document.getElementById('themeIcon'), txt = document.getElementById('themeText');
+    function current(){
+      var set = root.getAttribute('data-theme');
+      if (set) return set;
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    function paint(){ var d = current()==='dark'; icon.textContent = d ? '☀' : '☾'; txt.textContent = d ? 'Light' : 'Dark'; }
+    btn.addEventListener('click', function(){
+      root.setAttribute('data-theme', current()==='dark' ? 'light' : 'dark'); paint();
+    });
+    paint();
+  })();
+
+  /* ---------- scroll reveal ---------- */
+  (function(){
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = document.querySelectorAll('.reveal');
+    if (reduce || !('IntersectionObserver' in window)) { els.forEach(function(e){ e.classList.add('in'); }); return; }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if (en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, { threshold: .12, rootMargin: '0px 0px -8% 0px' });
+    els.forEach(function(e){ io.observe(e); });
+  })();
+
+  /* ---------- interactive walkthrough ---------- */
+  (function(){
+    var STEPS = [
+      {
+        rail: 'Your heading',
+        eyebrow: 'The starting point',
+        title: 'A heading you just typed',
+        body: 'Octavius receives three words: <b>Finalizing The Report</b>. To you it looks fine. Two Style Manual issues are hiding in it — watch them surface.',
+        panel: '',
+        zone: false, tags: false, spellFlag: false, caseFlag: false, fixes: false
+      },
+      {
+        rail: 'Split & mask',
+        eyebrow: 'Steps 2–3',
+        title: 'Recognised as a heading',
+        body: 'The editor knows this block is a <b>heading</b>, not a paragraph — so only heading-relevant rules will ever apply. There are no web addresses, code or quotes here, so nothing needs masking.',
+        panel: '',
+        zone: true, tags: false, spellFlag: false, caseFlag: false, fixes: false
+      },
+      {
+        rail: 'Fingerprint',
+        eyebrow: 'Step 4',
+        title: 'A quick fingerprint',
+        body: 'Octavius jots down what this text <em>is like</em> — plain facts, no judgement yet:',
+        panel: 'tags',
+        zone: true, tags: true, spellFlag: false, caseFlag: false, fixes: false
+      },
+      {
+        rail: 'Shortlist',
+        eyebrow: 'Step 5',
+        title: 'Shortlist the rules',
+        body: 'Using that fingerprint, Octavius looks up only the rules that could possibly apply to text like this — and picks out just two, skipping the hundreds of others.',
+        panel: 'shortlist',
+        zone: true, tags: true, spellFlag: false, caseFlag: false, fixes: false
+      },
+      {
+        rail: 'Findings',
+        eyebrow: 'Steps 6–7',
+        title: 'Two findings',
+        body: 'The two shortlisted rules run and each finds a problem. Because they mark different spots, both are kept.',
+        panel: 'findings',
+        zone: true, tags: true, spellFlag: true, caseFlag: true, fixes: false
+      },
+      {
+        rail: 'Show & fix',
+        eyebrow: 'Step 8',
+        title: 'Marked up, with fixes',
+        body: 'The problems are highlighted in place and listed for you — each with its reason, a link to the Style Manual, and a suggested fix.',
+        panel: 'fixes',
+        zone: true, tags: true, spellFlag: true, caseFlag: true, fixes: true
+      }
+    ];
+
+    var TAGS = ['is a heading', 'title case', 'American spelling'];
+    var SHORTLIST = ['Use Australian spelling', 'Headings use sentence case'];
+
+    var idx = 0;
+    var rail = document.getElementById('rail');
+    var view = document.getElementById('stageview');
+    var heading = document.getElementById('demoHeading');
+    var zoneBadge = document.getElementById('zoneBadge');
+    var prevBtn = document.getElementById('prevBtn');
+    var nextBtn = document.getElementById('nextBtn');
+    var resetBtn = document.getElementById('resetBtn');
+    var progress = document.getElementById('progress');
+    var words = heading.querySelectorAll('.w');
+
+    // build rail
+    STEPS.forEach(function(s, i){
+      var b = document.createElement('button');
+      b.className = 'rail-step';
+      b.type = 'button';
+      b.innerHTML = '<span class="dot">' + (i+1) + '</span><span>' + s.rail + '</span>';
+      b.addEventListener('click', function(){ go(i); });
+      rail.appendChild(b);
+    });
+    var railBtns = rail.querySelectorAll('.rail-step');
+
+    function panelHTML(kind){
+      if (kind === 'tags'){
+        return '<div class="sv-panel"><div class="sv-tags">' +
+          TAGS.map(function(t){ return '<span class="ftag">' + t + '</span>'; }).join('') +
+          '</div></div>';
+      }
+      if (kind === 'shortlist'){
+        return '<div class="sv-panel">' +
+          SHORTLIST.map(function(r){ return '<div class="rulehit"><span class="check">✓</span>' + r + '</div>'; }).join('') +
+          '<p style="margin-top:12px;font-family:var(--mono);font-size:.75rem;color:var(--ink-faint)">2 selected · hundreds skipped</p></div>';
+      }
+      if (kind === 'findings'){
+        return '<div class="sv-panel">' +
+          '<div class="rulehit"><span style="color:var(--flag);font-weight:700">!</span> “Finalizing” — American spelling</div>' +
+          '<div class="rulehit"><span style="color:var(--build);font-weight:700">!</span> Whole heading — title case, not sentence case</div>' +
+          '</div>';
+      }
+      if (kind === 'fixes'){
+        return '<div class="sv-panel">' +
+          '<div class="fix"><div class="fx-head"><span class="fx-title">Use Australian spelling</span><span class="fx-pill safe">Safe · one click</span></div>' +
+          '<div class="fx-detail">Change <code>Finalizing</code> to <code>Finalising</code>.</div></div>' +
+          '<div class="fix rewrite"><div class="fx-head"><span class="fx-title">Headings use sentence case</span><span class="fx-pill rw">Suggested rewrite</span></div>' +
+          '<div class="fx-detail">Try <code>Finalising the report</code>.</div></div>' +
+          '</div>';
+      }
+      return '';
+    }
+
+    function render(){
+      var s = STEPS[idx];
+      view.innerHTML =
+        '<div class="sv-eyebrow">' + s.eyebrow + '</div>' +
+        '<h3>' + s.title + '</h3>' +
+        '<div class="sv-body">' + s.body + '</div>' +
+        panelHTML(s.panel);
+
+      zoneBadge.classList.toggle('show', s.zone);
+      words[0].classList.toggle('flag-spell', s.spellFlag);
+      words.forEach(function(w){ w.classList.toggle('flag-case', s.caseFlag); });
+
+      railBtns.forEach(function(b, i){
+        b.setAttribute('aria-current', i === idx ? 'true' : 'false');
+        b.classList.toggle('done', i < idx);
+      });
+
+      progress.textContent = 'Step ' + (idx+1) + ' / ' + STEPS.length;
+      prevBtn.disabled = idx === 0;
+      nextBtn.textContent = idx === STEPS.length - 1 ? 'Done' : 'Step through →';
+      nextBtn.disabled = idx === STEPS.length - 1;
+    }
+
+    function go(i){ idx = Math.max(0, Math.min(STEPS.length - 1, i)); render(); }
+
+    nextBtn.addEventListener('click', function(){ go(idx + 1); });
+    prevBtn.addEventListener('click', function(){ go(idx - 1); });
+    resetBtn.addEventListener('click', function(){ go(0); });
+
+    render();
+  })();
+</script>
+
+</body>
+</html>
