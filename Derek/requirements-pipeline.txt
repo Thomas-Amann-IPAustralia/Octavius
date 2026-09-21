@@ -1,0 +1,10 @@
+# Scraping (Layer 0 transport). Versions are PINNED: an extractor upgrade
+# rewrites many content hashes at once and must be a deliberate, reviewed
+# event rather than a silent dependency bump (ADR-001).
+requests==2.32.3
+beautifulsoup4==4.12.3
+lxml==5.3.0
+trafilatura==1.12.2
+selenium==4.25.0
+selenium-stealth==1.0.6
+webdriver-manager==4.0.2

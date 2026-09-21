@@ -1,0 +1,1494 @@
+{
+  "generated_at": "2026-09-21T01:48:09+00:00",
+  "pages": {
+    "about-style-manual.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2026-04-07T15:02:14+10:00",
+      "path": "about-style-manual.md",
+      "sha256": "df8d81f0c6fa2e1c14a14f82c58c42bb033e0e2b78d04379e1b1d0493f056a2b",
+      "url": "https://www.stylemanual.gov.au/about-style-manual"
+    },
+    "about-style-manual/acknowledgements.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2026-07-07T12:19:44+10:00",
+      "path": "about-style-manual/acknowledgements.md",
+      "sha256": "ed35a4d9cf16e24bb6c7491076526542b94d32d300f5406ec2100d321eda2bca",
+      "url": "https://www.stylemanual.gov.au/about-style-manual/acknowledgements"
+    },
+    "about-style-manual/changelog.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2026-02-06T11:02:42+11:00",
+      "path": "about-style-manual/changelog.md",
+      "sha256": "c6c612456073acab47c53c70b2aa8bd8bb91614105023600240bd4c69caabd7d",
+      "url": "https://www.stylemanual.gov.au/about-style-manual/changelog"
+    },
+    "about-style-manual/foreword-hon-patrick-gorman-mp.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-11-26T15:33:06+11:00",
+      "path": "about-style-manual/foreword-hon-patrick-gorman-mp.md",
+      "sha256": "e0202d94adb2c1fafa2f57bed9384b417521e5246c103a52a53cf7bd2ab22e9e",
+      "url": "https://www.stylemanual.gov.au/about-style-manual/foreword-hon-patrick-gorman-mp"
+    },
+    "about-style-manual/how-cite-style-manual.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-09-06T16:25:38+10:00",
+      "path": "about-style-manual/how-cite-style-manual.md",
+      "sha256": "0468a14b4342f15183f106cca99f8a681502924eaf49260c35f86548247699e3",
+      "url": "https://www.stylemanual.gov.au/about-style-manual/how-cite-style-manual"
+    },
+    "about-style-manual/how-use-style-manual.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-02-13T11:28:57+11:00",
+      "path": "about-style-manual/how-use-style-manual.md",
+      "sha256": "be72766534317b69ab31d4dd8d8fe8dc09afa705540af9a3d32f51d4075bc0e6",
+      "url": "https://www.stylemanual.gov.au/about-style-manual/how-use-style-manual"
+    },
+    "about-style-manual/how-use-style-manual/video-transcript.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-05-30T11:12:31+10:00",
+      "path": "about-style-manual/how-use-style-manual/video-transcript.md",
+      "sha256": "704eabbcf2f3689267a600b6e4cd8f8803e6fc40f41695be2666103beae71fc7",
+      "url": "https://www.stylemanual.gov.au/about-style-manual/how-use-style-manual/video-transcript"
+    },
+    "accessible-and-inclusive-content.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-09-03T16:40:02+10:00",
+      "path": "accessible-and-inclusive-content.md",
+      "sha256": "db759adc48eb8a6e3815e5042422389aeea32351f540df4c2b23692c05e751a5",
+      "url": "https://www.stylemanual.gov.au/accessible-and-inclusive-content"
+    },
+    "accessible-and-inclusive-content/agency-responsibilities-and-commitments.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2023-12-15T15:35:09+11:00",
+      "path": "accessible-and-inclusive-content/agency-responsibilities-and-commitments.md",
+      "sha256": "ce5be9b5df02cd8f91f1388d3bc856c8de937b21b7a7a3dfd924e9d915e843cd",
+      "url": "https://www.stylemanual.gov.au/accessible-and-inclusive-content/agency-responsibilities-and-commitments"
+    },
+    "accessible-and-inclusive-content/apply-accessibility-principles.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2023-12-15T15:37:46+11:00",
+      "path": "accessible-and-inclusive-content/apply-accessibility-principles.md",
+      "sha256": "6cc3023bd6526ae7f18cd2aaf6f0aea84b673d8420b5ac38632bee6a10b3b4d0",
+      "url": "https://www.stylemanual.gov.au/accessible-and-inclusive-content/apply-accessibility-principles"
+    },
+    "accessible-and-inclusive-content/design-accessibility-and-inclusion.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2023-07-07T14:49:50+10:00",
+      "path": "accessible-and-inclusive-content/design-accessibility-and-inclusion.md",
+      "sha256": "12a2a7bb719b198620c60a2b321935d3d25008c3c9f612b7f98fabae1b6fc9f2",
+      "url": "https://www.stylemanual.gov.au/accessible-and-inclusive-content/design-accessibility-and-inclusion"
+    },
+    "accessible-and-inclusive-content/how-people-read.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-06-24T11:34:19+10:00",
+      "path": "accessible-and-inclusive-content/how-people-read.md",
+      "sha256": "4a6fc61a8bae1ecc0de15bba45333faf61e7a9a2dd1fc1fea3b513db06ed403f",
+      "url": "https://www.stylemanual.gov.au/accessible-and-inclusive-content/how-people-read"
+    },
+    "accessible-and-inclusive-content/inclusive-language.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-09-06T17:17:44+10:00",
+      "path": "accessible-and-inclusive-content/inclusive-language.md",
+      "sha256": "6a7d2c734ab46ba1e1ce2f9bbebed237780f644ebab9f2370058609409ce4937",
+      "url": "https://www.stylemanual.gov.au/accessible-and-inclusive-content/inclusive-language"
+    },
+    "accessible-and-inclusive-content/inclusive-language/aboriginal-and-torres-strait-islander-peoples.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-03-07T06:21:12+11:00",
+      "path": "accessible-and-inclusive-content/inclusive-language/aboriginal-and-torres-strait-islander-peoples.md",
+      "sha256": "c57f1dd927d68276bf5f9ee5c8ad4c417940a1c41491ff54a420f5dbc185668c",
+      "url": "https://www.stylemanual.gov.au/accessible-and-inclusive-content/inclusive-language/aboriginal-and-torres-strait-islander-peoples"
+    },
+    "accessible-and-inclusive-content/inclusive-language/age-diversity.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-02-19T11:17:15+11:00",
+      "path": "accessible-and-inclusive-content/inclusive-language/age-diversity.md",
+      "sha256": "d30d3838395db06c6af5c4505bb3626721274c17bb6059c9e8a64ef8320648d3",
+      "url": "https://www.stylemanual.gov.au/accessible-and-inclusive-content/inclusive-language/age-diversity"
+    },
+    "accessible-and-inclusive-content/inclusive-language/cultural-and-linguistic-diversity.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-09-06T17:19:02+10:00",
+      "path": "accessible-and-inclusive-content/inclusive-language/cultural-and-linguistic-diversity.md",
+      "sha256": "1e406b8985fb83a8b42e7569f6e8707be3d6e5a5464b15b52a819027ce0a299b",
+      "url": "https://www.stylemanual.gov.au/accessible-and-inclusive-content/inclusive-language/cultural-and-linguistic-diversity"
+    },
+    "accessible-and-inclusive-content/inclusive-language/disability-and-neurodiversity.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2026-03-20T09:35:09+11:00",
+      "path": "accessible-and-inclusive-content/inclusive-language/disability-and-neurodiversity.md",
+      "sha256": "af6d45cb786c352f9db92faa6f7a346dd8bfdaa58afb5d0718f73cc7b2232366",
+      "url": "https://www.stylemanual.gov.au/accessible-and-inclusive-content/inclusive-language/disability-and-neurodiversity"
+    },
+    "accessible-and-inclusive-content/inclusive-language/gender-and-sexual-diversity.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-07-15T14:20:43+10:00",
+      "path": "accessible-and-inclusive-content/inclusive-language/gender-and-sexual-diversity.md",
+      "sha256": "b4c18140fa33c7e083a99ed8ea4fd4f88aa7ef4823b2dcc22310d5c45c95d8af",
+      "url": "https://www.stylemanual.gov.au/accessible-and-inclusive-content/inclusive-language/gender-and-sexual-diversity"
+    },
+    "accessible-and-inclusive-content/literacy-and-access.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-07-23T15:18:37+10:00",
+      "path": "accessible-and-inclusive-content/literacy-and-access.md",
+      "sha256": "96b348367b5b51579b1900ac6be865968e0d08828e7c3aa4666068ad1c60ea96",
+      "url": "https://www.stylemanual.gov.au/accessible-and-inclusive-content/literacy-and-access"
+    },
+    "accessible-and-inclusive-content/make-content-accessible.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2026-06-04T09:17:10+10:00",
+      "path": "accessible-and-inclusive-content/make-content-accessible.md",
+      "sha256": "2891f54200f91450d67543651f7f87bb2c85db3bc1b2dd10cd9e29865292f9c8",
+      "url": "https://www.stylemanual.gov.au/accessible-and-inclusive-content/make-content-accessible"
+    },
+    "content-types.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-09-02T12:11:58+10:00",
+      "path": "content-types.md",
+      "sha256": "6ced3394ee323a20034f9b4c7a3f472d7f6060498aed2c3712fe051d669b0eb5",
+      "url": "https://www.stylemanual.gov.au/content-types"
+    },
+    "content-types/blogs.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-12T10:53:34+11:00",
+      "path": "content-types/blogs.md",
+      "sha256": "290ca8d9eafd9bf7802bb9ff75dc76553692caf0665b775f608a4613a66a5835",
+      "url": "https://www.stylemanual.gov.au/content-types/blogs"
+    },
+    "content-types/easy-read.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-20T11:29:11+11:00",
+      "path": "content-types/easy-read.md",
+      "sha256": "102fb315337607ec04d7842ae2fe26fec9c728cf7e05749638fa03e8bcf2cf25",
+      "url": "https://www.stylemanual.gov.au/content-types/easy-read"
+    },
+    "content-types/emails-and-letters.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-20T11:34:57+11:00",
+      "path": "content-types/emails-and-letters.md",
+      "sha256": "83b58c6b63e909cfbe4e225fc7c4754d094574264214741168fd27168a21e888",
+      "url": "https://www.stylemanual.gov.au/content-types/emails-and-letters"
+    },
+    "content-types/forms.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-10-21T06:33:53+11:00",
+      "path": "content-types/forms.md",
+      "sha256": "37e3b4947b51ddd1d00fc5bcbd1c77094e29fc4e91daaf9d67449d8709949ea4",
+      "url": "https://www.stylemanual.gov.au/content-types/forms"
+    },
+    "content-types/images.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-12T09:51:54+11:00",
+      "path": "content-types/images.md",
+      "sha256": "00c8a5cb6705296a83a3126d698b6ba66ba66ab0591fa521146be1a45981c8f5",
+      "url": "https://www.stylemanual.gov.au/content-types/images"
+    },
+    "content-types/images/alt-text-captions-and-titles-images.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-12T11:05:52+11:00",
+      "path": "content-types/images/alt-text-captions-and-titles-images.md",
+      "sha256": "b8156fd02c6c5b3d2a04291247dd0dffff2974b4f35022bef1617e762e58bef1",
+      "url": "https://www.stylemanual.gov.au/content-types/images/alt-text-captions-and-titles-images"
+    },
+    "content-types/journals-magazines-and-newspapers.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2026-02-19T10:21:27+11:00",
+      "path": "content-types/journals-magazines-and-newspapers.md",
+      "sha256": "de3ad3579b45f38eadb3fe4ccacfcde2dbe25f1f71fb55fb8ce24799feecc52f",
+      "url": "https://www.stylemanual.gov.au/content-types/journals-magazines-and-newspapers"
+    },
+    "content-types/pdf-portable-document-format.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2026-06-04T12:44:22+10:00",
+      "path": "content-types/pdf-portable-document-format.md",
+      "sha256": "637a46e5635bfc99a14e09ae5119bbdb60d526e58354e4f096ad680c2f939898",
+      "url": "https://www.stylemanual.gov.au/content-types/pdf-portable-document-format"
+    },
+    "content-types/reports.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-07-07T12:56:04+10:00",
+      "path": "content-types/reports.md",
+      "sha256": "e235fffb02e4cf9c49a85af71d79b713d455e6af8707b37df2b4ebbccbeefe7c",
+      "url": "https://www.stylemanual.gov.au/content-types/reports"
+    },
+    "content-types/social-media.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-12T10:58:35+11:00",
+      "path": "content-types/social-media.md",
+      "sha256": "f858b0031a319a54b91833d018e8483a3709c723e238ea9a7cd0c998c63641c2",
+      "url": "https://www.stylemanual.gov.au/content-types/social-media"
+    },
+    "content-types/video-and-audio.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-09-06T17:46:59+10:00",
+      "path": "content-types/video-and-audio.md",
+      "sha256": "22b26318c2d74892170de43e580d84bdc599066e68a4f6aef722f0491d1d7923",
+      "url": "https://www.stylemanual.gov.au/content-types/video-and-audio"
+    },
+    "content-types/video-and-audio/requirements-and-standards-video-and-audio.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-04-01T06:27:13+11:00",
+      "path": "content-types/video-and-audio/requirements-and-standards-video-and-audio.md",
+      "sha256": "7dbfb2ae80a73dbd25e2e471813d512a3e79e5d32c9c88a8b6e6758e708bd524",
+      "url": "https://www.stylemanual.gov.au/content-types/video-and-audio/requirements-and-standards-video-and-audio"
+    },
+    "grammar-punctuation-and-conventions.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-09-02T11:49:00+10:00",
+      "path": "grammar-punctuation-and-conventions.md",
+      "sha256": "341ce9a218b30c6cc358bcfc2e3452145b0208d83400b0cd1cf31d5b23ad64b7",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions"
+    },
+    "grammar-punctuation-and-conventions/italics.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-17T10:18:42+11:00",
+      "path": "grammar-punctuation-and-conventions/italics.md",
+      "sha256": "df85cbbfc0f2815ae4300329542980c356603564a7870789f92c6a6891570da8",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/italics"
+    },
+    "grammar-punctuation-and-conventions/names-and-terms.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-09-06T17:34:17+10:00",
+      "path": "grammar-punctuation-and-conventions/names-and-terms.md",
+      "sha256": "64ee4fc7e2e22bf04fe26f646b533468333880f456ea8243f1aaa1195639e5ca",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/names-and-terms"
+    },
+    "grammar-punctuation-and-conventions/names-and-terms/australian-place-names.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-07-28T13:58:02+10:00",
+      "path": "grammar-punctuation-and-conventions/names-and-terms/australian-place-names.md",
+      "sha256": "7e6031f8512229dc1fb9f40449c45f36f8c0e85522abc01fc4320d7b9545a351",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/names-and-terms/australian-place-names"
+    },
+    "grammar-punctuation-and-conventions/names-and-terms/commercial-terms.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-12T11:12:38+11:00",
+      "path": "grammar-punctuation-and-conventions/names-and-terms/commercial-terms.md",
+      "sha256": "c4383909002ad96eb38cec5150db0727dbb47bf72fe1c6a9c665df2ca26be7a0",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/names-and-terms/commercial-terms"
+    },
+    "grammar-punctuation-and-conventions/names-and-terms/government-terms.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-23T11:39:07+11:00",
+      "path": "grammar-punctuation-and-conventions/names-and-terms/government-terms.md",
+      "sha256": "3538c8c08e53f446eed613cd2211172b252579715408a46f672770d900c0ba4a",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/names-and-terms/government-terms"
+    },
+    "grammar-punctuation-and-conventions/names-and-terms/medical-terms.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-23T11:41:23+11:00",
+      "path": "grammar-punctuation-and-conventions/names-and-terms/medical-terms.md",
+      "sha256": "073a8242b9f8ddb30ff90dc15a9a4fd2ab6ae879d0608022efaf66f9b27473c5",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/names-and-terms/medical-terms"
+    },
+    "grammar-punctuation-and-conventions/names-and-terms/nationalities-peoples-and-places-outside-australia.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-10-29T16:12:51+11:00",
+      "path": "grammar-punctuation-and-conventions/names-and-terms/nationalities-peoples-and-places-outside-australia.md",
+      "sha256": "a140c04537b16b6a1e8af90f5be4e98a65776122378f210badacd769988f24b3",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/names-and-terms/nationalities-peoples-and-places-outside-australia"
+    },
+    "grammar-punctuation-and-conventions/names-and-terms/natural-phenomena.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-23T11:42:41+11:00",
+      "path": "grammar-punctuation-and-conventions/names-and-terms/natural-phenomena.md",
+      "sha256": "892295738d5daebcaf1152c297922ee3f61c5a02b53ff2e214980d9116d15dde",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/names-and-terms/natural-phenomena"
+    },
+    "grammar-punctuation-and-conventions/names-and-terms/organisation-names.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2023-02-01T14:38:55+11:00",
+      "path": "grammar-punctuation-and-conventions/names-and-terms/organisation-names.md",
+      "sha256": "b84cdc93d814c5a987e805bbfde3eb559ef579f19c38b3f129ca1b04c6c3c8bc",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/names-and-terms/organisation-names"
+    },
+    "grammar-punctuation-and-conventions/names-and-terms/personal-names.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2022-08-05T11:09:48+10:00",
+      "path": "grammar-punctuation-and-conventions/names-and-terms/personal-names.md",
+      "sha256": "b365c7bb673303e547bed19783e7c9653977acbf71763fe9ff57b282a18cdd1e",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/names-and-terms/personal-names"
+    },
+    "grammar-punctuation-and-conventions/names-and-terms/plants-and-animals.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-12-08T11:28:44+11:00",
+      "path": "grammar-punctuation-and-conventions/names-and-terms/plants-and-animals.md",
+      "sha256": "634c6bf9003c13281dad1f9d1a0773311a1df0472e759205a01c058a1ebc96fa",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/names-and-terms/plants-and-animals"
+    },
+    "grammar-punctuation-and-conventions/names-and-terms/ships-aircraft-and-other-vehicles.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2023-04-19T16:28:38+10:00",
+      "path": "grammar-punctuation-and-conventions/names-and-terms/ships-aircraft-and-other-vehicles.md",
+      "sha256": "9db055ede0da3dbb2450211b20e1afb377c792cf993b767a04c648466ce88597",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/names-and-terms/ships-aircraft-and-other-vehicles"
+    },
+    "grammar-punctuation-and-conventions/names-and-terms/topographic-terms.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2023-01-04T09:40:41+11:00",
+      "path": "grammar-punctuation-and-conventions/names-and-terms/topographic-terms.md",
+      "sha256": "c0a9aa8ca343a431612009ed8ffd1058c6013296038e7805c887843272d637f5",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/names-and-terms/topographic-terms"
+    },
+    "grammar-punctuation-and-conventions/numbers-and-measurements.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-09-01T17:50:02+10:00",
+      "path": "grammar-punctuation-and-conventions/numbers-and-measurements.md",
+      "sha256": "0cf8f0cb6ac6100aaf8d8adfb504558d8a86f4f5231d6439af5a0e703c8bd76c",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/numbers-and-measurements"
+    },
+    "grammar-punctuation-and-conventions/numbers-and-measurements/choosing-numerals-or-words.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-03-28T11:30:16+11:00",
+      "path": "grammar-punctuation-and-conventions/numbers-and-measurements/choosing-numerals-or-words.md",
+      "sha256": "98fab3b9afb4ebbc98819b6f52b2e7f1ad7836ff9705df441b001d3c15025046",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/numbers-and-measurements/choosing-numerals-or-words"
+    },
+    "grammar-punctuation-and-conventions/numbers-and-measurements/currency.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-09-06T17:31:52+10:00",
+      "path": "grammar-punctuation-and-conventions/numbers-and-measurements/currency.md",
+      "sha256": "3ae4382c553e87afdf346ae22eaf472d274ee83bcfb9a9856f8ac2b089635167",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/numbers-and-measurements/currency"
+    },
+    "grammar-punctuation-and-conventions/numbers-and-measurements/dates-and-time.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-08-18T13:05:46+10:00",
+      "path": "grammar-punctuation-and-conventions/numbers-and-measurements/dates-and-time.md",
+      "sha256": "15aec2ef70bafcf71e95c097f5292c8b0f79ba6e02f31f97cee23d6e47afd2cf",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/numbers-and-measurements/dates-and-time"
+    },
+    "grammar-punctuation-and-conventions/numbers-and-measurements/fractions-and-decimals.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2022-08-23T11:07:51+10:00",
+      "path": "grammar-punctuation-and-conventions/numbers-and-measurements/fractions-and-decimals.md",
+      "sha256": "274d5fb8c9dcbee8eecf567d5f56e6fc6a1011e117a64c5403f817554e27228a",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/numbers-and-measurements/fractions-and-decimals"
+    },
+    "grammar-punctuation-and-conventions/numbers-and-measurements/mathematical-relationships.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2026-05-26T16:17:20+10:00",
+      "path": "grammar-punctuation-and-conventions/numbers-and-measurements/mathematical-relationships.md",
+      "sha256": "ecb6ad20f196f8a10ea566402d847491a6f07ae0532b1c24ba263a5d0740eed4",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/numbers-and-measurements/mathematical-relationships"
+    },
+    "grammar-punctuation-and-conventions/numbers-and-measurements/measurement-and-units.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2023-07-05T13:56:38+10:00",
+      "path": "grammar-punctuation-and-conventions/numbers-and-measurements/measurement-and-units.md",
+      "sha256": "98dfed253d6aa7954177ecd896d33df5f537ee1a81c269704e7520a8c4232e20",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/numbers-and-measurements/measurement-and-units"
+    },
+    "grammar-punctuation-and-conventions/numbers-and-measurements/ordinal-numbers.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-09-06T14:40:59+10:00",
+      "path": "grammar-punctuation-and-conventions/numbers-and-measurements/ordinal-numbers.md",
+      "sha256": "5a0a2852d822d95bb659f76a15acd519b7de5b87738355074785c77516580ecc",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/numbers-and-measurements/ordinal-numbers"
+    },
+    "grammar-punctuation-and-conventions/numbers-and-measurements/percentages.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-07-24T13:17:40+10:00",
+      "path": "grammar-punctuation-and-conventions/numbers-and-measurements/percentages.md",
+      "sha256": "1c4c2357ff9918d84295ba38ad265e2649d3f5ef9d3056787bcee88579456aea",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/numbers-and-measurements/percentages"
+    },
+    "grammar-punctuation-and-conventions/numbers-and-measurements/telephone-numbers.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-02-19T12:31:11+11:00",
+      "path": "grammar-punctuation-and-conventions/numbers-and-measurements/telephone-numbers.md",
+      "sha256": "97ab8d05180d145be2f5b34b37708e4913817eb92dbdd4899023ff9de219f691",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/numbers-and-measurements/telephone-numbers"
+    },
+    "grammar-punctuation-and-conventions/parts-sentences.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2022-12-22T13:35:58+11:00",
+      "path": "grammar-punctuation-and-conventions/parts-sentences.md",
+      "sha256": "b9cb342fdfe9998fcdcd5c8dde95a6868f0db2c7ca9da32e6a8e3f9cc1f334fe",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/parts-sentences"
+    },
+    "grammar-punctuation-and-conventions/parts-sentences/clauses.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2026-05-26T16:17:09+10:00",
+      "path": "grammar-punctuation-and-conventions/parts-sentences/clauses.md",
+      "sha256": "f40629f0098b61d6503913521c346d731afb1bf64ec23379f8aa65d08f3a1bf2",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/parts-sentences/clauses"
+    },
+    "grammar-punctuation-and-conventions/parts-sentences/phrases.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2022-12-22T13:40:36+11:00",
+      "path": "grammar-punctuation-and-conventions/parts-sentences/phrases.md",
+      "sha256": "ecca609e50efd7e1d9dcfc9d8c0a5767690acb18bf9c7c2793c00e19f16b93ed",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/parts-sentences/phrases"
+    },
+    "grammar-punctuation-and-conventions/punctuation.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2023-07-07T15:03:48+10:00",
+      "path": "grammar-punctuation-and-conventions/punctuation.md",
+      "sha256": "93a7a02590970595e09ad03fd3b27134e7ef00664b384064f627bd127928957a",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/punctuation"
+    },
+    "grammar-punctuation-and-conventions/punctuation/apostrophes.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-01-17T17:18:46+11:00",
+      "path": "grammar-punctuation-and-conventions/punctuation/apostrophes.md",
+      "sha256": "6b7550503bf6fc9ac053fe762d2a3e3a79aa2037f8afa1baedeba14d56f763f2",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/punctuation/apostrophes"
+    },
+    "grammar-punctuation-and-conventions/punctuation/brackets-and-parentheses.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2026-04-17T13:13:10+10:00",
+      "path": "grammar-punctuation-and-conventions/punctuation/brackets-and-parentheses.md",
+      "sha256": "0e4f7fdbe059148de124b73292bb485dca6b75fa3c9bb53cf643b2936499affe",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/punctuation/brackets-and-parentheses"
+    },
+    "grammar-punctuation-and-conventions/punctuation/colons.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-03-19T11:50:53+11:00",
+      "path": "grammar-punctuation-and-conventions/punctuation/colons.md",
+      "sha256": "220faf080db80d5fcd131fd541438ca8061e3a1e158df7e3aed9e1ab800330e2",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/punctuation/colons"
+    },
+    "grammar-punctuation-and-conventions/punctuation/commas.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-01-06T14:31:52+11:00",
+      "path": "grammar-punctuation-and-conventions/punctuation/commas.md",
+      "sha256": "f529a5f7ce969723b702bebfcb5fb449d6da9943ec95814a03373b641f393b20",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/punctuation/commas"
+    },
+    "grammar-punctuation-and-conventions/punctuation/dashes.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2026-02-04T13:34:32+11:00",
+      "path": "grammar-punctuation-and-conventions/punctuation/dashes.md",
+      "sha256": "74a89237449d2335205d753e7d5907201b58867dfbeba302230eb8f42ff32221",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/punctuation/dashes"
+    },
+    "grammar-punctuation-and-conventions/punctuation/ellipses.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-10-19T17:26:06+11:00",
+      "path": "grammar-punctuation-and-conventions/punctuation/ellipses.md",
+      "sha256": "897b274d423fdfe92bc7cad4c59091d95cca5bf7c464fc41435b96edb09d4a84",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/punctuation/ellipses"
+    },
+    "grammar-punctuation-and-conventions/punctuation/exclamation-marks.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-10-19T17:27:19+11:00",
+      "path": "grammar-punctuation-and-conventions/punctuation/exclamation-marks.md",
+      "sha256": "53612db49331dfa7be50239da493e79fecfa71342e28a05403d08a449ab3ec10",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/punctuation/exclamation-marks"
+    },
+    "grammar-punctuation-and-conventions/punctuation/forward-slashes.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-07-24T13:16:54+10:00",
+      "path": "grammar-punctuation-and-conventions/punctuation/forward-slashes.md",
+      "sha256": "b18b84e2661794b85fff3fe1a3b093346d45f6634ba531605027a4bf188d940c",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/punctuation/forward-slashes"
+    },
+    "grammar-punctuation-and-conventions/punctuation/full-stops.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-10-19T17:34:29+11:00",
+      "path": "grammar-punctuation-and-conventions/punctuation/full-stops.md",
+      "sha256": "869eaffd2d82d4dfa3cc0e093393739071d1461f2b5a5e95abade9b10c585ccf",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/punctuation/full-stops"
+    },
+    "grammar-punctuation-and-conventions/punctuation/hyphens.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-05-21T14:42:21+10:00",
+      "path": "grammar-punctuation-and-conventions/punctuation/hyphens.md",
+      "sha256": "17eaf928a2523ea3d275fc8e06a5e3366b15418fdc6e72dea93e2e268133dec2",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/punctuation/hyphens"
+    },
+    "grammar-punctuation-and-conventions/punctuation/punctuation-and-capitalisation.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2023-12-15T15:45:05+11:00",
+      "path": "grammar-punctuation-and-conventions/punctuation/punctuation-and-capitalisation.md",
+      "sha256": "83ec649171a4297f8ed972e13227a5954583f33c41c673d135e2f04b48defa66",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/punctuation/punctuation-and-capitalisation"
+    },
+    "grammar-punctuation-and-conventions/punctuation/question-marks.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-09-06T17:28:50+10:00",
+      "path": "grammar-punctuation-and-conventions/punctuation/question-marks.md",
+      "sha256": "09a39881d68f66f903fb91879d06e58be1a2cda4859c215e8f9ad153796f3a29",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/punctuation/question-marks"
+    },
+    "grammar-punctuation-and-conventions/punctuation/quotation-marks.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-03-19T11:48:37+11:00",
+      "path": "grammar-punctuation-and-conventions/punctuation/quotation-marks.md",
+      "sha256": "bbb6dfedb11f6392e7c410537ea2bbbb1e4f3590ffaa69cfc78bc294f8214cac",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/punctuation/quotation-marks"
+    },
+    "grammar-punctuation-and-conventions/punctuation/semicolons.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-10-19T17:39:42+11:00",
+      "path": "grammar-punctuation-and-conventions/punctuation/semicolons.md",
+      "sha256": "ac85f2866d46c7c069d4d34a950337b4c930989b5532fabcbdd40d23d1573620",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/punctuation/semicolons"
+    },
+    "grammar-punctuation-and-conventions/shortened-words-and-phrases.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-09-01T17:43:48+10:00",
+      "path": "grammar-punctuation-and-conventions/shortened-words-and-phrases.md",
+      "sha256": "27077aa2acacdb826f96beedc9ab94d0b2765ca75e0cec9e09684b51d3785399",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/shortened-words-and-phrases"
+    },
+    "grammar-punctuation-and-conventions/shortened-words-and-phrases/abbreviations.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-06-06T06:12:00+10:00",
+      "path": "grammar-punctuation-and-conventions/shortened-words-and-phrases/abbreviations.md",
+      "sha256": "f2ae81bfdef6860e223b8518256b5f54ee3837a6d74159e19c391d68c1ef4440",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/shortened-words-and-phrases/abbreviations"
+    },
+    "grammar-punctuation-and-conventions/shortened-words-and-phrases/acronyms-and-initialisms.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2026-01-27T14:21:10+11:00",
+      "path": "grammar-punctuation-and-conventions/shortened-words-and-phrases/acronyms-and-initialisms.md",
+      "sha256": "98941e9ea87a5ba9b44b9de021efa0eb1596f81ab700a0df955de5351999a027",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/shortened-words-and-phrases/acronyms-and-initialisms"
+    },
+    "grammar-punctuation-and-conventions/shortened-words-and-phrases/contractions.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-20T15:27:14+11:00",
+      "path": "grammar-punctuation-and-conventions/shortened-words-and-phrases/contractions.md",
+      "sha256": "10fb48990471237be33b71e79f89717600eba78b6a4adba3801f0809cf4c4d41",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/shortened-words-and-phrases/contractions"
+    },
+    "grammar-punctuation-and-conventions/shortened-words-and-phrases/latin-shortened-forms.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2023-01-23T16:26:54+11:00",
+      "path": "grammar-punctuation-and-conventions/shortened-words-and-phrases/latin-shortened-forms.md",
+      "sha256": "3f927d405e8c2f9223945ce05799640b5f7f89a693b704d3b25f7ead36a88f6b",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/shortened-words-and-phrases/latin-shortened-forms"
+    },
+    "grammar-punctuation-and-conventions/spelling.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2023-07-07T15:17:01+10:00",
+      "path": "grammar-punctuation-and-conventions/spelling.md",
+      "sha256": "d92ebe3e6b5ad1cf6eda07e551bf6c86438b8b1093d53abd852052fa4382c5ae",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/spelling"
+    },
+    "grammar-punctuation-and-conventions/spelling/common-misspellings-and-word-confusion.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2023-08-14T11:26:56+10:00",
+      "path": "grammar-punctuation-and-conventions/spelling/common-misspellings-and-word-confusion.md",
+      "sha256": "ed543153980820b7c9b516ef9573ce47f21414fd2da5000ef19461c2bd38109a",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/spelling/common-misspellings-and-word-confusion"
+    },
+    "grammar-punctuation-and-conventions/titles-honours-forms-address.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-09-02T11:55:06+10:00",
+      "path": "grammar-punctuation-and-conventions/titles-honours-forms-address.md",
+      "sha256": "b1d807182b2da0f556e06666a6ffc97c42fde3607764d549707b9e15a86124ea",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/titles-honours-forms-address"
+    },
+    "grammar-punctuation-and-conventions/titles-honours-forms-address/academics-and-professionals.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-23T11:44:19+11:00",
+      "path": "grammar-punctuation-and-conventions/titles-honours-forms-address/academics-and-professionals.md",
+      "sha256": "e7fcf9e9c64d236fed7272e89e0d4279ea4174b85366928d5b4968f5182c47b6",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/titles-honours-forms-address/academics-and-professionals"
+    },
+    "grammar-punctuation-and-conventions/titles-honours-forms-address/australian-defence-force.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2026-08-25T11:51:42+10:00",
+      "path": "grammar-punctuation-and-conventions/titles-honours-forms-address/australian-defence-force.md",
+      "sha256": "9693131b2dd8bda1fa7299151170c1720a4e8968656464200e2694d0c1f3f36a",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/titles-honours-forms-address/australian-defence-force"
+    },
+    "grammar-punctuation-and-conventions/titles-honours-forms-address/awards-and-honours.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2022-09-12T13:01:48+10:00",
+      "path": "grammar-punctuation-and-conventions/titles-honours-forms-address/awards-and-honours.md",
+      "sha256": "d50d1603027f3c1084afce8a0352930f06dd62789becb6e0e64401e13b80fac0",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/titles-honours-forms-address/awards-and-honours"
+    },
+    "grammar-punctuation-and-conventions/titles-honours-forms-address/diplomats.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-09-06T17:42:55+10:00",
+      "path": "grammar-punctuation-and-conventions/titles-honours-forms-address/diplomats.md",
+      "sha256": "193de5c2b321f0cbc98c8fd07381af60cb65e6d565086f1137c10955ddc71593",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/titles-honours-forms-address/diplomats"
+    },
+    "grammar-punctuation-and-conventions/titles-honours-forms-address/judiciary.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-03-03T15:11:13+11:00",
+      "path": "grammar-punctuation-and-conventions/titles-honours-forms-address/judiciary.md",
+      "sha256": "5fe05465fae2af7b398414d7dea825de91f5e121dfce9cd804f3b793f9787af2",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/titles-honours-forms-address/judiciary"
+    },
+    "grammar-punctuation-and-conventions/titles-honours-forms-address/parliaments-and-councils.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-11-07T16:06:48+11:00",
+      "path": "grammar-punctuation-and-conventions/titles-honours-forms-address/parliaments-and-councils.md",
+      "sha256": "55317386660c91f9e976af864ed96dc4940715ad9410b4745c706a9c07f5460f",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/titles-honours-forms-address/parliaments-and-councils"
+    },
+    "grammar-punctuation-and-conventions/titles-honours-forms-address/royalty-vice-royalty-and-nobility.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-09-06T14:39:33+10:00",
+      "path": "grammar-punctuation-and-conventions/titles-honours-forms-address/royalty-vice-royalty-and-nobility.md",
+      "sha256": "8192fad6d64769d264fafc52f0e24efa43a1294943f2288c741cdc97fe368c1e",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/titles-honours-forms-address/royalty-vice-royalty-and-nobility"
+    },
+    "grammar-punctuation-and-conventions/types-words.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-09-06T17:21:07+10:00",
+      "path": "grammar-punctuation-and-conventions/types-words.md",
+      "sha256": "6f8c4766f3ad6663c319269c6d049da4d0531ba18f1e15fa9b115df698d12acf",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/types-words"
+    },
+    "grammar-punctuation-and-conventions/types-words/adjectives.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-20T15:18:16+11:00",
+      "path": "grammar-punctuation-and-conventions/types-words/adjectives.md",
+      "sha256": "d76339621d13d7dfa05117c58e740476e9e5e0351918e0b8fbeb5b06f9b8d268",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/types-words/adjectives"
+    },
+    "grammar-punctuation-and-conventions/types-words/adverbs.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2022-03-24T15:22:29+11:00",
+      "path": "grammar-punctuation-and-conventions/types-words/adverbs.md",
+      "sha256": "b2596d75aa60df98b20c8e12f1e0f545e7c076d367ed984d5fa6186ebab9f269",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/types-words/adverbs"
+    },
+    "grammar-punctuation-and-conventions/types-words/conjunctions.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-09-10T13:44:16+10:00",
+      "path": "grammar-punctuation-and-conventions/types-words/conjunctions.md",
+      "sha256": "4a1be4ca422590803eb8245807654ad5be9f7bcfdcb32d6fb24d8b8c9ec0c74b",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/types-words/conjunctions"
+    },
+    "grammar-punctuation-and-conventions/types-words/determiners.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-09-06T17:22:32+10:00",
+      "path": "grammar-punctuation-and-conventions/types-words/determiners.md",
+      "sha256": "f1a6a7a99a0acdd3a685e25a7380ee8a95e6258f9ad0a309b49c53444740ad45",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/types-words/determiners"
+    },
+    "grammar-punctuation-and-conventions/types-words/nouns.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-09-06T17:22:47+10:00",
+      "path": "grammar-punctuation-and-conventions/types-words/nouns.md",
+      "sha256": "c7975a83252c099fadeed5d62e02fe7b6d403249f3963da10de6e4e731b94ec8",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/types-words/nouns"
+    },
+    "grammar-punctuation-and-conventions/types-words/prepositions.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-20T15:19:58+11:00",
+      "path": "grammar-punctuation-and-conventions/types-words/prepositions.md",
+      "sha256": "f850ac2a060fae39e61a6fee9ae29921e000daab8fa59aa5746943cfe3fd0684",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/types-words/prepositions"
+    },
+    "grammar-punctuation-and-conventions/types-words/pronouns.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-01-04T17:01:19+11:00",
+      "path": "grammar-punctuation-and-conventions/types-words/pronouns.md",
+      "sha256": "3f3202114534b6c4dc584ca17b477cba5ad63350df61a98c299bd81a5e1481da",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/types-words/pronouns"
+    },
+    "grammar-punctuation-and-conventions/types-words/verbs.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-23T14:30:06+11:00",
+      "path": "grammar-punctuation-and-conventions/types-words/verbs.md",
+      "sha256": "5dc4d35adf28676e01b896adb409a7a3452b9baebecab34ddd58ccfd909fb931",
+      "url": "https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/types-words/verbs"
+    },
+    "index.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T15:58:59+11:00",
+      "path": "index.md",
+      "sha256": "b58370289a257be2753d23d09b5a3d185e82dbd8f41e86cbe82fb3b55411b8dc",
+      "url": "https://www.stylemanual.gov.au/"
+    },
+    "referencing-and-attribution.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-09-02T12:51:10+10:00",
+      "path": "referencing-and-attribution.md",
+      "sha256": "3dc653bf438e56276127c7a90826f85877a45fc2ecc4cb09c708709f839d6dbd",
+      "url": "https://www.stylemanual.gov.au/referencing-and-attribution"
+    },
+    "referencing-and-attribution/author-date.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2026-06-04T12:56:18+10:00",
+      "path": "referencing-and-attribution/author-date.md",
+      "sha256": "e84c3be6f0f9495b0cbfddd4c22c6bc3097f2bff5c58d999d9e0961d8e470f66",
+      "url": "https://www.stylemanual.gov.au/referencing-and-attribution/author-date"
+    },
+    "referencing-and-attribution/author-date/broadcast-media-and-podcasts-film-video-television-and-radio-programs.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-12T10:57:08+11:00",
+      "path": "referencing-and-attribution/author-date/broadcast-media-and-podcasts-film-video-television-and-radio-programs.md",
+      "sha256": "58ddf22e74f75947b8f38ed87b8d06dec5af523f16db8fc3ab3c6616fea9f4eb",
+      "url": "https://www.stylemanual.gov.au/referencing-and-attribution/author-date/broadcast-media-and-podcasts-film-video-television-and-radio-programs"
+    },
+    "referencing-and-attribution/author-date/classics.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-06-30T15:57:42+10:00",
+      "path": "referencing-and-attribution/author-date/classics.md",
+      "sha256": "595d88b28ab88c05435d33bfd643d6b631c9525c41b8e41b9a135c0f6d26a8e7",
+      "url": "https://www.stylemanual.gov.au/referencing-and-attribution/author-date/classics"
+    },
+    "referencing-and-attribution/author-date/musical-compositions.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-12T10:56:05+11:00",
+      "path": "referencing-and-attribution/author-date/musical-compositions.md",
+      "sha256": "faabda0197bf31fb0545df8d1f9f8a5224e320957f8b28874e1217813b96e03e",
+      "url": "https://www.stylemanual.gov.au/referencing-and-attribution/author-date/musical-compositions"
+    },
+    "referencing-and-attribution/author-date/plays-and-poetry.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-23T11:55:02+11:00",
+      "path": "referencing-and-attribution/author-date/plays-and-poetry.md",
+      "sha256": "da13f7db401f2f11b0c2ab99f08681afd7266fb5158d4cdca70b16723f2d7f25",
+      "url": "https://www.stylemanual.gov.au/referencing-and-attribution/author-date/plays-and-poetry"
+    },
+    "referencing-and-attribution/author-date/works-art.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-23T11:57:24+11:00",
+      "path": "referencing-and-attribution/author-date/works-art.md",
+      "sha256": "70fd6a555b75e2fe8fd53a85a876a30ddff359124dec450f6118f680e732aeed",
+      "url": "https://www.stylemanual.gov.au/referencing-and-attribution/author-date/works-art"
+    },
+    "referencing-and-attribution/documentary-note.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2026-06-04T12:52:14+10:00",
+      "path": "referencing-and-attribution/documentary-note.md",
+      "sha256": "a67189e6138d42cf6b2eab3b5345efd7c3a800e0778238c04e3701612124bf9b",
+      "url": "https://www.stylemanual.gov.au/referencing-and-attribution/documentary-note"
+    },
+    "referencing-and-attribution/legal-material.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-05-14T11:39:53+10:00",
+      "path": "referencing-and-attribution/legal-material.md",
+      "sha256": "5f85580e72746084ff97316978fc4299246a6ddeef8023714b3e15f25eb3b4b6",
+      "url": "https://www.stylemanual.gov.au/referencing-and-attribution/legal-material"
+    },
+    "referencing-and-attribution/legal-material/acts-parliament.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2026-06-04T13:13:01+10:00",
+      "path": "referencing-and-attribution/legal-material/acts-parliament.md",
+      "sha256": "c8a41ff8b541c0ed657abc1081c329cdd8a4875dad1dc67a820ba8466c63e83b",
+      "url": "https://www.stylemanual.gov.au/referencing-and-attribution/legal-material/acts-parliament"
+    },
+    "referencing-and-attribution/legal-material/authoritative-reports.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2026-06-04T13:03:46+10:00",
+      "path": "referencing-and-attribution/legal-material/authoritative-reports.md",
+      "sha256": "458ab6f6bc760f96a27fb31b607d4f0841eb91e1dde1045d1dfc99a4c3d13887",
+      "url": "https://www.stylemanual.gov.au/referencing-and-attribution/legal-material/authoritative-reports"
+    },
+    "referencing-and-attribution/legal-material/bills-and-explanatory-material.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2026-06-04T13:11:54+10:00",
+      "path": "referencing-and-attribution/legal-material/bills-and-explanatory-material.md",
+      "sha256": "6c9c32e901599cca60543ea99f2cb7480423c65a686ea7322b91a4657b5102e1",
+      "url": "https://www.stylemanual.gov.au/referencing-and-attribution/legal-material/bills-and-explanatory-material"
+    },
+    "referencing-and-attribution/legal-material/cases-and-legal-authorities.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2026-06-04T13:24:54+10:00",
+      "path": "referencing-and-attribution/legal-material/cases-and-legal-authorities.md",
+      "sha256": "ffb85a9e5edc5dbd83b9003974b4a1c229ba8e906f059e0cb877e84a647ddf7f",
+      "url": "https://www.stylemanual.gov.au/referencing-and-attribution/legal-material/cases-and-legal-authorities"
+    },
+    "referencing-and-attribution/legal-material/delegated-legislation.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2026-06-04T13:10:51+10:00",
+      "path": "referencing-and-attribution/legal-material/delegated-legislation.md",
+      "sha256": "b2083eabd6286c22200cee05373dba98b2019cd767c1fd96b85acdc915bedabf",
+      "url": "https://www.stylemanual.gov.au/referencing-and-attribution/legal-material/delegated-legislation"
+    },
+    "referencing-and-attribution/legal-material/schedules.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2026-06-04T13:02:26+10:00",
+      "path": "referencing-and-attribution/legal-material/schedules.md",
+      "sha256": "30c703d55d2d83bf8154abf7002b9a2042449a36d46d2bd7805515ac8a79eea3",
+      "url": "https://www.stylemanual.gov.au/referencing-and-attribution/legal-material/schedules"
+    },
+    "referencing-and-attribution/legal-material/treaties.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2022-08-22T15:47:11+10:00",
+      "path": "referencing-and-attribution/legal-material/treaties.md",
+      "sha256": "e33109545256c144ac710aab02ff2053e8815f373c015e7b84869eab9b2b849e",
+      "url": "https://www.stylemanual.gov.au/referencing-and-attribution/legal-material/treaties"
+    },
+    "referencing-and-attribution/shortened-forms-used-referencing.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-06-10T16:57:43+10:00",
+      "path": "referencing-and-attribution/shortened-forms-used-referencing.md",
+      "sha256": "695308e2ad84ae9aa435d5448266fb36eb7252c11b1b57c259328a5db15fc7d9",
+      "url": "https://www.stylemanual.gov.au/referencing-and-attribution/shortened-forms-used-referencing"
+    },
+    "structuring-content.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-09-02T12:29:27+10:00",
+      "path": "structuring-content.md",
+      "sha256": "2be5f44db96a2cd4dcc1b42caecdecedbb96fc18e0c0ead3caa279534fc8edc9",
+      "url": "https://www.stylemanual.gov.au/structuring-content"
+    },
+    "structuring-content/headings.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-04-01T06:14:36+11:00",
+      "path": "structuring-content/headings.md",
+      "sha256": "d6014e6338fafb8d4b4e1b74a461cdc1c7c884a8e92261617f82e4dd2927aa08",
+      "url": "https://www.stylemanual.gov.au/structuring-content/headings"
+    },
+    "structuring-content/links.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-10-21T06:42:26+11:00",
+      "path": "structuring-content/links.md",
+      "sha256": "479d1ffce05645b921e4d33884cd1cddcacf65a6ff7c8de86c3e81cf7689fe45",
+      "url": "https://www.stylemanual.gov.au/structuring-content/links"
+    },
+    "structuring-content/lists.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-04-01T12:39:30+11:00",
+      "path": "structuring-content/lists.md",
+      "sha256": "cc6f34cdf3e3f8c4a2a96d4c642e6e40cb8b17ae5e5cc06c6596f5121fb9d9ea",
+      "url": "https://www.stylemanual.gov.au/structuring-content/lists"
+    },
+    "structuring-content/paragraphs.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-04-01T12:37:24+11:00",
+      "path": "structuring-content/paragraphs.md",
+      "sha256": "118f1717977cb6f863b2fec2c76a145e34823ef2fa5c331a9f1806b17561c810",
+      "url": "https://www.stylemanual.gov.au/structuring-content/paragraphs"
+    },
+    "structuring-content/tables.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-12T11:04:06+11:00",
+      "path": "structuring-content/tables.md",
+      "sha256": "77362e12e6c390847d89f1cb2052e264584527768dcbbbd05cfc02b7d1999a78",
+      "url": "https://www.stylemanual.gov.au/structuring-content/tables"
+    },
+    "structuring-content/text-boxes-and-callouts.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2026-04-09T12:58:45+10:00",
+      "path": "structuring-content/text-boxes-and-callouts.md",
+      "sha256": "769e801b867d4821598c6f872b2c6c622722e4a7a906b3494d68c098dcadbaaf",
+      "url": "https://www.stylemanual.gov.au/structuring-content/text-boxes-and-callouts"
+    },
+    "structuring-content/types-structure.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2022-06-21T16:55:37+10:00",
+      "path": "structuring-content/types-structure.md",
+      "sha256": "071806ca303a6f0853131d6ec1946a8c160b21f994b1b85c35708c9b5cf47cc1",
+      "url": "https://www.stylemanual.gov.au/structuring-content/types-structure"
+    },
+    "structuring-content/types-structure/hierarchical-structure.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-09-06T17:48:38+10:00",
+      "path": "structuring-content/types-structure/hierarchical-structure.md",
+      "sha256": "567bb0e5ed34d2b2b8675d157f1423a1912619fa76c270bbcc531f79e494d40a",
+      "url": "https://www.stylemanual.gov.au/structuring-content/types-structure/hierarchical-structure"
+    },
+    "structuring-content/types-structure/inverted-pyramid-structure.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-09-06T14:47:15+10:00",
+      "path": "structuring-content/types-structure/inverted-pyramid-structure.md",
+      "sha256": "56f925b534915e9eeb49ad815e1f06b1d2a4ee710874b709a65d7187e7b9e77b",
+      "url": "https://www.stylemanual.gov.au/structuring-content/types-structure/inverted-pyramid-structure"
+    },
+    "structuring-content/types-structure/narrative-structure.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2026-04-02T15:43:57+11:00",
+      "path": "structuring-content/types-structure/narrative-structure.md",
+      "sha256": "621be38a4a4966b8e9c151caae7925bde355a4196ae7f3613ffe4b260e5396b7",
+      "url": "https://www.stylemanual.gov.au/structuring-content/types-structure/narrative-structure"
+    },
+    "structuring-content/types-structure/sequential-structure.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-09-06T17:49:09+10:00",
+      "path": "structuring-content/types-structure/sequential-structure.md",
+      "sha256": "138242ab1b796e3d566445e74c05cfc45a8d46896d1fbb1bc4c5c4866aac4e95",
+      "url": "https://www.stylemanual.gov.au/structuring-content/types-structure/sequential-structure"
+    },
+    "style-manual-resources.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-09-02T16:27:04+10:00",
+      "path": "style-manual-resources.md",
+      "sha256": "b2288775c3fa15e9075599188cc7aa4efa3de1e305edf49a27bc483bb46da08a",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources"
+    },
+    "style-manual-resources/blog.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-09-04T13:10:17+10:00",
+      "path": "style-manual-resources/blog.md",
+      "sha256": "25aa7ac9668dbe9c0b2c1e492205c40ba9712b2ea9b62db460e8a69c440c43a1",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/blog"
+    },
+    "style-manual-resources/government-writing-handbook.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2026-04-02T09:49:16+11:00",
+      "path": "style-manual-resources/government-writing-handbook.md",
+      "sha256": "72057f635801b850d747165718ad48a665d5b76095fbd6bab8d7e8f31289702c",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook"
+    },
+    "style-manual-resources/government-writing-handbook/accessible-pdf.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:19:39+11:00",
+      "path": "style-manual-resources/government-writing-handbook/accessible-pdf.md",
+      "sha256": "8728893f41a565f1f9b5ab97d8c83d4c78f7ae3a0a7e3cb279fb84d4bdb388c4",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/accessible-pdf"
+    },
+    "style-manual-resources/government-writing-handbook/afterword.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:19:32+11:00",
+      "path": "style-manual-resources/government-writing-handbook/afterword.md",
+      "sha256": "6b2156bd1a98b832f22d7c0eeac4b6e7cd6fa30c652931017df46928d6fe5f5c",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/afterword"
+    },
+    "style-manual-resources/government-writing-handbook/editors-tips.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:17:23+11:00",
+      "path": "style-manual-resources/government-writing-handbook/editors-tips.md",
+      "sha256": "5be18886db723ff6ce6514347491cb0a939154059d02af1baf5a748bb43c75d9",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/editors-tips"
+    },
+    "style-manual-resources/government-writing-handbook/editors-tips/active-and-passive-voice.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:17:37+11:00",
+      "path": "style-manual-resources/government-writing-handbook/editors-tips/active-and-passive-voice.md",
+      "sha256": "8255976e8637c02826c7c4baba4c7cebff25bae888226d14042c7a8327641a0d",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/editors-tips/active-and-passive-voice"
+    },
+    "style-manual-resources/government-writing-handbook/editors-tips/always-use-australian-dictionary.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-09-03T13:08:56+10:00",
+      "path": "style-manual-resources/government-writing-handbook/editors-tips/always-use-australian-dictionary.md",
+      "sha256": "dd3e807398ba4c729af9fe92f229c854dd506a1043f9bdd660fbed9aa74270e2",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/editors-tips/always-use-australian-dictionary"
+    },
+    "style-manual-resources/government-writing-handbook/editors-tips/headings.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:18:23+11:00",
+      "path": "style-manual-resources/government-writing-handbook/editors-tips/headings.md",
+      "sha256": "d552751e07ca2727a36dcfb8bc13b7c0b545b2b01b66eed3a172638b7ad26a4f",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/editors-tips/headings"
+    },
+    "style-manual-resources/government-writing-handbook/editors-tips/its-and-its.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:18:30+11:00",
+      "path": "style-manual-resources/government-writing-handbook/editors-tips/its-and-its.md",
+      "sha256": "db715be169a475c48f3f82a8a75f577d8892e38424bfc83a42abfda351783807",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/editors-tips/its-and-its"
+    },
+    "style-manual-resources/government-writing-handbook/editors-tips/numbers-choosing-numerals-or-words.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:18:37+11:00",
+      "path": "style-manual-resources/government-writing-handbook/editors-tips/numbers-choosing-numerals-or-words.md",
+      "sha256": "ed2fa1c57cd3e3662defb64badaf330bad319acbf8e0987d623069c085bbcb9e",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/editors-tips/numbers-choosing-numerals-or-words"
+    },
+    "style-manual-resources/government-writing-handbook/editors-tips/paragraphs-structure-and-narratives-flow.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:18:44+11:00",
+      "path": "style-manual-resources/government-writing-handbook/editors-tips/paragraphs-structure-and-narratives-flow.md",
+      "sha256": "52c9f4e940c87b9aed820dc41ca071dad619dadc3cc633991e184210d41343ad",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/editors-tips/paragraphs-structure-and-narratives-flow"
+    },
+    "style-manual-resources/government-writing-handbook/editors-tips/parallel-structure-lists.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:18:51+11:00",
+      "path": "style-manual-resources/government-writing-handbook/editors-tips/parallel-structure-lists.md",
+      "sha256": "6666630b82ecde269fcfd9d772f4a0719e8ecc3cfe2fea69d9f4c99c69ab8e05",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/editors-tips/parallel-structure-lists"
+    },
+    "style-manual-resources/government-writing-handbook/editors-tips/positive-sentences.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:18:57+11:00",
+      "path": "style-manual-resources/government-writing-handbook/editors-tips/positive-sentences.md",
+      "sha256": "b4bd37a3efa65e0450d9bd390539e226acd825e3a0819bd52d90e3abe79eba8c",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/editors-tips/positive-sentences"
+    },
+    "style-manual-resources/government-writing-handbook/editors-tips/punctuation-and-quotation-marks.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:19:04+11:00",
+      "path": "style-manual-resources/government-writing-handbook/editors-tips/punctuation-and-quotation-marks.md",
+      "sha256": "5f0576f43630347d6f7e4a4238c012c23f39303a7678fa53b941ebc96e769682",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/editors-tips/punctuation-and-quotation-marks"
+    },
+    "style-manual-resources/government-writing-handbook/editors-tips/sentence-length.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:19:11+11:00",
+      "path": "style-manual-resources/government-writing-handbook/editors-tips/sentence-length.md",
+      "sha256": "6e92c75852f0e07cfa45d94282a43fe32df8ef2ec5a1a7f2270c48c502128950",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/editors-tips/sentence-length"
+    },
+    "style-manual-resources/government-writing-handbook/editors-tips/word-order.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:19:18+11:00",
+      "path": "style-manual-resources/government-writing-handbook/editors-tips/word-order.md",
+      "sha256": "c634d4a514ec95f193a25d96cb71103b0dcda0c9f2ed474036cd66f2235d5940",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/editors-tips/word-order"
+    },
+    "style-manual-resources/government-writing-handbook/editors-tips/you-and-me-or-you-and-i.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:19:25+11:00",
+      "path": "style-manual-resources/government-writing-handbook/editors-tips/you-and-me-or-you-and-i.md",
+      "sha256": "e46cdae32b699bb121996cf3b46b488e847ae34c88c1f0d40dfcefeb36887d8f",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/editors-tips/you-and-me-or-you-and-i"
+    },
+    "style-manual-resources/government-writing-handbook/front-matter.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:22:12+11:00",
+      "path": "style-manual-resources/government-writing-handbook/front-matter.md",
+      "sha256": "ec0baf63129af6f216a715d15a9749e11e0fa4a3e5240535c235093b0a805281",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/front-matter"
+    },
+    "style-manual-resources/government-writing-handbook/front-matter/acknowledgements.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:15:36+11:00",
+      "path": "style-manual-resources/government-writing-handbook/front-matter/acknowledgements.md",
+      "sha256": "65da1e2db15597426a8c7dc520fef4774705ac666ddbe2498a0e302682ced096",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/front-matter/acknowledgements"
+    },
+    "style-manual-resources/government-writing-handbook/front-matter/foreword-hon-patrick-gorman-mp.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:15:22+11:00",
+      "path": "style-manual-resources/government-writing-handbook/front-matter/foreword-hon-patrick-gorman-mp.md",
+      "sha256": "86280959eeb2e3756f4551329d8cca651ce2850562089855edcf99fac8e632a8",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/front-matter/foreword-hon-patrick-gorman-mp"
+    },
+    "style-manual-resources/government-writing-handbook/front-matter/how-cite-publication.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-10-27T14:46:57+11:00",
+      "path": "style-manual-resources/government-writing-handbook/front-matter/how-cite-publication.md",
+      "sha256": "bf4c54dc6e22640a9c7e9984b687c96ebdbf394bb74ee65ec59e9a9109c306ab",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/front-matter/how-cite-publication"
+    },
+    "style-manual-resources/government-writing-handbook/front-matter/introduction.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:15:30+11:00",
+      "path": "style-manual-resources/government-writing-handbook/front-matter/introduction.md",
+      "sha256": "ff112bd64262f8f1a83857b1d82c73b5697c111047ab00c662c83b010405d96e",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/front-matter/introduction"
+    },
+    "style-manual-resources/government-writing-handbook/front-matter/note-terminology.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:15:42+11:00",
+      "path": "style-manual-resources/government-writing-handbook/front-matter/note-terminology.md",
+      "sha256": "cab5e841c3e66a05b01b013f5ef1ef02825baf5468043caebf7770b30694dc26",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/front-matter/note-terminology"
+    },
+    "style-manual-resources/government-writing-handbook/section-1-write-your-readers.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:15:56+11:00",
+      "path": "style-manual-resources/government-writing-handbook/section-1-write-your-readers.md",
+      "sha256": "870fead0d7dd2129ce10145d44114d027c3d084fcc3c3768921dae838d0ce451",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/section-1-write-your-readers"
+    },
+    "style-manual-resources/government-writing-handbook/section-1-write-your-readers/make-argument.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:16:28+11:00",
+      "path": "style-manual-resources/government-writing-handbook/section-1-write-your-readers/make-argument.md",
+      "sha256": "292e1a5c71409b3c407f2b9113ed5b98609b6efbc411f587e828978e28cf5304",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/section-1-write-your-readers/make-argument"
+    },
+    "style-manual-resources/government-writing-handbook/section-1-write-your-readers/mechanics-writing.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:16:35+11:00",
+      "path": "style-manual-resources/government-writing-handbook/section-1-write-your-readers/mechanics-writing.md",
+      "sha256": "66a546077e6f0180ece0fbf4d0fd86b5edf5d784203688817b402e51cddb4567",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/section-1-write-your-readers/mechanics-writing"
+    },
+    "style-manual-resources/government-writing-handbook/section-1-write-your-readers/relate-your-readers.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-09-03T13:05:48+10:00",
+      "path": "style-manual-resources/government-writing-handbook/section-1-write-your-readers/relate-your-readers.md",
+      "sha256": "8ba145298fce7ac33cac73abfe1f45627deb208ab3b4e4c1aba460a7b0f44418",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/section-1-write-your-readers/relate-your-readers"
+    },
+    "style-manual-resources/government-writing-handbook/section-1-write-your-readers/tell-readers-what-they-need-know.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:16:15+11:00",
+      "path": "style-manual-resources/government-writing-handbook/section-1-write-your-readers/tell-readers-what-they-need-know.md",
+      "sha256": "026f231e39ec3dc959c300933ba27236aa9a7faf9f6647e31da920aed9e8d157",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/section-1-write-your-readers/tell-readers-what-they-need-know"
+    },
+    "style-manual-resources/government-writing-handbook/section-1-write-your-readers/tell-story-and-follow-flow.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:16:22+11:00",
+      "path": "style-manual-resources/government-writing-handbook/section-1-write-your-readers/tell-story-and-follow-flow.md",
+      "sha256": "c3f2f6a0e56a998174b85e228ef9af71d5483d3cba457bf78fd5b04ba28c8cdc",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/section-1-write-your-readers/tell-story-and-follow-flow"
+    },
+    "style-manual-resources/government-writing-handbook/section-1-write-your-readers/understand-who-you-are-writing-and-why.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:16:02+11:00",
+      "path": "style-manual-resources/government-writing-handbook/section-1-write-your-readers/understand-who-you-are-writing-and-why.md",
+      "sha256": "689d2e2671ab78de4554fe4ade9700a21f69002a2950662d51f9270caa3bfd0c",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/section-1-write-your-readers/understand-who-you-are-writing-and-why"
+    },
+    "style-manual-resources/government-writing-handbook/section-2-write-so-your-meaning-clear.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:16:42+11:00",
+      "path": "style-manual-resources/government-writing-handbook/section-2-write-so-your-meaning-clear.md",
+      "sha256": "3eda477a9d67f8fa451381129674b7e6149e18ae23d8e62244ab50a44888cb45",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/section-2-write-so-your-meaning-clear"
+    },
+    "style-manual-resources/government-writing-handbook/section-2-write-so-your-meaning-clear/be-clear-being-grammatical.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:16:49+11:00",
+      "path": "style-manual-resources/government-writing-handbook/section-2-write-so-your-meaning-clear/be-clear-being-grammatical.md",
+      "sha256": "f0e979de72a6967142721bb6914a8a963baff93013c96d5db3f0da75d39f1a92",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/section-2-write-so-your-meaning-clear/be-clear-being-grammatical"
+    },
+    "style-manual-resources/government-writing-handbook/section-2-write-so-your-meaning-clear/keep-it-simple-plain-language.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:16:56+11:00",
+      "path": "style-manual-resources/government-writing-handbook/section-2-write-so-your-meaning-clear/keep-it-simple-plain-language.md",
+      "sha256": "de82ab008db83227aad59e22cba9f10530105ee01f986e42af2639c66d7bccae",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/section-2-write-so-your-meaning-clear/keep-it-simple-plain-language"
+    },
+    "style-manual-resources/government-writing-handbook/section-2-write-so-your-meaning-clear/make-it-accessible-and-inclusive.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-19T13:17:09+11:00",
+      "path": "style-manual-resources/government-writing-handbook/section-2-write-so-your-meaning-clear/make-it-accessible-and-inclusive.md",
+      "sha256": "21f447f4cb24901a006fbf59e326d47d832cace8596ee2caa2f2663de4dec019",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/section-2-write-so-your-meaning-clear/make-it-accessible-and-inclusive"
+    },
+    "style-manual-resources/government-writing-handbook/section-2-write-so-your-meaning-clear/use-structure-make-it-readable-bullet-lists.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-09-03T13:15:20+10:00",
+      "path": "style-manual-resources/government-writing-handbook/section-2-write-so-your-meaning-clear/use-structure-make-it-readable-bullet-lists.md",
+      "sha256": "45663225793185d1ba3658ce88c73eb0ba53487aae7bac67d2049dcf7dffe8f7",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/section-2-write-so-your-meaning-clear/use-structure-make-it-readable-bullet-lists"
+    },
+    "style-manual-resources/quick-guides.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-09-02T16:26:42+10:00",
+      "path": "style-manual-resources/quick-guides.md",
+      "sha256": "735a5f363364fc5ee690622ad47bd3c26e08c2f1ee1fcd4d97c5e03022eed178",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/quick-guides"
+    },
+    "style-manual-resources/quick-guides/quick-guide-common-misspellings-and-word-confusion.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-09-02T16:25:29+10:00",
+      "path": "style-manual-resources/quick-guides/quick-guide-common-misspellings-and-word-confusion.md",
+      "sha256": "5fb2da9d0929064ce06c5a07b4620037c63d888fc448a8eba2f070711dfbda92",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/quick-guides/quick-guide-common-misspellings-and-word-confusion"
+    },
+    "style-manual-resources/quick-guides/quick-guide-dates-and-time.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-09-02T16:25:12+10:00",
+      "path": "style-manual-resources/quick-guides/quick-guide-dates-and-time.md",
+      "sha256": "365e30e85791d8045ad8cea1dc155c8f4d6700dac55a1383a2c0c39435b038b7",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/quick-guides/quick-guide-dates-and-time"
+    },
+    "style-manual-resources/quick-guides/quick-guide-lists.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-09-02T16:26:20+10:00",
+      "path": "style-manual-resources/quick-guides/quick-guide-lists.md",
+      "sha256": "719153204032c517827f0783b37ee016568dedb9afd415da59cdecb62609ec9b",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/quick-guides/quick-guide-lists"
+    },
+    "style-manual-resources/quick-guides/quick-guide-numbers.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-09-02T16:26:09+10:00",
+      "path": "style-manual-resources/quick-guides/quick-guide-numbers.md",
+      "sha256": "1f6c4ae10166dfcd80e5a4aef9ef0613c1d5f6976ee49b5816d6043485561006",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/quick-guides/quick-guide-numbers"
+    },
+    "style-manual-resources/quick-guides/quick-guide-plain-language.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-09-02T16:25:46+10:00",
+      "path": "style-manual-resources/quick-guides/quick-guide-plain-language.md",
+      "sha256": "37a6d380827a41d9123ffe737b4f72f5e099f9740b5740daf81716b77b22be35",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/quick-guides/quick-guide-plain-language"
+    },
+    "style-manual-resources/quick-guides/quick-guide-spelling-capitals-links-and-dashes.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-09-02T16:24:53+10:00",
+      "path": "style-manual-resources/quick-guides/quick-guide-spelling-capitals-links-and-dashes.md",
+      "sha256": "c1b62a28296a28cc5be8a6a71b4a0cfd5e0b2ba0ae6a40ced26eadf7e4d5b479",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/quick-guides/quick-guide-spelling-capitals-links-and-dashes"
+    },
+    "style-manual-resources/training-and-professional-development.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-07-07T12:58:43+10:00",
+      "path": "style-manual-resources/training-and-professional-development.md",
+      "sha256": "3c030ccfc407b84e198e3ef18c8132dee1a254ade3b7d94ada886246d6d4ce98",
+      "url": "https://www.stylemanual.gov.au/style-manual-resources/training-and-professional-development"
+    },
+    "writing-and-designing-content.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-09-01T16:28:21+10:00",
+      "path": "writing-and-designing-content.md",
+      "sha256": "bab7fa40dae4da35535884157f5bc1cfb5915086e1012cdebfae6269cdf35e67",
+      "url": "https://www.stylemanual.gov.au/writing-and-designing-content"
+    },
+    "writing-and-designing-content/clear-language-and-writing-style.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-09-01T16:29:57+10:00",
+      "path": "writing-and-designing-content/clear-language-and-writing-style.md",
+      "sha256": "2ba96bff195c315eb2c5f7bfb7e3b81ca785a5346c59d9bef43285e222ae3c3b",
+      "url": "https://www.stylemanual.gov.au/writing-and-designing-content/clear-language-and-writing-style"
+    },
+    "writing-and-designing-content/clear-language-and-writing-style/plain-language-and-word-choice.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-20T14:51:06+11:00",
+      "path": "writing-and-designing-content/clear-language-and-writing-style/plain-language-and-word-choice.md",
+      "sha256": "1ac8b1a60f8691e1199012c4aef89ad516eb5970f560a2df39a5b33103843486",
+      "url": "https://www.stylemanual.gov.au/writing-and-designing-content/clear-language-and-writing-style/plain-language-and-word-choice"
+    },
+    "writing-and-designing-content/clear-language-and-writing-style/sentences.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-20T14:57:45+11:00",
+      "path": "writing-and-designing-content/clear-language-and-writing-style/sentences.md",
+      "sha256": "d204636abfdd066271b6bd79f2d9881a5f1a2bf440e8bca6ad57ee55dfae647a",
+      "url": "https://www.stylemanual.gov.au/writing-and-designing-content/clear-language-and-writing-style/sentences"
+    },
+    "writing-and-designing-content/clear-language-and-writing-style/voice-and-tone.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-10-21T06:37:49+11:00",
+      "path": "writing-and-designing-content/clear-language-and-writing-style/voice-and-tone.md",
+      "sha256": "8f1addec1ddeeee19381a7d30caf453448189a595a5ce2e1eb8b8129ff73f6c8",
+      "url": "https://www.stylemanual.gov.au/writing-and-designing-content/clear-language-and-writing-style/voice-and-tone"
+    },
+    "writing-and-designing-content/editing-and-proofreading.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-11-03T16:01:26+11:00",
+      "path": "writing-and-designing-content/editing-and-proofreading.md",
+      "sha256": "9c1431e6efffd47af2f98bf6270d39de48510f1e96c911d226b1c5bb99e6573d",
+      "url": "https://www.stylemanual.gov.au/writing-and-designing-content/editing-and-proofreading"
+    },
+    "writing-and-designing-content/findable-content.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-09-01T16:37:15+10:00",
+      "path": "writing-and-designing-content/findable-content.md",
+      "sha256": "1cc38cf6a2f7766dfa0324df232268831438066aeb9c8f164de12e82689fc8b7",
+      "url": "https://www.stylemanual.gov.au/writing-and-designing-content/findable-content"
+    },
+    "writing-and-designing-content/findable-content/how-people-find-information.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2021-03-04T18:13:12+11:00",
+      "path": "writing-and-designing-content/findable-content/how-people-find-information.md",
+      "sha256": "c8fd6fa66d069e27556835189a9e1cdaaeeaa7065a9c189cef71a87e0812e612",
+      "url": "https://www.stylemanual.gov.au/writing-and-designing-content/findable-content/how-people-find-information"
+    },
+    "writing-and-designing-content/findable-content/keywords-and-search-engines.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-20T15:15:34+11:00",
+      "path": "writing-and-designing-content/findable-content/keywords-and-search-engines.md",
+      "sha256": "e69341ce443b4c92d66dac78aea3e668fbc47f5efcc4228af2bfa426a139473a",
+      "url": "https://www.stylemanual.gov.au/writing-and-designing-content/findable-content/keywords-and-search-engines"
+    },
+    "writing-and-designing-content/findable-content/page-optimisation.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2025-04-01T06:19:24+11:00",
+      "path": "writing-and-designing-content/findable-content/page-optimisation.md",
+      "sha256": "7b42f5177bfae9048dcd9ebb052874168d1ae3a5815722ac556bf4941e3bd485",
+      "url": "https://www.stylemanual.gov.au/writing-and-designing-content/findable-content/page-optimisation"
+    },
+    "writing-and-designing-content/findable-content/understanding-search-engines.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-12-20T15:12:20+11:00",
+      "path": "writing-and-designing-content/findable-content/understanding-search-engines.md",
+      "sha256": "9b57c7a616f8af75694b6ad7ae67a208bd135fa3bad387f96c5485d7b6b371dd",
+      "url": "https://www.stylemanual.gov.au/writing-and-designing-content/findable-content/understanding-search-engines"
+    },
+    "writing-and-designing-content/security-classifications-and-protective-markings.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2026-05-25T15:31:24+10:00",
+      "path": "writing-and-designing-content/security-classifications-and-protective-markings.md",
+      "sha256": "738cb9b59022c7514ac8573fd00450eb90536c26e0e3a6c798a188b58404bd12",
+      "url": "https://www.stylemanual.gov.au/writing-and-designing-content/security-classifications-and-protective-markings"
+    },
+    "writing-and-designing-content/user-research-and-content.md": {
+      "extractor": "trafilatura==1.12.2",
+      "fetched_at": "",
+      "lastmod": "2024-05-14T13:09:13+10:00",
+      "path": "writing-and-designing-content/user-research-and-content.md",
+      "sha256": "809c8b7e8fbbcccfbcec70287b003b50d1fc7ad6ea3737226a3796bd09dfe710",
+      "url": "https://www.stylemanual.gov.au/writing-and-designing-content/user-research-and-content"
+    }
+  },
+  "version": 1
+}

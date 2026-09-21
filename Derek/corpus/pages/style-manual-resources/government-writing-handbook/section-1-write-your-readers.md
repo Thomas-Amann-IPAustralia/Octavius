@@ -1,0 +1,1 @@
+Understand who you are writing for and why Relate to your readers Tell readers what they need to know Tell the story and follow the flow Make the argument The mechanics of writing
