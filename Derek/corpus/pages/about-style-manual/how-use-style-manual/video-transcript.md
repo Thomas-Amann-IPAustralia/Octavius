@@ -1,3 +1,5 @@
+# Video transcript
+
 Transcript for the video ‘How to use the Australian Government Style Manual’.
 
 The Australian Government Style Manual is for everyone who writes, edits or approves Australian Government content. It’s a free online resource designed to help you create clear, consistent and accessible content.

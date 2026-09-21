@@ -1,6 +1,8 @@
+# Commercial terms
+
 Brands and model names are protected by law. Unless using common names, write trade mark names and use symbols so people can understand legal status.
 
-Use initial capitals for commercial terms
+## Use initial capitals for commercial terms
 
 Use initial capitals for trade marks, brands and business names.
 
@@ -8,6 +10,7 @@ Use initial capitals for trade marks, brands and business names.
 
 - Collins Class submarine
 - Harley-Davidson
+- Instagram
 
 An exception to using initial capitals is where the business itself uses an unusual mix of spacing, capitals and lower case letters. In this case, write it the way the business writes it.
 
@@ -35,7 +38,7 @@ Panadol [Proprietary name] – paracetamol [Generic name]
 
 ### Spelling of ‘trade mark’
 
-‘Trade mark’ is spelled as 2 words in the [ Trade Marks Act 1995](https://www.legislation.gov.au/Series/C2004A04969). Use this spelling when writing for government, even though most dictionaries prefer ‘trademark’.
+‘Trade mark’ is spelled as 2 words in the [*Trade Marks Act 1995*](https://www.legislation.gov.au/Series/C2004A04969). Use this spelling when writing for government, even though most dictionaries prefer ‘trademark’.
 
 #### Example
 
@@ -49,7 +52,7 @@ Trade mark your brand if you don’t want other organisations or businesses to u
 
 Register your brand as a trade mark if you don’t want others to use it.
 
-Use a common word for a product if you can
+## Use a common word for a product if you can
 
 Avoid using trade marks and brand names if possible. Instead use a generic word.
 
@@ -71,9 +74,9 @@ The registered symbol shows a trade mark is registered. A business doesn’t hav
 
 The trade mark symbol can be used with registered and unregistered trade marks. Businesses can use it when they intend to register the term or when registration is pending. The symbol doesn’t protect the intellectual property of the trade mark.
 
-Find more guidance in the *Australian Government intellectual property manual**.*
+Find more guidance in the [*Australian Government intellectual property manual*](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual)*.*
 
-Take care using product names
+## Take care using product names
 
 The way a trade mark or brand is written is part of the intellectual property of its owner. Trade mark owners sometimes take legal action to prevent names being used in a generic sense.
 
@@ -83,7 +86,7 @@ It’s more difficult when brands are becoming generic terms but are also still 
 
 Dictionaries show the way such words are used. Don’t rely on dictionaries to work out if such words have legal status as trade marks.
 
-Find out if a trade mark has been registered in Australia by using [ Australian trade mark search](https://search.ipaustralia.gov.au/trademarks/search/quick). If you’re not sure, seek legal advice.
+Find out if a trade mark has been registered in Australia by using [*Australian trade mark search*](https://search.ipaustralia.gov.au/trademarks/search/quick). If you’re not sure, seek legal advice.
 
 ### A product name can change meaning when used in the generic sense
 
@@ -105,27 +108,3 @@ Other brand names have become so widely used that they are no longer associated 
 - dry ice
 - linoleum
 - trampoline
-
-Release notes
-
-The digital edition covers much the same information as the sixth edition. It provides more direct advice about commercial terms; for example, using a common word instead of a commercial name where possible. It also includes examples of proprietary names of drugs and chemicals.
-
-The Content Guide did not have information about commercial terms.
-
-About this page
-
-### References
-
-Department of Communication and the Arts (2019) [ Australian Government intellectual property manual](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual), Department of Communication and the Arts, Australian Government, accessed 10 June 2020.
-
-IP Australia (n.d.) [ Trade marks](https://www.ipaustralia.gov.au/trade-marks), IP Australia website, accessed 10 June 2020.
-
-Oxford University Press (2016) ‘5.15: Trade names’, *New Oxford style manual*, Oxford University Press, Oxford.
-
-TGA (Therapeutic Goods Administration) (2019) ‘[Australian Register of Therapeutic Goods](https://www.tga.gov.au/australian-register-therapeutic-goods)’, *Regulation basics*, TGA website, accessed 10 June 2020.
-
-TGA (2019) ‘[Ingredient basics](https://www.tga.gov.au/ingredient-basics)’, Regulation basics, TGA website, accessed 10 June 2020.
-
-### Last updated
-
-This page was updated Thursday 12 December 2024.

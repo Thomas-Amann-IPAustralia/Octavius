@@ -1,13 +1,15 @@
+# Choosing numerals or words
+
 Numbers as numerals are generally easier for people to scan. Numbers as words remain a convention that people expect in some types of content.
 
-Use numerals for 2 and above in text
+## Use numerals for 2 and above in text
 
 In text, the general rule is:
 
 - Use numerals for ‘2’ and above.
 - Write the numbers ‘zero’ and ‘one’ in words.
 
-Follow the same rule for writing numbers in [headings and subheadings](/node/51). Apply exceptions to this general rule in specific situations, explained on this page.
+Follow the same rule for writing numbers in [headings and subheadings](https://www.stylemanual.gov.au/node/51). Apply exceptions to this general rule in specific situations, explained on this page.
 
 The numbers ‘0’ and ‘1’ are difficult for some users to read. Some typefaces make it difficult to see the difference between:
 
@@ -30,7 +32,7 @@ Writing ‘zero’ and ‘one’ helps to ensure all users understand you are re
 - Their aim is 0 net emissions by 2050.
 - They were open to discussing three options.
 
-Use words for 2 and above in these specific situations
+## Use words for 2 and above in these specific situations
 
 There are exceptions to the general rule for using numerals in text.
 
@@ -69,7 +71,7 @@ It is sometimes better to rearrange the sentence.
 
 ### Fractions
 
-Write words in general text for [fractions](/node/146).
+Write words in general text for [fractions](https://www.stylemanual.gov.au/node/146).
 
 Use fractions when:
 
@@ -107,14 +109,14 @@ Various style guides treat numbers differently. Media organisations generally us
 
 Content of the same type necessarily uses the same style, for example, in media releases.
 
-Check your [user research](/node/76). It might show a need to use words for numbers other than ‘zero’ and ‘one’, for example, in:
+Check your [user research](https://www.stylemanual.gov.au/node/76). It might show a need to use words for numbers other than ‘zero’ and ‘one’, for example, in:
 
 - longer works
 - print publications containing very few numbers.
 
 Be consistent. Once your style for numerals or words is settled, use the same style throughout the content or series of publications.
 
-Write all numbers as numerals in these specific situations
+## Write all numbers as numerals in these specific situations
 
 There are exceptions to using words for ‘zero’ and ‘one’.
 
@@ -151,11 +153,11 @@ Always use numerals:
 - to compare numbers
 - in tables, graphs and charts.
 
-Use numerals when writing fractions in specialist content. Otherwise the general rule is words for [fractions](/node/146).
+Use numerals when writing fractions in specialist content. Otherwise the general rule is words for [fractions](https://www.stylemanual.gov.au/node/146).
 
 #### Mathematical relationships
 
-Use well-understood conventions to write [mathematical relationships](/node/145). Keep relationships together so they are easily understood. To do this use:
+Use well-understood conventions to write [mathematical relationships](https://www.stylemanual.gov.au/node/145). Keep relationships together so they are easily understood. To do this use:
 
 - numerals only
 - the correct operator characters
@@ -192,13 +194,13 @@ Comparisons are sometimes hard for people, so make them clear. It may seem obvio
 
 #### Tables, graphs and charts
 
-Lists or blocks of data must consist of numerals, or people will find them hard to understand. Always use numerals in graphs, charts and [tables](/node/45). Numerals save space and help people scan, find and compare values quickly.
+Lists or blocks of data must consist of numerals, or people will find them hard to understand. Always use numerals in graphs, charts and [tables](https://www.stylemanual.gov.au/node/45). Numerals save space and help people scan, find and compare values quickly.
 
 Restrict data to key indicators and results. Keep the presentation of data as simple as possible, and use consistent units and magnitudes.
 
 ### Date and times
 
-Always use numerals for [dates and time](/node/140).
+Always use numerals for [dates and time](https://www.stylemanual.gov.au/node/140).
 
 #### Example
 
@@ -257,7 +259,7 @@ You can use powers of 10 for large numbers in technical content, such as science
 
 2.5 × 106 is the same as 2,500,000
 
-Use commas in numbers with 4 or more digits
+## Use commas in numbers with 4 or more digits
 
 Numbers from 1,000 need a [comma](https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/punctuation-and-capitalisation/commas). Separate the digits into groups of 3 (working from right to left).
 
@@ -277,7 +279,7 @@ Don’t use a space or non-breaking space instead of a comma. This is because sc
 
 - The government awards 2 500 grants to community projects annually.
 
-Combine numerals and words for large, rounded numbers
+## Combine numerals and words for large, rounded numbers
 
 Numbers below a million are easy to read as numerals. When you’re using rounded numbers of 1,000 or more, [use commas to separate numerals into groups of 3](https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/punctuation/commas#use_commas_in_numbers_with_4_or_more_digits) (working right to left).
 
@@ -291,13 +293,12 @@ Use a combination of numerals and words for large numbers from a million when th
 
 Billions, trillions, quadrillions, quintillions:
 
-- billion = 1,000 × million (10
-9) - trillion = 1,000 × billion (10
-12) - quadrillion = 1,000 × trillion (10
-15). - quintillion = 1,000 × quadrillion (10
-18).
+- billion = 1,000 × million (109)
+- trillion = 1,000 × billion (1012)
+- quadrillion = 1,000 × trillion (1015).
+- quintillion = 1,000 × quadrillion (1018).
 
-Use ‘1 million’ and ‘one million’ in certain contexts
+## Use ‘1 million’ and ‘one million’ in certain contexts
 
 Both forms are acceptable in government content. Choosing which style to use will depend on the context and the type of content.
 
@@ -319,12 +320,10 @@ This includes writing ‘1 million’:
 
 - The agency manages close to 1 billion online transactions, 30.5 million calls and 6 million emails annually.
 - Vaccine doses purchased by government this year:
-
-• 10 million in May
-
-• 20 million in June
-
-• 1 million in October. - Last year, the country exported goods worth over €1 trillion.
+ • 10 million in May
+ • 20 million in June
+ • 1 million in October.
+- Last year, the country exported goods worth over €1 trillion.
 
 #### In general content
 
@@ -349,6 +348,8 @@ And if you combine 1 and 7 in a number – for example, ‘1.7 million’ – fo
 
 Media releases follow journalistic style (one, two … nine, 10), but you can also choose to use numerals for large, rounded numbers. This is a useful option for media releases that contain several numbers.
 
+##### Example
+
 - After its recent expansion, which cost $5 million, the facility increased its production of sterile fruit flies to 40 million a week. In the 18 months since the facility opened, it has produced more than 1 billion flies for release. [Large, rounded numbers with numerals and words in media release]
 
 ### When to use ‘one million’
@@ -368,9 +369,9 @@ You can choose to use words for large, rounded numbers:
 - One million dollars will allow the firm to expand production. [Starting a sentence]
 - Nearly one million Australians downloaded the app last month. [Sentence in media release]
 
-Choose between numerals or words for currency
+## Choose between numerals or words for currency
 
-Use numerals and symbols for amounts of [money](currency).
+Use numerals and symbols for amounts of [money](https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/numbers-and-measurements/currency).
 
 ### Example
 
@@ -385,65 +386,3 @@ However, money can be written entirely in words for approximations and figures o
 
 - The government’s new policy will save thousands of dollars.
 - That’s my two cents worth.
-
-Release notes
-
-The digital edition updates the rule for using words for numbers in body text.
-
-It recommends using words only for zero and one, and using numerals for other numbers. Government content that follows journalistic conventions is treated as an exception.
-
-Expert advice has informed this change from the sixth edition. The change reflects accessibility considerations and style for numbers in contemporary digital content.
-
-The sixth edition recommended using words up to 100 (in general text) or words up to 9, and then numerals (in statistically oriented text). The digital edition retains the rule to start a sentence with a word rather than a numeral and lists some other exceptions to the new general rule, consistent with sixth edition guidance.
-
-The digital edition recommends using a comma in numbers with 4 or more digits. This recommendation is based on accessibility advice. The sixth edition recommended using a thin space in numbers with 5 or more digits and no space in numbers with 4 digits.
-
-The digital edition contains guidance about using ‘1’ and ‘one’ for large, rounded numbers.
-
-The digital edition retains the sixth edition rule about using numerals in tables and technical content. It also retains the rules about using words for common expressions and to begin sentences. The sixth edition rule about using a mixture of words and numerals for large numbers also appears in the digital edition.
-
-The Content Guide recommended numerals for all numbers, including zero and one, noting a few exceptions to the rule.
-
-About this page
-
-### Evidence
-
-Bohm T (2 December 2019) [Letter and symbol misrecognition in highly legible typefaces for general, children, dyslexic, visually impaired and ageing readers](https://typography.guru/journal/letters-symbols-misrecognition/),*Typography*, accessed 2 June 2020.
-
-GOV.UK (2016) [A-to-Z: numbers’](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#numbers), *Style guide*, GOV.UK, accessed 2 June 2020.
-
-### References
-
-American Psychological Association (2020) ‘Numbers’, *Publication manual of the American Psychological Association*, 7th edn, American Psychological Association, Washington DC.
-
-Australian Broadcasting Corporation (2020) ‘[Numbers, measurements](https://about.abc.net.au/abc-editorial/the-abc-style-guide/#N)’, *The ABC style guide*, ABC website, accessed 3 June 2020.
-
-Australian Government Department of Education (2024) ‘[Student data](https://www.education.gov.au/higher-education-statistics/student-data)’, Department of Education website, accessed 4 November 2024.
-
-Btb Translation Bureau (2020) ‘[Numerical expressions](https://www.btb.termiumplus.gc.ca/tcdnstyl-chap?lang=eng&lettr=chap_catlog&info0=5#zz5)’, *The Canadian style*, Btb Translation Bureau website, accessed 3 June 2020.
-
-Content Design London (2019) ‘[Grammar points: numbers](https://readabilityguidelines.co.uk/grammar-points/numbers/)’, *Content Design London readability guidelines*, Content Design London website, accessed 3 June 2020.
-
-European Commission (2020) ‘6: Numbers’, *English style guide: a handbook for authors and translators in the European Commission*, European Commission.
-
-General Services Administration (n.d) ‘[Numbers and percentages](https://content-guide.18f.gov/our-style/numbers-and-percentages/)’, *18F content guide*, 18F Content Guide website, accessed 3 June 2020.
-
-Loranger H (23 March 2014) ‘[Break grammar rules on websites for clarity](https://www.nngroup.com/articles/break-grammar-rules/)’, Nielsen Norman Group, accessed 3 June 2020.
-
-New Zealand Government (2020) ‘[Numbers](https://www.digital.govt.nz/standards-and-guidance/design-and-ux/content-design-guidance/numbers/)’, *Content design guidance*, Digital.govt.nz, accessed 3 June 2020.
-
-NSW Government (2022) ‘[Numbers, dates and times](https://www.digital.nsw.gov.au/delivery/digital-service-toolkit/resources/writing-content/content-style-guide/numbers-dates-and-times)’, *Content style guide*, Digital.NSW website, accessed 21 November 2022.
-
-Oxford University Press (2016) ‘11.2.2: Figures or words?’, *New Oxford style manual*, Oxford University Press, Oxford.
-
-TechCommNZ (May 2016) ‘[Five or 5? Words versus numerals](https://techcomm.nz/Story?Action=View&Story_id=124) ...’, *TelecommNZ Newsletter*, accessed 3 June 2020.
-
-Treasury Board of Canada Secretariat (2018) '4.6: Numbers', *Canada.ca content style guide**,* Canada.ca, accessed 3 June 2020.
-
-University of Chicago (2017) 'Numbers', *Chicago manual of style*, 17th edn, University of Chicago Press, Chicago.
-
-US Government Publishing Office (2016) ‘Numerals’, [ Government Publishing Office style manual](https://www.govinfo.gov/collection/gpo-style-manual?path=/gpo/U.S.%20Government%20Publishing%20Office%20Style%20Manual/2016), U.S. Government Publishing Office, accessed 17 September 2021.
-
-### Last updated
-
-This page was updated Friday 28 March 2025.

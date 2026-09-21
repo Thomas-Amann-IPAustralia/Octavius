@@ -1,6 +1,8 @@
+# Tables
+
 Tables provide a structure for complex and detailed information. Design accessible tables and organise data so it’s easy for users to scan.
 
-Use tables if they make content easier to read
+## Use tables if they make content easier to read
 
 Use a table only if there isn’t a simpler way to present your content, such as a list, paragraph of text or diagram.
 
@@ -15,7 +17,7 @@ Design tables to allow users to:
 - compare values in different categories
 - understand how you have categorised the information.
 
-Don’t make tables with other tables inside them (known as ‘nested’* *tables).
+Don’t make tables with other tables inside them (known as ‘nested’tables).
 
 Some people will look at tables before they read the text. For this reason, design tables so they are self-explanatory. You must still refer to the table in the body of the text. Place the table immediately after the reference to it in the text.
 
@@ -28,26 +30,26 @@ User needs:
 
 Fundamentals:
 
-- Tables can be made accessible for all users. The World Wide Web Consortium has
-[tips for setting up tables](https://www.w3.org/WAI/tutorials/tables/tips/). - You must give a table:
-
-- a title (also called a[caption](/node/49))
-
+- Tables can be made accessible for all users. The World Wide Web Consortium has [tips for setting up tables](https://www.w3.org/WAI/tutorials/tables/tips/).
+- You must give a table:
+- a title (also called a [caption](https://www.stylemanual.gov.au/node/49))
 - row and column headings
-
 - information (entries)
-
-- a cross-reference in the text. - You may also need to add notes below the table to help users understand the information and where it comes from.
+- a cross-reference in the text.
+- You may also need to add notes below the table to help users understand the information and where it comes from.
 - Don’t rely on colour as the only visual means of conveying information in tables.
 - Don’t leave cells empty. Use ‘zero’ or ‘nil’ or 'n/a' where there is no data. If it is numeric data, use the numeric zero (0). Only use zero if that is the true value.
 
 WCAG quick reference:
 
+- [1.3.1 Info and relationships – level A](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)
+- [1.4.1 Use of color – level A](https://www.w3.org/WAI/WCAG21/quickref/#use-of-color)
+
 ### Print considerations
 
 Publish long and detailed tables separately or in an appendix.
 
-Refer to the table in the text
+## Refer to the table in the text
 
 Tables support the discussion in the text, not the other way around. It is essential to refer to a table in the text.
 
@@ -75,7 +77,7 @@ Table 2 (Average monthly rainfall, June 2017 to December 2019) shows that averag
 
 Avoid referring to a page number in the text. Page numbers can change during the publishing process.
 
-Limit tables to only the information the user needs
+## Limit tables to only the information the user needs
 
 Be informative, but don’t include too much information. Use only as much text or data as you need to make sure the table is easy to understand. Make sure information is:
 
@@ -86,9 +88,9 @@ Be informative, but don’t include too much information. Use only as much text 
 
 Check text and data in the table against the same information in the body of your content. It is easy to make a last-minute change to one and forget to correct the other.
 
-Place data in a consistent and sequential order
+## Place data in a consistent and sequential order
 
-Ensure that information in the table is correctly grouped and sits under the correct headings. The text or data in a table should use the same grammatical form (for example, [noun](/node/122), [noun phrase](/node/144) or [sentence](/node/204)).
+Ensure that information in the table is correctly grouped and sits under the correct headings. The text or data in a table should use the same grammatical form (for example, [noun](https://www.stylemanual.gov.au/node/122), [noun phrase](https://www.stylemanual.gov.au/node/144) or [sentence](https://www.stylemanual.gov.au/node/204)).
 
 Organise data in a sequential order. For example, order a list of names alphabetically by family name.
 
@@ -101,7 +103,7 @@ To design usable tables:
 - If the content includes a large number of tables, consider putting them in an appendix.
 - Check the structure and content of all the tables in your content. If you repeat or duplicate information, combine or delete tables.
 
-Set column and row headings that are clear and accurate
+## Set column and row headings that are clear and accurate
 
 Use simple language in row and column headings for tables. This makes it easier for people to understand the information. It also helps screen reader users navigate tables.
 
@@ -122,9 +124,8 @@ Complex tables have header cells that span more than one column or row. If you u
 
 For detailed instructions and tutorials, visit:
 
-- W3C’s web accessibility tutorial ‘
-[Tables with irregular headers](https://www.w3.org/WAI/tutorials/tables/irregular/)’ - Adobe’s
-.*PDF accessibility repair: examine and repair tables*
+- W3C’s web accessibility tutorial ‘[Tables with irregular headers](https://www.w3.org/WAI/tutorials/tables/irregular/)’
+- Adobe’s [*PDF accessibility repair: examine and repair tables*](https://www.adobe.com/accessibility/products/acrobat/pdf-repair-repair-tables.html).
 
 #### Print considerations
 
@@ -133,7 +134,7 @@ If a table runs over pages when printed, ensure:
 - column headings appear at the top of each page
 - you repeat row headings on each page.
 
-Add notes to provide sources or help interpret the data
+## Add notes to provide sources or help interpret the data
 
 The notes below a table can apply to the whole table or a specific entry in the table.
 
@@ -153,21 +154,20 @@ Use only one type of note in a table. Either use all symbols, all superscript nu
 
 When writing table notes, list them in the following order:
 
-- abbreviations
-- notes to superscript locators
-- general note to the table
-- source of data (use the appropriate form for
-[author–date](/node/165)or[documentary–note](/node/166)).
+1. abbreviations
+2. notes to superscript locators
+3. general note to the table
+4. source of data (use the appropriate form for [author–date](https://www.stylemanual.gov.au/node/165) or [documentary–note](https://www.stylemanual.gov.au/node/166)).
 
 Align notes to the left. They should not extend beyond the edges of the table. Don’t use superscript for the note identifiers (the symbol, number or letter) in the note. They should be the same font size as the text of the notes so that they are easily found.
 
 ### Copyright requirements
 
-You must [attribute copyright material](/node/181) you reference. This includes data tables.
+You must [attribute copyright material](https://www.stylemanual.gov.au/node/181) you reference. This includes data tables.
 
-Read the government copyright rules in the [ Australian Government intellectual property manual](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual).
+Read the government copyright rules in the [*Australian Government intellectual property manual*](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual).
 
-Scan-read table data and text for alignment
+## Scan-read table data and text for alignment
 
 The text and data in a table are as important as the structure. Align data and text so the table is easy to scan.
 
@@ -200,7 +200,7 @@ Try to keep tables on one page. If you must use a long table:
 - at the bottom of the table, insert ‘(continued)’ aligned right to the edge of the table
 - on the next page, repeat the caption and insert ‘(continued)’ after the table number – for example, ‘Table 3 (continued): Farm output from 1990 to 2000’.
 
-Use lines and contrast to help readability
+## Use lines and contrast to help readability
 
 Design tables for readability.
 
@@ -212,7 +212,7 @@ Design tables for readability.
 
 A key benefit of tables is that they help people compare information. This is possible only if tables look the same as one another. Use the same font, and font sizes, rule (line) thicknesses and colour schemes for tables throughout the document.
 
-Provide a summary for complex tables
+## Provide a summary for complex tables
 
 For complex tables, provide a summary to give people who use screen readers an overview of the information in the table.
 
@@ -225,45 +225,3 @@ A summary can include a brief description of what:
 - is in the rows and columns
 - is being measured and the units of measurements
 - the relationship between rows and columns is.
-
-Release notes
-
-The digital edition includes detailed information about accessibility and how to structure tables for digital content.
-
-The sixth edition dealt mainly with tables for print. The digital edition includes print considerations.
-
-The Content Guide had a general overview on table structure and design.
-
-About this page
-
-### References
-
-Cutts M (2013) *Oxford guide to plain English*, Oxford University Press, Oxford.
-
-Few S (2008) [ Telling compelling stories with numbers: data visualization for enlightening communication [PDF 22.2 MB]](http://www.perceptualedge.com/files/telling_compelling_stories_with_numbers.pdf), Perpetual Edge, accessed 9 October 2019.
-
-General Services Administration (n.d.) ‘[Tables](https://accessibility.18f.gov/tables/)’, *18F accessibility guide*, 18F website, accessed 5 May 2020.
-
-GOV.UK (2020) ‘[Tables: when to use tables and how to make them accessible](https://www.gov.uk/guidance/content-design/tables)’, *Content design: planning, writing and managing content*, GOV.UK, accessed 20 May 2020.
-
-GOV.UK (n.d.) ‘[Table](https://design-system.service.gov.uk/components/table/)’, *Design system*, GOV.UK, accessed 20 May 2020.
-
-Moran K (5 April 2020) ‘[How people read online: new and old findings](https://www.nngroup.com/articles/how-people-read-online/)’, *Nielsen Norman Group website*, accessed 17 May 2020.
-
-Purchase S (1998) *The little book of style*, AusInfo, Department of Finance and Administration, Canberra.
-
-Stabina R (2005) *Quantitative data graphics: best practices of designing tables and graphs for use in not-for-profit evaluation reports*, University of Oregon: Applied Information Management Program, Portland.
-
-Treasury Board of Canada Secretariat (2020) ‘[5.3 Use tables to organize data](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#wp5-3)’, *Canada.ca content style guide*, Canada.ca, accessed 5 May 2020.
-
-University of Chicago (2017) *Chicago manual of style*, 17th edn, University of Chicago Press, Chicago.
-
-W3C (World Wide Web Consortium) (2016) [ Accessibility requirements for people with low vision](https://www.w3.org/TR/low-vision-needs/#brightness-and-color), W3C website, accessed 9 October 2019.
-
-W3C (2019) ‘[Tables concepts](https://www.w3.org/WAI/tutorials/tables/)’, *Web accessibility tutorials*, W3C website, accessed 8 October 2019.
-
-WebAIM (2018) [ Creating accessible tables](https://webaim.org/techniques/tables/), WebAIM website, accessed 21 May 2020.
-
-### Last updated
-
-This page was updated Thursday 12 December 2024.

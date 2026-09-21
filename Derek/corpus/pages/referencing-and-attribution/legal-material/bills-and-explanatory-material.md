@@ -1,5 +1,8 @@
+# Bills and explanatory material
+
 Cite bills and explanatory material using the right style to help people find the source material.
 
+## Style for bill titles is roman type, title case
 
 A bill is a draft Act introduced into parliament. A bill becomes an Act when the Governor-General gives assent to the bill after the Senate and House of Representatives agree on its content.
 
@@ -19,6 +22,7 @@ The long title uses sentence case.
 - Refugee Protection Bill 2019 [Short title]
 - A Bill for an Act to provide a legislative response to all people seeking asylum in Australia, and for related purposes [Long title]
 
+## Lower case is correct, unless the reference is to a specific bill
 
 Always use an initial capital for the word ‘Bill’ when you write about a specific bill: ‘the Bill’, ‘this Bill’.
 
@@ -36,6 +40,7 @@ The government drafted a legislative package that includes 3 bills:
 - the Religious Discrimination (Consequential Amendments) Bill 2019
 - the Human Rights Legislation Amendment (Freedom of Religion) Bill 2019.
 
+## The basic unit of a bill is a clause (cl)
 
 Bills contain clauses, which become sections when bills become Acts. Clauses can be divided into subclauses, then into paragraphs and then into subparagraphs. Use lower case for these units of a bill unless they begin a sentence.
 
@@ -78,8 +83,9 @@ You can use both the long and shortened forms of units for in-text citation and 
 
 - Clause 12 vests Commonwealth powers in the Minister …
 - The Underwater Cultural Heritage Bill 2018 provides automatic protection for the remains of vessels located in Australian waters for at least 75 years (paragraph 16(1)(a)).
-- 1Commonwealth Registers Bill 2019, subcl 25(1).
+- 1 Commonwealth Registers Bill 2019, subcl 25(1).
 
+## Explanatory material titles use roman type, title case
 
 Explanatory material includes explanatory memoranda and explanatory statements.
 
@@ -93,12 +99,9 @@ Don’t use capitals for ‘explanatory memoranda’ and ‘explanatory statemen
 
 For content that mentions explanatory material often, use these shortened forms:
 
-- 
-EM (explanatory memorandum) 
-- 
-EMs (explanatory memoranda or memorandums) 
-- 
-ES (explanatory statement or statements). 
+- EM (explanatory memorandum)
+- EMs (explanatory memoranda or memorandums)
+- ES (explanatory statement or statements).
 
 Write them in parentheses at first mention and use the shortened form after that.
 
@@ -111,53 +114,3 @@ Write the titles of explanatory material as in-text citations to give context.
 ### Example
 
 The Parliamentary Precinct Regulations 2011 allow the law governing the Parliamentary precinct to be applied to another location if Parliament House is unavailable due to a major event such as ‘an earthquake’ or ‘terrorist attack’ (Explanatory Statement, Select Legislative Instrument 2011 No. 181).
-
-
-The digital edition has considerable advice on how to cite legal material. It includes new material on Commonwealth tribunals and Australian Tax Office rulings. It expands on sixth edition information on treaties.
-
-The digital edition departs from sixth edition guidance about the capitalisation, punctuation and italicisation of citation elements for some legal material. The current edition also recommends the contraction ‘Cth’ rather than ‘Cwlth’.
-
-These departures are informed by legal material and general publications from Australian courts, government agencies working in the legislative context and academic sources. The digital edition style is for general, rather than specialist, legal content.
-
-The Content Guide briefly mentioned legislation in relation to capitalisation. There was no detailed guidance about how to cite legislation.
-
-
-### References
-
-Attorney-General’s Department (2017) *Style guide*, Australian Government, Canberra.
-
-Attorney-General’s Department (2020) ‘[Religious Freedom Bills: second exposure draft](https://www.ag.gov.au/Consultations/Pages/religious-freedom-bills-second-exposure-drafts.aspx)’, *Consultations, reforms and reviews*, Attorney-General’s Department website, accessed 16 June 2020.
-
-Australian Government Solicitor (n.d.) [ Publications](https://www.ags.gov.au/publications/index.html), Australian Government Solicitor website, accessed 16 June 2020.
-
-Department of the House of Representatives (2018) ‘[Bills — the parliamentary process](https://www.aph.gov.au/About_Parliament/House_of_Representatives/Powers_practice_and_procedure/Practice7/HTML/Chapter10/Bills%E2%80%94the_parliamentary_process)’, in Elder DR (ed) *House of Representatives practice*, 7th edn, Department of the House of Representatives, accessed 16 June 2020.
-
-Department of the Senate (2016) ‘[Chapter 12: legislation](https://www.aph.gov.au/About_Parliament/Senate/Powers_practice_n_procedures/Odgers_Australian_Senate_Practice/Chapter_12)’, in Laing R (ed) *Odgers’ Senate practice*, 14th edn, Department of the Senate, accessed 16 June 2020.
-
-Hansard (2020) *Hansard style guide*, Department of Parliamentary Services, Parliament of Australia, Canberra.
-
-Melbourne University Law Review Association Inc and Melbourne Journal of International Law (2018) [ Australian guide to legal citation](https://law.unimelb.edu.au/mulr/aglc/about), 4th edn, Melbourne University Law Review Association Inc, accessed 16 June 2020.
-
-O’Neill P (2006) [ Was there an EM?: explanatory memoranda and explanatory statements in the Commonwealth Parliament](https://www.aph.gov.au/About_Parliament/Parliamentary_Departments/Parliamentary_Library/Browse_by_Topic/law/explanmem/wasthereanEM#top), Parliament of Australia website, accessed 16 June 2020.
-
-OPC (Office of Parliamentary Counsel) (n.d.) [ Bills: in force](https://www.legislation.gov.au/Browse/ByTitle/Bills/InForce), OPC website, accessed 16 June 2020.
-
-OPC (n.d.) *Drafting manuals*, OPC, accessed 16 June 2020.
-
-OPC (n.d.) [ Glossary](https://www.legislation.gov.au/content/whatisit), Federal Register of Legislation website, accessed 16 June 2020.
-
-Parliamentary Library (n.d.) [ Explanatory memoranda index 1901–1982](https://www.aph.gov.au/About_Parliament/Parliamentary_Departments/Parliamentary_Library/Browse_by_Topic/law/explanmem), Parliament of Australia website, accessed 16 June 2020.
-
-Parliamentary Library (n.d.) [ Key internet links on Australian law](https://www.aph.gov.au/About_Parliament/Parliamentary_Departments/Parliamentary_Library/Browse_by_Topic/Auslaw), Parliament of Australia website, accessed 16 June 2020.
-
-PM&C (Department of the Prime Minister and Cabinet) (2017) [ Legislation handbook](https://www.pmc.gov.au/resource-centre/government/legislation-handbook), PM&C, accessed 16 June 2020.
-
-Thomson Reuters (2026) [ Abbreviations guide [PDF 9 MB]](https://training-aem.thomsonreuters.com/media/Abbreviations Guide/1_rryus78g?mode=fullscreen), Westlaw Advantage Australia, accessed 4 June 2026.
-
-University of Technology Sydney and University of New South Wales Faculties of Law (n.d.) [ Australasian Legal Information Institute (AustLII)](http://www.austlii.edu.au/), AustLII website, accessed 16 June 2020.
-
-Whitbread D and Leary K (2016) *AGS editorial style guide*, Australian Government Solicitor, Canberra.
-
-### Last updated
-
-This page was updated Thursday 4 June 2026.

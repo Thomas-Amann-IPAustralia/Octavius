@@ -1,7 +1,8 @@
+# Telephone numbers
+
 Write telephone numbers so people can read and use them easily. There are rules for grouping the numbers, using spacing and creating links.
 
-
-Use ‘chunks’ of digits to help people read telephone numbers
+## Use ‘chunks’ of digits to help people read telephone numbers
 
 Break telephone numbers into shorter blocks of digits or ‘chunks’.
 
@@ -24,13 +25,13 @@ There are also categories of telephone numbers that don’t have 10 digits – f
 - +61 2 5550 4321 [An Australian landline number in international format]
 - +61 491 570 159 [An Australian mobile number in international format]
 
-Put a non-breaking space between the chunks of digits
+## Put a non-breaking space between the chunks of digits
 
 Use a non-breaking space between chunks of digits in a telephone number. A non-breaking space means that line breaks won’t split up the number. The telephone number will stay together on one line.
 
 You can insert a non-breaking space using the Unicode character U+00A0.
 
-In HTML, use the entity to insert a non-breaking space. You can also use the keyboard shortcut Ctrl+Shift+Spacebar in Word.
+In HTML, use the entity &nbsp; to insert a non-breaking space. You can also use the keyboard shortcut Ctrl+Shift+Spacebar in Word.
 
 ### Print considerations
 
@@ -43,7 +44,7 @@ The narrow no-break space ensures that the:
 
 You can insert a narrow no-break space using the Unicode character U+202F.
 
-Write telephone numbers in the national or international format
+## Write telephone numbers in the national or international format
 
 Write telephone numbers in a format appropriate for the location of the users.
 
@@ -93,7 +94,7 @@ Always write foreign telephone numbers in the international format.
 - +1 212 555 0188 [US landline]
 - +44 20 7946 0990 [UK landline]
 
-Make telephone numbers accessible through ‘click-to-call’ functionality
+## Make telephone numbers accessible through ‘click-to-call’ functionality
 
 ‘Click-to-call’ allows users to call a telephone number by selecting (clicking) the number shown in content. When the user selects the number, the user’s mobile phone, other mobile device or personal computer (if it has a supporting application) calls the number.
 
@@ -109,9 +110,14 @@ Remember that all webpages can be accessed internationally. Include the internat
 
 #### Example
 
-[02 5550 5722](tel:0255500000)[HTML: <a href="tel:0255505722">02 5550 5722</a>][1300 975 7007](tel:13009757007)[HTML: <a href="tel:13009757007">1300 975 7007</a>][13 83 87](tel:138387)[HTML: <a href="tel:138387">13 83 87</a>][1800 160 401](tel:1800160401)[HTML: <a href="tel:1800160401">1800 160 401</a>][+61 2 7010 0000](tel:+61270100000)[HTML: <a href="tel:+61270100000">+61 2 7010 0000</a>][+61 491 570 156](tel:+61491570156)[HTML: <a href="tel:+61491570156">+61 491 570 156</a>]
+- [02 5550 5722](tel:0255500000) [HTML: <a href="tel:0255505722">02&nbsp;5550&nbsp;5722</a>]
+- [1300 975 7007](tel:13009757007) [HTML: <a href="tel:13009757007">1300&nbsp;975&nbsp;7007</a>]
+- [13 83 87](tel:138387) [HTML: <a href="tel:138387">13&nbsp;83&nbsp;87</a>]
+- [1800 160 401](tel:1800160401) [HTML: <a href="tel:1800160401">1800&nbsp;160&nbsp;401</a>]
+- [+61 2 7010 0000](tel:+61270100000) [HTML: <a href="tel:+61270100000">+61&nbsp;2&nbsp;7010&nbsp;0000</a>]
+- [+61 491 570 156](tel:+61491570156) [HTML: <a href="tel:+61491570156">+61&nbsp;491&nbsp;570&nbsp;156</a>]
 
-Don't use ‘phone words’
+## Don't use ‘phone words’
 
 Always display the telephone number as digits. Don’t use ‘phone words’. Use the relevant 13 or 1300 number instead.
 
@@ -124,42 +130,3 @@ Some organisations use phone words to advertise their telephone number as a digi
 ### Not this
 
 13 VETS
-
-
-Release notes
-
-The digital edition expands on information in the sixth edition. It includes examples and has more advice about spaces in telephone numbers.
-
-The sixth edition guidance mentions non-breaking and thin spaces and includes spacing allowances for handwritten telephone numbers on forms.
-
-The Content Guide had information about the format of telephone numbers and how to include a clickable link on webpages.
-
-About this page
-
-### References
-
-ACMA (Australian Communications and Media Authority) (2022) [ Buy a custom number](https://www.acma.gov.au/buy-custom-number), ACMA website, accessed 14 January 2022.
-
-ACMA (2022) [ Choose your phone number](https://www.acma.gov.au/choose-your-phone-number), ACMA website, accessed 4 June 2020.
-
-International Telecommunication Union (ITU) (2001) [‘Recommendation ITU-T E123 (02/2001): notation for national and international telephone numbers, e-mail addresses and web addresses’](https://www.itu.int/rec/T-REC-E.123-200102-I/en), *Standardization (ITU-T) recommendations*, ITU website, accessed 2 February 2022.
-
-LePage P (2019) *Click to call*, Web Fundamentals website, accessed 10 February 2022.
-
-Moran K (2016) [ How chunking helps content processing](https://www.nngroup.com/articles/chunking/), Nielsen Norman Group website, accessed 21 January 2022.
-
-North American Numbering Plan Administrator (NANPA) (n.d.) [‘555 line numbers’](https://www.nationalnanpa.com/number_resource_info/555_numbers.html), *Numbering resources*, NANPA website, accessed 21 January 2022.
-
-Ofcom (The Office of Communications) (2004) [ Telephone numbers for use in TV and radio drama programmes](https://www.ofcom.org.uk/phones-telecoms-and-internet/information-for-industry/numbering/numbers-for-drama), Ofcom website, accessed 21 January 2022.
-
-The Unicode Consortium (2022) ‘General punctuation’, [ Unicode 15.0 character code charts](https://www.unicode.org/charts/), Unicode website, accessed 3 November 2022.
-
-The Unicode Consortium (2022) ‘Latin-1 punctuation’, [ Unicode 15.0 character code charts](https://www.unicode.org/charts/), Unicode website, accessed 3 November 2022.
-
-University of Chicago (2017) *Chicago manual of style*, 17th edn, University of Chicago Press, Chicago.
-
-WebAIM (n.d.) [ Links and hypertext](https://webaim.org/techniques/hypertext/), WebAIM website, accessed 9 February 2022.
-
-### Last updated
-
-This page was updated Wednesday 19 February 2025.

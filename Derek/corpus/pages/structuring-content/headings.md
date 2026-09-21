@@ -1,6 +1,8 @@
+# Headings
+
 Headings help users scan content and find what they need. Organise content using clear heading levels. Begin each heading with keywords and keep it to the point.
 
-Write headings that are clear and short
+## Write headings that are clear and short
 
 Headings organise information. Clear headings are specific to the topic they describe.
 
@@ -22,6 +24,11 @@ Fundamentals:
 - Make sure all users can navigate through all content in the intended order, regardless of the technology they are using. Use the same navigation elements consistently across services.
 
 Web Content Accessibility Guidelines success criteria:
+
+- [1.3.1 Info and relationships – level A](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)
+- [2.4.2 Page titled – level A](https://www.w3.org/WAI/WCAG21/quickref/#page-titled)
+- [2.4.6 Headings and labels – level AA](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels)
+- [2.4.10 Section headings – level AAA](https://www.w3.org/WAI/WCAG21/quickref/#section-headings)
 
 ### State the main point
 
@@ -53,7 +60,7 @@ Using questions pushes your main idea towards the end of the heading.
 
 Starting a heading with ‘why’, ‘how’ or ‘what’ makes it slower for the user to read. They have to read the whole heading before finding relevant keywords.
 
-Use keywords to start headings
+## Use keywords to start headings
 
 Start headings and subheadings with keywords that help people to make a connection.
 
@@ -61,7 +68,7 @@ People scan-read headings to know the relevance of the content. If they use assi
 
 The keywords should relate to the main content below the heading. Pay special attention to the first 2 or 3 words. These might be the only words someone reads to decide whether to continue to scan the page or to read the text.
 
-Using keywords at the start of a heading is called ‘frontloading’. Frontloading makes it easier for people to assess the heading’s relevance – either on a web page or in search results. It also helps [search engines find your content](/node/72).
+Using keywords at the start of a heading is called ‘frontloading’. Frontloading makes it easier for people to assess the heading’s relevance – either on a web page or in search results. It also helps [search engines find your content](https://www.stylemanual.gov.au/node/72).
 
 ### Write this
 
@@ -71,9 +78,9 @@ Use keywords to start headings
 
 Write a heading starting with the main keywords
 
-Organise heading levels in a logical order
+## Organise heading levels in a logical order
 
-Heading hierarchy is the relationship between main headings and subheadings. The [hierarchical structure shows users how topics fit together](/node/79).
+Heading hierarchy is the relationship between main headings and subheadings. The [hierarchical structure shows users how topics fit together](https://www.stylemanual.gov.au/node/79).
 
 A clear and logical heading hierarchy shows readers where to find information and how important it is.
 
@@ -81,8 +88,8 @@ Keep each section concise and use headings to chunk information so it works well
 
 Heading levels include main titles, headings and subheadings:
 
-- Level 1 headings are titles of webpages or titles of chapters in a book or printed
-[report](/node/47). - Level 2 headings are main headings.
+- Level 1 headings are titles of webpages or titles of chapters in a book or printed [report](https://www.stylemanual.gov.au/node/47).
+- Level 2 headings are main headings.
 - Level 3 headings are subheadings.
 - Level 4 headings are sub-subheadings (headings under subheadings).
 
@@ -96,7 +103,7 @@ A complete hierarchy helps people scan the content to find the information they 
 
 Use just one level 1 heading per webpage. Make it unique to your site. This helps users understand the content and find it using search engines.
 
-The level 1 heading is also a good place to include target keywords needed for [search engine optimisation](/node/103).
+The level 1 heading is also a good place to include target keywords needed for [search engine optimisation](https://www.stylemanual.gov.au/node/103).
 
 #### Print considerations
 
@@ -143,7 +150,7 @@ Give each heading level in a section at least one other heading at the same leve
 
 ### Use numbered headings only for steps
 
-Use numbered headings only when they relate to a series of steps. Numbered headings can [help users through a sequential structure](/node/78).
+Use numbered headings only when they relate to a series of steps. Numbered headings can [help users through a sequential structure](https://www.stylemanual.gov.au/node/78).
 
 #### Print considerations
 
@@ -153,7 +160,7 @@ In print, you can use numbered headings to help people cross-reference informati
 - Don’t use numbered headings in the preliminary pages or endmatter in a report.
 - Don’t number more than the first 3 heading levels.
 
-Be consistent: use a parallel structure
+## Be consistent: use a parallel structure
 
 All headings in a level should be consistent.
 
@@ -167,7 +174,7 @@ Two common forms are:
 - noun phrases (for example, ‘effective headings’ and ‘punctuation and capitalisation’)
 - instructions (for example, ‘keep headings short’ and ‘be consistent’).
 
-Use unique formatting for each level of heading
+## Use unique formatting for each level of heading
 
 Format headings so the heading levels are visibly different. This helps users scan the text.
 
@@ -231,16 +238,15 @@ Some organisations have their own heading style guidelines.
 
 If no guidelines apply, use a ‘Heading 1’ style for the main sections in the document. The title of a document uses the ‘Title’ style.
 
-Write all headings in sentence case and use minimal punctuation
+## Write all headings in sentence case and use minimal punctuation
 
 Use sentence case for headings to help people read the text more easily.
 
 This means you should use a capital letter only for:
 
-- the
-[first letter of the first word](/node/116#capitalise_the_first_word_in_a_sentence_and_in_headings) - the first letter of any
-[proper nouns](/node/122) - letters in
-[acronyms and initialisms](/node/190).
+- the [first letter of the first word](https://www.stylemanual.gov.au/node/116#capitalise_the_first_word_in_a_sentence_and_in_headings)
+- the first letter of any [proper nouns](https://www.stylemanual.gov.au/node/122)
+- letters in [acronyms and initialisms](https://www.stylemanual.gov.au/node/190).
 
 Don’t write headings in all capital letters as users could misread words. For example, ‘ACT’ could be ‘act’ (the verb) rather than the initialism for the Australian Capital Territory.
 
@@ -259,45 +265,3 @@ Don’t use a shortened form in a heading unless it is better known than the ful
 To ensure the content works on all devices, use [responsive design methods](https://www.dta.gov.au/help-and-advice/digital-service-standard/digital-service-standard-criteria/6-consistent-and-responsive-design).
 
 Many people do not use a desktop computer or printed material to access services and information. Test content on a mobile device first.
-
-Release notes
-
-The digital edition focuses on writing headings for online content, but includes print considerations.
-
-It builds on content from the sixth edition and has new guidance on tags, styles and frontloading. It recommends against using isolated headings.
-
-The Content Guide mentioned frontloading, short headings and heading hierarchies. The digital edition has new content on tags, styles and frontloading.
-
-About this page
-
-### References
-
-Content Design London (2020) ‘[Headings and titles](https://readabilityguidelines.co.uk/content-design/headings-titles/)’, *Content Design London readability guidelines*, Content Design London website, accessed 30 May 2020.
-
-Dixon JC and Bolitho B (2005–2019) *Report writing*, Centre for Continuing Education, Australian National University, Canberra.
-
-Flann E, Hill B and Wang L (2014) *The Australian editing handbook*, Wiley, Milton.
-
-General Services Administration (n.d.) ‘[Headings](https://accessibility.18f.gov/headings/)’, *18F Accessibility Guide*, 18F website, accessed 29 May 2020.
-
-Loranger H (9 August 2015) ‘[Headings are pick-up lines: 5 tips for writing headlines that convert](https://www.nngroup.com/articles/headings-pickup-lines/)’, *Nielsen Norman Group*, accessed 30 May 2020.
-
-Lynch PJ and Horton S (2016) [ Web style guide](https://webstyleguide.com/), Web Style Guide website, accessed 29 May 2020.
-
-Moran K (20 March 2016) ‘[How chunking helps content processing](https://www.nngroup.com/articles/chunking/)’, *Nielsen Norman Group*, accessed 30 May 2020.
-
-New Zealand Government (2020) ‘[Headings and subheadings](https://www.digital.govt.nz/standards-and-guidance/design-and-ux/content-design-guidance/content-structure/headings-and-subheadings/)’, *Content design guidance*, Digital.govt.nz, accessed 30 May 2020.
-
-Oxford University Press (2016) *New Oxford style manual*, Oxford University Press, Oxford.
-
-Treasury Board of Canada Secretariat (2020) ‘[5.1: write useful page titles and headings](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#wp5-1)’, *Canada.ca content style guide*, Canada.ca, accessed 30 May 2020.
-
-University of Chicago (2017) *Chicago manual of style*, 17th edn, University of Chicago Press, Chicago.
-
-W3C (World Wide Web Consortium) (2020) [ Web Content Accessibility Guidelines (WCAG) overview](https://www.w3.org/WAI/standards-guidelines/wcag/), W3C website, accessed 29 May 2020.
-
-WHATWG (Web Hypertext Application Technology Working Group) (2020) ‘[4.3.6: the h1, h2, h3, h4, h5, and h6 elements](https://html.spec.whatwg.org/#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements)’, *HTML: living standard*, WHATWG website, accessed 4 June 2020.
-
-### Last updated
-
-This page was updated Tuesday 1 April 2025.

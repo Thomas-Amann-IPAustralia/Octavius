@@ -1,3 +1,5 @@
+# Acknowledgements
+
 We thank the following for their contribution to the handbook:
 
 - Susan Baird and Shannon Haintz, our wonderful Style Manual colleagues, who made the handbook better
@@ -14,9 +16,3 @@ We thank the following for their contribution to the handbook:
 Finally, special thanks to all those who use the Style Manual. Keep this handbook nearby as you write; it’s for you.
 
 Leanne and Cath
-
-## About this page
-
-### Last updated
-
-This page was updated Thursday 19 December 2024.

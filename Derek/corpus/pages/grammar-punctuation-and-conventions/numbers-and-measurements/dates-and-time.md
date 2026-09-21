@@ -1,12 +1,14 @@
+# Dates and time
+
 Dates and expressions of time need to be readable and clear, particularly in content that contains detailed timelines. Write, abbreviate and punctuate dates and times consistently so people can understand your content. Follow international and Australian standards to write dates and times for data systems and international communication.
 
-Follow Australian conventions for dates
+## Follow Australian conventions for dates
 
 There are Australian conventions for writing dates in words and numerals, and in numeric formats. These conventions include how to sequence elements of the date.
 
 Use numerals and words for dates in most content. Use numeric dates when space is limited and in content types like tables.
 
-Combine numerals and words for dates in body text
+## Combine numerals and words for dates in body text
 
 In Australia, the conventional sequence for dates is ‘day month year’. Use this sequence when expressing dates in numerals and words.
 
@@ -14,7 +16,7 @@ For dates in body text, use numerals for the day and year and spell out the name
 
 Spell out the name of the day if it is being used, but don’t include a comma after the day.
 
-The names of months and days start with an initial capital because they are [proper nouns](//www.stylemanual.gov.au/grammar-punctuation-and-conventions/types-words/nouns#proper_nouns_are_the_names_of_people_and_specific_things”).
+The names of months and days start with an initial capital because they are [proper nouns](https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/types-words/nouns#proper_nouns_are_the_names_of_people_and_specific_things”).
 
 ### Write this
 
@@ -26,7 +28,7 @@ The names of months and days start with an initial capital because they are [pro
 - December 31, 2020
 - Thursday, 31 December 2020
 
-Insert a [non-breaking space](#NonBreakSpace) between the day and the month so they stay together on one line. A non-breaking space means that a line break will split the date before the year.
+Insert a non-breaking space between the day and the month so they stay together on one line. A non-breaking space means that a line break will split the date before the year.
 
 Keeping the day and month together allows people to identify the information appearing before the line break as a date.
 
@@ -59,7 +61,7 @@ Follow the general rules above when writing incomplete dates. Spell out the mont
 - The winning yacht usually reaches Hobart on 27 December.
 - More than 1,700 jobs have been created since January 2018.
 
-There is an exception to the general rule for writing dates in body text. If you refer to the day but not the month, use an [ordinal number](//www.stylemanual.gov.au/grammar-punctuation-and-conventions/numbers-and-measurements/ordinal-numbers).
+There is an exception to the general rule for writing dates in body text. If you refer to the day but not the month, use an [ordinal number](https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/numbers-and-measurements/ordinal-numbers).
 
 Don’t put the ordinal suffix (‘st’, ‘nd’, ‘rd’ or ‘th’) in superscript. Superscript can cause problems for people who use screen readers.
 
@@ -69,8 +71,7 @@ Don’t put the ordinal suffix (‘st’, ‘nd’, ‘rd’ or ‘th’) in sup
 
 #### Not this
 
-- She will leave by the 20
-th.
+- She will leave by the 20th.
 
 If you refer to the year only, use the full numerical year. Don’t abbreviate it.
 
@@ -83,7 +84,7 @@ If you refer to the year only, use the full numerical year. Don’t abbreviate i
 - ‘45
 - 45
 
-Use shortened forms for dates when space is limited
+## Use shortened forms for dates when space is limited
 
 Only use abbreviations if space is limited – for example, in tables, illustrations, charts and notes. Ensure that it is obvious to users which days of the week or months you are referring to.
 
@@ -99,7 +100,7 @@ The standard abbreviations for the days of the week are:
 
 The abbreviations in parentheses are alternatives for the standard abbreviation they follow. Only use the alternatives when the context ensures their meaning is clear.
 
-Note: Style Manual lists Monday as the first day of the week. This is consistent with the order of calendar days in a calendar week as defined in the [international standard adopted by Australia](#IntlCom).
+Note: Style Manual lists Monday as the first day of the week. This is consistent with the order of calendar days in a calendar week as defined in the international standard adopted by Australia.
 
 The standard abbreviations for the months are:
 
@@ -118,7 +119,7 @@ The standard abbreviations for the months are:
 
 Only use the shortest form of days and months – ‘F’, ‘M’, ‘N’ and so on – in limited applications. An example is a time-series chart where the context and order allow users to understand the difference between each capital letter.
 
-Don’t use a full stop after shortened days and months. No full stop is the correct Australian Government style for all [abbreviations](//www.stylemanual.gov.au/grammar-punctuation-and-conventions/shortened-words-and-phrases/abbreviations), [acronyms and initialisms](//www.stylemanual.gov.au/grammar-punctuation-and-conventions/shortened-words-and-phrases/acronyms-and-initialisms) and [contractions](//www.stylemanual.gov.au/grammar-punctuation-and-conventions/shortened-words-and-phrases/contractions).
+Don’t use a full stop after shortened days and months. No full stop is the correct Australian Government style for all [abbreviations](https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/shortened-words-and-phrases/abbreviations), [acronyms and initialisms](https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/shortened-words-and-phrases/acronyms-and-initialisms) and [contractions](https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/shortened-words-and-phrases/contractions).
 
 ### Don’t abbreviate dates in body text
 
@@ -132,7 +133,7 @@ The Labor Party called an urgent conference on Saturday 22 December.
 
 The Labor Party called an urgent conference on Sat 22 Dec.
 
-Don’t write dates as numerals unless space is limited
+## Don’t write dates as numerals unless space is limited
 
 Avoid writing dates entirely in numerals for general content. Use numeric dates only when space is limited (such as in tables).
 
@@ -180,9 +181,9 @@ Many computer systems and applications use a full stop in numeric dates. Use 2 d
 - 07.12.2020
 - 10.09.2021
 
-Don’t use an apostrophe for decades
+## Don’t use an apostrophe for decades
 
-Write decades with an ‘s’ on the end. Don’t use an [apostrophe](/node/106) to show the plural.
+Write decades with an ‘s’ on the end. Don’t use an [apostrophe](https://www.stylemanual.gov.au/node/106) to show the plural.
 
 #### Correct
 
@@ -196,11 +197,11 @@ Write decades with an ‘s’ on the end. Don’t use an [apostrophe](/node/106)
 
 In more casual writing, you can use expressions such as ‘the eighties’. You can also use an apostrophe to show the missing numerals in a decade – for example, ‘In the ’80s, all my jackets had shoulder pads.’
 
-Use words for spans of years in body text
+## Use words for spans of years in body text
 
 As a general rule, write spans of years in words, using ‘to’, ‘from … to’ or ‘between … and’. Write the years out in full, not as abbreviations.
 
-Don’t replace the word between the years with an [en dash](//www.stylemanual.gov.au/grammar-punctuation-and-conventions/punctuation/dashes).
+Don’t replace the word between the years with an [en dash](https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/punctuation/dashes).
 
 #### Write this
 
@@ -214,7 +215,7 @@ Don’t replace the word between the years with an [en dash](//www.stylemanual.g
 - from 2015–2019
 - between 2015–2019
 
-Use en dashes for particular types of year spans
+## Use en dashes for particular types of year spans
 
 Government content often includes spans of years. Some year spans are easier to read and understand if they contain an unspaced en dash rather than words.
 
@@ -235,8 +236,8 @@ Finally, exercise your judgement. Consider using en dashes for year spans when u
 
 - This document includes expenditure and revenue estimates for the 2021–22 financial year. For comparison, the attachment contains estimates for 2020–21 and 2019–20.
 - The agency measures injury hospitalisations and deaths over 2 calendar years. Data showed a small increase in injury hospitalisations for 2017–2018 and 2019–2020. Injury deaths declined over the earlier period, but showed a marked increase for 2019–2020.
-- The library holds a reference copy of the
-*Inclusion and diversity strategy 2022–24*. - Alfred Deakin was Prime Minister for much of Australia’s 2nd Parliament (1903–1906).
+- The library holds a reference copy of the *Inclusion and diversity strategy 2022–24*.
+- Alfred Deakin was Prime Minister for much of Australia’s 2nd Parliament (1903–1906).
 - Sidney Nolan (1917–1992) had 3 younger siblings.
 
 Always use unspaced en dashes in spans of years. Don’t use forward slashes.
@@ -251,11 +252,11 @@ Always use unspaced en dashes in spans of years. Don’t use forward slashes.
 - National Road Safety Action Plan 2018/20
 - Australia’s energy consumption rose by 0.6% in 2018/19 and fell by 2.9% in 2019/20.
 
-Use words for spans of days and months in body text
+## Use words for spans of days and months in body text
 
 As a general rule, use ‘from … to’ and ‘between … and’ in spans of days and months.
 
-If it’s appropriate for your content, keep elements of the span together by inserting [non-breaking spaces](#NonBreakSpace) between them.
+If it’s appropriate for your content, keep elements of the span together by inserting non-breaking spaces between them.
 
 When you include a year, insert a non-breaking space between the day and month. A non-breaking space keeps the day and month together while the line break splits the date before the year.
 
@@ -265,7 +266,7 @@ When you include a year, insert a non-breaking space between the day and month. 
 - We will do snap inspections between 6 and 8 September. [Non-breaking spaces between ‘6’, ‘and’, ‘8’ and ‘September’]
 - The exhibition will run from 30 November to 23 February 2022. [Non-breaking space between ‘30’ and ‘November’, and between ‘23’ and ‘February’]
 
-Use en dashes for spans of days and months when space is limited
+## Use en dashes for spans of days and months when space is limited
 
 Only use en dashes for spans of days and months if you have limited space. This could be in display text, tables, lists or in social media posts.
 
@@ -279,18 +280,13 @@ The en dash is unspaced when the month only appears at the end of the span.
 
 ### Example
 
-#### Symposium Series 2025
-
-Plain language: 3–5 March
-
-
+- Symposium Series 2025 Plain language: 3–5 March
 Accessible tables: 9–11 June
-
 Content design: 8–10 September
 
-Refer to specific days, events and periods with capitals
+## Refer to specific days, events and periods with capitals
 
-Treat specific days, public events and periods in history as proper nouns and use initial capitals. Use lower case for ‘the’ and any [prepositions](/node/130), unless they are capitalised as part of a proprietary name.
+Treat specific days, public events and periods in history as proper nouns and use initial capitals. Use lower case for ‘the’ and any [prepositions](https://www.stylemanual.gov.au/node/130), unless they are capitalised as part of a proprietary name.
 
 In body text, use lower case for generic terms like the names of seasons –‘autumn’ – and astronomical events such as ‘equinox’ and ‘solstice’. Write ‘century’ and ‘centuries’ in lower case.
 
@@ -333,7 +329,7 @@ Use either style, but be consistent in your content.
 - First World War, Second World War
 - World War I, World War II [With roman numerals]
 
-Use 2 [non-breaking spaces](#NonBreakSpace) to keep each name together on one line of text.
+Use 2 non-breaking spaces to keep each name together on one line of text.
 
 Write ‘World War I’ and ‘World War II’ with roman numerals.
 
@@ -386,12 +382,11 @@ Don’t use superscript for the ordinal suffix.
 - in 2C and 3C
 - a nineteenth-century writer
 - an eighth-century monastery
-- an 8
-th-century monastery
+- an 8th-century monastery
 
 Use CE and BCE to represent the common era (CE) and the time before the common era (BCE). There is no ‘year 0’ in this system. The years progress from 1 BCE to 1 CE.
 
-Write ‘CE’ and ‘BCE’ without full stops and with a [non-breaking space](#NonBreakSpace) separating them from the year or century.
+Write ‘CE’ and ‘BCE’ without full stops and with a non-breaking space separating them from the year or century.
 
 #### Example
 
@@ -409,7 +404,7 @@ Use lower case for the seasons and recurrent seasonal events.
 - winter
 - summer solstice
 
-Use numerals for times of day
+## Use numerals for times of day
 
 In most documents, numerals give a clearer expression of time. Write times of day using numerals, especially when you need to convey precise times.
 
@@ -428,7 +423,7 @@ For example, ‘10.50’ can be read as ‘10 and a half’ as well as ‘50 min
 
 The initialisms ‘am’ and ‘pm’ come from the Latin phrases *ante meridiem* (before noon) and *post meridiem* (after noon).
 
-Write ‘am’ and ‘pm’ in lower case. Separate the numbers and the initialism with a [non-breaking space](#NonBreakSpace).
+Write ‘am’ and ‘pm’ in lower case. Separate the numbers and the initialism with a non-breaking space.
 
 Don’t use ‘am’ and ‘pm’ with words that duplicate their meaning, for example ‘morning’ and ‘afternoon’.
 
@@ -507,9 +502,9 @@ Don’t add ‘am’ or ‘pm’ to times written in 24-hour clock format.
 - 06:45 am
 - 23:18 pm
 
-Some government agencies that produce technical and scientific content don’t use a colon for the 24-hour clock – for example, 2300 and 0430. This is the ‘[basic format](#Format)’ used for [international communication](#IntlComm).
+Some government agencies that produce technical and scientific content don’t use a colon for the 24-hour clock – for example, 2300 and 0430. This is the ‘basic format’ used for international communication.
 
-If space is limited and you use the 24-hour clock in general content, we recommend inserting a colon for clarity. This is the ‘[extended format](#Format)’ used for [international communication](#IntlComm).
+If space is limited and you use the 24-hour clock in general content, we recommend inserting a colon for clarity. This is the ‘extended format’ used for international communication.
 
 ### Time zones
 
@@ -554,7 +549,7 @@ Write the initialism ‘UTC’, followed by ‘+’ or ‘−’, followed by th
 - During winter, the time in Sydney is UTC+10:00.
 - São Paulo is in the Brasília Time Zone which is UTC−03:00.
 
-Use en dashes for spans of time when space is limited
+## Use en dashes for spans of time when space is limited
 
 Only use en dashes for time spans if you have limited space. This could be in display text, tables, lists or in social media posts.
 
@@ -576,15 +571,11 @@ Use a spaced en dash:
 
 - Soccer training this Sat: 8–9 am
 - Available appointment times are:
-
 08:00–08:15
-
 13:30–13:45
-
-16:45–17:00 **Help desk opening hours**:
-
+16:45–17:00
+- **Help desk opening hours**:
 Monday to Thursday: 7 am – 4 pm
-
 Friday: 9 am – midday
 
 Don’t combine words and the en dash.
@@ -597,7 +588,7 @@ Don’t combine words and the en dash.
 
 - Closed between 11 am – 2 pm.
 
-Follow the manual’s number rules for duration
+## Follow the manual’s number rules for duration
 
 When expressing duration (lengths of time) in body text, follow Style Manual rules about [choosing words or numerals](https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/numbers-and-measurements/choosing-numerals-or-words).
 
@@ -629,12 +620,9 @@ It is usually better to avoid decimals and include the number and unit of time.
 ### Example
 
 - The session finished about a quarter of an hour early. [Words for a fraction – gives a general idea of the duration]
-I clocked her at 15 minutes and 12 seconds. [Easier to understand than 15.2 minutes]
+- I clocked her at 15 minutes and 12 seconds. [Easier to understand than 15.2 minutes] They broke the record by 0.04 seconds. [Numeral – a decimal gives people the information that is appropriate in this context. But the words ‘… by 4 hundredths of a second’ might be clearer to some users.]
 
-They broke the record by 0.04 seconds. [Numeral – a decimal gives people the information that is appropriate in this context. But the words ‘… by 4 hundredths of a second’ might be clearer to some users.]
-
-
-Use shortened forms for units of time when space is limited
+## Use shortened forms for units of time when space is limited
 
 It is usually better to spell out the units that measure time. This is particularly so in general content. Only use short forms if space is limited and the short forms are easy to identify correctly.
 
@@ -654,7 +642,7 @@ Other time measures are not SI units – but ‘min’, ‘h’ and ‘d’ are 
 
 There are also commonly-used shortened forms for time measures – for example, ‘wk’ (week), ‘mo’ (month) and ‘yr’ or ‘y’ (year). These are not legal units of time, but are likely to be understood when used alongside other time units.
 
-If your expression contains one time measure only, insert a [non-breaking space](#NonBreakSpace) between the number and unit.
+If your expression contains one time measure only, insert a non-breaking space between the number and unit.
 
 Never add an ‘s’ to show a plural.
 
@@ -680,7 +668,7 @@ Never add an ‘s’ to show a plural.
 - 2y or 2yr
 - [There are no non-breaking spaces between numbers and units. There is an ‘s’ after ‘min’, ‘hr’ and ‘wk’.]
 
-But don’t space a number and its unit when your expression contains more than one time measure. Use a [non-breaking space](#NonBreakSpace) between each time value instead.
+But don’t space a number and its unit when your expression contains more than one time measure. Use a non-breaking space between each time value instead.
 
 Never add an ‘s’ to show a plural.
 
@@ -698,7 +686,7 @@ Never add an ‘s’ to show a plural.
 
 Data systems support specific (and usually several) shortened forms for units of time. For example, hours might be: h, hh, hr, hours, hrs. They might also be case-sensitive or case-insensitive. You will need to check system specifications.
 
-Avoid using ‘bi’ to mean either 2 or twice
+## Avoid using ‘bi’ to mean either 2 or twice
 
 The prefix ‘bi’ can be confusing when used with expressions of time:
 
@@ -716,7 +704,7 @@ We meet once every 2 years.
 
 We meet biennially.
 
-How to combine dates and times
+## How to combine dates and times
 
 There is no fixed rule about the order of dates and times when combining them in body text. You can choose whether the date or the time should come first. The order doesn’t matter as long as the information is clear and the sentence flows logically.
 
@@ -743,27 +731,21 @@ Use the same approach to combine the date and time when you have limited space. 
 
 We always recommend using minimal punctuation, but exercise your judgement. A comma between the date and time can make information easier to scan if you haven't used a preposition like ‘at’ or ‘on’.
 
-You can also use [shortened forms for the date](#Short). Only do this if you are sure users will understand what you mean.
+You can also use shortened forms for the date. Only do this if you are sure users will understand what you mean.
 
 #### Example
 
-- Lunch and Learn:
-*Financial security in the 1980s*
-
+- Lunch and Learn: *Financial security in the 1980s*
 Friday 1 March at midday
-
-Level 3 seminar room - Lunch and Learn:
-*Financial security in the 1980s*
-
+Level 3 seminar room
+- Lunch and Learn: *Financial security in the 1980s*
 Midday, Friday 1 March
-
-Level 3 seminar room - Content Meetup
-
+Level 3 seminar room
+- Content Meetup
 Tue 23 Apr at 4 pm
-
 All welcome!
 
-Meet standards for data systems and information interchange
+## Meet standards for data systems and information interchange
 
 Follow international standards when writing dates and time:
 
@@ -774,7 +756,8 @@ The International Organization for Standardization (ISO) develops and publishes 
 
 Australia and New Zealand have adopted the international standard. The Australia – New Zealand standard is *Date and time: representations for information interchange*. It is published as the AS/NZS ISO 8601 series in 2 parts:
 
-*Part 1: basic rules**Part 2: extensions*
+- *Part 1: basic rules*
+- *Part 2: extensions*
 
 You can purchase copies of ISO 8601 and AS/NZS ISO 8601 from [Standards Australia](https://store.standards.org.au/).
 
@@ -871,7 +854,7 @@ Note: The format for local time of day doesn’t allow for daylight saving. The 
 
 ### Combined date and local time of day
 
-Combine date and local time of day using the style standards set out [above](#IntlCom).
+Combine date and local time of day using the style standards set out above.
 
 Always use the letter ‘T’ between the date and time.
 
@@ -884,128 +867,10 @@ The basic format for international communication is unspaced. The extended forma
 - 2023223T121505 [Ordinal date, basic format – same date and time as above]
 - 2023-223T12:15:05 [Ordinal date, extended format]
 
-Insert a non-breaking space correctly
+## Insert a non-breaking space correctly
 
 You can insert a non-breaking space using the Unicode character U+00A0.
 
-In HTML, use the entity to insert a non-breaking space.
+In HTML, use the entity &nbsp; to insert a non-breaking space.
 
 The keyboard shortcut in Word is Ctrl+Shift+Spacebar.
-
-Release notes
-
-The digital edition adds new content including rules and examples for:
-
-- date spans
-- time spans and lengths
-- shortened forms
-- Coordinated Universal Time
-- combined dates and times.
-
-There is expanded guidance on standards for data systems and information interchange.
-
-The digital edition changes the punctuation used with expressions of dates and time. There are no full stops for shortened forms of months and days of the week. This is consistent with the new general rule for [abbreviations](/node/184).
-
-Unlike the sixth edition, but consistent with the Content Guide, the digital edition recommends using a colon rather than a full stop when expressing times.
-
-The Latin shortened forms, ‘am’ and ‘pm’ do not have punctuation. This is consistent with the sixth edition and the Content Guide.
-
-Consistent with the Content Guide, the digital edition recommends specifying noon or midnight for 12 o’clock (instead of using ‘am’ or ‘pm’).
-
-The recommendation to express a date span using a phrase, rather than an en dash, aligns with the Content Guide.
-
-Like the sixth edition, the digital edition recommends the use of non-breaking spaces between the day and month in dates. It differs from the sixth edition by recommending the use of a numeral with centuries. The digital edition recommends 2 acceptable styles for references to the world wars, while the sixth edition does not have an explicit rule.
-
-The Content Guide illustrated guidance, but did not have explicit advice, on the use of spacing for dates and time. The use of a space between time and ‘am’ or ‘pm’ is consistent with the sixth edition, but a departure from examples given in the Content Guide.
-
-About this page
-
-### Evidence
-
-Australian Broadcasting Corporation (2024) ‘[Wars](https://about.abc.net.au/abc-editorial/the-abc-style-guide/#W)’, *The ABC style guide*, ABC website, accessed 14 March 2024.
-
-Biotext Pty Ltd (2024) ‘[Date and time systems](https://stylemanual.com.au/australian-manual-scientific-style/editing/date-and-time-systems)’, *Australian manual of style*, AMOS website, accessed 4 January 2024.
-
-Bureau International des Poids et Mesures (BIPM) (n.d.) [ SI base unit: second (s)](https://www.bipm.org/en/si-base-units/second), BIPM website, accessed 4 October 2023.
-
-Butterfield J (ed) (2015) *Fowler’s dictionary of modern English usage*, 4th edn, Oxford University Press, Oxford.
-
-Joint Standards Australia/Standards New Zealand Committee IT-019 (2023) *Date and time: representations for information exchange. Part 1: Basic rules, AS/NZS ISO 8601.1:2021 (at February 2023)*, Standards Australia Limited/Standards New Zealand.
-
-[National Measurement Regulations 1999 (Cth)](https://www.legislation.gov.au/Details/F2019C00572), Schedule 1.
-
-Oxford University Press (2016) ‘5.7: Events’, *New Oxford style manual*, Oxford.
-
-Oxford University Press (2016) ‘11.3: Times of day’, *New Oxford style manual*, Oxford
-
-Peters P (2007) ‘World war’, *The Cambridge Australian English style guide*, Cambridge University Press, Cambridge.
-
-Treasury Board of Canada Secretariat (2024) ‘[Times](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#wp4-8)’, *Canada.ca content style guide*, Canada.ca, accessed 14 March 2024.
-
-University of Chicago (2017) ‘8.113: Wars and revolutions’, *Chicago manual of style*, 17th edn, University of Chicago Press, Chicago.
-
-University of Chicago (2017) ‘9.37: Numerals versus words for time of day’, *Chicago manual of style*, 17th edn, University of Chicago Press, Chicago.
-
-University of Chicago (2017) ’10.39: Abbreviations for months’,* Chicago manual of style*, 17th edn, University of Chicago Press, Chicago.
-
-University of Chicago (2017) ’10.40: Abbreviations for days of the week’, *Chicago manual of style*, 17th edn, University of Chicago Press, Chicago.
-
-US Government Publishing Office (2017) ‘12.9.b. Clock time’, [ Government Publishing Office style manual](https://www.govinfo.gov/collection/gpo-style-manual?path=/gpo/U.S.%20Government%20Publishing%20Office%20Style%20Manual/2016), US Government Publishing Office website, accessed 30 March 2022.
-
-### References
-
-Australian Broadcasting Corporation (2024) ‘[Dates and times](https://about.abc.net.au/abc-editorial/the-abc-style-guide/#D)’, *The ABC style guide*, ABC website, accessed 7 March 2024.
-
-Australian Institute of Health and Welfare (2023) [ Injury in Australia](https://www.aihw.gov.au/reports/injury/injury-in-australia/contents/about), AIHW website, accessed 15 August 2023.
-
-Beard R (2013) ‘[The past and future of Coordinated Universal Time [PDF 3.38 MB]](https://www.itu.int/bibar/ITUJournal/DocLibrary/ITU011-2013-07-en.pdf)’, *ITU News*, 7:9–12, accessed 10 October 2023.
-
-Bikos K and Buckle A (2024) [ What Is International Atomic Time (TAI)?](https://www.timeanddate.com/time/international-atomic-time.html), Time and Date AS website, accessed 14 March 2024.
-
-British Broadcasting Corporation (2024) ‘[World war](https://www.bbc.com/newsstyleguide/all/#w)’, *News style guide*, BBC website, accessed 14 March 2024.
-
-Btb Translation Bureau (2022) ‘[Numerical expressions](https://www.btb.termiumplus.gc.ca/tcdnstyl-chap?lang=eng&lettr=chap_catlog&info0=5#zz5)’, *The Canadian style*, Btb Translation Bureau website, accessed 24 February 2023.
-
-Bureau International des Poids et Mesures (BIPM) (n.d.) [ Annual reports](https://www.bipm.org/en/time-ftp/annual-reports), BIPM website, accessed 13 September 2023.
-
-Bureau of Meteorology (2021)[ Daylight Saving Time and weather observations](http://www.bom.gov.au/climate/averages/tables/daysavtm.shtml), Bureau of Meteorology website, accessed 13 September 2023.
-
-Bureau of Meteorology (2014) [ Time conventions](http://www.bom.gov.au/climate/data-services/solar/content/data-time.html), Bureau of Meteorology website, accessed 7 April 2022.
-
-Content Design London (2020) ‘[Grammar points: numbers](https://readabilityguidelines.co.uk/grammar-points/numbers/)’, *Content Design London readability guidelines*, Content Design London website, accessed 24 February 2022.
-
-Department of Climate Change, Energy, the Environment and Water (DCCEEW) (2022) ‘[Australian energy update 2022](https://www.energy.gov.au/publications/australian-energy-update-2022)’, *Australian Energy Statistics*, DCCEEW, Australian Government, accessed 2 August 2023.
-
-GOV.UK (2024) ‘[A to Z: dates](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#dates)’, *Style guide*, GOV.UK, accessed 14 March 2024.
-
-GOV.UK (2024) ‘[A to Z: times](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#times)’, *Style guide*, GOV.UK, accessed 14 March 2024.
-
-GOV.UK (2024) ‘[A to Z: World War 1, World War 2](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#world-war-1-world-war-2)’, *Style guide*, GOV.UK, accessed 14 March 2024.
-
-International Organization for Standardization (ISO) (n.d.) [ ISO 8601: date and time format](https://www.iso.org/iso-8601-date-and-time-format.html), ISO website, accessed 9 August 2023.
-
-International Telecommunication Union (2024) [ ITU radiocommunication sector](https://www.itu.int/en/ITU-R/Pages/default.aspx), ITU website, accessed 14 March 2024.
-
-Lyons G (2019) [ Which day do you consider the start of the week?](https://www.abc.net.au/news/2019-08-18/which-day-do-you-consider-the-start-of-the-week/11346348), ABC News website, accessed 3 January 2024.
-
-National Institute of Standards and Technology (2023) *NIST time frequently asked questions (FAQ)*, NIST website, accessed 14 September 2023.
-
-National Measurement Institute (n.d.) [ Time and frequency services](https://www.industry.gov.au/policies-and-initiatives/physical-measurement-services/time-and-frequency-services), Department of Industry, Science, Energy and Resources website, accessed 30 March 2022.
-
-New Zealand Government (2020) ‘[Numbers](https://www.digital.govt.nz/standards-and-guidance/design-and-ux/content-design-guidance/numbers/)’, *Content design guidance*, Digital.govt.nz, accessed 30 March 2022.
-
-Oxford University Press (2016) ‘10.2.6: Upper- and lower-case abbreviations’, *New Oxford style manual*, Oxford University Press, Oxford.
-
-Oxford University Press (2016) ‘11.5: Date forms’, *New Oxford style manual*, Oxford University Press, Oxford.
-
-Parliamentary Library (2017) ‘[Anzac Day traditions and rituals: a quick guide](https://www.aph.gov.au/About_Parliament/Parliamentary_Departments/Parliamentary_Library/pubs/rp/rp1617/Quick_Guides/TraditionsRituals)’, *Research Papers 2016–2017*, Parliament of Australia website, accessed 20 July 2022.
-
-Tavella P (31 July 2023) ‘[Coordinated Universal Time: an overview](https://www.itu.int/hub/2023/07/coordinated-universal-time-an-overview/)’, *ITU News Magazine*, ITU website, accessed 10 October 2023.
-
-University of Chicago (2017) ‘Dates’, *Chicago manual of style*, 17th edn, University of Chicago Press, Chicago.
-
-University of Chicago (2017) ‘Time of day’, *Chicago manual of style*, 17th edn, University of Chicago Press, Chicago.
-
-### Last updated
-
-This page was updated Monday 18 August 2025.

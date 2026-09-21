@@ -1,3 +1,5 @@
+# Afterword
+
 ## Review your writing effectively
 
 Footy teams review every aspect of a weekend game and ‘talk about it during the week’. Writing is no different. Review what you’ve written and, ideally, get others to check it too.
@@ -23,7 +25,7 @@ Here’s a de-identified selection of 5 of our tics. It might help you to recogn
 
 ### Use spellcheck and readability tools wisely
 
-Check that your spellcheck is set to Australian spelling (*see* ‘[Always use an Australian dictionary](/node/280)’).
+Check that your spellcheck is set to Australian spelling (*see* ‘[Always use an Australian dictionary](https://www.stylemanual.gov.au/node/280)’).
 
 In-app ‘Editor’ tools are useful, but some suggested edits differ from Australian Government style. Check any suggestions against Style Manual guidance and follow our style. Using one style across government helps build trust in our content.
 
@@ -38,9 +40,8 @@ Don’t edit and revise your writing simply to improve a readability score. Use 
 Word lists are alphabetical lists of preferred terms and spelling. They record your decisions about what term to use and when. For example, our word list has these entries:
 
 **B**
-
-body text (*use for* running text, paragraph text and general text)**S**
-
+body text (*use for* running text, paragraph text and general text)
+**S**
 subheading (*not* sub-heading *see also* sub-subheading)
 
 A word list saves time. You don’t need to keep checking the same word or making the same decision. And you’ll use the same word consistently in your writing.
@@ -59,11 +60,3 @@ Have the word list open as you write, or open it when you review your work. Read
 Walk away from your writing and come back to it with fresh eyes. The genius prose we wrote at 11 pm often fails to impress at 9 am the following day.
 
 Always take a minute to reread your work before you hit send.
-
-### Style Manual pages
-
-## About this page
-
-### Last updated
-
-This page was updated Thursday 19 December 2024.

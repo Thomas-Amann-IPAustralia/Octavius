@@ -23,7 +23,7 @@ from derek.corpus.normalise import NormalisedPage
 from derek.extract.candidates import Candidate, extract_candidates
 from derek.extract.modality import classify_modality
 from derek.ledger.model import (
-    Clarity, Derivation, Detection, Direction, Rule, Source, Unit,
+    Clarity, Derivation, Detection, Direction, ReviewStatus, Rule, Source, Unit,
 )
 from derek.ledger.reconcile import reconcile
 from derek.ledger.store import load_ledger, write_ledger
@@ -149,6 +149,16 @@ def build(ledger_path: Path, check: bool) -> int:
     print("Reconciliation:", json.dumps(rec.summary(), indent=2))
 
     merged: dict[str, Rule] = {}
+
+    # Terminal states are retained verbatim across every rebuild. A rule the
+    # Style Manual removed, or replaced, is history — "we used to flag this
+    # and stopped" is information, and dropping it would make the ledger
+    # quietly forget decisions. The reconciler excludes these from matching,
+    # so they must be carried forward here or they vanish.
+    for rule in existing.values():
+        if rule.review.status in (ReviewStatus.ORPHANED, ReviewStatus.SUPERSEDED):
+            merged[rule.uid] = rule
+
     for rule in rec.unchanged:
         merged[rule.uid] = rule
     for old, cand in rec.body_altered:
@@ -158,6 +168,27 @@ def build(ledger_path: Path, check: bool) -> int:
         old.source.snapshot_sha256 = page_hashes.get(cand.page_path, "")
         old.source.line_start = cand.line_start
         merged[old.uid] = old
+    for old, cand in rec.rehomed:
+        # Same rule, new address. Carry every human decision across, refresh
+        # provenance, and record the old UID so the change is traceable
+        # without pretending the Style Manual was edited.
+        migrated = Rule.from_dict({**old.to_dict(), "uid": cand.uid})
+        migrated.source.heading_path = list(cand.heading_path)
+        migrated.source.page_path = cand.page_path
+        migrated.source.body_excerpt = cand.body[:_BODY_EXCERPT_CHARS]
+        migrated.source.snapshot_sha256 = page_hashes.get(cand.page_path, "")
+        migrated.source.line_start = cand.line_start
+        migrated.source.url = url_index.get(cand.page_path, migrated.source.url)
+        migrated.derivation.uid_history = list(old.derivation.uid_history) + [old.uid]
+        migrated.derivation.extractor_version = EXTRACTOR_VERSION
+        # Re-seed gold examples only where review has not supplied its own.
+        compliant, violating = _polarity_seed(cand)
+        if not old.compliant_examples:
+            migrated.compliant_examples = compliant
+        if not old.violating_examples:
+            migrated.violating_examples = violating
+        merged[migrated.uid] = migrated
+
     for old, cand in rec.reworded:
         fresh = candidate_to_rule(cand, url_index, page_hashes, now)
         fresh.derivation.supersedes = old.uid

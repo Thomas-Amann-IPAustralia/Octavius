@@ -1,8 +1,10 @@
+# Forms
+
 This guidance helps you to design digital forms filled in by the user. Most of the guidance also applies to printed forms, but there are some differences noted.
 
-Learn about the user before you design a form
+## Learn about the user before you design a form
 
-Find out about users and their needs through [user research](/node/76). Understand the user and their needs before you design any kind of form (web-based or print).
+Find out about users and their needs through [user research](https://www.stylemanual.gov.au/node/76). Understand the user and their needs before you design any kind of form (web-based or print).
 
 People use forms to access a service and to meet government requirements.
 
@@ -57,9 +59,9 @@ Some of these answers won’t inform the design of the form, but will help you m
 
 Your question protocol becomes a record. So does anything you collect from a form. Records provide evidence of what your organisation has done and why.
 
-Managing and disposing of records properly is a requirement under the *Archives Act 1983**. *For guidance, read about the National Archives of Australia’s [information management standards](https://www.naa.gov.au/information-management/information-management-standards).
+Managing and disposing of records properly is a requirement under the [*Archives Act 1983*](https://www.legislation.gov.au/Series/C2004A02796)*.*For guidance, read about the National Archives of Australia’s [information management standards](https://www.naa.gov.au/information-management/information-management-standards).
 
-Start with one thing per page then test if you need to group
+## Start with one thing per page then test if you need to group
 
 Putting one thing on each page helps you see everything you need to find out, without guessing about the best way to group it.
 
@@ -72,6 +74,8 @@ Begin prototyping with one thing per page over any number of pages:
 Each question might have more than one field. An address is one thing that would use several fields.
 
 ### Example
+
+One question (one thing): the user’s birth date
 
 [In a digital form you you would usually ask this question using 3 fields.]
 
@@ -97,6 +101,10 @@ Keep prototyping and testing the structure of the questions until the user can:
 
 ### Example
 
+A group of 2 fields in a website login
+
+[Users often prefer to have username and password questions on the same page.]
+
 ### Avoid using a progress indicator
 
 If the form is short (for example, 5 questions or fewer with no branching), the user won’t need a progress indicator. Adding the indicator would be extra work that the user might not even notice.
@@ -106,6 +114,8 @@ It’s difficult to design an accurate indicator that shows a user their progres
 Complex forms can branch. They might have sections that don’t apply to some users and optional questions. This means the user might not move through the form in a predictable way.
 
 #### Avoid this
+
+A progress indicator for a registration form
 
 ### Test adding task list and ‘check your answers’ pages to complex forms
 
@@ -126,7 +136,9 @@ This step can help users go back and change any responses, or confirm that they�
 
 #### Example
 
-Write clear questions and headings
+The GOV.UK Design System includes a [check your answers pattern](https://design-system.service.gov.uk/patterns/check-answers/)
+
+## Write clear questions and headings
 
 When you know how to group the questions, you will be able to create the structure.
 
@@ -147,6 +159,11 @@ Follow the guidance to write clear questions and headings.
 
 Web Content Accessibility Guidelines success criteria:
 
+- [2.4.6 Headings and labels – level AA](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=248#headings-and-labels)
+- [2.4.10 Section headings – level AAA](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=248#section-headings)
+- [3.3.2 Labels or instructions – level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=248#labels-or-instructions)
+- [3.3.6. Error prevention (all) – level AAA](https://www.w3.org/WAI/WCAG21/quickref/#error-prevention-all)
+
 ### Use familiar words in familiar ways
 
 Write and design forms starting with [plain language](https://www.stylemanual.gov.au/node/194). Include the terms that are familiar to users.
@@ -157,7 +174,7 @@ Test the form with the terms included. If they help the user understand and use 
 
 If some users don’t understand the terms, include plain language definitions.
 
-Establish the appropriate [voice and tone](/node/40).
+Establish the appropriate [voice and tone](https://www.stylemanual.gov.au/node/40).
 
 ### Say who the form is for and what they need
 
@@ -185,9 +202,9 @@ Sometimes you need to invite the user to tell you something they think is import
 
 When you handle personal information, you must comply with the [Australian Privacy Principles](https://www.oaic.gov.au/privacy/australian-privacy-principles/). Personal information is any information that could identify an individual, in any format.
 
-People have a right to request access to their personal information under the * Privacy Act 1988*.
+People have a right to request access to their personal information under the *[Privacy Act 1988](https://www.oaic.gov.au/privacy/the-privacy-act/)*.
 
-People also have the right to request access to government-held information under the * Freedom of Information Act 1982*. This includes personal information collected in a form.
+People also have the right to request access to government-held information under the *[Freedom of Information Act 1982](https://www.legislation.gov.au/Series/C2004A02562)*. This includes personal information collected in a form.
 
 The federal regulator for privacy and freedom of information legislation is the [Office of the Australian Information Commissioner](https://www.oaic.gov.au/).
 
@@ -215,7 +232,7 @@ For forms that have more than one question, number the questions.
 
 This is helpful for the user if they need to leave the form and return to it later. It can also make it easier for them to get help to fill it in, and for them to work across a paper and digital version.
 
-Choose accessible form inputs
+## Choose accessible form inputs
 
 Use the following 3 form inputs. They are the most accessible for users.
 
@@ -231,13 +248,19 @@ If you need to use other form inputs, try rewriting the questions to fit these i
 
 ### Radio buttons
 
+A choice of one preferred option
+
 ### Example
 
 ### Checkboxes
 
+A choice of one or more options
+
 ### Example
 
 ### Text inputs
+
+Text inputs for a postcode, mobile number and address
 
 Set the size of the text input box to the size of the response the user will provide. Your research will help you work out the right field size.
 
@@ -251,6 +274,8 @@ Don’t disable inputs as it can confuse the user. Only include a question if it
 
 ### Avoid this
 
+A text input and a text input field that has been disabled
+
 ### Avoid using select (menu items) and range sliders
 
 Select boxes and range sliders can be very hard for some people to use. This includes people who experience essential tremor or difficulties with hand control.
@@ -259,13 +284,21 @@ Instead of using a select box, ask other questions to reduce options. Then displ
 
 #### Like this
 
+Radio buttons
+
 #### Not this
+
+A select box
 
 Use radio buttons instead of range sliders.
 
 #### Like this
 
+Radio buttons
+
 #### Not this
+
+A range slider
 
 ### Use buttons for calls to action
 
@@ -290,6 +323,11 @@ Follow the guidance to use buttons for calls to action.
 
 Web Content Accessibility Guidelines success criteria:
 
+- [2.4.6 Headings and labels – level AA](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=248#headings-and-labels)
+- [3.3.2 Labels or instructions – level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=248#labels-or-instructions)
+- [2.5.3 Label in name – level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=248#label-in-name)
+- [1.3.5 Identify input purpose – level AA](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=248#identify-input-purpose)
+
 ### Use the primary button for the main action
 
 Use a button for the main call to action on the form (for example, ‘Save and next’ or ‘Send application’).
@@ -297,6 +335,8 @@ Use a button for the main call to action on the form (for example, ‘Save and n
 Position the primary action button in the same place on every page (for example, at the bottom of the form, aligned with the left side of the input field). This placement makes the form predictable and easier to use.
 
 #### Example
+
+A primary button
 
 ### Add secondary buttons if there are extra actions
 
@@ -306,23 +346,31 @@ Make secondary buttons visually different and less prominent than the primary bu
 
 #### Example
 
+A primary button and a secondary button
+
 ### Avoid using a disabled button
 
 Disabled buttons can confuse some users. Only include them when your research shows they make the form easier for the user.
 
 #### Avoid this
 
+A disabled button
+
 ### Write labels for every question
 
 Include one short label for every form question to make it clear to the user what to do. The label is the text that appears near a form question.
 
-Write labels without a colon at the end. Otherwise, follow the normal rules for using [punctuation marks](/node/119).
+Write labels without a colon at the end. Otherwise, follow the normal rules for using [punctuation marks](https://www.stylemanual.gov.au/node/119).
 
 Don’t put anything in the field the user will type in – this is called ‘placeholder text’. Placeholder text disappears when a person clicks in the field and is usually of very low contrast.
 
 Write clear labels and ‘help text’ instead of placeholder text.
 
 #### Example
+
+Label for a text input (‘Email’)
+
+Label for radio buttons (‘Location’)
 
 ### Make sure labels are close to their question
 
@@ -342,6 +390,8 @@ This avoids screen readers reading out the same information twice.
 
 #### Example
 
+Create password question
+
 [The question label is also the <H1> heading on this page.]
 
 ### Include ‘help text’ to provide more context
@@ -358,6 +408,8 @@ Associate the help text with the label for screen reader users.
 
 #### Example
 
+Help text for entering a tax file number
+
 ### Use prefilled information and default options if appropriate for the user
 
 If it’s appropriate and secure, prefill information. This saves the user time and effort. Research with users to make sure they’re comfortable with prefilling.
@@ -368,11 +420,19 @@ Never include pre-selected gender or sex options.
 
 #### Example
 
+A request to check contact details
+
 If users are not asked to confirm details they might miss them.
 
 #### Like this
 
+A question about how useful the page is without a default option
+
 #### Not this
+
+A question about how useful the page is with ‘yes’ selected as the default option
+
+[A default option for a satisfaction rating means you can't be sure if the user chose to give this feedback.]
 
 ### Add validation to help the user to complete digital forms
 
@@ -382,7 +442,11 @@ Write error messages so they help the user act on the problem. Do not blame them
 
 #### Like this
 
+A helpful error message
+
 #### Not this
+
+An unhelpful error message
 
 Apply verification checks for:
 
@@ -408,6 +472,12 @@ Follow the guidance to add validation to help the user to complete the digital f
 
 Web Content Accessibility Guidelines success criteria:
 
+- [4.1.3 Status messages – level AA](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=248#status-messages)
+- [3.3.1 Error identification – level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=248#error-identification)
+- [3.3.3 Error suggestion – level AA](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=248#error-suggestion)
+- [3.3.5 Help – level AAA](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=248#help)
+- [3.3.6 Error prevention (all) – level AAA](https://www.w3.org/WAI/WCAG21/quickref/#error-prevention-all)
+
 ### Help the user save and resume complex digital forms
 
 Include a button for the user to save a draft as they work through complex forms. The form should reopen to the page they were on.
@@ -420,50 +490,4 @@ Talk to your communications team for guidelines on how to brand forms.
 
 Make sure print and digital forms meet the [Australian Government branding guidelines](https://www.pmc.gov.au/resource-centre/government/australian-government-branding-guidelines-use-australian-government-logo-australian-government-departments-and-agencies).
 
-Only include icons, images or colour when research shows they help the user understand the form. Make sure you create [accessible images](/node/46).
-
-Release notes
-
-The digital edition focuses on digital forms, but is largely applicable to print. It includes print considerations for hard copy forms when the guidance differs.
-
-The sixth edition included a whole chapter on forms. The focus was on hard copy forms but it did refer to on-screen forms.
-
-The Content Guide linked to Design System form components.
-
-About this page
-
-### References
-
-18F (n.d.) ‘Forms’, *18F Accessibility guide*, accessed 13 July 2020.
-
-ABS (Australian Bureau of Statistics) (2010) *ABS forms design standards manual*, catalogue number 1530.0, accessed 8 September 2020.
-
-Barnett R (June 2009) ‘[Redesigning Centrelink forms: a case study of government forms](https://uxpamagazine.org/redesigning_centrelink_forms/)’, *User Experience*, accessed 9 September 2020.
-
-Birkett A (2019) ‘[Form design: 13 empirically backed best practices](https://cxl.com/blog/form-design-best-practices/)’, *cxl.com blog*, accessed 30 April 2020.
-
-Christian LM, Dillman DA and Smyth J (2007) ‘[Helping respondents get it right the first time: the influence of words, symbols, and graphics in web surveys](https://www.semanticscholar.org/paper/Helping-Respondents-Get-It-Right-the-First-Time%3A-of-Christian-Dillman/0e1e065616aaf48903b57c79d44a462d14c09605)’, *Public Opinion Quarterly*, 71(1):113–125, doi:10.1093/poq/nfl039.
-
-Department of the Prime Minister and Cabinet (2019), ‘WISER: A framework for improving government forms’, [ Form-a-palooza 2019](https://behaviouraleconomics.pmc.gov.au/form-a-palooza-2019), Behavioural Economics Team website, accessed 30 April 2020.
-
-GOV.UK (2018) ‘[Structuring forms](https://www.gov.uk/service-manual/design/form-structure)’, *Service manual*, GOV.UK, accessed 30 April 2020.
-
-GOV.UK (2018) ‘[Designing how GOV.UK content and transactions work together](https://www.gov.uk/service-manual/design/govuk-content-transactions)’, *Service manual*, GOV.UK, accessed 30 April 2020.
-
-GOV.UK (2018), ‘[Designing good questions](https://www.gov.uk/service-manual/design/designing-good-questions)’, *Service manual*, GOV.UK, accessed 30 April 2020.
-
-GOV.UK (2020), ‘[Making labels and legends headings](https://design-system.service.gov.uk/get-started/labels-legends-headings/)’, *Design system*, GOV.UK, accessed 1 May 2020.
-
-GOV.UK (2020), ‘[Text input](https://design-system.service.gov.uk/components/text-input/ )’, *Design system*, GOV.UK, accessed 1 May 2020.
-
-GOV.UK (2020), ‘[Help users to recover from validation errors](https://design-system.service.gov.uk/patterns/validation/)’, GOV.UK Design System, accessed 1 May 2020.
-
-Jarrett C (June 2010) ‘[The question protocol: how to make sure every form field is necessary](https://www.uxmatters.com/mt/archives/2010/06/the-question-protocol-how-to-make-sure-every-form-field-is-necessary.php)’, *UXmatters blog*, accessed 30 April 2020.
-
-Krosnick JA (1999), ‘Survey research’, *Annual Review of Psychology*, 50:537–567, doi:10.1146/annurev.psych.50.1.537.
-
-W3C (World Wide Web Consortium) (2019) ‘[Forms concepts](https://www.w3.org/WAI/tutorials/forms/)’, *Web accessibility tutorials*, W3C website, accessed 13 July 2020.
-
-### Last updated
-
-This page was updated Tuesday 21 October 2025.
+Only include icons, images or colour when research shows they help the user understand the form. Make sure you create [accessible images](https://www.stylemanual.gov.au/node/46).

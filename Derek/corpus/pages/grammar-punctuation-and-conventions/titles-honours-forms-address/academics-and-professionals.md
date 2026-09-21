@@ -1,18 +1,19 @@
+# Academics and professionals
+
 Follow these rules to address and title academics and professionals correctly. The guidance focuses on academics, medical practitioners, dentists and veterinarians. Apply the rules when writing about individuals in other professions.
 
-
-Use initial capitals for the titles of individual academics and professionals
+## Use initial capitals for the titles of individual academics and professionals
 
 The academic and professional titles held by individuals usually have initial capitals. This includes honorary titles.
 
-Use lower case if you use a title [generically](#generic).
+Use lower case if you use a title generically.
 
 ### Example
 
 - Adjunct Professor Monty Chiratte [Honorary academic title]
 - All general surgeons at the hospital attended Wednesday’s forum. [Generic use]
 
-Use full titles in certain contexts
+## Use full titles in certain contexts
 
 Academics and professionals are often addressed by their ‘full title’. A full title includes the title or honorific (with initial capitals), name, post-nominals, position and organisation.
 
@@ -30,9 +31,9 @@ A full title is often about using titles in a display or presentation context (d
 
 - Professor Margaret Sheil AO, Vice-Chancellor and President, Queensland University of Technology [Full title]
 
-Titles immediately before a name
+## Titles immediately before a name
 
-Use initial capitals for titles that appear immediately before a person’s name. Do this unless the title is [generic](#generic).
+Use initial capitals for titles that appear immediately before a person’s name. Do this unless the title is generic.
 
 Also use initial capitals for the [shortened forms](https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/shortened-words-and-phrases) of titles.
 
@@ -57,7 +58,7 @@ The space available for image captions can be limited, but write the full names 
 - Left to right: Associate Professor Sara Baird, Vice-Chancellor Tom Dhillon, Dean Frank Ealing, Adjunct Professor Olena Iraklidis, Dr Celia Nieminen [Image caption: preferred style]
 - Left to right: Assoc Prof S Baird, VC T Dhillon, Dean F Ealing, Adj Prof O Iraklidis, Dr C Nieminen [Image caption: only for limited space]
 
-Titles that replace a name
+## Titles that replace a name
 
 Use initial capitals for official titles that replace a name.
 
@@ -77,16 +78,16 @@ These other uses include abbreviated titles and titles given by an organisation 
 - Dear Chancellor [Initial capital: salutation]
 - ‘We note your concerns Doctor. Thank you for bringing this evidence before the committee’. [Initial capital: direct address]
 
-Titles after a name
+## Titles after a name
 
 Use lower case for most titles that appear after a name. These titles describe the individual and are generic.
 
-There is one exception. Only use initial capitals for titles after a name in a [full title](#full).
+There is one exception. Only use initial capitals for titles after a name in a full title.
 
 This includes for:
 
-- address and signature blocks in
-[correspondence](https://www.stylemanual.gov.au/format-writing-and-structure/content-formats/emails-and-letters) - lists in organisational publications such as annual reports.
+- address and signature blocks in [correspondence](https://www.stylemanual.gov.au/format-writing-and-structure/content-formats/emails-and-letters)
+- lists in organisational publications such as annual reports.
 
 Follow your organisation’s template style for signature blocks. Templates apply design elements and list all elements in correct order. Some organisations prefer all capitals for names, titles and the organisation’s name.
 
@@ -95,46 +96,30 @@ Follow your organisation’s template style for signature blocks. Templates appl
 - They met with Associate Professor Dianne Stephens OAM, medical director of the National Critical Care and Trauma Response Centre. [Lower case: generic descriptive title in body text]
 - Associate Professor Dianne Stephens OAM, Medical Director, National Critical Care and Trauma Response Centre [Initial capitals: full title]
 - Professor Chris Goodnow FAA FRS
-
 Executive Director
-
 Garvan Institute of Medical Research
-
 384 Victoria Street
-
 Darlinghurst NSW 2010
-
-Australia [Initial capitals: full title for address block] - Dr Fatima Dashti FASM
-
+Australia [Initial capitals: full title for address block]
+- Dr Fatima Dashti FASM
 Director (Research)
-
 Institute for Viruses
-
 telephone
-
 email
-
-website [Initial capitals: full title for signature block. Order of elements might vary.] - #LIVE #COVID Update with Professor Paul Kelly, Australian Government Chief Medical Officer, Department of Health. [Initial capitals: full title to introduce speaker in government video.]
-#### 2021 Innovation Award recipients
-
-Dr Joanne Zheng
-
-
+website [Initial capitals: full title for signature block. Order of elements might vary.]
+- #LIVE #COVID Update with Professor Paul Kelly, Australian Government Chief Medical Officer, Department of Health. [Initial capitals: full title to introduce speaker in government video.]
+- 2021 Innovation Award recipients Dr Joanne Zheng
 Senior Research Scientist
-
 AcmeCo Australia
 
 Professor Alexander Bannon
-
 Senior Lecturer in Rehabilitation Medicine
-
 Faculty of Health and Medical Sciences
-
 University of Adelaide
 
 [Initial capitals: full titles for list in annual report]
 
-Use lower case for titles used in a generic way
+## Use lower case for titles used in a generic way
 
 Generic use of academic and professional titles includes:
 
@@ -157,7 +142,7 @@ Some titles appearing immediately before a name are also generic because they de
 - Two doctors from this practice attended the conference. [Lower case: plural title]
 - It is important to see your doctor to develop an asthma action plan. [Lower case: common noun]
 
-Use title, name and post-nominals at first mention
+## Use title, name and post-nominals at first mention
 
 When you write about an individual, it’s respectful to use their title.
 
@@ -180,7 +165,7 @@ This year’s graduate cohort asked Deputy Vice-Chancellor Jonquil Johansson to 
 
 DVC Jonquil Johansson to moderate their debate.
 
-Write post-nominals after the name in academic and professional titles
+## Write post-nominals after the name in academic and professional titles
 
 Post-nominals are letters after a name that stand for academic, civil and military [awards and honours](https://www.stylemanual.gov.au/style-rules-and-conventions/titles-honours-forms-address/awards-and-honours).
 
@@ -231,7 +216,7 @@ Don’t include post-nominals for master and bachelor degrees in correspondence.
 - Mark Price BEngTech TMIEAust [Engineer]
 - Mia Lillard BCom CFP [Financial planner]
 
-Titles for academics
+## Titles for academics
 
 In most contexts, address academics with their full title: title or honorific, name, position, post-nominals and academic institution.
 
@@ -239,17 +224,11 @@ In most contexts, address academics with their full title: title or honorific, n
 
 - Associate Professor Peter Spencer, College of Science, Health, Engineering and Education, Murdoch University [Full title]
 - Distinguished Professor Larissa Behrendt AO
-
 Director of Research
-
 Jumbunna Institute for Indigenous Education and Research
-
 University of Technology Sydney
-
 PO Box 123
-
 Broadway NSW 2007
-
 Australia [Full title: address block]
 
 ### An academic who is knighted
@@ -316,7 +295,7 @@ Instead, address the person by ‘Sir’ or ‘Dame’. Write the post-nominals 
 
 - Dame Bridget Ogilvie AC DBE FRS FAA
 
-Titles for medical practitioners, dentists and veterinarians
+## Titles for medical practitioners, dentists and veterinarians
 
 Use ‘Doctor’ or ‘Dr’ for medical practitioners, dentists and veterinarians, whether or not they hold a doctorate. Those with a doctorate may choose to add the post-nominal ‘PhD’.
 
@@ -335,73 +314,3 @@ It is best to contact the doctor’s practice if you are unsure of their preferr
 - Dr Eve Fenton BVSc DVM [Veterinarian]
 - Miss Patricia Woo MBBS FRACS FAOrthA MsurgEd [Orthopaedic surgeon]
 - Professor Henry Nicklin MBBS FRANZCP [Psychiatrist with academic title]
-
-Release notes
-
-The digital edition includes the information from the sixth edition with updated and additional examples.
-
-Capitalisation rules in digital edition are linked to the title’s position in relation to the name. The digital edition also introduces the concept of a ‘full title’, mostly used in display contexts.
-
-The sixth edition included relevant information about titles for academics and professionals.
-
-The Content Guide had very brief information about abbreviations for some academic qualifications.
-
-About this page
-
-### Evidence
-
-American Psychological Association (2020) ‘6.15: Job titles and positions’, *Publication manual of the American Psychological Association*, 7th edn, American Psychological Association, Washington DC.
-
-Oxford University Press (2016) ‘5.10: Titles of office, rank, and relationship’, *New Oxford style manual*, Oxford University Press, Oxford.
-
-University of Chicago (2017) ‘Names, terms and titles of work’,*Chicago manual of style,* 17th edn, University of Chicago Press, Chicago.
-
-### References
-
-Australian Health Practitioners Regulation Agency (Ahpra) (2021) [ National boards](https://www.ahpra.gov.au/National-Boards.aspx), Ahpra website, accessed 20 June 2021.
-
-Australian National University (n.d.) [ University executive](https://www.anu.edu.au/about/university-executive), ANU website, accessed 8 June 2020.
-
-Department of the Prime Minister and Cabinet (2016) [ It’s an honour](https://www.pmc.gov.au/government/its-honour), PM&C website, accessed 13 June 2020.
-
-Engineers Australia (n.d.) [ Engineer of the Year Awards](https://www.engineersaustralia.org.au/about-us/excellence-awards-program/engineer-year-awards), Engineers Australia website, accessed 23 December 2024.
-
-Garvan Institute of Medical Research (2021) ‘[Leadership](https://www.garvan.org.au/about-us/about-the-garvan-institute/garvan-institute-leadership)’, *About the Garvan Institute*, Garvan Institute website, accessed 7 June 2021.
-
-Medical Board of Australia (2012) ‘[Medical registration: what does it mean? Who should be registered?](https://www.medicalboard.gov.au/Codes-Guidelines-Policies.aspx)’, *Codes, Guidelines and Policies*, Ahpra website, accessed 26 July 2021.
-
-Monash University (n.d.)* ‘*[Senior Monash staff](http://monash.edu/about/structure/senior-staff)’, *Organisational governance and structure*, Monash University website, accessed 10 June 2020.
-
-Murdoch University (n.d.) ‘[Environmental & Conservation Sciences](http://our.murdoch.edu.au/directory/org/4540/tree?SUB_ID=45401505)’, *College of Science, Health, Engineering and Education: academic operations*, Murdoch University website, accessed 19 July 2021.
-
-National Centre of Biography (n.d.) [ Australian dictionary of biography](http://adb.anu.edu.au/), Australian Dictionary of Biography website, accessed 19 July 2021.
-
-National Critical Care and Trauma Response Centre (NCCTRC) (n.d.) ‘[Our people](https://nationaltraumacentre.gov.au/about-us/)’, *About Us*, NCCTRC website, accessed 6 July 2021.
-
-Podiatric Board of Australia (2012) ‘[When is it necessary to be registered as a podiatry practitioner?](https://www.podiatryboard.gov.au/registration-endorsement/general-registration.aspx)’, *General Registration*, Ahpra website, accessed 26 July 2021.
-
-RMIT University (2021) [ Governance and management](https://www.rmit.edu.au/about/governance-management), RMIT University website, accessed 22 June 2021.
-
-Royal Australasian College of Surgeons (RACS) (n.d.) [ Council](https://www.surgeons.org/about-racs/about-the-college-of-surgeons/governance-committees/council), RACS website, accessed 28 June 2021.
-
-The Governor-General of the Commonwealth of Australia (n.d.) [ Australian honours and awards](https://www.gg.gov.au/australian-honours-and-awards), The Governor-General of the Commonwealth of Australia website, accessed 8 June 2020.
-
-The Royal Australian College of General Practitioners (n.d.) [ Fellowship](https://www.racgp.org.au/education/registrars/fellowship-pathways), The Royal Australian College of General Practitioners website, accessed 8 June 2020.
-
-University of Melbourne (n.d.) ‘[Honorary degree holders](https://about.unimelb.edu.au/notable-alumni-staff/honorary-degree-holders)’, *Notable alumni and staff*, University of Melbourne website, accessed 10 June 2020.
-
-University of Technology Sydney (n.d.) [ Jumbunna Institute for Indigenous Education and Research](https://www.uts.edu.au/research-and-teaching/our-research/jumbunna-institute-indigenous-education-and-research), UTS website, accessed 23 June 2021.
-
-University of Technology Sydney (n.d.) ‘[Our director: Distinguished Professor Larissa Behrendt](https://www.uts.edu.au/research-and-teaching/our-research/jumbunna-institute-indigenous-education-and-research/our-director-distinguished-professor-larissa-behrendt)*’*, *Jumbunna Institute for Indigenous Education and Research*, UTS website, accessed 8 June 2020.
-
-University of the Sunshine Coast (USC) (n.d.) [ Office of the Vice-Chancellor and President](https://www.usc.edu.au/about/structure/executive/office-of-the-vice-chancellor-and-president), USC website, accessed 16 July 2021.
-
-University of Tasmania (2020), [ Biography](https://www.utas.edu.au/vc/biography), University of Tasmania website, accessed 19 May 2021.
-
-University of Western Australia (2020) ‘[Former officers of the university](https://www.web.uwa.edu.au/university/history/former-officers)’, *History of the university*, University of Western Australia website, accessed 10 June 2020.
-
-Veterinary Surgeons Board of Queensland (2018) [ Policy (general)](https://www.vsb.qld.gov.au/resources/guidelines-and-policies/policy-general), Queensland Government website, accessed 20 June 2021.
-
-### Last updated
-
-This page was updated Monday 23 December 2024.

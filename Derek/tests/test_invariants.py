@@ -7,6 +7,7 @@ reintroduced — do not weaken the test.
 
 from __future__ import annotations
 
+import collections
 import json
 from pathlib import Path
 
@@ -560,3 +561,158 @@ def test_rebuild_is_idempotent_on_disk(tmp_path):
     first = ledger.read_bytes()
     build(ledger, check=False)
     assert ledger.read_bytes() == first
+
+
+# ---------------------------------------------------------------------------
+# ADR-020 — a converter upgrade is not an upstream edit
+# ---------------------------------------------------------------------------
+
+def test_rehomed_rule_keeps_its_review_state_and_records_the_old_uid():
+    """A re-derivation that changes a rule's address must not look like the
+    Style Manual reworded it: superseding would write fictional upstream
+    edits into the ledger and discard a decision nobody revisited."""
+    from derek.ledger.reconcile import reconcile
+
+    old = _rule(
+        uid="a" * 16,
+        source=Source("p.md", ["Old section", "Use a comma."], "Use a comma.", body_excerpt="b"),
+    )
+    old.review.transition(ReviewStatus.ACCEPTED, "tester", "2026-01-01T00:00:00Z", "checked")
+    old.unit = Unit.SENTENCE
+    old.violation_condition = "No comma after the introductory phrase."
+
+    # Same statement, same page, corrected heading path -> new UID.
+    moved = Candidate(
+        uid="b" * 16, page_path="p.md",
+        heading_path=("Corrected section", "Use a comma."),
+        statement="Use a comma.", statement_form="imperative",
+        level=3, body="b", line_start=4,
+    )
+    rec = reconcile([moved], {old.uid: old})
+    assert rec.summary()["rehomed"] == 1
+    assert rec.summary()["reworded"] == 0
+    assert rec.summary()["orphaned"] == 0
+    assert rec.requires_review is False, "a rehoming has nothing new to review"
+
+
+def test_duplicate_statements_are_resolved_by_page_not_guessed():
+    """The manual repeats some statements verbatim across pages."""
+    from derek.ledger.reconcile import reconcile
+
+    a = _rule(uid="a" * 16, source=Source("commas.md", ["S", "Use commas in numbers."],
+                                          "Use commas in numbers.", body_excerpt="b"))
+    b = _rule(uid="b" * 16, source=Source("numbers.md", ["S", "Use commas in numbers."],
+                                          "Use commas in numbers.", body_excerpt="b"))
+    cand = Candidate(uid="c" * 16, page_path="numbers.md",
+                     heading_path=("New section", "Use commas in numbers."),
+                     statement="Use commas in numbers.", statement_form="imperative",
+                     level=3, body="b", line_start=1)
+    rec = reconcile([cand], {a.uid: a, b.uid: b})
+    assert rec.summary()["rehomed"] == 1
+    assert rec.rehomed[0][0].uid == b.uid, "must match the rule on the same page"
+    assert rec.summary()["needs_human_lineage_decision"] == 0
+
+
+def test_corpus_headings_form_a_proper_hierarchy():
+    """ADR-020: every page carries a title and real section levels.
+
+    Under the old converter the corpus had 2 h1 and 53 h2 against 1,795 h3 —
+    the flattening that forced 71% of candidates to depend on a heuristic.
+    """
+    import re as _re
+    levels = collections.Counter()
+    pages_with_h1 = 0
+    root = REPO / "corpus" / "pages"
+    all_pages = list(root.rglob("*.md"))
+    for md in all_pages:
+        text = md.read_text(encoding="utf-8")
+        found = [len(m.group(1)) for m in _re.finditer(r"^(#{1,6})\s+\S", text, _re.M)]
+        levels.update(found)
+        if 1 in found:
+            pages_with_h1 += 1
+    assert pages_with_h1 >= len(all_pages) - 2, "nearly every page should carry its title"
+    assert levels[2] > 400, f"expected real section structure, got {levels[2]} h2"
+
+
+def test_no_candidate_is_a_page_title():
+    """A level-1 heading is the page's subject, not a rule."""
+    from derek.extract.build import collect_candidates
+    cands, _ = collect_candidates()
+    assert all(c.level >= 2 for c in cands)
+
+
+def test_terminal_rules_survive_every_rebuild(tmp_path):
+    """Nothing is ever deleted from the ledger (ADR-008).
+
+    An orphaned or superseded rule is excluded from candidate matching, so
+    without explicit carry-forward it silently disappears on the next
+    rebuild — taking its review history with it.
+    """
+    from derek.extract.build import build
+
+    ledger = tmp_path / "rules.jsonl"
+    build(ledger, check=False)
+    rules = load_ledger(ledger)
+
+    # A genuinely orphaned rule has an identity no candidate reproduces,
+    # because its source heading is gone from the corpus.
+    uid = "f" * 16
+    gone = _rule(
+        uid=uid,
+        source=Source("gone/page.md", ["Removed section", "A retired rule."],
+                      "A retired rule.", body_excerpt="b"),
+    )
+    gone.review.transition(ReviewStatus.ACCEPTED, "tester", "2026-01-01T00:00:00Z", "was live")
+    gone.review.transition(ReviewStatus.ORPHANED, "tester", "2026-01-02T00:00:00Z",
+                           "source page removed upstream")
+    rules[uid] = gone
+    write_ledger(ledger, rules.values())
+
+    build(ledger, check=False)
+    after = load_ledger(ledger)
+    assert uid in after, "an orphaned rule must not vanish on rebuild"
+    assert after[uid].review.status == ReviewStatus.ORPHANED
+    assert after[uid].review.history, "its history must survive too"
+
+
+# ---------------------------------------------------------------------------
+# Recall regression guard (docs/06-extraction-audit.md §3)
+# ---------------------------------------------------------------------------
+
+# Real rules the 2026-09-21 audit found filed as sections, because the verb
+# was absent from the imperative lexicon. The lexicon is inherently
+# incomplete (see 05-open-questions.md Q8), so these are pinned: if one stops
+# being extracted, a verb has been dropped and other rules are going with it.
+PREVIOUSLY_MISSED = [
+    "Join nouns with an en dash to show an equal relationship",
+    "Draw attention to words using quotation marks",
+    "Get permissions and licences for copyright material",
+    "Split large reports into volumes",
+    "Meet WCAG level AA, but aim higher",
+    "Take care using product names",
+    "Alphabetise the reference items in the list",
+    "Eliminate unnecessary words",
+    "Build simple phrases and clauses",
+]
+
+
+def test_previously_missed_rules_are_extracted():
+    from derek.extract.build import collect_candidates
+    cands, _ = collect_candidates()
+    found = {c.statement for c in cands}
+    missing = [s for s in PREVIOUSLY_MISSED if s not in found]
+    assert not missing, f"recall regression — these rules are no longer extracted: {missing}"
+
+
+def test_two_word_imperatives_are_rules():
+    """"Provide context" is an instruction; "Neurodiversity" is a topic."""
+    assert classify_heading("Provide context") == (CandidateKind.RULE, "imperative")
+    assert classify_heading("Neurodiversity")[0] == CandidateKind.SECTION
+
+
+def test_rule_statements_carry_no_markdown_emphasis():
+    """A statement is provenance AND a UID input; `**` corrupts both."""
+    for rule in load_ledger(LEDGER).values():
+        s = rule.source.statement
+        assert "**" not in s, rule.uid
+        assert not s.startswith(("*", "_", "`")), rule.uid

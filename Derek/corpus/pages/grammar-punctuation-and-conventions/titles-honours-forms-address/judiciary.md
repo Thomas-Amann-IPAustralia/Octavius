@@ -1,8 +1,8 @@
+# Judiciary
+
 Use the correct titles to refer to members of the judiciary.
 
-
-
-Use the correct form to refer to judges and magistrates
+## Use the correct form to refer to judges and magistrates
 
 Refer to judges of the following courts as ‘Justice’ and use the title ‘The Honourable’:
 
@@ -21,9 +21,8 @@ Use the titles ‘Your Honour’, ‘His Honour’ or ‘Her Honour’ for judge
 
 Instructions for addressing judges and registrars are at:
 
-- High Court –
-[How do I address a High Court judge? [PDF 31 KB]](https://www.hcourt.gov.au/assets/education/How%20to%20address%20a%20high%20court%20justice.pdf) - Federal Court –
-[How to address [Federal Court] judges & judicial registrars](https://www.fedcourt.gov.au/going-to-court/forms_address).
+- High Court – [How do I address a High Court judge? [PDF 31 KB]](https://www.hcourt.gov.au/assets/education/How%20to%20address%20a%20high%20court%20justice.pdf)
+- Federal Court – [How to address [Federal Court] judges & judicial registrars](https://www.fedcourt.gov.au/going-to-court/forms_address).
 
 Judges of these courts retain the title ‘The Honourable’ for life.
 
@@ -82,7 +81,7 @@ In emails and letters:
 
 ### Magistrate and local courts
 
-Address magistrates in court as ‘Your Honour’*. *When outside court, address them as ‘Magistrate’.
+Address magistrates in court as ‘Your Honour’*.*When outside court, address them as ‘Magistrate’.
 
 When addressing an envelope use ‘Her Honour Magistrate’ or ‘His Honour Magistrate’.
 
@@ -106,47 +105,3 @@ On subsequent mention, you can use ‘Sir’ or ‘Dame’ and the person’s gi
 
 - Sir Ninian
 - Dame Roma
-
-Release notes
-
-The digital edition includes information from the sixth edition with updated examples.
-
-The digital edition removes the sixth edition’s requirement to use full stops with the abbreviation of ‘The Honourable’ to ‘The Hon’.
-
-This change is supported by evidence from Australian corpora and is consistent with the digital edition’s recommendation to use minimal punctuation.
-
-For the same reason, digital edition examples do not follow the sixth edition’s requirement for a comma before and between post-nominals.
-
-The Content Guide did not include information on titles for the judiciary.
-
-About this page
-
-### References
-
-County Court of Victoria (2020) [ Judicial contacts](https://www.countycourt.vic.gov.au/contact-us/judicial-contacts), County Court of Victoria website, accessed 8 June 2020.
-
-Courts Administration Authority of South Australia (n.d.) ‘[Judicial officers](https://www.courts.sa.gov.au/going-to-court/court-locations/youth-court/judicial-officers/)’, *Our courts*, CAA website, accessed 8 June 2020.
-
-Federal Circuit and Family Court of Australia (n.d.) [ About the courts](https://www.fcfcoa.gov.au/about), Federal Circuit and Family Court of Australia website, accessed 3 March 2025.
-
-Federal Circuit and Family Court of Australia (n.d.) [ Etiquette and tips](https://www.fcfcoa.gov.au/attending-court/etiquette-and-tips), Federal Circuit and Family Court of Australia website, accessed 3 March 2025.
-
-Family Court of Australia (n.d.)* *[ Judges of the Family Court](http://www.familycourt.gov.au/wps/wcm/connect/fcoaweb/about/judges-senior-staff/judges/), Family Court of Australia website, accessed 8 June 2020.
-
-Federal Court of Australia (n.d.) [ How to address judges and judicial registrars](https://www.fedcourt.gov.au/going-to-court/forms_address),
-
-*Federal Court of Australia website, accessed 8 June 2020.*
-
-High Court of Australia (n.d.) [ How do I address a High Court judge? [PDF 31 KB]](https://www.hcourt.gov.au/assets/education/How%20to%20address%20a%20high%20court%20justice.pdf), High Court of Australia, accessed 13 August 2024.
-
-New South Wales Bar Association (2020) [ Court structure, judges’ titles and order of seniority [PDF 897 KB]](https://nswbar.asn.au/uploads/pdf-documents/court_structure_2020.pdf), New South Wales Bar Association, accessed 8 June 2020.
-
-Queensland Courts (2020) [ Judges of the District Court](https://www.courts.qld.gov.au/contacts/judiciary-contacts/judges-of-the-district-court), Queensland Courts website, accessed 8 June 2020.
-
-Supreme Court of Victoria (2022) [ What do I call the judge? [PDF 572 KB]](https://www.supremecourt.vic.gov.au/sites/default/files/2022-08/What%20do%20I%20call%20the%20judge.pdf), Supreme Court of Victoria, accessed 3 March 2025.
-
-University of Technology Sydney (6 January 2020) ‘[The dummies’ guide to addressing judicial officers](https://www.uts.edu.au/about/faculty-law/news/dummies-guide-addressing-judicial-officers)’, Faculty of Law News, accessed 8 June 2020.
-
-### Last updated
-
-This page was updated Monday 3 March 2025.

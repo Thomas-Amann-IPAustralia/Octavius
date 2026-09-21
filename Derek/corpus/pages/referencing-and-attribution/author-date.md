@@ -1,4 +1,8 @@
+# Author–date
+
 The author–date system includes details for author and date in the text with a full citation in a list of references. This system is suitable for most Australian Government content.
+
+## Include author and date in text, and list full details later
 
 The author–date system uses:
 
@@ -17,7 +21,7 @@ You must properly attribute copyright material you cite or reference. This inclu
 
 Include all the details required by open access licences (read how to [attribute Creative Commons](https://creativecommons.org.au/learn/fact-sheets/attribution/)).
 
-Read the government copyright rules in the [ Australian Government intellectual property manual](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual).
+Read the government copyright rules in the [*Australian Government intellectual property manual*](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual).
 
 ### In-text citations
 
@@ -142,16 +146,17 @@ Some types of specialised sources, such as works of art, need their own referenc
 
 Check each type of specialised source that you’re using to see if you need to include it in a reference list.
 
+## Order the elements of each item in a reference list
 
 References in the list will have different elements depending on the type of source. For example, when citing a book, include the name of the publisher. When citing a website, include the date you accessed it.
 
 The general order is:
 
-- author or authoring organisation’s name
-- publishing date
-- title (and series or issue details)
-- publisher details
-- accessed date (for digital content).
+1. author or authoring organisation’s name
+2. publishing date
+3. title (and series or issue details)
+4. publisher details
+5. accessed date (for digital content).
 
 Some elements have shortened forms used in referencing. Use the shortened form when appropriate.
 
@@ -198,21 +203,21 @@ Use the shortened form in subsequent references.
 
 #### Example
 
-DFAT (Department of Foreign Affairs and Trade) (2018) [ Fact sheets for countries and regions – India](https://www.dfat.gov.au/trade/resources/trade-and-economic-fact-sheets-for-countries-economies-and-regions), DFAT, accessed 9 July 2021.
+DFAT (Department of Foreign Affairs and Trade) (2018) [*Fact sheets for countries and regions – India*](https://www.dfat.gov.au/trade/resources/trade-and-economic-fact-sheets-for-countries-economies-and-regions), DFAT, accessed 9 July 2021.
 
 Only use a shortened form of an agency’s name if the agency uses it regularly.
 
 For example, the Australian Public Service Commission regularly uses the initialism ‘APSC’, so use it after the first mention and in the references.
 
-Often, an organisation's name is both the** **author of the webpage and the name of the website. To avoid repetition of long names, use the shortened form for the name of the website after the title. Do this even if you have not introduced the shortened form before.
+Often, an organisation's name is both theauthor of the webpage and the name of the website. To avoid repetition of long names, use the shortened form for the name of the website after the title. Do this even if you have not introduced the shortened form before.
 
 #### Like this
 
-Australian and New Zealand Spatial Information Council (n.d.) [ Place names](https://www.anzlic.gov.au/resources/foundation-spatial-data-framework/fsdf-themes-datasets/place-names), ANZLIC website, accessed 5 December 2019.
+Australian and New Zealand Spatial Information Council (n.d.) [*Place names*](https://www.anzlic.gov.au/resources/foundation-spatial-data-framework/fsdf-themes-datasets/place-names), ANZLIC website, accessed 5 December 2019.
 
 #### Not this
 
-Australian and New Zealand Spatial Information Council (n.d.) [ Place names](https://www.anzlic.gov.au/resources/foundation-spatial-data-framework/fsdf-themes-datasets/place-names), Australian and New Zealand Spatial Information Council website, accessed 5 December 2019.
+Australian and New Zealand Spatial Information Council (n.d.) [*Place names*](https://www.anzlic.gov.au/resources/foundation-spatial-data-framework/fsdf-themes-datasets/place-names), Australian and New Zealand Spatial Information Council website, accessed 5 December 2019.
 
 ### Works without a date
 
@@ -221,7 +226,7 @@ For works without a date, write ‘n.d.’ instead of the date of publication.
 #### Example
 
 - Lists should be clear (McMurrey n.d.) … [In-text citation]
-- McMurrey DA (n.d.) *Online technical writing: lists*
+- McMurrey DA (n.d.) [*Online technical writing: lists*](https://mcmassociates.io/textbook/lists.html), mcmassociates.io, accessed 30 September 2022. [Reference list item]
 
 ### Works that need the full date of publication
 
@@ -235,6 +240,7 @@ Richardson A (24 May 2018) ‘[Australia imports almost all of its oil, and ther
 
 Richardson A (2018) ‘[Australia imports almost all of its oil, and there are pitfalls all over the globe](https://theconversation.com/australia-imports-almost-all-of-its-oil-and-there-are-pitfalls-all-over-the-globe-97070)’, *The Conversation*, accessed 29 January 2020.
 
+## Style and spell titles consistently
 
 Use capitals, punctuation and italics consistently in all references.
 
@@ -245,7 +251,7 @@ Follow the rules in the examples of author–date citations, but generally:
 - Use commas to separate elements after the title.
 - Use a full stop at the end of the reference.
 
-Use italics for the [formal title of a complete published work](/node/187).
+Use italics for the [formal title of a complete published work](https://www.stylemanual.gov.au/node/187).
 
 Don't use italics if the reference is:
 
@@ -260,7 +266,7 @@ If it’s part of a publication, use single quotation marks around the title and
 ### Example
 
 - Mackenzie J (2011) *The editor’s companion*, 2nd edn, Cambridge University Press, Melbourne. [The italicised title is for a complete published work.]
-- Yik J (1 June 2017) ‘[Changing Australian medicine names](https://www.nps.org.au/australian-prescriber/articles/changing-australian-medicine-names)’,*Australian Prescriber*, accessed 5 December 2019. [The reference is to a title for part of a publication (a periodical).]
+- Yik J (1 June 2017) ‘[Changing Australian medicine names](https://www.nps.org.au/australian-prescriber/articles/changing-australian-medicine-names)’, *Australian Prescriber*, accessed 5 December 2019. [The reference is to a title for part of a publication (a periodical).]
 
 Use the original spelling for all titles and periodical names. This includes retaining misspellings and American spelling variations.
 
@@ -268,6 +274,7 @@ Use the original spelling for all titles and periodical names. This includes ret
 
 Bishop S and Back F (2020) ‘Organizational issues and color-coding’, *Journal of Pediatric Science*, 4(2):22–25. [‘Organizational’ is an American spelling.]
 
+## Hyperlink titles and include access dates for online works
 
 Unless the source is behind a paywall, hyperlink the title of works available online.
 
@@ -275,7 +282,7 @@ You don’t need to include the URL in references in digital content.
 
 ### Example
 
-DFAT (Department of Foreign Affairs and Trade) (2018) [ Fact sheets for countries and regions – India](https://www.dfat.gov.au/trade/resources/trade-and-economic-fact-sheets-for-countries-economies-and-regions), DFAT, accessed 9 July 2021.
+DFAT (Department of Foreign Affairs and Trade) (2018) [*Fact sheets for countries and regions – India*](https://www.dfat.gov.au/trade/resources/trade-and-economic-fact-sheets-for-countries-economies-and-regions), DFAT, accessed 9 July 2021.
 
 Content publishers should make sure the [CSS print style sheet](https://www.w3.org/standards/webdesign/htmlcss) automatically displays the URLs from the hyperlinks when the content is printed. This might be a default style in your document’s template.
 
@@ -307,7 +314,7 @@ Cite the PDF with the details you can find in the document. Sometimes details li
 
 #### Example
 
-Thomson Reuters (2026) [ Table of abbreviations [PDF 9 MB]](https://training-aem.thomsonreuters.com/media/Abbreviations Guide/1_rryus78g?mode=fullscreen), Westlaw Advantage Australia, accessed 4 June 2026.
+Thomson Reuters (2026) [*Table of abbreviations* [PDF 9 MB]](https://training-aem.thomsonreuters.com/media/Abbreviations Guide/1_rryus78g?mode=fullscreen), Westlaw Advantage Australia, accessed 4 June 2026.
 
 ### Digital object identifiers (DOIs)
 
@@ -319,8 +326,9 @@ If the document has a DOI, include it in the citation in the reference list. Put
 
 #### Example
 
-Kelleher T (2009) ‘Conversational voice’,* Journal of Communication*, 59(1):172–188, doi:10.1111/j.1460-2466.2008.01410.x.
+Kelleher T (2009) ‘Conversational voice’,*Journal of Communication*, 59(1):172–188, doi:10.1111/j.1460-2466.2008.01410.x.
 
+## Detail page, volume and issue numbers
 
 If a citation has a volume number, an issue number and page numbers, follow the format: volume(issue):page–page.
 
@@ -330,13 +338,14 @@ Jackson D, Li X and Chandran P (2018) ‘Safety and equity’, *Psychological Sc
 
 In this example, the work is from volume 2, issue 4, and it’s on pages 223 to 240.
 
+## Alphabetise the reference items in the list
 
 Order the reference list in alphabetical order, according to the family name and given name of the lead author.
 
 ### Example
 
 - Jackson D, Li X and Chandran P (2018) ‘Safety and equity’, *Psychological Science Australia*, 2(4):223–240.
-- Richardson A (24 May 2018) ‘[Australia imports almost all of its oil, and there are pitfalls all over the globe](https://theconversation.com/australia-imports-almost-all-of-its-oil-and-there-are-pitfalls-all-over-the-globe-97070)’,*The Conversation*, accessed 29 January 2020.
+- Richardson A (24 May 2018) ‘[Australia imports almost all of its oil, and there are pitfalls all over the globe](https://theconversation.com/australia-imports-almost-all-of-its-oil-and-there-are-pitfalls-all-over-the-globe-97070)’, *The Conversation*, accessed 29 January 2020.
 
 ### Multiple works by the same author
 
@@ -354,11 +363,11 @@ To avoid repetition, you can use 2 unspaced em dashes for works by the same auth
 
 #### Example
 
-ABS (Australian Bureau of Statistics) (2014a) [ Arts and culture in Australia: a statistical overview](https://www.abs.gov.au/AUSSTATS/abs@.nsf/productsbyCatalogue/8EB0AA3F1775AC35CA257B02000ECD50?OpenDocument), ABS website, accessed 20 July 2019.
+ABS (Australian Bureau of Statistics) (2014a) [*Arts and culture in Australia: a statistical overview*](https://www.abs.gov.au/AUSSTATS/abs@.nsf/productsbyCatalogue/8EB0AA3F1775AC35CA257B02000ECD50?OpenDocument), ABS website, accessed 20 July 2019.
 
-——(2014b) [ Australian social trends](https://www.abs.gov.au/ausstats/abs@.nsf/mf/4102.0), ABS website, accessed 20 December 2024.
+——(2014b) [*Australian social trends*](https://www.abs.gov.au/ausstats/abs@.nsf/mf/4102.0), ABS website, accessed 20 December 2024.
 
-——(2014c) [ General social survey: summary results, Australia](https://www.abs.gov.au/statistics/people/people-and-communities/general-social-survey-summary-results-australia/2014), ABS website, accessed 20 July 2019.
+——(2014c) [*General social survey: summary results, Australia*](https://www.abs.gov.au/statistics/people/people-and-communities/general-social-survey-summary-results-australia/2014), ABS website, accessed 20 July 2019.
 
 ### Multiple works by the same author in the same year
 
@@ -389,6 +398,7 @@ If a writer has been the sole author for some references and the lead author for
 - Adams W, Zinger Z, Black B and Brown B (2013a) …
 - Adams W, Zinger Z, Black B and Brown B (2013b) …
 
+## Specify details for government sources and reports
 
 ### Media releases
 
@@ -400,7 +410,7 @@ Rule: Author A (Day Month Year) *Title of media release: subtitle of media relea
 
 ##### Example
 
-Black F and Jacobsen N (4 February 2020) [ ACT has highest student participation and employment](https://www.cmtedd.act.gov.au/open_government/inform/act_government_media_releases/barr/2020/act-has-highest-student-participation-and-employment) [media release], ACT Government, accessed 5 February 2020.
+Black F and Jacobsen N (4 February 2020) [*ACT has highest student participation and employment*](https://www.cmtedd.act.gov.au/open_government/inform/act_government_media_releases/barr/2020/act-has-highest-student-participation-and-employment) [media release], ACT Government, accessed 5 February 2020.
 
 #### Media release with no authors listed
 
@@ -408,7 +418,7 @@ Rule: Organisation Name or Abbreviation (Day Month Year) *Title of media release
 
 ##### Example
 
-ACT Government (4 February 2020) [ ACT has highest student participation and employment](https://www.cmtedd.act.gov.au/open_government/inform/act_government_media_releases/barr/2020/act-has-highest-student-participation-and-employment) [media release], ACT Government, accessed 5 February 2020.
+ACT Government (4 February 2020) [*ACT has highest student participation and employment*](https://www.cmtedd.act.gov.au/open_government/inform/act_government_media_releases/barr/2020/act-has-highest-student-participation-and-employment) [media release], ACT Government, accessed 5 February 2020.
 
 ### Reports
 
@@ -529,7 +539,7 @@ Rule: Author A (Year) *Title of data set* [data set], Name of Website website, a
 
 #### Example
 
-National Native Title Tribunal (2014) [ Native Title determination outcomes](https://data.gov.au/data/dataset/native-title-determination-outcomes) [data set], data.gov.au, accessed 4 January 2020.
+National Native Title Tribunal (2014) [*Native Title determination outcomes*](https://data.gov.au/data/dataset/native-title-determination-outcomes) [data set], data.gov.au, accessed 4 January 2020.
 
 The Australian Bureau of Statistics (ABS) has a [guide to referencing ABS material](https://www.abs.gov.au/how-cite-abs-sources).
 
@@ -537,9 +547,9 @@ Follow the ABS advice for information to include, but adjust capitalisation and 
 
 #### Example
 
-Australian Bureau of Statistics (2016) [ 2016 Census – Cultural Diversity](https://guest.censusdata.abs.gov.au/webapi/jsf/dataCatalogueExplorer.xhtml) [TableBuilder], accessed 16 November 2020. [ABS format]
+Australian Bureau of Statistics (2016) [*2016 Census – Cultural Diversity*](https://guest.censusdata.abs.gov.au/webapi/jsf/dataCatalogueExplorer.xhtml) [TableBuilder], accessed 16 November 2020. [ABS format]
 
-ABS (Australian Bureau of Statistics) (2016) [ 2016 Census – Cultural diversity](https://guest.censusdata.abs.gov.au/webapi/jsf/dataCatalogueExplorer.xhtml) [TableBuilder], ABS website, accessed 16 November 2020. [Author–date format]
+ABS (Australian Bureau of Statistics) (2016) [*2016 Census – Cultural diversity*](https://guest.censusdata.abs.gov.au/webapi/jsf/dataCatalogueExplorer.xhtml) [TableBuilder], ABS website, accessed 16 November 2020. [Author–date format]
 
 ### Records from the National Archives of Australia
 
@@ -551,6 +561,7 @@ National Archives of Australia: Prime Minister’s Department; A461, Corresponde
 
 National Archives of Australia: Prime Minister’s Department; A461, Correspondence files, multiple number series (third system), 1934–50; AX314/1/1, Aeronautical Research in the British Empire, 1945–49. [Author–date format]
 
+## Sequence the elements of online sources
 
 Only cite an entire website if you cannot pinpoint the material to a specific webpage or webpage content.
 
@@ -570,12 +581,12 @@ Include the word ‘website’ after the name of the website in square brackets,
 
 It is optional to include the URL for the homepage – for example ‘stylemanual.gov.au’. If you include the homepage URL, do not include the word ‘website’ in square brackets.
 
-Rule: Author A (Year) *Name of website*, URL [optional], accessed Day Month Year.
+Rule: Author A (Year) *Name of website*, URL [optional], accessed Day Month Year.
 
 #### Example
 
-- APSC (Australian Public Service Commission) (2021) *Australian Government Style Manual*
-- eSafety Commissioner (n.d.) *eSafety*
+- APSC (Australian Public Service Commission) (2021) [*Australian Government Style Manual*](https://www.stylemanual.gov.au/node/15), stylemanual.gov.au, accessed 3 October 2021.
+- eSafety Commissioner (n.d.) [*eSafety*](https://www.esafety.gov.au/) [website], accessed 3 December 2020.
 
 ### Webpages and webpage content
 
@@ -593,7 +604,7 @@ Rule: Author A (Year) *Title of webpage*, Name of Website website, accessed Day 
 
 ##### Example
 
-Clement J (2020) [ Device usage of Facebook users worldwide as of July 2020](https://www.statista.com/statistics/377808/distribution-of-facebook-users-by-device/), Statista website, accessed 16 September 2020.
+Clement J (2020) [*Device usage of Facebook users worldwide as of July 2020*](https://www.statista.com/statistics/377808/distribution-of-facebook-users-by-device/), Statista website, accessed 16 September 2020.
 
 #### Webpage written by an organisation
 
@@ -601,7 +612,7 @@ Rule: Organisation Name or Abbreviation (Year) *Title of webpage*, Name of Websi
 
 ##### Example
 
-Department of the Prime Minister and Cabinet (n.d.) [ Australian National Anthem](https://www.pmc.gov.au/government/australian-national-anthem), PM&C website, accessed 20 January 2020.
+Department of the Prime Minister and Cabinet (n.d.) [*Australian National Anthem*](https://www.pmc.gov.au/government/australian-national-anthem), PM&C website, accessed 20 January 2020.
 
 #### Webpage as part of a larger publication or series
 
@@ -609,8 +620,8 @@ Rule: Author A (Year) ‘Title of webpage’, *Name of larger publication or ser
 
 ##### Example
 
-- APSC (Australian Public Service Commission) (2021) ‘[Author–date](/node/165)’,*Australian Government style manual*, Australian Government Style Manual website, accessed 3 October 2021.
-- W3C (World Wide Web Consortium) (2019) ‘[Audio content and video content](https://www.w3.org/WAI/media/av/av-content/)’,*Making audio and video content accessible*, W3C website, accessed 25 August 2020.
+- APSC (Australian Public Service Commission) (2021) ‘[Author–date](https://www.stylemanual.gov.au/node/165)’, *Australian Government style manual*, Australian Government Style Manual website, accessed 3 October 2021.
+- W3C (World Wide Web Consortium) (2019) ‘[Audio content and video content](https://www.w3.org/WAI/media/av/av-content/)’, *Making audio and video content accessible*, W3C website, accessed 25 August 2020.
 
 #### Online videos
 
@@ -620,9 +631,9 @@ Rule: Creator C or Owner of Video (Day Month Year) ‘Title of video’ [video],
 
 ##### Example
 
-- Farah Z and wāni (4 October 2019) ‘[2019 Australian Poetry Slam: Victorian winner & runner-up’](https://www.slv.vic.gov.au/view-discuss/2019-australian-poetry-slam-victorian-winner-runner)[video],*State Library Victoria*, State Library Victoria website, accessed 10 January 2020.
-- Australian Government Department of Health (28 February 2020) ‘[Get the facts – immunisation facts in 90 seconds’](https://www.youtube.com/watch?v=foZeofdbJtw)[video],*Australian Government Department of Health*, YouTube, accessed 6 March 2020.
-- ABC (Australian Broadcasting Corporation) (10 May 2018) ‘[The Australian writer who could be the next Nobel Prize winner’](https://www.youtube.com/watch?v=zv41YxlMsis), [video],*ABC News (Australia)*, YouTube, accessed 29 May 2019.
+- Farah Z and wāni (4 October 2019) ‘[2019 Australian Poetry Slam: Victorian winner & runner-up’](https://www.slv.vic.gov.au/view-discuss/2019-australian-poetry-slam-victorian-winner-runner) [video], *State Library Victoria*, State Library Victoria website, accessed 10 January 2020.
+- Australian Government Department of Health (28 February 2020) ‘[Get the facts – immunisation facts in 90 seconds’](https://www.youtube.com/watch?v=foZeofdbJtw) [video], *Australian Government Department of Health*, YouTube, accessed 6 March 2020.
+- ABC (Australian Broadcasting Corporation) (10 May 2018) ‘[The Australian writer who could be the next Nobel Prize winner’](https://www.youtube.com/watch?v=zv41YxlMsis), [video], *ABC News (Australia)*, YouTube, accessed 29 May 2019.
 
 #### Online document
 
@@ -632,7 +643,7 @@ Rule: Author A (Year) *Title of document*, Organisation Name or Name of Website,
 
 ##### Example
 
-Western Australian Government (n.d.) [ Island guide](https://www.rottnestisland.com/the-island/about-the-island/Island-guide), Rottnest Island, accessed 31 December 2019.
+Western Australian Government (n.d.) [*Island guide*](https://www.rottnestisland.com/the-island/about-the-island/Island-guide), Rottnest Island, accessed 31 December 2019.
 
 #### Tables and images
 
@@ -654,7 +665,7 @@ In both cases, cite the usual form of the reference in the reference list.
 
 ##### Example
 
-MDBA (Murray–Darling Basin Authority) (2019) [ Annual report 2018–19](https://www.mdba.gov.au/publications/mdba-reports/mdba-annual-report), MDBA, Australian Government, accessed 3 February 2020.
+MDBA (Murray–Darling Basin Authority) (2019) [*Annual report 2018–19*](https://www.mdba.gov.au/publications/mdba-reports/mdba-annual-report), MDBA, Australian Government, accessed 3 February 2020.
 
 #### Photographs, illustrations and other works of art
 
@@ -667,7 +678,7 @@ Rule: Creator Full Name (Year) *Title or description of work* [medium], *Webpage
 
 ##### Example
 
-Western Australian Government (n.d.) *Close up of a quokka* [photograph], [ Unique wildlife encounters](https://www.rottnestisland.com/see-and-do/natural-attractions/wildlife-encounters), Rottnest Island website, accessed 6 February 2020.
+Western Australian Government (n.d.) *Close up of a quokka* [photograph], [*Unique wildlife encounters*](https://www.rottnestisland.com/see-and-do/natural-attractions/wildlife-encounters), Rottnest Island website, accessed 6 February 2020.
 
 If you’re writing about a work of art but not using it in your work, cite it in the text using the creator and date.
 
@@ -683,12 +694,12 @@ For blog posts and online newspaper and magazine articles, hyperlink the title. 
 
 #### Post or article with authors listed
 
-Rule: Author A (Day Month Year) ‘Title of article: subtitle of article’, *Name of Blog*,* Newspaper or Magazine*, accessed Day Month Year.
+Rule: Author A (Day Month Year) ‘Title of article: subtitle of article’, *Name of Blog*,*Newspaper or Magazine*, accessed Day Month Year.
 
 ##### Example
 
-- Doman M, Palmer A and Scott N (31 January 2020) ‘[Cracking the code to Steve Smith's batting success](https://www.abc.net.au/news/2019-11-20/the-science-behind-steve-smiths-test-match-batting-technique/11705118)’,*ABC*, accessed 5 February 2020.
-- Peascod S (19 December 2019) ‘[The future of work is learning](https://www.dta.gov.au/blogs/future-work-learning)’,*Digital Transformation Agency blog*, accessed 4 January 2020.
+- Doman M, Palmer A and Scott N (31 January 2020) ‘[Cracking the code to Steve Smith's batting success](https://www.abc.net.au/news/2019-11-20/the-science-behind-steve-smiths-test-match-batting-technique/11705118)’, *ABC*, accessed 5 February 2020.
+- Peascod S (19 December 2019) ‘[The future of work is learning](https://www.dta.gov.au/blogs/future-work-learning)’, *Digital Transformation Agency blog*, accessed 4 January 2020.
 
 #### Post or article with no author listed
 
@@ -698,8 +709,8 @@ Rule: Name of Blog, Newspaper or Magazine (Day Month Year) ‘Title of article: 
 
 ##### Example
 
-- ABC (31 January 2020) ‘[Cracking the code to Steve Smith's batting success](https://www.abc.net.au/news/2019-11-20/the-science-behind-steve-smiths-test-match-batting-technique/11705118)’,*ABC*, accessed 5 February 2020.
-- Facebook for Business (21 April 2019) ‘__Capturing attention in feed: the science behind effective video creative__*Facebook for Business*, accessed 18 November 2019.
+- ABC (31 January 2020) ‘[Cracking the code to Steve Smith's batting success](https://www.abc.net.au/news/2019-11-20/the-science-behind-steve-smiths-test-match-batting-technique/11705118)’, *ABC*, accessed 5 February 2020.
+- Facebook for Business (21 April 2019) ‘[Capturing attention in feed: the science behind effective video creative](https://www.facebook.com/business/news/insights/capturing-attention-feed-video-creative)’,*Facebook for Business*, accessed 18 November 2019.
 
 #### Comment on a blog post
 
@@ -707,9 +718,7 @@ Rule: Author A (Day Month Year) ‘Re: Title of post: subtitle of post’ [blog 
 
 ##### Example
 
-Mullins P (1 January 2020) ‘Re: [ Capturing attention in feed: the science behind effective video creative](https://www.facebook.com/business/news/insights/capturing-attention-feed-video-creative)’ [blog comment], 
-
-*Facebook for Business*, accessed 4 February 2020.
+Mullins P (1 January 2020) ‘Re: [Capturing attention in feed: the science behind effective video creative](https://www.facebook.com/business/news/insights/capturing-attention-feed-video-creative)’ [blog comment], *Facebook for Business*, accessed 4 February 2020.
 
 ### Social media and forum posts
 
@@ -754,7 +763,7 @@ Rule: Interviewer I (Day Month Year) *Interviewer Full Name interviews Interview
 
 ##### Example
 
-Sales L (28 September 2018) [ Leigh Sales interviews Justin Milne: Justin Milne resigns as ABC chairman](https://www.abc.net.au/news/2018-09-27/justin-milne-resigns-as-abc-chairman/10314302) [interview transcript], ABC, accessed 4 February 2020.
+Sales L (28 September 2018) [*Leigh Sales interviews Justin Milne: Justin Milne resigns as ABC chairman*](https://www.abc.net.au/news/2018-09-27/justin-milne-resigns-as-abc-chairman/10314302) [interview transcript], ABC, accessed 4 February 2020.
 
 #### Audio or video file of an interview
 
@@ -762,7 +771,7 @@ Rule: Interviewer I (Day Month Year) *Interviewer Full Name interviews Interview
 
 ##### Example
 
-Sales L (20 December 2019) [ Leigh Sale interviews Dudley Harrington: Dudley Harrington on the Queensland floods](https://www.abc.net.au/news/2019-02-11/farmer-dudley-harrington-on-the-queensland-floods/10801404) [interview video file], ABC, accessed 4 March 2020.
+Sales L (20 December 2019) [*Leigh Sale interviews Dudley Harrington: Dudley Harrington on the Queensland floods*](https://www.abc.net.au/news/2019-02-11/farmer-dudley-harrington-on-the-queensland-floods/10801404) [interview video file], ABC, accessed 4 March 2020.
 
 ### Journal articles
 
@@ -774,9 +783,9 @@ Rule: Author A (Year) ‘Title of article: subtitle of article’, *Name of Jour
 
 ##### Example
 
-Kelleher T (2009) ‘Conversational voice’,* Journal of Communication*, 59(1):172–188, doi:10.1111/j.1460-2466.2008.01410.x.
+Kelleher T (2009) ‘Conversational voice’,*Journal of Communication*, 59(1):172–188, doi:10.1111/j.1460-2466.2008.01410.x.
 
-Kelleher T and Edmunds M (2009) ‘Conversational voice’,* Journal of Communication*, 59(1):172–188, doi:10.1111/j.1460-2466.2008.01410.x.
+Kelleher T and Edmunds M (2009) ‘Conversational voice’,*Journal of Communication*, 59(1):172–188, doi:10.1111/j.1460-2466.2008.01410.x.
 
 #### Journal article accepted for publishing but not yet published
 
@@ -784,7 +793,7 @@ Rule: Author A (in press) ‘Title of article: subtitle of article’, *Name of 
 
 ##### Example
 
-Kelleher T (in press) ‘Conversational voice’,* Journal of Communication*.
+Kelleher T (in press) ‘Conversational voice’,*Journal of Communication*.
 
 For journal articles not yet published, use ‘in press’ instead of the year in the in-text citation.
 
@@ -802,9 +811,7 @@ Rule: Author A (Day Month Year) ‘Title of paper: subtitle of paper’ [confere
 
 ##### Example
 
-Blunden J (9–12 May 2007) ‘[ Plain or just dull? Collateral damage from the Plain English movement](https://www.iped-editors.org/wp-content/uploads/2021/06/Jennifer-Blunden-Plain-or-just-dull.pdf)’ [conference presentation], 
-
-*3rd IPEd Conference*, Tasmania, accessed 3 May 2019.
+Blunden J (9–12 May 2007) ‘[Plain or just dull? Collateral damage from the Plain English movement](https://www.iped-editors.org/wp-content/uploads/2021/06/Jennifer-Blunden-Plain-or-just-dull.pdf)’ [conference presentation], *3rd IPEd Conference*, Tasmania, accessed 3 May 2019.
 
 #### Unpublished conference paper
 
@@ -820,20 +827,21 @@ If the thesis is online, hyperlink the title and include an accessed date. If yo
 
 #### Published thesis
 
-Rule: Author A (Year) *Title of thesis: subtitle of thesis *[type of thesis], Name of University, accessed Day Month Year.
+Rule: Author A (Year) *Title of thesis: subtitle of thesis*[type of thesis], Name of University, accessed Day Month Year.
 
 ##### Example
 
-Rahman M (2013) [ Using authentic materials in the writing classes: tertiary level scenario](http://dspace.bracu.ac.bd/xmlui/handle/10361/3112) [master’s thesis], BRAC University, accessed 5 May 2017.
+Rahman M (2013) [*Using authentic materials in the writing classes: tertiary level scenario*](http://dspace.bracu.ac.bd/xmlui/handle/10361/3112) [master’s thesis], BRAC University, accessed 5 May 2017.
 
 #### Unpublished thesis
 
-Rule: Author A (Year) *Title of thesis: subtitle of thesis *[unpublished type of thesis], Name of University, accessed Day Month Year.
+Rule: Author A (Year) *Title of thesis: subtitle of thesis*[unpublished type of thesis], Name of University, accessed Day Month Year.
 
 ##### Example
 
-Rahman M (2013) [ Using authentic materials in the writing classes: tertiary level scenario](http://dspace.bracu.ac.bd/xmlui/handle/10361/3112) [unpublished master’s thesis], BRAC University, accessed 5 May 2017.
+Rahman M (2013) [*Using authentic materials in the writing classes: tertiary level scenario*](http://dspace.bracu.ac.bd/xmlui/handle/10361/3112) [unpublished master’s thesis], BRAC University, accessed 5 May 2017.
 
+## Give particulars for books, formal publications and printed documents
 
 ### Books
 
@@ -848,7 +856,7 @@ Rule: Author A (Year) *Title of book: subtitle of book*, Name of Publisher, Plac
 ##### Example
 
 - Eades D (2013)*Aboriginal ways of using English*, Aboriginal Studies Press, Canberra.
-- Strunk W and White EB (2000) *The elements of style*, 4th edn, Longman, New York.
+- Strunk W and White EB (2000) *The elements of style*, 4th edn, Longman, New York.
 
 #### Book with organisation as author
 
@@ -898,7 +906,7 @@ Laurence S and Margolis E (2005) ‘Number and natural language’, in Carruther
 
 #### Book with author and editor listed
 
-Rule: Author A (Year) *Title of book: subtitle of book *(Editor E ed), Name of Publisher, Place of Publication.
+Rule: Author A (Year) *Title of book: subtitle of book*(Editor E ed), Name of Publisher, Place of Publication.
 
 ##### Example
 
@@ -912,7 +920,7 @@ Rule: Author A (Year) *English title of book: subtitle of book* (Translator T tr
 
 Backman F (2015) *A man called Ove: a novel* (Koch H trans), Washington Square Press, New York.
 
-Backman F and Hall F (2015) *A man called Ove: a novel *(Koch H and Zimmer K trans), Washington Square Press, New York.
+Backman F and Hall F (2015) *A man called Ove: a novel*(Koch H and Zimmer K trans), Washington Square Press, New York.
 
 For translated works, use the original author’s name in the in-text citation.
 
@@ -959,32 +967,4 @@ Rule: Author A (Year) *Title of publication: subtitle of publication* [printed t
 
 #### Example
 
-Department of Industry, Innovation and Science (2017)* Business *[printed brochure], Australian Government, Canberra.
-
-
-The digital edition makes the following changes to the sixth edition's guidance:
-
-- ‘et al.’ for more than 2 authors
-- ‘and’ instead of the ampersand (&) for names inside and outside parentheses
-- a colon instead of a comma between the year and page numbers
-- no comma between the surname and initials in the reference list
-- the title is hyperlinked but the URL is not included in digital references.
-
-The December 2020 release:
-
-- added guidance for citing an entire website
-- amended guidance about citing a place of publication for a book
-- adjusted guidance on citing material produced by the Australian Bureau of Statistics (ABS), in line with ABS updates.
-
-
-### References
-
-American Psychological Association (2020) *Publication manual of the American Psychological Association*,* *7th edn, American Psychological Association, Washington DC.
-
-Oxford University Press (2016) *New Oxford style manual*, Oxford University Press.
-
-University of Chicago (2024) *Chicago manual of style, *18th edn, University of Chicago Press.
-
-### Last updated
-
-This page was updated Thursday 4 June 2026.
+Department of Industry, Innovation and Science (2017)*Business*[printed brochure], Australian Government, Canberra.

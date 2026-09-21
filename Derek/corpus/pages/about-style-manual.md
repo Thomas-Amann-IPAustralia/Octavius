@@ -1,3 +1,5 @@
+# About the Style Manual
+
 Use the Style Manual when creating Australian Government content.
 
 The *Australian Government Style Manual* (Style Manual) is the definitive resource for Australian Government content.
@@ -6,13 +8,13 @@ It helps you put people’s needs at the centre of the content you create. It’
 
 The Style Manual is produced and published by the [Australian Public Service Commission](https://www.apsc.gov.au/).
 
-The need for an Australian Government style manual
+## The need for an Australian Government style manual
 
 People interact with government through content. This includes text on webpages, forms, videos or images.
 
 A consistent approach to content makes it simpler and faster for people to get things done with government.
 
-When to use the Style Manual
+## When to use the Style Manual
 
 Use this manual to write, edit, review, or approve Australian Government content. The guidance applies to all government information, including:
 
@@ -24,7 +26,7 @@ Use this manual to write, edit, review, or approve Australian Government content
 - technical and specialist content
 - government communications.
 
-User research and continuous improvement
+## User research and continuous improvement
 
 The Style Manual team continues to test the manual with people who create government content.
 
@@ -37,7 +39,7 @@ We will base further updates on:
 
 We welcome your thoughts on the Style Manual. You can give us feedback by filling out the feedback form that you’ll find on every page.
 
-Publication history
+## Publication history
 
 The Style Manual began with the work of 2 committees established over 60 years ago:
 
@@ -59,7 +61,3 @@ That report also recommended the establishment of a parliamentary Joint Committe
 - Fifth edition published 1994 (reprinted with corrections 1995, 1996 and 1998)
 - Sixth edition published 2002 (reprinted with corrections 2003, reprinted 2005 [twice], 2006, 2007 [twice], 2008, 2010, 2011, 2013, 2014)
 - Digital edition published 2020 as a minimum viable product with ongoing updates.
-
-### Last updated
-
-This page was updated Tuesday 7 April 2026.

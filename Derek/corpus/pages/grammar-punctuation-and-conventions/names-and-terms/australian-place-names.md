@@ -1,8 +1,8 @@
+# Australian place names
+
 Spell official place names correctly. Follow style rules so people recognise names for other public places. Use standard shortened forms in addresses.
 
-
-
-Check official place names and style them correctly
+## Check official place names and style them correctly
 
 Using official Australian place names helps us all communicate more clearly. You can check the spelling of a place name using the [Australian Place Names dataset](https://placenames.fsdf.org.au/).
 
@@ -16,7 +16,7 @@ Place names reflect culture at various points throughout history. Because of thi
 
 There are many First Nations naming systems across Australia. These were in place before the official national system and continue today.
 
-Many names from First Nations languages have become official names, used by all Australians. There are also many that have not. Consult directly with relevant communities about conventions for [naming and spelling in specific First Nations languages](/node/179).
+Many names from First Nations languages have become official names, used by all Australians. There are also many that have not. Consult directly with relevant communities about conventions for [naming and spelling in specific First Nations languages](https://www.stylemanual.gov.au/node/179).
 
 ### Spelling and capitalisation
 
@@ -62,7 +62,7 @@ When writing official dual names, use a spaced forward slash to separate the 2 p
 - Karlu Karlu / Devils Marbles
 - Kunanyi / Mount Wellington
 
-Use capitals for names of places, roads and streets
+## Use capitals for names of places, roads and streets
 
 Words that don’t usually need an initial capital have one when they are part of a place name.
 
@@ -80,9 +80,9 @@ The names of roads, streets and other thoroughfares also take an initial capital
 - Wickham Terrace
 - Monaro Highway
 
-This is a similar rule to style for proper names of mountains, valleys, bays, islands and other [topographic features](/node/135).
+This is a similar rule to style for proper names of mountains, valleys, bays, islands and other [topographic features](https://www.stylemanual.gov.au/node/135).
 
-Use shortened forms for addresses
+## Use shortened forms for addresses
 
 Addresses usually have abbreviations and contractions. Do not add punctuation marks to these.
 
@@ -90,7 +90,6 @@ Addresses usually have abbreviations and contractions. Do not add punctuation ma
 
 - 10 Bendemeer Blvd
 - PO Box 1
-
 RMB 99
 
 Common abbreviations include:
@@ -117,7 +116,6 @@ When addressing a letter, write the last line in capitals without punctuation or
 #### Example
 
 11 Banks Av
-
 WAGGA WAGGA NSW 2650
 
 If you are sending mail overseas, spell out all names in the address in full to avoid confusion.
@@ -126,7 +124,7 @@ If you are sending mail overseas, spell out all names in the address in full to 
 
 ‘SA‘ could refer to South Australia or to South Africa.
 
-Write the names of buildings, structures and public places with an initial capital
+## Write the names of buildings, structures and public places with an initial capital
 
 Names of buildings, structures and public places have initial capitals. Write generic and plural terms in lower case.
 
@@ -143,7 +141,7 @@ Use initial capitals for the names of private properties.
 - Myocum Downs
 - Tocal Homestead
 
-Shorten names for states and territories in 4 situations
+## Shorten names for states and territories in 4 situations
 
 Spell out the names of Australian states and territories in formal content.
 
@@ -177,53 +175,3 @@ States and territories are generally listed in an order when more than one is me
 - NT
 
 Other orders might be more suitable for some content. For example, content might include a list of states and territories ordered by total annual rainfall or number of enrolled voters. Use the order that fits with context and helps people understand your content.
-
-Release notes
-
-The digital edition includes new information about dual place names. It links to the Australian place names dataset as the authoritative source for correct spelling and capitalisation for official place names.
-
-The digital edition updates punctuation style for shortened forms.
-
-- Consistent with the sixth edition, it does not use full stops with
-[acronyms or initialisms](/node/190), or[contractions](/node/191). - It removes the requirement to use full stops with abbreviations of state names (as with other
-[non-Latin abbreviations](/node/184)).
-
-This is a change from the sixth edition, which recommended using a full stop with ‘Vic’ and ‘Tas’. It is consistent with the digital edition’s guidance for shortened forms. Australian corpus data informed this change.
-
-The Content Guide provided general advice but no specific details on Australian place names.
-
-About this page
-
-### References
-
-ACT Government (n.d.) [ Place names](https://www.planning.act.gov.au/community/place-names), Environment and Sustainable Development Directorate – Planning website, accessed 23 December 2024.
-
-Australia Post (n.d.) [ Suburb index](https://auspost.com.au/postcode/suburb-index/), Australia Post website, accessed 29 May 2020.
-
-Australian Bureau of Statistics (19 June 2025) [ Australia's population grew by 1.7 per cent](https://www.abs.gov.au/media-centre/media-releases/australias-population-grew-17per-cent/) [media release], ABS, accessed 28 July 2025.
-
-Department of Climate Change, Energy, the Environment and Water (n.d.) ‘[Heritage places and lists](https://www.dcceew.gov.au/parks-heritage/heritage/heritage-places)’, *Heritage*, DCCEEW website, accessed 22 December 2022.
-
-Northern Territory Government (2017) *Place Names Committee*, Place Names Committee website, accessed 10 November 2022.
-
-NSW Government (2016) [ Geographical Names Board](https://www.gnb.nsw.gov.au/), Geographical Names Board website, accessed 10 November 2022.
-
-Permanent Committee on Place Names (2016) [ Principles for the consistent use of place names: includes principles for the use of Aboriginal and Torres Strait Islander place names and dual naming depiction principles](https://www.icsm.gov.au/publications/principles-consistent-use-place-names), Intergovernmental Committee on Surveying and Mapping, accessed 29 May 2020.
-
-Permanent Committee on Place Names and Geoscience Australia (2012) [ Gazetteer of Australia](https://www.icsm.gov.au/education/gazetteer-australia-0), Intergovernmental Committee on Surveying and Mapping, accessed 29 May 2020.
-
-Queensland Government (2022) [ Place names](https://www.qld.gov.au/environment/land/title/place-names), Queensland Government website, accessed 10 November 2022.
-
-South Australian Government (2022) [ Naming places](https://www.sa.gov.au/topics/housing/planning-and-property/suburb-road-and-place-names/place-names-search), SA.GOV.AU, accessed 10 November 2022.
-
-Standards Australia, [ Rural and urban addressing](https://www.standards.org.au/standards-catalogue/sa-snz/communication/it-004/as-slash-nzs--4819-2011), AS/NZS 4819:2011.
-
-Tasmanian Government (n.d.) [ Place naming (nomenclature) in Tasmania](https://nre.tas.gov.au/land-tasmania/place-naming-in-tasmania), Department of Natural Resources and Environment website, accessed 10 November 2022.
-
-Victorian Government (n.d.) [ Place naming](https://www.land.vic.gov.au/place-naming), Land Use Victoria website, accessed 10 November 2022.
-
-Western Australian Government (n.d.) [ WA geographic names](https://www0.landgate.wa.gov.au/maps-and-imagery/wa-geographic-names), Landgate website, accessed 10 November 2022.
-
-### Last updated
-
-This page was updated Monday 28 July 2025.

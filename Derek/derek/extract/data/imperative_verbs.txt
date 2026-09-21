@@ -4,16 +4,35 @@
 # imperative set. Deterministic and inspectable by design: no POS tagger runs
 # during extraction, because tagger output varies across model versions and
 # would make candidate identity unstable.
+#
+# EXTENDED 2026-09-21 after an audit against source pages found 65 imperative
+# headings filed as sections — a ~10% recall gap — 50 of them because the verb
+# was absent here (docs/06-extraction-audit.md).
+#
+# KNOWN LIMITATION: a hand-curated list cannot be complete, and every verb the
+# Style Manual uses that is absent here silently drops a rule. The audit is the
+# only thing that surfaces such a gap. See docs/05-open-questions.md Q8 for the
+# proposed replacement (a version-pinned POS tagger).
 abbreviate
+adapt
 add
+address
+adjust
+aim
 align
+allow
+alphabetise
+alphabetize
 apply
 arrange
 ask
+assess
 avoid
 base
 be
 break
+build
+call
 capitalise
 capitalize
 caption
@@ -21,8 +40,11 @@ change
 check
 choose
 cite
+clarify
 collect
 combine
+complete
+confirm
 consider
 contact
 convert
@@ -30,20 +52,29 @@ create
 define
 describe
 design
+develop
 display
 distinguish
 divide
 do
 double-check
 draft
+draw
 edit
+eliminate
+enable
 end
+engage
 ensure
 expand
 explain
 express
+finalise
+finalize
+find
 follow
 format
+get
 give
 group
 help
@@ -53,20 +84,28 @@ include
 indent
 indicate
 introduce
+involve
 italicise
 italicize
+join
 keep
 know
 label
+learn
 leave
 limit
 link
 list
+maintain
 make
+manage
 mark
 match
 measure
+meet
 mention
+minimise
+minimize
 name
 note
 number
@@ -74,32 +113,49 @@ omit
 order
 organise
 organize
+pay
+pick
 place
 plan
+post
 prefer
 prepare
 present
+protect
 provide
 punctuate
 put
+quantify
+reduce
 refer
 reference
 remove
 repeat
 replace
 report
+respect
+restrict
+reverse
 review
 rewrite
 say
 select
 separate
+sequence
 set
-show
 shorten
+show
+speak
+specify
 spell
+split
 start
 state
+store
+stress
 structure
+support
+take
 tell
 test
 think

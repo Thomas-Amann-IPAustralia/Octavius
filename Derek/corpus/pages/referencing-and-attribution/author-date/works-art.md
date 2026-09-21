@@ -1,6 +1,8 @@
+# Works of art
+
 Cite works of art using the author–date system. Attribute artwork with correct references to help people find the source and relevant information.
 
-Cite works of art correctly
+## Cite works of art correctly
 
 Works of art include:
 
@@ -24,7 +26,7 @@ You must attribute copyright material you reference. This includes images and wo
 
 Include all the details required by open access licences (read how to [attribute Creative Commons](https://creativecommons.org.au/learn/fact-sheets/attribution/)).
 
-Read the government copyright rules in the [ Australian Government intellectual property manual](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual).
+Read the government copyright rules in the [*Australian Government intellectual property manual*](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual).
 
 ### Prioritise accessibility
 
@@ -47,11 +49,11 @@ Use of the author–date system also improves accessibility. It places reference
 
 Only include images on a page if they meet a real user need.
 
-Prepare short [alt text for images](/node/49) and describe the relevant features of the work of art in the discussion to explain the relevance of the image.
+Prepare short [alt text for images](https://www.stylemanual.gov.au/node/49) and describe the relevant features of the work of art in the discussion to explain the relevance of the image.
 
 WCAG quick reference: [Non-text content – level A](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)
 
-Use italics and sentence case for artwork titles
+## Use italics and sentence case for artwork titles
 
 Italicise the titles of individual artworks and use sentence case.
 
@@ -63,12 +65,11 @@ If the title is in another language, write it in that language. Use the exact sp
 
 ### Example
 
-- Margaret Olley’s
-*Portrait in the mirror*is one of her notable works.*Portrait*is usually included in retrospectives of Olley’s work. - Parliament’s forecourt mosaic is based on Michael Nelson Jagamara’s
-*Possum and Wallaby Dreaming.* - Robinson won the Wynne Prize for
-*Creation landscape*–*earth and sea*.*Creation*is a stunning example of Robinson’s understanding of light. - William Yaxley used mandarin peel in his sculpture,
-*The mangrove monster no. 2.* - Bessie Davidson's
-*Fleurs*(flowers), completed in 1942, was sold in 2017.
+- Margaret Olley’s *Portrait in the mirror* is one of her notable works. *Portrait* is usually included in retrospectives of Olley’s work.
+- Parliament’s forecourt mosaic is based on Michael Nelson Jagamara’s *Possum and Wallaby Dreaming.*
+- Robinson won the Wynne Prize for *Creation landscape*–*earth and sea*. *Creation* is a stunning example of Robinson’s understanding of light.
+- William Yaxley used mandarin peel in his sculpture, *The mangrove monster no. 2.*
+- Bessie Davidson's *Fleurs* (flowers), completed in 1942, was sold in 2017.
 
 ### Other titles of artworks
 
@@ -80,25 +81,23 @@ Jackson Pollock titled his 1952 work *Number 11* before it became known as *Blue
 
 ### Untitled works
 
-Sometimes an artist may choose to call a work ‘Untitled’* *or not give it a name. Write ‘Untitled’ in italics with an initial capital letter. Include the year of production and the artist’s name.
+Sometimes an artist may choose to call a work ‘Untitled’or not give it a name. Write ‘Untitled’ in italics with an initial capital letter. Include the year of production and the artist’s name.
 
 You might not be able to find the year of production. In this case, include the artist’s name and the medium of the work in square brackets.
 
 #### Example
 
-- Hunter’s
-*Untitled*(1968) is part of the permanent collection in the Museum of Contemporary Art. - Dinh’s
-*Untitled*[oil on hardboard] was recently purchased for a private collection.
+- Hunter’s *Untitled* (1968) is part of the permanent collection in the Museum of Contemporary Art.
+- Dinh’s *Untitled* [oil on hardboard] was recently purchased for a private collection.
 
-Use title case and italics for artwork series
+## Use title case and italics for artwork series
 
 An individual artwork is sometimes part of a series. Write the titles of series of unique works of art in italics. Use title case (maximal capitalisation). Write the titles of the individual works of art in the series in italics, too. Capitalise and punctuate according to the original title.
 
 ### Example
 
-- The exhibition included
-*Coffin with flowers and potter*’*s wheel with landscape decoration*, a drawing in the*Potter*series by Arthur Boyd. - Sidney Nolan’s
-*Ned Kelly*series is currently touring Australia. Ned’s sister Margaret features in one of the works,*Quilting the armour*, painted in 1947.
+- The exhibition included *Coffin with flowers and potter*’*s wheel with landscape decoration*, a drawing in the *Potter* series by Arthur Boyd.
+- Sidney Nolan’s *Ned Kelly* series is currently touring Australia. Ned’s sister Margaret features in one of the works, *Quilting the armour*, painted in 1947.
 
 Modern works in a series might not use capital letters at all.
 
@@ -106,7 +105,7 @@ Modern works in a series might not use capital letters at all.
 
 *flight research #6* is part of Rosemary Laing’s *Flight Research* series.
 
-Use the details you have to cite ephemeral and performance art
+## Use the details you have to cite ephemeral and performance art
 
 Ephemeral and performance art can be difficult to cite. The key points to remember are:
 
@@ -116,7 +115,7 @@ Ephemeral and performance art can be difficult to cite. The key points to rememb
 
 ### Example
 
-*Wrapped Coast, One Million Square Feet, Little Bay, Sydney, Australia* was a work undertaken by artists Christo and Jeanne-Claude in 1968 and 1969. They used erosion-control fabric and polypropylene rope to wrap the coastline of Little Bay, where it remained for 10 weeks. Originally called* Packed Coast*, sale of preparatory drawings funded the project.
+*Wrapped Coast, One Million Square Feet, Little Bay, Sydney, Australia* was a work undertaken by artists Christo and Jeanne-Claude in 1968 and 1969. They used erosion-control fabric and polypropylene rope to wrap the coastline of Little Bay, where it remained for 10 weeks. Originally called*Packed Coast*, sale of preparatory drawings funded the project.
 
 It’s important to include detailed information because:
 
@@ -125,14 +124,14 @@ It’s important to include detailed information because:
 - the phrase ‘work of art’ includes the use of social media by the artist to discuss the artwork
 - the term ‘art’ may extend to and include the discussion of a work of art on social media.
 
-Use roman type for exhibition titles
+## Use roman type for exhibition titles
 
 Write the titles of exhibitions in roman type and use the same capitalisation as the museum or gallery uses.
 
 ### Example
 
-- Cai Guo-Qiang’s
-*Heritage*(2013) is part of GOMA’s Water exhibition. - The Asia Pacific Triennial attracts visitors from all over Australia.
+- Cai Guo-Qiang’s *Heritage*(2013) is part of GOMA’s Water exhibition.
+- The Asia Pacific Triennial attracts visitors from all over Australia.
 
 ### Use italics for titles of exhibition catalogues
 
@@ -142,7 +141,7 @@ Treat catalogues as books. Write catalogue titles in italics and use sentence ca
 
 #### Example
 
-The Philip Bacon Galleries produced a catalogue named *Important Australian paintings. *It accompanied the 2011 exhibition of the same name. [The exhibition name is ‘Important Australian Paintings’.]
+The Philip Bacon Galleries produced a catalogue named *Important Australian paintings.*It accompanied the 2011 exhibition of the same name. [The exhibition name is ‘Important Australian Paintings’.]
 
 ### Exhibition catalogues in a reference list
 
@@ -160,13 +159,15 @@ Rule: Author or Gallery Name (Year) *Title of exhibition* [format] [PDF], Day Mo
 
 #### Example
 
-Campbell H (2010) [ Colour, rhythm, design: wood & lino cuts of the 20s and 30s](https://www.artgallery.nsw.gov.au/education/online-catalogues/colour-rhythm-design/) [online exhibition catalogue], 13 March to 11 July 2010, Art Gallery of NSW, Sydney, accessed 23 February 2020.
+Campbell H (2010) [*Colour, rhythm, design: wood & lino cuts of the 20s and 30s*](https://www.artgallery.nsw.gov.au/education/online-catalogues/colour-rhythm-design/) [online exhibition catalogue], 13 March to 11 July 2010, Art Gallery of NSW, Sydney, accessed 23 February 2020.
+
+## Include artwork details in captions
 
 Websites, catalogues, brochures and books often include details of artworks. The style and details may vary depending on the publication and context. Use common abbreviations where possible, and be consistent.
 
 ### Captions with images of artworks in digital content
 
-If your content features an image of an artwork, it must accompanied by a [caption](/node/49) with:
+If your content features an image of an artwork, it must accompanied by a [caption](https://www.stylemanual.gov.au/node/49) with:
 
 - the full details of the work of art
 - copyright and permission information, if necessary.
@@ -175,9 +176,8 @@ Rule: Creator Full Name (Year) *Title or description of work* [medium], Website,
 
 #### Example
 
-- Megan Cope (1982)
-*Quandamooka people*[hand-cast concrete oyster shells, copper slag, foam support structure], RE FORMATION 2019, Australia, © and image courtesy: Megan Cope. - Angela Tiatia (2015)
-*Holding on*[still], Sullivan + Strumpf Gallery, Sydney, © Angela Tiatia, courtesy: Sullivan + Strumpf Gallery.
+- Megan Cope (1982) *Quandamooka people*[hand-cast concrete oyster shells, copper slag, foam support structure], RE FORMATION 2019, Australia, © and image courtesy: Megan Cope.
+- Angela Tiatia (2015) *Holding on*[still], Sullivan + Strumpf Gallery, Sydney, © Angela Tiatia, courtesy: Sullivan + Strumpf Gallery.
 
 ### Captions for artworks in collections, exhibitions and catalogues
 
@@ -201,26 +201,17 @@ Write long captions in this order:
 
 - Sidney Nolan
 *Snake (Rainbow Serpent)*, 1970–72
-
 9.14 x 45.72 metres, ink, dye, and wax crayon on card
-
 Museum of Old and New Art, Hobart, Tasmania
-
-© The Trustees of the Sidney Nolan Trust - Eveline Kotai
+© The Trustees of the Sidney Nolan Trust
+- Eveline Kotai
 *3 x 3 x 3*, 1998–99
-
 Susanne Castleden, printer
-
 stencil
-
 artist’s proof, published state
-
 edition of 39; plus artist’s proofs
-
 sheet 27.0 (h) x 27.0 (w) cm
-
 National Gallery of Australia, Canberra
-
 Gordon Darling Australasian Print Fund
 
 Write short captions in this order:
@@ -236,17 +227,14 @@ Write short captions in this order:
 
 - Nolan S (1970–1972)
 *Snake (Rainbow Serpent)*
-
 wall painting
-
-Museum of Old and New Art, Hobart - Kotai E (1998–1999)
+Museum of Old and New Art, Hobart
+- Kotai E (1998–1999)
 *3 x 3 x 3*
-
 stencil print
-
 National Gallery of Australia, Canberra
 
-Mention the name of the museum or gallery in text
+## Mention the name of the museum or gallery in text
 
 When you write about artwork, include the name of the institution that holds the work in its collection.
 
@@ -254,7 +242,7 @@ When you write about artwork, include the name of the institution that holds the
 
 The Sydney Nolan Gallery in MONA houses *Snake*, a 46-metre artwork by Sydney Nolan.
 
-List artworks after the main reference list
+## List artworks after the main reference list
 
 For in-text citations, include the artist, year of creation and title of the artwork in parentheses. Depending on the type of publication, you might include other details (such as the medium or format).
 
@@ -264,32 +252,5 @@ Rule: Creator C (Year) *Title or description of work* [medium], Website, Exhibit
 
 ### Example
 
-- The collection includes Long (
-*The spirit of the plains*1897). [In-text citation] - Long S (1897)
-*The spirit of the plains*[painting], Queensland Art Gallery, Brisbane, Australia. [Reference list entry]
-
-Release notes
-
-The digital edition includes new information about how to cite works of art. It expands on sixth edition guidance with information about catalogue details; and how to caption artworks in digital content, or for collections, exhibitions and catalogues.
-
-The Content Guide did not have specific information on citing works of art.
-
-About this page
-
-### References
-
-American Psychological Association (2020) ‘10.14: Visual works’, *Publication manual of the American Psychological Association*, 7th edn, American Psychological Association, Washington DC.
-
-Artspace Editors (15 April 2014) ‘[From AbEx to ZKM: Our guide to the acronyms of the art world](https://www.artspace.com/magazine/art_101/art_market/art_world_acronyms-52136)’, *Artspace*, accessed 22 January 2020.
-
-Kennard S and Mitchell B (2019) *Artlines: Issue 4*, GOMA, South Brisbane.
-
-Monash University (2020) ‘[Citing and referencing: ephemera](https://guides.lib.monash.edu/c.php?g=219786&p=1454242)’, *Library guides*, Monash University website, accessed 22 January 2020.
-
-National Gallery of Australia (n.d.) *Text style guide for gallery writers (publications)* [internal style guide], National Gallery of Australia, Canberra.
-
-University of Chicago (2017) ‘14.235 Citing paintings, photographs and sculpture’, *Chicago manual of style*, 17th edn, University of Chicago Press, Chicago.
-
-### Last updated
-
-This page was updated Monday 23 December 2024.
+- The collection includes Long (*The spirit of the plains* 1897). [In-text citation]
+- Long S (1897) *The spirit of the plains*[painting], Queensland Art Gallery, Brisbane, Australia. [Reference list entry]

@@ -1,7 +1,8 @@
+# Mathematical relationships
+
 A mathematical relationship is the connection between sets of numbers or variables. In most content, the connection should be described in words. Only use symbols if there’s a user need. Code symbols correctly to ensure they are accessible.
 
-
-Use words instead of symbols to improve accessibility
+## Use words instead of symbols to improve accessibility
 
 In most content, explain mathematical relationships using words instead of symbols.
 
@@ -24,7 +25,7 @@ In all mathematical expressions, [write numbers as numerals](https://www.stylema
 - We can prove that 0 ≠ 1.
 - We can prove that zero does not equal one.
 
-Use symbols when user research supports their use
+## Use symbols when user research supports their use
 
 Only use mathematical symbols in general content if user research shows they are appropriate for your users and for the type of content.
 
@@ -51,7 +52,7 @@ Don’t use punctuation marks (such as a dash) instead of a symbol.
 
 Not all the symbols on your keyboard are coded correctly. It is better to insert a symbol using its Unicode character or Word’s Insert>Symbol command.
 
-You will find other codes, such as HTML entities, in the table, ‘[Codes for mathematical symbols](#codes)’.
+You will find other codes, such as HTML entities, in the table, ‘Codes for mathematical symbols’.
 
 #### Correct
 
@@ -71,7 +72,7 @@ In non-technical writing however, it is acceptable to use the terms ‘plus sign
 
 ### Don’t use a symbol or a space for ratios
 
-Ratios don’t use a symbol, unlike mathematical operators. Ratios use a punctuation mark instead: the [colon](/node/104).
+Ratios don’t use a symbol, unlike mathematical operators. Ratios use a punctuation mark instead: the [colon](https://www.stylemanual.gov.au/node/104).
 
 Ratios don’t have a space around the colon.
 
@@ -94,15 +95,22 @@ Unless they are coded correctly, symbols and superscript may be inaccessible for
 
 Insert symbols and superscript with tools such as:
 
-[Unicode](https://home.unicode.org/)[LaTeX](https://www.latex-project.org/)[Mathematical Markup Language](https://www.w3.org/TR/MathML3/)(MathML).
+- [Unicode](https://home.unicode.org/)
+- [LaTeX](https://www.latex-project.org/)
+- [Mathematical Markup Language](https://www.w3.org/TR/MathML3/) (MathML).
 
 These tools make mathematical equations and symbols accessible, including for screen readers.
 
 Ensure both symbols and superscript can be enlarged without loss of content or functionality. Don’t use images of symbols or superscript.
 
-**Note on coding:** the Style Manual does not use MathML or LaTeX for this page. Agencies working with a lot of mathematical and scientific content will likely use these tools. Our aim is to help government writers of general content create accessible mathematical content using the codes in the table: [Codes for mathematical symbols](#codes).
+**Note on coding:** the Style Manual does not use MathML or LaTeX for this page. Agencies working with a lot of mathematical and scientific content will likely use these tools. Our aim is to help government writers of general content create accessible mathematical content using the codes in the table: Codes for mathematical symbols.
 
 Resources:
+
+- [W3C math home](https://www.w3.org/Math/)
+- [Creating accessible math with MathML](http://aem.cast.org/creating/creating-accessible-math.html)
+- [An introduction to LaTeX](https://www.latex-project.org/about/)
+- [LaTeX & MathML](https://sbctc.instructure.com/courses/1698678/pages/latex-and-mathml)
 
 WCAG quick reference: [1.3.1 Info and relationships – level A](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)
 
@@ -112,7 +120,7 @@ Use the plus symbol (+) on your keyboard; it is coded correctly. You can also us
 
 To show addition, use [non-breaking spaces](https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/numbers-and-measurements/mathematical-relationships#use_a_nonbreaking_space_to_keep_characters_and_symbols_together) around the plus symbol.
 
-To show a positive value, write the number after the plus symbol without a space. Here, the plus symbol is not working as an operator, it is [modifying the number](#modify).
+To show a positive value, write the number after the plus symbol without a space. Here, the plus symbol is not working as an operator, it is modifying the number.
 
 #### Correct
 
@@ -142,7 +150,7 @@ To show subtraction, use [non-breaking spaces](https://www.stylemanual.gov.au/gr
 
 To show a negative value, write the number after the minus symbol without a space.
 
-Here, the minus sign is not working as an operator, it is [modifying the number](#modify).
+Here, the minus sign is not working as an operator, it is modifying the number.
 
 #### Correct
 
@@ -181,11 +189,11 @@ The Unicode characters are:
 
 #### Example
 
-- (
-*a + b*) ÷ (*x + y*) [Division symbol with non-breaking spaces] - (
-*a + b*)∕(*x + y*) [Division slash, unspaced] - (
-*a + b*) ∕ (*x + y*) [Division slash with narrow no-break spaces] - (
-*a + b*) ∕ (*x + y*) [Division slash with thin spaces] - The letters in the examples are called ‘variables’. A variable stands for an unknown number. Write variables in italics. Do not italicise other elements.
+- (*a + b*) ÷ (*x + y*) [Division symbol with non-breaking spaces]
+- (*a + b*)∕(*x + y*) [Division slash, unspaced]
+- (*a + b*) ∕ (*x + y*) [Division slash with narrow no-break spaces]
+- (*a + b*) ∕ (*x + y*) [Division slash with thin spaces]
+- The letters in the examples are called ‘variables’. A variable stands for an unknown number. Write variables in italics. Do not italicise other elements.
 
 ### Multiplication
 
@@ -203,14 +211,12 @@ Programming languages and Excel use the asterisk (*) for multiplication. The ast
 
 #### Write this
 
-- (
-*a + b*) × (*x + y*) [Multiplication symbol with non-breaking spaces]
+- (*a + b*) × (*x + y*) [Multiplication symbol with non-breaking spaces]
 
 #### Not this
 
-- (
-*a + b*) · (*x + y*) [Multiplication dot] - (
-*a + b*) * (*x + y*) [Asterisk]
+- (*a + b*) · (*x + y*) [Multiplication dot]
+- (*a + b*) * (*x + y*) [Asterisk]
 
 ### ‘Greater than’ and ‘less than’
 
@@ -270,15 +276,15 @@ In most content, it is better to use words to avoid confusion: ‘less than 6.74
 - The authors removed an outlier based on a Body Mass Index of <13 and >97.
 - Only use petty cash for amounts <$100.
 
-Use a non-breaking space to keep characters and symbols together
+## Use a non-breaking space to keep characters and symbols together
 
 Insert a non-breaking space between numbers, letters and the symbol for an operator or a relation. A non-breaking space means that line breaks won’t separate a character from its symbol.
 
 You can insert a non-breaking space using the Unicode character U+00A0.
 
-In HTML, use the entity to insert a non-breaking space. You can also use the keyboard shortcut Ctrl+Shift+Spacebar in Word.
+In HTML, use the entity &nbsp; to insert a non-breaking space. You can also use the keyboard shortcut Ctrl+Shift+Spacebar in Word.
 
-Don’t use a space if a symbol modifies a value
+## Don’t use a space if a symbol modifies a value
 
 Symbols that modify a value rather than show an operation or a relationship, do not need a space.
 
@@ -298,7 +304,7 @@ To avoid confusion in sentences, it is usually better to use words not symbols.
 
 - The balance is −$10.
 
-Use the correct style for equations
+## Use the correct style for equations
 
 An equation is a statement or question consisting of 2 mathematical expressions linked by an equals symbol (=).
 
@@ -313,12 +319,14 @@ There is no space between a character and its superscript or subscript.
 #### Correct
 
 - 10 + 1 = 11 [Equation with non-breaking spaces around plus and equals]
-*x*×a*x*=b*x*a+[The index law of multiplication – no space between the variable and superscript exponent]b*x*=n*x*n-1+*x*n-2[Fibonacci sequence written as a rule – no space between the variable and the subscripts showing the variable’s sequence]
+- *xa* × *xb* = *xa*+*b* [The index law of multiplication – no space between the variable and superscript exponent]
+- *xn* = *xn*-1 + *xn*-2 [Fibonacci sequence written as a rule – no space between the variable and the subscripts showing the variable’s sequence]
 
 #### Incorrect
 
 - 10+1=11 [With no non-breaking spaces around plus and equals]
-*x*×a*x*=b*x*a+[Variable and superscripts are spaced]b*x*=n*x*n-1+*x*n-2[Variable and subscripts are spaced]
+- *x a* × *x b* = *x* *a*+*b* [Variable and superscripts are spaced]
+- *x* *n* = *x* *n*-1 + *x* *n*-2 [Variable and subscripts are spaced]
 
 ### Set equations as block quotations
 
@@ -334,8 +342,7 @@ Don’t introduce the equation with a colon, but do use other sentence punctuati
 
 In geometrical optics, Newton’s formula for focal length is
 
-
-f= √xy
+> *f* = √*xy*
 
 where *f* is focal length, *x* is object distance and *y* is image distance.
 
@@ -345,84 +352,17 @@ When writing mathematical expressions in Word documents, consider using [Word’
 
 The equation editor in the most recent versions of Word also allows you to create and edit [linear format equations](https://support.microsoft.com/en-us/office/linear-format-equations-using-unicodemath-and-latex-in-word-2e00618d-b1fd-49d8-8cb4-8d17f25754f8).
 
-| Symbol | Name | Unicode | HTML entity | HTML decimal code | HTML hex code | Word: Insert>Symbol>More Symbols>Subset |
-|---|---|---|---|---|---|---|
-| + | plus (addition) | U+002B | + | + | + | Basic Latin |
-| − | minus (subtraction) | U+2212 | − | − | − | Mathematical Operators |
-| × | multiplication | U+00D7 | × | × | × | Latin-1 Supplement |
-| ÷ | division | U+00F7 | ÷ | ÷ | ÷ | Latin-1 Supplement |
-| ∕ | division slash | U+2215 | n/a | ∕ | ∕ | Mathematical Operators |
-| = | equals | U+003D | = | = | = | Basic Latin |
-| ≠ | not equal to | U+003E | ≠ | ≠ | ≠ | Mathematical Operators |
-| > | greater than | U+2215 | > | > | > | Basic Latin |
-| < | less than | U+003C | < | < | < | Basic Latin |
-| ≥ | greater than or equal to | U+2265 | ≥ | ≥ | ≥ | Mathematical Operators |
-| ≤ | less than or equal to | U+2264 | ≤ | ≤ | ≤ | Mathematical Operators |
-
-Release notes
-
-The digital edition revises guidance on the expression of mathematical relationships. It deviates from advice in the sixth edition in several instances.
-
-The digital edition recommends using words rather than symbols as the default choice, but allows symbols for complex mathematical relationships and where there’s a user need. The sixth edition advised words were an option for non-exact mathematical relationships.
-
-Unlike the sixth edition, the digital edition advises against using the en dash for a minus symbol and includes advice about division symbols.
-
-The digital edition expands on the sixth edition guidance about non-breaking spaces. It adds guidance about equations and their formatting and mentions Word’s equation editor tool.
-
-The digital edition includes coding and accessibility guidance and features a table showing codes for mathematical symbols.
-
-The Content Guide did not cover mathematical relationships.
-
-About this page
-
-### Evidence
-
-American Psychological Association (2020) ‘Statistical and mathematical copy’, *Publication manual of the American Psychological Association*, 7th edn, American Psychological Association, Washington DC.
-
-Barstow C and Rothberg M (2004) ‘[1.11 Mathematics](https://www.imsglobal.org/accessibility/accessiblevers/sec11.html)’, *IMS guidelines for developing accessible learning applications*, IMS Global Learning Consortium website, accessed 25 March 2022.
-
-Biotext Pty Ltd & Macquarie University (2021) ‘Mathematical operators’ [paywall], *Australian manual of style*, AMOS website, accessed 25 January 2023.
-
-Oxford University Press (2016) ’14.6: Mathematics’, *New Oxford style manual, Oxford University Press, Oxford.*
-
-The Unicode Consortium (2023) [ Unicode 15.0 character code charts](https://www.unicode.org/charts/), Unicode website, accessed 28 February 2023.
-
-University of Chicago (2017) ’12.9: Mathematical characters’, *Chicago manual of style*, 17th edn, University of Chicago Press, Chicago.
-
-### References
-
-American Mathematical Society, LaTeX Project (2020) [ User’s guide for the amsmath package (version 2.1) [PDF 443 KB]](http://www.ams.org/arc/tex/amsmath/amsldoc.pdf), American Mathematical Society, LaTeX 3 Project, accessed 25 March 2022.
-
-Ausbrooks R, Buswell S, Carlisle D, Chavchanidze G, Dalmas S, Devitt S, Diaz A, Dooley S, Hunter R, Ion P, Kohlhase M, Lazrek A, Libbrecht P, Miller B, Miner R, Rowley C, Sargent M, Smith B, Soiffer N, Sutor R and Watt S (2014) ‘[Mathematical Markup Language (MathML) version 3.0 2nd edition](https://www.w3.org/TR/MathML3/)’, *W3C recommendation*, W3C website, accessed 25 March 2022.
-
-Biotext Pty Ltd & Macquarie University (2021) ‘Symbols in mathematics’ [paywall], *Australian manual of style*, AMOS website, accessed 23 March 2022.
-
-Bohman P (20 January 2014) ‘[Why don’t screen readers always read what’s on the screen? Part 1: punctuation and typographic symbols](https://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/)’, *deque blog*, accessed 25 March 2022.
-
-Chris K (2022) [ HTML symbols: HTML icon and entity code list](https://www.freecodecamp.org/news/html-symbols-html-icon-and-entity-code-list/), freeCodeCamp website, accessed 3 August 2022.
-
-GOV.UK (2016) ‘[A-to-Z: numbers](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#m)’, *Style guide*, GOV.UK, accessed 25 March 2022.
-
-Hendrie G et al (2017) ‘The CSIRO Healthy Diet Score: an online survey to estimate compliance with the Australian Dietary Guidelines’, *Nutrients*, 9(1):47, doi:10.3390/nu9010047.
-
-Microsoft Corporation (2023) [ Keyboard shortcuts in Word: insert international characters](https://support.office.com/en-us/article/keyboard-shortcuts-in-word-95ef89dd-7142-4b50-afb2-f762f663ceb2#bkmk_languageswin), Microsoft website, accessed 13 February 2023.
-
-The Daisy Consortium (2023) ‘[MathML](http://kb.daisy.org/publishing/docs/html/mathml.html)’, *Daisy accessible publishing knowledge base*, The Daisy Consortium website, accessed 28 February 2023.
-
-The LaTeX Project (n.d.) [ An introduction to LaTeX](https://www.latex-project.org/about/), The LaTeX Project website, accessed 25 January 2023.
-
-The Unicode Consortium (2023) ‘[Fonts and keyboards’](https://www.unicode.org/faq/font_keyboard.html), *Frequently asked questions*, Unicode website, accessed 28 January 2023.
-
-Tuke H (2021) ‘[How special characters and symbols affect screen reader accessibility](https://business.scope.org.uk/article/accessibility-screen-readers-special-characters-and-unicode-symbols)’, *Articles:accessibility*, Scope website, accessed 25 March 2022.
-
-University of Chicago (2017) ’11.2: Unicode’, *Chicago manual of style*, 17th edn, University of Chicago Press, Chicago.
-
-W3Schools (2023) ‘[UTF-8 mathematical operators](https://www.w3schools.com/charsets/ref_utf_math.asp)’, *HTML character sets*, W3Schools website, accessed 20 February 2023.
-
-WHATWG (Web Hypertext Application Technology Working Group) (2023) ‘[4.8.15: MathML](https://html.spec.whatwg.org/multipage/embedded-content-other.html)’, *HTML: living standard*, WHATWG website, accessed 28 February 2023.
-
-White JG (20 April 2020) ‘[The accessibility of mathematical notation on the web and beyond](https://scholarworks.rit.edu/jsesd/vol23/iss1/9/)’, *Journal of Science Education For Students with Disabilities*, 23(1):1–14, doi: 10.14448/jsesd.12.0013, accessed 20 February 2023.
-
-### Last updated
-
-This page was updated Tuesday 26 May 2026.
+| Symbol | Name | Unicode | HTML entity | HTML decimal code | HTML hex code | Word:
+Insert>Symbol>More Symbols>Subset |
+| --- | --- | --- | --- | --- | --- | --- |
+| + | plus (addition) | U+002B | &plus; | &#43; | &#x2b; | Basic Latin |
+| − | minus (subtraction) | U+2212 | &minus; | &#8722; | &#x2212; | Mathematical Operators |
+| × | multiplication | U+00D7 | &times; | &#215; | &#xd7; | Latin-1 Supplement |
+| ÷ | division | U+00F7 | &divide; | &#247; | &#xf7; | Latin-1 Supplement |
+| ∕ | division slash | U+2215 | n/a | &#8725; | &#x2215; | Mathematical Operators |
+| = | equals | U+003D | &equals; | &#61; | &#x3d; | Basic Latin |
+| ≠ | not equal to | U+003E | &ne; | &#8800; | &#x2260; | Mathematical Operators |
+| > | greater than | U+2215 | &gt; | &#62; | &#x3e; | Basic Latin |
+| < | less than | U+003C | &lt; | &#60; | &#x3c; | Basic Latin |
+| ≥ | greater than or equal to | U+2265 | &ge; | &#8805; | &#x2265; | Mathematical Operators |
+| ≤ | less than or equal to | U+2264 | &le; | &#8804; | &#x2264; | Mathematical Operators |

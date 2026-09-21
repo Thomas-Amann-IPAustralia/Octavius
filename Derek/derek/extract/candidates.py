@@ -147,8 +147,9 @@ def classify_heading(title: str) -> tuple[str, str]:
         return CandidateKind.BOILERPLATE, ""
 
     words = _WORD.findall(t)
-    if len(words) < 3:
-        # "Pronouns", "Hyphens" — a topic label, not a statement.
+    if len(words) < 2:
+        # "Pronouns", "Hyphens", "Neurodiversity" — a topic label, not a
+        # statement. A single word cannot carry a verb and an object.
         return CandidateKind.SECTION, ""
 
     if low.startswith(_NEGATIVE_OPENERS):
@@ -219,6 +220,17 @@ def extract_candidates(page_path: str, normalised_text: str) -> list[Candidate]:
     out: list[Candidate] = []
 
     for node in iter_nodes(root):
+        # A level-1 heading is the page title — its subject, not a normative
+        # statement about text. Every rule in the Style Manual sits at h2 or
+        # below. Some page titles read as imperatives ("Make content
+        # accessible", "Apply accessibility principles") and would otherwise
+        # be admitted as rules far too broad to detect.
+        #
+        # This structural exclusion is only safe because heading levels now
+        # come from the DOM (ADR-020); under the old converter, levels could
+        # not be trusted to mean anything.
+        if node.level <= 1:
+            continue
         kind, form = classify_heading(node.title)
         if kind != CandidateKind.RULE:
             continue

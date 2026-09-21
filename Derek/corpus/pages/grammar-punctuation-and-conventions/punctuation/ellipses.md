@@ -1,15 +1,15 @@
+# Ellipses
+
 Ellipses show users that ideas or words are missing from a sentence or a quote. Don’t use ellipses to change the intent of the original source.
 
-
-Show missing words or ideas with ellipses
+## Show missing words or ideas with ellipses
 
 The ellipsis (plural ‘ellipses’) is a character of exactly 3 dots.
 
 Use the ellipsis:
 
 - if you omit words in quoted text
-- to mark an unfinished
-[phrase, clause or sentence](/node/120).
+- to mark an unfinished [phrase, clause or sentence](https://www.stylemanual.gov.au/node/120).
 
 ### Example
 
@@ -34,7 +34,7 @@ You can use a question mark or exclamation mark after an ellipsis if necessary.
 
 I’ve written hundreds of reports: annual reports, white papers …!
 
-If a paragraph or more is omitted from a [block quotation](/node/114), you can place the ellipsis on a line of its own.
+If a paragraph or more is omitted from a [block quotation](https://www.stylemanual.gov.au/node/114), you can place the ellipsis on a line of its own.
 
 ### Example
 
@@ -44,15 +44,15 @@ The review clarified that the Army might have to fight on home ground.
 
 During exercises, ADF personnel were tasked with tracking down enemy troops from the mythical nation of Musoria.
 
-Do not use a string of full stops
+## Do not use a string of full stops
 
 Use the symbol for the ellipsis. Don’t use a string of full stops. Insert it using:
 
 - the unicode character U+2026
-- the HTML code <…>
+- the HTML code <&#8230;>
 - in many software applications, Alt+Ctrl+. or Option;.
 
-Add spaces around ellipses
+## Add spaces around ellipses
 
 Use a single space before and after each ellipsis.
 
@@ -78,7 +78,7 @@ The exception to this rule is if the quote ends in an exclamation mark or questi
 
 He asked, ‘What does the Army do during exercises …?’
 
-Don’t change the original intent of quoted material
+## Don’t change the original intent of quoted material
 
 Use ellipses sparingly. Overusing ellipses can lead to a suspicion that you are misquoting. Don’t leave out important details or change the original intent of the quoted material.
 
@@ -91,35 +91,3 @@ The report is well written, but it needs rewriting now circumstances have change
 The report … needs rewriting … obvious need for more work.
 
 [This version omits a key piece of information: the reason for the work.]
-
-Release notes
-
-The digital edition expands on advice from the Content Guide.
-
-The sixth edition had advice on using ellipsis points to show indecision and incompleteness. This is not included in the digital edition as it’s not relevant to government writing.
-
-The Content Guide had basic advice on using ellipsis points.
-
-About this page
-
-### References
-
-Dixon JC and Bolitho B (2005–2019) *Course notes and exercises: Editing and proofreading for the workplace*, Centre for Continuing Education, Australian National University, Canberra.
-
-Microsoft Corporation (2019) [ Keyboard shortcuts in Word: insert international characters](https://support.office.com/en-us/article/keyboard-shortcuts-in-word-95ef89dd-7142-4b50-afb2-f762f663ceb2#bkmk_languageswin), Microsoft website, accessed 1 December 2019
-
-Murphy EM with Cadman H (2014) *Effective writing: plain English at work*, 2nd edition, Lacuna, 2014.
-
-Owen M (2018) [ How to type accented letters in macOS three different ways](https://appleinsider.com/articles/18/03/16/how-to-type-accented-letters-in-macos-three-different-ways), appleinsider website, accessed 4 December 2019.
-
-Seely J (2001) *Oxford everyday grammar*, Oxford Paperback Reference.
-
-Stilman S (2004) *Grammatically correct*, Writer’s Digest Books, 2004; revised and updated, 2010.
-
-Truss L (2003) *Eats, shoots and leaves: the zero tolerance approach to punctuation*, Profile Books, London, 2003.
-
-The Unicode Consortium (2019) [ Unicode](https://home.unicode.org/), Unicode website, accessed 2 December 2019.
-
-### Last updated
-
-This page was updated Tuesday 19 October 2021.

@@ -1,10 +1,14 @@
+# How to use the Style Manual
+
 How to find what you need in the Style Manual.
+
+## Introducing the Style Manual
 
 Watch this short video for a demonstration of how to use the Style Manual. [Access the transcript here](https://www.stylemanual.gov.au/about-style-manual/how-use-style-manual/video-transcript).
 
-Style Manual basics
+## Style Manual basics
 
-Use the Style Manual to learn how to apply government style to all kinds of content formats. It tells you how to write and edit [user-focused content](/node/76).
+Use the Style Manual to learn how to apply government style to all kinds of content formats. It tells you how to write and edit [user-focused content](https://www.stylemanual.gov.au/node/76).
 
 Guidance on each page helps you understand how to:
 
@@ -15,7 +19,7 @@ You can use the manual for services and products that are designed for end-users
 
 Your organisation might have its own style guide. Check if it is current and refers to the Style Manual.
 
-Style rules and examples
+## Style rules and examples
 
 You’ll find clear rules and examples throughout the manual.
 
@@ -62,7 +66,7 @@ Highlights in example boxes draw attention to the content the rule applies to. L
 
 Some examples are followed by words in square brackets. These words clarify how the example relates to the rule.
 
-Callouts
+## Callouts
 
 Some Style Manual guidance is accompanied by additional highlighted information. These callouts mean you have other obligations to consider, as well as style.
 
@@ -84,11 +88,12 @@ I can understand any information contained in an image.
 
 Fundamentals:
 
-- Add alternative text for all images. For help with writing good alt text: the W3C
-[alt text decision tree.](https://www.w3.org/WAI/tutorials/images/decision-tree/) - Write alternative text that describes the information or function of the image. For help to describe images: the W3C/WAI Web accessibility
-[images tutorial](https://www.w3.org/WAI/tutorials/images/).
+- Add alternative text for all images. For help with writing good alt text: the W3C [alt text decision tree.](https://www.w3.org/WAI/tutorials/images/decision-tree/)
+- Write alternative text that describes the information or function of the image. For help to describe images: the W3C/WAI Web accessibility [images tutorial](https://www.w3.org/WAI/tutorials/images/).
 
 Web Content Accessibility Guidelines success criterion:
+
+[1.1.1 Non-text content – level A](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content).
 
 ### Information management requirements
 
@@ -118,42 +123,3 @@ Publishing Easy Read as a PDF means it may be read online or printed. When you h
 
 - provide clear link text and make sure it looks like a link
 - spell out the URL next to the linked text.
-
-Release notes
-
-The digital Style Manual supersedes the:
-
-*Style manual for authors, editors and printers*(sixth edition, 2002)- Digital Transformation Agency’s Content Guide.
-
-The ‘Release notes’ on Style Manual pages list any departures from the style guidance found in those sources.
-
-Importantly, these notes also briefly describe any major updates made to pages since the manual went Live in 2020.
-
-Sources that the Style Manual relies on
-
-Style Manual guidance is based on evidence.
-
-Evidence includes:
-
-- data on language usage (corpus)
-- user research
-- Australian and international style rules and guidance
-- best practice in accessibility and readability.
-
-Each page has a form so you can give us feedback. We take your feedback into account when working on future releases.
-
-### Evidence
-
-Some Style Manual pages list evidence sources. Evidence refers to authoritative information sources that relate directly to a rule.
-
-### References
-
-Reference lists contain sources that the authors consulted, not only the sources that informed the guidance.
-
-Changelog
-
-Changes to our rules and guidance appear in the Style Manual’s ‘[Changelog](https://www.stylemanual.gov.au/about-style-manual/changelog)’. The Changelog is published quarterly. We also promote major revisions and new content in our monthly newsletter. You can subscribe to the newsletter on the Style Manual homepage.
-
-### Last updated
-
-This page was updated Tuesday 13 February 2024.

@@ -1,3 +1,5 @@
+# Acknowledgements
+
 The Style Manual is the result of the generosity and passion of all our contributors.
 
 We have been privileged to be able to tap into knowledge from people across government and external organisations.
@@ -8,7 +10,7 @@ We value all your contributions – big and small. You’ve helped our holistic 
 
 We’ve done our best to contact everyone involved. We’re sorry if we’ve missed you. If you’d like your details to display below, please contact us at [info@stylemanual.gov.au](mailto:info@stylemanual.gov.au).
 
-## 
+## Governance Board
 
 The Style Manual Governance Board (Governance Board) provides direction and oversight of the Style Manual. The Governance Board:
 
@@ -72,7 +74,7 @@ Matt Goonan, past chair (Digital Transformation Agency)
 
 Sally Harris (Services Australia)
 
-## 
+## Working Group
 
 Style Manual Working Group (Working Group) members are practicing writers, editors and communications specialists working in Australian Government.
 
@@ -192,7 +194,7 @@ Productivity Commission
 
 Kathryn Stewart (Therapeutic Goods Administration)
 
-## 
+## Australian Public Service Commission (APSC) delivery team
 
 ### Live
 
@@ -206,7 +208,7 @@ Shannon Haintz AE, content designer and editor
 
 Clancy Larsen, content designer
 
-## 
+## Digital Transformation Agency delivery teams
 
 ### Beta
 
@@ -276,7 +278,7 @@ Anneke Myers AE, editor (seconded from Department of Parliamentary Services, Han
 
 Leah Cunningham, researcher (Paper Giant)
 
-## 
+## Content partners
 
 Lisa Fuller, lead author (Aboriginal and Torres Strait Islander peoples topic)
 
@@ -332,7 +334,7 @@ Kate Weir, project coordinator (Ethos CRS)
 
 Daniel Stone, digital subject matter expert (Principal Co)
 
-## 
+## Expert reviewers
 
 David Whitbread
 
@@ -354,7 +356,7 @@ Vicki Snowdon AE (Institute of Professional Editors)
 
 Ilona Wallace AE (Institute of Professional Editors)
 
-## 
+## Advisory board
 
 David Whitbread
 
@@ -362,7 +364,7 @@ Sarah Richards (Content Design London)
 
 Institute of Professional Editors
 
-## 
+## Subject matter experts
 
 National Film and Sound Archive of Australia (film archiving and record keeping)
 

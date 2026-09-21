@@ -1,12 +1,14 @@
+# Sentences
+
 Clear sentences in active voice improve readability. Keep sentences short to help people scan content.
 
-Write plain language sentences
+## Write plain language sentences
 
-Standard English sentences are built on [subject–verb–object order](/node/120#a_full_sentence_is_grammatically_complete). This structure forms the basis of plain language writing.
+Standard English sentences are built on [subject–verb–object order](https://www.stylemanual.gov.au/node/120#a_full_sentence_is_grammatically_complete). This structure forms the basis of plain language writing.
 
-Keep sentences to an average of 15 words and no more than 25 words, especially for digital content. Too many words, phrases and clauses affect people’s ability to [scan sentences](/node/60#complex_sentences_are_hard_to_read).
+Keep sentences to an average of 15 words and no more than 25 words, especially for digital content. Too many words, phrases and clauses affect people’s ability to [scan sentences](https://www.stylemanual.gov.au/node/60#complex_sentences_are_hard_to_read).
 
-Sometimes it’s hard to avoid longer sentences – for example, if you have to include a long department name. Sentences over 25 words can usually be broken up using different techniques, like [using lists](/node/56).
+Sometimes it’s hard to avoid longer sentences – for example, if you have to include a long department name. Sentences over 25 words can usually be broken up using different techniques, like [using lists](https://www.stylemanual.gov.au/node/56).
 
 ### Accessibility requirements
 
@@ -22,18 +24,18 @@ Fundamentals:
 
 Web Content Accessibility Guidelines success criterion:
 
-[3.1.5 Reading level – level AAA](https://www.w3.org/WAI/WCAG21/quickref/#reading-level). Level AAA requires a lower secondary education reading level, after removal of proper names and titles ([year 7 or between 12 and 14 years old](/node/62)).
+[3.1.5 Reading level – level AAA](https://www.w3.org/WAI/WCAG21/quickref/#reading-level). Level AAA requires a lower secondary education reading level, after removal of proper names and titles ([year 7 or between 12 and 14 years old](https://www.stylemanual.gov.au/node/62)).
 
-Use active voice
+## Use active voice
 
-Use active rather than [passive voice](/node/120#passive_voice_changes_standard_sentence_order). Active voice helps users understand who is doing what. It can also help people know exactly what their responsibility is.
+Use active rather than [passive voice](https://www.stylemanual.gov.au/node/120#passive_voice_changes_standard_sentence_order). Active voice helps users understand who is doing what. It can also help people know exactly what their responsibility is.
 
 ### Example
 
 - Eligible students can access the subsidy by completing the application. [Active voice]
 - The subsidy can be accessed by completing the application. [Passive voice]
 
-The difference is clearest with [action verbs](/node/128#verbs_describe_an_action_a_state_an_event_or_a_change):
+The difference is clearest with [action verbs](https://www.stylemanual.gov.au/node/128#verbs_describe_an_action_a_state_an_event_or_a_change):
 
 - Active voice: the grammatical subject is performing the action in a sentence.
 - Passive voice: the grammatical subject is undergoing the action.
@@ -43,7 +45,7 @@ The difference is clearest with [action verbs](/node/128#verbs_describe_an_actio
 - Active voice: The student filed the application. [‘The student’ is the grammatical subject, who did the filing. ‘The application’ is the object.]
 - Passive voice: The application was filed by the student. [‘The application’ is the grammatical subject, but did not do the filing.]
 
-Construct positive, unambiguous sentences
+## Construct positive, unambiguous sentences
 
 Words, phrases and sentences can have more than one meaning. Write exactly what you mean and construct your sentences so there is no ambiguity.
 
@@ -77,13 +79,13 @@ It was acceptable …
 
 It was not unacceptable …
 
-Eliminate unnecessary words
+## Eliminate unnecessary words
 
 Make each word work for its place in the sentence. Sentence structure is clearer if each word plays a necessary role. Clear sentences improve readability.
 
 It helps to test the combination to know which words are necessary.
 
-Keep the words that play a critical function in the sentence. Remove all the words except the [subject, verb and object (if applicable)](/node/120#a_full_sentence_is_grammatically_complete).
+Keep the words that play a critical function in the sentence. Remove all the words except the [subject, verb and object (if applicable)](https://www.stylemanual.gov.au/node/120#a_full_sentence_is_grammatically_complete).
 
 Check if the sentence is grammatically correct when you remove the other words.
 
@@ -105,9 +107,9 @@ Our team will happily provide you with any statistics you might be seeking for t
 
 Testing combinations as you write will also help create concise and easily understood headings, fragment lists and descriptive links.
 
-Word combinations affect punctuation, spelling, capitalisation and formatting. For example, there are rules about the [use of commas between adjectives](/node/126#there_is_a_common_order_for_strings_of_adjectives) and the [use of hyphens between adverbs and verbs](/node/105#dont_hyphenate_ing_and_ed_verbs_or_most_ly_adverbs).
+Word combinations affect punctuation, spelling, capitalisation and formatting. For example, there are rules about the [use of commas between adjectives](https://www.stylemanual.gov.au/node/126#there_is_a_common_order_for_strings_of_adjectives) and the [use of hyphens between adverbs and verbs](https://www.stylemanual.gov.au/node/105#dont_hyphenate_ing_and_ed_verbs_or_most_ly_adverbs).
 
-Check guidance about [types of words and their function](/node/203). This guidance relates closely to other style rules in [grammar, punctuation and conventions](/grammar-punctuation-and-conventions).
+Check guidance about [types of words and their function](https://www.stylemanual.gov.au/node/203). This guidance relates closely to other style rules in [grammar, punctuation and conventions](https://www.stylemanual.gov.au/grammar-punctuation-and-conventions).
 
 ### Be precise
 
@@ -131,11 +133,11 @@ If anything doesn’t fit within this framework ...
 
 If there is anything that doesn’t fit within this framework ...
 
-Vary sentence structure
+## Vary sentence structure
 
 Vary your sentence structure to suit the content.
 
-Sentence structures can be [simple, compound or complex](/node/120#sentences_are_simple_compound_or_complex). This depends on the number of clauses they contain and [how clauses work together](/node/143).
+Sentence structures can be [simple, compound or complex](https://www.stylemanual.gov.au/node/120#sentences_are_simple_compound_or_complex). This depends on the number of clauses they contain and [how clauses work together](https://www.stylemanual.gov.au/node/143).
 
 Simple sentence structures are easier to scan. People understand meaning through the order of words in a sentence. A simple sentence construction has fewer parts to take in.
 
@@ -155,9 +157,9 @@ You can, within an hour of applying, delete your application.
 
 [The modifier is inserted into the main clause. This structure is complex and slows down reading.]
 
-Build simple phrases and clauses
+## Build simple phrases and clauses
 
-Sentences consist of [phrases](/node/144) and [clauses](/node/143). Each group of words carries out a different function.
+Sentences consist of [phrases](https://www.stylemanual.gov.au/node/144) and [clauses](https://www.stylemanual.gov.au/node/143). Each group of words carries out a different function.
 
 Phrases and clauses are groups of words that work as nouns, verbs, adjectives, adverbs or prepositions in sentences.
 
@@ -174,7 +176,7 @@ You can build layers of meaning by combining different types of words, phrases a
 
 Some common constructions used in bureaucratic writing are complex and unnecessary. They add words but not meaning.
 
-Instead of bureaucratic language, use [plain language words and terms](/node/55).
+Instead of bureaucratic language, use [plain language words and terms](https://www.stylemanual.gov.au/node/55).
 
 For example, use a verb instead of the noun that relates to the verb. If you use the noun instead, you have to change the verb into the noun and usually add other words.
 
@@ -188,9 +190,9 @@ Please make an application. [‘Application’ is the noun that relates to the v
 
 ### Use fewer than 3 adjectives or nouns at a time
 
-Phrases that combine more than 3 adjectives or nouns are difficult to understand. Rephrase sentences to break up strings of adjectives or [noun trains](/node/122#noun_trains_are_hard_to_understand).
+Phrases that combine more than 3 adjectives or nouns are difficult to understand. Rephrase sentences to break up strings of adjectives or [noun trains](https://www.stylemanual.gov.au/node/122#noun_trains_are_hard_to_understand).
 
-You can often rephrase the string of adjectives or noun train as a [clause](/node/143). Follow the rule to keep sentences short and their structure simple.
+You can often rephrase the string of adjectives or noun train as a [clause](https://www.stylemanual.gov.au/node/143). Follow the rule to keep sentences short and their structure simple.
 
 #### Write this
 
@@ -247,81 +249,3 @@ A person who is 70 or over and has a driving licence ...
 #### Not this
 
 A person who is 70 or over, being a person who has a driving licence ...
-
-Release notes
-
-The digital edition has practical guidance on plain language:
-
-- It discusses plain language sentences and relates grammatical concepts to the principles of plain language.
-- It consolidates information from the sixth edition and highlights the basics about
-[clauses](/node/143). It takes a different approach to the sixth edition by breaking grammar topics into specific subject areas like ‘[phrases](/node/144)’ and ‘[types of words](/node/203)’. - It provides an overview on types of words to introduce grammatical concepts about parts of speech and how they relate to sentence structure.
-
-The sixth edition called types of words ‘word classes’. It had summary information about parts of speech on pages 68 to 70. This formed part of Chapter 5 on grammar.
-
-The sixth edition and Content Guide referred to ‘plain English’ only. The digital edition relates plain language to writing in the English language.
-
-The Content Guide did not have any in-depth information on grammatical concepts.
-
-About this page
-
-### Evidence
-
-Content Design London (2020) ‘[Simple sentences](https://readabilityguidelines.co.uk/clear-language/simple-sentences/)’, *Content Design London readability guidelines*, Content Design London website, accessed 6 April 2020.
-
-GOV.UK (2019) [ Content design: planning, writing and managing content](https://www.gov.uk/guidance/content-design/writing-for-gov-uk), GOV.UK.
-
-New Zealand Government (2020) [ Plain language](https://www.digital.govt.nz/standards-and-guidance/design-and-ux/content-design-and-management/plain-language/), Digital.govt.nz.
-
-Treasury Board of Canada Secretariat (2020) ‘[Plain language](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#toc6)’, *Canada.ca content style guide*, Canada.ca.
-
-Treasury Board of Canada Secretariat (2020) ‘[2.6: Use simple sentences’](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#wp2-6), *Canada.ca content style guide*, Canada.ca.
-
-Treasury Board of Canada Secretariat (2020) ‘[2.7: Use short sentences and paragraphs](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#wp2-7)’, *Canada.ca content style guide*, Canada.ca.
-
-United States Government (n.d.) ‘[Be concise](https://www.plainlanguage.gov/guidelines/concise/)’, *Plain language guidelines*, plainlanguage.gov.
-
-United States Government (n.d.) [ Plain language](https://www.plainlanguage.gov/), plainlanguage.gov.
-
-W3C (World Wide Web Consortium) (n.d.) ‘[Understanding Success Criterion 3.1.5: reading level](https://www.w3.org/WAI/WCAG21/Understanding/reading-level.html)’, *Understanding WCAG 2.1*, W3C website.
-
-### References
-
-Dixon JC and Bolitho B (2005–2019a) *Course notes and exercises: English grammar for writers, editors and policymakers*, Centre for Continuing Education, Australian National University, Canberra.
-
-Dixon JC and Bolitho B (2005–2019b) *Report writing*, Centre for Continuing Education, Australian National University, Canberra.
-
-Cutts M (2013) *Oxford guide to plain English*, Oxford University Press, Oxford.
-
-European Commission (2020) *English style guide: a handbook for authors and translators in the European Commission*, European Commission.
-
-European Commission (2016) [ How to write clearly](https://op.europa.eu/en/publication-detail/-/publication/725b7eb0-d92e-11e5-8fea-01aa75ed71a1/language-en/format-PDF/source-127196389), Publications Office of the EU, Luxembourg, accessed 9 September 2020.
-
-Garner BA (2016) *Garner’s modern English usage, 4th edn, Oxford University Press, Oxford.*
-
-Murphy EM with Cadman H (2014) Effective writing: plain English at work, 2nd edn, Lacuna, Westgate.
-
-Neilson J (13 March 2005) ‘[Lower-literacy users: writing for a broad consumer audience](https://www.nngroup.com/articles/writing-for-lower-literacy-users/)’, *Neilson Norman Group*, accessed 20 November 2019.
-
-Office of the Parliamentary Counsel (2016) [ Plain English manual](https://www.opc.gov.au/publications/plain-english-manual), OPC, accessed 19 November 2019.
-
-Peters P (2007) *The Cambridge guide to Australian English usage*, Cambridge University Press, Cambridge.
-
-Plain Language Association International (2024) [ What is plain language?](https://plainlanguagenetwork.org/plain-language/what-is-plain-language/), PLAIN website, accessed 27 March 2024.
-
-Seely J (2001) *Oxford everyday grammar*, Oxford University Press, Oxford.
-
-Stilman A (2004) *Grammatically correct*, Writer’s Digest Books, Ohio.
-
-Strunk W and White EB (2000) *The elements of style*, 4th edn, Longman, New York.
-
-Tasmanian Government Communications (2012) [ Plain language in communication: guide](https://www.communications.tas.gov.au/channels/publishing/publications/plain_language_in_communication_guide), Tasmanian Government Communications website, accessed 19 November 2019.
-
-University of Chicago (2017) *Chicago manual of style*, 17th edn, University of Chicago Press, Chicago.
-
-Truss L (2003) *Eats, shoots and leaves: the zero tolerance approach to punctuation*, Profile Books, London.
-
-W3C (2023) ‘[Readable: understanding Guideline 3.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning.html)’, *Understanding WCAG 2.0: A guide to understanding and implementing WCAG 2.0*, W3C website, accessed 27 March 2024.
-
-### Last updated
-
-This page was updated Friday 20 December 2024.

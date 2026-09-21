@@ -1,9 +1,10 @@
+# Topographic terms
+
 Correct capitalisation helps people identify topographic and geographic terms in your content. Refer to landmark features, regions and compass points correctly.
 
+## Write official names with capitals
 
-Write official names with capitals
-
-Check official place names and [style them correctly](/node/134). You can check the spelling of an official name using the [Australian Place Names dataset](https://placenames.fsdf.org.au/).
+Check official place names and [style them correctly](https://www.stylemanual.gov.au/node/134). You can check the spelling of an official name using the [Australian Place Names dataset](https://placenames.fsdf.org.au/).
 
 The full names of mountains, rivers, valleys, bays, islands and other features always take initial capitals.
 
@@ -20,7 +21,7 @@ Some shortened forms that are popular names or nicknames are also capitalised.
 - The Snowy Mountains can also be called the ‘Snowies’.
 - The northern part of the Northern Territory is known as the ‘Top End’.
 
-Write generic terms in lower case
+## Write generic terms in lower case
 
 In most cases, don’t use initial capitals when you use the name as a generic term.
 
@@ -50,9 +51,9 @@ Don’t use an initial capital if you’re using the noun in a generic sense.
 
 The Amazon rainforest is vital to the health of our planet. [The ‘Amazon rainforest’ is not the official name of the region. The word ‘rainforest’ is generic and doesn’t need an initial capital.]
 
-Limit abbreviated names
+## Limit abbreviated names
 
-‘Mt’* *is a common and easily recognisable abbreviation for mountains. Use the abbreviation consistently in content and use initial capitals.
+‘Mt’is a common and easily recognisable abbreviation for mountains. Use the abbreviation consistently in content and use initial capitals.
 
 ### Example
 
@@ -70,11 +71,11 @@ Use Geoscience Australia’s [authorised abbreviations](http://www.ga.gov.au/map
 - Green Is [Island]
 - Keppel Bay Is [Islands]
 
-Don’t use an apostrophe for possessive names
+## Don’t use an apostrophe for possessive names
 
 Don’t use an apostrophe for topographic terms involving possessives. Official place names are not possessive and do not usually include punctuation.
 
-Refer to related [guidance on Australian place names](/node/134#check_official_place_names_and_style_them_correctly).
+Refer to related [guidance on Australian place names](https://www.stylemanual.gov.au/node/134#check_official_place_names_and_style_them_correctly).
 
 ### Correct
 
@@ -84,7 +85,7 @@ Refer to related [guidance on Australian place names](/node/134#check_official_p
 
 - Carey’s Peak
 
-Spell the plural form correctly
+## Spell the plural form correctly
 
 The plural of any topographic name is formed simply by adding ‘s’ or ‘es’.
 
@@ -94,7 +95,7 @@ There are 4 Mount Wellingtons in Australia but only one Mount Coot-tha.
 
 - There are 3 Mount Jameses in Australia. There is one in Queensland, one in South Australia and one in Western Australia.
 
-Write compass points in lower case
+## Write compass points in lower case
 
 In text, write the points of a compass in lower case. Use hyphens for points such as ‘north-east’.
 
@@ -111,28 +112,4 @@ You can use initialisms in tables, illustrations and some specialist works. Alwa
 
 ### Example
 
-Release notes
-
-The digital edition consolidates and expands information about topographic terms. It relates to guidance on [Australian place names](/node/134).
-
-The sixth edition provided brief information under ‘geographic features’ and ‘compass points’.
-
-The Content Guide did not have specific details on topographic terms.
-
-About this page
-
-### References
-
-Data.gov.au (n.d.) * Datasets*, data.gov.au, accessed 10 June 2020.
-
-Geoscience Australia (2012) ‘[Section 2: National topographic map series (NTMS) ](http://www.ga.gov.au/mapspecs/topographic/v6/section2.html#AuthorisedAbbreviations)[and ](http://www.ga.gov.au/mapspecs/topographic/v6/section2.html#AuthorisedAbbreviations)[g](http://www.ga.gov.au/mapspecs/topographic/v6/section2.html#AuthorisedAbbreviations)[eneral ](http://www.ga.gov.au/mapspecs/topographic/v6/section2.html#AuthorisedAbbreviations)[r](http://www.ga.gov.au/mapspecs/topographic/v6/section2.html#AuthorisedAbbreviations)[eference ](http://www.ga.gov.au/mapspecs/topographic/v6/section2.html#AuthorisedAbbreviations)[m](http://www.ga.gov.au/mapspecs/topographic/v6/section2.html#AuthorisedAbbreviations)[ap ](http://www.ga.gov.au/mapspecs/topographic/v6/section2.html#AuthorisedAbbreviations)[s](http://www.ga.gov.au/mapspecs/topographic/v6/section2.html#AuthorisedAbbreviations)[pecificat](http://www.ga.gov.au/mapspecs/topographic/v6/section2.html#AuthorisedAbbreviations)[ions](http://www.ga.gov.au/mapspecs/topographic/v6/section2.html#AuthorisedAbbreviations)’, *Geoscience Australia topographic data and map specifications*, Geoscience Australia website, accessed 10 June 2020.
-
-Intergovernmental Committee on Surveying and Mapping (ICSM) (n.d.) * Permanent Committee on Topographic Information*, ICSM website, accessed 10 June 2020.
-
-ICSM (n.d.) [ Place names: foundation spatial data](https://placenames.fsdf.org.au/), ICSM website, accessed 10 June 2020.
-
-Permanent Committee on Place Names (2016) [ Principles for the consistent use of place names: includes principles for the use of Aboriginal and Torres Strait Islander place names and dual naming depiction principles](https://www.icsm.gov.au/publications/principles-consistent-use-place-names), Intergovernmental Committee on Surveying and Mapping, accessed 29 May 2020.
-
-### Last updated
-
-This page was updated Wednesday 4 January 2023.
+Initialisms often identify the points on a compass in illustrations

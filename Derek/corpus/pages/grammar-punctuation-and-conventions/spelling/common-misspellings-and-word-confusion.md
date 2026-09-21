@@ -1,16 +1,17 @@
+# Common misspellings and word confusion
+
 When words sound similar or the same, people can confuse their spelling. If you’re not sure about the spelling of a word, check a dictionary.
 
-
-Check for words that are easily confused or misspelt
+## Check for words that are easily confused or misspelt
 
 The spelling of some words is variable. Sometimes it’s difficult to know which spelling or word to use because:
 
 - Australian, American and British English have different ways of spelling a word
 - a word might sound similar to another, so people can mishear it and write the wrong word.
 
-Follow one dictionary for consistency and use it to check variable [spellings](/node/30).
+Follow one dictionary for consistency and use it to check variable [spellings](https://www.stylemanual.gov.au/node/30).
 
-Choose the right word and spell it correctly
+## Choose the right word and spell it correctly
 
 Correct word use makes content readable and clear to users. Getting words wrong risks losing users’ engagement with, and trust of, your content.
 
@@ -387,7 +388,7 @@ To make your writing clear, use:
 - ‘that’ for essential information
 - ‘which’, with punctuation, for non-essential information.
 
-For examples, refer to [guidance about pronouns](/node/131#relative_pronouns_show_essential_or_nonessential_information).
+For examples, refer to [guidance about pronouns](https://www.stylemanual.gov.au/node/131#relative_pronouns_show_essential_or_nonessential_information).
 
 ### their/there/they’re
 
@@ -420,13 +421,3 @@ This would’ve spared us a lot of stress
 #### Incorrect
 
 At the very least, we would of avoided the overspend.
-
-Release notes
-
-The digital edition builds on information from the sixth edition about ‘variable spellings’.
-
-The Content Guide had information on ‘preferred spellings’.
-
-### Last updated
-
-This page was updated Monday 14 August 2023.

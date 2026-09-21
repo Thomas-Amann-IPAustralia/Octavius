@@ -1,7 +1,8 @@
+# Broadcast media and podcasts (film, video, television and radio programs)
+
 Cite film, television, radio and podcast programs so people can find the source material. Use the right style and comply with copyright laws.
 
-
-Cite electronic media correctly
+## Cite electronic media correctly
 
 Electronic media include film, television, radio and podcasts. When you write about electronic media you could also be referring to a script or a review.
 
@@ -25,9 +26,9 @@ You must attribute copyright material you reference. This includes video and aud
 
 Include all the details required by open access licences (read how to [attribute Creative Commons](https://creativecommons.org.au/learn/fact-sheets/attribution/)).
 
-Read the government copyright rules in the [ Australian Government intellectual property manual](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual).
+Read the government copyright rules in the [*Australian Government intellectual property manual*](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual).
 
-Use italics and sentence case for film titles
+## Use italics and sentence case for film titles
 
 Write the title as it appears in film information. Include punctuation marks and any intentional misspelling. Italicise the title and use sentence case.
 
@@ -39,8 +40,10 @@ If you mention the date in the text, you don’t have to include it in parenthes
 
 ### Example
 
-*Ride like a girl*(2019) tells the story of jockey Michelle Payne.*Picnic at Hanging Rock*(1975) helped to revive the Australian film industry in the 1970s.*Mad Max 2*(1981) was the second in the Mad Max series of films.- They released
-*The man from Snowy River II*in 1988.
+- *Ride like a girl* (2019) tells the story of jockey Michelle Payne.
+- *Picnic at Hanging Rock* (1975) helped to revive the Australian film industry in the 1970s.
+- *Mad Max 2* (1981) was the second in the Mad Max series of films.
+- They released *The man from Snowy River II* in 1988.
 
 After the first mention, you can abbreviate the title as long as it makes sense. You can also omit the date in parentheses. This often happens with well-known and longer titles because it improves the flow of the text.
 
@@ -62,7 +65,7 @@ Safran H (director) (1976) *Storm boy* [motion picture], South Australian Film C
 
 Jury WF (producer) (1916) *Battle of the Somme* [motion picture], British Topical Committee for War Films, London, UK.
 
-Italicise television programs
+## Italicise television programs
 
 Use sentence case, roman type and quotation marks for episodes of a program.
 
@@ -77,10 +80,10 @@ Include the year of production of television programs in roman type and brackets
 
 ### Example
 
-*Gruen*is a popular television program on ABC TV.- The
-*Australian story*episode ‘Out of the blue’ is about a shark attack in the Whitsundays. - Channel 7 has been screening cricket over the summer.
-- One of the longest-running police dramas on Australian television was
-*Homicide*(1964–77).
+- *Gruen* is a popular television program on ABC TV.
+- The *Australian story* episode ‘Out of the blue’ is about a shark attack in the Whitsundays.
+- Channel 7 has been screening cricket over the summer.
+- One of the longest-running police dramas on Australian television was *Homicide* (1964–77).
 
 Use arabic – not roman – numerals for the numbers of seasons.
 
@@ -108,7 +111,7 @@ If the episode doesn’t have a name, write the name of the program first.
 
 ABC Television (2019) *Gardening Australia* (season 30, episode 35) [television program], ABC Television, Sydney.
 
-Italicise radio programs and use roman type for episodes
+## Italicise radio programs and use roman type for episodes
 
 To cite radio programs:
 
@@ -119,12 +122,9 @@ To cite radio programs:
 
 ### Example
 
-*The wire*is a news and current affairs program on Brisbane community radio station 4EB.- Environmentalists will enjoy the radio program
-*Off track*on ABC Radio National. ‘The bilby, the moon and the Birriliburu Rangers’ from
-
-*Off track*went to air in January.One of the longest-running Australian radio programs was
-
-*Blue hills*(1949–76).
+- *The wire* is a news and current affairs program on Brisbane community radio station 4EB.
+- Environmentalists will enjoy the radio program *Off track* on ABC Radio National.
+- ‘The bilby, the moon and the Birriliburu Rangers’ from *Off track* went to air in January. One of the longest-running Australian radio programs was *Blue hills* (1949–76).
 
 ### Reference list entries for radio programs
 
@@ -136,7 +136,7 @@ Rule: Presenter P (presenter) (Day Month Year) ‘Title of episode: subtitle of 
 
 Jones A (presenter) (18 January 2020) ‘The bilby, the moon and the Birriliburu Rangers’ [radio program], *Off track*, ABC Radio National, Sydney.
 
-Italicise podcast series and use roman type for episodes
+## Italicise podcast series and use roman type for episodes
 
 To cite podcasts:
 
@@ -146,9 +146,9 @@ To cite podcasts:
 
 ### Example
 
-- A local podcast in this popular genre is
-*Australian true crime,*hosted by Meshel Laurie and Emily Webb. - ‘Evil crows, bird funerals, swooping magpies’ is an episode from Triple J’s
-*Science with Dr Karl*podcast. *Life*’*s little mysteries*is a science podcast series produced by*The Conversation.*
+- A local podcast in this popular genre is *Australian true crime,* hosted by Meshel Laurie and Emily Webb.
+- ‘Evil crows, bird funerals, swooping magpies’ is an episode from Triple J’s *Science with Dr Karl* podcast.
+- *Life*’*s little mysteries* is a science podcast series produced by *The Conversation.*
 
 ### Reference list entries for podcasts
 
@@ -158,11 +158,10 @@ Rule: Host H (host) and Producer P (producer) (Day Month Year) ‘Title of podca
 
 #### Example
 
-- Stephens J (host) (26 December 2019) ‘
-[Best of 2019: the beauty queen killer](https://podcasts.apple.com/au/podcast/best-of-2019-the-beauty-queen-killer/id1469153910?i=1000460759588)’ [podcast],*True crime conversations*, Mamamia Podcasts, accessed 21 January 2020. - Hooper C (host) and Arnall K (producer) (3 November 2019) ‘
-[Goodbye secret garage shame](https://www.abc.net.au/radio/programs/the-pineapple-project/goodbye-secret-garage-shame/11493174)’[podcast],*The pineapple project*, ABC, accessed 4 February 2020.
+- Stephens J (host) (26 December 2019) ‘[Best of 2019: the beauty queen killer](https://podcasts.apple.com/au/podcast/best-of-2019-the-beauty-queen-killer/id1469153910?i=1000460759588)’ [podcast], *True crime conversations*, Mamamia Podcasts, accessed 21 January 2020.
+- Hooper C (host) and Arnall K (producer) (3 November 2019) ‘[Goodbye secret garage shame](https://www.abc.net.au/radio/programs/the-pineapple-project/goodbye-secret-garage-shame/11493174)’[podcast], *The pineapple project*, ABC, accessed 4 February 2020.
 
-Apply the same rules for script titles as for books
+## Apply the same rules for script titles as for books
 
 Published script titles follow the same rules as book titles:
 
@@ -171,9 +170,9 @@ Published script titles follow the same rules as book titles:
 
 ### Example
 
-- Peter Carey and Ray Lawrence co-wrote
-*Bliss: the screenplay*. - University of Queensland Press published
-*The big steal*by David Parker in their screenplay series. - ‘Cycle accident’ is in the university film script archives.
+- Peter Carey and Ray Lawrence co-wrote *Bliss: the screenplay*.
+- University of Queensland Press published *The big steal* by David Parker in their screenplay series.
+- ‘Cycle accident’ is in the university film script archives.
 
 ### Reference list entries for scripts
 
@@ -187,7 +186,7 @@ Carey P and Lawrence R (1985) *Bliss: the screenplay*, University of Queensland 
 
 If you are referencing an online film script, hyperlink the title and include the date you accessed it.
 
-Use roman type and quotation marks for review titles
+## Use roman type and quotation marks for review titles
 
 Write titles of published reviews in roman type enclosed in single quotation marks. Write the title of the reviewed material in italics and use sentence case.
 
@@ -195,9 +194,8 @@ You may be able to hyperlink to the online review, depending on copyright restri
 
 ### Example
 
-- David Stratton’s review of
-*Bombshell*, ‘Women put Fox on run’, contributed to the debate about the film. - You can read David Knox’s review of
-*The gloaming*on*TV Tonight*.
+- David Stratton’s review of *Bombshell*, ‘Women put Fox on run’, contributed to the debate about the film.
+- You can read David Knox’s review of *The gloaming* on *TV Tonight*.
 
 ### Reference list entries for reviews
 
@@ -207,35 +205,6 @@ Rule: Reviewer R (Day Month Year) ‘Title of review: subtitle of review’ [rev
 
 #### Example
 
-- Buckmaster L (24 September 2019) ‘
-[Ride like a girl review – cinematic schmaltz swamps Michelle Payne’s ride to the Melbourne Cup](https://www.theguardian.com/film/2019/sep/24/ride-like-a-girl-review-cinematic-schmaltz-swamps-michelle-paynes-ride-to-the-melbourne-cup)’ [review of*Ride like a girl*directed by Rachel Griffiths],*The Guardian*, accessed 19 January 2020. - Byram V (17 January 2020) ‘
-[Ride the roller-coaster of action that hurtles into](https://www.canberratimes.com.au/story/6585896/soap-all-in-a-lather/?cs=15883)’ [review of the television series*Home and Away*’s Summer Bay in 2020*Home and away*],*The Canberra Times*, accessed 19 January 2020. - Stratton D (18–19 January 2020) ‘Women put Fox on run’ [review of
-*Bombshell*directed by Jay Roach],*Weekend Australian Review*.
-
-Release notes
-
-The digital edition expands on information in the sixth edition and has an online focus. It includes podcasts. The digital edition has more examples to help users include the necessary information in the correct format.
-
-The sixth edition briefly mentioned the style for titles and how to cite film, radio and television programs. It does not mention podcasts.
-
-The Content Guide had brief information about video but no details on how to cite film, television, radio and podcasts.
-
-About this page
-
-### References
-
-American Psychological Association (2020) *Publication manual of the American Psychological Association, *7th edn, American Psychological Association, Washington DC.
-
-Dermody S and Jacka E (1988) *The screening of Australia: anatomy of a film industry (Volume 1)*, Currency Press, Sydney.
-
-Oxford University Press (2017) *Australian concise Oxford dictionary*, 6th edn, Oxford University Press, Melbourne.
-
-Oxford University Press (2016) *New Oxford style manual*, Oxford University Press, Oxford.
-
-University of Chicago Press (2017) *Chicago manual of style: the essential guide for writers, editors, and publishers*, 17th edn, University of Chicago Press, Chicago.
-
-University of Technology Sydney Library (2019) [ Harvard UTS referencing guide](https://www.lib.uts.edu.au/help/referencing/harvard-uts-referencing-guide), University of Technology Sydney website, accessed 21 January 2020.
-
-### Last updated
-
-This page was updated Thursday 12 December 2024.
+- Buckmaster L (24 September 2019) ‘[Ride like a girl review – cinematic schmaltz swamps Michelle Payne’s ride to the Melbourne Cup](https://www.theguardian.com/film/2019/sep/24/ride-like-a-girl-review-cinematic-schmaltz-swamps-michelle-paynes-ride-to-the-melbourne-cup)’ [review of *Ride like a girl* directed by Rachel Griffiths], *The Guardian*, accessed 19 January 2020.
+- Byram V (17 January 2020) ‘[Ride the roller-coaster of action that hurtles into *Home and Away*’s Summer Bay in 2020](https://www.canberratimes.com.au/story/6585896/soap-all-in-a-lather/?cs=15883)’ [review of the television series *Home and away*], *The Canberra Times*, accessed 19 January 2020.
+- Stratton D (18–19 January 2020) ‘Women put Fox on run’ [review of *Bombshell* directed by Jay Roach], *Weekend Australian Review*.

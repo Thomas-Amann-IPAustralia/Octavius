@@ -1,10 +1,12 @@
+# Quick guide: spelling, capitals, links and dashes
+
 Read the style rules for common style topics.
 
-You can download an accessible version of [ Quick guide: spelling, capitals, links and dashes [PDF 404 kB]](https://www.stylemanual.gov.au/sites/default/files/2025-08/Quick%20guide_spelling%20capitals%20links%20and%20dashes%20accessible%20PDF%20404%20kB.pdf ).
+You can download an accessible version of [*Quick guide: spelling, capitals, links and dashes* [PDF 404 kB]](https://www.stylemanual.gov.au/sites/default/files/2025-08/Quick%20guide_spelling%20capitals%20links%20and%20dashes%20accessible%20PDF%20404%20kB.pdf).
 
 ## Spelling and the dictionary
 
-Your agency is likely to have a preferred Australian dictionary. Style Manual recommends the *Australian concise Oxford dictionary *or the *Macquarie dictionary*.
+Your agency is likely to have a preferred Australian dictionary. Style Manual recommends the *Australian concise Oxford dictionary*or the *Macquarie dictionary*.
 
 Check the meaning and spelling of words in your agency's preferred dictionary. Use the spelling of the first word in the entry (the 'headword'). The headword is the most common spelling. Using the headword helps to make spelling consistent across agency content.
 
@@ -12,9 +14,8 @@ Check the dictionary for guidance on hyphenation, capitalisation, plural forms a
 
 ### Example
 
-- higgledy-piggledy
-*not*higgledy piggledy [Hyphenation] - winter
-*not*Winter [Capitalisation]
+- higgledy-piggledy *not*higgledy piggledy [Hyphenation]
+- winter *not*Winter [Capitalisation]
 
 ## Capital letters
 
@@ -49,8 +50,7 @@ Try to put links at the end of sentences. This:
 
 ### Example
 
-- Before you go overseas, check advice on the
-[Smartraveller website](https://www.stylemanual.gov.au/structuring-content/links).
+- Before you go overseas, check advice on the [Smartraveller website](https://www.stylemanual.gov.au/structuring-content/links).
 
 Link to the landing page that hosts a file (e.g. PDF or Word document), not to the file itself.
 
@@ -58,8 +58,7 @@ If you must link to a file, include the document title (not file name), file typ
 
 ### Example
 
-- Find out more about Australia in
-.__Australia in brief____[PDF 13 MB]__
+- Find out more about Australia in [*Australia in brief* [PDF 13 MB]](https://www.stylemanual.gov.au/structuring-content/links).
 
 ## En dashes
 
@@ -94,8 +93,8 @@ Use a spaced en dash in sentences to set off non-essential information.
 
 Use the correct symbol. The table shows 3 ways to code the en dash, minus symbol and hyphen.
 
-| – en dash | − minus symbol | ‐ hyphen | |
-|---|---|---|---|
+|  | – en dash | **− minus symbol** | **‐ hyphen** |
+| --- | --- | --- | --- |
 | Unicode (type the character code, then press Alt x) | U+2013 | U+2212 | U+2010 |
-| HTML entity | – | − | ‐ |
+| HTML entity | &ndash; | &minus; | &hyphen; |
 | Word | Ctrl+minus symbol on the number pad | Unicode or HTML entity preferred | Press the hyphen key |

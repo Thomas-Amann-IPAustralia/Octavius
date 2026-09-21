@@ -1,6 +1,8 @@
+# Apostrophes
+
 Apostrophes show possession and contractions. Don’t use them in descriptive phrases or to make nouns and shortened forms plural.
 
-An apostrophe shows possession
+## An apostrophe shows possession
 
 When the first of 2 consecutive [nouns](https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/types-words/nouns) has an apostrophe, it means those nouns have a relationship. If the first noun in a [noun phrase](https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/parts-sentences/phrases#noun_phrases_function_as_nouns) has an apostrophe, it means the noun is related to the other words in the phrase.
 
@@ -15,28 +17,43 @@ On this page, ‘possession’ or ‘possessive’ means any relationship betwee
 - They are the minister’s chief of staff.
 - It was a winter’s morning.
 
-Follow the possession rules for different types of nouns
+## Follow the possession rules for different types of nouns
 
 To correctly show possession by using an apostrophe, first ask, ‘Who or what is doing the possessing?’
 
 The apostrophe goes straight after the noun that is the answer.
 
-There are possession rules for using an apostrophe, according to the [type of noun](/node/122).
+There are possession rules for using an apostrophe, according to the [type of noun](https://www.stylemanual.gov.au/node/122).
 
 | Noun type | Rule | Examples |
-|---|---|---|
-| Singular noun | Add an apostrophe and ‘s’ | the committee’s report our department’s plan the bus’s passengers the kibbutz’s energy needs |
-| Singular noun of 2 or more words, the last word being a plural ending in ‘s’ | Add an apostrophe only | the Australian Bureau of Statistics’ office a Department of Social Services’ project the United States’ representatives |
-| Plural nouns that end in letter ‘s’ | Add an apostrophe only | both committees’ reports the Joneses’ submission the Sanchezes’ security passes |
-| Plural nouns that don’t end in ‘s’ | Add an apostrophe and ‘s’ | our children’s education the sheep’s wool the gateaux’s boxes |
-| Proper names ending in letter ‘s’ | Add an apostrophe and another ‘s’, even if you don’t pronounce that final ‘s’ | Burns’s report James’s profession Laos’s population Louis’s supervisor Jesus’s disciples |
+| --- | --- | --- |
+| Singular noun | Add an apostrophe and ‘s’ | the committee’s report
+our department’s plan
+the bus’s passengers
+the kibbutz’s energy needs |
+| Singular noun of 2 or more words, the last word being a plural ending in ‘s’ | Add an apostrophe only | the Australian Bureau of Statistics’ office
+a Department of Social Services’ project
+the United States’ representatives |
+| Plural nouns that end in letter ‘s’ | Add an apostrophe only | both committees’ reports
+the Joneses’ submission
+the Sanchezes’ security passes |
+| Plural nouns that don’t end in ‘s’ | Add an apostrophe and ‘s’ | our children’s education
+the sheep’s wool
+the gateaux’s boxes |
+| Proper names ending in letter ‘s’ | Add an apostrophe and another ‘s’, even if you don’t pronounce that final ‘s’ | Burns’s report
+James’s profession
+Laos’s population
+Louis’s supervisor
+Jesus’s disciples |
 | More than one noun: individual possession | Add an apostrophe and ‘s’ after each noun | Smith’s and Miller’s offices |
-| More than one noun: joint possession | Add an apostrophe and ‘s’ after the last noun only | Smith and Miller’s report Julie and Karl’s children |
-| Singular compound noun | Add an apostrophe and ‘s’ after the compound | the attorney-general’s speeches the owner-occupier’s accountant |
+| More than one noun: joint possession | Add an apostrophe and ‘s’ after the last noun only | Smith and Miller’s report
+Julie and Karl’s children |
+| Singular compound noun | Add an apostrophe and ‘s’ after the compound | the attorney-general’s speeches
+the owner-occupier’s accountant |
 | Plural compound nouns ending in ‘s’ | Add an apostrophe after the compound | all owner-occupiers’ tax concessions |
 | Plural compound nouns that don’t end in ‘s’ | Add an apostrophe and ‘s’ after the compound | the attorneys-general’s meeting |
 
-A descriptive phrase doesn’t need an apostrophe
+## A descriptive phrase doesn’t need an apostrophe
 
 Some nouns are descriptive rather than possessive. In a descriptive noun phrase, the first noun modifies the second noun by operating as a [definitive adjective](https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/types-words/adjectives#there_is_a_common_order_for_strings_of_adjectives).
 
@@ -69,7 +86,7 @@ The Style Manual recognises ‘workers compensation’ in the first example as a
 
 Although not recommended style, we acknowledge that the house styles of some government agencies require an apostrophe when using the phrase in this way.
 
-Add an apostrophe and ‘s’ to form a possessive shortened form
+## Add an apostrophe and ‘s’ to form a possessive shortened form
 
 There are 4 types of shortened forms: [abbreviations](https://www.stylemanual.gov.au/format-writing-and-structure/clear-language-and-writing-style/plain-language-and-word-choice/abbreviations), [contractions](https://www.stylemanual.gov.au/format-writing-and-structure/clear-language-and-writing-style/plain-language-and-word-choice/contractions), [acronyms and initialisms](https://www.stylemanual.gov.au/format-writing-and-structure/clear-language-and-writing-style/plain-language-and-word-choice/acronyms-and-initialisms).
 
@@ -134,7 +151,7 @@ Use the shortened form rather than the full term if you mention the term again.
 - Find information about veteran support officers on the Department of Veterans’ Affairs’ (DVA’s) website. DVA supports …
 - Use the Australian Securities and Investments Commission’s (ASIC’s) Moneysmart savings goal calculator. ASIC created Moneysmart to …
 
-A possessive pronoun doesn’t need an apostrophe
+## A possessive pronoun doesn’t need an apostrophe
 
 Don’t add an apostrophe to possessive [pronouns](https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/types-words/pronouns).
 
@@ -151,7 +168,7 @@ Don’t use an apostrophe for either type of pronoun.
 - Put the report in its place. [‘its’ is a determiner]
 - It was my idea not yours! [‘my’ is a determiner, ‘yours’ is a possessive pronoun]
 
-Don’t use an apostrophe for an Australian place name
+## Don’t use an apostrophe for an Australian place name
 
 Don’t use an apostrophe for [Australian place names](https://www.stylemanual.gov.au/node/134) involving possessives.
 
@@ -160,7 +177,7 @@ Don’t use an apostrophe for [Australian place names](https://www.stylemanual.g
 - Kings Cross
 - Mrs Macquaries Chair
 
-Don’t use an apostrophe for a period of time
+## Don’t use an apostrophe for a period of time
 
 Noun phrases about plural time periods don’t need apostrophes because they’re usually descriptive, not possessive.
 
@@ -182,7 +199,7 @@ When the time reference is in the singular, use an apostrophe to show that the n
 - a day’s work
 - the year’s cycle
 
-An apostrophe shows a contraction
+## An apostrophe shows a contraction
 
 Apostrophes show that you have omitted letters in [contractions](https://www.stylemanual.gov.au/node/191).
 
@@ -199,7 +216,7 @@ If you can divide ‘it’s’ into ‘it is’ or ‘it has’, then you need t
 
 - It’s time to give the committee its terms of reference.
 
-Don’t use an apostrophe to make a noun plural
+## Don’t use an apostrophe to make a noun plural
 
 No apostrophe is needed for the [plural form of a noun](https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/types-words/nouns#nouns_can_be_singular_or_plural). This type of error is known as the ‘greengrocer’s apostrophe’.
 
@@ -253,7 +270,7 @@ Don’t italicise these plurals or place them in quotation marks.
 - Dot your i’s and cross your t’s when you edit the report.
 - This tongue twister has too many s’s!
 
-An apostrophe can stand in for a sound
+## An apostrophe can stand in for a sound
 
 Apostrophes show sounds in words from other languages.
 
@@ -268,7 +285,7 @@ If you’re unsure whether an apostrophe is needed, consult your dictionary for 
 - She was reading the Qur’an.
 - Ge’ez is an ancient language from Ethiopia.
 
-Some official names have apostrophes
+## Some official names have apostrophes
 
 An apostrophe can form part of the official [name of an organisation (or entity)](https://www.stylemanual.gov.au/node/88). Use an apostrophe if the organisation does.
 
@@ -282,47 +299,3 @@ To find the spelling an organisation prefers, check its correct name by using [r
 - Education Ministers Meeting
 - Infrastructure and Transport Senior Officials’ Committee
 - Basin Officials Committee
-
-Release notes
-
-The digital edition consolidates information about apostrophes and provides more examples to help users understand correct usage. New guidance includes: shortened forms, determiners, plurals that are not usually nouns (noun coinage) and apostrophes that stand in for sounds.
-
-The sixth edition had information about apostrophes in several sections.
-
-The Content Guide had brief advice about using apostrophes.
-
-About this page
-
-### Evidence
-
-Oxford University Press (2016) ‘4.2.2: Plurals’, *New Oxford style manual*, Oxford University Press, Oxford.
-
-University of Chicago (2017) ‘7.14: Plurals of noun coinages’, *Chicago manual of style*, 17th edn, University of Chicago Press, Chicago.
-
-### References
-
-Australian Government (n.d.) [ Directory](https://www.directory.gov.au/), directory.gov.au, accessed 5 September 2021.
-
-Cambridge University (2021) ‘[Pronouns: possessive (my, mine, your, yours, etc.)](https://dictionary.cambridge.org/grammar/british-grammar/pronouns-possessive-my-mine-your-yours-etc)’, *Cambridge dictionary*, dictionary.cambridge.org, accessed 22 October 2021.
-
-Davies WM (n.d.) [ Apostrophes [PDF 192 KB]](https://library.unimelb.edu.au/__data/assets/pdf_file/0005/1924178/Apostrophes.pdf), Helpsheet: Giblin Eunson Library, University of Melbourne website [cached resource], accessed 2 September 2021.
-
-Dixon JC and Bolitho B (2005–2019) *Course notes and exercises: editing and proofreading for the workplace*, Centre for Continuing Education, Australian National University, Canberra.
-
-Fogarty M (2019) ‘[Apostrophe catastrophe (part one)](https://www.quickanddirtytips.com/education/grammar/apostrophe-catastrophe-part-one)’, Grammar Girl, Quick and Dirty Tips website, accessed 6 September 2021.
-
-Macquarie Dictionary (2021) ‘[Punctuation guide](https://www.macquariedictionary.com.au/resources/view/resource/6/)’, Resources, macquariedictionary.com.au, accessed 6 September 2021.
-
-Merriam-Webster (2021) [ Why do we use apostrophes to show possession?](https://www.merriam-webster.com/words-at-play/history-and-use-of-the-apostrophe), Merriam-Webster website, accessed 7 September 2021.
-
-Murphy EM with Cadman H (2014) *Effective writing: plain English at work*, 2nd edition, Lacuna, 2014.
-
-Seely J (2001) *Oxford everyday grammar*, Oxford Paperback Reference.
-
-Strunk W and White EB (2000) *The elements of style*, 4th edn, Longman, New York.
-
-University of Chicago (2017) ‘6.115: ‘‘smart’’ apostrophes’, *Chicago manual of style, *17th edn, University of Chicago Press, Chicago.
-
-### Last updated
-
-This page was updated Friday 17 January 2025.

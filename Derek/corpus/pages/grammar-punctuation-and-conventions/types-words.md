@@ -1,14 +1,25 @@
+# Types of words
+
 Keep the functions of words in mind to write clear content. Grammar and sentence structure help people understand meaning.
 
-Words are grouped by function
+## Words are grouped by function
 
-Each word has a function in a [sentence](/node/120), [clause](/node/143) or [phrase](/node/144). You can group words into different types depending on the way they function.
+Each word has a function in a [sentence](https://www.stylemanual.gov.au/node/120), [clause](https://www.stylemanual.gov.au/node/143) or [phrase](https://www.stylemanual.gov.au/node/144). You can group words into different types depending on the way they function.
 
 Functions include:
 
+- [adjectives](https://www.stylemanual.gov.au/node/126)
+- [adverbs](https://www.stylemanual.gov.au/node/127)
+- [conjunctions](https://www.stylemanual.gov.au/node/129)
+- [determiners](https://www.stylemanual.gov.au/node/132)
+- [nouns](https://www.stylemanual.gov.au/node/122)
+- [prepositions](https://www.stylemanual.gov.au/node/130)
+- [pronouns](https://www.stylemanual.gov.au/node/131)
+- [verbs](https://www.stylemanual.gov.au/node/128).
+
 Functional categories for words are also known as ‘parts of speech’.
 
-Sentence structure sets the function of words
+## Sentence structure sets the function of words
 
 Many individual words can belong to different word types. This depends on what the word is doing in the sentence.
 
@@ -53,33 +64,3 @@ The report suggested that the drug is beneficial, even though it’s harmful in 
 ### Not this
 
 Even though it’s harmful in larger doses, the report suggested the drug is beneficial. [‘It’ in the modifier could go with ‘the report’ or ‘the drug’. This structure weakens the modifier’s link with ‘the drug’. It creates ambiguity in meaning.]
-
-Release notes
-
-The digital edition relates grammatical concepts to the principles of plain language.
-
-It provides an overview on types of words to introduce grammatical concepts about parts of speech and how they relate to sentence structure.
-
-The sixth edition called types of words ‘word classes’. It had summary information about parts of speech on pages 68 to 70. This formed part of Chapter 5 on grammar.
-
-The Content Guide did not have any in-depth information on grammatical concepts.
-
-About this page
-
-### References
-
-Garner BA (2016) *Garner’s modern English usage*, 4th edn, Oxford University Press, Oxford.
-
-Murphy EM (2011) *Working words*, Canberra Society of Editors, Canberra.
-
-Oxford University Press (2017) *Australian concise Oxford dictionary*, 6th edn, Oxford University Press, Melbourne.
-
-Peters P (1995) *The Cambridge Australian English style guide*, Cambridge University Press, Cambridge.
-
-Stilman A (2004) *Grammatically correct*, Writer’s Digest Books, Ohio.
-
-University of Chicago Press (2017) *Chicago manual of style: the essential guide for writers, editors, and publishers*, 17th edn, University of Chicago Press, Chicago.
-
-### Last updated
-
-This page was updated Monday 6 September 2021.

@@ -1,6 +1,8 @@
+# Quick guide: lists
+
 Use lists to make it easy for users to scan and understand a series of items.
 
-You can download an accessible version of [ Quick guide: lists [PDF 408 kB]](https://www.stylemanual.gov.au/sites/default/files/2025-08/Quick%20guide_%20lists%20accessible%20PDF%20408%20kB.pdf ).
+You can download an accessible version of [*Quick guide: lists* [PDF 408 kB]](https://www.stylemanual.gov.au/sites/default/files/2025-08/Quick%20guide_%20lists%20accessible%20PDF%20408%20kB.pdf).
 
 Lists make it easy to scan and understand a series of items. There are different types of lists. Each type of list has a different format.
 
@@ -64,6 +66,7 @@ Fragment lists have a:
 
 There are 3 ways to contact us:
 
+- email
 - online form
 - telephone.
 
@@ -122,17 +125,17 @@ Use numbered (ordered) lists when the order is important. You might use numbered
 
 How to sign up to our newsletter:
 
-- Enter your name.
-- Enter your email address.
-- Verify your email address.
+1. Enter your name.
+2. Enter your email address.
+3. Verify your email address.
 
 [A numbered sentence list]
 
 The participants will:
 
-- arrive at the venue
-- find their name tag
-- take their allocated seat.
+1. arrive at the venue
+2. find their name tag
+3. take their allocated seat.
 
 [A numbered fragment list]
 
@@ -140,9 +143,9 @@ The participants will:
 
 Winners of the awards
 
-- Western Australia
-- Australian Capital Territory
-- Victoria
+1. Western Australia
+2. Australian Capital Territory
+3. Victoria
 
 [A numbered stand-alone list]
 
@@ -155,20 +158,15 @@ Try to use single-level lists in general content. Some types of content need mul
 They are allergic to:
 
 - tree nuts
-
-– almonds
-
-– cashews
-
-– walnuts - dairy products
-
-– cow's milk
-
-– goat's milk - crustaceans
-
-– crabs
-
-– prawns.
+ – almonds
+ – cashews
+ – walnuts
+- dairy products
+ – cow's milk
+ – goat's milk
+- crustaceans
+ – crabs
+ – prawns.
 
 [An unordered multilevel list]
 
@@ -176,20 +174,15 @@ They are allergic to:
 
 In order of severity, they are allergic to:
 
-- tree nuts
-
-a. almonds
-
-b. cashews
-
-c. walnuts - dairy products
-
-a. cow's milk
-
-b. goat's milk - crustaceans
-
-a. crabs
-
-b. prawns.
+1. tree nuts
+ a. almonds
+ b. cashews
+ c. walnuts
+2. dairy products
+ a. cow's milk
+ b. goat's milk
+3. crustaceans
+ a. crabs
+ b. prawns.
 
 [An ordered multilevel list]

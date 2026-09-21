@@ -278,7 +278,7 @@ These are real and would have bitten again.
 
 | # | Defect | Where | Consequence |
 |---|---|---|---|
-| 1 | Heading levels are flattened inconsistently by `trafilatura` | `src/scrape.py:html_to_markdown` | The corpus has 1,795 `###` but only 53 `##` and 2 `#`. Some section headings are demoted to plain paragraphs (see `corpus/pages/grammar-punctuation-and-conventions/punctuation/commas.md`, where "Mark out non-essential information within a sentence" is a bare paragraph). Structure-driven extraction must normalise this or it loses rules. |
+| 1 | Heading levels are flattened inconsistently by `trafilatura` | `src/scrape.py:html_to_markdown` | The corpus had 1,795 `###` but only 53 `##` and 2 `#`, with section headings demoted to plain paragraphs. Since structure-driven extraction reads rules off the heading tree, this silently changed which rules exist. **Fixed:** `derek/corpus/to_markdown.py` takes heading levels from the source DOM ([ADR-020](02-decisions.md#adr-020-heading-levels-come-from-the-dom)); `trafilatura` is removed from the pipeline. |
 | 2 | `__builtins__` exposed to rule code | `logic/rulebook/adapters.py:_RULE_EXEC_GLOBALS` | `exec()` of model-generated code with full builtins. Acceptable when the code is reviewed; unacceptable when it is generated in batches of thousands and merged unread. |
 | 3 | Test-generation and rule-generation share a model call | `src/generate_code.py` | The root cause of the "801 pass" illusion (§1). |
 | 4 | `test_result` doubles as lifecycle state | schema | `pass`/`fail`/`skip`/`frozen` conflates "the tests passed" with "we decided not to ship this". Derek separates `validation` from `review_status`. |
@@ -298,7 +298,7 @@ quality *before* any suppression, and the dogfood gate runs on raw, ungated outp
 |---|---|---|
 | Offline Style Manual snapshot (186 pages) | `corpus/pages/` | The foundation. Accurate, complete, and expensive to rebuild. |
 | Sitemap state and content manifest | `corpus/*.legacy.json` | Seeds the new lock file; preserves known `lastmod` history. |
-| Scraper transport (Selenium fallback, stealth, robots.txt handling, XSLT sitemap parsing) | `derek/corpus/fetch.py` | Hard-won. The Style Manual's WAF drops plain `requests` traffic and its sitemap is XSLT-rendered HTML; both were solved correctly. |
+| Scraper transport (Selenium fallback, stealth, robots.txt handling, XSLT sitemap parsing) | `derek/corpus/fetch.py` | Hard-won. The Style Manual's WAF drops plain `requests` traffic and its sitemap is XSLT-rendered HTML; both were solved correctly. The *converter* it fed (`trafilatura`) is not kept — see Defect 1. |
 | Curated markdown rule library (90 pages) | `reference/style-manual-curated/` | Cleaner structure than the scrape on some pages; useful for cross-checking extraction fidelity. |
 | Inverted-index dispatcher design | `reference/octavius-v1/OCTAVIUS_REFACTOR_LOG.md` | The feature-gating idea is sound and the decision log is detailed. The implementation is not reused, but the reasoning about zone/offset invariants and batching carries directly into Derek's document model. |
 | v1 rulebook (3,114 rows) | `reference/octavius-v1/rules_working_draft.v1.jsonl` | **Non-authoritative.** Two legitimate uses: (a) a *recall checklist* — did Derek's deterministic extractor find the rules a model found? (b) a permanent negative test set for the dogfood gate. |
@@ -345,5 +345,5 @@ reading the linked rationale.
 - [ ] Separate `validation` from `review_status` (Defect 4)
 - [ ] Calibrate confidence before exposing a slider (Defect 5) — [ADR-013](02-decisions.md#adr-013-confidence-is-calibrated-not-raw)
 - [ ] Measure rule quality on raw, un-suppressed output (Defect 6)
-- [ ] Normalise heading levels before structural extraction (Defect 1) — [ADR-001](02-decisions.md#adr-001-snapshot-integrity-over-site-metadata)
+- [x] Take heading levels from the DOM, not from a generic extractor (Defect 1) — [ADR-020](02-decisions.md#adr-020-heading-levels-come-from-the-dom)
 - [ ] Never `exec()` unreviewed generated code with full builtins (Defect 2) — [ADR-009](02-decisions.md#adr-009-no-generated-code-in-the-runtime)

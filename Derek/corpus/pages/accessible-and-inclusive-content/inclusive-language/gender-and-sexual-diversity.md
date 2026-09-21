@@ -1,6 +1,8 @@
+# Gender and sexual diversity
+
 Inclusive language conveys gender equality and is gender neutral. Respect people’s gender and sexual identity with pronoun choice, job titles and personal titles.
 
-Use gender-neutral language
+## Use gender-neutral language
 
 Use terms that recognise gender equality. Avoid terms that discriminate on the basis of a person’s gender or sexual identity.
 
@@ -8,7 +10,7 @@ Our use of language reflects changes in society. There is wide agreement about u
 
 ### Inclusivity requirements
 
-It is unlawful to discriminate against a person under the [ Sex Discrimination Act 1984](https://www.legislation.gov.au/Series/C2004A02868). This discrimination relates to their:
+It is unlawful to discriminate against a person under the [*Sex Discrimination Act 1984*](https://www.legislation.gov.au/Series/C2004A02868). This discrimination relates to their:
 
 - sex
 - marital or relationship status
@@ -21,7 +23,7 @@ It is also unlawful to discriminate against a person because they are breastfeed
 
 ### Pronoun choice
 
-Learn the user’s [pronoun](/node/131). If it’s not clear and you can’t ask them, choose gender-neutral pronouns.
+Learn the user’s [pronoun](https://www.stylemanual.gov.au/node/131). If it’s not clear and you can’t ask them, choose gender-neutral pronouns.
 
 The singular ‘they’ is gender-neutral. It avoids specifying a person’s gender.
 
@@ -93,9 +95,9 @@ Gender is not relevant to a person’s profession or title in general. Use gende
 
 ‘Mx’ refers to non-binary people and those who do not wish to be referred to by their gender. Use ‘Mx’ when a person indicates this is what they prefer, but not otherwise.
 
-Forms and surveys can ask for people to specify gender. Don’t ask for a title or gender identity [unless the form is designed to collect this information](/node/177). For example, a form can ask for [a person’s given and family name](/node/59). It does not need to ask for their preferred title.
+Forms and surveys can ask for people to specify gender. Don’t ask for a title or gender identity [unless the form is designed to collect this information](https://www.stylemanual.gov.au/node/177). For example, a form can ask for [a person’s given and family name](https://www.stylemanual.gov.au/node/59). It does not need to ask for their preferred title.
 
-Check for changes in language use
+## Check for changes in language use
 
 Take care in areas where language is changing. Follow the rule that people have the right to identify their sexual orientation and gender identity as they choose.
 
@@ -118,9 +120,9 @@ It can help to know the meanings of words people use about gender and sexual div
 
 These are not the only ways to use these words. The definitions highlight some of the main points and distinctions. For more advice on these terms, go to:
 
-- the
-[Human Rights Commission](https://www.humanrights.gov.au/our-work/lgbti/terminology) - the
-[Australian Institute of Family Studies](https://aifs.gov.au/cfca/publications/lgbtiq-communities) [Intersex Human Rights Australia](https://ihra.org.au/style/).
+- the [Human Rights Commission](https://www.humanrights.gov.au/our-work/lgbti/terminology)
+- the [Australian Institute of Family Studies](https://aifs.gov.au/cfca/publications/lgbtiq-communities)
+- [Intersex Human Rights Australia](https://ihra.org.au/style/).
 
 ### LGBTI and LGBTIQ+ communities
 
@@ -131,37 +133,3 @@ Recently, the term has expanded again to LGBTIQ, LGBTIQ+ or LGBTIQA+. The ‘Q�
 Australian Government agencies use both LGBTI and LGBTIQ+.
 
 ‘SOGIESC’ is a term writers use when discussing law and policy. It refers to ‘sexual orientation, gender identity and expression, and sex characteristics’. This term replaces the earlier term ‘SOGII’. It referred to ‘sexual orientation, gender identity and intersex’ issues.
-
-Release notes
-
-The digital edition contains new guidance on inclusive language around gender and sexual diversity. It adds advice on the distinctions between gender, sex and sexuality, on LGBTIQ+ communities and on the use of the title ‘Mx’.
-
-The sixth edition focused on inclusive treatment of the sexes. It gave options for avoiding gender-specific pronouns, and noted the singular ‘they’ had acquired a ‘special value’ in the context of inclusive language.
-
-The digital edition goes further: it suggests using the singular ‘they’ as a gender-neutral pronoun when avoiding gender-specific pronouns. This is consistent with advice that was in the Content Guide.
-
-The Content Guide had advice on avoiding gendered pronouns, on transgender and intersex issues and on gender and sexuality.
-
-About this page
-
-### References
-
-Attorney-General’s Department (2015) [ Australian Government guidelines on the recognition of sex and gender](https://www.ag.gov.au/Publications/Pages/AustralianGovernmentGuidelinesontheRecognitionofSexandGender.aspx), AGD website, accessed 25 May 2020.
-
-Australian Bureau of Statistics (2018) ‘[Sex and gender diversity on the 2016 Census](https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/2071.0~2016~Main%20Features~Sex%20and%20Gender%20Diversity%20in%20the%202016%20Census~100)’, *Census of population and housing: reflecting Australia – stories from the Census, 2016*, catalogue number 2071.0, accessed 22 May 2020.
-
-Australian Human Rights Commission (2015) [ Sex discrimination](https://www.humanrights.gov.au/our-work/employers/sex-discrimination), AHRC website, accessed 25 May 2020.
-
-Australian Human Rights Commission (2019) *About sexual orientation, gender identity and intersex status discrimination*, AHRC website, accessed 25 May 2020.
-
-Child Family Community Australia, [ LGBTIQ+ communities: glossary of common terms](https://aifs.gov.au/cfca/publications/lgbtiq-communities), CFCA resource sheet, Australian Institute of Family Studies website, accessed 25 May 2020.
-
-Australian Press Council (2019) [ Advisory guideline: reporting on persons with diverse sexual orientation, gender identity, and sex characteristics](https://www.presscouncil.org.au/wp-content/uploads/2021/11/APC-Advisory-Guideline-2019-final.pdf), APC, accessed 25 May 2020.
-
-Australian Public Service Commission (2018) *Lexicon of gender*, APSC website, accessed 25 May 2020.
-
-ReachOut (2019) [ Understanding what it means to be intersex](https://au.reachout.com/articles/understanding-what-it-means-to-be-intersex), ReachOut.com, accessed 25 May 2020.
-
-### Last updated
-
-This page was updated Monday 15 July 2024.

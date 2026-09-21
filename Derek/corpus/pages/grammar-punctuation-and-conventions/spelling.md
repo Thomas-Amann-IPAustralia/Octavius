@@ -1,15 +1,15 @@
+# Spelling
+
 Spelling errors detract from readability. Follow one dictionary for consistency and use it to check variable spellings.
 
-
-Choose one dictionary for consistency
+## Choose one dictionary for consistency
 
 Government organisations should choose one dictionary of Australian English.
 
 This manual recommends either:
 
-- the
-*Australian concise Oxford dictionary*(ACOD) - the
-*Macquarie dictionary*.
+- the *Australian concise Oxford dictionary*(ACOD)
+- the *Macquarie dictionary*.
 
 Use your organisation’s preferred dictionary as a spelling reference when you write. Spelling and word usage can change over time. Make sure you use an up-to-date edition that reflects current language usages.
 
@@ -25,22 +25,14 @@ Dictionaries will also show [hyphenation](https://www.stylemanual.gov.au/style-r
 
 General dictionaries won’t meet all needs. Other dictionaries may have helpful features, for example:
 
--
-more details on origins of words (etymologies)
-
--
-clearer examples
-
--
-word division for breaking words over lines of text
-
--
-appendices.
-
+- more details on origins of words (etymologies)
+- clearer examples
+- word division for breaking words over lines of text
+- appendices.
 
 Specialist dictionaries are essential for scientific or technical writing. The style sheet for the content should include specialist terms.
 
-Dictionaries describe language usages
+## Dictionaries describe language usages
 
 English is a global language. There are many regional varieties of written and spoken English. Dictionary spellings capture standard English words. Dictionaries also capture words and usages particular to varieties of English, including Australian English.
 
@@ -54,38 +46,28 @@ Australian spellings generally follows British spellings, but there are exceptio
 
 In addition, style guides (like the Style Manual) usually have guidance for their users about how to write specific terms and phrases.
 
-Follow guidance in this manual
+## Follow guidance in this manual
 
 The Style Manual has specific guidance about writing certain terms and phrases correctly.
 
 Follow our guidance for:
 
-There is also guidance related to spelling at [punctuation and capitalisation](/node/116).
+- [names and terms, including Australian place names](https://www.stylemanual.gov.au/node/117)
+- [titles, honours and forms of address](https://www.stylemanual.gov.au/node/149)
+- [numbers and measurements](https://www.stylemanual.gov.au/node/138)
+- [terms that support inclusion](https://www.stylemanual.gov.au/node/178)
+- [common misspellings and word confusion](https://www.stylemanual.gov.au/node/121).
 
-Spelling in this manual
+There is also guidance related to spelling at [punctuation and capitalisation](https://www.stylemanual.gov.au/node/116).
+
+## Spelling in this manual
 
 The spelling in this manual follows the sixth edition of the ACOD. This dictionary reflects Australian English usage.
 
 Style Manual also recognises conventions and spellings particular to government content.
 
-The spellings used by Australian Government organisations that follow the *Macquarie dictionary *might differ from those in this manual. This is perfectly acceptable – choose either of our recommended dictionaries (or a specialist dictionary) and follow it consistently.
+The spellings used by Australian Government organisations that follow the *Macquarie dictionary*might differ from those in this manual. This is perfectly acceptable – choose either of our recommended dictionaries (or a specialist dictionary) and follow it consistently.
 
 Always follow our guidance for specific terms and phrases.
 
 Users might notice that the Style Manual departs from some spellings used in the sixth edition. For example, we now write ‘ement’ not ‘ment’ in acknowledgement, lodgement and judgement (but we use ‘judgment’ for [legal material](https://www.stylemanual.gov.au/style-rules-and-conventions/referencing-and-attribution/legal-material)). This is consistent with current advice in Australian English dictionaries.
-
-Release notes
-
-The digital edition reflects contemporary spellings and Australian English usages.
-
-Corpus data informs departures from the sixth edition. The primary set of corpora for Australian-specific data are those on [English-Corpora.org](https://www.english-corpora.org/). ‘News on the web’ and ‘Global Web-based English’ corpora enabled comparative analysis between Australian English usages and other varieties of English.
-
-Checks through the Australian National Dictionary Centre also used data on Factiva and the Oxford National Corpus.
-
-Subject matter experts across the Australian Public Service assisted with spellings that have a legislative basis.
-
-The Content Guide recommended *The Macquarie dictionary.* It did not mention the *Australian concise Oxford dictionary* or any other alternative. It gave advice on setting spellcheckers in Microsoft Word, which the digital edition does not.
-
-### Last updated
-
-This page was updated Friday 7 July 2023.

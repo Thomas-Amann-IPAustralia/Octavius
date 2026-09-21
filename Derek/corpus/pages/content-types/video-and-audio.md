@@ -1,6 +1,8 @@
+# Video and audio
+
 Video and audio are time-based media. Users can choose when and how much they view or listen to. If the format meets a user need, make sure anyone can access the content.
 
-Use video or audio when users find it easy to understand and access
+## Use video or audio when users find it easy to understand and access
 
 Ask whether time-based media (video or audio) is the best way to deliver a message or tell a story.
 
@@ -29,7 +31,7 @@ Provide a text alternative to video and audio for:
 - users who have time pressures
 - search engine optimisation (SEO).
 
-Before deciding if video or audio is the right format, do [user research](/node/76).
+Before deciding if video or audio is the right format, do [user research](https://www.stylemanual.gov.au/node/76).
 
 Time-based media need more resources than text to produce, maintain and update. Text-based content is usually a more feasible and accessible option to meet a user need.
 
@@ -44,14 +46,21 @@ Fundamentals:
 
 - Create accessible video and audio with the correct alternative versions so everyone can access the information.
 - Meet AAA success criteria for video when content is of national importance. For example, for voting or Census participation and access to National Health and Safety information.
-- Follow the detailed
-[requirements for video and audio](/node/41).
+- Follow the detailed [requirements for video and audio](https://www.stylemanual.gov.au/node/41).
 
 Web Content Accessibility Guidelines success criteria:
 
-[1.2.1 Audio-only and video-only (prerecorded) – level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=124%2C129%2C121#audio-only-and-video-only-prerecorded)[1.2.2 Captions (prerecorded) – level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=124%2C129%2C121#captions-prerecorded)[1.2.3 Audio description or media alternative (prerecorded) – level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=124%2C129%2C121#audio-description-or-media-alternative-prerecorded)[1.4.2 Audio control – level A](https://www.w3.org/WAI/WCAG21/quickref/#audio-control)[1.4.7 Low or no background audio – level AAA](https://www.w3.org/WAI/WCAG21/quickref/#low-or-no-background-audio)[1.2.5 Audio description (prerecorded) – level AA](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded)[1.2.6 Sign language (prerecorded) – level AAA](https://www.w3.org/WAI/WCAG21/quickref/#sign-language-prerecorded)[1.2.7 Extended audio description (prerecorded) - level AAA](https://www.w3.org/WAI/WCAG21/quickref/#extended-audio-description-prerecorded)[1.2.8 Media alternative (prerecorded) – level AAA](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=128#media-alternative-prerecorded)
+- [1.2.1 Audio-only and video-only (prerecorded) – level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=124%2C129%2C121#audio-only-and-video-only-prerecorded)
+- [1.2.2 Captions (prerecorded) – level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=124%2C129%2C121#captions-prerecorded)
+- [1.2.3 Audio description or media alternative (prerecorded) – level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=124%2C129%2C121#audio-description-or-media-alternative-prerecorded)
+- [1.4.2 Audio control – level A](https://www.w3.org/WAI/WCAG21/quickref/#audio-control)
+- [1.4.7 Low or no background audio – level AAA](https://www.w3.org/WAI/WCAG21/quickref/#low-or-no-background-audio)
+- [1.2.5 Audio description (prerecorded) – level AA](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded)
+- [1.2.6 Sign language (prerecorded) – level AAA](https://www.w3.org/WAI/WCAG21/quickref/#sign-language-prerecorded)
+- [1.2.7 Extended audio description (prerecorded) - level AAA](https://www.w3.org/WAI/WCAG21/quickref/#extended-audio-description-prerecorded)
+- [1.2.8 Media alternative (prerecorded) – level AAA](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=128#media-alternative-prerecorded)
 
-Create video if the user needs a quick explanation
+## Create video if the user needs a quick explanation
 
 Video works best when it is short, accessible and shows something people need to know quickly.
 
@@ -63,7 +72,7 @@ Governments use video to communicate with their employees and the public. Some u
 - show people how to do something, such as complete a form
 - stream events and ceremonies.
 
-All video production requires a level of in-house and external professional expertise. Follow the [requirements and standards for video and audio](/node/41).
+All video production requires a level of in-house and external professional expertise. Follow the [requirements and standards for video and audio](https://www.stylemanual.gov.au/node/41).
 
 ### Duration
 
@@ -78,7 +87,7 @@ Break the video into smaller, stand-alone pieces if:
 
 ### Platform
 
-You can place video on webpages, blogs or social media channels. Once you have chosen a platform, check its video publishing guidelines. Video is the preferred format of some [social media platforms](/node/43#design_for_each_relevant_platform). Check which file format the platform accepts.
+You can place video on webpages, blogs or social media channels. Once you have chosen a platform, check its video publishing guidelines. Video is the preferred format of some [social media platforms](https://www.stylemanual.gov.au/node/43#design_for_each_relevant_platform). Check which file format the platform accepts.
 
 ### Tags
 
@@ -117,10 +126,12 @@ Fundamentals:
 
 - When using text or images of text in animation, meet minimum requirements for colour contrast.
 - Ensure colour is not the only means of conveying meaning.
-- Follow the
-[requirements and standards for video and audio](/node/41).
+- Follow the [requirements and standards for video and audio](https://www.stylemanual.gov.au/node/41).
 
 WCAG quick reference:
+
+- [1.4.1 Use of colour – level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=128#use-of-color)
+- [1.4.3 Contrast (minimum) – level AA](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=128#contrast-minimum)
 
 ### Live action video
 
@@ -159,12 +170,13 @@ I can access equivalent information to anything contained in a video or audio fi
 Fundamentals:
 
 - Include live captioning in synchronised media for live broadcasts to ensure content is available to all users.
-- Follow the
-[requirements and standards for video and audio](/node/41).
+- Follow the [requirements and standards for video and audio](https://www.stylemanual.gov.au/node/41).
 
 Web Content Accessibility Guidelines success criteria:
 
-Add audio if the user needs more help to understand
+[1.2.4 Captions (live) – level AA](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=128#captions-live)
+
+## Add audio if the user needs more help to understand
 
 Audio supports video (audio-visual content), or can be its own type of content (audio-only content). Many agencies also produce audio descriptions of written material to make content accessible.
 
@@ -188,9 +200,9 @@ Audio-only content can be an engaging and relatable way to explain complex topic
 
 Audio-only content can improve someone’s understanding of a topic. It takes a lot of resources to create, enhance and publish audio on its own. Other formats may meet user needs more effectively. Do user research to find out who will listen to the audio and why.
 
-Follow the [requirements and standards for audio](/node/41).
+Follow the [requirements and standards for audio](https://www.stylemanual.gov.au/node/41).
 
-Finalise the script before you start recording
+## Finalise the script before you start recording
 
 Have a clear story before you begin production.
 
@@ -202,7 +214,7 @@ Effective audio-visual or audio-only content begins with a script that:
 
 Take the time to create a well-written script with a clear structure.
 
-Ensure audio and supporting text use [inclusive language](/node/178). Show inclusion and diversity in imagery (for audio-visual content) and script roles.
+Ensure audio and supporting text use [inclusive language](https://www.stylemanual.gov.au/node/178). Show inclusion and diversity in imagery (for audio-visual content) and script roles.
 
 Agree on the script with stakeholders and approvers before you record. It’s much easier to change a script or outline than the content once you produce it.
 
@@ -249,7 +261,7 @@ Check that the script explains what users want or need to understand. If it does
 
 Use a timer to help you work out how long the script might take to record.
 
-Choose actors and speakers to suit the content (the talent)
+## Choose actors and speakers to suit the content (the talent)
 
 ‘Talent’ is the industry term for the people who feature in video and audio content.
 
@@ -275,44 +287,8 @@ Ensure everyone featuring in video or audio content signs a release form.
 
 ### Privacy requirements
 
-Your organisation has obligations under the [ Privacy Act 1988](https://www.oaic.gov.au/privacy/the-privacy-act/).
+Your organisation has obligations under the [*Privacy Act 1988*](https://www.oaic.gov.au/privacy/the-privacy-act/).
 
 Privacy is relevant whenever it's possible to identify someone. Treat things that can or might identify an individual as personal information. Personal information can include things like a voice recording or someone's appearance.
 
 When you handle personal information, you must comply with the [Australian Privacy Principles](https://www.oaic.gov.au/privacy/australian-privacy-principles/). Personal information is any information that could identify an individual, in any format.
-
-Release notes
-
-The digital edition significantly updates and expands information about video. It adds new guidance for audio as a distinct format. Updates and revisions cover when to use time-based media, mandatory requirements and accessibility.
-
-The sixth edition mentioned video briefly in several sections but did not give comprehensive information on technical requirements for audio-visual content. It referred to ‘moving images’.
-
-The Content Guide had guidelines on video use, content and length. It has information about accessibility requirements for video, including the use of audio description.
-
-About this page
-
-### References
-
-Biteable (n.d.) ‘[Video script writing 101: basics, examples, and templates](https://biteable.com/blog/video-script/)’, *Biteable blog*, accessed 22 May 2020.
-
-Clement J (2020) [ Device usage of Facebook users worldwide as of July 2020](https://www.statista.com/statistics/377808/distribution-of-facebook-users-by-device/), Statista website, accessed 16 September 2020.
-
-Facebook for Business (21 April 2016) ‘[Capturing attention in feed: the science behind effective video creative](https://www.facebook.com/business/news/insights/capturing-attention-feed-video-creative)’, *Facebook for Business*, accessed 16 September 2020.
-
-King E (20 November 2014) ‘[Scripting podcasts: three tips for writing podcast episodes](https://radix-communications.com/scripting-podcasts-three-tips-for-writing-podcast-episodes/)’, *Radix Communications*, accessed 16 September 2020.
-
-Lynch PJ and Horton S (2016) *Web style guide*, 4th edn, Yale University Press, New Haven and London.
-
-Travers D (29 January 2020) ‘[25 best animated infographic examples online](https://www.spielcreative.com/blog/animated-infographics/)’, *Spiel*, accessed 16 September 2020.
-
-W3C (World Wide Web Consortium) (n.d.) ‘[Understanding guideline 1.2: time-based media](https://www.w3.org/WAI/WCAG21/Understanding/time-based-media)’, *Understanding WCAG 2.1*, W3C website, accessed 16 September 2020.
-
-W3C (2019) ‘[Audio content and video content](https://www.w3.org/WAI/media/av/av-content/)’, *Making audio and video content accessible*, W3C website, accessed 25 August 2020.
-
-W3C (2019) * Making audio and video media accessible*, W3C website, accessed 8 November 2019.
-
-York A (2020) ‘[Always up-to-date guide to social media video specs](https://sproutsocial.com/insights/social-media-video-specs-guide/)’, *Sprout*, accessed 16 September 2020.
-
-### Last updated
-
-This page was updated Monday 6 September 2021.

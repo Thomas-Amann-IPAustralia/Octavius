@@ -1,6 +1,8 @@
+# Foreword by the Hon Patrick Gorman MP
+
 Clear and consistent writing is essential. It helps Australia solve the policy challenges of today and tomorrow. And it underpins government content and services that Australians can rely on.
 
-The seventh edition of the *Australian Government Style Manual *(Style Manual) is for everyone who writes, edits or approves Australian Government content. It is the first digital edition.
+The seventh edition of the *Australian Government Style Manual*(Style Manual) is for everyone who writes, edits or approves Australian Government content. It is the first digital edition.
 
 The Style Manual was first published in 1966. The Australian Government had installed just 34 computers by mid-1967.
 
@@ -16,13 +18,5 @@ Put simply, using the Style Manual helps you make an impact.
 
 Happy writing.
 
-
-
-
-**The Hon Patrick Gorman MP****Assistant Minister for the Public Service**
-
-## About this page
-
-### Last updated
-
-This page was updated Thursday 19 December 2024.
+**The Hon Patrick Gorman MP**
+**Assistant Minister for the Public Service**

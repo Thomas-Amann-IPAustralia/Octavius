@@ -1,7 +1,8 @@
+# Disability and neurodiversity
+
 Disability does not define people. Neurological differences are a natural part of human diversity. Use inclusive language that respects diversity.
 
-
-Focus on the person, not the disability
+## Focus on the person, not the disability
 
 Mention disability only when it’s relevant to the content.
 
@@ -25,19 +26,25 @@ Be responsive if you get feedback on the language you’ve used. It can guide us
 
 You must design accessible content to meet the Digital Service Standard:
 
+- [Criterion 1. Understand user needs](https://www.dta.gov.au/help-and-advice/digital-service-standard/digital-service-standard-criteria/1-understand-user-needs)
+- [Criterion 9. Make it accessible](https://www.dta.gov.au/help-and-advice/digital-service-standard/digital-service-standard-criteria/9-make-it-accessible)
+
 You must make all government content accessible to people with disability.
 
 Use respectful and inclusive language that talks to the person – not their difference.
 
 Commonwealth laws include:
 
-Use respectful language
+- [*Disability Discrimination Act 1992*](https://www.legislation.gov.au/Series/C2004A04426)
+- [*Australian Human Rights Commission Act 1986*](https://www.legislation.gov.au/Series/C2004A03366)
+
+## Use respectful language
 
 Respectful language acknowledges peoples’ preferences to identify with a particular community or characteristic.
 
 Terms should not identify people without an understanding of personal preference. For example, many people who are deaf or hard of hearing may identify as ‘Deaf’ – a cultural group with a different first language.
 
-Avoid using the disability as an adjective that defines the person, unless that is their preference. Use the word ‘disability’ as an [uncountable noun](/node/122).
+Avoid using the disability as an adjective that defines the person, unless that is their preference. Use the word ‘disability’ as an [uncountable noun](https://www.stylemanual.gov.au/node/122).
 
 Use person-first language when you don’t understand individual or community preferences. Describe the person and then the characteristic.
 
@@ -180,60 +187,8 @@ Mental illness sometimes attracts social stigma. This stigma may prevent people 
 
 There is advice about the best language to use for mental illness in guides from the [Australian Human Rights Commission](https://www.humanrights.gov.au/our-work/appendix-c-how-talk-about-mental-illness) and [Everymind](https://everymind.org.au/understanding-mental-health/mental-health/language-and-stigma).
 
-Neurodiversity
+## Neurodiversity
 
 The term ‘neurodiversity’ refers to the idea that neurological differences, such as autism and ADHD, are a natural part of human diversity. Some neurodivergent people identify as having a disability, while others do not. Societal barriers are the main factors disabling people.
 
-It is important to use the right terms when discussing neurodiversity. Visit the glossary of the *National autism strategy 2025–2031 *for more on [inclusive language about neurodiversity](https://www.health.gov.au/resources/publications/national-autism-strategy-2025-2031?language=en).
-
-Release notes
-
-The digital edition revises and expands inclusive terminology on the topic of people with disability. It includes a new section on the ‘social model of disability’.
-
-The sixth edition related inclusive language around disability to the legal requirements for accessibility, and briefly mentioned the World Wide Web Consortium (W3C) Web Content Accessibility Guidelines (WCAG). Contextual references to those guidelines appear throughout the digital edition.
-
-In August 2025 language and definitions relating to neurodiversity were revised to align with the *National autism strategy 2025–2031.*
-
-The digital edition will continue to update terms on inclusive language to reflect contemporary usage.
-
-About this page
-
-### Evidence
-
-Australian Network on Disability (2019) *Inclusive language*, AND website, accessed 25 August 2020.
-
-Disabled People’s Organisations Australia (2020) [ Terminology](https://dpoa.org.au/about/terminology), DPOA website, accessed 25 August 2020.
-
-International Day of People with Disability (2018) *Respectful communication*, IDPwD website, accessed 25 August 2020.
-
-People with Disability Australia (2018) [ Social model of disability](https://pwd.org.au/resources/disability-info/social-model-of-disability/), PWDA website, accessed 25 August 2020.
-
-PWDA (2021) [ Language guide](https://pwd.org.au/resources/disability-info/language-guide/), PWDA website, accessed 17 March 2022.
-
-### References
-
-Australian Disability Clearinghouse on Education and Training (n.d.) ‘[Learning difficulty versus learning disability](https://www.adcet.edu.au/disability-practitioner/reasonable-adjustments/disability-specific-adjustments/specific-learning-disability/learning-difficulty-versus-learning-disability/)’, *Specific learning disability*, ADCET website, accessed 6 November 2019.
-
-Australian Inclusive Publishing Initiative (2019) [ Inclusive publishing in Australia: an introductory guide](https://aipi.com.au/inclusive-publishing-in-australia/), AIPI website, accessed 21 May 2020.
-
-Australian Institute of Health and Welfare (September 2019) [ People with disability in Australia](https://www.aihw.gov.au/reports/disability/people-with-disability-in-australia/summary), AIHW, accessed 25 August 2020.
-
-Commonwealth of Australia (Department of Social Services) (2024) [ National autism strategy 2025–2031](https://www.health.gov.au/resources/publications/national-autism-strategy-2025-2031?language=en),
-
-*Department of Health, Disability and Aging, accessed 26 August 2025.*
-
-[Convention on the Rights of Persons with Disabilities](https://treaties.un.org/Pages/showDetails.aspx?objid=080000028017bf87&clang=_en) (New York, 13 December 2006) [2008], UNTS 2515 p. 3.
-
-Inclusion Australia (n.d.) [ What is intellectual disability?](https://www.inclusionaustralia.org.au/about-us/what-is-intellectual-disability/), Inclusion Australia website, accessed 10 September 2020.
-
-Royal Commission into Violence, Abuse, Neglect and Exploitation of People with Disability (December 2019), [ Issues paper: health care for people with cognitive disability](https://disability.royalcommission.gov.au/publications/health-care-people-cognitive-disability), Disability Royal Commission website, accessed 3 September 2020.
-
-Vision Australia (n.d.) [ Blindness and vision loss](https://www.visionaustralia.org/information/newly-diagnosed/blindness-and-vision-loss), Vision Australia website, accessed 22 May 2020.
-
-Worldwide Web Consortium (2020) [ Making content usable for people with cognitive and learning disabilities](https://www.w3.org/TR/coga-usable/) [working draft], W3C website, accessed 27 August 2020.
-
-W3C (2017) [ Diverse abilities and barriers](https://www.w3.org/WAI/people-use-web/abilities-barriers/), W3C website, accessed 25 August 2020.
-
-### Last updated
-
-This page was updated Tuesday 26 August 2025.
+It is important to use the right terms when discussing neurodiversity. Visit the glossary of the *National autism strategy 2025–2031*for more on [inclusive language about neurodiversity](https://www.health.gov.au/resources/publications/national-autism-strategy-2025-2031?language=en).

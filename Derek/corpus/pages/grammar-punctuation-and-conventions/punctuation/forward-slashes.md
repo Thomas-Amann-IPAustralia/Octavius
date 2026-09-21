@@ -1,6 +1,8 @@
+# Forward slashes
+
 Forward slashes are useful in a small number of situations. Users are familiar with them in mathematical expressions, dates, web addresses and in some shortened forms.
 
-Limit the forward slash to specific uses
+## Limit the forward slash to specific uses
 
 The forward slash is also known as the ‘solidus’ or just the ‘slash’.
 
@@ -22,13 +24,14 @@ Use forward slashes:
 - http://www.abc.net.au/foreign
 - 04/12/2020
 
-Don’t add spaces around most forward slashes
+## Don’t add spaces around most forward slashes
 
 There is no need to include a space on either side of a forward slash.
 
 The exceptions are for:
 
-[official dual place names](/node/134#check_official_place_names_and_style_them_correctly)- lines of poetry in body text – use forward slashes with spaces around them to show the line breaks.
+- [official dual place names](https://www.stylemanual.gov.au/node/134#check_official_place_names_and_style_them_correctly)
+- lines of poetry in body text – use forward slashes with spaces around them to show the line breaks.
 
 ### Example
 
@@ -40,9 +43,9 @@ As far as possible, avoid using forward slashes either side of a line break.
 
 If you must, include the slash before the line break so that the reader anticipates it as they read the next line.
 
-Write shortened units of measurement with a forward slash
+## Write shortened units of measurement with a forward slash
 
-Don’t use forward slashes when spelling out [units of measurement](/node/147).
+Don’t use forward slashes when spelling out [units of measurement](https://www.stylemanual.gov.au/node/147).
 
 ### Correct
 
@@ -53,7 +56,7 @@ Don’t use forward slashes when spelling out [units of measurement](/node/147).
 
 60 kilometres/hour
 
-Use an en dash for financial years, not a slash
+## Use an en dash for financial years, not a slash
 
 Don’t use a forward slash as a replacement for an en dash in financial years.
 
@@ -65,7 +68,7 @@ Don’t use a forward slash as a replacement for an en dash in financial years.
 
 2019/20
 
-Write ‘or’ instead of a slash for alternatives
+## Write ‘or’ instead of a slash for alternatives
 
 When showing alternatives, use ‘or’ instead of a forward slash. This is easier for people to understand.
 
@@ -77,9 +80,9 @@ a yes or no question
 
 a yes/no question
 
-Do not use ‘and/or’* *in text. It could mean either ‘and’ or ‘or’, which confuses many users. Rewrite the sentence to make the meaning clear.
+Do not use ‘and/or’in text. It could mean either ‘and’ or ‘or’, which confuses many users. Rewrite the sentence to make the meaning clear.
 
-Don’t join words with a slash
+## Don’t join words with a slash
 
 Don’t use a forward slash between words that retain their separate identities. Instead, either use an en dash or reword the sentence. Forward slashes can make it look like you mean to show an alternative.
 
@@ -91,29 +94,3 @@ Don’t use a forward slash between words that retain their separate identities.
 ### Not this
 
 a Sydney/Brisbane flight
-
-Release notes
-
-The digital edition consolidates information about when and how to use the forward slash.
-
-The sixth edition included information about the forward slash in the section on sentence punctuation. It was also mentioned in the section on numbers.
-
-The Content Guide did not have guidance on the forward slash.
-
-About this page
-
-### References
-
-Dixon JC and Bolitho B (2005–2019) *Course notes and exercises: Editing and proofreading for the workplace*, Centre for Continuing Education, Australian National University, Canberra.
-
-Murphy EM with Cadman H (2014) *Effective writing: plain English at work*, 2nd edn, Lacuna, Westgate.
-
-Seely J (2001) *Oxford everyday grammar*, Oxford University Press, Oxford.
-
-Stilman S (2004) *Grammatically correct*, Writer’s Digest Books, Ohio.
-
-Truss L (2003) *Eats, shoots and leaves: the zero tolerance approach to punctuation*, Profile Books, London, 2003.
-
-### Last updated
-
-This page was updated Wednesday 24 July 2024.

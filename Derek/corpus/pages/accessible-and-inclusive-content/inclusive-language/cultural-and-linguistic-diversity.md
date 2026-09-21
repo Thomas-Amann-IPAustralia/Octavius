@@ -1,6 +1,8 @@
+# Cultural and linguistic diversity
+
 Australians have different cultural backgrounds and speak many languages. Use inclusive language that respects this diversity.
 
-Speak to the person, not their difference
+## Speak to the person, not their difference
 
 Use inclusive language. You can use the general term ‘multicultural communities’ to write about people from different cultural backgrounds.
 
@@ -12,27 +14,31 @@ Use respectful and inclusive language that talks to the person, not their differ
 
 Commonwealth laws include:
 
+- [*Racial Discrimination Act 1975*](https://www.legislation.gov.au/Series/C2004A00274)
+- [*Australian Human Rights Commission Act 1986*](https://www.legislation.gov.au/Series/C2004A03366)
+- [*Public Service Act 1999*](https://www.legislation.gov.au/Series/C2004A00538).
+
 Mention people’s cultural affinity or identity only when you need to.
 
-Australians speak many different languages and have different cultural and religious beliefs. Each culture has its own values and beliefs. You can be sensitive to these differences when you write, through doing [user research](/node/76).
+Australians speak many different languages and have different cultural and religious beliefs. Each culture has its own values and beliefs. You can be sensitive to these differences when you write, through doing [user research](https://www.stylemanual.gov.au/node/76).
 
 Avoid using words such as ‘ethnic Australians’ or ‘ethnic groups’. This can imply that migrant heritage or migrant status is unusual.
 
-Refer to people living in Australia as ‘Australians’
+## Refer to people living in Australia as ‘Australians’
 
 The meaning of the word ‘Australian’ can vary in different contexts. It could mean anyone who lives in Australia. Legally, it could mean only people who are Australian citizens.
 
 Depending on the type of content, you might need to explain what you mean by the term. For example, ‘Australian students’ could refer to all students in Australia including international students.
 
-Mention heritage, cultural or other national identity only if it’s necessary. Consult guidance on how to refer to [nationalities, peoples and places outside of Australia](/node/133#write_nationalities_peoples_and_places_with_initial_capitals).
+Mention heritage, cultural or other national identity only if it’s necessary. Consult guidance on how to refer to [nationalities, peoples and places outside of Australia](https://www.stylemanual.gov.au/node/133#write_nationalities_peoples_and_places_with_initial_capitals).
 
-When you specify a dual identity or other heritage as an adjective, connect the reference and the term ‘Australian’ with an [en dash](/node/199).
+When you specify a dual identity or other heritage as an adjective, connect the reference and the term ‘Australian’ with an [en dash](https://www.stylemanual.gov.au/node/199).
 
 ### Write this
 
-The Japanese–Australian community takes part in the Summer Festival in Melbourne. [Dual identity expressed as an [adjective](/node/199#join_nouns_with_en_dashes_to_show_equal_relationships)]
+The Japanese–Australian community takes part in the Summer Festival in Melbourne. [Dual identity expressed as an [adjective](https://www.stylemanual.gov.au/node/199#join_nouns_with_en_dashes_to_show_equal_relationships)]
 
-Japanese Australians take part in the Summer Festival in Melbourne. [Dual identity expressed as a [noun phrase](/node/144#noun_phrases_function_as_nouns)]
+Japanese Australians take part in the Summer Festival in Melbourne. [Dual identity expressed as a [noun phrase](https://www.stylemanual.gov.au/node/144#noun_phrases_function_as_nouns)]
 
 ### Not this
 
@@ -46,7 +52,7 @@ To refer to people who have recently arrived in Australia, use the words:
 
 These words don’t say anything about a person’s culture or language: they are neutral. Don’t use these words once people have settled and become Australian citizens. They suggest a temporary or marginal status.
 
-Use the terms ‘given name’ and ‘family name’
+## Use the terms ‘given name’ and ‘family name’
 
 Many naming systems around the world differ from those used in English-speaking countries.
 
@@ -78,12 +84,4 @@ Other countries have variations of name order. For example:
 - In Indonesia, some people have only one name. They might use this in Australia for both their given name and family name to conform with Western conventions.
 - In Myanmar, names are not divided into given and family names. These names keep their full form instead.
 
-For more on this rule, refer to guidance on [personal names](/node/90#follow_reliable_sources_for_nonenglish_names).
-
-Release notes
-
-The digital edition updates inclusive language guidance around cultural and linguistic diversity. It recommends against using the term ‘ethnic’, as it is now out of favour. The Content Guide had brief information on the 'Accessibility and inclusivity' page.
-
-### Last updated
-
-This page was updated Monday 6 September 2021.
+For more on this rule, refer to guidance on [personal names](https://www.stylemanual.gov.au/node/90#follow_reliable_sources_for_nonenglish_names).

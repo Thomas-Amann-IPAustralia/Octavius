@@ -1,6 +1,8 @@
+# Hierarchical structure
+
 A hierarchy sorts content into categories and levels. This structure can give users a picture of how items or topics fit together.
 
-Show how categories relate to one another
+## Show how categories relate to one another
 
 Hierarchies structure content by category. They show how different categories relate to each other, and how they relate to the main idea or theme.
 
@@ -8,8 +10,8 @@ This structure is the basis for the information architecture of many websites. I
 
 To structure content hierarchically:
 
-- Plan the
-[headings](/node/51). - Decide what information fits under each heading.
+- Plan the [headings](https://www.stylemanual.gov.au/node/51).
+- Decide what information fits under each heading.
 - Plan subheadings.
 - Keep the hierarchy shallow – use no more than 4 heading levels.
 - Check the headings for consistency and logic.
@@ -29,27 +31,7 @@ Fundamentals:
 
 Web Content Accessibility Guidelines success criteria:
 
-Release notes
-
-The digital edition is based on the sixth edition topic, but is more concise.
-
-The Content Guide did not address the topic.
-
-
-About this page
-
-### References
-
-Dixon JC and Bolitho B (2005–2019) *Report writing*, Centre for Continuing Education, Australian National University, Canberra.
-
-Lynch PJ and Horton S (2016) ‘[Information architecture](https://webstyleguide.com/4-information-architecture.html)’, *Web style guide*, Web Style Guide website, accessed 30 May 2020.
-
-Shibata H and Hori K (2005) ‘Cognitive support for the organization of writing’, *New Generation Computing*, 26(2):97–124, doi:10.1007/s00354-008-0037-9.
-
-University of Washington (n.d.) [ Patterns of organization](http://faculty.washington.edu/ezent/impo.htm), University of Washington, assessed 30 May 2020.
-
-Usability.gov (2020)* *[ Organization structures](https://www.usability.gov/how-to-and-tools/methods/organization-structures.html), Usability.gov, accessed 30 May 2020.
-
-### Last updated
-
-This page was updated Monday 6 September 2021.
+- [1.3.1 Info and relationships](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=121%2C128%2C131%2C136%2C413%2C1411#info-and-relationships)[–](https://www.w3.org/WAI/WCAG21/quickref/#section-headings)[level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=121%2C128%2C131%2C136%2C413%2C1411#info-and-relationships)
+- [2.4.2 Page titled – level A](https://www.w3.org/WAI/WCAG21/quickref/#page-titled)
+- [2.4.6 Headings and labels – level A](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels)
+- [2.4.10 Section headings – level AAA](https://www.w3.org/WAI/WCAG21/quickref/#section-headings)

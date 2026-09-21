@@ -27,6 +27,7 @@ class Reconciliation:
     unchanged: list[Rule] = field(default_factory=list)
     added: list[Candidate] = field(default_factory=list)
     body_altered: list[tuple[Rule, Candidate]] = field(default_factory=list)
+    rehomed: list[tuple[Rule, Candidate]] = field(default_factory=list)
     reworded: list[tuple[Rule, Candidate]] = field(default_factory=list)
     orphaned: list[Rule] = field(default_factory=list)
     ambiguous: list[tuple[Rule, Candidate]] = field(default_factory=list)
@@ -36,6 +37,7 @@ class Reconciliation:
             "unchanged": len(self.unchanged),
             "added": len(self.added),
             "body_altered": len(self.body_altered),
+            "rehomed": len(self.rehomed),
             "reworded": len(self.reworded),
             "orphaned": len(self.orphaned),
             "needs_human_lineage_decision": len(self.ambiguous),
@@ -43,7 +45,10 @@ class Reconciliation:
 
     @property
     def requires_review(self) -> bool:
-        return bool(self.added or self.body_altered or self.reworded or self.orphaned or self.ambiguous)
+        """Rehomed rules are deliberately excluded: nothing about them changed
+        except our address for them, so there is nothing new to review."""
+        return bool(self.added or self.body_altered or self.reworded
+                    or self.orphaned or self.ambiguous)
 
 
 def _address(page_path: str, heading_path) -> tuple[str, str]:
@@ -92,13 +97,28 @@ def reconcile(
                 result.unchanged.append(existing)
             continue
 
-        # Same statement, moved page or section → the rule relocated.
+        # Identical statement, different UID. The Style Manual did not change
+        # a word; our address for the rule changed, because the UID is
+        # content-addressed over the heading path and a converter upgrade
+        # corrected that path (ADR-020). This is a REHOMING, not a rewording:
+        # treating it as a supersession would write 537 fictional upstream
+        # edits into the ledger's history and discard the review state of a
+        # rule nobody touched.
         same_statement = [
             r for r in by_statement.get(normalise_statement(cand.statement), [])
             if r.uid not in by_uid and r.uid not in matched_uids
         ]
+        # The Style Manual repeats some statements verbatim across pages
+        # ("Use commas in numbers with 4 or more digits" appears on both
+        # commas.md and choosing-numerals-or-words.md). Page path resolves
+        # them without guessing: a rule cannot move pages and keep its
+        # wording without that being a genuinely new rule on the new page.
+        if len(same_statement) > 1:
+            on_page = [r for r in same_statement if r.source.page_path == cand.page_path]
+            if len(on_page) == 1:
+                same_statement = on_page
         if len(same_statement) == 1:
-            result.reworded.append((same_statement[0], cand))
+            result.rehomed.append((same_statement[0], cand))
             matched_uids.add(same_statement[0].uid)
             continue
         if len(same_statement) > 1:

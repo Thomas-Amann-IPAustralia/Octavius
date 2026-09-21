@@ -1,6 +1,8 @@
+# Keywords and search engines
+
 Keywords reflect core ideas and topics in content. Choosing the right keywords will support people’s ability to find the content they need when they search for it online.
 
-Match keywords to the search terms people use
+## Match keywords to the search terms people use
 
 Using keywords helps people find content that meets their search intention. Keywords help people:
 
@@ -15,7 +17,7 @@ To write for users and search engines, you need to understand:
 - what users need to do with government
 - the keywords they’re likely to use.
 
-Use this information to design content for people and search engines. You can combine it with other techniques for [on-page optimisation](/node/71).
+Use this information to design content for people and search engines. You can combine it with other techniques for [on-page optimisation](https://www.stylemanual.gov.au/node/71).
 
 ### Example
 
@@ -45,13 +47,17 @@ Use keywords that users expect to see and are looking for, so they are indexed b
 
 Web Content Accessibility Guidelines success criteria:
 
-Write keyword-based content
+- [3.1.3 Unusual words – level AAA](https://www.w3.org/WAI/WCAG21/quickref/#unusual-words)
+- [3.1.4 Abbreviations – level AAA](https://www.w3.org/WAI/WCAG21/quickref/#abbreviations)
+- [3.1.5 Reading level – level AAA](https://www.w3.org/WAI/WCAG21/quickref/#reading-level)
+
+## Write keyword-based content
 
 To write content that users and search engines will discover:
 
-- Find out which keywords to use through a keyword tool, analytics and
-[user research](https://www.dta.gov.au/help-and-advice/build-and-improve-services/user-research). - Write content using keywords and descriptive
-[plain language](/node/55). [Structure content](/node/192)(including forms and online tools) so people find what they need.
+- Find out which keywords to use through a keyword tool, analytics and [user research](https://www.dta.gov.au/help-and-advice/build-and-improve-services/user-research).
+- Write content using keywords and descriptive [plain language](https://www.stylemanual.gov.au/node/55).
+- [Structure content](https://www.stylemanual.gov.au/node/192) (including forms and online tools) so people find what they need.
 
 Include keywords once or twice, if they make sense, in the first paragraph of the content. You can also include them in this way in the final paragraph.
 
@@ -80,35 +86,3 @@ The types of keywords you might use are:
 People must be able to discover information produced by Australian Government agencies.
 
 To assist agencies, the National Archives of Australia (NAA) has published advice on [describing information](https://www.naa.gov.au/information-management/describing-information). The NAA advice includes information about [metadata for web content](https://www.naa.gov.au/information-management/describing-information/metadata/metadata-web#standards).
-
-Release notes
-
-The digital edition expands on information from the Content Guide on understanding search engines. It incorporates information from the Content Guide on keywords and search engines and on-page optimisation.
-
-The sixth edition had some information about search engine optimisation, including a section explaining what search engines are and how they work. It had basic information about search engines but did not go into detail on how to write for them.
-
-About this page
-
-### References
-
-General Services Administration (n.d.) ‘[Keep refining](https://content-guide.18f.gov/keep-refining/)’, *18F content guide*, 18F website, accessed 30 May 2020.
-
-GOV.UK (2020) ‘[Data and analytics](https://www.gov.uk/guidance/content-design/data-and-analytics)’, *Content design: planning, writing and managing content*, GOV.UK, accessed 30 May 2020.
-
-Lynch PJ and Horton S (2016) [ Web style guide](https://webstyleguide.com/), Web Style Guide website, accessed 30 May 2020.
-
-Moz (2020) [ The keyword research master guide](https://moz.com/keyword-research-guide), Moz website, accessed 30 May 2020.
-
-Moz (2020) ‘[What are keywords?](https://moz.com/learn/seo/what-are-keywords)’, *SEO learning center*, Moz website, accessed 30 May 2020.
-
-National Archives of Australia (n.d.) [ Information management](https://www.naa.gov.au/information-management), NAA website, accessed 4 August 2023.
-
-Search Engine Land (2020) [ Essential guide to SEO: how to master the science of SEO](https://searchengineland.com/guide/seo), Search Engine Land website, accessed 30 May 2020.
-
-United States Government (n.d.) ‘Search engine optimization’, *USAGov bilingual style guide*, USA.gov, accessed 29 May 2020.
-
-W3C (World Wide Web Consortium) (2016) ‘[Readable: understanding Guideline 3.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning.html)’, Understanding WCAG 2.0: A guide to understanding and implementing WCAG 2.0, W3C website.
-
-### Last updated
-
-This page was updated Friday 20 December 2024.

@@ -1,3 +1,5 @@
+# Tell readers what they need to know
+
 A lot of what we write in the APS asks someone to make a decision or do something. Our readers are often very short of time. Don’t make them read a lot of writing before they find out why they are reading it.
 
 A good start is to ask 2 questions:
@@ -20,9 +22,3 @@ Research is the answer. Find experts to ask, and use trustworthy sources. Check 
 In other words, don’t make stuff up.
 
 On the flip side, you often know far more about a topic than your reader needs to know. Background information should directly help your readers. Resist the temptation to tell them every interesting thing you know about a topic. When in doubt, write less rather than more. If you can’t bear to remove the fascinating details, move them to an attachment.
-
-## About this page
-
-### Last updated
-
-This page was updated Thursday 19 December 2024.

@@ -1,6 +1,8 @@
+# Phrases
+
 Phrases are groups of words that add meaning to a sentence. Write and punctuate them correctly to give people clear and useful information.
 
-Phrases are groups of words with a specific function
+## Phrases are groups of words with a specific function
 
 A phrase is a group of words that makes sense on its own but doesn’t contain a subject and a verb.
 
@@ -12,9 +14,9 @@ Types of phrases include:
 - adverbial phrases
 - adjectival phrases.
 
-Noun phrases function as nouns
+## Noun phrases function as nouns
 
-A noun phrase is a group of words that works in a sentence as a [noun](/node/122). A noun phrase always includes a noun. It can also include determiners, adjectives, adverbs and other nouns.
+A noun phrase is a group of words that works in a sentence as a [noun](https://www.stylemanual.gov.au/node/122). A noun phrase always includes a noun. It can also include determiners, adjectives, adverbs and other nouns.
 
 ### Example
 
@@ -54,15 +56,15 @@ The Historic Shipwrecks Delegates Committee met once a year.
 
 [The committee is made up of delegates. The name of the committee relates to the *Historic Shipwrecks Act 1976*.]
 
-Adverbial phrases function as adverbs
+## Adverbial phrases function as adverbs
 
-An adverbial phrase is a group of words that describes a verb, adjective or other [adverb](/node/127).
+An adverbial phrase is a group of words that describes a verb, adjective or other [adverb](https://www.stylemanual.gov.au/node/127).
 
 ### Example
 
 Grammar rules are quite frequently misunderstood.
 
-[The phrase ‘quite frequently’* *modifies the adjective ‘misunderstood’.]
+[The phrase ‘quite frequently’modifies the adjective ‘misunderstood’.]
 
 Best of all, we can tick this off the list.
 
@@ -87,9 +89,9 @@ I’ll see you after knock-off time. [Adverbial phrase of time]
 
 The manual sat on the shelf. [Adverbial phrase of place]
 
-Adjectival phrases function as adjectives
+## Adjectival phrases function as adjectives
 
-An adjectival phrase is a group of words that works as an [adjective](/node/126). It modifies a pronoun, noun or noun phrase.
+An adjectival phrase is a group of words that works as an [adjective](https://www.stylemanual.gov.au/node/126). It modifies a pronoun, noun or noun phrase.
 
 ### Example
 
@@ -116,37 +118,3 @@ Adjectival phrases can start with a preposition. They are also known as preposit
 The top line in the budget report showed a deficit.
 
 [The preposition ‘in’ starts the prepositional phrase ‘in the budget report’, which describes ‘the top line’.]
-
-Release notes
-
-The digital edition has practical guidance on plain language. It relates grammatical concepts to the principles of plain language.
-
-The digital edition consolidates information from the sixth edition and highlights the basics about [clauses](https://www.stylemanual.gov.au/format-writing-and-structure/clear-language-and-writing-style/sentences/clauses). It takes a different approach to the sixth edition by breaking related topics into specific subject areas like ‘phrases’ and ‘[types of words](https://www.stylemanual.gov.au/format-writing-and-structure/clear-language-and-writing-style/types-words)’.
-
-The Content Guide did not have any in-depth information on grammatical concepts.
-
-About this page
-
-### References
-
-Altenberg EP and Vago RM (2010) *English grammar: understanding the basics*, Cambridge University Press, Cambridge.
-
-Dixon JC and Bolitho B (2005–2019a) *Course notes and exercises: English grammar for writers, editors and policymakers*, Centre for Continuing Education, Australian National University, Canberra.
-
-Dixon JC and Bolitho B (2005–2019b) *Report writing*, Centre for Continuing Education, Australian National University, Canberra.
-
-European Commission (2020) *English style guide: a handbook for authors and translators in the European Commission*, European Commission.
-
-Murphy EM with Cadman H (2014) *Effective writing: plain English at work*, 2nd edn, Lacuna, Westgate.
-
-Seely J (2001) *Oxford everyday grammar*, Oxford University Press, Oxford.
-
-Stilman A (2004) *Grammatically correct*, Writer’s Digest Books, Ohio.
-
-Strunk W and White EB (2000) *The elements of style*, 4th edn, Longman, New York.
-
-Truss L (2003) *Eats, shoots and leaves: the zero tolerance approach to punctuation*, Profile Books, London.
-
-### Last updated
-
-This page was updated Thursday 22 December 2022.

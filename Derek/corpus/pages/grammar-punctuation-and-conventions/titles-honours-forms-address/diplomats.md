@@ -1,7 +1,8 @@
+# Diplomats
+
 Use the correct term when referring to ambassadors, high commissioners, nuncios and other diplomatic staff.
 
-
-Use the correct term when referring to diplomats
+## Use the correct term when referring to diplomats
 
 The title for diplomats depends on what they represent:
 
@@ -53,27 +54,3 @@ Use the name and official position to address:
 
 - Mr John Smith, Chargé d’Affaires
 - Ms Susan Grace, Consul General in Chennai
-
-Release notes
-
-The digital edition consolidates information from the sixth edition and provides updated examples.
-
-The Content Guide did not have specific information about titles and forms of address for diplomats.
-
-About this page
-
-### References
-
-DFAT (Department of Foreign Affairs and Trade) (n.d.) *Australian ambassadors and other representatives**, *DFAT website, accessed 8 June 2020.
-
-DFAT (n.d.) [ Foreign embassies and consulates in Australia](https://protocol.dfat.gov.au/Public/Display), DFAT website, accessed 8 June 2020.
-
-DFAT (n.d.) [ Protocol guidelines](https://www.dfat.gov.au/about-us/publications/corporate/protocol-guidelines/Pages/protocol-guidelines),
-
-*DFAT website, accessed 8 June 2020.*
-
-Queensland Government Department of the Premier and Cabinet (2020)* *[ Protocol handbook: a guide for Queensland government officers](https://www.premiers.qld.gov.au/publications/categories/policies-and-codes/protocol-handbook.aspx), Department of the Premier and Cabinet website, accessed 8 June 2020.
-
-### Last updated
-
-This page was updated Monday 6 September 2021.

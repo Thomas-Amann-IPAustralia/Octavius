@@ -53,7 +53,8 @@ changed since last time.
 | Module | Role |
 |---|---|
 | `derek/corpus/fetch.py` | Transport: robots.txt, XSLT-sitemap parsing, Selenium fallback. Carried over from Octavius, which solved this correctly. |
-| `derek/corpus/normalise.py` | Canonical form + heading repair + content hash. |
+| `derek/corpus/to_markdown.py` | HTML → Markdown, preserving DOM heading levels (ADR-020). |
+| `derek/corpus/normalise.py` | Canonical form + content hash + heading repair (fallback only). |
 | `derek/corpus/eligibility.py` | Which pages are rule sources (ADR-005). |
 | `derek/corpus/snapshot.py` | Fetch, write, update the lock file. |
 | `derek/corpus/diff.py` | Emit `added` / `altered` / `removed` changesets. |
@@ -68,13 +69,24 @@ Three things Octavius got wrong and this layer fixes ([ADR-001](02-decisions.md#
    attempts inside the window. A weekly full re-hash sweep, staggered across seven days,
    catches silent edits.
 
-**Heading repair** is the non-obvious part. `trafilatura` flattens the manual's heading
-levels inconsistently — the corpus carries 1,795 `###` but only 53 `##` and 2 `#`,
-because section headings are frequently demoted to bare paragraphs. Since Layer 1 reads
-the rule inventory off the heading tree, a demoted heading is a lost rule.
-`repair_headings` recovers **1,262 headings across 145 of 186 pages**. It is
-recall-oriented and deliberately promotes some non-rules; Layer 1's normativity test and
-the eligibility allowlist filter those out. Precision belongs downstream of recall.
+**Heading fidelity** is the non-obvious part, and it decides which rules exist.
+
+Octavius converted HTML with `trafilatura`, a generic article extractor that does not
+preserve heading hierarchy: its corpus carried 1,795 `###` against only 53 `##` and 2
+`#`, with section headings routinely demoted to bare paragraphs. A repair heuristic
+recovered them, but that left **71% of rule candidates depending on a guess**.
+
+`derek/corpus/to_markdown.py` reads heading levels from the source DOM instead
+([ADR-020](02-decisions.md#adr-020-heading-levels-come-from-the-dom)). The Style Manual
+publishes a clean outline — `h1` page title, `h2` sections, `h3` rules, `h4` example
+blocks — so the levels are simply taken as given. Site chrome is removed structurally,
+and `extract_markdown` raises rather than returning empty, so a blocked fetch can never
+be written to the corpus as a legitimately empty page.
+
+`repair_headings` is retained as a regression guard. It is **self-disabling**: if the
+page already carries a level-1 or level-2 heading its hierarchy is intact and the
+function returns the text unchanged. A non-zero promotion count on a fresh scrape now
+means the converter has broken.
 
 ---
 
@@ -98,11 +110,11 @@ Current output over the 128 eligible pages:
 
 | | |
 |---|---|
-| Candidates | **546**, all with unique UIDs |
-| Statement forms | 460 imperative · 61 negative imperative · 25 modal |
-| With hand-authored gold examples | 318 (58%) |
-| With *paired* compliant + violating examples | 77 |
-| Gold example sentences harvested | 489 |
+| Candidates | **661**, all with unique UIDs |
+| Statement forms | imperative · negative imperative · modal |
+| With hand-authored gold examples | 366 (55%) |
+| With *paired* compliant + violating examples | 83 |
+| Gold example sentences harvested | 520 |
 
 Two runs produce byte-identical output; `python -m derek.extract.build --check` fails
 CI if that ever stops being true.
@@ -114,7 +126,11 @@ blocks are harvested but **not** assigned a polarity — guessing it is precisel
 mistake being guarded against. Octavius generated its own test strings instead and
 inverted them wholesale.
 
-546 is the number that matters. It is small enough for one person to review.
+661 is the number that matters. It is small enough for one person to review.
+
+These counts are checked against the published pages by
+`python -m derek.eval.audit_extraction` — see
+[06-extraction-audit.md](06-extraction-audit.md).
 
 ---
 

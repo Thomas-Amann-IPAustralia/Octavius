@@ -1,3 +1,5 @@
+# Punctuation and quotation marks
+
 Do you put punctuation marks inside quotation marks or outside them?
 
 It depends:
@@ -33,7 +35,6 @@ Pete said, ‘Well, I like chickadees’.
 
 The punctuation mark goes outside the closing quotation mark when it belongs to the sentence, not the quote.
 
-
 ### Write this
 
 Did you hear him say, ‘He’s a goner’?
@@ -51,11 +52,3 @@ The Speaker called, ‘Order!’
 ### Not this
 
 The Speaker called, ‘Order!’.
-
-## Style Manual pages
-
-## About this page
-
-### Last updated
-
-This page was updated Thursday 19 December 2024.

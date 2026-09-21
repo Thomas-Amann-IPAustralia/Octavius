@@ -1,6 +1,8 @@
+# Sequential structure
+
 Sequential structure follows a clear order to make it easy for users to follow step by step. It can suit instructions or a report of an event.
 
-Use a sequential structure to explain steps or a specific order
+## Use a sequential structure to explain steps or a specific order
 
 A sequential structure shows a process, a series of steps or an order of events.
 
@@ -12,13 +14,13 @@ Use a sequential structure for:
 
 This type of structure helps users understand how items in the sequence relate to each other.
 
-Use the right writing style. For example, instructions and transactions are more direct and use the [imperative](/node/128). Reports of events usually use the [past tense of the verb](/node/128).
+Use the right writing style. For example, instructions and transactions are more direct and use the [imperative](https://www.stylemanual.gov.au/node/128). Reports of events usually use the [past tense of the verb](https://www.stylemanual.gov.au/node/128).
 
 ### Example
 
 #### Instructions
 
-Complete step 1 before moving to step 2. [The verb ‘complete’* *is in the imperative mood.]
+Complete step 1 before moving to step 2. [The verb ‘complete’is in the imperative mood.]
 
 #### Incident report
 
@@ -40,7 +42,13 @@ Fundamentals:
 
 Web Content Accessibility Guidelines success criteria:
 
-Split processes into balanced steps
+- [1.3.1 Info and relationships](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=121%2C128%2C131%2C136%2C413%2C1411#info-and-relationships)[–](https://www.w3.org/WAI/WCAG21/quickref/#section-headings)[level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=121%2C128%2C131%2C136%2C413%2C1411#info-and-relationships)
+- [1.3.2 Meaningful sequence – level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=132#meaningful-sequence)
+- [2.4.2 Page titled – level A](https://www.w3.org/WAI/WCAG21/quickref/#page-titled)
+- [2.4.6 Headings and labels – level A](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels)
+- [2.4.10 Section headings – level AAA](https://www.w3.org/WAI/WCAG21/quickref/#section-headings)
+
+## Split processes into balanced steps
 
 Dividing a process into a sequence of steps can be challenging. Create the right number of steps.
 
@@ -49,9 +57,9 @@ Dividing a process into a sequence of steps can be challenging. Create the right
 
 If the process is very complex, group steps into broader stages of the process.
 
-The broad stages can fit into a higher-level sequential structure, or into topics using a [hierarchical structure](/node/79). This combination of structures can help users revisit a topic.
+The broad stages can fit into a higher-level sequential structure, or into topics using a [hierarchical structure](https://www.stylemanual.gov.au/node/79). This combination of structures can help users revisit a topic.
 
-If you use a combination of structures, design menu and link items based on [how users find their way through the content](/node/74#learn_how_users_search_for_information). Be consistent in the language, style and design of headings at the same level across the content.
+If you use a combination of structures, design menu and link items based on [how users find their way through the content](https://www.stylemanual.gov.au/node/74#learn_how_users_search_for_information). Be consistent in the language, style and design of headings at the same level across the content.
 
 For example, in a course registration process, a student might decide to choose a different course session after entering their personal details. Start with the most important information – the course selection – so people don’t waste time trying to find it.
 
@@ -59,23 +67,23 @@ For example, in a course registration process, a student might decide to choose 
 
 Course options
 
-- Select the course
-- Select the session
+1. Select the course
+2. Select the session
 
 Personal details
 
-- Enter your name
-- Enter your contact details
-- Enter any dietary requirements
+1. Enter your name
+2. Enter your contact details
+3. Enter any dietary requirements
 
 Payment
 
-- Select the payment method
-- Enter details
-- Select submit
-- Print the receipt
+1. Select the payment method
+2. Enter details
+3. Select submit
+4. Print the receipt
 
-Write clear instructions users can follow
+## Write clear instructions users can follow
 
 For instructional and transactional content, people want to know what they need to do. They don’t need long explanations of the process.
 
@@ -86,27 +94,3 @@ If an explanation is needed, consider:
 - whether a link would be more useful.
 
 If users need a lot of extra information to do a task, you might have tried to include too much in a single step. You need to break the task into smaller steps.
-
-Release notes
-
-The digital edition builds on a short paragraph from the sixth edition about sequential structures.
-
-The Content Guide did not mention this topic.
-
-About this page
-
-### References
-
-Dixon JC and Bolitho B (2005–2019) *Report writing*, Centre for Continuing Education, Australian National University, Canberra.
-
-Lynch PJ and Horton S (2016) ‘[Information architecture](https://webstyleguide.com/4-information-architecture.html)’, *Web style guide*, Web Style Guide website, accessed 30 May 2020.
-
-Shibata H and Hori K (2005) ‘Cognitive support for the organization of writing’, *New Generation Computing*, 26(2):97–124, doi:10.1007/s00354-008-0037-9.
-
-University of Washington (n.d.) [ Patterns of organization](http://faculty.washington.edu/ezent/impo.htm), University of Washington, accessed 30 May 2020.
-
-Usability.gov (2020) [ Organization structures](https://www.usability.gov/how-to-and-tools/methods/organization-structures.html), Usability.gov, accessed 30 May 2020.
-
-### Last updated
-
-This page was updated Monday 6 September 2021.

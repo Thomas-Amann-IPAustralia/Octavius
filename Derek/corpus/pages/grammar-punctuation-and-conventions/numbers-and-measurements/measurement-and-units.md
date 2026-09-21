@@ -1,16 +1,17 @@
+# Measurement and units
+
 Standard units of measurement support readability and accuracy. Express precise values for users by combining numerals with the correct unit symbol.
 
-Use the standard units of measurement
+## Use the standard units of measurement
 
 Australia uses the metric system for most quantities:
 
-- The modern form of the metric system is the
-[International System of Units](https://www.bipm.org/en/measurement-units/ )(SI). - Australia also uses some non-SI legal units of measurement, which are listed in
-[Schedules 1 and 2 of the National Measurement Regulations](https://www.legislation.gov.au/Details/F2012C00400).
+- The modern form of the metric system is the [International System of Units](https://www.bipm.org/en/measurement-units/) (SI).
+- Australia also uses some non-SI legal units of measurement, which are listed in [Schedules 1 and 2 of the National Measurement Regulations](https://www.legislation.gov.au/Details/F2012C00400).
 
-The National Measurement Institute oversees [Australian units of measurement](https://www.industry.gov.au/regulations-and-standards/australias-measurement-system). The governing legislation is the [ National Measurement Act 1960](https://www.legislation.gov.au/Series/C1960A00064).
+The National Measurement Institute oversees [Australian units of measurement](https://www.industry.gov.au/regulations-and-standards/australias-measurement-system). The governing legislation is the [*National Measurement Act 1960*](https://www.legislation.gov.au/Series/C1960A00064).
 
-Don’t use the non-SI legal units of measurement for international content. The exception is when you have checked that ~~ ~~users will understand and accept them.
+Don’t use the non-SI legal units of measurement for international content. The exception is when you have checked that users will understand and accept them.
 
 Rules for units of measurement:
 
@@ -31,7 +32,7 @@ Rules for units of measurement:
 Measurements and units can include:
 
 - symbols (for example, ‘μ’ for ‘micro’)
-- superscript (a number, letter or symbol placed above a line – for example, the ‘2’ in ‘’).
+- superscript (a number, letter or symbol placed above a line – for example, the ‘2’ in ‘km2’).
 
 Unless they are coded correctly, symbols and superscript may be inaccessible for some people who:
 
@@ -40,7 +41,9 @@ Unless they are coded correctly, symbols and superscript may be inaccessible for
 
 Insert symbols and superscript with tools such as:
 
-[Unicode](https://home.unicode.org/)[LaTeX](https://www.latex-project.org/)[Mathematical Markup Language](https://www.w3.org/TR/MathML3/)(MathML).
+- [Unicode](https://home.unicode.org/)
+- [LaTeX](https://www.latex-project.org/)
+- [Mathematical Markup Language](https://www.w3.org/TR/MathML3/) (MathML).
 
 These tools make mathematical equations and symbols accessible, including for screen readers.
 
@@ -48,9 +51,14 @@ Ensure both symbols and superscript can be enlarged without loss of content or f
 
 Resources:
 
+- [W3C math home](https://www.w3.org/Math/)
+- [Creating accessible math with MathML](http://aem.cast.org/creating/creating-accessible-math.html)
+- [An introduction to LaTeX](https://www.latex-project.org/about/)
+- [LaTeX & MathML](https://sbctc.instructure.com/courses/1698678/pages/latex-and-mathml)
+
 WCAG quick reference: [1.3.1 Info and relationships – level A](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)
 
-Write numerals with units of measurement
+## Write numerals with units of measurement
 
 Use numerals, not words, for numbers when you are referring to a unit of measurement:
 
@@ -67,7 +75,7 @@ Use numerals, not words, for numbers when you are referring to a unit of measure
 - five t
 - five tonnes
 
-Use symbols for common units of measurement
+## Use symbols for common units of measurement
 
 You don’t need to spell out units of measurement, even for the first use, if they’re well known and users will know what they mean.
 
@@ -78,7 +86,7 @@ You don’t need to spell out units of measurement, even for the first use, if t
 - ‘km’ for kilometres
 - ‘km/h’ for kilometres per hour
 
-Spell out units of measurement the first time you use them if ~~ ~~users won’t immediately understand them. After that, use the symbols.
+Spell out units of measurement the first time you use them if users won’t immediately understand them. After that, use the symbols.
 
 ### Example
 
@@ -88,7 +96,7 @@ Don’t combine symbols and words for units.
 
 ### Like this
 
-Queensland is 1,853 million in area.
+Queensland is 1,853 million km2 in area.
 
 ### Not this
 
@@ -103,18 +111,18 @@ Table 1 details common prefixes and their symbols.
 A complete list of prefixes and symbols is available at [The International Bureau of Weights and Measures (BIPM)](https://www.bipm.org/en/measurement-units/).
 
 | Prefix | Symbol | Factor | Extended form |
-|---|---|---|---|
-| tera | T | 1,000,000,000,000 | |
-| giga | G | 1,000,000,000 | |
-| mega | M | 1,000,000 | |
-| kilo | k | 1,000 | |
-| hecto | h | 100 | |
-| deca (also ‘deka’) | da | 10 | |
-| deci | d | 0.1 | |
-| centi | c | 0.01 | |
-| milli | m | 0.001 | |
-| micro | µ | 0.000001 | |
-| nano | n | 0.000000001 |
+| --- | --- | --- | --- |
+| tera | T | 1012 | 1,000,000,000,000 |
+| giga | G | 109 | 1,000,000,000 |
+| mega | M | 106 | 1,000,000 |
+| kilo | k | 103 | 1,000 |
+| hecto | h | 102 | 100 |
+| deca (also ‘deka’) | da | 101 | 10 |
+| deci | d | 10-1 | 0.1 |
+| centi | c | 10-2 | 0.01 |
+| milli | m | 10-3 | 0.001 |
+| micro | µ | 10-6 | 0.000001 |
+| nano | n | 10-9 | 0.000000001 |
 
 Note: the International Bureau of Weights and Measures uses ‘deca’ but this is spelled ‘deka’ in [Schedule 3 of the National Measurement Regulations](https://www.legislation.gov.au/Details/F2012C00400).
 
@@ -160,7 +168,7 @@ Use symbols for units that are derived from time measurements, such as speed.
 
 The speed limit for urban areas in NSW is 50 km/h.
 
-Put a non-breaking space between numbers and units
+## Put a non-breaking space between numbers and units
 
 People will read the number and its unit as a measurement only if the 2 components sit together. To do this, use a non-breaking space between numbers and their units of measurement.
 
@@ -172,7 +180,7 @@ Although this is important for all content, it’s more likely to happen on smal
 
 The post should be at least 1.5 m tall.
 
-[The sentence has a inserted between ‘1.5’ and ‘m’.]
+[The sentence has a &nbsp; inserted between ‘1.5’ and ‘m’.]
 
 ### Not this
 
@@ -186,7 +194,7 @@ By convention, some industries don’t have a space between the quantity and the
 
 Check the preferred style if you are writing for a specialist application.
 
-Don’t add ‘s’ for plural forms
+## Don’t add ‘s’ for plural forms
 
 Symbols for units of measurement represent both the singular and the plural forms. Don’t use an ‘s’ to show plural with the symbols for units.
 
@@ -198,7 +206,7 @@ Symbols for units of measurement represent both the singular and the plural form
 
 56 kms
 
-Compare measurements using the same units
+## Compare measurements using the same units
 
 Make it easy for users to compare quantities. Use the same:
 
@@ -207,24 +215,24 @@ Make it easy for users to compare quantities. Use the same:
 
 ### Like this
 
-- The Green Wattle Creek fire burnt almost 3,000 , of which more than 1,000 was national park.
+- The Green Wattle Creek fire burnt almost 3,000 km2, of which more than 1,000 km2 was national park.
 - The smaller jug held 1.5 L and the bigger jug held 2.0 L.
 - The piece of wood was 140 mm by 1,320 mm by 20 mm.
 
 ### Not this
 
-- The Green Wattle Creek fire burnt almost 300,000 ha, of which more than 1,000 was national park.
+- The Green Wattle Creek fire burnt almost 300,000 ha, of which more than 1,000 km2 was national park.
 - The smaller jug held 1,500 mL and the bigger jug held 2 L.
 - The piece of wood was 14 cm by 1.32 m by 20 mm.
 
-Only use non-SI units if the user understands them
+## Only use non-SI units if the user understands them
 
 There are other units that are also Australian legal units of measurement but are not SI units. They’re listed in [Schedules 1 and 2 of the National Measurement Regulations](https://www.legislation.gov.au/Details/F2019C00572).
 
 These non-SI units are not all legally accepted in every country. Use them only if users will understand them. Some units, such as the nautical mile, are for use only in Australia. Table 2 details common examples of other legal Australian units.
 
 | Quality | Name | Symbol |
-|---|---|---|
+| --- | --- | --- |
 | sound intensity | decibel | dB |
 | area | hectare | ha |
 | length | nautical mile | n mile |
@@ -239,7 +247,7 @@ These non-SI units are not all legally accepted in every country. Use them only 
 
 Note: ‘litre’ can be represented as ‘L’ or ‘l’, depending on the type of content and who will be using it. Most government content should use ‘L’ as it’s clearer to users (‘l’ can be confused with ‘I’ and ‘1’).
 
-Avoid imperial units
+## Avoid imperial units
 
 Don’t use imperial units of measurement in Australia unless you have a specific reason, such as:
 
@@ -258,41 +266,3 @@ It’s good practice to also provide the equivalent quantity in SI units when th
 ### Example
 
 In the 1970s, the speed limit for highways in many states of Australia was set at 60 miles per hour (97 km/h).
-
-Release notes
-
-The digital edition consolidates information from the sixth edition about measurement and units. It links to external sources for more detailed information.
-
-The digital edition follows advice from the sixth edition about including a space between the number and unit of measurement.
-
-This is contrary to the recommendation in the Content Guide, which recommended omitting the space between number and measure.
-
-The Content Guide had no information about imperial units.
-
-About this page
-
-### Evidence
-
-BIPM (International Bureau of Weights and Measures) (n.d.) * SI brochure: the international system of units (SI)*, BIPM website, accessed 4 June 2020.
-
-Oxford University Press (2016) ‘14.1.4: units’, *New Oxford style manual*, Oxford University Press, Oxford.
-
-University of Chicago (2017) ‘9.16: numbers with abbreviations and symbols’, *Chicago manual of style*, 17th edn, University of Chicago Press, Chicago.
-
-### References
-
-American Psychological Association (2020) *Publication manual of the American Psychological Association, *7th edn, American Psychological Association, Washington DC.
-
-BIPM (n.d.) [ The international system of units (SI)](https://www.bipm.org/en/measurement-units/), International Bureau of Weights and Measures website, accessed 4 June 2020.
-
-Harder DW and Devitt S (2003) ‘[Units in MathML](https://www.w3.org/TR/mathml-units/)’, *W3C working group note*, W3C website, accessed 3 June 2020.
-
-The LaTeX Project (n.d.) [ An introduction to LaTeX](https://www.latex-project.org/about/), The LaTeX Project website, accessed 4 June 2020.
-
-The LaTeX Project (n.d.) [ LaTeX: a document preparation system](https://www.latex-project.org/), The LaTeX Project website, accessed 3 August 2022.
-
-The Unicode Consortium (2022) [ Unicode 15.0 character code charts](https://www.unicode.org/charts/), Unicode website, accessed 3 November 2022.
-
-### Last updated
-
-This page was updated Wednesday 5 July 2023.

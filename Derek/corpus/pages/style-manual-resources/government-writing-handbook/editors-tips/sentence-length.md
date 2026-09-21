@@ -1,3 +1,5 @@
+# Sentence length
+
 Plain language writing means using short sentences.
 
 Short sentences are easier to:
@@ -31,9 +33,3 @@ Organisations should do 2 things to reduce risks to their AI systems:
 
 - apply traditional IT methods that are best practice
 - update AI systems continually. [41 words]
-
-## About this page
-
-### Last updated
-
-This page was updated Thursday 19 December 2024.

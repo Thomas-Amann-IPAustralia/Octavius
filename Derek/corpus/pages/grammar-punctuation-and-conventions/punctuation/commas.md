@@ -1,7 +1,8 @@
+# Commas
+
 Commas separate parts of a sentence so the meaning is clear. Sentence structure determines their correct use.
 
-
-Separate introductory words, phrases and clauses with a comma
+## Separate introductory words, phrases and clauses with a comma
 
 A comma separates introductory words, phrases and clauses from the main clause of the sentence.
 
@@ -31,7 +32,7 @@ Today I went to work.
 
 ### Use a comma after phrases and clauses that change the whole sentence
 
-Use commas after [adverbial phrases](/node/127) and [adverbial clauses](/node/127). Adverbs – such as ‘first’ and ‘during’ – modify verbs, adjectives and other adverbs.
+Use commas after [adverbial phrases](https://www.stylemanual.gov.au/node/127) and [adverbial clauses](https://www.stylemanual.gov.au/node/127). Adverbs – such as ‘first’ and ‘during’ – modify verbs, adjectives and other adverbs.
 
 #### Example
 
@@ -62,7 +63,7 @@ On 18 April 2019, 16.5 million people were enrolled to vote in Australian electi
 
 [This is grammatically correct but less readable.]
 
-Mark out non‐essential information within a sentence
+## Mark out non‐essential information within a sentence
 
 Commas isolate information in a sentence when it isn’t essential to:
 
@@ -95,7 +96,7 @@ Don’t use commas if the clause is essential for meaning.
 
 If you can remove the clause and your sentence means the same thing, it’s non-essential and should go between commas.
 
-Non-essential clauses are also called ‘non-restrictive’ or ‘non-defining’ [clauses](/node/143).
+Non-essential clauses are also called ‘non-restrictive’ or ‘non-defining’ [clauses](https://www.stylemanual.gov.au/node/143).
 
 #### Example
 
@@ -119,7 +120,7 @@ Introduced pests from South Asia threaten Australian honey production.
 
 [Only pests from South Asia threaten honey production. Other introduced pests don’t affect honey production.]
 
-Each of these examples separates a [grammatical subject from its verb](/node/120#a_full_sentence_is_a_complete_idea). This is a problem when the subject is overburdened with non-essential information.
+Each of these examples separates a [grammatical subject from its verb](https://www.stylemanual.gov.au/node/120#a_full_sentence_is_a_complete_idea). This is a problem when the subject is overburdened with non-essential information.
 
 Check if you can rephrase the information to make it easier to follow. It is easier for people to read shorter sentences.
 
@@ -171,7 +172,7 @@ Generally, use a comma before and after the phrase ‘for example’ in a senten
 
 Some colours, for example, are difficult for people with colour blindness to distinguish.
 
-If ‘for example’ begins a sentence, it is an [introductory phrase](/node/144). Follow it with a comma.
+If ‘for example’ begins a sentence, it is an [introductory phrase](https://www.stylemanual.gov.au/node/144). Follow it with a comma.
 
 #### Example
 
@@ -192,7 +193,7 @@ Some colours are difficult for people with colour blindness to distinguish, for 
 
 ### Don’t use commas with Latin shortened forms
 
-If you use [Latin shortened forms](/node/91), such as ‘e.g.’ and ‘i.e.’, don’t follow them with a comma.
+If you use [Latin shortened forms](https://www.stylemanual.gov.au/node/91), such as ‘e.g.’ and ‘i.e.’, don’t follow them with a comma.
 
 #### Correct
 
@@ -202,9 +203,9 @@ Exports of rare earths (e.g. lithium, europium) have soared.
 
 Exports of rare earths (e.g., lithium and europium) have soared.
 
-Place commas between principal clauses joined together with a conjunction
+## Place commas between principal clauses joined together with a conjunction
 
-Use commas to connect 2 or more [principal clauses](/node/143#a_principal_clause_can_stand_alone_as_a_sentence) joined by a [coordinating conjunction](/node/129#coordinating_conjunctions_join_things_of_equal_importance) (‘and’, ‘or’, ‘but’, ‘so’).
+Use commas to connect 2 or more [principal clauses](https://www.stylemanual.gov.au/node/143#a_principal_clause_can_stand_alone_as_a_sentence) joined by a [coordinating conjunction](https://www.stylemanual.gov.au/node/129#coordinating_conjunctions_join_things_of_equal_importance) (‘and’, ‘or’, ‘but’, ‘so’).
 
 If they have different subjects, use a comma before the coordinating conjunction.
 
@@ -214,7 +215,7 @@ Do not use this rule to create a sentence of more than 25 words. Shorter sentenc
 
 The Senate debated the Bill at length, but the party whips eventually called for a vote.
 
-[‘But’ is the coordinating conjunction*. *‘The Senate’ and ‘the party whips’ are each the subjects of a principal clause.]
+[‘But’ is the coordinating conjunction*.*‘The Senate’ and ‘the party whips’ are each the subjects of a principal clause.]
 
 If 2 clauses share the same subject, you don’t need to repeat the subject or insert a comma before the conjunction.
 
@@ -222,7 +223,7 @@ If 2 clauses share the same subject, you don’t need to repeat the subject or i
 
 The company closed its Perth office and sacked the chief financial officer.
 
-[‘The company’* *closed an office and sacked an executive officer. ‘The company’ is the subject of both clauses, joined using ‘and’.]
+[‘The company’closed an office and sacked an executive officer. ‘The company’ is the subject of both clauses, joined using ‘and’.]
 
 The exception to this rule is when you have joined more than 2 principal clauses with the same subject.
 
@@ -244,7 +245,7 @@ The report was finished last week, but the minister has not approved its release
 
 The report was finished last week, the minister has not approved its release.
 
-Punctuate sentence lists and strings of adjectives
+## Punctuate sentence lists and strings of adjectives
 
 ### Separate items in lists of nouns or adjectives with commas
 
@@ -280,7 +281,7 @@ The analysis outlined demand for barley, wheat, and hay for stockfeed. [Only the
 
 ### Separate adjectives of the same type
 
-When writing strings of adjectives, use a set order – [evaluative, descriptive, then definitive](/node/126#strings_of_adjectives_have_a_naturalsounding_order).
+When writing strings of adjectives, use a set order – [evaluative, descriptive, then definitive](https://www.stylemanual.gov.au/node/126#strings_of_adjectives_have_a_naturalsounding_order).
 
 Use commas in strings of adjectives of the same type (for example, a string of descriptive adjectives).
 
@@ -296,7 +297,7 @@ Don’t use commas in strings of adjectives of different types.
 - My new black felt-tip pen splattered ink everywhere.
 - We found some used French tennis balls left over from a training day.
 
-Use commas in numbers with 4 or more digits
+## Use commas in numbers with 4 or more digits
 
 Numbers with 4 or more digits (starting from 1,000) need a comma. Use commas for numerals in text and in tables.
 
@@ -325,7 +326,7 @@ Commas are not used to the right of a decimal point.
 - 808.12345
 - 1,279.0044
 
-Don’t use commas in postcodes or [dates](/node/140).
+Don’t use commas in postcodes or [dates](https://www.stylemanual.gov.au/node/140).
 
 ### Example
 
@@ -336,7 +337,7 @@ Don’t use commas in postcodes or [dates](/node/140).
 
 Numbers below a million are usually easy to read as numerals. Use a combination of words and numerals for [large, rounded numbers from a million](https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/numbers-and-measurements/choosing-numerals-or-words#combine_numerals_and_words_for_large_rounded_numbers).
 
-Large, rounded numbers are punctuated with a [decimal point](/node/146).
+Large, rounded numbers are punctuated with a [decimal point](https://www.stylemanual.gov.au/node/146).
 
 #### Example
 
@@ -352,7 +353,7 @@ Choosing which style to use depends on the [context and the type of content](htt
 - The video ad garnered 3.2 million views on TikTok and 1 million views on Snapchat.
 - The university’s endowments total more than one billion dollars.
 
-Show direct speech or quoted material using commas
+## Show direct speech or quoted material using commas
 
 Introduce directly quoted speech with a comma. Use the comma in combination with quotation marks.
 
@@ -361,7 +362,7 @@ Introduce directly quoted speech with a comma. Use the comma in combination with
 - She said, ‘It’s time to start work.’
 - The Prime Minister said, ‘I’m calling a half-Senate election.’
 
-If an attribution comes after a quotation, use a comma at the end of the quotation and before the [quotation mark](/node/114).
+If an attribution comes after a quotation, use a comma at the end of the quotation and before the [quotation mark](https://www.stylemanual.gov.au/node/114).
 
 ### Example
 
@@ -381,37 +382,3 @@ If the quotation ends the sentence, end it with the original punctuation of the 
 
 - She said, ‘It’s time to start work.’
 - She asked, ‘Is it time to start work?’
-
-Release notes
-
-The digital edition consolidates information from the sixth edition.
-
-It departs from advice in the sixth edition about the position of commas and quotation marks in sentences interrupted by expressions like ‘she said’. The sixth edition recommended the comma be outside the quotation mark. The digital edition recommends the comma be inside the [quotation mark](/node/114#keep_quoted_punctuation_marks_and_font_in_the_quote).
-
-The digital edition recommends using a comma in numbers with 4 or more digits. This recommendation is based on accessibility advice. The sixth edition recommended using a thin space in numbers with 5 or more digits and no space in numbers with 4 digits.
-
-The Content Guide had brief information about using a comma in sentences and with numbers. It had basic information on using quotation marks. It advised against using Oxford commas.
-
-About this page
-
-### Evidence
-
-Oxford University Press (2016) ‘9.2 Layout of quoted text’, *New Oxford style manual*, Oxford University Press, Oxford.
-
-University of Chicago (2017) ‘6.40 Commas with quotations’, *Chicago manual of style*, 17th edn, University of Chicago Press, Chicago.
-
-### References
-
-Dixon JC and Bolitho B (2005–2019) *Course notes and exercises: editing and proofreading for the workplace, *Centre for Continuing Education, Australian National University, Canberra.
-
-Murphy EM with Cadman H (2014) *Effective writing: plain English at work*, 2nd edn, Lacuna, Westgate.
-
-Seely J (2001) *Oxford everyday grammar*, Oxford University Press, Oxford.
-
-Stilman S (2004) *Grammatically correct*, Writer’s Digest Books, Ohio.
-
-Truss L (2003) *Eats, shoots and leaves: the zero tolerance approach to punctuation*, Profile Books, London, 2003.
-
-### Last updated
-
-This page was updated Monday 6 January 2025.

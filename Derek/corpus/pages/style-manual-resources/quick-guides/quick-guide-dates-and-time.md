@@ -1,6 +1,8 @@
+# Quick guide: dates and time
+
 Write dates and times consistently.
 
-You can download an accessible version of [ Quick guide: dates and time [PDF 406 kB]](https://www.stylemanual.gov.au/sites/default/files/2025-08/Quick%20guide_dates%20and%20time%20accessible%20PDF%20406%20kB.pdf ).
+You can download an accessible version of [*Quick guide: dates and time* [PDF 406 kB]](https://www.stylemanual.gov.au/sites/default/files/2025-08/Quick%20guide_dates%20and%20time%20accessible%20PDF%20406%20kB.pdf).
 
 ## Times of day
 
@@ -103,8 +105,10 @@ There are exceptions. Use an en dash in date spans for:
 
 - the 2024–25 financial year
 - It spanned 2 calendar years (2022–23).
-*Corporate plan 2024–28**The spotted handfish recovery program 1999–2001*- The
-*Department of Health and Aged Care annual report 2022–23*states … - Australia's first female prime minister was Julia Gillard (2010–2013).
+- *Corporate plan 2024–28*
+- *The spotted handfish recovery program 1999–2001*
+- The *Department of Health and Aged Care annual report 2022–23* states …
+- Australia's first female prime minister was Julia Gillard (2010–2013).
 - Shane Warne (1969–2022)
 
 ## Combining dates and times

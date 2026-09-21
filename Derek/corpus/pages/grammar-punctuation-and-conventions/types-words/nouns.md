@@ -1,11 +1,12 @@
+# Nouns
+
 Nouns are the words that name people, places, organisations and things. Style and grammar support how people interpret nouns in content.
 
-
-Proper nouns are the names of people and specific things
+## Proper nouns are the names of people and specific things
 
 Any name for a specific person, organisation, place or thing is a ‘proper noun’.
 
-Proper nouns always start with capital letters, except for [some commercial terms](/node/89).
+Proper nouns always start with capital letters, except for [some commercial terms](https://www.stylemanual.gov.au/node/89).
 
 ### Example
 
@@ -17,7 +18,11 @@ Proper nouns always start with capital letters, except for [some commercial term
 
 There are specific capitalisation conventions for the:
 
-Common nouns are words for generic things
+- [titles of office holders](https://www.stylemanual.gov.au/node/149)
+- [names of organisations](https://www.stylemanual.gov.au/node/88)
+- [government terms](https://www.stylemanual.gov.au/node/136).
+
+## Common nouns are words for generic things
 
 Common nouns describe people, places, times or things in a general sense. They have a capital letter only when they are the first word in a sentence.
 
@@ -35,7 +40,7 @@ Capitalise nouns only if they are part of a proper noun. Don’t capitalise them
 - The ACT’s Office of the Commissioner for the Environment was the first such agency in Australia. [‘Office’ is part of the formal title.]
 - I worked in the office for 11 years. [‘Office’ is not part of the formal title, even if it refers to the Office of the Commissioner for the Environment.]
 
-Common nouns can be concrete or abstract
+## Common nouns can be concrete or abstract
 
 Concrete nouns name things you can identify through one or more of the 5 senses.
 
@@ -62,7 +67,7 @@ Some nouns can be either concrete or abstract, depending on the context.
 - The office is upstairs. [Concrete noun]
 - Alfred Deakin was the first to hold the office of Attorney-General in Australia. [Abstract noun]
 
-Verbal nouns are also called ‘gerunds’
+## Verbal nouns are also called ‘gerunds’
 
 Gerunds are nouns that form by attaching an ‘-ing’ to a verb.
 
@@ -71,7 +76,7 @@ Gerunds are nouns that form by attaching an ‘-ing’ to a verb.
 - meet [verb], meeting [noun]
 - report [verb], reporting [noun]
 
-You can combine gerunds and other verbal nouns with a [determiner](/node/132#pronouns_can_function_as_determiners) (such as ‘my’ or ‘your’).
+You can combine gerunds and other verbal nouns with a [determiner](https://www.stylemanual.gov.au/node/132#pronouns_can_function_as_determiners) (such as ‘my’ or ‘your’).
 
 ### Example
 
@@ -92,7 +97,7 @@ Other verbal nouns don’t have any suffix but have the same spelling as the ver
 - ‘fix the issue’ [verb], ‘a quick fix’ [noun]
 - ‘report an issue’ [verb], ‘annual report to the minister’ [noun]
 
-Nouns can be singular or plural
+## Nouns can be singular or plural
 
 Nouns can be singular or plural. Most English words add an ‘-s’ or ‘-es’ to form the plural, but there are many exceptions. Check a dictionary if you’re not sure.
 
@@ -119,7 +124,7 @@ Adjust the desks and chairs.
 
 Adjust the desk’s and chair’s.
 
-Collective nouns describe a group in a single word
+## Collective nouns describe a group in a single word
 
 Collective nouns are a type of common noun. They label groups of people or things.
 
@@ -131,7 +136,7 @@ Collective nouns are a type of common noun. They label groups of people or thing
 
 ### Subject–verb agreement
 
-A collective noun usually has a [singular verb](/node/128). This is so, even if it’s made up of component parts.
+A collective noun usually has a [singular verb](https://www.stylemanual.gov.au/node/128). This is so, even if it’s made up of component parts.
 
 #### Correct
 
@@ -150,7 +155,7 @@ An exception is when you need to draw attention to the individual parts of the c
 - The branch meets once a week. [‘The branch’, as a whole, meets once a week. The singular form of the verb is used.]
 - The branch are divided over the new meeting schedule. [The individuals in ‘the branch’ have different opinions about the new meeting schedule. The plural form of the verb is used.]
 
-Nouns can be countable or uncountable
+## Nouns can be countable or uncountable
 
 You can sort nouns by whether they can be separated into individual units and counted:
 
@@ -189,11 +194,11 @@ Some nouns can be used both ways. The meaning depends on whether the noun is cou
 - Language is powerful. [In this context, ‘language’ is uncountable.]
 - Australians speak many languages besides English. [In this context, ‘language’ is countable.]
 
-Noun trains are hard to understand
+## Noun trains are hard to understand
 
 Strings of 3 or more nouns are known as ‘noun trains’. Each noun in a noun train modifies the next.
 
-Rewrite a sentence to avoid using a noun train. This will help you [write in plain language](/node/55).
+Rewrite a sentence to avoid using a noun train. This will help you [write in plain language](https://www.stylemanual.gov.au/node/55).
 
 ### Write this
 
@@ -202,33 +207,3 @@ The agency’s new system will help to improve how it manages injuries. [No noun
 ### Not this
 
 The agency’s new system will help in the achievement of injury management outcome improvements. [Noun train included]
-
-Release notes
-
-The digital edition relates grammatical concepts to the principles of plain language. It relates word choice to grammatical information about [types of words](/node/203).
-
-It provides an overview on types of words to introduce grammatical concepts about parts of speech and how they relate to sentence structure.
-
-The sixth edition called types of words ‘word classes’. It had summary information about parts of speech on pages 68 to 70. This formed part of Chapter 5 on grammar.
-
-The Content Guide did not have any in-depth information on grammatical concepts.
-
-About this page
-
-### References
-
-Dixon JC and Bolitho B (2005–2019a) *Course notes and exercises: English grammar for writers, editors and policymakers*, Centre for Continuing Education, Australian National University, Canberra.
-
-Dixon JC and Bolitho B (2005–2019b) *Report writing*, Centre for Continuing Education, Australian National University, Canberra.
-
-Murphy EM with Cadman H (2014) *Effective writing: plain English at work*, 2nd edn, Lacuna, Westgate.
-
-Seely J (2001) *Oxford everyday grammar*, Oxford University Press, Oxford.
-
-Stilman A (2004) *Grammatically correct*, Writer’s Digest Books, Ohio.
-
-Truss L (2003) *Eats, shoots and leaves: the zero tolerance approach to punctuation*, Profile Books, London.
-
-### Last updated
-
-This page was updated Monday 6 September 2021.

@@ -1,7 +1,8 @@
+# Classics
+
 Classics are works from ancient and medieval times. Cite titles in line with the author–date system. Use correct attribution to help people find the source in its original language or as an English translation.
 
-
-Cite classics as book titles
+## Cite classics as book titles
 
 Disciplines and sources define the term ‘classics’ in different ways. This guidance covers ancient Greek and Roman works (until the 5th century) and works from the medieval period (from the fall of the Roman empire until the middle of the 15th century).
 
@@ -15,29 +16,31 @@ If you’re using a reference list, include any classics that you cite.
 
 Examples of in-text citations and reference lists on this page follow the author–date system, as this is the most common way of citing the classics in government content. If your organisation uses the documentary–note system, change the citation and style of reference list accordingly.
 
-Use correct in-text citations
+## Use correct in-text citations
 
 Often there will not be much information for classics. For example, you might not know the date of publication.
 
 Include the information that you know in in-text citations.
 
-If you don’t know the name of the author, don’t use ‘Anon’*, *‘unknown’ or ‘Anonymous’ in the in-text citation.
+If you don’t know the name of the author, don’t use ‘Anon’*,*‘unknown’ or ‘Anonymous’ in the in-text citation.
 
 ### Like this
 
-*Beowulf*is the story of a hero who defeats a dragon.- Like Grendel (
-*Beowulf*), you seem to suffer with the joy of others.
+- *Beowulf* is the story of a hero who defeats a dragon.
+- Like Grendel (*Beowulf*), you seem to suffer with the joy of others.
 
 ### Not this
 
-*Beowulf*(Anon) is the story of a hero who defeats a dragon.- Like Grendel (Anonymous
-*Beowulf*), you seem to suffer with the joy of others.
+- *Beowulf* (Anon) is the story of a hero who defeats a dragon.
+- Like Grendel (Anonymous *Beowulf*), you seem to suffer with the joy of others.
 
 If you don’t know the author or the date of a work, use the name of the translator (trans) and the date of publication of the edition you’re working with. Place the date at the end of the reference.
 
 ### Example
 
 *Beowulf* (Heaney S, trans), Faber & Faber Ltd, London, 2002. [Reference-list entry]
+
+## Use common names for authors
 
 Most authors of the classical and medieval periods are known just by a common name, rather than a given name and a surname.
 
@@ -53,16 +56,15 @@ As Cicero expressed it, ‘Is there anything rasher and more unworthy of the dig
 
 As Marcus Tullius Cicero expressed it, ‘Is there anything rasher and more unworthy of the dignity and strength of character of a wise man than the holding of a false opinion?’ (*On the nature of the gods*)
 
-Include divisions in in-text citations when possible
+## Include divisions in in-text citations when possible
 
 Some classics have divisions. Divisions organise prose and poetry into, for example, books, chapters, sections, lines and verses.
 
 ### Example
 
-- As one of the early philosophers wrote, ‘All wars are undertaken for the acquisition of wealth.’ (Plato
-*Phaedo*65C–66E) - He ended his retirement speech with Ovid’s ‘Turn loose the swans that drew my poet’s car.’ (
-*The art of love*3.810) - Josh hesitated at the doorway until, like Dante, he ‘went on, timid and full of thought’. (Dante
-*The divine comedy*20.151) [In this example, Dante appears in the text as a character in*The divine comedy*and appears in the citation as author]
+- As one of the early philosophers wrote, ‘All wars are undertaken for the acquisition of wealth.’ (Plato *Phaedo* 65C–66E)
+- He ended his retirement speech with Ovid’s ‘Turn loose the swans that drew my poet’s car.’ (*The art of love* 3.810)
+- Josh hesitated at the doorway until, like Dante, he ‘went on, timid and full of thought’. (Dante *The divine comedy* 20.151) [In this example, Dante appears in the text as a character in *The divine comedy* and appears in the citation as author]
 
 In the examples above:
 
@@ -74,17 +76,15 @@ If the work you’re citing has divisions, quote them in the in-text citation. T
 
 ### Example
 
-- (Ovid
-*The art of love*, book 3, line 810) - Josh hesitated at the doorway until, like Dante, he ‘went on, timid and full of thought.’ (Dante
-*The divine comedy*, canto 20, line 151)
+- (Ovid *The art of love*, book 3, line 810)
+- Josh hesitated at the doorway until, like Dante, he ‘went on, timid and full of thought.’ (Dante *The divine comedy*, canto 20, line 151)
 
 For subsequent citations, don’t spell out the divisions. You only need the division numbers. Separate divisions with a full stop. Don’t place a comma between the title of the work and the division numbers.
 
 ### Example
 
-- (Ovid
-*The art of love*3.815) - (Dante
-*The divine comedy*20.151)
+- (Ovid *The art of love*3.815)
+- (Dante *The divine comedy* 20.151)
 
 If you have only one division to cite, always spell it out. Place a comma between the title and the division.
 
@@ -96,15 +96,14 @@ If you’re referring to an edition that doesn’t have divisions, you can refer
 
 ### Example
 
-- As one of the early philosophers wrote, ‘All wars are undertaken for the acquisition of wealth.’ (Plato
-*Phaedo*1954:85) - Josh hesitated at the doorway until, like Dante, he ‘went on, timid and full of thought.’ (
-*The divine comedy*1954:265)
+- As one of the early philosophers wrote, ‘All wars are undertaken for the acquisition of wealth.’ (Plato *Phaedo* 1954:85)
+- Josh hesitated at the doorway until, like Dante, he ‘went on, timid and full of thought.’ (*The divine comedy* 1954:265)
 
-Cite titles in the most appropriate language
+## Cite titles in the most appropriate language
 
 Most of the time, you’ll be working with translations. The exception is when you’re quoting text in the original language.
 
-**Accessibility requirements**
+Accessibility requirements
 
 If any text should be pronounced in its original language (rather than English), screen readers need to be able to determine what that language is.
 
@@ -116,9 +115,8 @@ In in-text citations, refer to the English title that appears on the source you�
 
 #### Example
 
-- The heroism of women is a common motif in the stories of Hecuba, Andromache and Cassandra. (Euripides
-*The Trojan women*) [In-text citation] - Euripides,
-, (Murray G and Allen G, trans), London, 1905; Project Gutenberg, 2011, accessed 30 November 2019. [Reference-list entry: the date of the translation was 1905.]__The Trojan women__
+- The heroism of women is a common motif in the stories of Hecuba, Andromache and Cassandra. (Euripides *The Trojan women*) [In-text citation]
+- Euripides, [*The Trojan women*](https://www.gutenberg.org/files/35171/35171-h/35171-h.htm), (Murray G and Allen G, trans), London, 1905; Project Gutenberg, 2011, accessed 30 November 2019. [Reference-list entry: the date of the translation was 1905.]
 
 ### Works in the original language
 
@@ -128,13 +126,13 @@ In these cases, cite the title in the original language. If the original languag
 
 #### Like this
 
-*Troiades* [The ancient Greek name for *The Trojan women*,* *a play* *by Euripides]
+*Troiades* [The ancient Greek name for *The Trojan women*,a playby Euripides]
 
 #### Not this
 
-*Τρῳάδες *[The Greek spelling of *Troiades*]
+*Τρῳάδες*[The Greek spelling of *Troiades*]
 
-List classics with other references
+## List classics with other references
 
 You don’t usually need a reference list for classics.
 
@@ -149,34 +147,5 @@ If you include a classics work in the reference list, cite the particular transl
 
 ### Example
 
-- Plato,
-*Phaedo*(Tredennick H, trans), Penguin, Harmondsworth, 1954. - Dante,
-*The divine comedy*(Ruse HR, trans), Holt, Rinehart and Winston, New York, 1954.
-
-Release notes
-
-The digital edition expands and updates information in the sixth edition about citing the classics. For example, it recommends using the division number as well as the author’s name for in-text references.
-
-The Content Guide did not mention classics.
-
-About this page
-
-### References
-
-American Psychological Association (2020) ‘9.42 Religious and classical works’, *Publication manual of the American Psychological Association*, 7th edn, American Psychological Association, Washington DC.
-
-Dante, *The divine comedy* (Ruse HR trans), Holt, Rinehart and Winston, New York, 1954.
-
-Ovid, *The erotic poems* (Green P trans), Penguin Books, London, 1982.
-
-Oxford University Press (2016) ‘Work titles in text’, *New Oxford style manual*, Oxford University Press, Oxford.
-
-Oxford University Press (2020) * Oxford classical dictionary*, Oxford Research Encyclopedias website, accessed 29 November 2019.
-
-Plato, *Phaedo* (Tredennick H trans), Penguin, Harmondsworth, 1954.
-
-University of Chicago (2017) ‘Special types of references’, *Chicago manual of style*, 17th edn, University of Chicago Press, Chicago.
-
-### Last updated
-
-This page was updated Wednesday 30 June 2021.
+- Plato, *Phaedo*(Tredennick H, trans), Penguin, Harmondsworth, 1954.
+- Dante, *The divine comedy* (Ruse HR, trans), Holt, Rinehart and Winston, New York, 1954.

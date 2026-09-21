@@ -41,7 +41,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium_stealth import stealth
 from webdriver_manager.chrome import ChromeDriverManager
-import trafilatura
 
 log = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
@@ -207,7 +206,8 @@ def check_robots_txt(base_url: str, driver: Optional[webdriver.Chrome] = None) -
 
 
 def strip_noise(html: str) -> str:
-    """Remove navigation noise from HTML before passing to trafilatura."""
+    """Coarse noise removal. Kept for parity with the Octavius transport;
+    the real chrome stripping happens in ``derek.corpus.to_markdown``."""
     soup = BeautifulSoup(html, "lxml")
     for selector in ["nav", "footer", "header", "script", "style", "aside"]:
         for tag in soup.find_all(selector):

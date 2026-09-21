@@ -1,6 +1,8 @@
+# User research and content
+
 Only create content that meets a need. Find out about users and their needs through user research.
 
-Create content that meets a real need
+## Create content that meets a real need
 
 Only design and write content that meets a real person’s need.
 
@@ -19,7 +21,7 @@ User research helps you:
 
 You must understand the needs of the users of your service to meet the Digital Service Standard: [Criterion 1. Understand user needs](https://www.dta.gov.au/help-and-advice/digital-service-standard/digital-service-standard-criteria/1-understand-user-needs).
 
-Write for the user, not ‘an audience’
+## Write for the user, not ‘an audience’
 
 Writing for an audience is not the same as writing for the user.
 
@@ -41,7 +43,7 @@ Do user research to help you to understand how to meet the needs of all users.
 
 Include people with disability in your user research to avoid creating any barriers for them.
 
-Adjust the research approach to the context
+## Adjust the research approach to the context
 
 The way you research changes based on the kind of work you are doing and its context.
 
@@ -98,7 +100,7 @@ The team’s approach to research changes based on where content is in a [conten
 - Maintain: you watch usability testing of content on your agency’s website. You observe users having trouble understanding a form. Following the session, you work with the business area that owns the form to improve it.
 - Remove: you help review analytics and user feedback to flag pages that have low traffic. You provide a report to the business area to recommend removing the pages.
 
-User research is a team sport
+## User research is a team sport
 
 If you are creating content you need to be part of the user research process.
 
@@ -108,7 +110,7 @@ In a team that is delivering a service, everyone is part of research for at leas
 
 People who work on content must be part of the discovery process. They need to observe research sessions and contribute their perspective in analysis. Content designers, writers and editors notice things that other people may miss. They provide a critical content lens on the work.
 
-Some research is better than none
+## Some research is better than none
 
 User research is a craft. If possible, get an expert to lead research. This will help you uncover as much as possible and manage bias.
 
@@ -132,7 +134,7 @@ When you review existing research, be aware that the context will be different. 
 
 Use existing research as a starting point. It’s not helpful to research the same thing over and over.
 
-Market research is different from user research
+## Market research is different from user research
 
 User research helps you understand users, their needs and the context for services.
 
@@ -171,31 +173,3 @@ Stakeholder engagement:
 - uses techniques that are contextualised to the scale and complexity of the issues
 - aims to manage the influence of people and groups
 - helps the design of processes to deliver an outcome
-
-Release notes
-
-The digital edition introduces a new topic, user research and content. This topic draws on ideas related to user experience and design thinking. The topic is central to content strategy and content design.
-
-Content strategy and content design were not discussed in the sixth edition. The sixth edition covered planning, monitoring and evaluating products in parts 1 and 5. Those parts were not within scope for the Live release of the digital edition.
-
-The Content Guide pointed people to advice on user research in the Digital Service Standard.
-
-About this page
-
-### References
-
-Bruce L (2019) ‘[Get a head start on digital projects: include content from the Discovery phase](https://gathercontent.com/blog/get-a-head-start-on-digital-projects-include-content-from-the-discovery-phase)’, *GatherContent blog*, accessed 21 July 2020.
-
-Government Digital Service (2016) [ Content design: planning, writing and managing content](https://www.gov.uk/guidance/content-design), GOV.UK, accessed 1 November 2019.
-
-Government Digital Service (2017) [ User research for government services: an introduction](https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design), GOV.UK, accessed 22 July 2020.
-
-Reichelt L (2017) ‘[The critical difference between user research and market research](https://www.dta.gov.au/blogs/critical-difference-between-user-research-and-market-research)’, *Digital Transformation Agency blog*, accessed 1 November 2019.
-
-Reichelt L (2018) ‘[From insights to actions. Or, what should we do with this research?](https://medium.com/designing-atlassian/from-insights-to-actions-or-what-should-we-do-with-this-research-3c55489296c)’, *Medium, *Medium Corporation, accessed 1 November 2019.
-
-Varcoe L (2018) ‘Better content, less content’, *Digital Transformation Agency blog*, accessed 1 November 2019.
-
-### Last updated
-
-This page was updated Tuesday 14 May 2024.

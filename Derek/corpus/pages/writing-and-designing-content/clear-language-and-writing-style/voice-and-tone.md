@@ -1,7 +1,8 @@
+# Voice and tone
+
 Writing style is a result of voice and tone. Adjust your style to meet user needs. It influences whether and how people engage with content.
 
-
-Adapt writing style with tone and voice
+## Adapt writing style with tone and voice
 
 Writing style describes the way you express ideas in content. The tone and voice you use influence the writing style for any type of content.
 
@@ -21,7 +22,7 @@ Voice captures who is writing – a persona people understand when they engage w
 
 Adapt tone and voice to engage users, so the content can meet their needs. For example, briefs for ministers will use a different tone and voice to a speech or information on a website.
 
-Align tone to context
+## Align tone to context
 
 Tone is created by 4 elements:
 
@@ -44,13 +45,13 @@ Using the first person singular (the pronoun ‘I’) is rarely suitable in gove
 
 ### Grammar
 
-Grammar is about [sentence structure](/node/120). It affects the way your writing sounds and how easy it is to read.
+Grammar is about [sentence structure](https://www.stylemanual.gov.au/node/120). It affects the way your writing sounds and how easy it is to read.
 
 ### Formality
 
 Formality is about how closely you follow standard English and how familiar the tone of content needs to be.
 
-Choose how formal tone should be
+## Choose how formal tone should be
 
 The appropriate level of formality depends on what the relationship is between content and its user. There are 3 levels of formality:
 
@@ -75,14 +76,14 @@ Standard style is the easiest for many people to understand.
 
 Please arrive 15 minutes before the concert starts. [Standard]
 
-Formality does not affect [plain language](/node/55).
+Formality does not affect [plain language](https://www.stylemanual.gov.au/node/55).
 
 ### Formal tone
 
 Formal tone:
 
-- doesn’t use
-[contractions](/node/191) - is literal – words are used with their dictionary meaning
+- doesn’t use [contractions](https://www.stylemanual.gov.au/node/191)
+- is literal – words are used with their dictionary meaning
 - doesn’t use metaphor, slang or idioms
 - often uses the third person (he, she, they, them).
 
@@ -96,8 +97,8 @@ Standard tone combines formal and informal tone. Most people find standard tone 
 
 Standard tone:
 
-- can use contractions and
-[personal pronouns](/node/131#there_are_different_kinds_of_pronouns) - doesn’t use metaphors, idioms or slang.
+- can use contractions and [personal pronouns](https://www.stylemanual.gov.au/node/131#there_are_different_kinds_of_pronouns)
+- doesn’t use metaphors, idioms or slang.
 
 You will probably use standard tone for most government content. This includes:
 
@@ -111,13 +112,13 @@ You will probably use standard tone for most government content. This includes:
 
 Informal tone uses contractions and personal pronouns.
 
-Informal tone can use metaphors and idioms, which can have a negative [effect on inclusion](/node/178). Metaphors and idioms are not plain language.
+Informal tone can use metaphors and idioms, which can have a negative [effect on inclusion](https://www.stylemanual.gov.au/node/178). Metaphors and idioms are not plain language.
 
 You should not use slang when writing on behalf of government.
 
-Informal tone is often used in [social media](/node/43) and [blogs](/node/44). Your writing might also become more informal as you get to know the people you are writing to.
+Informal tone is often used in [social media](https://www.stylemanual.gov.au/node/43) and [blogs](https://www.stylemanual.gov.au/node/44). Your writing might also become more informal as you get to know the people you are writing to.
 
-Identify the right voice
+## Identify the right voice
 
 Voice is sometimes called a persona. It refers to the personality implicit in the content.
 
@@ -141,17 +142,17 @@ If not, a safe place to start is with a basic government voice. It is the voice 
 
 A respectful writing style:
 
-- uses
-[inclusive language](/node/178) - expresses ideas in everyday words
+- uses [inclusive language](https://www.stylemanual.gov.au/node/178)
+- expresses ideas in everyday words
 - ‘speaks’ to people – using the pronoun ‘you’, for example
 - doesn’t use inflammatory language, such as name-calling or sarcasm
 - doesn’t speak down to people, but isn’t too familiar either.
 
 A clear and direct writing style:
 
-- is in
-[plain language](/node/55) - uses
-[active voice](/node/204) - is concise
+- is in [plain language](https://www.stylemanual.gov.au/node/55)
+- uses [active voice](https://www.stylemanual.gov.au/node/204)
+- is concise
 - structures ideas
 - makes it easy for people to understand what they need to know or do.
 
@@ -183,42 +184,4 @@ There was 15 mm of rain last summer. This made it the driest summer for 120 year
 
 Only 15 mm of rain meant last summer was the driest we’ve ever had.
 
-[The viewpoint is personal because of ‘we’ (a [personal pronoun](/node/131)). The adverb ‘only’ could also imply subjectivity.]
-
-Release notes
-
-The digital edition has mostly new content on voice and tone.
-
-It uses the terms ‘voice’ and ‘tone’, but does not use the term ‘register’ as described in the sixth edition. Instead, this edition uses voice and tone to describe different aspects of register.
-
-The Content Guide had brief advice on voice and tone in ‘Writing style’.
-
-About this page
-
-### References
-
-General Services Administration (n.d.) ‘Voice and tone’, *18F content guide*, 18F Content Guide website, accessed 9 September 2020.
-
-Kelleher T (2009) ‘Conversational voice, communicated commitment, and public relations outcomes in interactive online communication’,* Journal of Communication*, 59(1):172–188, doi:10.1111/j.1460-2466.2008.01410.x.
-
-Mackenzie J (2011) *The editor’s companion*, 2nd edn, Cambridge University Press, Melbourne.
-
-New Zealand Government (2020) ‘[Tone and voice](https://www.digital.govt.nz/standards-and-guidance/design-and-ux/content-design-guidance/writing-style/tone-and-voice/)’, *Content design guidance*, digital,govt.nz, accessed 22 December 2022.
-
-NSW Government (2022) ‘[Finding a tone of voice](https://www.digital.nsw.gov.au/delivery/digital-service-toolkit/resources/writing-content/content-101/finding-a-tone-of-voice)’, *Digital service toolkit*, Digital.NSW website, accessed 12 December 2022.
-
-Nordquist, R (2019) *What is Tone in Writing?**, *ThoughCo.com, viewed on 4 January 2020.
-
-Treasury Board of Canada Secretariat (2020) ‘[Tone](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#toc7)’, *Canada.ca content style guide*, Canada.ca, accessed 9 September 2020.
-
-University of Maryland Global Campus (2022) [ A word about style, voice and tone](https://www.umgc.edu/current-students/learning-resources/writing-center/online-guide-to-writing/tutorial/chapter3/ch3-21),
-
-*Online Guide to Writing and Research*, University of Maryland Global Campus website, accessed 21 June 2022.
-
-University of Reading (2013) [ GOV.UK content principles: conventions and research background](https://www.gov.uk/government/publications/govuk-content-principles-conventions-and-research-background/govuk-content-principles-conventions-and-research-background), GOV.UK website, accessed 4 May 2020.
-
-Wheaton College (2009) [ Style, diction, tone and voice](https://www.wheaton.edu/academics/services/writing-center/writing-resources/style-diction-tone-and-voice/), Wheaton College, viewed on 15 October 2019.
-
-### Last updated
-
-This page was updated Tuesday 21 October 2025.
+[The viewpoint is personal because of ‘we’ (a [personal pronoun](https://www.stylemanual.gov.au/node/131)). The adverb ‘only’ could also imply subjectivity.]

@@ -32,6 +32,7 @@ from derek.corpus.diff import (
 )
 from derek.corpus.eligibility import load_eligibility
 from derek.corpus.normalise import NormalisedPage
+from derek.corpus.to_markdown import ExtractionError, extract_markdown
 
 REPO = Path(__file__).resolve().parents[2]
 PAGES = REPO / "corpus" / "pages"
@@ -42,7 +43,7 @@ ELIGIBILITY = REPO / "corpus" / "eligibility.yaml"
 
 DEFAULT_SITEMAP_URL = "https://www.stylemanual.gov.au/sitemap.xml"
 SWEEP_SLICES = 7          # a full re-hash spread across a week
-EXTRACTOR_ID = "trafilatura==1.12.2"
+EXTRACTOR_ID = "derek.to_markdown/1"
 
 
 def url_to_path(url: str) -> str:
@@ -112,8 +113,8 @@ def _select_for_fetch(entries, lock: Snapshot, full: bool, sweep_slice: int | No
 
 
 def run(full: bool, sweep_slice: int | None, sitemap_url: str, dry_run: bool) -> int:
-    # Imported lazily: the transport needs selenium/trafilatura, which the
-    # rest of the corpus layer deliberately does not.
+    # Imported lazily: the transport needs selenium, which the rest of the
+    # corpus layer deliberately does not.
     from derek.corpus import fetch as transport
 
     eligibility = load_eligibility(ELIGIBILITY)
@@ -168,15 +169,14 @@ def run(full: bool, sweep_slice: int | None, sitemap_url: str, dry_run: bool) ->
                     current.pages[rel] = prev      # never drop a page on a fetch failure
                 continue
 
-            markdown = transport.html_to_markdown(transport.strip_noise(html)) \
-                if hasattr(transport, "html_to_markdown") else None
-            if markdown is None:
-                import trafilatura
-                markdown = trafilatura.extract(
-                    transport.strip_noise(html), output_format="markdown",
-                    include_links=True, include_tables=True,
-                )
-            if not markdown:
+            # DOM-faithful conversion: heading levels come from the source
+            # <h1>-<h6> tags rather than being inferred (ADR-020). Raises
+            # rather than returning empty, so a blocked or broken fetch can
+            # never be written to the corpus as a legitimately empty page.
+            try:
+                markdown = extract_markdown(html, url)
+            except ExtractionError as exc:
+                print(f"    extraction failed: {exc}", file=sys.stderr)
                 failed.append(url)
                 if (prev := previous.pages.get(rel)):
                     current.pages[rel] = prev

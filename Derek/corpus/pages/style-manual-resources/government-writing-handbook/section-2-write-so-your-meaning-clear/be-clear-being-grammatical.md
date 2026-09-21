@@ -1,8 +1,10 @@
+# Be clear by being grammatical
+
 Few people get excited at the thought of grammar. Often, it’s seen as a boring set of rules that isn’t relevant to everyday life.
 
 Despite this, grammar is a vital part of written and verbal communication. It shapes how we use words. Most importantly, grammar determines how people process and react to those words.
 
-Grammar is about your readers
+## Grammar is about your readers
 
 There are strong reasons for paying attention to grammar in your writing.
 
@@ -81,18 +83,12 @@ The committee is arriving separately.
 
 The department works together to improve their governance arrangements.
 
-Definitions
+## Definitions
 
 In a typical sentence, the **subject** is the person or thing that does the action.
 
-A **verb **describes an action, an event, a change or a state.
+A **verb**describes an action, an event, a change or a state.
 
 **Objects** can be ‘direct’ or ‘indirect’. Direct objects receive the action of a verb and usually appear immediately after it: ‘She trains dogs.’ Indirect objects usually follow a preposition: ‘She trains dogs for them.’
 
 **Prepositions** include: ‘in’, ‘by’, ‘between’, ‘to’, ‘from’ and ‘for’.
-
-Style Manual pages
-
-### Last updated
-
-This page was updated Thursday 19 December 2024.

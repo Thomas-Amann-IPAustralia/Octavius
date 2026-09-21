@@ -1,7 +1,8 @@
+# Organisation names
+
 Spell and punctuate organisation names correctly. This helps people to understand your content.
 
-
-Write the name as the organisation writes it
+## Write the name as the organisation writes it
 
 Organisations determine how their names should be spelt and punctuated. This does not always follow the usual rules.
 
@@ -17,12 +18,12 @@ Pay attention to the use of capital letters, punctuation (such as apostrophes) a
 
 ### Example
 
-- United Nations Educational, Scientific and Cultural Organization ['United Nations’ doesn't have an apostrophe because it is
-[descriptive](https://www.stylemanual.gov.au/style-rules-and-conventions/punctuation-marks/apostrophes#descriptive_phrases_dont_need_apostrophes). Note the variant spelling of ‘Organization’.] - Department of the Prime Minister and Cabinet (PM&C) [The ampersand is part of the initialism but not the spelt-out form.]
+- United Nations Educational, Scientific and Cultural Organization ['United Nations’ doesn't have an apostrophe because it is [descriptive](https://www.stylemanual.gov.au/style-rules-and-conventions/punctuation-marks/apostrophes#descriptive_phrases_dont_need_apostrophes). Note the variant spelling of ‘Organization’.]
+- Department of the Prime Minister and Cabinet (PM&C) [The ampersand is part of the initialism but not the spelt-out form.]
 - State Library Victoria [The name is not the ‘State Library of Victoria’. It does not include a preposition.]
 - Meat & Livestock Australia [The ampersand is part of the name.]
 
-Check the correct name of an organisation
+## Check the correct name of an organisation
 
 The names of organisations can change. The most efficient way to confirm an organisation’s name is to check its website, annual report or letterhead. If this is unsuccessful, there are other reliable services.
 
@@ -32,15 +33,13 @@ The government online directory includes the Australian Government Organisations
 
 For non-government entities, use:
 
-- the Australian Securities Exchange's
-[listed companies](https://www.asx.com.au/asx/research/listedCompanies.do) - the
-[Australian Securities and Investments Commission registers](https://connectonline.asic.gov.au/RegistrySearch/faces/landing/SearchRegisters.jspx?_adf.ctrl-state=p64f240em_12)
+- the Australian Securities Exchange's [listed companies](https://www.asx.com.au/asx/research/listedCompanies.do)
+- the [Australian Securities and Investments Commission registers](https://connectonline.asic.gov.au/RegistrySearch/faces/landing/SearchRegisters.jspx?_adf.ctrl-state=p64f240em_12)
 
 For all entities, use:
 
-- the Australian Business Register's
-[ABN lookup](https://abr.business.gov.au/) - a publication that lists organisations such as the
-*Directory of Australian associations*or*Margaret Gee’s media guide,*if your organisation has access.
+- the Australian Business Register's [ABN lookup](https://abr.business.gov.au/)
+- a publication that lists organisations such as the *Directory of Australian associations* or *Margaret Gee’s media guide,*if your organisation has access.
 
 ### Example
 
@@ -90,7 +89,7 @@ Don't add a full stop at the end of ‘Co’ and ‘Inc’ unless they finish a 
 
 Use the organisation’s full title on first mention in a publication. On subsequent mentions in print documents, you can omit words like ‘proprietary’ and ‘limited’ and the corresponding shortened forms.
 
-Capitalise organisations’ names in 2 situations
+## Capitalise organisations’ names in 2 situations
 
 Use initial capitals for:
 
@@ -99,8 +98,8 @@ Use initial capitals for:
 
 Don’t use an initial capital for:
 
-- generic terms – such as ‘the department’
-or ‘the agency’ – even if the organisation being referenced capitalises the generic term in its content - mentions of several organisations with the same generic name.
+- generic terms – such as ‘the department’or ‘the agency’ – even if the organisation being referenced capitalises the generic term in its content
+- mentions of several organisations with the same generic name.
 
 ### Example
 
@@ -117,9 +116,8 @@ or ‘the agency’ – even if the organisation being referenced capitalises th
 
 Some organisations use the definite article ‘The’ in their name with an initial capital. Use the full name, including ‘The’, in 2 situations:
 
-- in
-[emails and letters](/node/50) - if the name appears in an alphabetical list (arrange by ‘The’ as the first word in the name)
-*.*
+- in [emails and letters](https://www.stylemanual.gov.au/node/50)
+- if the name appears in an alphabetical list (arrange by ‘The’ as the first word in the name)*.*
 
 Always use lower case ‘the’ in body text. This follows the practice of most organisations.
 
@@ -137,7 +135,7 @@ Charles Sturt University [Correct name, not ‘The Charles Sturt University’]
 
 Research at Charles Sturt University examined whether early Australian wheat varieties caused allergic reactions. [Body text does not use ‘the’]
 
-Put a possessive apostrophe in a name if the organisation does
+## Put a possessive apostrophe in a name if the organisation does
 
 Use an apostrophe only when it forms part of the official name of an organisation.
 
@@ -145,7 +143,7 @@ Use an apostrophe only when it forms part of the official name of an organisatio
 
 Actors’ and Entertainers’ Benevolent Fund Qld
 
-In all other cases for organisation names, don’t use [possessive apostrophes](/node/106).
+In all other cases for organisation names, don’t use [possessive apostrophes](https://www.stylemanual.gov.au/node/106).
 
 The apostrophe is disappearing from many organisational names, particularly from those that contain plural nouns ending in ‘s’. In these cases, the plural noun is descriptive rather than possessive.
 
@@ -157,11 +155,11 @@ The apostrophe is disappearing from many organisational names, particularly from
 - Chief Government Geologists Conference
 - Australian Workers Union
 
-Use the singular verb with organisation names
+## Use the singular verb with organisation names
 
 The rules of grammar allow the use of a plural or singular verb with the names of organisations. This is not Australian Government style.
 
-Always use a singular verb. This applies even if organisation names end in an ‘s’* *and look plural.
+Always use a singular verb. This applies even if organisation names end in an ‘s’and look plural.
 
 ### Write this
 
@@ -176,31 +174,3 @@ Always use a singular verb. This applies even if organisation names end in an �
 - Woolworths are advertising their new stock.
 - The United Nations turn 75 in 2020.
 - NT Fisheries have reviewed their policies.
-
-Release notes
-
-The digital edition consolidates and updates information from the sixth edition. It has links to online resources writers can use to ensure the information is up to date. In a departure from the sixth edition, the abbreviations ‘Co’ and ‘Inc’ do not have a full stop. This is consistent with Australian Securities and Investment Commission (ASIC) guidance and relevant legislation.
-
-The sixth edition had relevant information on organisations’ names in different parts of the manual.
-
-The Content Guide had an example to illustrate style for generic and full organisation names, consistent with the sixth edition, but no explicit guidance.
-
-About this page
-
-### References
-
-Australian Business Register (n.d.) * ABN lookup*, Australian Business Register website, accessed 11 August 2021.
-
-Australian Charities and Not-for-profits Commission (n.d.) * Charities*, ACNC website, accessed 10 June 2020.
-
-Australian Government (2020) * Directory*, Australian Government Directory website, accessed 10 June 2020.
-
-Australian Securities and Investments Commission (n.d.) * Search business names register*, ASIC Connect website, accessed 11 August 2021.
-
-Australian Securities Exchange (n.d.) ‘[The official list (listed companies)](https://www.asx.com.au/asx/research/listedCompanies.do)’, *Company information*, ASX website, accessed 10 June 2020.
-
-Department of Finance (2021) [ Structure of the Australian Government public sector](https://www.finance.gov.au/government/managing-commonwealth-resources/structure-australian-government-public-sector), Department of Finance website, accessed 19 October 2022.
-
-### Last updated
-
-This page was updated Wednesday 1 February 2023.

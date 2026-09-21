@@ -1,3 +1,5 @@
+# Positive sentences
+
 Write in a positive, affirming way, unless research shows there’s a good reason not to.
 
 When you ask people to do something, they are more likely to respond to a positive sentence. You will also use fewer words. Positive sentences are often shorter than their negative counterparts.
@@ -15,11 +17,3 @@ User research shows when it’s appropriate to use negative sentences. They usua
 ### Example
 
 Don’t accept friend requests from strangers. [Agency’s research supports using a negative imperative sentence]
-
-## Style Manual pages
-
-## About this page
-
-### Last updated
-
-This page was updated Thursday 19 December 2024.

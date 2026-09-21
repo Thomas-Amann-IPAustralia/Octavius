@@ -14,20 +14,20 @@ accommodations for both are already made ([ADR-012](02-decisions.md#adr-012-form
 |---|---|
 | Offline snapshot | 186 pages carried over from Octavius, re-normalised |
 | Eligible rule-source pages | 128 (58 excluded, with reasons, per [ADR-005](02-decisions.md#adr-005-corpus-eligibility-is-declared-not-inferred)) |
-| Deterministic candidates | **546**, unique UIDs, byte-identical across runs |
-| With gold examples | 318 (58%); 77 with *paired* compliant + violating |
+| Deterministic candidates | **661**, unique UIDs, byte-identical across runs |
+| With gold examples | 366 (55%); 83 with *paired* compliant + violating |
 | Reviewed | **0** — nothing loads until a human accepts it |
 
 ---
 
-## How to get from 546 candidates to working rules
+## How to get from 661 candidates to working rules
 
 This is the decision the last project got wrong, so it is worth being explicit. Three
 approaches are viable.
 
 ### Option A — Author every rule by hand
 
-You write the specification, polarity, scope and matcher for each of the 546.
+You write the specification, polarity, scope and matcher for each of the 661.
 
 - **For:** maximum fidelity. Every rule is one you understand completely.
 - **Against:** roughly 10 minutes per rule is **≈90 hours**. Realistically it stalls.
@@ -37,11 +37,11 @@ You write the specification, polarity, scope and matcher for each of the 546.
 ### Option B — Model fills everything, you accept or correct
 
 The pipeline pre-fills `clarity`, `direction`, `unit`, `applies_to`,
-`violation_condition` and a proposed `matcher` for all 546. You work the review queue,
+`violation_condition` and a proposed `matcher` for all 661. You work the review queue,
 correcting rather than authoring.
 
 - **For:** matches the stated preference (correcting beats writing from scratch). All
-  546 get a first pass.
+  661 get a first pass.
 - **Against:** you pay for model proposals on rules you were always going to discard,
   and a plausible-looking wrong proposal is harder to spot than a blank field. This is
   the failure mode that produced Octavius's polarity inversions — the output *looked*
@@ -58,9 +58,9 @@ Two passes with different economies.
 N/A rules" UI, and it runs at roughly **15–30 seconds per rule** because it needs
 judgement, not authoring.
 
-> 546 candidates × ~20s ≈ **3–4 hours**, realistically two or three sittings.
+> 661 candidates × ~20s ≈ **3.5–4.5 hours**, realistically two or three sittings.
 
-Based on the Octavius corpus composition, expect **150–250 survivors**. Everything
+Based on the Octavius corpus composition, expect **180–300 survivors**. Everything
 scoped to images, video, social posts or page metadata drops out here — the class that
 generated Octavius's worst noise ([postmortem F5](00-postmortem-octavius.md#f5--rules-about-artifacts-not-text)).
 
@@ -69,7 +69,7 @@ the fields that survived triage. You correct. The `Write this` / `Not this` pair
 already attached to 77 of them, so their polarity is grounded in editorial fact rather
 than a model's guess.
 
-> ~200 rules × ~4 min ≈ **13 hours**, and it is interruptible.
+> ~240 rules × ~4 min ≈ **16 hours**, and it is interruptible.
 
 **Pass 3 — hand-author the hard ones.** The 10–20 rules that matter most and resist
 formalisation (Option A, deliberately). The table-headings rule in
@@ -111,9 +111,9 @@ orphans its rules, and a re-run with no upstream change produces an empty change
 - [x] Pipeline-owned fields (`uid`, `source`, `derivation`) rejected by the API, so a
       rebuild can never clobber a decision and review can never corrupt provenance
 - [ ] Bulk operations by page, section and predicted scope
-- [ ] **Run Pass 1 over all 546** ← the actual next task
+- [ ] **Run Pass 1 over all 661** ← the actual next task
 
-**Done when:** the reviewed count is 546 and the survivor set is known.
+**Done when:** the reviewed count is 661 and the survivor set is known.
 
 ### Phase 3 — Tier 0 detection
 

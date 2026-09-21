@@ -1,6 +1,8 @@
+# Alt text, captions and titles for images
+
 Alternative text explains information in images for screen reader users. Captions describe images to help users relate them to surrounding text. Titles identify images and number them in long-form content.
 
-Give all users access to the same information
+## Give all users access to the same information
 
 When people use content with images, they get information from different elements.
 
@@ -12,8 +14,8 @@ Users combine information from:
 
 These elements have different purposes.
 
-- Titles help identify specific images (for example, ‘Figure 1’) – particularly if they are listed or referenced in other parts of the content. They are different from the
-[HTML title attribute](https://www.w3schools.com/tags/att_title.asp). - Captions are brief descriptions related to the image (for example commentary, attributions or quotations).
+- Titles help identify specific images (for example, ‘Figure 1’) – particularly if they are listed or referenced in other parts of the content. They are different from the [HTML title attribute](https://www.w3schools.com/tags/att_title.asp).
+- Captions are brief descriptions related to the image (for example commentary, attributions or quotations).
 - Alternative text (alt text) is a short description of the information an image conveys. It’s either available to the user as an HTML attribute or through a document’s accessibility tool. Alt text is not usually visible on the page.
 
 An extended description is alternative text that explains a complex image. It is visible either on the same page or on a separate page. You might write an extended description for a chart or process, for example.
@@ -28,7 +30,7 @@ Don’t:
 - repeat information in the alt text that a user would read in the caption
 - use the <longdesc> attribute for extended descriptions.
 
-Add alt text to all images
+## Add alt text to all images
 
 Include short alt text – less than about 100 characters – for all informative images. Decorative images should have null alt text (alt="").
 
@@ -46,37 +48,38 @@ I can understand any information contained in an image.
 
 Fundamentals:
 
-- Add alternative text for all images. For help with writing good alt text: the W3C
-[alt decision tree](https://www.w3.org/WAI/tutorials/images/decision-tree/). - Write alternative text that describes the information or function of the image. For help to describe images: the W3C/WAI
-[Web Accessibility Tutorials - Images](https://www.w3.org/WAI/tutorials/images/).
+- Add alternative text for all images. For help with writing good alt text: the W3C [alt decision tree](https://www.w3.org/WAI/tutorials/images/decision-tree/).
+- Write alternative text that describes the information or function of the image. For help to describe images: the W3C/WAI [Web Accessibility Tutorials - Images](https://www.w3.org/WAI/tutorials/images/).
 
-Web Content Accessibility Guidelines success criterion:[1.1.1 Non-text content – level A](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content).
+Web Content Accessibility Guidelines success criterion:
+[1.1.1 Non-text content – level A](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content).
+
+## Include captions for all images that are not decorative
 
 Add captions for all images, unless they are only decorative.
 
-Use captions to acknowledge the creator or copyright holder of images in captions. Use your organisation’s [referencing style](/node/181).
+Use captions to acknowledge the creator or copyright holder of images in captions. Use your organisation’s [referencing style](https://www.stylemanual.gov.au/node/181).
 
 Include the HTML <figcaption> element to associate the caption with the image.
 
 ### Example
 
 <figure>
-
 <figcaption>Figure 3: Kangaroo numbers in Victoria from 1880 to 1980</figcaption>
-
 <img src="kangaroo.svg" alt= "Line graph showing a doubling of kangaroo numbers from 1880 to 1980">
-
 ... </figure>
 
 For more instructions about using figure captions, visit [Web Accessibility Tutorials – complex images](https://www.w3.org/WAI/tutorials/images/complex/).
 
 ### Copyright requirements
 
-When referencing, you must [attribute copyright material](/node/181). This includes images and text.
+When referencing, you must [attribute copyright material](https://www.stylemanual.gov.au/node/181). This includes images and text.
 
 Write the attribution as part of the caption or following the copyright material. Alt text is also licensed under copyright.
 
-Read the government copyright rules in the [ Australian Government intellectual property manual](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual).
+Read the government copyright rules in the [*Australian Government intellectual property manual*](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual).
+
+## Write alt text and captions to support the image’s purpose
 
 The detail you need to include in alt text, captions and titles depends on the reason you have included the image.
 
@@ -114,6 +117,10 @@ In these cases, the images give visual learners another way to access informatio
 
 #### Example
 
+You might use `alt="Screenshot of dropdown menu and buttons"` if the nearby
+
+text (for example, the caption) had this instruction:`Select the ‘save’ button between the ‘Tools’ drop-down and the ‘Cancel’ button`
+
 ### Logos
 
 Write the full name of the organisation in the logo alt text.
@@ -129,6 +136,12 @@ Write different alt text for decorative, informative or functional icons.
 - State the functional icon’s purpose so the user can understand the outcome.
 
 #### Example
+
+A decorative printer icon: `alt=""`
+
+An informational printer icon: `alt="Printer icon"`
+
+A functional printer icon: `alt="Print this page"`
 
 ### Complex images
 
@@ -154,9 +167,7 @@ Extended descriptions usually include:
 - a description of the trend in the data – increasing or decreasing
 - comparisons between data sets, such as ‘more than’, ‘relative’ or ‘inverse’.
 
-For examples of alt text, visit Benetech Initiative’s [ General image description guidelines](http://diagramcenter.org/table-of-contents-2.html#contents). They also have examples of maps, diagrams, complex images and
-
-[extended descriptions for graphs](http://diagramcenter.org/specific-guidelines-e.html).
+For examples of alt text, visit Benetech Initiative’s [*General image description guidelines*](http://diagramcenter.org/table-of-contents-2.html#contents). They also have examples of maps, diagrams, complex images and [extended descriptions for graphs](http://diagramcenter.org/specific-guidelines-e.html).
 
 ### Photographs and illustrations
 
@@ -168,8 +179,8 @@ This image could have a different caption and alt text, depending on the content
 
 An environmental committee report might include a list of species with a photo and links to management plans. This is a functional image that serves as a link.
 
-- Caption for committee report: Hoary sunray (
-*Leucochysum albicans*) (caption is hyperlinked) - Alt text for committee report: alt=""
+- Caption for committee report: Hoary sunray (*Leucochysum albicans*) (caption is hyperlinked)
+- Alt text for committee report: alt=""
 
 An agency visitor centre might publish a guide to the Snowy Mountains.
 
@@ -181,6 +192,8 @@ An annual report might include a section about the plants of the Snowy Mountains
 - Caption for annual report: The Hoary sunray has paper-like white flowers and thrives in the harsh rocky ground on Mount Townsend in summer
 - Alt text for annual report: alt=""
 
+## Use consistent formatting and punctuation for captions and titles
+
 Align captions and titles to the left. Place captions for decorative images, such as photographs, below the image.
 
 Titles and captions don’t need to be a complete sentence. Other grammar and punctuation rules for titles and captions are:
@@ -191,8 +204,8 @@ Titles and captions don’t need to be a complete sentence. Other grammar and pu
 All titles and captions should have the same:
 
 - structure (parallel structure)
-- terms and shortened forms as those used in the rest of the content (such as
-[acronyms](/node/190)) - font and typeface.
+- terms and shortened forms as those used in the rest of the content (such as [acronyms](https://www.stylemanual.gov.au/node/190))
+- font and typeface.
 
 ### Print considerations
 
@@ -200,7 +213,7 @@ In print, the placement of captions for images is a design consideration. Consul
 
 Don’t extend titles or captions beyond the edges of image.
 
-Number titles in long documents
+## Number titles in long documents
 
 Many publications refer to all images as ‘figures’. Complex publications with many images can use different categories (such as figures, maps or photographs).
 
@@ -226,7 +239,7 @@ Use the ‘Cross-reference’ function to insert the reference in the body text 
 
 These functions keep track of numbering for you. If you move images around in the document, the numbering updates the cross-references you create to their titles in the body text.
 
-Number images separately from any numbered [tables](/node/45).
+Number images separately from any numbered [tables](https://www.stylemanual.gov.au/node/45).
 
 ### Example
 
@@ -237,55 +250,3 @@ Figure 1: Visitor numbers to the Green Trees main walk, 2008 to 2019
 Figure 2: Traffic accident rates at Green Trees Weir, 2009 to 2010
 
 Table 2: Visitor numbers during March to October 2019
-
-Release notes
-
-The digital edition has new and detailed content about alt text, captions and titles for images. The focus is how these elements support [images as a content format](/node/46). That primary information explains how to cross-reference, title and annotate figures that represent [complex information as an image](/node/46#use_graphs_charts_and_maps_if_they_explain_complex_information).
-
-The sixth edition mentioned alt text briefly as an ‘alt text attribute’ in the sections on illustrations and on-screen production. The sixth edition focused on captions and titles for printed publications.
-
-The Content Guide mentioned alt text on several pages but did not provide detailed guidance. It mentioned captions briefly, mainly in relation to alt text and the HTML element for placement. It did not discuss titles in relation to images.
-
-About this page
-
-### References
-
-Australian Inclusive Publishing Initiative (2019) [ Inclusive publishing in Australia: an introductory guide](https://aipi.com.au/inclusive-publishing-in-australia/), Australian Inclusive Publishing Initiative, accessed 21 May 2020.
-
-Carl and Ruth Shapiro Family National Center for Accessible Media and the Diagram Centre (2019) [ Image description guidelines,](http://diagramcenter.org/table-of-contents-2.html#contents) Diagram Center website, accessed 23 October 2019.
-
-Cutts M (2013) *Oxford guide to plain English*, Oxford University Press, Oxford.
-
-Content Design London (2020) ‘[Images](https://readabilityguidelines.co.uk/images/)’, *Content Design London readability guidelines*, Content Design London website, accessed 20 May 2020.
-
-DAISY (Digital Accessible Information System) (n.d.) ‘[Images](http://kb.daisy.org/publishing/docs/html/images.html)’, *Accessible publishing knowledge base*, Accessible Publishing Knowledge Base website, accessed 30 May 2020.
-
-General Services Administration (n.d.) ‘[Images](https://accessibility.18f.gov/images/)’, *18F accessibility guide*, 18F website, accessed 20 May 2020.
-
-GOV.UK (n.d.) ‘[Images](https://design-system.service.gov.uk/styles/images/)’, *Design system*, GOV.UK, accessed 20 May 2020.
-
-Lynch PJ and Horton S (2016) ‘[Images](https://webstyleguide.com/11-images.html)’, *Web style guide*, Web Style Guide website, accessed 29 May 2020.
-
-Oxford University Press (2016) *New Oxford style manual*, Oxford University Press, Oxford.
-
-Purchase S (1998) *The little book of style*, AusInfo, Department of Finance and Administration, Canberra.
-
-Treasury Board of Canada Secretariat (2020) ‘[Images and videos](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#toc10)’, *Canada.ca content style guide*, Canada.ca, accessed 20 May 2020.
-
-United States Government (n.d.) ‘[Table](https://designsystem.digital.gov/components/table/)’, *US web design system*, US Web Design System website, accessed 30 May 2020.
-
-Universal Design Centre (n.d.) [ Best practices for accessible images](https://www.csun.edu/universal-design-center/best-practices-accessible-images), California State University Northridge website, accessed 30 May 2020.
-
-University of Chicago (2017) ‘3.28: Illustration captions and accessibility’, *Chicago manual of style*, 17th edn, University of Chicago Press, Chicago.
-
-WHATWG (Web Hypertext Application Technology Working Group) (2020) ‘[4.9.2: the caption element](https://html.spec.whatwg.org/#the-caption-element)’, *HTML: living standard*, WHATWG website, accessed 4 June 2020.
-
-WHATWG (2020) ‘[4.4.3: the figcaption element](https://html.spec.whatwg.org/#the-figcaption-element)’, *HTML: living standard*, WHATWG website, accessed 4 June 2020.
-
-WebAim (2019) [ Alternative text](https://webaim.org/techniques/alttext/), WebAim website, accessed 23 October 2019.
-
-World Wide Web Consortium (2019) ‘[Image concepts](https://www.w3.org/WAI/tutorials/images/)’, *Web accessibility tutorials*, W3C website, accessed 30 October 2019.
-
-### Last updated
-
-This page was updated Thursday 12 December 2024.

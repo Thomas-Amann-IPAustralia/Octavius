@@ -150,6 +150,11 @@ class Derivation:
     statement_form: str = ""            # imperative | negative_imperative | modal | descriptive
     derived_at: str = ""
     supersedes: str | None = None       # uid of the rule this replaces (ADR-002)
+    uid_history: list[str] = field(default_factory=list)
+    # ^ prior UIDs of *this same rule*, when a re-derivation changed the
+    #   content-addressed identity without the Style Manual changing a word
+    #   — e.g. a converter upgrade that corrected the heading path (ADR-020).
+    #   Distinct from ``supersedes``, which means the upstream text changed.
     model_decisions: dict[str, str] = field(default_factory=dict)
     # ^ maps field name -> "<prompt_version>/<model_id>" for any field a model
     #   proposed, so a model-proposed value is never mistaken for a human one

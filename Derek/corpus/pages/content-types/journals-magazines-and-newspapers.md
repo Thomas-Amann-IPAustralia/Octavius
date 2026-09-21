@@ -1,6 +1,8 @@
+# Journals, magazines and newspapers
+
 Journals, magazines and newspapers are known as ‘periodicals’. Periodicals are published at regular intervals, so they are sometimes called ‘serials’. Number each issue of a serial and include other publication information so people can find it.
 
-Include all parts of the periodical
+## Include all parts of the periodical
 
 Periodicals get published at regular times. Each issue of a periodical is complete but also part of a set or volume. Most periodicals are online. Some no longer have a print version.
 
@@ -26,7 +28,7 @@ As well as the parts listed for periodicals, it is usual for each article in a j
 - a document object identifier (DOI)
 - extra material useful for the content.
 
-Consider accessible formats
+## Consider accessible formats
 
 Online periodicals often have their own websites. The home page should have:
 
@@ -48,23 +50,28 @@ Printed periodicals and periodicals published online as PDF have covers. If the 
 
 User needs:
 
-For a comprehensive list, refer to the [overview on accessibility](/node/218).
+For a comprehensive list, refer to the [overview on accessibility](https://www.stylemanual.gov.au/node/218).
 
-You must make all government content accessible to people with disability. This is part of Australian law under the [ Disability Discrimination Act 1992](https://www.legislation.gov.au/Series/C2004A04426).
+You must make all government content accessible to people with disability. This is part of Australian law under the [*Disability Discrimination Act 1992*](https://www.legislation.gov.au/Series/C2004A04426).
 
 Guidance on EPUB and PDF accessibility:
+
+- [Overview of the EPUB specification](https://inclusivepublishing.org/publisher/epub/)
+- [EPUB accessibility](http://kb.daisy.org/publishing/docs/conformance/epub.html)
+- [PDF techniques for WCAG 2.0 – W3C](https://www.w3.org/TR/WCAG20-TECHS/pdf.html)
+- [General techniques for WCAG 2.0 – W3C](https://www.w3.org/TR/WCAG20-TECHS/general.html)
+- [Accessibility for Adobe Acrobat – Adobe](https://www.adobe.com/accessibility/products/acrobat.html)
+- [Accessibility for Adobe InDesign – Adobe](https://www.adobe.com/accessibility/products/indesign.html)
 
 ### Copyright and legal deposit requirements
 
 You must choose a licence to release copyright materials. If you work in government, use an open access licence if you can (for example, [Creative Commons](https://creativecommons.org.au/)).
 
-Read the government copyright rules in the [ Australian Government intellectual property manual](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual).
+Read the government copyright rules in the [*Australian Government intellectual property manual*](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual).
 
-The National Library of Australia collects Australian publications under the [ Copyright Act 1968](https://www.legislation.gov.au/Series/C1968A00063). Your agency is obliged to contribute publications through legal deposit. Find out more
+The National Library of Australia collects Australian publications under the [*Copyright Act 1968*](https://www.legislation.gov.au/Series/C1968A00063). Your agency is obliged to contribute publications through legal deposit. Find out more [about legal deposit on the National Library website](https://www.nla.gov.au/legal-deposit). This information covers online annual reports, which are serials.
 
-[about legal deposit on the National Library website](https://www.nla.gov.au/legal-deposit). This information covers online annual reports, which are serials.
-
-Group issues into volumes
+## Group issues into volumes
 
 Both digital and print periodicals can group issues into volumes. There’s usually a volume for each calendar year. Each volume has its own title page, contents list and index.
 
@@ -110,11 +117,9 @@ Start each issue of a periodical without a separate cover from page 1. Include t
 
 Articles, journals and other serials that you create for the Australian Government become records. Records provide evidence of what your organisation has done and why.
 
-Managing and disposing of records properly is a requirement under the [ Archives Act 1983](https://www.legislation.gov.au/Series/C2004A02796). You must follow your organisation’s information management requirements. Visit the National Archives of Australia website for
+Managing and disposing of records properly is a requirement under the [*Archives Act 1983*](https://www.legislation.gov.au/Series/C2004A02796). You must follow your organisation’s information management requirements. Visit the National Archives of Australia website for [information management standards](https://www.naa.gov.au/information-management/information-management-standards).
 
-[information management standards](https://www.naa.gov.au/information-management/information-management-standards).
-
-Apply for identifying numbers for your periodical
+## Apply for identifying numbers for your periodical
 
 The National Library of Australia has information about how to [apply for identifying numbers for your periodical](https://www.nla.gov.au/content/apply-for-an-isbn-issn-or-ismn).
 
@@ -129,7 +134,7 @@ For digital-only content, you must publish 5 articles before you can apply for a
 
 Your periodical may also be eligible for a cataloguing statement approved by the National Library’s [Prepublication Data Service](https://www.library.gov.au/services/publishers-and-self-publishers/prepublication-data-service).
 
-Explain how to access datasets and extra material
+## Explain how to access datasets and extra material
 
 Periodicals can include material that is useful but too detailed to have in the text. To include it would interrupt the flow of reading.
 
@@ -142,35 +147,3 @@ In digital periodicals, material includes:
 Both printed and digital periodicals must tell their users how to access extra material. Online periodicals use a hyperlink in most cases. Printed periodicals need to tell people how to access this material if it is not in the appendices.
 
 The United States National Information Standards Organization has [recommended practices for online supplemental journal article material](https://www.niso.org/publications/niso-rp-15-2013-recommended-practices-online-supplemental-journal-article-materials).
-
-Release notes
-
-The digital edition focuses on online periodicals. It calls out relevant considerations for periodicals that are produced in print.
-
-The section in the sixth edition on periodicals dealt only with print-based periodicals.
-
-The Content Guide did not mention periodicals.
-
-About this page
-
-### References
-
-Australian Inclusive Publishing Initiative (2019) [ Inclusive publishing in Australia: an introductory guide](https://aipi.com.au/inclusive-publishing-in-australia/), Australian Inclusive Publishing Initiative, accessed 25 May 2020.
-
-American Psychological Association (2019) [ Journal coverage information for publishers](https://www.apa.org/pubs/databases/psycinfo/publishers/journals), APA website, accessed 19 October 2019.
-
-Anderson K (6 February 2018) ‘[Focusing on value: 102 things journal publishers do (2018 update)](https://scholarlykitchen.sspnet.org/2018/02/06/focusing-value-102-things-journal-publishers-2018-update/)’, *The Scholarly Kitchen*, accessed 19 October 2019.
-
-Cochran A (4 August 2016) ‘[Nuts and bolts: the super long list of things to do when starting a new journal](https://scholarlykitchen.sspnet.org/2016/08/04/nuts-and-bolts-the-super-long-list-of-things-to-do-when-starting-a-new-journal/)’, *The Scholarly Kitchen*, accessed 19 October 2019.
-
-ISSN International Centre (n.d.) [Understanding the ISSN](https://www.issn.org/#), ISSN International Centre website, accessed 20 December 2024.
-
-Johnson R, Watkinson A and Mabe M (2018) [ The STM Report. An overview of scientific and scholarly publishing [PDF 4.2 MB]](https://www.stm-assoc.org/2018_10_04_STM_Report_2018.pdf), 5th edn, International Association of Scientific, Technical and Medical Publishers, accessed 19 October 2019.
-
-National Information Standards Organization (n.d.) [ Supplemental journal article materials](https://www.niso.org/standards-committees/supplemental), NISO website, accessed 19 October 2019.
-
-W3C (World Wide Web Consortium) (2020) [ Web Content Accessibility Guidelines (WCAG) overview](https://www.w3.org/WAI/standards-guidelines/wcag/), W3C website, accessed 25 May 2020.
-
-### Last updated
-
-This page was updated Thursday 19 February 2026.

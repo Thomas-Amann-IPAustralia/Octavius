@@ -42,7 +42,15 @@
         "extractor_version": { "type": "string" },
         "statement_form": { "enum": ["imperative", "negative_imperative", "modal", "descriptive", ""] },
         "derived_at": { "type": "string" },
-        "supersedes": { "type": ["string", "null"] },
+        "supersedes": {
+          "type": ["string", "null"],
+          "description": "UID of a rule this REPLACES because the Style Manual reworded it upstream (ADR-002)."
+        },
+        "uid_history": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[0-9a-f]{16}$" },
+          "description": "Prior UIDs of THIS SAME rule, when a re-derivation changed the content-addressed identity without the source text changing — e.g. a converter upgrade that corrected the heading path (ADR-020). Distinct from `supersedes`."
+        },
         "model_decisions": {
           "type": "object",
           "description": "field name -> '<prompt_version>/<model_id>'. A model-proposed value is never mistaken for a human one (ADR-003).",

@@ -1,7 +1,8 @@
+# Editing and proofreading
+
 Editing and proofreading help ensure consistency so content meets user needs and expectations.
 
-
-Editing is integral to clear content
+## Editing is integral to clear content
 
 Editing is part of the work of any team that creates and publishes content. Editing helps content meet user and business needs by ensuring it is:
 
@@ -12,6 +13,9 @@ Editing is part of the work of any team that creates and publishes content. Edit
 ### Digital Service Standard requirements
 
 You must make sure content is clear, accurate and consistent to meet the Digital Service Standard:
+
+- [Criterion 6. Consistent and responsive design](https://www.dta.gov.au/help-and-advice/digital-service-standard/digital-service-standard-criteria/6-consistent-and-responsive-design)
+- [Criterion 9. Make it accessible](https://www.dta.gov.au/help-and-advice/digital-service-standard/digital-service-standard-criteria/9-make-it-accessible)
 
 ### Accessibility requirements
 
@@ -31,9 +35,25 @@ Fundamentals:
 
 Web Content Accessibility Guidelines success criteria:
 
-[1.1.1 Non-text content](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#non-text-content)[–](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)[level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#non-text-content)[1.2.2 Captions (prerecorded)](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#captions-prerecorded)[–](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)[level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#captions-prerecorded)[1.2.3 Audio description or media alternative (prerecorded)](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#audio-description-or-media-alternative-prerecorded)[–](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)[level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#audio-description-or-media-alternative-prerecorded)[1.3.1 Info and relationships – level A](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)[1.3.2 Meaningful sequence – level A](https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence)[1.3.3 Sensory characteristics](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#sensory-characteristics)[–](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)[level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#sensory-characteristics)[2.4.2 Page titled](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#page-titled)[–](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)[level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#page-titled)[2.5.3 Label in name](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#label-in-name)[–](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)[level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#label-in-name)[3.3.2 Labels or instructions](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#labels-or-instructions)[–](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)[level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#labels-or-instructions)[2.4.6 Headings and labels](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#headings-and-labels)[–](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)[level AA](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#headings-and-labels)[3.3.3 Error suggestion](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#error-suggestion)[–](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)[level AA](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#error-suggestion)[2.4.9 Link purpose (link only)](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#link-purpose-link-only)[–](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)[level AAA](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#link-purpose-link-only)[2.4.10 Section headings](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#section-headings)[–](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)[level AAA](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#section-headings)[3.1.5 Reading level – level AAA](https://www.w3.org/WAI/WCAG21/quickref/#reading-level)[3.1.3 Unusual words – level AAA](https://www.w3.org/WAI/WCAG21/quickref/#unusual-words)[3.1.4 Abbreviations – level AAA](https://www.w3.org/WAI/WCAG21/quickref/#abbreviations)[3.3.5 Help](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#help)[–](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)[level AAA](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#help)
+- [1.1.1 Non-text content](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#non-text-content)[–](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)[level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#non-text-content)
+- [1.2.2 Captions (prerecorded)](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#captions-prerecorded)[–](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)[level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#captions-prerecorded)
+- [1.2.3 Audio description or media alternative (prerecorded)](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#audio-description-or-media-alternative-prerecorded)[–](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)[level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#audio-description-or-media-alternative-prerecorded)
+- [1.3.1 Info and relationships – level A](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)
+- [1.3.2 Meaningful sequence – level A](https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence)
+- [1.3.3 Sensory characteristics](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#sensory-characteristics)[–](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)[level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#sensory-characteristics)
+- [2.4.2 Page titled](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#page-titled)[–](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)[level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#page-titled)
+- [2.5.3 Label in name](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#label-in-name)[–](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)[level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#label-in-name)
+- [3.3.2 Labels or instructions](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#labels-or-instructions)[–](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)[level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#labels-or-instructions)
+- [2.4.6 Headings and labels](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#headings-and-labels)[–](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)[level AA](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#headings-and-labels)
+- [3.3.3 Error suggestion](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#error-suggestion)[–](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)[level AA](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#error-suggestion)
+- [2.4.9 Link purpose (link only)](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#link-purpose-link-only)[–](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)[level AAA](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#link-purpose-link-only)
+- [2.4.10 Section headings](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#section-headings)[–](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)[level AAA](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#section-headings)
+- [3.1.5 Reading level – level AAA](https://www.w3.org/WAI/WCAG21/quickref/#reading-level)
+- [3.1.3 Unusual words – level AAA](https://www.w3.org/WAI/WCAG21/quickref/#unusual-words)
+- [3.1.4 Abbreviations – level AAA](https://www.w3.org/WAI/WCAG21/quickref/#abbreviations)
+- [3.3.5 Help](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#help)[–](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)[level AAA](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=335#help)
 
-Types of editing (levels)
+## Types of editing (levels)
 
 There are different levels of editing. Each involves specific tasks that happen at certain stages in content development. The aim in any level of edit is to meet user needs and make sure content is fit for purpose.
 
@@ -41,7 +61,7 @@ There are different levels of editing. Each involves specific tasks that happen 
 
 The substantive edit reviews structural and textual elements when the draft content is complete.
 
-Substantive editing shapes text to make meaning clear. It also improves the structure, usability, language and presentation of the** **content. It is sometimes called a structural edit.
+Substantive editing shapes text to make meaning clear. It also improves the structure, usability, language and presentation of thecontent. It is sometimes called a structural edit.
 
 Before starting, agree on the scope of the substantive edit in the team.
 
@@ -166,7 +186,7 @@ This approach is especially helpful when checking complex, data-rich content, su
 - annual reports
 - long financial tables.
 
-A style sheet is a useful tool
+## A style sheet is a useful tool
 
 The style sheet is a living record and a tool for communicating decisions in the content team. It helps to ensure quality and consistency.
 
@@ -189,48 +209,6 @@ The updates ensure the style sheet records all decisions. Updates remove the nee
 
 Keeping a style sheet up to date means all team members can use the same style, making the content as consistent as possible.
 
-Australian standards set out specialist skills and know-how
+## Australian standards set out specialist skills and know-how
 
-The Institute of Professional Editors (IPEd), in consultation with all Australian editing societies, has developed the *IPEd* [ standards for editing practice](https://www.iped-editors.org/about-editing/australian-standards/). This resource sets out the core
-
-*standards that professional editors should meet. It is the foundation for IPEd’s national*
-
-[accreditation scheme](https://www.iped-editors.org/accreditation-scheme/).
-
-Release notes
-
-The digital edition provides an overview of editing and proofreading. It does not provide short-hand markup for proofreading, as the focus is on the digital environment.
-
-The sixth edition had a chapter on editing and proofreading that focused more on print.
-
-The Content Guide did not include information about editing and proofreading.
-
-About this page
-
-### References
-
-Flann E, Hill B and Wang L (2014) *The Australian editing handbook*,* *Wiley, Milton.
-
-Canberra Society of Editors (2000) [ Commissioning checklist](http://www.editorscanberra.org/resources/commissioning-checklist/), Canberra Society of Editors website, accessed 23 April 2020.
-
-IPEd (Institute of Professional Editors) (2013) [ Australian standards for editing practice](https://www.iped-editors.org/wp-content/uploads/2021/05/ASEP-Flat-Onscreen-Version.pdf), 2nd edn, IPED, accessed 10 March 2020.
-
-Lynch PJ and Horton S (2016) *Web style guide*, 4th edn, Yale University Press, New Haven and London.
-
-Mackenzie J (2011) *The editor*’*s companion*, 2nd edn, Cambridge University Press, Melbourne.
-
-Neason A (15 January 2019) ‘[The perils of publishing without a fact-checking net](https://www.cjr.org/analysis/journalism-book-fact-checking-jill-abramson.php)’,* Columbia Journalism Review*, accessed 10 March 2020.
-
-Nicoll C (2018) *Copyediting for accreditation* [unpublished training materials], Canberra Society of Editors, Canberra.
-
-Richards S (2017) *Content design*, Content Design London, London.
-
-Whitbread D (2009) *Design manual,* 2nd edn, UNSW Press, Sydney.
-
-W3C (World Wide Web Consortium) (2016) ‘[Readable: understanding Guideline 3.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning.html)’, *Understanding WCAG 2.0: A guide to understanding and implementing WCAG 2.0*, W3C website, accessed 9 December 2019.
-
-W3C (2016) ‘[Web accessibility evaluation tools list](https://www.w3.org/WAI/ER/tools/)’, *Web Accessibility Initiative*, W3C website, accessed 8 December 2019.
-
-### Last updated
-
-This page was updated Wednesday 3 November 2021.
+The Institute of Professional Editors (IPEd), in consultation with all Australian editing societies, has developed the [*IPEd*](https://www.iped-editors.org/about-editing/australian-standards/)[*standards for editing practice*](https://www.iped-editors.org/about-editing/australian-standards/). This resource sets out the corestandards that professional editors should meet. It is the foundation for IPEd’s national [accreditation scheme](https://www.iped-editors.org/accreditation-scheme/).

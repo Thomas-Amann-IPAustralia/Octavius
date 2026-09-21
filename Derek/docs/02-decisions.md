@@ -28,6 +28,7 @@ relevant — the **Octavius failure** it exists to prevent.
 | [017](#adr-017-ambiguity-is-classified-and-formalised) | Ambiguity is classified and formalised | Accepted |
 | [018](#adr-018-derek-is-a-clean-repository-not-a-git-fork) | Derek is a clean repository, not a git fork | Accepted |
 | [019](#adr-019-training-inputs-carry-no-format-markup) | Training inputs carry no format markup | Accepted |
+| [020](#adr-020-heading-levels-come-from-the-dom) | Heading levels come from the DOM | Accepted |
 
 ---
 
@@ -670,3 +671,81 @@ to be justified by an ablation, not a string concatenation.
 | Format markup (HTML/OOXML) | **Never** | Adapter layer only |
 | Document-level context (`content_type`, `audience`) | Probably — as control tokens | Context vocabulary (ADR-015); requires an ablation before committing |
 | Surrounding sentences | Undecided — see [08-open-questions.md](08-open-questions.md) | Some rules (acronym-on-first-use) need it; costs sequence length |
+
+---
+
+## ADR-020 — Heading levels come from the DOM
+
+**Decision.** The snapshot converts HTML to Markdown with
+`derek/corpus/to_markdown.py`, which reads heading levels from the source
+`<h1>`–`<h6>` tags. `trafilatura` is removed from the pipeline. Heading repair
+([normalise.py](../derek/corpus/normalise.py)) is retained only as a regression
+guard.
+
+**Reason.** Extraction reads the rule inventory off the heading tree
+([ADR-002](#adr-002-deterministic-candidate-identity)), so heading fidelity is
+not cosmetic — it decides which rules exist.
+
+`trafilatura` is a generic article extractor. It recovers prose well but does
+not preserve heading hierarchy: the Octavius corpus carried 1,795 `###` against
+only 53 `##` and 2 `#`, with section headings routinely demoted to bare
+paragraphs. `repair_headings` was written to promote them back, and it worked —
+it recovered 818 headings on the eligible pages — but it meant **390 of 546 rule
+candidates (71%) existed only because a heuristic guessed they should.**
+
+That is too much weight for a heuristic to carry, and it was avoidable: the
+Style Manual's DOM already publishes a clean outline.
+
+```
+h1    page title            "Commas"
+h2      section / rule      "Separate introductory words … with a comma"
+h3        rule              "Place a comma after adverbs …"
+h4          example block   "Write this" / "Not this" / "Example"
+h5            example label "Non-essential" / "Essential"
+```
+
+Reading it is strictly better than inferring it, and it is simpler.
+
+**Implementation.**
+
+- Content root is `main`, falling back to `article`, `#main-content`, `body` —
+  the first that actually contains a heading.
+- Site chrome is removed structurally: `nav`/`footer`/`header`/`aside`/`script`
+  and friends, plus everything from the first chrome heading onward
+  (`Release notes`, `About this page`, `Help us improve the Style Manual`,
+  `Footer`, `Secondary navigation`). Octavius carried all of these into the
+  corpus as content, where they became 473 boilerplate nodes the classifier had
+  to filter out per page.
+- The walk is a single depth-first pass emitting block elements in document
+  order. No scoring, no content-density heuristics, no randomness: the same
+  HTML always produces byte-identical Markdown.
+- `extract_markdown` **raises** rather than returning empty. A blocked fetch or
+  a DOM change must fail loudly, not silently write an empty page into the
+  corpus and register as a legitimate `altered` changeset entry.
+
+**Why heading repair stays.** On DOM-faithful output it performs **zero**
+promotions — it only fires on the exact pathology it was written for. Keeping
+it costs nothing and means a future converter regression degrades rather than
+silently dropping rules. Its promotion count is recorded per page
+(`NormalisedPage.promotions`); a non-zero value on a fresh scrape is now a
+signal that the converter has broken.
+
+**Cost.**
+
+- The corpus must be re-fetched in full, and every content hash changes. This is
+  the `extractor_upgrade` changeset kind that
+  [ADR-001](#adr-001-snapshot-integrity-over-site-metadata) exists to label, so
+  it is not mistaken for 186 simultaneous editorial edits.
+- Rule UIDs derived from repaired headings change, because a UID is content-
+  addressed over the heading path ([ADR-002](#adr-002-deterministic-candidate-identity)).
+  Reconciliation matches them by statement and records `supersedes`. Doing this
+  **before** the first triage pass costs nothing; doing it after would have
+  invalidated review decisions.
+- `to_markdown.py` is Style-Manual-specific where `trafilatura` was generic. That
+  is the right trade for a single-source pipeline, and it removes a dependency
+  whose upgrades would silently rewrite the corpus.
+
+**Note on validation.** The converter was developed against real source HTML
+retrieved from the Wayback Machine, because the live site's Akamai edge returns
+`403` to this environment's IP range. Archived HTML is the same document the
+scraper would fetch; the transport path itself remains unexercised from here.

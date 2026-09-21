@@ -1,7 +1,8 @@
+# Plants and animals
+
 Names for plants and animals come from classification systems. The right style for the classification conveys meaning to people reading the content.
 
-
-Italicise genus and species names
+## Italicise genus and species names
 
 The genus and species form the definitive name of a plant or animal. By convention:
 
@@ -14,7 +15,7 @@ The genus and species form the definitive name of a plant or animal. By conventi
 
 *Ornithorhynchus anatinus* is the scientific name of the platypus.
 
-Subspecies and the names of varieties are also italicised. In these names, abbreviations for the words ‘subspecies’ and ‘variety’ take a full stop. This is an exception to the [general rule for abbreviations](/node/184#dont_put_a_full_stop_after_most_abbreviations).
+Subspecies and the names of varieties are also italicised. In these names, abbreviations for the words ‘subspecies’ and ‘variety’ take a full stop. This is an exception to the [general rule for abbreviations](https://www.stylemanual.gov.au/node/184#dont_put_a_full_stop_after_most_abbreviations).
 
 ### Example
 
@@ -26,7 +27,7 @@ Subspecies and the names of varieties are also italicised. In these names, abbre
 
 Screen readers don’t pronounce italics. Use the semantic tag <em> to provide emphasis for italicised names in HTML.
 
-Write common names in lower case and roman type
+## Write common names in lower case and roman type
 
 Most plants and animals have a common name as well as their genus and species name.
 
@@ -80,7 +81,7 @@ Use an initial capital for names of registered cultivars or breeds. In a sentenc
 
 *Acacia* ‘Cascade’ is a registered cultivar derived from Australian native flora.
 
-It’s best to check a dictionary or another reputable source to confirm whether the name has an initial capital. Refer to [related guidance on commercial terms](/node/89#take_care_using_product_names).
+It’s best to check a dictionary or another reputable source to confirm whether the name has an initial capital. Refer to [related guidance on commercial terms](https://www.stylemanual.gov.au/node/89#take_care_using_product_names).
 
 ### Birds (ornithology)
 
@@ -119,7 +120,7 @@ Capitalisation varies for the names of genes, but proteins usually take an initi
 
 In plants, the gene *Sbe1* encodes starch-branching enzyme one, Sbe1.
 
-Include the genus and species at first mention of the common name
+## Include the genus and species at first mention of the common name
 
 The common name of a plant or animal can be a local name for more than one species in different places. Only the scientific name is the definitive name.
 
@@ -136,13 +137,13 @@ A common name is often a local name for a species:
 
 ### Example
 
-Black wattle is used as a common name for several *Acacia* species, such as *Acacia mearnsii*,* A. aulacocarpa*,* A. auriculiformis*,* A. concurrens* and *A. crassicarpa*.
+Black wattle is used as a common name for several *Acacia* species, such as *Acacia mearnsii*,*A. aulacocarpa*,*A. auriculiformis*,*A. concurrens* and *A. crassicarpa*.
 
 *Acacia dealbata* is known by several common names, such as ‘silver wattle’, ‘blue wattle’ and ‘mimosa’.
 
 ### When the genus is repeated, it can be abbreviated
 
-If you have already written the full name of the genus, use a shortened form for later mentions. This is often just the first letter of the genus name, followed by a full stop. This is an exception to the [general rule for abbreviations](/node/184#dont_put_a_full_stop_after_most_abbreviations).
+If you have already written the full name of the genus, use a shortened form for later mentions. This is often just the first letter of the genus name, followed by a full stop. This is an exception to the [general rule for abbreviations](https://www.stylemanual.gov.au/node/184#dont_put_a_full_stop_after_most_abbreviations).
 
 #### Example
 
@@ -154,7 +155,7 @@ When there are several genera that start with the same letter, include the secon
 
 *Anopterus macleayanus* and *Aleuries moluccana* are small Australian trees. Although *An. macleayanua* is found in cool places, *Al. moluccana* can tolerate tropical conditions.
 
-Refer to classification systems to help you name plants and animals
+## Refer to classification systems to help you name plants and animals
 
 Plants and animals are classified in a hierarchy from general to specific. The style you use is set by where the name is in the hierarchy:
 
@@ -168,23 +169,23 @@ The examples in the table show the classification for:
 - an animal, the platypus.
 
 | Classification terms | Lemon-scented myrtle (botany) |
-|---|---|
+| --- | --- |
 | Kingdom | Plantae |
 | Division | Tracheophyta |
 | Order | Myrtales |
 | Family | Myrtaceae |
-| Genus | Backhousia |
-| Species | Backhousia citriodora |
+| Genus | *Backhousia* |
+| Species | *Backhousia citriodora* |
 
 | Classification terms | Platypus (zoology) |
-|---|---|
+| --- | --- |
 | Kingdom | Animalia |
 | Phylum | Chordata |
 | Class | Mammalia |
 | Order | Monotremata |
 | Family | Ornithorhynchidae |
-| Genus | Ornithorhynchus |
-| Species | Ornithorhynchus anatinus |
+| Genus | *Ornithorhynchus* |
+| Species | *Ornithorhynchus anatinus* |
 
 ### Scientific names often have Latin endings
 
@@ -192,9 +193,8 @@ The scientific names of plants and animals often derive from Latin. Check the sp
 
 It can help to recognise spelling patterns:
 
-- The family names of plants usually end in ‘
-*ceae’*. - The family names of animals usually end in ‘
-*idae’*.
+- The family names of plants usually end in ‘*ceae’*.
+- The family names of animals usually end in ‘*idae’*.
 
 #### Example
 
@@ -204,7 +204,8 @@ All classification names above genus level are in roman type and take initial ca
 
 #### Example
 
-*Backhousia citriodora*is in the family Myrtaceae.*Ornithorhynchus anatinus*is in the order Monotremata.
+- *Backhousia citriodora* is in the family Myrtaceae.
+- *Ornithorhynchus anatinus* is in the order Monotremata.
 
 ### Scientific names can include the name of a person
 
@@ -242,13 +243,15 @@ The abbreviations are in roman type and lower case. The subspecies and varietal 
 
 #### Example
 
-*Grevillea victoriae*subsp.*nivalis*is one of the subspecies of this*Grevillea*genus.*Grevillea banksii*var.*fosteri*has beautiful blood-red flowers.
+- *Grevillea victoriae* subsp. *nivalis* is one of the subspecies of this *Grevillea* genus.
+- *Grevillea banksii* var. *fosteri* has beautiful blood-red flowers.
 
 If the species or variety is unknown or unspecified, there is no word after the abbreviation.
 
 #### Example
 
-*Grevillea victoriae*subsp.*Grevillea banksii*var.
+- *Grevillea victoriae* subsp.
+- *Grevillea banksii* var.
 
 For animals, there is only one taxonomic level below that of species: subspecies. By convention, the abbreviation ‘subsp.’ is not used.
 
@@ -256,52 +259,11 @@ For animals, there is only one taxonomic level below that of species: subspecies
 
 *Macropus agilis jardinii* is a subspecies of the agile wallaby (*M. agilis*).
 
-Use specialised resources for more information
+## Use specialised resources for more information
 
 Check the names of plants and animals. Make sure the information is up to date.
 
 Use reliable sources such as:
 
-Release notes
-
-The digital edition builds on content from the sixth edition. It provides more examples, and links to specialised resources. It consolidates information from other parts of the sixth edition.
-
-The Content Guide did not have specific content about the style for the names of plants and animals.
-
-About this page
-
-### References
-
-Atlas of Living Australia (n.d.) [ Search species](https://bie.ala.org.au/), Atlas of Living Australia website, accessed 11 June 2020.
-
-Australia’s Virtual Herbarium (2018) [ Plant names: a basic introduction](http://www.anbg.gov.au/chah/avh/help/names/index.html), Australia’s Virtual Herbarium website, accessed 11 June 2020.
-
-Australian Cultivar Registration Authority (2017) [ List of registered cultivars derived from Australian native flora](http://www.anbg.gov.au/acra/acra-list-2009.html), ACRA website, accessed 11 June 2020.
-
-Australian National Herbarium (n.d.) [ Australian plant name index](https://www.anbg.gov.au/apni/), Australian National Botanical Gardens website, accessed 17 June 2020.
-
-Biotext Pty Ltd and Macquarie University (2021) 'Names of organisms', *Australian manual of style*, stylemanual.com.au, accessed 12 October 2021.
-
-Chapman G (1970) *Common Australian birds of towns and gardens*, Lansdowne, Melbourne.
-
-CSIRO (n.d.) [ Australian national wildlife collection](https://www.csiro.au/en/about/facilities-collections/collections/anwc), CSIRO website, accessed 11 June 2020.
-
-Day N and Simpson K (2019) *Field guide to the birds of Australia*, Penguin Books Australia, Melbourne.
-
-Gill F and Donsker D (eds) (2020) [ Capitalization](https://www.worldbirdnames.org/english-names/spelling-rules/capitalization/), IOC World Bird List website, accessed 11 June 2020.
-
-International Commission on Zoological Nomenclature (2012) [ International code of zoological nomenclature](https://www.iczn.org/the-code/the-international-code-of-zoological-nomenclature/the-code-online/), 4th edn, ICZN website, accessed 17 June 2020.
-
-Pizzey and Knight (2020) [ Birds of Australia](http://www.gibbonmm.com.au/?fbclid=IwAR2j2bgAm_k4ddMBX1zNTb4XjSIKgwgWPDPuA9YZdTmNGD7AM3eiczoaNTM), digital edition, Gibbon Multimedia Australia, accessed 11 June 2020.
-
-Queensland Museum, Ryan M and Brisbane Council (1995) *Wildlife of Greater Brisbane*, Queensland Museum, Brisbane.
-
-Ravindran PN (2017) *The encyclopedia of herbs & spices*, CABI, Oxfordshire.
-
-Spencer R and Cross R (2020) *A guide to botanical nomenclature*, 4th edition, CSIRO Publishing, Melbourne.
-
-Turland NJ, Wiersema JH, Barrie FR, Greuter W, Hawksworth DL, Herendeen PS, Knapp S, Kusber W-H, Li D-Z, Marhold K, May TW, McNeill J, Monro AM, Prado J, Price MJ and Smith GF (2018) [ International code of nomenclature for algae, fungi and plants (Shenzhen code)](https://www.iapt-taxon.org/nomen/main.php), Koeltz Botanical Books, doi:10.12705/Code.2018.
-
-### Last updated
-
-This page was updated Thursday 23 March 2023.
+- the [Australian National Herbarium’s Australian Plant Name Index](https://www.anbg.gov.au/apni/)
+- the [Atlas of Living Australia](https://www.ala.org.au/).

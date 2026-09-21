@@ -1,7 +1,8 @@
+# Australian Defence Force
+
 Use the correct title and style to refer to members of the armed services. This guidance is intended primarily for users outside the Department of Defence and the Australian Defence Force.
 
-
-## 
+## Use terminology correctly
 
 Use the term ‘Defence’ when you mean both the Department of Defence and the Australian Defence Force (ADF). ‘Defence’ is used to represent the organisation as a whole.
 
@@ -16,9 +17,9 @@ Use ‘Department of Defence’ when referring to the department, headed by the 
 - Defence engages with industry to deliver procurement outcomes that support departmental and ADF capability.
 - The institute’s paper examines the implications for our defence strategy over the next decade.
 - The aim is to support Australian Defence Force personnel and their families as they transition from military to civilian life.
-- The Department of Defence operates under the *Public Service Act 1999* .
+- The Department of Defence operates under the *Public Service Act 1999*.
 
-## 
+## Follow the order of precedence for the 3 arms of the ADF
 
 There are 3 arms of the ADF, known collectively as the ‘services’ (‘Services’ inside Defence). When referring to the services, follow the order of precedence established by the [*Defence Act 1903*](https://www.legislation.gov.au/Details/C2021C00371):
 
@@ -36,7 +37,7 @@ Always use initial capitals when writing the short names of the services:
 
 - Defence Reserves are an essential part of the Navy, Army and Air Force
 
-## 
+## Address members of the ADF by rank, name and post-nominals
 
 Use the following order to address members of the ADF:
 
@@ -54,7 +55,7 @@ Do this:
 - in official records of proceedings
 - in lists in organisational publications such as annual reports.
 
-ADF ranks are listed in the table ‘[Ranks and salutations](#ranks)’.
+ADF ranks are listed in the table ‘Ranks and salutations’.
 
 ### Example
 
@@ -120,7 +121,7 @@ When someone has a military rank and another title such as ‘Sir’, ‘Dame’
 
 - General Sir John Monash GCMG KBE VD
 
-## 
+## Address chaplains and maritime spiritual wellbeing officers by title
 
 Army and Air Force chaplains wear military rank.
 
@@ -151,7 +152,7 @@ The MSWO titles include:
 - Chaplain Catherine Inches-Ogden CSC [Army]
 - Maritime Spiritual Wellbeing Officer Tammy Dunne [Navy]
 
-## 
+## Address retired officers of the ADF by rank
 
 Commissioned officers who retire can continue to use their military rank. When writing their name, use their rank and include ‘(Retd)’ after any post-nominals.
 
@@ -159,7 +160,7 @@ Commissioned officers who retire can continue to use their military rank. When w
 
 - General the Honourable Sir Peter Cosgrove AK CVO MC (Retd)
 
-## 
+## Avoid using the shortened forms of ranks
 
 For internal Defence use, it is common to write the ranks in abbreviated form using capital letters.
 
@@ -173,7 +174,7 @@ Lieutenant T Smith [Outside Defence]
 
 LT T Smith [Defence only]
 
-## 
+## Address members of the ADF correctly in emails and letters
 
 The style rule for address blocks applies to all members of the ADF.
 
@@ -195,24 +196,24 @@ The style of address blocks is the same for all ranks.
 
 #### Example
 
-- Brigadier Ana Duncan AM CSC 
- Commandant Royal Military College-Duntroon
- Staff Cadet Avenue
- Campbell ACT 2612Lieutenant General Gregory Bilton AO CSC 
- Chief Joint Operations
- Headquarters Joint Operations Command (HQJOC)
- PO Box 7928
- Canberra BC ACT 2610His Excellency General the Honourable David Hurley AC DSC (Retd) 
- Governor-General of the Commonwealth of Australia
- Government House
- Dunrossil Drive
+- Brigadier Ana Duncan AM CSC
+Commandant Royal Military College-Duntroon
+Staff Cadet Avenue
+Campbell ACT 2612 Lieutenant General Gregory Bilton AO CSC
+Chief Joint Operations
+Headquarters Joint Operations Command (HQJOC)
+PO Box 7928
+Canberra BC ACT 2610 His Excellency General the Honourable David Hurley AC DSC (Retd)
+Governor-General of the Commonwealth of Australia
+Government House
+Dunrossil Drive
 Yarralumla ACT 2600
 
 ### Salutations
 
 The Style Manual follows the ADF’s style for salutations.
 
-The style of salutations depends on [rank](#ranks).
+The style of salutations depends on rank.
 
 Don’t include post-nominals in salutations.
 
@@ -289,134 +290,53 @@ Salutations for ADF chaplains and maritime spiritual wellbeing officers do not c
 
 ##### Example
 
-- Chaplain Jui-Hsiang Su CSM [Address block] 
- Dear Chaplain [Salutation]Principal Air Chaplain Rodger Boerth AM [Address block] 
- Dear Principal Air Chaplain [Salutation]Maritime Spiritual Wellbeing Officer J Chan RAN [Address block] 
+- Chaplain Jui-Hsiang Su CSM [Address block]
+Dear Chaplain [Salutation] Principal Air Chaplain Rodger Boerth AM [Address block]
+Dear Principal Air Chaplain [Salutation] Maritime Spiritual Wellbeing Officer J Chan RAN [Address block]
 Dear Maritime Spiritual Wellbeing Officer [Salutation]
 
 Other examples appear in the table that follows.
 
-## 
+## Ranks and salutations (in order of precedence)
 
-| Appointed by Governor-General of Australia |  |  |  |  | 
-|---|---|---|---|---|
-| Navy | Army | Air Force | Salutation rule | Salutation example | 
-|---|---|---|---|---|
-| Admiral of the Fleet | Field Marshal | Marshal of the Royal Australian Air Force | No current appointments | No current appointments | 
+| Navy | Army | Air Force | Salutation rule | Salutation example |
+| --- | --- | --- | --- | --- |
+| Admiral of the Fleet | Field Marshal | Marshal of the Royal Australian Air Force | No current appointments | No current appointments |
 
-| Commissioned officer ranks |  |  |  |  | 
-|---|---|---|---|---|
-| Navy | Army | Air Force | Salutation rule | Salutation example | 
-|---|---|---|---|---|
-| Admiral (when Chief of the Defence Force) | General (when Chief of the Defence Force) | Air Chief Marshal (when Chief of the Defence Force) | Dear [Rank] | Dear Admiral | 
-| Vice Admiral | Lieutenant General | Air Marshal | Dear [Rank] | Dear Lieutenant General | 
-| Rear Admiral | Major General | Air Vice-Marshal | Dear [Rank] | Dear Air Vice-Marshal | 
-| Commodore | Brigadier | Air Commodore | Dear [Rank] | Dear Commodore | 
-| Captain | Colonel | Group Captain | Dear [Rank] | Dear Colonel | 
-| Commander | Lieutenant Colonel | Wing Commander | Dear [Rank Family name] | Dear Wing Commander Smith | 
-| Lieutenant Commander | Major | Squadron Leader | Dear [Rank Family name] | Dear Lieutenant Commander Mabo | 
-| Lieutenant | Captain | Flight Lieutenant | Dear [Rank Family name] | Dear Captain Tatipata | 
-| Sub Lieutenant | Lieutenant | Flying Officer | Dear [Ms/Mr/Mx/Mrs/Dr Family name] ***** | Dear Ms Rossi | 
-| Acting Sub Lieutenant | Second Lieutenant | Pilot Officer | Dear [Ms/Mr/Mx/Mrs/Dr Family name] ***** | Dear Mr Müller | 
-| Midshipman | Officer Cadet | Officer Cadet | Dear [Ms/Mr/Mx/Mrs/Dr Family name] ***** | Dear Dr Wong | 
+| Navy | Army | Air Force | Salutation rule | Salutation example |
+| --- | --- | --- | --- | --- |
+| Admiral (when Chief of the Defence Force) | General (when Chief of the Defence Force) | Air Chief Marshal (when Chief of the Defence Force) | Dear [Rank] | Dear Admiral |
+| Vice Admiral | Lieutenant General | Air Marshal | Dear [Rank] | Dear Lieutenant General |
+| Rear Admiral | Major General | Air Vice-Marshal | Dear [Rank] | Dear Air Vice-Marshal |
+| Commodore | Brigadier | Air Commodore | Dear [Rank] | Dear Commodore |
+| Captain | Colonel | Group Captain | Dear [Rank] | Dear Colonel |
+| Commander | Lieutenant Colonel | Wing Commander | Dear [Rank Family name] | Dear Wing Commander Smith |
+| Lieutenant Commander | Major | Squadron Leader | Dear [Rank Family name] | Dear Lieutenant Commander Mabo |
+| Lieutenant | Captain | Flight Lieutenant | Dear [Rank Family name] | Dear Captain Tatipata |
+| Sub Lieutenant | Lieutenant | Flying Officer | Dear [Ms/Mr/Mx/Mrs/Dr Family name] ***** | Dear Ms Rossi |
+| Acting Sub Lieutenant | Second Lieutenant | Pilot Officer | Dear [Ms/Mr/Mx/Mrs/Dr Family name] ***** | Dear Mr Müller |
+| Midshipman | Officer Cadet | Officer Cadet | Dear [Ms/Mr/Mx/Mrs/Dr Family name] ***** | Dear Dr Wong |
 
 ***** If it's difficult to establish the person's preferred honorific, use the rule ‘Dear [Rank Family name]'.
 
+| Navy | Army | Air Force | Salutation rule | Salutation example |
+| --- | --- | --- | --- | --- |
+| Warrant Officer of the Navy | Regimental Sergeant Major of the Army | Warrant Officer of the Air Force | Dear [Rank Family name] | Dear Warrant Officer Patel |
+| Warrant Officer | Warrant Officer Class 1 | Warrant Officer | Dear [Rank Family name] | Dear Warrant Officer Pappas (for all 3 ranks) |
+| Chief Petty Officer | Warrant Officer Class 2 | Flight Sergeant | Dear [Rank Family name] | Dear Warrant Officer Wikilyiri |
+| n/a | Staff Sergeant | n/a | Dear [Rank Family name] | Dear Staff Sergeant Ivanov |
+| Petty Officer | Sergeant | Sergeant | Dear [Rank Family name] | Dear Sergeant Andersson |
+| Leading Seaman | Corporal | Corporal | Dear [Rank Family name] | Dear Leading Seaman Setiawan |
+| n/a | Lance Corporal | n/a | Dear [Rank Family name] | Dear Lance Corporal Lim |
+| Able Seaman | n/a | Leading Aircraftman Leading Aircraftwoman | Dear [Rank Family name] | Dear Leading Aircraftman Johnson |
+| Seaman | Private | Aircraftwoman Aircraftman | Dear [Rank Family name] | Dear Aircraftwoman Garcia |
+| Trainee | Trainee | Trainee | Dear [Rank Family name] | Dear Trainee Ferran |
+| Recruit | Recruit | Aircraftwoman Recruit Aircraftman Recruit | Dear [Rank Family name] | Dear Recruit Rarru Dear Aircraftman Recruit De Jong |
 
-| Other ranks including warrant officers and non-commissioned officers |  |  |  |  | 
-|---|---|---|---|---|
-| Navy | Army | Air Force | Salutation rule | Salutation example | 
-|---|---|---|---|---|
-| Warrant Officer of the Navy | Regimental Sergeant Major of the Army | Warrant Officer of the Air Force | Dear [Rank Family name] | Dear Warrant Officer Patel | 
-| Warrant Officer | Warrant Officer Class 1 | Warrant Officer | Dear [Rank Family name] | Dear Warrant Officer Pappas (for all 3 ranks) | 
-| Chief Petty Officer | Warrant Officer Class 2 | Flight Sergeant | Dear [Rank Family name] | Dear Warrant Officer Wikilyiri | 
-| n/a | Staff Sergeant | n/a | Dear [Rank Family name] | Dear Staff Sergeant Ivanov | 
-| Petty Officer | Sergeant | Sergeant | Dear [Rank Family name] | Dear Sergeant Andersson | 
-| Leading Seaman | Corporal | Corporal | Dear [Rank Family name] | Dear Leading Seaman Setiawan | 
-| n/a | Lance Corporal | n/a | Dear [Rank Family name] | Dear Lance Corporal Lim | 
-| Able Seaman | n/a | Leading Aircraftman Leading Aircraftwoman | Dear [Rank Family name] | Dear Leading Aircraftman Johnson | 
-| Seaman | Private | Aircraftwoman Aircraftman | Dear [Rank Family name] | Dear Aircraftwoman Garcia | 
-| Trainee | Trainee | Trainee | Dear [Rank Family name] | Dear Trainee Ferran | 
-| Recruit | Recruit | Aircraftwoman Recruit Aircraftman Recruit | Dear [Rank Family name] | Dear Recruit Rarru Dear Aircraftman Recruit De Jong | 
+| Navy | Army | Air Force | Salutation rule | Salutation example |
+| --- | --- | --- | --- | --- |
+| Principal Chaplain Senior Chaplain | Principal Chaplain Chaplain | Principal Air Chaplain Chaplain | Dear [Chaplaincy title] | Dear Chaplain Pope |
 
-| Chaplains |  |  |  |  | 
-|---|---|---|---|---|
-| Navy | Army | Air Force | Salutation rule | Salutation example | 
-|---|---|---|---|---|
-| Principal Chaplain Senior Chaplain | Principal Chaplain Chaplain | Principal Air Chaplain Chaplain | Dear [Chaplaincy title] | Dear Chaplain Pope | 
-
-| Maritime Spiritual Wellbeing Officers |  |  |  |  | 
-|---|---|---|---|---|
-| Navy | Army | Air Force | Salutation rule | Salutation example | 
-|---|---|---|---|---|
-| Principal Maritime Spiritual Wellbeing Officer Senior Maritime Spiritual Wellbeing Officer Maritime Spiritual Wellbeing Officer | n/a | n/a | Dear [Maritime Spiritual Wellbeing Officer title] | Dear Senior Maritime Spiritual Wellbeing Officer | 
-
-## 
-
-Guidance in the digital edition broadly follows the *Australian Defence Force writing manual* (an internal Defence resource). There are also style conventions in the writing manual that the digital edition does not follow.
-
-The digital edition consolidates information from the sixth edition and provides updated examples. It has advice on capitalisation for internal military use that was not in the sixth edition.
-
-The digital edition outlines the order of precedence for the armed services and includes new guidance about maritime spiritual wellbeing officers.
-
-The sixth edition had a table of armed service ranks in Australia. The digital edition has a table of ranks and associated salutation rules.
-
-Examples in the digital edition do not follow the sixth edition’s requirement for a comma before and between post-nominals. This is consistent with this edition’s recommendation to use minimal punctuation.
-
-The Content Guide did not have information about forms of address and ranks for the ADF.
-
-## 
-
-### References
-
-Air Force (Royal Australian Air Force) (n.d.) [*Leadership*](https://www.airforce.gov.au/about-us/leadership), Air Force website, accessed 25 August 2026.
-
-Air Force (n.d.) [*Ranks*](https://www.airforce.gov.au/about-us/ranks), Air Force website, accessed 25 August 2026.
-
-Army (Australian Army) (n.d.) [*Leadership*](https://www.army.gov.au/about-us/leadership), Army website, accessed 25 August 2026.
-
-Army (n.d.) [*Ranks*](https://www.army.gov.au/our-people/ranks), Army website, accessed 25 August 2026.
-
-Australian War Memorial (n.d.) [*Collection*](https://www.awm.gov.au/advanced-search), Australian War Memorial website, accessed 25 August 2026.
-
-Craig J (11 May 2020) ‘New chaplaincy branch reflects secular care option’, *Defence News*, Defence website, accessed 30 August 2021.
-
-Defence Force Remuneration Tribunal (2020) [*Navy Maritime Spiritual Wellbeing Officer*](https://www.dfrt.gov.au/matters/navy-maritime-spiritual-wellbeing-officer), DFRT website, accessed 25 August 2026.
-
-Department of Defence (n.d.) [*Annual reports*](https://www.defence.gov.au/about/accessing-information/annual-reports), Defence website, accessed 25 August 2026.
-
-Department of Defence (2008) *Australian Defence Force: badges of rank and special insignia*, Department of Defence, Canberra.
-
-Department of Defence (2014) *Australian Defence Force writing manual*, Defence Publishing Service, Canberra.
-
-Department of Defence (n.d.) [*Chaplaincy services*](https://www.defence.gov.au/adf-members-families/crisis-support/helplines/chaplaincy-services), Defence website, accessed 25 August 2026.
-
-Department of Defence (2021) [*Defence annual report 2020–2021*](https://www.defence.gov.au/about/information-disclosures/annual-reports), Defence website, accessed 2 June 2022.
-
-Department of Defence (n.d.) ‘[Equivalent ranks and classifications](https://pay-conditions.defence.gov.au/pacman/chapter-1/part-4)’, *ADF pay and conditions manual*, Defence website, accessed 25 August 2026.
-
-Department of Defence (n.d.) [*Procurement and contracting*](https://www.defence.gov.au/business-industry/procurement), Defence website, accessed 2 June 2022.
-
-Devlin D (1 June 2021) ‘Navy's Indigenous advisers drive change’, *Defence News*, Defence website, accessed 30 August 2021.
-
-Directorate of History Services (2019) *House style for authors, editors and publishers* [PDF 1.47 MB], Air Force website, accessed 19 August 2021.
-
-PM&C (Department of the Prime Minister and Cabinet) (n.d.) [*Australian honours system*](https://www.pmc.gov.au/honours-and-symbols/australian-honours-system), PM&C website, accessed 25 August 2026.
-
-PM&C (n.d.) [*Wearing awards*](https://www.pmc.gov.au/resources/wearing-awards), PM&C website, accessed 25 August 2026.
-
-National Archives of Australia (n.d.) [*Abbreviations used in World War I and World War II service records*](https://www.naa.gov.au/explore-collection/defence-and-war-service-records/researching-war-service/abbreviations-used-world-war-i-and-world-war-ii-service-records), National Archives of Australia website, accessed 25 August 2026.
-
-Navy (Royal Australian Navy) (n.d.) [*Leaders*](https://www.navy.gov.au/about-navy/leaders), Navy website, accessed 25 August 2026.
-
-Navy (n.d.) [*Ranks of the Royal Australian Navy*](https://www.navy.gov.au/about/organisation/ranks), Navy website, accessed 25 August 2026.
-
-Rosendale R (April 2015) ‘[Chief Petty Officer Ray Rosendale, CSM \[PDF 2.52 MB\]](https://www.reconciliation.org.au/wp-content/uploads/2021/02/Reconciliation-News-April-2015.pdf)’ *Reconciliation News*, 32:13, accessed 30 August 2021.
-
-The Governor-General of the Commonwealth of Australia (2025) [*About the Governor-General*](https://www.gg.gov.au/about-governor-general), The Governor-General of the Commonwealth of Australia website, accessed 25 August 2026.
-
-The Governor-General of the Commonwealth of Australia (n.d.) [*Australian honours and awards*](https://www.gg.gov.au/australian-honours-and-awards), The Governor-General of the Commonwealth of Australia website, accessed 4 July 2022.
-
-### Last updated
-
-This page was updated Tuesday 25 August 2026.
+| Navy | Army | Air Force | Salutation rule | Salutation example |
+| --- | --- | --- | --- | --- |
+| Principal Maritime Spiritual Wellbeing Officer Senior Maritime Spiritual Wellbeing Officer Maritime Spiritual Wellbeing Officer | n/a | n/a | Dear [Maritime Spiritual Wellbeing Officer title] | Dear Senior Maritime Spiritual Wellbeing Officer |

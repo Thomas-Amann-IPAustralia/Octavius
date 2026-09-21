@@ -1,7 +1,8 @@
+# Plays and poetry
+
 Cite plays and poetry using the author–date system. Attribute works with correct references to help people find the play or poem.
 
-
-Cite plays and poems correctly
+## Cite plays and poems correctly
 
 You might need to refer to plays and poetry in information about events, in digital content and in other publications.
 
@@ -18,9 +19,9 @@ You must attribute copyright material you reference. This includes plays, poems 
 
 Include all the details required by open access licences (read how to [attribute Creative Commons](https://creativecommons.org.au/learn/fact-sheets/attribution/)).
 
-Read the government copyright rules in the [ Australian Government intellectual property manual](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual).
+Read the government copyright rules in the [*Australian Government intellectual property manual*](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual).
 
-Reference play titles and quotes from plays
+## Reference play titles and quotes from plays
 
 Style for play titles follows the same convention as for books but is based on details about the published edition. Quoted material from plays has distinct punctuation and formatting.
 
@@ -30,9 +31,8 @@ Write titles of plays in italics and use sentence case. This means the first wor
 
 #### Example
 
-- The theme of Williamson’s
-*Emerald city*is in stark contrast to that of*The club*. - Noni Hazlehurst played Kathy in the Sydney Theatre Company’s play
-*No names … no pack drill*.
+- The theme of Williamson’s *Emerald city* is in stark contrast to that of *The club*.
+- Noni Hazlehurst played Kathy in the Sydney Theatre Company’s play *No names … no pack drill*.
 
 ### Use a forward slash to show line breaks in plays
 
@@ -61,7 +61,7 @@ Use the full name of the playwright, unless people can identify the playwright b
 
 In the words of Breaker Morant, ‘There are things adrift here … alien to justice.’ (Kenneth Ross *Breaker Morant*, act 1, scene 13)
 
-Ancient and medieval dramatic works have specific citation rules: refer to [classics](/node/172).
+Ancient and medieval dramatic works have specific citation rules: refer to [classics](https://www.stylemanual.gov.au/node/172).
 
 ### Include plays if you’re using a reference list
 
@@ -75,10 +75,9 @@ Rule: Author A (Year of Original Publication/Year of Edition) *Title of play: su
 
 ##### Example
 
-- Murray-Smith J (2002)
-*Rapture*, Currency Press, Sydney. - Ross K (1979)
-*Breaker Morant: a play in two acts*, Edward Arnold Pty Ltd, Melbourne. - Yeats WB (1892/2018)
-*The Countess Cathleen: a play*, CreateSpace Independent Publishing Platform, Scotts Valley.
+- Murray-Smith J (2002) *Rapture*, Currency Press, Sydney.
+- Ross K (1979) *Breaker Morant: a play in two acts*, Edward Arnold Pty Ltd, Melbourne.
+- Yeats WB (1892/2018) *The Countess Cathleen: a play*, CreateSpace Independent Publishing Platform, Scotts Valley.
 
 Use the author–date system for in-text citations in documents with a reference list. Include a page number after a colon if you’re citing a specific page. Use the original and edition dates if citing an old work.
 
@@ -96,11 +95,10 @@ Rule: Reviewer R (Day Month Year) ‘Title of review: subtitle of review’ [Rev
 
 ##### Example
 
-- Wilkins P (5 April 2019) ‘
-*How to rule the world*a timely reminder of issues facing the nation’ [Review of*How to rule the world*by Nakkiah Lui],*The Canberra Times*. - Wakelin O (25 January 2019) ‘Review:
-*The big time*,Ensemble Theatre’ [Review of*The big time*by David Williamson],*ArtsHub*, accessed 18 December 2019.
+- Wilkins P (5 April 2019) ‘*How to rule the world* a timely reminder of issues facing the nation’ [Review of *How to rule the world* by Nakkiah Lui], *The Canberra Times*.
+- Wakelin O (25 January 2019) ‘Review: *The big time*,Ensemble Theatre’ [Review of *The big time* by David Williamson], *ArtsHub*, accessed 18 December 2019.
 
-Reference poem titles and parts of poems
+## Reference poem titles and parts of poems
 
 Style for references to poem titles depends on how the poem was published. Refer to parts of poems using the right kind of punctuation.
 
@@ -122,8 +120,8 @@ This means you italicise the titles of verse novels as you do for prose novels.
 
 #### Example
 
-*Sky saga: a story of Empire airmen*by Thomas White is a tribute to the men of the Empire Air Training Scheme.- Les Murray wrote
-*Fredy Neptune: a novel in verse*in 8-line stanzas.
+- *Sky saga: a story of Empire airmen* by Thomas White is a tribute to the men of the Empire Air Training Scheme.
+- Les Murray wrote *Fredy Neptune: a novel in verse* in 8-line stanzas.
 
 ### Capitalise and punctuate the title of a poem as the author does
 
@@ -154,8 +152,8 @@ Use quotation marks as you would for other titles. Capitalise the line as it app
 
 #### Example
 
-- Birmingham included his sonnet ‘I am very bothered when I think’ in the collection titled
-*Paper aeroplane: selected poems 1989–2014*. - Arthur Buller wrote ‘There was a young lady from Bright’, a limerick about relativity.
+- Birmingham included his sonnet ‘I am very bothered when I think’ in the collection titled *Paper aeroplane: selected poems 1989–2014*.
+- Arthur Buller wrote ‘There was a young lady from Bright’, a limerick about relativity.
 
 ### Describe untitled, unpublished spoken word poems
 
@@ -211,9 +209,8 @@ Hyperlinked citations are an option for digital content.
 
 #### Example
 
-- (Coleridge
-*The Rime of the Ancient Mariner*, 2.29.121–2) - (Coleridge
-)*The Rime of the Ancient Mariner*
+- (Coleridge *The Rime of the Ancient Mariner*, 2.29.121–2)
+- (Coleridge [*The Rime of the Ancient Mariner*](https://rpo.library.utoronto.ca/poems/rime-ancient-mariner-text-1834))
 
 ### Include poems if you’re using a reference list
 
@@ -221,20 +218,19 @@ You don’t need to create a separate reference list to cite poems, but if you h
 
 Use the edition of the poem you cited. If the poem was written well before the edition, place the original date in parentheses with the edition’s publishing date.
 
-Rule: Author A (Year of Original Publication/Year of Edition) ‘Title of poem: subtitle of poem’, *Name of collection*,* *Name of Publisher of Edition, Place of Publication.
+Rule: Author A (Year of Original Publication/Year of Edition) ‘Title of poem: subtitle of poem’, *Name of collection*,Name of Publisher of Edition, Place of Publication.
 
 As in text, use the original capitalisation of the poem in the reference list entry.
 
 #### Example
 
-- Poe EA (1845/2012)
-*The raven*, Arcturus Publishing Limited, London. [Old poem] - Harrison M (2008)
-*Wild bees*, University of Western Australia Press, Crawley. [Book of poetry] - Taylor A (1982) ‘The cool change’,
-*Selected poems*, University of Queensland Press, St Lucia. [Poem in a book] - Grono W (1973) ‘A Postcard from Perth’, in Hewett D (ed.),
-*Sandgropers: a Western Australian anthology*, University of Western Australia Press, Nedlands. [Poem in an edited book] - Dong-Jip Shin (1974) ‘Ordinary autumn evening’,
-*Best loved poems of Korea,*(Ko Ch’ang-su, trans.), Hollym International, Republic of Korea. [Translated poem in a book] - White TW (1944)
-*Sky saga: a story of empire airmen*, 2nd edn, Hutchinson & Co., Melbourne. [Long poem] - Harwood G (1963) ‘
-[Critic’s nightwatch](https://www.poemhunter.com/poem/critic-s-nightwatch/)’,*Poems*, Poem Hunter website, accessed 18 December 2019. [Poem on a website]
+- Poe EA (1845/2012) *The raven*, Arcturus Publishing Limited, London. [Old poem]
+- Harrison M (2008) *Wild bees*, University of Western Australia Press, Crawley. [Book of poetry]
+- Taylor A (1982) ‘The cool change’, *Selected poems*, University of Queensland Press, St Lucia. [Poem in a book]
+- Grono W (1973) ‘A Postcard from Perth’, in Hewett D (ed.), *Sandgropers: a Western Australian anthology*, University of Western Australia Press, Nedlands. [Poem in an edited book]
+- Dong-Jip Shin (1974) ‘Ordinary autumn evening’, *Best loved poems of Korea,* (Ko Ch’ang-su, trans.), Hollym International, Republic of Korea. [Translated poem in a book]
+- White TW (1944) *Sky saga: a story of empire airmen*, 2nd edn, Hutchinson & Co., Melbourne. [Long poem]
+- Harwood G (1963) ‘[Critic’s nightwatch](https://www.poemhunter.com/poem/critic-s-nightwatch/)’, *Poems*, Poem Hunter website, accessed 18 December 2019. [Poem on a website]
 
 Use the author–date system for in-text citations in documents with a reference list. Include a page number after a colon if you’re citing a specific page. Use the original and edition dates if citing an old work.
 
@@ -246,7 +242,7 @@ Use the author–date system for in-text citations in documents with a reference
 - (Dong-Jip Shin 1974:133)
 - (White 1944)
 
-Cite Shakespeare’s poetry correctly
+## Cite Shakespeare’s poetry correctly
 
 William Shakespeare wrote 154 sonnets and other poetry. Sometimes people cite the songs from Shakespearean plays as verse.
 
@@ -267,10 +263,9 @@ Use quotation marks for Shakespeare’s other poetic works.
 ### Example
 
 - ‘A lover’s complaint’ is Shakespeare’s shortest narrative poem.
-- Portia’s musicians sing ‘Tell me where is fancy bred’ (Shakespeare
-*The merchant of Venice*, 3.2.63–72).
+- Portia’s musicians sing ‘Tell me where is fancy bred’ (Shakespeare *The merchant of Venice*, 3.2.63–72).
 
-Treat nursery rhymes, fairy tales and fables like books
+## Treat nursery rhymes, fairy tales and fables like books
 
 If a nursery rhyme, fairy tale or fable is published individually as a book or dramatic work, use italics for the title.
 
@@ -280,10 +275,10 @@ Use sentence case.
 
 ### Example
 
-*The country cousin*is a 1936 Disney animated film based on Æsop’s fable ‘The town mouse and the country mouse’.- Children like the pictures in
-*The Australian fairy tale of the three koala bears and little Goldilocks*. - Maurice Sendak illustrated the Grimms’ tale
-*The juniper tree*. - ‘Toast for Tommy’ was first published in Thomas Gunn’s
-*Bush nursery rhymes*in 1920.
+- *The country cousin* is a 1936 Disney animated film based on Æsop’s fable ‘The town mouse and the country mouse’.
+- Children like the pictures in *The Australian fairy tale of the three koala bears and little Goldilocks*.
+- Maurice Sendak illustrated the Grimms’ tale *The juniper tree*.
+- ‘Toast for Tommy’ was first published in Thomas Gunn’s *Bush nursery rhymes* in 1920.
 
 For direct quotes, include the author and date, if known. If the date isn’t known, use the title. Use ‘Anon’ if the author is unknown.
 
@@ -291,53 +286,3 @@ For direct quotes, include the author and date, if known. If the date isn’t kn
 
 - Ashley said she felt like those lizards in a nursery rhyme who’d had their tails removed by ‘a cunning fish’ (Anon. ‘Three lizards went down to a water pool’).
 - Among other lessons, Æsop’s fables teach us that ‘it is easy to despise what you cannot get’ (Æsop ‘The fox and the grapes’).
-
-Release notes
-
-The digital edition expands information about citing plays and poetry. It includes works the sixth edition did not, such as nursery rhymes, fairy tales and fables.
-
-The Content Guide did not have guidance on plays or poetry.
-
-About this page
-
-### References
-
-Æsop (1909–1914) ‘[The fox and the grapes](https://www.bartleby.com/17/1/31.html)’, *Æsop’s fables*, Bartleby website, accessed 11 January 2020.
-
-Ade G (1866–1944) [‘R-E-M-O-R-S-E](https://www.poemhunter.com/poem/r-e-m-o-r-s-e/)’, *Poems*, Poem Hunter website, accessed 18 December 2019.
-
-American Psychological Association (2020) ‘10.2: Books and reference works’, *Publication manual of the American Psychological Association*, 7th edn, American Psychological Association, Washington DC.
-
-Ewart G (ed) (1980) *The Penguin book of light verse*, Penguin Books Ltd, Harmondsworth.
-
-Harwood G (1963) ‘[Critic’s nightwatch](https://www.poemhunter.com/poem/critic-s-nightwatch/)’, *Poems*, Poem Hunter website, accessed 18 December 2019.
-
-Hetherington P (2019) *Advice on style for poetry titles* [unpublished training materials], University Of Canberra International Poetry Studies Institute, Canberra.
-
-Holden R (1992) *Twinkle, twinkle, Southern Cross: the forgotten folklore of Australian nursery rhymes*, National Library of Australia, Canberra.
-
-Hollander J and Kermode F (eds) (1979) *The Oxford anthology of English literature: the literature of Renaissance England*, Oxford University Press, New York.
-
-Malouf D (2018) *An open book*, University of Queensland Press, St Lucia.
-
-Monash University Sir Louis Matheson Library (2013) [ In fairy land: an exhibition of fairy tale books from the Rare Books Collection](https://studylib.net/doc/11224426/in-fairy-land) [online exhibition catalogue], 6 March to 7 June 2013, Monash University, Clayton, accessed 13 January 2020.
-
-Noonan JJ and Atwell HJW (1968) *The genius of poetry*, Jacaranda Press, Milton.
-
-Richards IA (ed) (1950) *The portable Coleridge*, Penguin Books, Harmondsworth.
-
-Ross K (1979) *Breaker Morant: a play in two acts*, Edward Arnold Pty Ltd, Melbourne.
-
-Seymour A, Stewart D and Porter H (1963) *Three Australian plays*, Penguin Books, Victoria.
-
-Shakespeare W (1609/1964) *The sonnets* (Barnet S ed), New American Library, New York.
-
-Shakespeare W (1600/1967) *The merchant of Venice* (Moelwyn W ed), Penguin Books Ltd, Harmondsworth.
-
-Slessor K (1901–1971) ‘[Five bells](https://www.poemhunter.com/poem/five-bells/)’, *Poems*, Poem Hunter website, accessed 18 December 2019.
-
-Stavanger D and Te Whiu AM (2019) *Solid air: Australian and New Zealand spoken word*, University of Queensland Press, St Lucia.
-
-### Last updated
-
-This page was updated Monday 23 December 2024.

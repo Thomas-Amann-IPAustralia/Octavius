@@ -1,7 +1,8 @@
+# Government terms
+
 Use the correct term and follow the rules for capitalising government terms. People find it easier to understand content that has a consistent style.
 
-
-Use initial capitals for formal names and titles
+## Use initial capitals for formal names and titles
 
 Use initial capitals only for the formal names and titles of government entities and office holders. Use lower case for generic references.
 
@@ -185,11 +186,10 @@ Justin Trudeau is the eldest son of former Canadian prime minister Pierre Trudea
 
 Use government sources to check the titles of legislation, especially:
 
-- the
-[Federal Register of Legislation](https://www.legislation.gov.au/Home) - the Australian Parliament House list of
-[bills and legislation](https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation).
+- the [Federal Register of Legislation](https://www.legislation.gov.au/Home)
+- the Australian Parliament House list of [bills and legislation](https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation).
 
-Follow the [guidance in this manual to use the correct title for legislation](/node/163).
+Follow the [guidance in this manual to use the correct title for legislation](https://www.stylemanual.gov.au/node/163).
 
 Use initial capitals for these terms when referring to specific legislation:
 
@@ -200,7 +200,7 @@ Use initial capitals for these terms when referring to specific legislation:
 
 Use lower case for generic references to bills, regulations and ordinances. Use initial capitals for all references to Acts.
 
-Follow [detailed rules for references to delegated legislation](/node/210).
+Follow [detailed rules for references to delegated legislation](https://www.stylemanual.gov.au/node/210).
 
 #### Example
 
@@ -229,8 +229,8 @@ Apply this rule to the titles of other government office holders and department 
 #### Example
 
 - Our local member is Assistant Minister to the Prime Minister.
-- Assistant ministers are designated as parliamentary secretaries under the
-*Ministers of State Act 1952*. - The Deputy Secretary of Policy and Programs was one of 5 deputy secretaries to attend the interdepartmental committee meeting.
+- Assistant ministers are designated as parliamentary secretaries under the *Ministers of State Act 1952*.
+- The Deputy Secretary of Policy and Programs was one of 5 deputy secretaries to attend the interdepartmental committee meeting.
 - She will take on the role of first assistant secretary responsible for overseeing engagement with external stakeholders.
 
 #### Correct prepositions
@@ -283,7 +283,7 @@ To refer to an Australian state or territory:
 - The South Australian Government started the project. The government will meet regularly to review progress.
 - The states and territories are responsible for health care and education.
 
-Few situations will require you to use the [shortened form for a state or territory](/node/134#shorten_names_for_states_and_territories_in_4_situations).
+Few situations will require you to use the [shortened form for a state or territory](https://www.stylemanual.gov.au/node/134#shorten_names_for_states_and_territories_in_4_situations).
 
 #### ‘Territory’ is an exception when used for the Northern Territory
 
@@ -363,33 +363,3 @@ The Senate and the House of Representatives are the ‘houses of parliament’, 
 Use ‘the House’, ‘this House’, ‘lower house’ or ‘people’s house’ to refer to the House of Representatives.
 
 Use ‘this house’, ‘upper house’, ‘house of review’ or ‘states’ house’ to refer to the Senate.
-
-Release notes
-
-The digital edition consolidates the advice from the sixth edition and provides updated examples.
-
-The capitalisation of ‘house’ used in the parliamentary context has changed. Style in the digital edition is consistent with Hansard style for the Australian Parliament.
-
-The digital edition prefers ‘Cth’ over ‘Cwlth’ as the [contraction for ‘Commonwealth’](/node/191). This reflects a departure from the sixth edition based on a corpus check with the Australian National Dictionary Centre.
-
-The Content Guide had brief advice on government names, consistent with the sixth edition.
-
-About this page
-
-### Evidence
-
-Parliament of Australia (2020) *Hansard style guide* [internal style guide, version 8.1], Department of Parliamentary Services, Canberra.
-
-### References
-
-Australian Government (2020) [ Directory](https://www.directory.gov.au/), Australian Government Directory website, accessed 14 June 2020.
-
-Department of Finance (2021) [ Structure of the Australian Government public sector](https://www.finance.gov.au/government/managing-commonwealth-resources/structure-australian-government-public-sector), Department of Finance website, accessed 19 October 2022.
-
-Office of the Legislative Assembly (2017) *Hansard style manual*, Legislative Assembly for the Australian Capital Territory, accessed 14 June 2020.
-
-Department of the Prime Minister and Cabinet (2020) [ Parliamentary information](https://www.pmc.gov.au/government/parliamentary-information), PM&C website, accessed 14 June 2020.
-
-### Last updated
-
-This page was updated Monday 23 December 2024.

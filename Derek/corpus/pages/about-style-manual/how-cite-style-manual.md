@@ -1,9 +1,10 @@
-This style guidance is for Australian Government writers following the manual’s referencing and attribution rules. Those outside the Australian Government might follow other rules.
+# How to cite the Style Manual
 
+This style guidance is for Australian Government writers following the manual’s referencing and attribution rules. Those outside the Australian Government might follow other rules.
 
 You don’t need to cite the Style Manual when you use its guidance to create content.
 
-Use referencing style for mentions of the Style Manual
+## Use referencing style for mentions of the Style Manual
 
 A long-held convention is that titles mentioned in body text follow their equivalent referencing style. We recommend that Australian Government writers follow the styles shown in either of the [Author–date](https://www.stylemanual.gov.au/referencing-and-attribution/author-date) and [Documentary–note](https://www.stylemanual.gov.au/referencing-and-attribution/documentary-note) systems.
 
@@ -21,7 +22,7 @@ When you mention a webpage from the Style Manual in your content, treat it as pa
 
 I found the answer in ‘[Acronyms and initialisms](https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/shortened-words-and-phrases/acronyms-and-initialisms)’.
 
-Cite the Style Manual using referencing and attribution rules
+## Cite the Style Manual using referencing and attribution rules
 
 Always cite the Style Manual when you paraphrase it or quote it in your content.
 
@@ -42,7 +43,7 @@ Author–date is suitable for most government content. This system comprises an 
 
 Initialisms are pronounced as letters and acronyms as words. WofG – meaning ‘Whole of government’ – is pronounced as ‘double u of gee’, so it’s an initialism, not an acronym (APSC 2023). [In-text citation]
 
-APSC (Australian Public Service Commission) (2023) [ Australian Government Style Manual](https://www.stylemanual.gov.au/), stylemanual.gov.au, accessed 21 February 2023. [Full citation in reference list – cited as a website]
+APSC (Australian Public Service Commission) (2023) [*Australian Government Style Manual*](https://www.stylemanual.gov.au/), stylemanual.gov.au, accessed 21 February 2023. [Full citation in reference list – cited as a website]
 
 To cite a Style Manual webpage in Author–date, use:
 
@@ -64,12 +65,8 @@ Follow the citation rules in ‘Documentary–note’ if you use endnotes or foo
 
 Australia, like many countries, has a style guide for government employees to follow.1 [Reference marker]
 
-1Australian Public Service Commission, [ Australian Government Style Manual](https://www.stylemanual.gov.au/), stylemanual.gov.au, 2023, accessed 28 February 2023. [Note – Style Manual cited as a website, with website URL]
+1Australian Public Service Commission, [*Australian Government Style Manual*](https://www.stylemanual.gov.au/), stylemanual.gov.au, 2023, accessed 28 February 2023. [Note – Style Manual cited as a website, with website URL]
 
 Australian Government style is to use code for mathematical symbols, not punctuation.2 [Reference marker]
 
 2Australian Public Service Commission, ‘[Mathematical relationships](https://www.stylemanual.gov.au/grammar-punctuation-and-conventions/numbers-and-measurements/mathematical-relationships)’, *Australian Government style manual*, Australian Government Style Manual website, 2023, accessed 10 September 2023. [Note – Style Manual cited as a publication and a website]
-
-### Last updated
-
-This page was updated Friday 6 September 2024.

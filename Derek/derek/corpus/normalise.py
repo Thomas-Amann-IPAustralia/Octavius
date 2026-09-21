@@ -5,12 +5,21 @@ identity — depends on this module being a pure, stable function of its
 input. Two runs over identical source HTML must produce byte-identical
 output, or the changeset becomes noise (see ADR-001).
 
-The one non-obvious job here is *heading repair*. ``trafilatura`` flattens
-the Style Manual's heading levels inconsistently: the corpus carries 1,795
-``###`` headings but only 53 ``##`` and 2 ``#``, because section headings
-are frequently demoted to bare paragraphs. Structure-driven extraction
-(ADR-002) reads rules off the heading tree, so a demoted heading is a lost
-rule. ``repair_headings`` promotes them back, conservatively.
+The one non-obvious job here is *heading repair*, which is now a **fallback**
+rather than the primary path (ADR-020).
+
+Octavius converted HTML with ``trafilatura``, a generic article extractor
+that flattens heading levels inconsistently: its corpus carried 1,795 ``###``
+against only 53 ``##`` and 2 ``#``, with many section headings demoted to
+bare paragraphs. Since structure-driven extraction (ADR-002) reads rules off
+the heading tree, a demoted heading was a lost rule, and ``repair_headings``
+existed to promote them back.
+
+``derek.corpus.to_markdown`` now reads heading levels from the source DOM, so
+correctly-converted pages need no repair at all — on DOM-faithful output this
+function performs zero promotions. It is retained as a regression guard: if a
+future converter change starts flattening structure again, repair limits the
+damage instead of silently dropping rules.
 """
 
 from __future__ import annotations
@@ -144,8 +153,27 @@ def repair_headings(text: str, level: int = 2) -> tuple[str, int]:
     Returns ``(repaired_text, promotions)``. ``level`` is the heading level
     assigned to promoted lines — 2, since the pattern being repaired is
     ``##`` section headings sitting above intact ``###`` rule headings.
+
+    **No-op on healthy input.** If the text already contains a heading at or
+    above ``level``, its hierarchy is intact and the function returns it
+    unchanged. Since ``derek.corpus.to_markdown`` reads heading levels from
+    the DOM, this is the normal case; repair only engages if a converter
+    regression starts flattening structure again (ADR-020). A non-zero
+    ``promotions`` count on a freshly scraped page is a bug signal.
     """
     lines = text.split("\n")
+
+    # Self-disabling gate (ADR-020). Repair exists to recover ``##`` section
+    # headings that a flattening converter demoted to bare paragraphs. If the
+    # page already carries a level-1 or level-2 heading, its hierarchy is
+    # intact and there is nothing to recover — running anyway would promote
+    # ordinary standalone paragraphs into the rule inventory, which is the
+    # very failure this module is supposed to prevent.
+    for line in lines:
+        m = _ATX_HEADING.match(line)
+        if m is not None and len(m.group(1)) <= level:
+            return text, 0
+
     out: list[str] = []
     promotions = 0
     in_fence = False

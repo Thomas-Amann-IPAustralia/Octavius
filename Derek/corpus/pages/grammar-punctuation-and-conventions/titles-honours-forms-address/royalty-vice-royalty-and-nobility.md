@@ -1,7 +1,8 @@
+# Royalty, vice-royalty and nobility
+
 Royalty and representatives of the royal family should be addressed with their correct title.
 
-
-Always capitalise the titles of current royals
+## Always capitalise the titles of current royals
 
 Always use capitals for the title of the current Australian monarch.
 
@@ -43,7 +44,7 @@ Use an initial capital for ‘The’ for the formal titles of the King and his i
 - The Prince George
 - The Princess Royal
 
-Use regnal numbers (I, II, V) for titles of monarchs and religious leaders
+## Use regnal numbers (I, II, V) for titles of monarchs and religious leaders
 
 Regnal numbers are upper case roman numerals that are used for the titles of monarchs and popes.
 
@@ -67,7 +68,7 @@ Put a non-breaking space between the name and the regnal number. A non-breaking 
 
 You can insert a non-breaking space using the Unicode character U+00A0.
 
-In HTML, use the entity to insert a non-breaking space. You can also use the keyboard shortcut Ctrl+Shift+Spacebar in Word.
+In HTML, use the entity &nbsp; to insert a non-breaking space. You can also use the keyboard shortcut Ctrl+Shift+Spacebar in Word.
 
 #### Print considerations
 
@@ -80,7 +81,7 @@ The narrow no-break space ensures that the:
 
 You can insert a narrow no-break space using the Unicode character U+202F.
 
-Capitalise ‘Governor-General’ when it’s part of the formal title
+## Capitalise ‘Governor-General’ when it’s part of the formal title
 
 The position of governor-general in Australia is known as vice-royalty. The Governor-General represents the King in Australia.
 
@@ -126,41 +127,3 @@ For the partner of the Governor-General:
 
 - Address a female partner as ‘Her Excellency’ or ‘Your Excellency’.
 - Address a male partner as ‘His Excellency’ or ‘Your Excellency’.
-
-Release notes
-
-The digital edition was updated to reflect changes to royal titles upon the coronation of King Charles III.
-
-The digital edition gives updated guidance and examples on forms of address for royalty, vice-royalty and nobility.
-
-These examples do not follow the sixth edition’s requirement for a comma before and between post-nominals. This is consistent with the digital edition’s recommendation to use minimal punctuation. The digital edition also includes advice on regnal numbers.
-
-The sixth edition had relevant information on titles for royal and vice-royals. Advice on numbers in titles was in a different part of the manual.
-
-The Content Guide did not cover this topic.
-
-About this page
-
-### References
-
-Australian Broadcasting Corporation (2023) [ Why is Camilla's title now Queen and why did Prince Philip never get called king?](https://www.abc.net.au/news/2023-05-07/camilla-queen-consort-title-change-explained/102313302), ABC News website, accessed 9 May 2023.
-
-Debrett's (2023) [ A tribute to Her Majesty Queen Elizabeth II](https://debretts.com/royal-family/a-tribute-to-her-majesty-queen-elizabeth-ii/), Debrett's website, accessed 9 May 2023.
-
-Debrett’s (2023) [ Addressing the royal family](https://debretts.com/royal-family/addressing-the-royal-family/), Debrett’s website, accessed 9 May 2023.
-
-Debrett’s (2023) [ Who can be a prince or a princess?](https://debretts.com/who-can-be-a-prince-or-princess/), Debrett’s website, accessed 23 January 2024.
-
-Department of the Prime Minister and Cabinet (2023) [ The life and coronation of King Charles III](https://www.pmc.gov.au/news/life-and-coronation-king-charles-iii), Department of the Prime Minister and Cabinet, accessed 8 May 2023.
-
-Parliament of Australia (2020) *Hansard style guide* [internal style guide], version 8.1, Department of Parliamentary Services, Canberra.
-
-The Governor-General of the Commonwealth of Australia (n.d.) [ About the Governor-General](https://www.gg.gov.au/about-governor-general), The Governor-General of the Commonwealth of Australia website, accessed 8 June 2020.
-
-The Governor-General of the Commonwealth of Australia (2019) [ Former governors-general](https://www.gg.gov.au/about-governor-general/former-governors-general), The Governor-General of the Commonwealth of Australia website, accessed 8 June 2020.
-
-The Royal Household (2023) [ The Royal Family](https://www.royal.uk/royal-family), royal.uk, accessed 9 May 2023.
-
-### Last updated
-
-This page was updated Friday 6 September 2024.

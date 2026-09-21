@@ -1,7 +1,8 @@
+# Aboriginal and Torres Strait Islander peoples
+
 Use culturally appropriate and respectful language when writing with, for or about First Nations people.
 
-
-There is no single Aboriginal or Torres Strait Islander identity
+## There is no single Aboriginal or Torres Strait Islander identity
 
 First Nations people are often called Aboriginal and Torres Strait Islander peoples. But there is significant diversity within these 2 groups.
 
@@ -11,13 +12,15 @@ There is a wide range of nations, cultures and languages across mainland Austral
 
 ‘Torres Strait Islander’ is a broad term grouping the peoples of at least 274 small islands between the northern tip of Cape York in Queensland and the south-west coast of Papua New Guinea. Many Torres Strait Islander peoples live on the Australian mainland. There are also 2 Torres Strait Islander communities at Bamaga and Seisia, within the Northern Peninsula Area of Queensland.
 
+## Authoritative guidance lives with the relevant community or individual
+
 There is a legacy of writing about First Nations people without seeking their guidance about references and terminology. Educational texts and official websites can be inaccurate when written without consultation.
 
 It’s important to consult with traditional owners, local elders, community and content experts. Consultation is essential when writing about sensitive matters like cultures and history.
 
 Consultation protocols and respectful language use depend on the preferences of the peoples involved. As a result, there are very few hard rules. Respectful content and language use will always depend upon proper consultation.
 
-Respectful language use starts with the basics
+## Respectful language use starts with the basics
 
 Basic respectful language means using:
 
@@ -51,7 +54,7 @@ Statements to redress the historical erasure and inaccuracy would read:
 
 Aboriginal and Torres Strait Islander peoples have always been here. They are still undertaking cultural activities. Be conscious of this and work to change the habit.
 
-**A Welcome to Country is not the same as an Acknowledgement of Country**
+### A Welcome to Country is not the same as an Acknowledgement of Country
 
 Welcome to Country is an important ceremony for many First Australians. An Acknowledgement of Country is a way of showing respect. Both are distinct practices with different requirements and meanings. Always capitalise both.
 
@@ -61,7 +64,7 @@ An Acknowledgement of Country is something anyone can do. It is a way a person o
 
 Both are simple but important ways of paying respect. They redress the erasure of Aboriginal and Torres Strait Islander peoples on their own lands.
 
-First Nations diversity is reflected throughout Australia
+## First Nations diversity is reflected throughout Australia
 
 Most Aboriginal and Torres Strait Islander peoples live in urban places. Historical stereotypes of ‘traditional’ peoples are inaccurate and can be offensive.
 
@@ -69,7 +72,7 @@ A common misconception is if people have fair skin or live in a city they can’
 
 Peoples were also forcibly removed to other locations. In every location in Australia, remote, regional or urban, there are traditional custodians. There may also be many different peoples currently living there. When writing about any particular place, make sure to be inclusive of all First Nations people living on country.
 
-Naming protocols are complicated, specificity is often more respectful
+## Naming protocols are complicated, specificity is often more respectful
 
 Always ask for people’s preferences about what they want to be called or how they want to identify. It is usually more respectful to be specific.
 
@@ -80,10 +83,9 @@ If writing about:
 - a specific group, use their nation, island or community name
 - many Aboriginal nations, there may be a regional term that is better, such as ‘Murris’ or ‘Kooris’
 - many Torres Strait Islander peoples or islands, there may be a regional term that is more appropriate, such as Kulkalgal (encompassing the central islands of Masig, Poruma, Warraber and Iama)
-- both Aboriginal
-*and*Torres Strait Islander peoples, use terms such as ‘First Nations people’, ‘First Australians’ or ‘Aboriginal and/or Torres Strait Islander peoples’.
+- both Aboriginal *and* Torres Strait Islander peoples, use terms such as ‘First Nations people’, ‘First Australians’ or ‘Aboriginal and/or Torres Strait Islander peoples’.
 
-**The issue with general terms and when to use them**
+### The issue with general terms and when to use them
 
 ‘Indigenous’ and ‘Aboriginal’ are broad terms imposed on First Australians without consultation. These are not words they chose for themselves.
 
@@ -103,7 +105,7 @@ Indigenous peoples also have regional terms that they use for specific geographi
 
 Some people use Aboriginal ‘and/or’ Torres Strait Islander. This is a good idea when the audience isn’t clear or specific. It’s also important to realise that some individuals identify with both groups.
 
-Style for First Australian languages needs to recognise continuing cultures
+## Style for First Australian languages needs to recognise continuing cultures
 
 Hundreds of distinct First Nations languages and dialects are alive and spoken today. Never refer to them as ‘extinct’. Many communities are working to revive their languages. The preferred term to describe these languages is ‘sleeping’.
 
@@ -117,7 +119,7 @@ First Nations cultures are oral-based traditions. Oral sources must have precede
 
 Consultation is essential. You can use a style sheet to record terms you have checked with the relevant community.
 
-**Italics**
+### Italics
 
 Do not italicise names or words from First Nations languages. They are Australian languages, not foreign languages.
 
@@ -145,7 +147,7 @@ Some peoples still use ‘the Dreamtime’. But, it has fallen out of use with m
 
 Some peoples use terms that don’t have an English equivalent.
 
-First Nations spirituality is easily misused or misrepresented
+## First Nations spirituality is easily misused or misrepresented
 
 Some First Australians’ beliefs are being used in disrespectful ways. For example, the use of ancestral beings such as the Rainbow Serpent, or Wandjinas as a characters in ‘fictional’ stories, art or other forms of media. Most often they are used without permission, and portrayed in deeply hurtful ways.
 
@@ -159,7 +161,7 @@ A bunyip is a being that many Aboriginal peoples believe is real. Yet many Austr
 
 It is not necessary to believe in or understand someone else’s beliefs to be respectful of them.
 
-Strengths-based language respects continuous cultures and connections
+## Strengths-based language respects continuous cultures and connections
 
 Content about First Nations people has often focused on ‘problems’. This has 2 outcomes: making First Australians ‘the problem’ or continuing a deficit discourse. Neither is acceptable.
 
@@ -188,7 +190,7 @@ Be careful not to perpetuate patronising or paternalistic language use. Aborigin
 
 It is about working together, not doing things ‘for them’ or ‘to them’. Also, setting up a dichotomy of ‘us' and ‘them’ perpetuates division and exclusion. This language use is not acceptable.
 
-Consultation is a must
+## Consultation is a must
 
 Consultation starts with elders of any given community. They might not be living on their traditional lands, or there might be multiple groups to consult.
 
@@ -245,47 +247,3 @@ This is not a firm rule, but one example of how things can change. Always follow
 Many historical images lack any contextual information. It can be impossible to trace the names of peoples or locations that feature in the images. As a result, it can be inappropriate and offensive to publish them. Avoid using photographs where people are unnamed.
 
 Illustrations and photographs should include diverse, dynamic and contemporary representations of Aboriginal and Torres Strait Islander peoples. Visual representations will depend on context. Just like use of terms in text, images should be specific to the particular nation, region or community that relates to the content.
-
-Release notes
-
-The digital edition significantly revises and updates guidance on content that relates to Aboriginal and Torres Strait Islander peoples. It provides more comprehensive guidance than both the sixth edition and the Content Guide.
-
-For example, the sixth edition described the term ‘Indigenous’ as ‘widely acceptable’ as a subset of the broader term ‘Australian’. The digital edition cautions that use of the term ‘Indigenous’ can be inaccurate without proper context.
-
-The digital edition offers more options for general terms than the sixth edition around ‘precise and inclusive language for collective references’ to Aboriginal and Torres Strait Islander peoples.
-
-The sixth edition based recommendations about preferred terms on Aboriginal and Torres Strait Islander Commission advice. The digital edition recommends consulting directly with relevant communities and individuals. It states, ‘Respectful content and language use will always depend upon proper consultation.’
-
-The digital edition recommends against use of italics for names or words from Aboriginal and Torres Strait Islander languages. This departs from stylistic convention: ‘borrowed’ words (not absorbed into Australian English) are otherwise italicised.
-
-This page was updated in June 2023 when the term ‘First Nations Australians’ was replaced by ‘First Nations people’. This reflects a change in language usage.
-
-About this page
-
-### References
-
-AIATSIS (Australian Institute of Aboriginal and Torres Strait Islander Studies) (n.d.) *AUSTLANG**, *AIATSIS Collection website, accessed 3 October 2019.
-
-AIATSIS (2015) [ Guidelines for the ethical publishing of Aboriginal and Torres Strait Islander authors and research from those communities](https://aiatsis.gov.au/research/ethical-research), Aboriginal Studies Press, accessed 1 October 2019.
-
-AIATSIS (2012) *Guidelines for ethical research in Australian Indigenous studies**, *AIATSIS website, accessed 3 October 2019.
-
-Arts Law Centre of Australia (n.d.) [ Indigenous cultural and intellectual property](https://www.artslaw.com.au/information-sheet/indigenous-cultural-and-intellectual-property-icip-aitb/), Arts Law Centre of Australia website, accessed 2 October 2019.
-
-Australia Council for the Arts (2007) *Writing: Protocols for producing Indigenous Australian writing*, Australia Council for the Arts, accessed 1 October 2019.
-
-Department of the Prime Minister and Cabinet (2016), *Communicating with Aboriginal and Torres Strait Islander audiences*, PM&C website, accessed 3 October 2019.
-
-Eades D (2013)* Aboriginal ways of using English*, Aboriginal Studies Press, Canberra.
-
-Reconciliation Australia (n.d.) ‘[A guide to using respectful and inclusive language and terminology](https://www.narragunnawali.org.au/about/terminology-guide)’, *Terminology guide*, Narragunnawali: Reconciliation in Education online platform, accessed 2 October 2019.
-
-Pascoe B (2012) *The little red yellow black book: an introduction to Indigenous Australia*, 3rd edn,* *Australian Institute of Aboriginal and Torres Strait Islander Studies, Canberra.
-
-Queensland Government (7 June 2023) [ Traditional name restored to world’s largest sand island](https://statements.qld.gov.au/statements/97872) [media release], Queensland Government, accessed 14 June 2023.
-
-Torres Strait Regional Authority (n.d.) [ The Torres Strait](http://www.tsra.gov.au/the-torres-strait), TSRA website, accessed 7 April 2020.
-
-### Last updated
-
-This page was updated Friday 7 March 2025.

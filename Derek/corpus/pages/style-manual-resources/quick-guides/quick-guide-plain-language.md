@@ -1,6 +1,8 @@
+# Quick guide: plain language
+
 Write in plain language to help users understand your message.
 
-You can download an accessible version of [ Quick guide: plain language [PDF 402 kB]](https://www.stylemanual.gov.au/sites/default/files/2025-08/Quick%20guide_plain%20language%20accessible%20PDF%20402%20kB.pdf ).
+You can download an accessible version of [*Quick guide: plain language*[PDF 402 kB]](https://www.stylemanual.gov.au/sites/default/files/2025-08/Quick%20guide_plain%20language%20accessible%20PDF%20402%20kB.pdf).
 
 Writing in plain language helps everyone. When you write in plain language, users understand your message and know what to do next.
 

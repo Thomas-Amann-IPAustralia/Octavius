@@ -1,6 +1,8 @@
+# Lists
+
 Lists make it easy for users to scan and understand a series of items. Structure and style lists with the user in mind. Set up grammatical structure for list items with a lead-in.
 
-Structure items in a series as a list
+## Structure items in a series as a list
 
 Lists are series of items. All lists have a 'lead-in' (a phrase or sentence) or heading to introduce the list.
 
@@ -43,7 +45,7 @@ Write items in a list so they follow a consistent pattern. The pattern is made u
 
 If items follow a consistent pattern, it makes a list easier to scan and understand.
 
-Write list items so they have parallel structure
+## Write list items so they have parallel structure
 
 Write all list items so they have the same grammatical structure. This is called ‘parallel structure’. It makes lists easier to read.
 
@@ -73,7 +75,7 @@ I will be:
 
 [The last item is an adjective while other list items begin with verbs.]
 
-Punctuate lists according to style
+## Punctuate lists according to style
 
 Unnecessary punctuation makes your list look cluttered. Current government style is for minimal punctuation.
 
@@ -119,7 +121,7 @@ If you don’t include the full stop, people using screen readers may assume the
 
 A stand-alone list is a third type of list. Stand-alone lists don’t end in a full stop.
 
-Choose a type of list
+## Choose a type of list
 
 There are different ways to construct a list, whether the list is ordered or unordered.
 
@@ -150,22 +152,21 @@ Rules for sentence lists:
 Avoid using multiple sentences in each bullet or numbered item. If you include more than one sentence per list item, consider whether:
 
 - all list items conform to a similar pattern
-- the list builds
-[rhythm for readability](/node/60#rhythm_changes_can_help_or_hinder_reading).
+- the list builds [rhythm for readability](https://www.stylemanual.gov.au/node/60#rhythm_changes_can_help_or_hinder_reading).
 
 #### Example
 
 Actions for the committee [Heading without a colon before an ordered sentence list]
 
-- The secretary will respond to each recommendation.
-- The secretary will allocate responses that need more work to members.
-- Members will discuss the recommendations at the next meeting on 9 March.
+1. The secretary will respond to each recommendation.
+2. The secretary will allocate responses that need more work to members.
+3. Members will discuss the recommendations at the next meeting on 9 March.
 
 The committee members decided on several actions. [Sentence lead-in to a sentence list, ending in a full stop]
 
-- The secretary will respond to each recommendation.
-- The secretary will allocate responses that need more work to members.
-- Members will discuss the recommendations at the next meeting on 9 March.
+1. The secretary will respond to each recommendation.
+2. The secretary will allocate responses that need more work to members.
+3. Members will discuss the recommendations at the next meeting on 9 March.
 
 Use full sentence list items for imperative list items where there is no stated subject in the lead-in.
 
@@ -190,7 +191,7 @@ Fragment lists have a:
 - lead-in phrase or sentence followed by a colon
 - list of fragments, each marked by a bullet.
 
-Use fragment list items when the lead-in states the [grammatical subject](/node/120#a_full_sentence_is_grammatically_complete).
+Use fragment list items when the lead-in states the [grammatical subject](https://www.stylemanual.gov.au/node/120#a_full_sentence_is_grammatically_complete).
 
 Rules for fragment lists:
 
@@ -271,7 +272,7 @@ The differences between a fragment list and a stand-alone list are:
 - Fragment list items complete phrase lead-ins to form a grammatical sentence.
 - Stand-alone list items do not form a grammatical sentence.
 
-Use consistent formatting for all lists
+## Use consistent formatting for all lists
 
 Sometimes you need to use different types of lists in the same piece of content.
 
@@ -295,14 +296,14 @@ However, the nature of content means this is not always possible. For example, t
 
 Do your best to standardise. But if you can’t, do these things for consistency:
 
-- For sentence lists, choose one type of punctuation to end any sentence lead-ins – a colon
-*or*a full stop. - For stand-alone lists, follow the same format for all list items – with indent/bullets
-*or*without indent/bullets. - Don’t mix different types of lists in the one list.
+- For sentence lists, choose one type of punctuation to end any sentence lead-ins – a colon *or* a full stop.
+- For stand-alone lists, follow the same format for all list items – with indent/bullets *or* without indent/bullets.
+- Don’t mix different types of lists in the one list.
 - Follow all other rules for lists on this page.
 
 Then check that your lists display properly on all platforms.
 
-Write numbered lists if the order is critical
+## Write numbered lists if the order is critical
 
 Use a numbered (ordered) list when the order is important, such as a list of instructions.
 
@@ -312,9 +313,9 @@ Sometimes you have more than one numbered list in the document. You must choose 
 
 How to register for the conference:
 
-- Choose the days you will attend.
-- Pick the workshops you want to join.
-- Enter your discount code (if you have one).
+1. Choose the days you will attend.
+2. Pick the workshops you want to join.
+3. Enter your discount code (if you have one).
 
 [This list is numbered because users must complete each step in turn.]
 
@@ -326,8 +327,8 @@ Break up text into a numbered list instead of using an in-line numbered list. Th
 
 The facilitator will:
 
-- welcome participants to the conference
-- introduce each of the speakers.
+1. welcome participants to the conference
+2. introduce each of the speakers.
 
 [A numbered list]
 
@@ -337,7 +338,7 @@ The facilitator will 1) welcome participants to the conference, and 2) introduce
 
 [An in-line numbered list]
 
-To order points in general content, don’t use [ordinal numbers](/node/162). Instead, you can either:
+To order points in general content, don’t use [ordinal numbers](https://www.stylemanual.gov.au/node/162). Instead, you can either:
 
 - use a numbered list
 - rephrase the sentences to link them in the same paragraph.
@@ -346,13 +347,13 @@ To order points in general content, don’t use [ordinal numbers](/node/162). In
 
 The facilitator will welcome participants to the conference. Next, they will introduce each of the speakers.
 
-[The sentences are linked as a sequence with ‘next’ (an [adverb](/node/127)).]
+[The sentences are linked as a sequence with ‘next’ (an [adverb](https://www.stylemanual.gov.au/node/127)).]
 
 #### Not this
 
 The facilitator will firstly welcome participants to the conference. Secondly, they will introduce each of the speakers.
 
-[The ordinals use [more words than necessary](/node/204#eliminate_unnecessary_words). They also affect [tone](/node/40).]
+[The ordinals use [more words than necessary](https://www.stylemanual.gov.au/node/204#eliminate_unnecessary_words). They also affect [tone](https://www.stylemanual.gov.au/node/40).]
 
 ### Put unordered lists in a sequence that helps the user
 
@@ -371,7 +372,7 @@ List items in the order that will make sense to the user reading it. It’s comm
 
 [This stand-alone list uses an alphabetical order, which is easy for users to follow. Context might give you a reason to use a different order for the same list of national parks. For example, you could also sort them by proximity to Perth.]
 
-Avoid using a multilevel list
+## Avoid using a multilevel list
 
 Multilevel lists group information into a hierarchy. The levels explain how each item relates to other list items.
 
@@ -389,18 +390,13 @@ If you have to use multilevel lists:
 There are many types of birds in Australia, including:
 
 - nocturnal birds
-
-– frogmouths
-
-– nightjars
-
-– owls - marsh birds
-
-– crakes
-
-– grebes
-
-– snipes.
+ – frogmouths
+ – nightjars
+ – owls
+- marsh birds
+ – crakes
+ – grebes
+ – snipes.
 
 [A multilevel (bullet) list, using a dash for the second level]
 
@@ -409,64 +405,10 @@ There are many types of birds in Australia, including:
 There are many types of birds in Australia, including:
 
 - nocturnal birds
-- frogmouths
-- nightjars
-- owls
-
+  - frogmouths
+  - nightjars
+  - owls
 - marsh birds
-- crakes
-- grebes
-- snipes.
-
-
-Release notes
-
-The digital edition, like the sixth edition, calls for punctuation only for the last item in a bullet list. The Content Guide advised against punctuating the final item in a bullet list.
-
-The digital edition advises against using ‘and’ or ‘or’ at the end of dot points in lists. The sixth edition allowed ‘or’ at the end of a list item, though recommended avoiding this if possible.
-
-The December 2020 update to the digital edition accommodates the need to use conjunctions in some lists (such as in legal material, where they can be critical for meaning and interpretation).
-
-The digital edition says multilevel lists can be used if essential, but they should have no more than 2 levels. The Content Guide said lists should have no more than one level.
-
-The sixth edition permitted the addition of sentences to fragments in lists with advice about punctuation. The digital edition does not include a rule for the addition of sentences in new rules for fragment lists.
-
-In sentence lists, the sixth edition allowed each list item to include up to 2 paragraphs. The digital edition is silent on this particular issue. It says to avoid using multiple sentences in bullet or numbered lists. This guidance was expanded in the December 2020 release.
-
-About this page
-
-### References
-
-Centre for Information Design Research (2016) ‘Lists’, [ The GOV.UK content principles: conventions and research](https://www.gov.uk/government/publications/govuk-content-principles-conventions-and-research-background), report prepared by University of Reading, UK Government, accessed 30 May 2020.
-
-Content Design London (2020) ‘[Bullet points](https://readabilityguidelines.co.uk/content-design/page-design/#bullet-points)’, *Content Design London readability guidelines*, Content Design London website, accessed 30 May 2020.
-
-Dixon JC and Bolitho B (2005–2019a) *Course notes and exercises: English grammar for writers, editors and policymakers*, Centre for Continuing Education, Australian National University, Canberra.
-
-Dixon JC and Bolitho B (2005–2019b) *Report writing*, Centre for Continuing Education, Australian National University, Canberra.
-
-Flann E, Hill B and Wang L (2014) *The Australian editing handbook*, Wiley, Milton.
-
-Loranger H (9 April 2017) ‘[7 tips for presenting bulleted lists in digital content](https://www.nngroup.com/articles/presenting-bulleted-lists/)’, *Nielsen Norman Group*, accessed 29 May 2020.
-
-Lynch PJ and Horton S (2016) [ Web style guide](https://webstyleguide.com/), Web Style Guide website, accessed 29 May 2020.
-
-Mackenzie J (2011) *The editor’s companion*, 2nd edn, Cambridge University Press, Melbourne.
-
-McMurrey DA (n.d.) *Online technical writing: lists*, Chemnitz University of Technology, accessed 29 May 2020.
-
-Moran K (5 April 2020) ‘[How people read online: new and old findings](https://www.nngroup.com/articles/how-people-read-online/)’, *Nielsen Norman Group*, accessed 17 May 2020.
-
-Oxford University Press (2016) *New Oxford style manual*, Oxford University Press, Oxford.
-
-Treasury Board of Canada Secretariat (2020) ‘[5.2: use lists to help people scan](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#wp5-2)’, *Canada.ca content style guide*, Canada.ca, accessed 29 May 2020.
-
-University of Chicago (2017) *Chicago manual of style*, 17th edn, University of Chicago Press, Chicago.
-
-W3C (World Wide Web Consortium) (n.d.) ‘[Understanding success criterion 1.3.1: info and relationships](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships)’, *Understanding WCAG 2.1*, W3C website.
-
-W3C (2019) ‘[Content structure](https://www.w3.org/WAI/tutorials/)’, *Web accessibility tutorials*, W3C website, accessed 3 June 2020.
-
-### Last updated
-
-This page was updated Tuesday 1 April 2025.
+  - crakes
+  - grebes
+  - snipes.

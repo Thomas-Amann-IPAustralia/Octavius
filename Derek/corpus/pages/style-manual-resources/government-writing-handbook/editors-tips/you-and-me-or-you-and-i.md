@@ -1,3 +1,5 @@
+# ‘You and me’ or ‘you and I’?
+
 Here’s a tip to help you use ‘you and me’ and ‘you and I’ correctly.
 
 Simply take ‘you and’ out of the sentence. If the sentence still makes sense, then you’ve used the correct phrase.
@@ -54,8 +56,4 @@ Me got lots of questions from the audience.
 
 ## Style Manual page
 
-## About this page
-
-### Last updated
-
-This page was updated Thursday 19 December 2024.
+- [Pronouns](https://www.stylemanual.gov.au/node/131)

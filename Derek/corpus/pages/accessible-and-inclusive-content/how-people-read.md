@@ -1,6 +1,8 @@
+# How people read
+
 Write and design content that matches how users read. Use short sentences and simple structure.
 
-Simple language, structure and design helps all users
+## Simple language, structure and design helps all users
 
 To create usable content, take into account how people read and what makes content easy to read.
 
@@ -19,9 +21,12 @@ People read text in different ways. How they read depends on:
 
 You must understand the needs of all users of your service and create content they can access to meet the Digital Service Standard:
 
-People skim headings and page structure
+- [Criterion 1. Understand user needs](https://www.dta.gov.au/help-and-advice/digital-service-standard/digital-service-standard-criteria/1-understand-user-needs)
+- [Criterion 9. Make it accessible](https://www.dta.gov.au/help-and-advice/digital-service-standard/digital-service-standard-criteria/9-make-it-accessible).
 
-To help people understand the type of content, use a clear [structure](/node/75).
+## People skim headings and page structure
+
+To help people understand the type of content, use a clear [structure](https://www.stylemanual.gov.au/node/75).
 
 People want to find the information they need. They skim over the headings to find ‘signposts’ that confirm the content is relevant. Before reading the text, they look at other elements such as:
 
@@ -59,13 +64,20 @@ Fundamentals:
 
 Web Content Accessibility Guidelines success criteria:
 
+- [2.4.2 Page titled – level A](https://www.w3.org/WAI/WCAG21/quickref/#page-titled)
+- [2.4.6 Headings and labels – Level AA](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=246#headings-and-labels)
+- [2.4.10 Section headings – level AAA](https://www.w3.org/WAI/WCAG21/quickref/#section-headings)
+- [1.3.1 Info and relationships – level A](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)
+- [1.3.2 Meaningful sequence – level A](https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence)
+- [1.3.3 Sensory characteristics – level A](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics)
+
 ### Print considerations
 
 People read print content more thoroughly. On a double page of print without any headings or images, people usually read from top left to bottom right.
 
 When they’re reading non-fiction, people need headings to help them find information. They also scan illustrations, tables, headings and other elements before reading the text. Often they do this in a sweeping curve counterclockwise from the top right before they decide what, if anything, to read.
 
-Content with too many unfamiliar words slows readers down
+## Content with too many unfamiliar words slows readers down
 
 Some readers can scan text and quickly find what they need. They don’t focus on every word. Instead, they take in all the meaning at once. As a result, they don’t need to read individual words such as ‘the’ to understand a sentence (but they see all the words).
 
@@ -81,7 +93,7 @@ People read more slowly if they find:
 
 If the content is difficult, people slow down and focus on unfamiliar words. They might backtrack to try to understand the meaning. This can cause difficulty with comprehension.
 
-Complex sentences are hard to read
+## Complex sentences are hard to read
 
 Complex sentences are harder to read than simple ones.
 
@@ -106,15 +118,19 @@ Fundamentals:
 
 Web Content Accessibility Guidelines success criteria:
 
-Rhythm changes can help or hinder reading
+- [3.1.5 Reading level – level AAA](https://www.w3.org/WAI/WCAG21/quickref/#reading-level)
+- [3.1.3 Unusual words – level AAA](https://www.w3.org/WAI/WCAG21/quickref/#unusual-words)
+- [3.1.4 Abbreviations – level AAA](https://www.w3.org/WAI/WCAG21/quickref/#abbreviations)
+
+## Rhythm changes can help or hinder reading
 
 People need to be able to read as smoothly and quickly as possible. They build a rhythm as they read a line of text. They automatically go to the beginning of the next line and begin reading.
 
 Help people build reading rhythm with:
 
 - short sentences
-- new
-[paragraphs](/node/53) - line breaks.
+- new [paragraphs](https://www.stylemanual.gov.au/node/53)
+- line breaks.
 
 Varying rhythm can help or hinder comprehension.
 
@@ -148,17 +164,18 @@ Variations need to support comprehension. For example, you can use a change of r
 
 You can vary rhythm using:
 
-- headings, lists and other elements that give
-[structure](/node/75) [punctuation marks](/node/119)- parenthetical information – set off using
-[brackets](/node/111),[commas](/node/109)or[dashes](/node/199).
+- headings, lists and other elements that give [structure](https://www.stylemanual.gov.au/node/75)
+- [punctuation marks](https://www.stylemanual.gov.au/node/119)
+- parenthetical information – set off using [brackets](https://www.stylemanual.gov.au/node/111), [commas](https://www.stylemanual.gov.au/node/109) or [dashes](https://www.stylemanual.gov.au/node/199).
 
 Each of these variations can interrupt a reading rhythm.
 
 Reading rhythm is also interrupted by:
 
 - unfamiliar words
-[capital letters](/node/116)- changes in font or typeface, such as
-[italics](/node/187) [images](/node/46).
+- [capital letters](https://www.stylemanual.gov.au/node/116)
+- changes in font or typeface, such as [italics](https://www.stylemanual.gov.au/node/187)
+- [images](https://www.stylemanual.gov.au/node/46).
 
 Any variation or interruption in rhythm can affect comprehension.
 
@@ -167,51 +184,3 @@ Any variation or interruption in rhythm can affect comprehension.
 BLOCKS OF CAPITAL LETTERS ARE HARD TO READ.
 
 Use capital letters appropriately to help people understand written English.
-
-Release notes
-
-The digital edition has an online focus for how people find information and how people read. It does not directly address how people find information in printed material. It has similar information on scanning and reading print and digital content.
-
-The sixth edition had information on how people find information online and in print. It included information on indexing that is not part of the digital edition’s Live release.
-
-The digital edition omits some information from the sixth edition on eye movement.
-
-The sixth edition explained how readers absorb information. It included information about context and patterning, attention spans, style and layout, and images (called ‘illustrations’). It referred to the use of moving images to get users’ attention. This information sits on other pages in the digital edition, which are linked to types of structure.
-
-The Content Guide did not address this topic, but had related information on writing for search engines and navigation labels.
-
-About this page
-
-### References
-
-Baron NS (2017) ‘Reading in a digital age’, *Phi Delta Kappan*, 99(2):15–20, doi:10.1177/0031721717734184.
-
-Cain K and Parrila R (2014) ‘Theories of reading: what we have learned from two decades of scientific research’, *Scientific Studies of Reading*, 18(1):1–4, doi:10.1080/10888438.2013.836525.
-
-Content Design London (2020) ‘[How people read](https://readabilityguidelines.co.uk/content-design/how-people-read/)’, *Content Design London readability guidelines*, Content Design London website, accessed 17 May 2020.
-
-Ehri LC (2003) ‘Orthographic mapping in the acquisition of sight word reading, spelling memory, and vocabulary learning’, *Scientific Studies of Reading*, 8(1):5–21, doi:10.1080/10888438.2013.819356.
-
-Larson K (20 October 2017) ‘[The science of word recognition](https://docs.microsoft.com/en-us/typography/develop/word-recognition)’, *Microsoft Typography*, accessed 1 November 2019
-
-Moran K (5 April 2020) ‘[How people read online: new and old findings](https://www.nngroup.com/articles/how-people-read-online/)’, *Nielsen Norman Group*, accessed 17 May 2020.
-
-Nielsen J (13 March 2005) ‘[Lower-literacy users: writing for a broad consumer audience](https://www.nngroup.com/articles/writing-for-lower-literacy-users/)’, *Nielsen Norman Group*, accessed 7 November 2019.
-
-Nielsen J (5 May 2008) ‘[How little do users read?](https://www.nngroup.com/articles/how-little-do-users-read)’, *Nielsen Norman Group*, accessed 1 November 2019.
-
-Nielsen J (15 November 2015) ‘[Legibility, readability and comprehension: making users read your words](https://www.nngroup.com/articles/legibility-readability-comprehension/)’, *Nielsen Norman Group* accessed 6 February 2020.
-
-Pernice K (12 November 2017) ‘[F-shaped pattern of reading on the web: misunderstood, but still relevant (even on mobile)](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/)’, *Nielsen Norman Group*, accessed 1 November 2019.
-
-Pernice K (25 August 2019) ‘[Text scanning patterns: eyetracking evidence](https://www.nngroup.com/articles/text-scanning-patterns-eyetracking/)’, *Nielsen Norman Group*, accessed 1 November 2019.
-
-Slattery T and Yates M (2018) ‘Word skipping: Effects of word length, predictability, spelling and reading skill’, *Quarterly Journal of Experimental Psychology*, 71(1):250–259, doi:10.1080/17470218.2017.1310264.
-
-Stanovich KE (1986) ‘Matthew effects in reading: some consequences of individual differences in the acquisition of literacy’, *Reading Research Quarterly, *21(4):360–407, doi:10.1598/RRQ.21.4.1.
-
-Whitbread D (2009) *The design manual*, 2nd edn, UNSW Press, Sydney.
-
-### Last updated
-
-This page was updated Monday 24 June 2024.

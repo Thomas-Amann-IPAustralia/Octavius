@@ -1,6 +1,8 @@
+# Quick guide: numbers
+
 Follow the rules for numbers to support accessibility and readability for users.
 
-You can download an accessible version of [ Quick guide: numbers [PDF 401 kB]](https://www.stylemanual.gov.au/sites/default/files/2025-08/Quick%20guide_numbers%20accessible%20PDF%20401%20kB.pdf ).
+You can download an accessible version of [*Quick guide: numbers* [PDF 401 kB]](https://www.stylemanual.gov.au/sites/default/files/2025-08/Quick%20guide_numbers%20accessible%20PDF%20401%20kB.pdf).
 
 The following rules apply to numbers in general content. They don't apply to numbers in technical or scientific material.
 

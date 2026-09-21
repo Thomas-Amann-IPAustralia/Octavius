@@ -162,10 +162,10 @@ not, shrinkage becomes necessary.
 ## Q6 — Should prose-derived candidates be extracted at all?
 
 **Status:** open. The extractor currently reads rules from headings only
-([ADR-002](02-decisions.md#adr-002-deterministic-candidate-identity)), yielding 546
+([ADR-002](02-decisions.md#adr-002-deterministic-candidate-identity)), yielding 661
 candidates. Rules stated only in body prose are missed.
 
-**Recommendation:** defer. Finish triage and Tier 0 on the 546 first, then measure
+**Recommendation:** defer. Finish triage and Tier 0 on the 661 first, then measure
 recall against `reference/octavius-v1/` — the v1 rulebook is retained precisely as a
 recall checklist. If a material set of real rules exists only in prose, add the
 `imperative_sentence` derivation pass (it is already a declared `derivation.method`, so
@@ -193,3 +193,48 @@ reproducible — which matters more than image size here.
 **What would settle it:** the measured p95 latency of Tier 0 + Tier 1 on a
 representative 1,000-word document on one free-tier vCPU. Until that number exists, the
 architecture keeps its options open and no more.
+
+---
+
+## Q8 — Should imperative detection use a POS tagger?
+
+**Status:** open, and the largest known source of missed rules.
+
+Rule candidates are identified by checking whether a heading opens with a verb from
+`derek/extract/data/imperative_verbs.txt`, a hand-curated list.
+[ADR-002](02-decisions.md#adr-002-deterministic-candidate-identity) chose a lexicon over
+a POS tagger because tagger output varies across model versions and would make candidate
+identity unstable.
+
+The [2026-09-21 audit](06-extraction-audit.md#3-a-10-recall-gap-in-imperative-detection)
+showed what that costs: **65 imperative headings filed as sections**, 50 of them purely
+because the verb was absent from the list. Real rules were missing — *"Join nouns with
+an en dash"*, *"Get permissions and licences for copyright material"*, *"Meet WCAG level
+AA"*. The list has been extended with all 47 verbs the audit found, but that fixes this
+snapshot, not the mechanism: the next Style Manual edit using an unlisted verb will
+silently drop a rule, and only another audit will reveal it.
+
+**Recommendation: replace the lexicon with a version-pinned POS tagger.** The
+determinism objection is weaker than it looked. It is really an objection to
+*uncontrolled* variation, and pinning solves that here exactly as it solves it for the
+HTML converter ([ADR-020](02-decisions.md#adr-020-heading-levels-come-from-the-dom),
+where `trafilatura`'s version was pinned for the same reason). A pinned spaCy model is a
+pure function: same version, same input, same tag. A model upgrade becomes a deliberate,
+reviewed event that produces an `extractor_upgrade`-style changeset — which the
+reconciler now handles as a *rehoming* rather than 500 fictional upstream edits.
+
+**Costs, which are real:**
+
+- `derek/extract/` is currently stdlib-only, deliberately, so the snapshot workflow does
+  not need the pipeline dependencies. spaCy plus a model is ~50 MB and breaks that.
+  Mitigation: run tagging in a separate authoring step that writes `statement_form` into
+  the ledger, keeping the runtime dependency-free.
+- The tagger has its own false positives. On this corpus it wrongly flags 9 noun
+  headings (`Summary`, `Comparative`, `Viewpoint`, `accept/except`) as imperatives.
+  Those would become candidates that triage rejects — cheap, and the opposite failure
+  (a silently dropped rule) is not.
+
+**What would settle it:** tag the whole corpus with a pinned model, diff the candidate
+set against the lexicon's, and count real gains against false positives. The audit
+tooling already does most of this. Until then the lexicon stands, with its limitation
+recorded in the file itself.

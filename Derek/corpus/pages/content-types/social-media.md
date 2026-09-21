@@ -1,4 +1,8 @@
+# Social media
+
 Social media can enhance your engagement with users and stakeholders. Identify the audience, purpose and platforms and design content for them.
+
+## Use social media to listen and engage
 
 Social media allows government to increase understanding of users and keep them informed.
 
@@ -23,9 +27,13 @@ Australian Government employees must follow the [Guidance for Australian Public 
 
 Content that you create as part of your work for the Australian Government becomes a record. Records provide evidence of what your organisation has done and why.
 
-Managing and disposing of records properly is a requirement under the [ Archives Act 1983](https://www.legislation.gov.au/Series/C2004A02796). You must follow your organisation’s information management requirements. Visit the National Archives of Australia website for:
+Managing and disposing of records properly is a requirement under the [*Archives Act 1983*](https://www.legislation.gov.au/Series/C2004A02796). You must follow your organisation’s information management requirements. Visit the National Archives of Australia website for:
 
-Define the audience before you write
+- [information management standards](https://www.naa.gov.au/information-management/information-management-standards)
+- [managing social media and instant messaging](https://www.naa.gov.au/information-management/manage-information-assets/types-information/managing-social-media-and-instant-messaging-im)
+- [social media policy and records management](https://www.naa.gov.au/information-management/types-information-and-systems/types-information/managing-social-media/your-social-media-policy-what-about-records).
+
+## Define the audience before you write
 
 Find out who will engage with your post and why before you start writing. Each social media platform has a different audience.
 
@@ -33,7 +41,7 @@ Each platform has its own analytics tool to help you learn about them.
 
 Ensure there's capacity to engage with comments and enquiries on your post.
 
-Design for each relevant platform
+## Design for each relevant platform
 
 Prepare content specifically for each platform. Check that a social media platform is the best option before you publish.
 
@@ -42,9 +50,11 @@ Prepare content specifically for each platform. Check that a social media platfo
 
 Not every platform is appropriate for every message.
 
-Content needs to be accessible no matter which platform you use, including [video and audio content](/node/42).
+Content needs to be accessible no matter which platform you use, including [video and audio content](https://www.stylemanual.gov.au/node/42).
 
 The following platforms are currently popular in government and the Australian community.
+
+### LinkedIn
 
 Business, government and industry use LinkedIn for professional networking. LinkedIn is suitable for publishing:
 
@@ -69,6 +79,8 @@ You need no more than 2 hashtags. Too many hashtags makes your content difficult
 Use ‘camel case’ for compound hashtags. The first letter of each word in the hashtag starts with a capital letter – for example, #SelfQuarantine.
 
 Address other users with the @ sign before their username. Remember, these tweets are public and visible.
+
+### Facebook
 
 People use Facebook for personal social networking, business promotion, entertainment and news. Do not publish technical content on Facebook.
 
@@ -102,6 +114,8 @@ YouTube videos should:
 - include a compelling title
 - include a poster frame – a still image that acts as a thumbnail for the video.
 
+### Instagram
+
 People use Instagram for entertainment, news, lifestyle, social networking and business. It is popular in the technical and design communities.
 
 Share photographs and short videos on Instagram. Showcase interesting people, places and technology.
@@ -113,7 +127,7 @@ Instagram content should either:
 
 Links don’t work well on Instagram. Include all your information in the post rather than linking to websites.
 
-Use plain language and the right tone
+## Use plain language and the right tone
 
 Use plain language and a conversational, positive tone on social media. Avoid jargon and acronyms.
 
@@ -136,19 +150,19 @@ Use emojis, not emoticons. Emojis are [standardised pictographs](https://home.un
 
 Choose common emojis and make sure the user can understand the message if the emoji is removed.
 
-Content needs respect all people, their rights and their heritage. Use inclusive imagery and [inclusive language](/node/178).
+Content needs respect all people, their rights and their heritage. Use inclusive imagery and [inclusive language](https://www.stylemanual.gov.au/node/178).
 
-Include images and video that enhance the message
+## Include images and video that enhance the message
 
 Social media is a visual-first, mobile-first medium. Plan content with this in mind.
 
-Use video and images as the basis of your content wherever possible. Visual content needs to be timely, relevant and engaging. Set the video [aspect and resolution for the user’s device](/node/41#set_the_video_aspect_and_resolution_for_the_users_device).
+Use video and images as the basis of your content wherever possible. Visual content needs to be timely, relevant and engaging. Set the video [aspect and resolution for the user’s device](https://www.stylemanual.gov.au/node/41#set_the_video_aspect_and_resolution_for_the_users_device).
 
 Use alt text and closed captions, or provide a link to content with these elements. Also ensure you include any text in the image that is in the text of the post itself.
 
-Follow your organisation’s [branding guidelines](/node/41#apply_government_branding_to_all_audio_and_video). Official photography should carry your organisation’s mark or logo in the bottom right-hand corner.
+Follow your organisation’s [branding guidelines](https://www.stylemanual.gov.au/node/41#apply_government_branding_to_all_audio_and_video). Official photography should carry your organisation’s mark or logo in the bottom right-hand corner.
 
-You might need to use release forms before you use anyone’s image in any social media platform. Before you post, [check if you have the right permissions](/node/41#get_permissions_and_licences_for_copyright_material).
+You might need to use release forms before you use anyone’s image in any social media platform. Before you post, [check if you have the right permissions](https://www.stylemanual.gov.au/node/41#get_permissions_and_licences_for_copyright_material).
 
 ### Accessibility requirements
 
@@ -160,23 +174,28 @@ User needs:
 Fundamentals:
 
 - Include images, video and audio on a page only if they meet a real user need. Make sure the contrast is sufficient for all users.
-- Prepare
-.__alt text for images__ - Follow the
-[requirements for video and audio](/node/41).
+- Prepare [alt text for images](https://www.stylemanual.gov.au/node/49).
+- Follow the [requirements for video and audio](https://www.stylemanual.gov.au/node/41).
 
 Web Content Accessibility Guidelines success criteria:
 
+- [1.1.1 Non-text content – level A](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)
+- [1.4.2 Contrast (minimum) – level AA](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum)
+- [1.4.5 Images of text - level AA](https://www.w3.org/WAI/WCAG21/quickref/#images-of-text)
+- [1.4.6 Contrast (extended) – level AAA](https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced)
+- [1.4.11 Non-text contrast – level AA](https://www.w3.org/WAI/WCAG21/quickref/#non-text-contrast)
+
 #### Copyright requirements
 
-You must [get permission (a licence) to use copyright material](/node/41#get_permissions_and_licences_for_copyright_material). This includes video and images.
+You must [get permission (a licence) to use copyright material](https://www.stylemanual.gov.au/node/41#get_permissions_and_licences_for_copyright_material). This includes video and images.
 
 Some material is available under an open access licence, such as [Creative Commons](https://creativecommons.org.au/).
 
-You must [attribute copyright material](/node/174).
+You must [attribute copyright material](https://www.stylemanual.gov.au/node/174).
 
-Read the government copyright rules in the [ Australian Government intellectual property manual](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual).
+Read the government copyright rules in the [*Australian Government intellectual property manual*](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual).
 
-Post content at the times that suit the audience
+## Post content at the times that suit the audience
 
 Timing is a critical component of successful content. Post when something is still fresh and people are still interested. It is this immediacy that gives you authority when you publish something to social media.
 
@@ -184,6 +203,8 @@ Publish on a schedule that is appropriate for the platform, but only if you have
 
 - you publish too often
 - your content is not well written or newsworthy.
+
+## Manage risk with a social media policy
 
 Social media encourages people to engage in a discussion with your organisation. Have a social media policy with a clear framework for what is and what is not acceptable behaviour.
 
@@ -204,64 +225,12 @@ Be aware of privacy concerns and offensive material on social media.
 
 ### Privacy requirements
 
-Your organisation has obligations under the [ Privacy Act 1988](https://www.oaic.gov.au/privacy/the-privacy-act/).
+Your organisation has obligations under the [*Privacy Act 1988*](https://www.oaic.gov.au/privacy/the-privacy-act/).
 
 Privacy is relevant whenever it’s possible to identify someone. Treat things that can or might identify an individual as personal information. A social media post might feature someone’s picture as an image or in a video, for example.
 
 When you handle personal information, you must comply with the [Australian Privacy Principles](https://www.oaic.gov.au/privacy/australian-privacy-principles/). Personal information is any information that could identify an individual and apply to any format.
 
-The Privacy Act and Privacy Principles also apply to any personal information you collect from a social media platform. People have the right to request access to their personal information under the Privacy Principles and the *Freedom of Information Act 1982**.*
+The Privacy Act and Privacy Principles also apply to any personal information you collect from a social media platform. People have the right to request access to their personal information under the Privacy Principles and the [*Freedom of Information Act 1982*](https://www.legislation.gov.au/Series/C2004A02562)*.*
 
 The federal regulator for privacy and freedom of information legislation is the [Office of the Australian Information Commissioner](https://www.oaic.gov.au/).
-
-Release notes
-
-Guidance on social media is new to the digital edition. It covers why and how to use social media, including how to choose a platform, and how to manage it.
-
-About this page
-
-### References
-
-ACT Government (n.d.) [ Social media community guidelines](https://www.act.gov.au/social-media-community-guidelines), ACT Government website, accessed 22 December 2022.
-
-Arch A and Pulis S (2019) *How to write more accessible social media posts*, Australian Network on Disability blog, accessed 13 June 2019.
-
-Australian Government (n.d.) [ Social media moderation guidelines](https://www.australia.gov.au/socialmedia), Australia.gov.au, accessed 19 December 2022.
-
-Australian Public Service Commission (2020), [ APS values](https://www.apsc.gov.au/aps-values-1), APSC website, accessed 12 December 2022. [
-
-[, s 10.]](https://www.legislation.gov.au/Series/C2004A00538)
-
-*Public Service Act 1999*Clement J (2020) [ Device usage of Facebook users worldwide as of July 2020](https://www.statista.com/statistics/377808/distribution-of-facebook-users-by-device/), Statista website, accessed 16 September 2020.
-
-Content Design London (2019) ‘[Social media](https://readabilityguidelines.co.uk/audiences-devices-channels/social-media/)’, *Content Design London readability guidelines*, Content Design London website, accessed 16 May 2020.
-
-Facebook for Business (21 April 2019) ‘[Capturing attention in feed: the science behind effective video creative](https://www.facebook.com/business/news/insights/capturing-attention-feed-video-creative)’, *Facebook for Business*, accessed 14 September 2020.
-
-GOV.UK (2018) [ Social media playbook](https://www.gov.uk/guidance/social-media-playbook), GOV.UK, accessed 20 November 2019.
-
-Lynch PJ and Horton S (2016) *Web style guide*, 4th edn, Yale University Press, New Haven and London.
-
-NSW Government (2022) [ Social media guidelines](https://www.nsw.gov.au/nsw-government-communications/social-media-guidelines), NSW Government website, accessed 21 December 2022.
-
-Queensland Government (2021) [ Use social media](https://www.forgov.qld.gov.au/use-social-media), For government website, accessed 22 December 2022.
-
-Social Media News Australia (2020) [ Social media statistics](https://www.socialmedianews.com.au/social-media-statistics/), SocialMediaNews.com.au, accessed 21 May 2020.
-
-South Australian Government (2022) [ Electronic communication](https://www.dpc.sa.gov.au/responsibilities/ict-digital-cyber-security/policies-and-guidelines/electronic-communication), Department of the Premier and Cabinet website, accessed 22 December 2022.
-
-South Australian Government (2021) ‘[Social media](https://www.accessibility.sa.gov.au/your-role/content/social-media)’, *Online accessibility toolkit*, SA.GOV.AU, accessed 22 December 2022.
-
-Tasmanian Government (2021) [ Social media](http://www.communications.tas.gov.au/channels/social_media), Tasmanian Government Communications website, accessed 21 December 2022.
-
-Victorian Government (2022) ‘[Use social media: digital guide](https://www.vic.gov.au/use-social-media)’, *Digital guides*, vic.gov.au, accessed 21 December 2022.
-
-Western Australian Government (2019) [ Social media guidelines](https://www.wa.gov.au/government/publications/social-media-guidelines), WA.gov.au, accessed 12 December 2022.
-
-### Co-created by
-
-- This page was co-created by Digital Transformation Agency.
-
-### Last updated
-
-This page was updated Thursday 12 December 2024.

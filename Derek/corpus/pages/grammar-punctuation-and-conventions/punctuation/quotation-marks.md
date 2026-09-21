@@ -1,6 +1,8 @@
+# Quotation marks
+
 Quotation marks draw attention to words and reference certain kinds of titles. Write most direct speech in single quote marks. For long quotes, use block quotations without quotation marks.
 
-Quote direct speech in single quote marks
+## Quote direct speech in single quote marks
 
 Single quotation marks are also known as ‘quote marks’, ‘quotes’, ‘speech marks’ or ‘inverted commas’.
 
@@ -45,7 +47,7 @@ If you use ellipses for omitted words, ensure that the omission won’t mislead 
 - He said, ‘I don’t agree with the proposal.’
 - He said, ‘I … agree with the proposal.’
 
-If the quotation needs the information for context, add specific detail in [square brackets](/node/111#square_brackets_can_enclose_extra_information_within_parentheses). You must be sure that the specific detail is correct and that it retains the meaning intended by the original speaker.
+If the quotation needs the information for context, add specific detail in [square brackets](https://www.stylemanual.gov.au/node/111#square_brackets_can_enclose_extra_information_within_parentheses). You must be sure that the specific detail is correct and that it retains the meaning intended by the original speaker.
 
 #### Example
 
@@ -83,14 +85,14 @@ The President said, ‘The Prime Minister told me “No”, so I’m working on 
 
 The President said, “The Prime Minister told me ‘No,’ so I’m working on an updated plan.”
 
-Format long quotes as block quotations with no quotation marks
+## Format long quotes as block quotations with no quotation marks
 
 Quotations that are longer than about 30 words are:
 
 - usually indented from the text margin
 - sometimes set in a smaller font size or a different font.
 
-When they are set like this, they are called* *‘block quotations’.
+When they are set like this, they are called‘block quotations’.
 
 Don’t use quotation marks to identify the quoted material – the formatting does that instead. Block quotations should also be coded with the HTML <blockquote> element.
 
@@ -98,8 +100,7 @@ Don’t use quotation marks to identify the quoted material – the formatting d
 
 As Templeton (2019) writes:
 
-According to the ACT Auditor-General, the transport benefits from the project are projected to be lower than the costs. She noted other benefits that had been included by the ACT Government to justify the project.
-
+> According to the ACT Auditor-General, the transport benefits from the project are projected to be lower than the costs. She noted other benefits that had been included by the ACT Government to justify the project.
 
 To include several paragraphs of quoted speech without the attribution tag, such as in a media release, use a quotation mark:
 
@@ -111,7 +112,7 @@ To include several paragraphs of quoted speech without the attribution tag, such
 - Dr Nicoll said, ‘My experience as a public servant helped me learn how to run workshops.
 - ‘My experience also helps me make my workshops practical.’
 
-Write speech in transcripts and plays with no quotation marks
+## Write speech in transcripts and plays with no quotation marks
 
 Quotation marks are unnecessary in transcripts and plays if the name of the speaker comes before the direct speech.
 
@@ -128,9 +129,9 @@ Q. Have you ever been convicted of an offence, other than a parking or speeding 
 
 A. No.
 
-Refer to certain kinds of titles using quotation marks
+## Refer to certain kinds of titles using quotation marks
 
-When referring to these titles, use quotation marks in [references and citations](/node/181):
+When referring to these titles, use quotation marks in [references and citations](https://www.stylemanual.gov.au/node/181):
 
 - a chapter in a book or report
 - an article in a periodical
@@ -143,7 +144,7 @@ When referring to these titles, use quotation marks in [references and citations
 
 Read the chapter titled ‘Number and natural language’ in *The innate mind: structure and contents.* It describes how people learn to recognise numbers.
 
-Draw attention to words using quotation marks
+## Draw attention to words using quotation marks
 
 You can use quotation marks instead of italics to make words stand out from your sentence. Examples include:
 
@@ -162,7 +163,7 @@ Another use of quotation marks is for words introduced by expressions such as �
 - The survey used the term ‘companion animal’ to describe assistance dogs in workplaces.
 - He said the new policy was ‘obviously a great success’ and then explained its many failings.
 
-Keep quoted punctuation marks in the quote
+## Keep quoted punctuation marks in the quote
 
 Punctuation in and after quotation marks depends on the punctuation of the quoted text and how it is used in the content.
 
@@ -188,7 +189,7 @@ If the punctuation mark is part of the sentence outside the quoted text, it foll
 - Many things have been called ‘the new black’, but they usually fade to grey.
 - Did the complainant at any time ask you to ‘Please turn down the noise’?
 
-Quoted material can appear as parenthetical information, enclosed in [parentheses,](/node/111#parentheses_enclose_extra_information) [dashes](/node/199) or [commas](/node/109). In these cases, place the quotation marks inside the sentence punctuation.
+Quoted material can appear as parenthetical information, enclosed in [parentheses,](https://www.stylemanual.gov.au/node/111#parentheses_enclose_extra_information) [dashes](https://www.stylemanual.gov.au/node/199) or [commas](https://www.stylemanual.gov.au/node/109). In these cases, place the quotation marks inside the sentence punctuation.
 
 ### Example
 
@@ -220,55 +221,5 @@ The surrounding text determines the font (roman, italic, or bold) of the quotati
 
 ### Example
 
-- She described it as ‘
-*weird*’. [The quotation marks are in roman even though ‘weird’ is in italics.] - ‘Wow,’ he said. [Both the quote marks and the quote are in roman type.]
-
-Release notes
-
-The digital edition revises advice about punctuation used with quotation marks. It departs from advice in the sixth edition about the position of punctuation and quotation marks in sentences interrupted by expressions, such as ‘they said’.
-
-The sixth edition recommended the comma be placed outside the quotation mark, before the expression*.* The digital edition recommends the comma be placed inside the quotation mark: the quotation mark comes directly before the expression*.*
-
-The Content Guide had advice on the use of single and double quotation marks, with which the digital edition is consistent.
-
-About this page
-
-### Evidence
-
-Oxford University Press (2016) ‘9.2 Layout of quoted text’, *New Oxford style manual*, Oxford University Press, Oxford.
-
-University of Chicago (2017) ‘6.40 Commas with quotations’, *Chicago manual of style, *17th edn, University of Chicago Press, Chicago.
-
-### References
-
-Dixon JC and Bolitho B (2005–2019) *Course notes and exercises: editing and proofreading for the workplace*, Centre for Continuing Education, Australian National University, Canberra.
-
-Houston K (2015) [The long and fascinating history of quotation marks](https://slate.com/human-interest/2015/01/quotation-marks-long-and-fascinating-history-includes-arrows-diples-and-inverted-commas.html)’, *Slate*, accessed 20 February 2020*.*
-
-Microsoft Corporation (2019) [ Keyboard shortcuts in Word: insert international characters](https://support.office.com/en-us/article/keyboard-shortcuts-in-word-95ef89dd-7142-4b50-afb2-f762f663ceb2#bkmk_languageswin), Microsoft website, accessed 1 December 2019.
-
-Mozilla (n.d.) ‘<[blockquote>: the block quotation element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote)’, *HTML elements*, MDN Web Docs website, accessed 3 December 2020.
-
-Murphy EM and Cadman H (2014) *Effective writing: plain English at work*, 2nd edn, Lacuna, 2014.
-
-Owen M (2018) [ How to type accented letters in macOS three different ways](https://appleinsider.com/articles/18/03/16/how-to-type-accented-letters-in-macos-three-different-ways), appleinsider website, accessed 4 December 2019.
-
-Oxford University Press (2016) ‘Quotations and direct speech’, *New Oxford style manual*, Oxford University Press, Oxford.
-
-Seely J (2001) *Oxford everyday grammar*, Oxford University Press, Oxford.
-
-Stilman S (2004) *Grammatically correct*, Writer’s Digest Books, Ohio.
-
-Truss L (2003) *Eats, shoots and leaves: the zero tolerance approach to punctuation*, Profile Books, London, 2003.
-
-The Unicode Consortium (2019) [ Unicode](https://home.unicode.org/), Unicode website, accessed 2 December 2019.
-
-University of Chicago (2017) ‘6.115: “Smart” quotation marks’, *Chicago manual of style, *17th edn, University of Chicago Press, Chicago.
-
-World Wide Web Consortium (W3C (n.d.) ‘[HTML <blockquote> tag](https://www.w3schools.com/tags/tag_blockquote.asp)’, W3CSchools website, accessed 3 December 2020.
-
-Whitbread D (2009) *Design manual, *2nd edn, UNSW Press, Sydney, Australia.
-
-### Last updated
-
-This page was updated Wednesday 19 March 2025.
+- She described it as ‘*weird*’. [The quotation marks are in roman even though ‘weird’ is in italics.]
+- ‘Wow,’ he said. [Both the quote marks and the quote are in roman type.]

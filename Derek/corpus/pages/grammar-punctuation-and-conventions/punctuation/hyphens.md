@@ -1,6 +1,8 @@
+# Hyphens
+
 Hyphens connect words and prefixes so meaning is clear. Refer to your organisation’s preferred dictionary when you are not sure if you need to use a hyphen for spelling.
 
-Follow hyphenation rules in the dictionary your organisation uses
+## Follow hyphenation rules in the dictionary your organisation uses
 
 Hyphens clarify meaning by connecting words and parts of words into a single unit of meaning. Use hyphens to avoid ambiguity.
 
@@ -13,7 +15,7 @@ There are few firm rules about using hyphens, and dictionaries do not always agr
 
 Use the dictionary your organisation recommends and follow its hyphenation practices.
 
-Follow the accepted naming conventions for [compass points](/node/135), [names of people](/node/90) and [names of places](/node/134).
+Follow the accepted naming conventions for [compass points](https://www.stylemanual.gov.au/node/135), [names of people](https://www.stylemanual.gov.au/node/90) and [names of places](https://www.stylemanual.gov.au/node/134).
 
 ### Print considerations
 
@@ -33,7 +35,7 @@ Don’t include extra hyphens if you need to break up URLs or email addresses. P
 
 Use the part of the word before the hyphen to suggest the rest of the word. Consider the vowels and consonants when breaking words over a line.
 
-Write certain prefixes with a hyphen
+## Write certain prefixes with a hyphen
 
 Hyphens are useful in some sets of words formed with prefixes such as:
 
@@ -173,10 +175,9 @@ Use a hyphen if a prefix is followed by a number or an expression that’s in it
 #### Example
 
 - post-1960
-- the PNG Government’s anti-
-*raskol*measures
+- the PNG Government’s anti-*raskol* measures
 
-Write most suffixes without hyphens
+## Write most suffixes without hyphens
 
 Suffixes are normally attached directly to the base word without any hyphen. The commonest suffixes include:
 
@@ -213,11 +214,11 @@ Always use a hyphen with the suffix ‘-odd’, whether it’s with a word or nu
 
 There were 150-odd competitors.
 
-Hyphenate some but not all compound words
+## Hyphenate some but not all compound words
 
 A compound word consists of 2 or more words that carry a new meaning when used together.
 
-Hyphens link elements of compound words as a phrase, but usually only when they are used before a noun as [adjectives](/node/126). Don’t use hyphens when the phrase is after the noun in the [sentence structure](/node/204).
+Hyphens link elements of compound words as a phrase, but usually only when they are used before a noun as [adjectives](https://www.stylemanual.gov.au/node/126). Don’t use hyphens when the phrase is after the noun in the [sentence structure](https://www.stylemanual.gov.au/node/204).
 
 ### Example
 
@@ -225,7 +226,7 @@ Hyphens link elements of compound words as a phrase, but usually only when they 
 - ‘small-business owners’, but ‘owners of small businesses’
 - ‘an 11-year-old child, but ‘a child who is 11 years old’
 
-Don’t confuse hyphens with [dashes](/node/199).
+Don’t confuse hyphens with [dashes](https://www.stylemanual.gov.au/node/199).
 
 ### Compound nouns
 
@@ -262,12 +263,12 @@ For adverb–verb combinations, you don’t need a hyphen.
 Only a few compound nouns made up of a verb and a noun need hyphens. The following table has some examples, but use a dictionary if you are not sure.
 
 | Verb and noun combination | Hyphenation | Example |
-|---|---|---|
+| --- | --- | --- |
 | Verb with no suffix and noun (in either order) | one word, no hyphen | stingray, roadblock |
 | Verb ending in ‘-ing’ or ‘-ed’ and noun | 2 words, no hyphen | flying doctor, shredded paper |
 | Single-syllable noun and verb ending in ‘-ing’ or ‘-ed’ | one word, no hyphen | stocktaking, bookmarked |
-| Multi-syllable noun and verb ending in ‘-ing’ or ‘-ed’
-* |
+| Multi-syllable noun and verb ending in ‘-ing’ or ‘-ed’* | Use a hyphen or use 2 separate words (check a dictionary) | profit-taking, potato growing |
+| * The endings ‘-ing’ or ‘-ed’ show when the verb happened. Verbs with these endings are called ‘inflected verbs’. In this example, the verb ‘fly’ becomes ‘flying’, ‘shred’ becomes ‘shredded’. |  |  |
 
 #### Noun-plus-noun combinations
 
@@ -382,7 +383,7 @@ Don’t hyphenate a compound adjective made up of an adverb–verb combination i
 
 #### Numbers and fractions
 
-Use hyphens for compound adjectives involving [numerals, spelt-out numbers](/node/198) and [ordinal numbers](/node/162).
+Use hyphens for compound adjectives involving [numerals, spelt-out numbers](https://www.stylemanual.gov.au/node/198) and [ordinal numbers](https://www.stylemanual.gov.au/node/162).
 
 ##### Example
 
@@ -398,7 +399,7 @@ If you need to write out numbers as words rather than numerals, use hyphens to l
 - two hundred and thirty-four
 - ninety-nine
 
-Hyphens link parts of a [fraction](/node/146).
+Hyphens link parts of a [fraction](https://www.stylemanual.gov.au/node/146).
 
 ##### Example
 
@@ -412,8 +413,8 @@ Compound adjectives containing capital letters, italics or quotation marks are n
 ##### Example
 
 - a High Court decision
-- an
-*in situ*inspection - a ‘do or die’ attitude
+- an *in situ* inspection
+- a ‘do or die’ attitude
 
 ### Compound verbs
 
@@ -442,7 +443,7 @@ Write compound adverbs as one word.
 - downstream
 - overboard
 
-Repeat words instead of using a hanging hyphen
+## Repeat words instead of using a hanging hyphen
 
 Hanging (or floating) hyphens connect 2 words to a base word or a number that they share.
 
@@ -458,9 +459,9 @@ This can be difficult to follow, so it's clearer to repeat the words.
 
 full-time and part-time positions
 
-Don’t hyphenate ‘-ing’ and ‘-ed’ verbs or most ‘-ly’ adverbs
+## Don’t hyphenate ‘-ing’ and ‘-ed’ verbs or most ‘-ly’ adverbs
 
-Don’t use a hyphen in most compounds consisting of an [adverb](/node/127) ending in ‘-ly’ and a participle (a part of a [verb](/node/128) ending in ‘-ing’ or ‘-ed’).
+Don’t use a hyphen in most compounds consisting of an [adverb](https://www.stylemanual.gov.au/node/127) ending in ‘-ly’ and a participle (a part of a [verb](https://www.stylemanual.gov.au/node/128) ending in ‘-ing’ or ‘-ed’).
 
 ### Correct
 
@@ -478,37 +479,3 @@ The only exceptions are 2 formations using the adverb ‘fully’*:*
 
 - ‘fully-fashioned’
 - ‘fully-fledged’.
-
-Release notes
-
-The digital edition consolidates information in the Content Guide and the sixth edition. It provides examples of correct and incorrect use.
-
-The sixth edition had information about hyphens, concentrated in the ‘spelling and word punctuation’ section.
-
-The Content Guide had brief information about hyphens, including in relation to spelling for particular terms.
-
-About this page
-
-### References
-
-American Psychological Association (2020) ‘Mechanics of style’, *Publication manual of the American Psychological Association*, 7th edn, American Psychological Association, Washington DC.
-
-Dixon JC and Bolitho B (2005–2019) Course notes and exercises: editing and proofreading for the workplace, Centre for Continuing Education, Australian National University, Canberra.
-
-European Commission (2020) *English style guide: a handbook for authors and translators in the European Commission*, European Commission.
-
-Murphy EM with Cadman H (2014) Effective writing: plain English at work, 2nd edn, Lacuna, Westgate.
-
-Oxford University Press (2016) ‘Punctuation’, *New Oxford style manual*, Oxford University Press, Oxford.
-
-Seely J (2001) *Oxford everyday grammar*, Oxford University Press, Oxford.
-
-Stilman A (2004) *Grammatically correct*, Writer’s Digest Books, Ohio.
-
-Truss L (2003) *Eats, shoots and leaves: the zero tolerance approach to punctuation*, Profile Books, London.
-
-University of Chicago (2017) ‘Punctuation’, *Chicago manual of style*, 17th edn, University of Chicago Press, Chicago.
-
-### Last updated
-
-This page was updated Tuesday 21 May 2024.

@@ -1,6 +1,8 @@
+# Question marks
+
 Users expect direct questions and requests to end with a question mark. Indirect questions, commands and rhetorical questions can take other punctuation.
 
-Question marks usually go after the last letter in a sentence
+## Question marks usually go after the last letter in a sentence
 
 Like other punctuation marks, question marks stay with the text they refer to. Usually, this is immediately after the last letter of the last word of the sentence.
 
@@ -35,7 +37,7 @@ John Limeburner (?1743–1785) was a convict who arrived in Australia on the Fir
 
 Pery Baylee (1784–?) was commandant of Macquarie Harbour penal station in Van Diemen’s Land from 1831 to 1833.
 
-Direct questions and requests end in a question mark
+## Direct questions and requests end in a question mark
 
 Direct questions end with a question mark. Most begin with one of these words:
 
@@ -76,7 +78,7 @@ Requests are often framed as questions. Requests suggest that people have the op
 - Can you consider who your future colleagues might be?
 - Can you please upload your edits?
 
-Indirect questions and commands don’t use a question mark
+## Indirect questions and commands don’t use a question mark
 
 Indirect questions don’t end with question marks, even if they include a word such as ‘who’ or ‘does’.
 
@@ -101,11 +103,11 @@ To turn indirect questions into direct questions you can:
 - Who are we?
 - How do I submit a claim?
 
-Guidance in this manual recommends to [avoid questions as headings](/node/51#write_headings_that_are_clear_and_short), except for [Easy Read materials](/node/63).
+Guidance in this manual recommends to [avoid questions as headings](https://www.stylemanual.gov.au/node/51#write_headings_that_are_clear_and_short), except for [Easy Read materials](https://www.stylemanual.gov.au/node/63).
 
 Spellcheckers often recommend that you change indirect questions to end with a question mark. This isn’t always correct. It depends on whether you *are* asking a question.
 
-Instructions and commands aren’t framed as questions. They don’t start with words such as ‘what’, ‘are’ or ‘does’,* *and don’t end with a question mark.
+Instructions and commands aren’t framed as questions. They don’t start with words such as ‘what’, ‘are’ or ‘does’,and don’t end with a question mark.
 
 Commands and instructions don’t suggest that people have a choice.
 
@@ -114,7 +116,7 @@ Commands and instructions don’t suggest that people have a choice.
 - Consider who your future colleagues might be.
 - Please upload your edits.
 
-Rhetorical questions end in a question mark or exclamation mark
+## Rhetorical questions end in a question mark or exclamation mark
 
 Depending on the context, a rhetorical question can end in a question mark or an exclamation mark. Exclamation marks add emphasis – this can make a rhetorical question sound blunt.
 
@@ -122,27 +124,3 @@ Depending on the context, a rhetorical question can end in a question mark or an
 
 - Will you ever stop asking questions?
 - Will you ever stop asking questions!
-
-Release notes
-
-The digital edition has targeted advice on how to use a question mark. It has the same information as the sixth edition but provides more examples to help users.
-
-The Content Guide had no specific guidance about question marks.
-
-About this page
-
-### References
-
-Dixon JC and Bolitho B (2005–2019) *Course notes and exercises: editing and proofreading for the workplace*, Centre for Continuing Education, Australian National University, Canberra.
-
-Murphy EM with Cadman H (2014) *Effective writing: plain English at work*, 2nd edition, Lacuna, Westgate.
-
-Seely J (2001) *Oxford everyday grammar*, Oxford University Press, Oxford.
-
-Stilman S (2004) *Grammatically correct*, Writer’s Digest Books, Ohio.
-
-Truss L (2003) *Eats, shoots and leaves: the zero tolerance approach to punctuation*, Profile Books, London.
-
-### Last updated
-
-This page was updated Monday 6 September 2021.

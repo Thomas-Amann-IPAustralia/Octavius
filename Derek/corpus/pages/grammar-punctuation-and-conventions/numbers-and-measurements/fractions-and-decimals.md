@@ -1,10 +1,12 @@
+# Fractions and decimals
+
 Decimals are useful when people need a precise value. Fractions are useful when an exact value is not important.
 
-Choose between a decimal value or fraction
+## Choose between a decimal value or fraction
 
 You can express a less-than-whole number as a decimal or as a fraction.
 
-In text, write [decimal values as numerals](/node/198#write_all_numbers_as_numerals_in_these_specific_situations). Write [fractions as words](/node/198#use_words_for_2_and_above_in_these_specific_situations).
+In text, write [decimal values as numerals](https://www.stylemanual.gov.au/node/198#write_all_numbers_as_numerals_in_these_specific_situations). Write [fractions as words](https://www.stylemanual.gov.au/node/198#use_words_for_2_and_above_in_these_specific_situations).
 
 ### Example
 
@@ -28,7 +30,7 @@ Use fractions when:
 - About two-thirds of staff attended last week's meeting.
 - The dam was three-quarters full.
 
-Use ‘0’ before a decimal point for values less than one
+## Use ‘0’ before a decimal point for values less than one
 
 Decimal values less than one have a ‘0’ before the decimal point.
 
@@ -49,33 +51,3 @@ Always use a full stop, not a comma, for the decimal point. This is the style fo
 ### Incorrect
 
 2,5687
-
-Release notes
-
-The digital edition updates guidance on fractions and decimals. It recommends using words for fractions in most cases. Decimals are expressed as numerals, consistent with the sixth edition. Decimals are also covered in guidance about currency.
-
-The sixth edition makes a distinction between decimal and non-decimal fractions. The digital edition does not make this distinction. The sixth edition recommended using words when expressing imprecise non-decimal fractions (for example, ‘three-quarters’). This is consistent with the digital edition guidance for fractions.
-
-The Content Guide had no advice on the use of fractions and decimals.
-
-About this page
-
-### References
-
-American Psychological Association (2020) ‘Numbers’, *Publication manual of the American Psychological Association, *7th edn, American Psychological Association, Washington DC
-
-BBC Academy (21 July 2013) ‘Numbers’, *BBC Academy*, accessed 4 June 2020.
-
-Btb Translation Bureau (2020) ‘[Numerical expressions](https://www.btb.termiumplus.gc.ca/tcdnstyl-chap?lang=eng&lettr=chap_catlog&info0=5#zz5)’, *The Canadian style*, Btb Translation Bureau website, accessed 4 June 2020.
-
-GOV.UK (2016) ‘[A-to-Z: numbers](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#m)’, *Style guide*, GOV.UK, accessed 4 June 2020.
-
-Oxford University Press (2016) ‘11.1.6: Fractions and decimals’, *New Oxford style manual*, Oxford University Press, Oxford.
-
-The Unicode Consortium (2020) ‘Latin-1 punctuation’, [ Unicode 13.0 character code charts](https://www.unicode.org/charts/) Unicode website, accessed 4 June 2020.
-
-The Unicode Consortium (2020) ‘Number forms’, [ Unicode 13.0 character code charts](https://www.unicode.org/charts/), Unicode website, accessed 4 June 2020.
-
-### Last updated
-
-This page was updated Tuesday 23 August 2022.

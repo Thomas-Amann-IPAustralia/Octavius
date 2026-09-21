@@ -1,6 +1,8 @@
+# Reports
+
 Create complete reports with a landing page, preliminary content, body and endmatter. Include other parts if the report needs to be tabled in parliament.
 
-Order the parts of the report
+## Order the parts of the report
 
 There are conventions that apply to how the information in reports should appear.
 
@@ -13,7 +15,7 @@ The basic parts of a report are:
 
 The type of report will determine what to include and where.
 
-Consider publishing format
+## Consider publishing format
 
 Most government reports are published online, either as HTML or downloadable files. Consider user needs and compliance requirements when deciding on format.
 
@@ -30,17 +32,24 @@ There may be a user need or compliance requirement to publish a PDF or printed r
 
 User needs:
 
-For a better understanding of user needs and accessibility, refer to the [overview on accessibility](/node/218).
+For a better understanding of user needs and accessibility, refer to the [overview on accessibility](https://www.stylemanual.gov.au/node/218).
 
-You must make all government content accessible to people with disability. This is part of Australian law under the [ Disability Discrimination Act 1992](https://www.legislation.gov.au/Series/C2004A04426).
+You must make all government content accessible to people with disability. This is part of Australian law under the [*Disability Discrimination Act 1992*](https://www.legislation.gov.au/Series/C2004A04426).
 
 Guidance on EPUB and PDF accessibility:
 
-Check the rules for tabling reports
+- [Overview of the EPUB specification](https://inclusivepublishing.org/publisher/epub/)
+- [EPUB accessibility](http://kb.daisy.org/publishing/docs/conformance/epub.html)
+- [PDF techniques for WCAG 2.0 – W3C](https://www.w3.org/TR/WCAG20-TECHS/pdf.html)
+- [General techniques for WCAG 2.0 – W3C](https://www.w3.org/TR/WCAG20-TECHS/general.html)
+- [Accessibility for Adobe Acrobat – Adobe](https://www.adobe.com/accessibility/products/acrobat.html)
+- [Accessibility for Adobe InDesign – Adobe](https://www.adobe.com/accessibility/products/indesign.html)
+
+## Check the rules for tabling reports
 
 There are rules for presenting documents in the Australian Parliament. Presenting documents is called ‘tabling’.
 
-The rules are set out in the [ Tabling guidelines](https://www.pmc.gov.au/resource-centre/government/tabling-guidelines). The guidelines apply to most documents, including:
+The rules are set out in the [*Tabling guidelines*](https://www.pmc.gov.au/resource-centre/government/tabling-guidelines). The guidelines apply to most documents, including:
 
 - annual reports
 - reports of royal commissions
@@ -72,11 +81,9 @@ You must use the Protective Security Policy Framework (PSPF) when preparing gove
 
 Information (including reports) that you create for the Australian Government become records. Records provide evidence of what your organisation has done and why.
 
-Managing and disposing of records properly is a requirement under the [ Archives Act 1983](https://www.legislation.gov.au/Series/C2004A02796). You must follow your organisation’s information management requirements. Visit the National Archives of Australia website for
+Managing and disposing of records properly is a requirement under the [*Archives Act 1983*](https://www.legislation.gov.au/Series/C2004A02796). You must follow your organisation’s information management requirements. Visit the National Archives of Australia website for [information management standards](https://www.naa.gov.au/information-management/information-management-standards).
 
-[information management standards](https://www.naa.gov.au/information-management/information-management-standards).
-
-Use the landing page or cover to identify the report
+## Use the landing page or cover to identify the report
 
 All reports have a landing page or cover (if printed). Use these to give an overview of the report so people can decide if they want to download or read it.
 
@@ -102,7 +109,7 @@ Dust jackets protect a printed work and advertise it.
 - The flaps often contain blurbs about the publication and author.
 - If more than about 5 millimetres wide, the spine shows the title, author and publisher’s logo. The words always run across or down the spine.
 
-Include a title page and preliminary parts
+## Include a title page and preliminary parts
 
 There are many items you can include in preliminary content. Some are best suited to printed publications. Judge what you need for your report.
 
@@ -167,12 +174,9 @@ Your report may also be eligible for a cataloguing statement approved by the Nat
 
 You must choose a licence to release copyright materials. If you work in government, use an open access licence if you can (for example, [Creative Commons](https://creativecommons.org.au/)).
 
-Read the government copyright rules in the [ Australian Government intellectual property manual](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual).
+Read the government copyright rules in the [*Australian Government intellectual property manual*](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual).
 
-The National Library of Australia collects Australian publications under the [ Copyright Act 1968](https://www.legislation.gov.au/Series/C1968A00063
-). Your agency is obliged to contribute published reports through legal deposit. Find out more
-
-[about legal deposit on the National Library website](https://www.library.gov.au/services/publishers-and-self-publishers/legal-deposit). This information covers online annual reports.
+The National Library of Australia collects Australian publications under the [*Copyright Act 1968*](https://www.legislation.gov.au/Series/C1968A00063). Your agency is obliged to contribute published reports through legal deposit. Find out more [about legal deposit on the National Library website](https://www.library.gov.au/services/publishers-and-self-publishers/legal-deposit). This information covers online annual reports.
 
 ### Letter of transmittal
 
@@ -231,10 +235,10 @@ Give each image a page number in the list. In print, include even full-page imag
 
 The order of lists is:
 
-- photographs (only in print)
-- figures
-- maps (if listed separately)
-- tables.
+1. photographs (only in print)
+2. figures
+3. maps (if listed separately)
+4. tables.
 
 ### Acknowledgements
 
@@ -249,10 +253,10 @@ There are many ways to acknowledge contributors to a report, such as in:
 
 For long reports, use a summary to present findings, recommendations and conclusions.
 
-- Name the summary to show its purpose. For example, you can use ‘Recommendations’ or ‘Summary’
-*.* - Don't use ‘Executive summary’. Although this is common, it is not best practice.
+- Name the summary to show its purpose. For example, you can use ‘Recommendations’ or ‘Summary’*.*
+- Don't use ‘Executive summary’. Although this is common, it is not best practice.
 
-Organise the main body into chapters or parts
+## Organise the main body into chapters or parts
 
 To organise the text in the main body of the report use:
 
@@ -273,7 +277,7 @@ There are many ways to number parts:
 
 Don't use roman numerals to number parts. Users can confuse the roman II with the arabic number 11. It is better to start chapters and parts on a right-hand page, particularly the first chapter and part. Also follow this approach for PDF reports.
 
-Include the material that supports the report (endmatter)
+## Include the material that supports the report (endmatter)
 
 In reports, endmatter can include:
 
@@ -332,7 +336,7 @@ Online reports often link to this material. Other ways of separating this from t
 - using coloured backgrounds
 - putting lengthy material at the end of the report, before other endmatter.
 
-Split large reports into volumes
+## Split large reports into volumes
 
 Digital and printed reports can work better in volumes if they are large. Create a volume at a suitable point in the text.
 
@@ -348,23 +352,3 @@ Number the pages according to the break in the volumes:
 Always number preliminary pages per volume.
 
 Where numbering restarts for each volume, references should include both the volume and page number. Where the numbering continues across volumes, use just the page number for the reference.
-
-Release notes
-
-The digital edition focuses on online reports. It uses relevant information from the sixth edition’s chapter, ‘The components of a publication’. It links to external sources for compliance information, such as preparing reports for tabling in the Australian Parliament or uploading to the Transparency Portal.
-
-The sixth edition had sections relevant to printed material only. These included hardcover books, enclosures and fold-out pages. The scope for the Live release of the digital edition did not include print-production values. Instead, the digital edition calls out relevant print considerations for reports that are produced as digital-first content.
-
-The Content Guide did not mention reports.
-
-About this page
-
-### References
-
-Australian Inclusive Publishing Initiative (2019) [ Inclusive publishing in Australia: an introductory guide](https://aipi.com.au/inclusive-publishing-in-australia/), Australian Inclusive Publishing Initiative, accessed 25 May 2020.
-
-W3C (World Wide Web Consortium) (2020) [ Web Content Accessibility Guidelines (WCAG) overview](https://www.w3.org/WAI/standards-guidelines/wcag/), W3C website, accessed 25 May 2020.
-
-### Last updated
-
-This page was updated Monday 7 July 2025.

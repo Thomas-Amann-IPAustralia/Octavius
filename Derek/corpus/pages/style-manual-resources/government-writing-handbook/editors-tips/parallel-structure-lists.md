@@ -1,3 +1,5 @@
+# Parallel structure for lists
+
 Please check the examples in ‘[Use structure to make it readable: bullet lists](https://www.stylemanual.gov.au/about-style-manual/government-writing-handbook/section-2-write-so-your-meaning-clear/use-structure-make-it-readable-bullet-lists)’.
 
 The items in each list:
@@ -25,7 +27,7 @@ When Fred is fed up:
 - he calls his friends
 - dancing might be the cure.
 
-Repetition
+## Repetition
 
 A parallel structure doesn’t mean using the same word to start each list item.
 
@@ -40,19 +42,15 @@ If you find yourself doing this, move the repeated word up to the lead-in.
 
 ### Example
 
-I relax by:
+I relax
+
+by
+
+:
 
 - bushwalking
 - watching movies.
 
-Final word
+## Final word
 
 If you only have one item, you don’t need a list.
-
-Style Manual pages
-
-[Lists](/node/56)[Structuring content](/node/192)(section)
-
-### Last updated
-
-This page was updated Thursday 19 December 2024.

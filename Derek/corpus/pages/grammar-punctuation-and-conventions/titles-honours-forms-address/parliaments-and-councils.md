@@ -1,6 +1,8 @@
+# Parliaments and councils
+
 Refer to members of Australian parliaments and councils in the correct style. Follow these rules to address and title people correctly.
 
-Capitalise the titles of the current prime minister and treasurer
+## Capitalise the titles of the current prime minister and treasurer
 
 Capitalise the titles of the current holders of the positions of:
 
@@ -27,7 +29,7 @@ Use lower case letters for former prime ministers and treasurers of Australia.
 - Australia’s first female prime minister was Julia Gillard, who took office in 2010.
 - Peter Costello remains the longest-serving treasurer in Australian history.
 
-Capitalise titles for current senators and members of the Australian Parliament
+## Capitalise titles for current senators and members of the Australian Parliament
 
 The Parliament of Australia website has instructions for [how to address senators and members](https://www.aph.gov.au/Senators_and_Members/Contacting_Senators_and_Members/How_to_address_Senators_and_Members).
 
@@ -55,7 +57,7 @@ Members of the House of Representatives take the initialism ‘MP’ after their
 
 - Ms Zali Steggall OAM MP
 
-Address certain office holders of the Australian Parliament as ‘Honourable’
+## Address certain office holders of the Australian Parliament as ‘Honourable’
 
 Use the title ‘Honourable’ for ministers (including the prime minister) and parliamentary secretaries in the Australian Parliament. The title is given to these office holders because they are members of the [Federal Executive Council](https://www.aph.gov.au/About_Parliament/House_of_Representatives/Powers_practice_and_procedure/Practice7/HTML/Chapter2/Federal_Executive_Council). They retain the title for life.
 
@@ -100,7 +102,7 @@ In less formal correspondence:
 - Open with ‘My dear Minister’.
 - Conclude with ‘Yours sincerely’.
 
-Use the appropriate form for members of state and territory parliaments
+## Use the appropriate form for members of state and territory parliaments
 
 In formal emails and letters, address members of state and territory parliaments with the relevant post-nominal after their name.
 
@@ -204,7 +206,7 @@ Use ‘Honourable’ when addressing these parliamentarians:
 - Vic: The Hon Jacinta Allan MP, Premier of Victoria
 - WA: The Hon Maryka Groenewald MLC [Member of the Legislative Council]
 
-Office holders in the ACT Legislative Assembly don’t use the title ‘Honourable’. Ministers in the* *ACT have more than one portfolio. Address emails and letters to them using the ministerial title appropriate to the topic.
+Office holders in the ACT Legislative Assembly don’t use the title ‘Honourable’. Ministers in theACT have more than one portfolio. Address emails and letters to them using the ministerial title appropriate to the topic.
 
 #### Example
 
@@ -239,9 +241,9 @@ In less formal correspondence:
 
 Address the chief minister of the NT with details in this order:
 
-- ‘The Hon’
-- their given and family names
-- ‘MLA, Chief Minister of the Northern Territory’.
+1. ‘The Hon’
+2. their given and family names
+3. ‘MLA, Chief Minister of the Northern Territory’.
 
 #### Example
 
@@ -261,9 +263,9 @@ In less formal correspondence:
 
 Address the chief minister of the ACT with details in this order:
 
-- the appropriate title (‘Dr’, ‘Mr’, ‘Ms’, ‘Mx’ and so on)
-- their given and family names
-- ‘MLA, Chief Minister of the ACT’.
+1. the appropriate title (‘Dr’, ‘Mr’, ‘Ms’, ‘Mx’ and so on)
+2. their given and family names
+3. ‘MLA, Chief Minister of the ACT’.
 
 #### Example
 
@@ -279,7 +281,7 @@ In less formal correspondence:
 - Open with ‘Dear Chief Minister’.
 - Conclude with ‘Yours sincerely’.
 
-Address mayors and members of local governments with the correct title
+## Address mayors and members of local governments with the correct title
 
 Address members of local governments in urban and regional areas differently.
 
@@ -355,7 +357,7 @@ Address a shire president as ‘President [family name]’. The abbreviation for
 
 - President Smith
 
-Address an alderman (regardless of gender) as ‘Alderman* *[family name]’. The abbreviation for ‘Alderman’ is ‘Ald’ without a full stop.
+Address an alderman (regardless of gender) as ‘Alderman[family name]’. The abbreviation for ‘Alderman’ is ‘Ald’ without a full stop.
 
 #### Example
 
@@ -378,85 +380,3 @@ In less formal correspondence:
 
 - Open with ‘Dear President’, ‘Dear Alderman’ or ‘Dear Councillor [family name]’.
 - Conclude with ‘Yours sincerely’.
-
-Release notes
-
-The digital edition consolidates information in the sixth edition and provides updated examples.
-
-The digital edition removes the sixth edition’s requirement to use full stops with the abbreviation of ‘The Honourable’ to ‘The Hon’.
-
-This change is supported by evidence from Australian corpora and is consistent with the digital edition’s recommendation to use minimal punctuation.
-
-For the same reason, digital edition examples do not follow the sixth edition’s requirement for a comma before and between post-nominals.
-
-The Content Guide has brief information about titles for members of federal, state, territory and local governments.
-
-About this page
-
-### References
-
-ACT Legislation Register (2023) [ Ministerial appointment and administrative arrangements](https://www.legislation.act.gov.au/Static/AAs/arrangements.html), ACT Legislation Register website, accessed 5 July 2023.
-
-Brisbane City Council (n.d.) (2025) [ Councillors and wards](https://www.brisbane.qld.gov.au/about-council/governance-and-strategy/lord-mayor-and-councillors), Brisbane City Council website, accessed 7 November 2025.
-
-Chief Minister of the Northern Territory (n.d.) [ Ministry](https://parliament.nt.gov.au/members/ministry), Chief Minister of the Northern Territory website, accessed 3 July 2023.
-
-City of Adelaide (2025) [ Your council](https://www.cityofadelaide.com.au/about-council/your-council/), City of Adelaide website, accessed 7 November 2025.
-
-City of Darwin (2025) [ The Lord Mayor](https://www.darwin.nt.gov.au/council/about-council/lord-mayor-aldermen/the-lord-mayor), City of Darwin website, accessed 7 November 2025.
-
-City of Fremantle (2025) [ New mayor and councillors sworn in](https://www.fremantle.wa.gov.au/your-city-and-council/news-and-media/new-councilors-and-mayor-sworn-in/), City of Fremantle website, accessed 7 November 2025.
-
-City of Greater Geelong (n.d.) [ Mayor and councillors](https://www.geelongaustralia.com.au/councillors/default.aspx), City of Greater Geelong website, accessed 7 November 2025.
-
-City of Hobart (2025) [ Current elected members](https://www.hobartcity.com.au/Council/Elected-Members/Current-Elected-Members), City of Hobart website, accessed 7 November 2025.
-
-City of Melbourne (2025) [ Lord mayor and councillors](https://www.melbourne.vic.gov.au/about-council/our-profile/lord-mayor-and-councillors/Pages/lord-mayor-and-councillors.aspx), City of Melbourne website, accessed 7 November 2025.
-
-City of Newcastle (n.d.) [ Councillors](https://newcastle.nsw.gov.au/Council/About-Council/Councillors), City of Newcastle website, accessed 7 November 2025.
-
-City of Perth (n.d.) [ Council](https://www.perth.wa.gov.au/council), City of Perth website, accessed 7 November 2025.
-
-City of Sydney (n.d.) [ Councillors](https://meetings.cityofsydney.nsw.gov.au/mgMemberIndex.aspx?bcr=1), City of Sydney website, accessed 7 November 2025.
-
-Council of Australian Governments (n.d.) [ COAG members](https://www.coag.gov.au/coag-members), Council of Australian Governments website, accessed 25 March 2020.
-
-Legislative Assembly for the Australian Capital Territory (ACT) (n.d.) [ Members](https://www.parliament.act.gov.au/members), ACT Legislative Assembly website, accessed 7 November 2025.
-
-Legislative Assembly of the Northern Territory (n.d.) [ Members](https://parliament.nt.gov.au/members), Legislative Assembly of the Northern Territory website, accessed 7 November 2025.
-
-NSW Government Premier and Cabinet (2020) [ Protocol: the table of precedence NSW](https://www.dpc.nsw.gov.au/tools-and-resources/event-starter-guide/protocol/), NSW Government Premier and Cabinet website, accessed 8 June 2020.
-
-Parliament of Australia (2020) *Hansard style guide *[internal style guide], version 8.1, Department of Parliamentary Services, Canberra.
-
-Parliament of Australia (n.d.) [ How to address senators and members](https://www.aph.gov.au/Senators_and_Members/Contacting_Senators_and_Members/How_to_address_Senators_and_Members), Parliament of Australia website, accessed 23 December 2024.
-
-Parliament of Australia (n.d.) [ Senators and members](https://www.aph.gov.au/Senators_and_Members), Parliament of Australia website, accessed accessed 7 November 2025.
-
-Parliament of New South Wales (n.d.) [ Parliament of New South Wales](https://www.parliament.nsw.gov.au/Pages/home.aspx), Parliament of New South Wales website, accessed 7 November 2025.
-
-Parliament of South Australia (n.d.) [ Members home](https://www.parliament.sa.gov.au/en/Members/Members-Home), parliament.sa.gov.au, accessed 6 November 2025.
-
-Parliament of Tasmania (n.d.)[ Parliament of Tasmania](https://www.parliament.tas.gov.au/), Parliament of Tasmania website, accessed 7 November 2025.
-
-Parliament of Victoria (n.d.) [ Parliament of Victoria](https://www.parliament.vic.gov.au/), Parliament of Victoria website, accessed 7 November 2025.
-
-Parliament of Western Australia (n.d.) [ Current members](https://www.parliament.wa.gov.au/parliament/memblist.nsf/WAMembers), Parliament of Western Australia website, accessed 7 November 2025.
-
-Queensland Government Department of the Premier and Cabinet (2020)* *[ Protocol handbook: a guide for Queensland government officers](https://www.premiers.qld.gov.au/publications/categories/policies-and-codes/protocol-handbook.aspx), Department of the Premier and Cabinet website, accessed 28 January 2020.
-
-Queensland Parliament (2025) [ Members](https://www.parliament.qld.gov.au/members), Queensland Parliament website, accessed accessed 7 November 2025.
-
-South Australian Government Department of the Premier and Cabinet (n.d.) [ Guide to titles and forms of address [PDF 304.6 KB]](https://www.dpc.sa.gov.au/responsibilities/state-protocols-acknowledgements/guide-to-titles,-forms-of-address), SA Department of Premier and Cabinet website, accessed 8 June 2020.
-
-Victorian Government (n.d.) [ How to address royalty and officials](https://www.vic.gov.au/how-address-royalty-and-officials), vic.gov.au, accessed 8 June 2020.
-
-Western Australian Government (2019) [ A Western Australian Government guide to titles and forms of address](https://www.wa.gov.au/government/publications/western-australian-government-guide-titles-and-forms-of-address),
-
-*WA.gov.au, accessed 8 June 2020.*
-
-Wollongong City Council (2025) [ Your council officials](https://wollongong.nsw.gov.au/your-council/your-council-officials), Wollongong City Council, accessed 7 November 2025.
-
-### Last updated
-
-This page was updated Friday 7 November 2025.

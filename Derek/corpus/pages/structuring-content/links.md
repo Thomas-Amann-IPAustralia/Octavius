@@ -1,19 +1,21 @@
+# Links
+
 Links can help users navigate content. Include links when they support user journeys and for search engine optimisation. Write link text that is accurate and accessible.
 
-Link to something only if it helps meet the user’s need
+## Link to something only if it helps meet the user’s need
 
 Links (hyperlinks) are words or images that users can click to go to other content.
 
 Links help people navigate digital services or products. But they can also reduce readability and increase cognitive load. For this reason, use them only when they support a user need.
 
-Links are also important for [search engine optimisation](/node/71/#create_useful_links_to_highquality_content). Search engines use links to:
+Links are also important for [search engine optimisation](https://www.stylemanual.gov.au/node/71/#create_useful_links_to_highquality_content). Search engines use links to:
 
 - discover webpages
 - determine how they rank in search results.
 
 Use text for links in most cases. These links are called anchor text.
 
-Use images for links only if they meet a user need. If you do use images, accurately describe the link with [alt text](/node/49). Don’t describe the image itself.
+Use images for links only if they meet a user need. If you do use images, accurately describe the link with [alt text](https://www.stylemanual.gov.au/node/49). Don’t describe the image itself.
 
 ### Digital Service Standard requirements
 
@@ -44,7 +46,7 @@ Link directly to the specific page that the user needs to go to, not the homepag
 
 ### Include document title, file type and size when linking to files
 
-Provide content in [HTML format by default](/format-writing-and-structure/content-formats/reports#consider_publishing_format). This has benefits for both accessibility and maintenance. If a full HTML version of the file is not available, link to a summary page if it exists.
+Provide content in [HTML format by default](https://www.stylemanual.gov.au/format-writing-and-structure/content-formats/reports#consider_publishing_format). This has benefits for both accessibility and maintenance. If a full HTML version of the file is not available, link to a summary page if it exists.
 
 There will be some situations in which you need to link to non-HTML documents and files. Give users the information they need to decide whether to download the file by providing the:
 
@@ -56,20 +58,26 @@ Include all this information in the link text, but remember that this adds extra
 
 #### Example
 
-[.](https://www.dta.gov.au/sites/default/files/documents/2025-05/dta_Annual_Report_2019-2020_revised.pdf)
+You can read more about our financial position in the
 
-*Digital Transformation Agency Annual Report 2019–20*[PDF 1.98 MB]You don’t need to explain ‘kB’ and ‘MB’ as they are [units of measurement](/node/147). ‘PDF’, ‘DOCX’ and other common file types are widely recognised. If your website uses an unusual or specialist file type, consider explaining this in your support pages.
+Digital Transformation Agency Annual Report 2019–20
+
+[PDF 1.98 MB]
+
+.
+
+You don’t need to explain ‘kB’ and ‘MB’ as they are [units of measurement](https://www.stylemanual.gov.au/node/147). ‘PDF’, ‘DOCX’ and other common file types are widely recognised. If your website uses an unusual or specialist file type, consider explaining this in your support pages.
 
 #### Take care when using file type icons
 
 For some users, file type icons can be a useful way of recognising different kinds of files. These icons have disadvantages though:
 
 - File type icons can create ‘clutter’ for users, including those who use assistive technology. This is especially true when there are lists of links.
-- File type icons are images and require the same consideration for all
-[images on websites](/node/49). This includes alternative text. - File type icons may require resources to apply and maintain. They can be difficult for content authors to use if your content management system does not apply them automatically.
+- File type icons are images and require the same consideration for all [images on websites](https://www.stylemanual.gov.au/node/49). This includes alternative text.
+- File type icons may require resources to apply and maintain. They can be difficult for content authors to use if your content management system does not apply them automatically.
 - They may not support the branding or overall look and feel of your site. There is a large variety of icons available and selecting or designing an inappropriate icon may confuse users.
 
-Write link text that makes the destination clear
+## Write link text that makes the destination clear
 
 Users scan content for links to understand what it is about. People who use assistive technologies often use the tab key to read from link to link. People who use screen readers often generate a list of links for quick navigation.
 
@@ -83,7 +91,7 @@ Find out more about our [upcoming events on our Eventbrite page](https://www.sty
 
 ### Not this
 
-[Click here](#) to find out about our upcoming meetups.
+Click here to find out about our upcoming meetups.
 
 ### Accessibility requirements
 
@@ -98,7 +106,10 @@ Fundamentals:
 
 Web Content Accessibility Guidelines success criteria:
 
-Don’t use exit modals
+- [2.4.4 Link purpose (in context) – level A](https://www.w3.org/WAI/WCAG21/quickref/?currentsidebar=%23col_overview#link-purpose-in-context)
+- [2.4.9 Link purpose (link only) – level AAA](https://www.w3.org/WAI/WCAG21/quickref/?currentsidebar=%23col_overview&showtechniques=244#link-purpose-link-only)
+
+## Don’t use exit modals
 
 An ‘exit modal’ or ‘exit pop-up’ is an alert that appears on the user’s browser when they select a link to an external website.
 
@@ -106,7 +117,7 @@ Don’t use these to tell users they are leaving your site when they use externa
 
 You should also consider developing a policy to explain to users how your site approaches and presents links to government and non-government content.
 
-Include keywords at the start of links
+## Include keywords at the start of links
 
 People usually only read the first few words of links. Keep them concise and put the most important words at the start of the link.
 
@@ -116,9 +127,13 @@ Write links that are about a single idea, to help people to decide whether to cl
 
 ### Like this
 
-Attend next month’s Brisbane [workshop for developers and writers](/node/193).
+Attend next month’s Brisbane [workshop for developers and writers](https://www.stylemanual.gov.au/node/193).
 
-Put most links at the end of sentences
+### Not this
+
+[Attend a Brisbane workshop for developers and writers next month](https://www.stylemanual.gov.au/node/193).
+
+## Put most links at the end of sentences
 
 Links reduce readability because they are distracting. They also make it easy for users to click away before they have read all your content.
 
@@ -128,21 +143,25 @@ If a link makes more sense at the start of a sentence, consider if everything in
 
 ### Write this
 
-Find out your eligibility for a payment by filling out the [application form](#).
+Find out your eligibility for a payment by filling out the application form.
 
 ### Not this
 
-You need to fill out the [application form](#) to find out if you are eligible for a payment.
+You need to fill out the application form to find out if you are eligible for a payment.
 
-Write short calls to action that explain what they do
+## Write short calls to action that explain what they do
 
 Use concise keywords for call-to-action text or buttons. Accurately describe what will happen next.
 
 ### Write this
 
+Start your application
+
 ### Not this
 
-Link email addresses not names
+Click here to apply
+
+## Link email addresses not names
 
 To link to an email address, use the email address as the link text so it’s not mistaken for a website address.
 
@@ -150,9 +169,13 @@ Use the mailto: prefix in the URL but not in the link text.
 
 ### Write this
 
+[belinda.bloggs@dta.gov.au](mailto:belinda.bloggs@dta.gov.au)
+
 ### Not this
 
-Open links in the same browser tab or window
+[Belinda Bloggs](mailto:belinda.bloggs@dta.gov.au)
+
+## Open links in the same browser tab or window
 
 Set links to open in the same browser window or tab by default. This prevents users from becoming disoriented and allows them to use the ‘back’ button if needed. This is the default behaviour for links created using the <a> (anchor) HTML tag.
 
@@ -164,7 +187,7 @@ Consider carefully how users move through your website before you set a link to 
 
 In all cases, give users contextual information in the link to explain why a link will open in a new window or tab.
 
-Create internal links that support the user’s journey
+## Create internal links that support the user’s journey
 
 Internal links connect pages on the same website. They help users and search engine find and navigate your content.
 
@@ -188,58 +211,3 @@ In-page links (anchor links or bookmark links) connect to content on the same pa
 - back-to-top links.
 
 In-page links can be helpful when content is lengthy. But they can also be disorienting if users expect to go to a different page. Test content with users. Shorter content may better meet their needs.
-
-Release notes
-
-The digital edition significantly updates and expands on information about links.
-
-The sixth edition guidance focused on hyperlinks in the context of creating material specifically for on-screen use. It made a distinction between ‘information hyperlinks’ and ‘navigation hyperlinks’ that is not used in the digital edition.
-
-The Content Guide had advice on using hypertext and hyperlinks.
-
-
-About this page
-
-### References
-
-Content Design London (2019) ‘[Links](https://readabilityguidelines.co.uk/content-design/links/)’, *Content Design London readability guidelines*, Content Design London website, accessed 7 June 2020.
-
-General Services Administration (n.d.) ‘[Avoid duplication](https://content-guide.18f.gov/avoid-duplication/)’, *18F Content Guide*, 18F website, accessed 7 June 2020.
-
-General Services Administration (n.d.) ‘[Links and repetitive content](https://accessibility.18f.gov/links/)’, *18F Accessibility Guide*, 18F website, accessed 7 June 2020.
-
-GOV.UK (2020) ‘[Links](https://www.gov.uk/guidance/content-design/links)’, *Content design: planning, writing and managing content*, GOV.UK, accessed 7 June 2020.
-
-Hendriks M (15 March 2019) ‘[Internal linking for SEO: why and how?](https://yoast.com/internal-linking-for-seo-why-and-how/)’,* Yoast*, accessed 7 June 2020.
-
-Johnson T (6 May 2010) ‘[Embedded links and online reading accessibility: Whitney Quesenbery and Caroline Jarrett](https://www.youtube.com/watch?v=EtHNDAoQLSQ)’ [video], *Tom Johnson*, YouTube, accessed 7 June 2020.
-
-Kaley A (30 June 2019) ‘[Popups: 10 Problematic Trends and Alternatives](https://www.nngroup.com/articles/popups/)’, *Nielsen Norman Group*, accessed 20 January 2021.
-
-Loranger H (23 July 2017) ‘[Homepage links remain a necessity](https://www.nngroup.com/articles/homepage-links/)’*,* *Nielsen Norman Group*, accessed 7 June 2020.
-
-McGovern G (22 January 2012) ‘Tips for writing great links’*, New Thinking*, gerrymcgovern.com, accessed 7 June 2020.
-
-Mozilla (n.d.) ‘[<a>: The Anchor element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a)’, *MDN Web Docs*, accessed 27 January 2021.
-
-New Zealand Government (2020) ‘[Links](https://www.digital.govt.nz/standards-and-guidance/design-and-ux/content-design-guidance/links/)’, *Content design guidance*, Digital.govt.nz, accessed 7 June 2020.
-
-Nielsen J (2 March 2002) ‘[Deep linking is good linking](https://www.nngroup.com/articles/deep-linking-is-good-linking/)’*,* *Nielsen Norman Group*, accessed 7 June 2020.
-
-Schade A (7 May 2017) ‘[Anchors OK? Re-assessing in-page links](https://www.nngroup.com/articles/in-page-links/)’*, Nielsen Norman Group*, accessed 7 June 2020.
-
-Sherwin K (13 December 2015) ‘[“Learn more” links: you can do better](https://www.nngroup.com/articles/learn-more-links/)’*,* *Nielsen Norman Group*, accessed 7 June 2020.
-
-Treasury Board of Canada Secretariat (2020) ‘[Links](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#toc11)’, *Canada.ca content style guide*, Canada.ca, accessed 7 June 2020.
-
-University of Minnesota (2020) ‘[Hyperlinks](https://accessibility.umn.edu/core-skills/hyperlinks)’, *Accessible U*, University of Minnesota website, accessed 7 June 2020.
-
-W3C (World Wide Web Consortium) (2016) ‘[G200: Opening new windows and tabs from a link only when necessary](https://www.w3.org/TR/WCAG20-TECHS/G200.html)’*, Techniques for WCAG 2.0*, W3C website, accessed 7 June 2020.
-
-WebAIM (n.d.) *Links and hypertext**,* WebAIM website, accessed 7 June 2020.
-
-Wild G (February 2014) ‘[Links and accessibility](https://www.accessibilityoz.com/2014/02/links-and-accessibility/)’*,* *AccessibilityOz*, accessed 20 January 2021.
-
-### Last updated
-
-This page was updated Tuesday 21 October 2025.

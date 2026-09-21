@@ -1,6 +1,8 @@
+# Brackets and parentheses
+
 Brackets can help users scan text more easily. Only use brackets if you can remove the enclosed text and the meaning does not change.
 
-Use brackets for text users can skip over
+## Use brackets for text users can skip over
 
 Brackets can help you break up information. They enclose parts of the sentence that aren’t essential to the meaning. Sentences must be grammatically correct if you remove the text in brackets.
 
@@ -12,18 +14,19 @@ The most commonly used brackets are:
 Use brackets sparingly for:
 
 - non-essential information
-[shortened forms](/node/92)- references
+- [shortened forms](https://www.stylemanual.gov.au/node/92)
+- references
 - insertions.
 
-Use brackets only where they make content clearer to people. For example, always use brackets in [author–date citations](/node/165#examples_of_authordate_citations).
+Use brackets only where they make content clearer to people. For example, always use brackets in [author–date citations](https://www.stylemanual.gov.au/node/165#examples_of_authordate_citations).
 
 Too many brackets, or badly used brackets, can make a sentence more complex and difficult to understand. You can usually rewrite a sentence so the content in brackets can be its own sentence or can even be removed.
 
 Other types of brackets, such as curly brackets and slant brackets, are used in fields such as mathematics and linguistics. These are specialist uses, so don’t use them in most content.
 
-Put extra information in parentheses
+## Put extra information in parentheses
 
-Information in parentheses is less important than information that is between [spaced en dashes](/node/199) or pairs of [commas](/node/109).
+Information in parentheses is less important than information that is between [spaced en dashes](https://www.stylemanual.gov.au/node/199) or pairs of [commas](https://www.stylemanual.gov.au/node/109).
 
 Used well, parentheses can improve meaning and make content easy to scan.
 
@@ -79,7 +82,7 @@ The department was in a heritage-listed building. (The building was designed by 
 
 Whitlam’s comments on the steps of Parliament House (‘Well may we say ...’) are still widely quoted.
 
-Avoid using square brackets in parentheses
+## Avoid using square brackets in parentheses
 
 Reword the text to avoid square brackets inside of parentheses wherever possible.
 
@@ -97,9 +100,9 @@ Australia’s Parliament House (architects Mitchell/Giurgola & Thorp [New York])
 
 Australia’s Parliament House (architects Mitchell/Giurgola & Thorp (New York)) opened on 9 May 1988.
 
-Use square brackets to show insertions in quotes
+## Use square brackets to show insertions in quotes
 
-Use square brackets in [quoted material](/node/114) to show that you have:
+Use square brackets in [quoted material](https://www.stylemanual.gov.au/node/114) to show that you have:
 
 - paraphrased the original content
 - inserted text that was not in the original content.
@@ -122,7 +125,7 @@ Square brackets with an italicised ‘*sic*’ show that the error in the text i
 
 Written late at night, the report began, ‘The office was previously in Melberne [*sic*].’
 
-Follow normal punctuation rules for content in brackets
+## Follow normal punctuation rules for content in brackets
 
 Punctuation in brackets depends on what is inside the brackets. Punctuate content in brackets as you would if it were outside the brackets.
 
@@ -158,11 +161,11 @@ The winning tenderer (a local company) signed the contract on Tuesday.
 
 The winning tenderer (They were a local company.) signed the contract on Tuesday.
 
-Write brackets in the same type as the surrounding text
+## Write brackets in the same type as the surrounding text
 
 Brackets should be in the same type (roman, italics, bold) as the text around the brackets. This is regardless of the type of the text inside the brackets.
 
-This is the same rule as for [quotation marks](/node/114).
+This is the same rule as for [quotation marks](https://www.stylemanual.gov.au/node/114).
 
 ### Correct
 
@@ -171,45 +174,3 @@ The most recent review of defence policy (*2016 Defence white paper*) set the di
 ### Incorrect
 
 The most recent review of defence policy *(2016 Defence white paper)* set the direction for the next 10 years.
-
-Release notes
-
-The digital edition consolidates information about brackets and parentheses from the sixth edition.
-
-It omits the information about angle brackets that was included in the sixth edition. Angle brackets were used to enclose URLs and this practice is no longer followed. Sources cited as evidence support this departure.
-
-The Content Guide did not include guidance on brackets or parentheses.
-
-About this page
-
-### Evidence
-
-*New Oxford style manual*, Oxford University Press, Oxford.
-
-*Chicago manual of style*, 17th edn, University of Chicago Press, Chicago.
-
-### References
-
-Btb Translation Bureau (n.d.) ‘[Punctuation](https://www.btb.termiumplus.gc.ca/tcdnstyl-chap?lang=eng&lettr=chap_catlog&info0=7#zz7)’, *The Canadian style*, Btb Translation Bureau website, accessed 4 May 2020.
-
-Content Design London (2019) ‘[Top findings’](https://readabilityguidelines.co.uk/top-findings/), *Content Design London readability guidelines*, Content Design London website, accessed 30 March 2020.
-
-Dixon JC and Bolitho B (2005–2019) *Course notes and exercises: Editing and proofreading for the workplace*, Centre for Continuing Education, Australian National University, Canberra.
-
-Murphy EM with Cadman H (2014) *Effective writing: plain English at work*, 2nd edition, Lacuna, 2014.
-
-Perlman M (2017) ‘How to properly use [sic]’, *Columbia Journalism Review,* viewed 19 December 2019.
-
-Perlman M (2017) ‘[Pardon my parentheticals](https://www.cjr.org/language_corner/parentheticals.php)’, *Columbia Journalism Review,* viewed 19 December 2019.
-
-Seely J (2001) *Oxford everyday grammar*, Oxford Paperback Reference.
-
-Stilman S (2004) *Grammatically correct*, Writer’s Digest Books, 2004; revised and updated, 2010.
-
-Truss L (2003) *Eats, shoots and leaves: the zero tolerance approach to punctuation*, Profile Books, London, 2003.
-
-U.S. Government Publishing Office (2016) ‘8: punctuation’, [ Government Publishing Office style manual](https://www.govinfo.gov/collection/gpo-style-manual?path=/gpo/U.S.%20Government%20Publishing%20Office%20Style%20Manual/2016), U.S. Government Publishing Office, accessed 13 May 2020.
-
-### Last updated
-
-This page was updated Tuesday 19 October 2021.

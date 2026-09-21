@@ -1,7 +1,8 @@
+# Natural phenomena
+
 Treat terms for climate and weather events with consistent style. It helps users scan content for keywords and supports readability.
 
-
-Standard rules of capitalisation apply for most natural phenomena
+## Standard rules of capitalisation apply for most natural phenomena
 
 Follow the rules of capitalisation for most natural phenomena:
 
@@ -10,7 +11,7 @@ Follow the rules of capitalisation for most natural phenomena:
 
 Do not use italics.
 
-Most terms are usually in lower case
+## Most terms are usually in lower case
 
 Write generic terms for climate and weather in lower case. This rule applies to many compound nouns.
 
@@ -24,7 +25,7 @@ Specific terms usually take lower case. For example, this rule applies to scient
 
 cumulonimbus, cirrus and stratus
 
-Terms for specific phenomena can take initial capitals
+## Terms for specific phenomena can take initial capitals
 
 Scientific terms for natural phenomena can include common nouns that combine to form a proper noun.
 
@@ -35,7 +36,7 @@ Use initial capitals when spelling out this kind of scientific term. Common shor
 - Indian Ocean Dipole (IOD)
 - Southern Oscillation Index (SOI)
 
-Climate and weather events take on proper names
+## Climate and weather events take on proper names
 
 Individual climate and weather events have names to help communicate the event to the public.
 
@@ -107,31 +108,3 @@ Use ‘year Location event’ as the naming convention for floods, earthquakes a
 - 1974 Brisbane flood
 - 1989 Newcastle earthquake
 - 2004 Indian Ocean tsunami
-
-Release notes
-
-The digital edition significantly expands style advice for referring to natural phenomena. The sixth edition had brief information under ‘atmospheric phenomena’.
-
-The digital edition recommends using initial capitals for all parts of a cyclone's name. The sixth edition restricted the use of initial capitals to the given name.
-
-The Content Guide did not cover style for natural phenomena.
-
-About this page
-
-### References
-
-Australian Institute for Disaster Resilience (n.d.) ‘[Australian disasters](https://knowledge.aidr.org.au/collections/australian-disasters/)’, *Knowledge hub*, AIDR website, accessed 12 June 2020.
-
-Bureau of Meteorology (n.d.) [ Bureau Blog](http://media.bom.gov.au/social/), accessed 18 October 2022.
-
-Bureau of Meteorology (2020) [ Tropical cyclone names](http://www.bom.gov.au/cyclone/tropical-cyclone-knowledge-centre/understanding/tc-names/), Bureau of Meteorology website, accessed 18 October 2022.
-
-Japan Meteorological Agency (2020) [ Tropical cyclone information](https://www.jma.go.jp/en/typh/), Japan Meteorological Agency website, accessed 12 June 2020.
-
-National Hurricane Center and Central Pacific Hurricane Center (n.d.) [ Tropical cyclone names](https://www.nhc.noaa.gov/aboutnames.shtml), National Hurricane Center and Central Pacific Hurricane Center website, accessed 12 June 2020.
-
-World Meteorological Organization (2020) *Tropical cyclone naming*, WMO website, accessed 12 June 2020.
-
-### Last updated
-
-This page was updated Monday 23 December 2024.

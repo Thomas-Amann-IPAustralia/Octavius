@@ -1,11 +1,13 @@
+# Requirements and standards for video and audio
+
 Users need transcripts, captions and audio descriptions for accessibility. Work with experts to record and mix audio. Check branding, copyright and permissions requirements.
 
-Make sure everyone can access audio and video
+## Make sure everyone can access audio and video
 
 Audio-visual content must have:
 
-- a transcript for people who don’t want to watch the video or listen to the audio – and for
-[search engine indexing](/node/103) - closed captions for people who can’t hear the dialogue and other sounds (symbol [CC])
+- a transcript for people who don’t want to watch the video or listen to the audio – and for [search engine indexing](https://www.stylemanual.gov.au/node/103)
+- closed captions for people who can’t hear the dialogue and other sounds (symbol [CC])
 - an audio description for people who can’t see the video.
 
 Audio description is narration. It gives important details that are only visual, usually during gaps in the dialogue.
@@ -39,7 +41,14 @@ User needs:
 
 Web Content Accessibility Guidelines success criteria:
 
-Include a transcript for audio-visual and audio-only
+- [1.2 Time-based media (all criteria)](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=124%2C129%2C121#time-based-media)
+- [1.4.2 Audio control – level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=124%2C129%2C121#audio-control)
+- [1.4.3 Contrast (minimum) – level AA](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=124%2C129%2C121#contrast-minimum)
+- [1.4.7 Low or no background audio – level AAA](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=124%2C129%2C121#low-or-no-background-audio)
+- [2.1.1 Keyboard – level A](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=124%2C129%2C121#keyboard)
+- [2.3 Seizures and physical reactions (all criteria)](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=124%2C129%2C121#seizures-and-physical-reactions)
+
+## Include a transcript for audio-visual and audio-only
 
 Time-based media (video and audio) must have a transcript so they are accessible to everyone. Transcripts are also important for search engine indexing.
 
@@ -50,6 +59,10 @@ User needs:
 I can access equivalent information to anything contained in a video or audio file.
 
 WCAG quick reference:
+
+- [1.2.1 Audio-only and video-only (prerecorded) – level A](https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded)
+- [1.2.3 Audio description or media alternative (prerecorded) – level A](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
+- [1.2.8 Media alternative (prerecorded) – level AAA](https://www.w3.org/WAI/WCAG21/quickref/#media-alternative-prerecorded)
 
 Have a person transcribe the text. There are many professional services that offer transcription. If you use automated transcribing software, review it for errors and correct them.
 
@@ -67,6 +80,8 @@ Write non-verbal information in square brackets.
 
 End the transcript with ‘End of transcript’.
 
+## Include subtitles or captions for video
+
 Subtitles and captions are not the same:
 
 - Subtitles display only the dialogue and are commonly used for translations.
@@ -83,6 +98,9 @@ User needs:
 I can access equivalent information to anything contained in a video or audio file.
 
 Web Content Accessibility Guidelines success criteria:
+
+- [1.2.2 Captions (prerecorded) – level A](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
+- [1.2.4 Captions (live) – level AA](https://www.w3.org/WAI/WCAG21/quickref/#captions-live)
 
 Open captions, which the user cannot turn off, are burned onto the video itself. Closed captions can be turned on or off by the user.
 
@@ -128,7 +146,7 @@ Use italics for:
 
 A hash symbol (#) or a quaver symbol (♪) show song lyrics.
 
-Add audio description for video
+## Add audio description for video
 
 Audio description tells people what is happening in the visual elements of the video. It could be the only way someone who is blind or has low vision will know visual cues such as the:
 
@@ -149,6 +167,10 @@ I can access equivalent information to anything contained in a video or audio fi
 
 Web Content Accessibility Guidelines success criteria:
 
+- [1.2.3 Audio description or media alternative (prerecorded) – level A](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
+- [1.2.5 Audio description (prerecorded) – level AA](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded)
+- [1.2.7 Extended audio description (prerecorded) – level AAA](https://www.w3.org/WAI/WCAG21/quickref/#extended-audio-description-prerecorded)
+
 You don’t need an audio description for dialogue delivered straight to camera (‘talking heads’).
 
 For anything else, you need to identify who is speaking in the description. If location is important, include that too.
@@ -160,7 +182,7 @@ Ensure that:
 - the content is accurate
 - the describer speaks clearly.
 
-Include a title, description and metadata
+## Include a title, description and metadata
 
 Any video or audio content you publish must have:
 
@@ -198,22 +220,20 @@ You must [use the Protective Security Policy Framework (PSPF) when preparing gov
 
 You must also follow your organisation’s information management requirements. Information (including data) that you create as part of your work for the Australian Government is a record. It provides evidence of what your organisation has done and why.
 
-Managing and disposing of records properly is a requirement under the [ Archives Act 1983](https://www.legislation.gov.au/Series/C2004A02796). For guidance, visit the National Archives of Australia website for content on
+Managing and disposing of records properly is a requirement under the [*Archives Act 1983*](https://www.legislation.gov.au/Series/C2004A02796). For guidance, visit the National Archives of Australia website for content on [information management standards](https://www.naa.gov.au/information-management/information-management-standards).
 
-[information management standards](https://www.naa.gov.au/information-management/information-management-standards).
-
-Store video in a standard file format
+## Store video in a standard file format
 
 All video should be in MP4 (MPEG4), a commercial and commonly used video file format. MP4 is a compressed digital video file format that allows streaming and downloading of videos from the internet. Most mobile devices support MP4 videos without people having to install an application (app) to play them. MP4 also supports metadata tags, attachments and interactive menus.
 
-Meet common audio-only technical specifications
+## Meet common audio-only technical specifications
 
 Audio-only content must meet common technical specifications (specs) for publishing on different platforms:
 
 - Government agencies have internal guidelines for publishing audio on their websites.
 - Audio hosting platforms have their own spec lists for audio quality.
 
-Use a booth or studio if you can
+## Use a booth or studio if you can
 
 It is best to record audio in a sound booth or recording studio. If you don’t have access to either, choose an environment you can control.
 
@@ -227,7 +247,7 @@ Location noise is sometimes used in audio to set the scene or to indicate a time
 
 Don’t record in noisy environments. Instead, record in quiet spaces with soft furnishings such as carpets or fabric, because they absorb sound.
 
-Get expert help to edit and mix audio
+## Get expert help to edit and mix audio
 
 The aim of audio editing is to produce audio that:
 
@@ -250,7 +270,9 @@ I can easily control how I see and hear distinctions if colour or sound convey m
 
 Web Content Accessibility Guidelines success criteria:
 
-Apply government branding to all audio and video
+[1.4.7 Low or no background audio – level AAA](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=124%2C129%2C121#low-or-no-background-audio)
+
+## Apply government branding to all audio and video
 
 Branding applies to all government content, regardless of the platform that supports access to the content.
 
@@ -269,6 +291,8 @@ I can easily control how I see and hear distinctions if colour or sound convey m
 
 Web Content Accessibility Guidelines success criteria:
 
+[1.4.3 Contrast (minimum) – level AA](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=124%2C129%2C121#contrast-minimum)
+
 Avoid effects if they make the text less readable. Seek expert advice if you plan to use text effects (such as drop shadows, outlines and tinted blocks). If they are well designed, they can help give enough contrast and separation to make the text easier to read. Poorly designed text effects can make text very difficult to read.
 
 Avoid colours that make the video less accessible for some users. For example, avoid using red and green as the only way to convey meaning.
@@ -285,15 +309,17 @@ Check if your agency has ‘branded’ sounds (also called audio logos). These h
 
 Branded sounds occur at the very beginning or end of the content. They need to be short (no longer than 6 seconds) and provide a consistent identity for your organisation.
 
-Set the video aspect and resolution for the user’s device
+## Set the video aspect and resolution for the user’s device
 
 Whether you publish the video on a platform or your agency website, you will need to consider aspect ratio and resolution. Videos are more usable if they use as much of the screen space as possible.
 
-Most people use their mobile devices (phones and tablets) to access [social media](/node/43). Square videos (with a 1:1 aspect ratio) are popular on Instagram. Vertical videos (with a 9:16 aspect ratio) are popular in the Stories feature in Facebook, YouTube, Instagram and other platforms.
+Most people use their mobile devices (phones and tablets) to access [social media](https://www.stylemanual.gov.au/node/43). Square videos (with a 1:1 aspect ratio) are popular on Instagram. Vertical videos (with a 9:16 aspect ratio) are popular in the Stories feature in Facebook, YouTube, Instagram and other platforms.
 
 The videos you access on a desktop computer are usually a horizontal rectangle. They usually have a 16:9 horizontal aspect ratio, with a minimum resolution of 1,920 pixels wide by 1,080 pixels high.
 
-Introduce speakers in the video using text and graphics (lower thirds)
+Figure: Aspect ratios for horizontal and vertical display on mobile devices
+
+## Introduce speakers in the video using text and graphics (lower thirds)
 
 ‘Lower thirds’ is the term for a graphic and text overlay that show a speaker’s name, organisation and role. Using lower thirds is mandatory. They are usually an image file added into the video editing application.
 
@@ -313,13 +339,13 @@ Lower thirds must:
 
 A sans serif font is the easiest to read, but use your organisation’s branding and style.
 
-Get permissions and licences for copyright material
+## Get permissions and licences for copyright material
 
 You must have a signed release from people who appear in a video. This includes everyone who is filmed and people whose voices have been recorded. Keep the signed release form and give a copy to the person who signed it.
 
 ### Privacy requirements
 
-Your organisation has obligations under the [ Privacy Act 1988](https://www.oaic.gov.au/privacy/the-privacy-act/).
+Your organisation has obligations under the [*Privacy Act 1988*](https://www.oaic.gov.au/privacy/the-privacy-act/).
 
 Privacy is relevant whenever it’s possible to identify someone. Treat things that can or might identify an individual as personal information. Personal information can include things like a voice recording or someone’s appearance.
 
@@ -329,7 +355,7 @@ Other restrictions might apply to copyright.
 
 Some donors of material to collecting institutions may have restricted its use. Donors may also need to give written permission before you use material. Check with the collecting institution.
 
-Before you use First Nations Australians’ content, you need proper permissions. Always consult with relevant communities (or individuals) and copyright holders. The permissions process is vital and [differs from standard copyright procedures](/node/179#consultation_is_a_must).
+Before you use First Nations Australians’ content, you need proper permissions. Always consult with relevant communities (or individuals) and copyright holders. The permissions process is vital and [differs from standard copyright procedures](https://www.stylemanual.gov.au/node/179#consultation_is_a_must).
 
 ### Copyright requirements
 
@@ -337,9 +363,9 @@ You must get permission (a licence) to use copyright material. This includes tex
 
 You must choose a licence to release copyright materials. If you work in government, use an open access licence if you can (for example, [Creative Commons](https://creativecommons.org.au/)).
 
-Read the government copyright rules in the [ Australian Government intellectual property manual](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual).
+Read the government copyright rules in the [*Australian Government intellectual property manual*](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual).
 
-Use stock video if it enhances the production
+## Use stock video if it enhances the production
 
 Stock video is short content that you have not produced. Using stock video can save production time and money.
 
@@ -356,49 +382,3 @@ Other than historical material, ensure that stock video:
 - is visibly Australian.
 
 To use a stock video, you must purchase a licence from its owner. Some stock video has a Creative Commons licence.
-
-Release notes
-
-The digital edition significantly updates and expands information about video. It adds new guidance for audio as a distinct format. Updates and revisions cover when to use time-based media, mandatory requirements and accessibility.
-
-The sixth edition mentioned video briefly in several sections but did not give comprehensive information on technical requirements for audio-visual content. It referred to ‘moving images’.
-
-The Content Guide had guidelines on video use, content and length. It has information about accessibility requirements for video, including the use of audio description.
-
-About this page
-
-### References
-
-Abrahams D (2017) [ SRT file – what is it and how to create one](https://blog.ai-media.tv/blog/srt-file-what-is-it-and-how-to-create-one), Ai-Media website, accessed 16 September 2020.
-
-Ai-Media, [ Closed captions vs subtitles – what’s the difference?](https://blog.ai-media.tv/blog/captions-vs-subtitles-difference), Ai-Media website, accessed 23 July 2020.
-
-Australian Communications and Media Authority (2020) [ Broadcaster compliance with TV captioning obligations](https://www.acma.gov.au/broadcaster-compliance-tv-captioning-obligations), ACMA website, accessed 16 September 2020.
-
-Clement J (2020) [ Device usage of Facebook users worldwide as of July 2020](https://www.statista.com/statistics/377808/distribution-of-facebook-users-by-device/), Statista website, accessed 16 September 2020.
-
-Content Design London (2020) ‘[Moving images](https://readabilityguidelines.co.uk/images/moving-images/)’, *Content Design London readability guidelines*, Content Design London website, accessed 16 September 2020.
-
-General Services Administration (n.d.) ‘[Multimedia](https://accessibility.18f.gov/multimedia/)’, *18F accessibility guide*, 18F website, accessed 16 September 2020.
-
-Lynch PJ and Horton S (2016) *Web style guide*, 4th edn, Yale University Press, New Haven and London.
-
-New Zealand Government (2020) [ Accessible video](https://www.digital.govt.nz/standards-and-guidance/design-and-ux/accessibility/accessible-video/), Digital.govt.nz, accessed 16 September 2020.
-
-StudioBinder (22 March 2020) ‘[What is a lower third? Definition and design strategies](https://www.studiobinder.com/blog/what-is-a-lower-third/)’, *StudioBinder blog*, accessed 16 September 2020.
-
-Treasury Board of Canada Secretariat (2020) ‘[Images and videos](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#toc10)’, *Canada.ca content style guide*, Canada.ca, accessed 16 September 2020.
-
-W3C (World Wide Web Consortium) (n.d.) ‘[Understanding guideline 1.2: time-based media](https://www.w3.org/WAI/WCAG21/Understanding/time-based-media)’, *Understanding WCAG 2.1*, W3C website, accessed 16 September 2020.
-
-W3C (2016) [ Techniques for WCAG 2.0](https://www.w3.org/TR/WCAG20-TECHS/), W3C website, accessed 20 May 2020.
-
-W3C (2019) ‘[Audio content and video content](https://www.w3.org/WAI/media/av/av-content/)’, *Making audio and video content accessible*, W3C website, accessed 25 August 2020.
-
-WebAIM (2020) [ Captions, transcripts, and audio descriptions](https://webaim.org/techniques/captions/), WebAIM website, accessed 16 September 2020.
-
-York A (2020) ‘[Always up-to-date guide to social media video specs](https://sproutsocial.com/insights/social-media-video-specs-guide/)’, *Sprout*, accessed 16 September 2020.
-
-### Last updated
-
-This page was updated Tuesday 1 April 2025.

@@ -1,10 +1,12 @@
+# Keep it simple: plain language
+
 Using plain language benefits everyone. It builds trust, improves comprehension and makes content accessible for more people.
 
 Using plain language is not ‘dumbing down’ your writing – it’s opening it up. Using plain language lessens the cognitive load for all readers. This includes people with high literacy levels who are time-poor and have a lot to read.
 
-Basic elements
+## Basic elements
 
-The most important element of plain language is understanding your readers and their needs (*see* ‘[Understand who you are writing for and why](/node/260)’).
+The most important element of plain language is understanding your readers and their needs (*see* ‘[Understand who you are writing for and why](https://www.stylemanual.gov.au/node/260)’).
 
 After identifying your readers, we suggest you start with 4 basic elements of plain language:
 
@@ -44,7 +46,11 @@ Avoid jargon unless you’re sure readers understand it. If you can’t avoid te
 
 ### Example
 
-Be concise
+The forum is looking at digital technologies powered by large language models (LLMs).
+
+LLMs are a type of language model. Language models are the mathematical model of a language showing relationships between characters or words. They underpin some generative AI (artificial intelligence) systems …
+
+## Be concise
 
 Don’t use too many words, even if they are short and simple. It’s important to be concise.
 
@@ -59,9 +65,3 @@ Having too many words means readers might:
 - ignore it altogether.
 
 Concise writing is a skill that takes practice. A good first step is to ask, ‘Do I need all these words to make my meaning clear?’
-
-Style Manual pages
-
-### Last updated
-
-This page was updated Thursday 19 December 2024.

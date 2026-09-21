@@ -66,7 +66,7 @@ stylemanual.gov.au
 corpus/pages/**.md
   │ Layer 1  derek/extract/   pure function of the corpus; NO MODEL
   ▼
-546 candidates (stable uid, statement, heading path, gold examples)
+661 candidates (stable uid, statement, heading path, gold examples)
   │ Layer 2  derek/ledger/    model proposes, human decides
   ▼
 ledger/rules.jsonl

@@ -1,6 +1,8 @@
+# Clauses
+
 Clauses are building blocks: sentences can have one or more. When they’re well structured, clauses give people clear information.
 
-Clauses contain at least one verb
+## Clauses contain at least one verb
 
 A clause is a group of words that contains a subject and a verb.
 
@@ -11,7 +13,7 @@ A clause can be:
 
 A main clause can usually stand alone as a sentence, but a subordinate clause can’t.
 
-A main clause can stand alone as a sentence
+## A main clause can stand alone as a sentence
 
 Every sentence has at least one main clause. The main clause is also known as:
 
@@ -30,7 +32,7 @@ When we know the final cost estimates, we will price the project accurately.
 
 [The main clause is ‘we will price the project accurately’.]
 
-A compound sentence contains 2 or more main clauses joined by a [coordinating conjunction](/node/129#coordinating_conjunctions_join_things_of_equal_importance). Each clause has a complete verb and could stand on its own.
+A compound sentence contains 2 or more main clauses joined by a [coordinating conjunction](https://www.stylemanual.gov.au/node/129#coordinating_conjunctions_join_things_of_equal_importance). Each clause has a complete verb and could stand on its own.
 
 ### Example
 
@@ -38,7 +40,7 @@ We will price the project accurately and it will finish on time.
 
 [There are 2 main clauses in this sentence, joined by the coordinating conjunction ‘and’.]
 
-Subordinate clauses depend on the main clause
+## Subordinate clauses depend on the main clause
 
 A subordinate clause can’t stand alone as a sentence. Subordinate clauses depend on the main clause to make sense. This is why they are also called ‘dependent clauses’.
 
@@ -50,7 +52,7 @@ Types of subordinate clauses are:
 
 ### Noun clauses
 
-Noun clauses act as [nouns](/node/122) in a sentence, even though they may consist of other types of words. You can replace a noun clause with ‘it’ and the sentence will still make sense.
+Noun clauses act as [nouns](https://www.stylemanual.gov.au/node/122) in a sentence, even though they may consist of other types of words. You can replace a noun clause with ‘it’ and the sentence will still make sense.
 
 #### Example
 
@@ -79,7 +81,7 @@ He learned to Skype. / He learned it.
 
 ### Adjectival clauses
 
-An adjectival (or relative) clause acts as an [adjective](/node/126). It describes a noun.
+An adjectival (or relative) clause acts as an [adjective](https://www.stylemanual.gov.au/node/126). It describes a noun.
 
 Adjectival clauses are usually, but not always, introduced by a relative pronoun (such as ‘that’, ‘which’, ‘who’, ‘whom’, ‘whose’).
 
@@ -101,7 +103,7 @@ The manager, whose staff work hard, often stays back late. / The manager often s
 
 ### Adverbial clauses
 
-Adverbial clauses stand in for [adverbs](/node/127). They describe time, place, manner, reason, condition, purpose or concession.
+Adverbial clauses stand in for [adverbs](https://www.stylemanual.gov.au/node/127). They describe time, place, manner, reason, condition, purpose or concession.
 
 The sentence should still make sense if you remove the adverbial clause.
 
@@ -118,8 +120,8 @@ Adverbial clauses are usually, but not always, introduced by:
 
 #### Example
 
-- I always check all my emails before I respond.
-[Adverbial clause of time] - Let’s meet where there are videoconferencing facilities. [Adverbial clause of place]
+- I always check all my emails before I respond. [Adverbial clause of time]
+- Let’s meet where there are videoconferencing facilities. [Adverbial clause of place]
 - She works as well as any other staff member. [Adverbial clause of manner]
 - I’m late for work because I missed the bus. [Adverbial clause of reason]
 - I’ll dial into the meeting if the server is working. [Adverbial clause of condition]
@@ -128,7 +130,7 @@ Adverbial clauses are usually, but not always, introduced by:
 
 In the last example, the comma after the adverbial clause helps users find the subject in the sentence (‘she’).
 
-In some sentences, the subject isn’t easy to find without the [comma](/node/109#mark_out_nonessential_information_within_a_sentence).
+In some sentences, the subject isn’t easy to find without the [comma](https://www.stylemanual.gov.au/node/109#mark_out_nonessential_information_within_a_sentence).
 
 #### Correct
 
@@ -174,39 +176,3 @@ We asked whether he was working from home or from the office.
 We asked if he was working from home or from the office.
 
 [Was he working at all, regardless of the location?]
-
-Release notes
-
-The digital edition has practical guidance on plain language. It relates grammatical concepts to the principles of plain language.
-
-The digital edition consolidates information from the sixth edition and highlights the basics about clauses. It takes a different approach to the sixth edition by breaking related topics into specific subject areas like ‘[phrases](/node/144/)’ and ‘[types of words](https://www.stylemanual.gov.au/format-writing-and-structure/clear-language-and-writing-style/types-words)’.
-
-The Content Guide did not have any in-depth information on grammatical concepts.
-
-About this page
-
-### References
-
-Altenberg EP and Vago RM (2010) *English grammar: understanding the basics*, Cambridge University Press, Cambridge.
-
-Dixon JC and Bolitho B (2005–2019a) *Course notes and exercises: English grammar for writers, editors and policymakers*, Centre for Continuing Education, Australian National University, Canberra.
-
-Dixon JC and Bolitho B (2005–2019b) *Report writing*, Centre for Continuing Education, Australian National University, Canberra.
-
-European Commission (2020) *English style guide: a handbook for authors and translators in the European Commission*, European Commission.
-
-Murphy EM (2011) *Working words*, Canberra Society of Editors, Canberra.
-
-Murphy EM with Cadman H (2014) *Effective writing: plain English at work*, 2nd edn, Lacuna, Westgate.
-
-Seely J (2001) *Oxford everyday grammar*, Oxford University Press, Oxford.
-
-Stilman A (2004) *Grammatically correct*, Writer’s Digest Books, Ohio.
-
-Strunk W and White EB (2000) *The elements of style*, 4th edn, Longman, New York.
-
-Truss L (2003) *Eats, shoots and leaves: the zero tolerance approach to punctuation*, Profile Books, London.
-
-### Last updated
-
-This page was updated Tuesday 26 May 2026.

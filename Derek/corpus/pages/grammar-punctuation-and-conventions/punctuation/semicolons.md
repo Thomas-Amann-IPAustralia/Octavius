@@ -1,6 +1,8 @@
+# Semicolons
+
 Semicolons link sentences. They complicate sentences for users if overused. Do not use them at the end of bullet and numbered list items.
 
-Avoid using a semicolon to link sentences
+## Avoid using a semicolon to link sentences
 
 Short, simple sentences are easier to read. Overusing semicolons makes writing more difficult to understand.
 
@@ -14,8 +16,7 @@ Semicolons can create a break that is stronger than a comma but weaker than a fu
 Instead of a semicolon, it’s usually best to use either:
 
 - a full stop followed by a new sentence
-- a comma before the last item, followed by a
-[conjunction](/node/129).
+- a comma before the last item, followed by a [conjunction](https://www.stylemanual.gov.au/node/129).
 
 Sentences should be in plain language and no longer than 25 words. Don’t use a semicolon if all it does is make your sentence longer.
 
@@ -27,9 +28,9 @@ Find out if it’s optional or compulsory before you start. Ask someone to help 
 
 Find out if it’s optional or compulsory before you start; ask someone to help you if you don’t know the difference.
 
-Too much punctuation makes text crowded and difficult to read. If a sentence has a lot of punctuation marks, it might be a sign that the sentence is too long or complex. Try to rewrite into [shorter, clearer sentences](/node/204).
+Too much punctuation makes text crowded and difficult to read. If a sentence has a lot of punctuation marks, it might be a sign that the sentence is too long or complex. Try to rewrite into [shorter, clearer sentences](https://www.stylemanual.gov.au/node/204).
 
-If you have to use a semicolon, on both sides of the semicolon write [full sentences](/node/120). Other than in some sentence lists, it’s incorrect to have a sentence fragment on one side of the semicolon.
+If you have to use a semicolon, on both sides of the semicolon write [full sentences](https://www.stylemanual.gov.au/node/120). Other than in some sentence lists, it’s incorrect to have a sentence fragment on one side of the semicolon.
 
 ### Correct
 
@@ -39,9 +40,9 @@ Staff can leave at any time; they don’t need a work schedule.
 
 Staff can leave at any time; no work schedule.
 
-Don’t end bullet and numbered list items with semicolons
+## Don’t end bullet and numbered list items with semicolons
 
-You don’t need a semicolon at the end of each list item for bullet and numbered [lists](/node/56). It clutters the list and makes it hard to read.
+You don’t need a semicolon at the end of each list item for bullet and numbered [lists](https://www.stylemanual.gov.au/node/56). It clutters the list and makes it hard to read.
 
 ### Like this
 
@@ -59,15 +60,15 @@ The successful applicant will demonstrate:
 - experience in projects of this type; and
 - a sound understanding of interdepartmental relationships.
 
-Separate in-text references with semicolons
+## Separate in-text references with semicolons
 
-Use a semicolon between each reference when you have more than one in-text [reference in brackets](/node/181).
+Use a semicolon between each reference when you have more than one in-text [reference in brackets](https://www.stylemanual.gov.au/node/181).
 
 ### Example
 
 Effective leaders are adaptable (Nicoll 2019; Taylor 2018; Weir 2020).
 
-Use a bullet or numbered list instead of semicolons in a complex sentence
+## Use a bullet or numbered list instead of semicolons in a complex sentence
 
 Complex lists in sentences can be hard to read. If you can’t use a bullet or numbered list, separate list items with:
 
@@ -86,40 +87,4 @@ The successful applicant will demonstrate integrity, persistence and confidence;
 
 The project will go ahead in Tasmania, Queensland and Victoria. [No semicolon is needed, as each item is a single word.]
 
-The project will go ahead in Rose Bay, Tasmania__;__ West End, Queensland__;__ and Fitzroy North, Victoria. [Semicolons are needed, as some list items have a comma in them.]
-
-Release notes
-
-The digital edition is consistent with the sixth edition in its advice on semicolons. A minor change is that it promotes use of other punctuation marks instead.
-
-The Content Guide recommended avoiding semicolons. Sources cited as evidence support the uses explained in the digital edition.
-
-About this page
-
-### Evidence
-
-Australian Broadcasting Corporation (2020) ‘[Punctuation: semicolon](https://about.abc.net.au/abc-editorial/the-abc-style-guide/#Punctuation)’, *The ABC style guide*, ABC website, accessed 21 January 2020.
-
-American Psychological Association (2020) ‘6.4 Semicolon’, *Publication manual of the American Psychological Association*, 7th edn, American Psychological Association, Washington DC.
-
-Murphy EM with Cadman H (2014) ‘7.4: semicolon’, *Effective writing: plain English at work*, 2nd edn, Lacuna, Westgate.
-
-Oxford University Press (2016) ‘4.4 Semicolon’, *New Oxford style manual*, Oxford University Press, Oxford.
-
-University of Chicago (2017) ‘6.56 Use of the semicolon’, *Chicago manual of style, 17th edn, University of Chicago Press, Chicago.*
-
-### References
-
-Dixon JC and Bolitho B (2005–2019) *Course notes and exercises: editing and proofreading for the workplace*, Centre for Continuing Education, Australian National University, Canberra.
-
-Seely J (2001) *Oxford everyday grammar*, Oxford University Press, Oxford.
-
-Stilman S (2004) *Grammatically correct*, Writer’s Digest Books, Ohio.
-
-Strunk W and White EB (2000) *The elements of style*, 4th edn, Longman, New York.
-
-Truss L (2003) *Eats, shoots and leaves: the zero-tolerance approach to punctuation*, Profile Books, London, 2003.
-
-### Last updated
-
-This page was updated Tuesday 19 October 2021.
+The project will go ahead in Rose Bay, Tasmania; West End, Queensland; and Fitzroy North, Victoria. [Semicolons are needed, as some list items have a comma in them.]

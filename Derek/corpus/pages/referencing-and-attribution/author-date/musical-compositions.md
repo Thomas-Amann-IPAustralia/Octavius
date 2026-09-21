@@ -1,8 +1,8 @@
+# Musical compositions
+
 Cite musical compositions using the author–date system. Attribute compositions with correct references to help people find a particular piece of music.
 
-
-
-Cite musical compositions correctly
+## Cite musical compositions correctly
 
 Musical compositions include:
 
@@ -38,7 +38,7 @@ You must attribute copyright material you reference. This includes music and aud
 
 Include all the details required by open access licences (read how to [attribute Creative Commons](https://creativecommons.org.au/learn/fact-sheets/attribution/)).
 
-Read the government copyright rules in the [ Australian Government intellectual property manual](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual).
+Read the government copyright rules in the [*Australian Government intellectual property manual*](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual).
 
 ### Australian National Anthem
 
@@ -50,7 +50,7 @@ The Vice-Regal [Proclamation](https://www.legislation.gov.au/file/1984GN17) 1984
 
 The crowd stood up to listen to the choir sing ‘Advance Australia Fair’.
 
-Use roman type for unnamed compositions
+## Use roman type for unnamed compositions
 
 For compositions with no given name, use roman type and no quotation marks. Always use a capital letter for the key of musical compositions.
 
@@ -58,7 +58,7 @@ For compositions with no given name, use roman type and no quotation marks. Alwa
 
 Telemann’s suite in D major, TWV 55:C6, was the first piece our chamber group performed in public.
 
-For compositions numbered as one of a series, do not use a full stop for the [contraction for the word numero (or ‘number’)](/node/191#only_use_the_contraction_no_with_numerals).
+For compositions numbered as one of a series, do not use a full stop for the [contraction for the word *numero* (or ‘number’)](https://www.stylemanual.gov.au/node/191#only_use_the_contraction_no_with_numerals).
 
 ### Example
 
@@ -74,24 +74,21 @@ Don’t capitalise the generic type of composition.
 Use the English word for most types of compositions (Table 1).
 
 | Preferred English term | Non-English terms |
-|---|---|
-| prelude | praeludium |
-| fugue | fuga |
-| symphony, symphonies | sinfonia, sinfoniae |
-| oratorio | oratorium |
-| song | lieder, chanson, canzona |
-| duet | duetto, duo
-* |
-| study | etude
-* |
-| * Use the foreign terms if they are part of the title of the composition. |
+| --- | --- |
+| prelude | *praeludium* |
+| fugue | *fuga* |
+| symphony, symphonies | *sinfonia, sinfoniae* |
+| oratorio | *oratorium* |
+| song | *lieder, chanson, canzona* |
+| duet | *duetto, duo**** |
+| study | *etude**** |
+| * Use the foreign terms if they are part of the title of the composition. |  |
 
 Use the English plural form for most types of compositions (Table 2).
 
 | Singular form | Plural form |
-|---|---|
-| concerto | concertos, concerti [grossi]
-* |
+| --- | --- |
+| concerto | concertos, *concerti [grossi]**** |
 | suite | suites |
 | trio | trios |
 | aria | arias |
@@ -99,7 +96,7 @@ Use the English plural form for most types of compositions (Table 2).
 | toccata | toccatas |
 | sonata | sonatas |
 | cantata | cantatas |
-* Use ‘concertos’, not ‘concerti’. The exception is ‘concerti grossi’, the name for a particular style of composition. |
+| * Use ‘concertos’, not ‘*concerti*’. The exception is ‘*concerti grossi*’*,* the name for a particular style of composition. |  |
 
 ### Catalogue numbers
 
@@ -107,11 +104,11 @@ Some composition names include the catalogue number.
 
 ‘Op.’ is the abbreviated form of the Latin ‘*opus*’, meaning ‘work’. It is a common catalogue term for many composers' works. Always use a full stop with this abbreviation.
 
-Some of the more prolific composers have a catalogue of their own. For example, ‘BWV’ is the shortened form of the German *Bach Werke Verzeichnis. *The English translation is ‘Bach works catalogue’.
+Some of the more prolific composers have a catalogue of their own. For example, ‘BWV’ is the shortened form of the German *Bach Werke Verzeichnis.*The English translation is ‘Bach works catalogue’.
 
 Never spell out these shortened forms.
 
-Use italics for long works and compilations, roman type for songs
+## Use italics for long works and compilations, roman type for songs
 
 Style for the title of a composition depends on what version you are referring to.
 
@@ -151,9 +148,9 @@ Use italics and sentence case for the titles of long works. If the title is in a
 
 #### Example
 
-- Many people know Australian tenor David Hobson from
-*La bohème*and*The pirates of Penzance.*Fewer people know that he is the composer of the chamber opera*Remembering Rosie*. - The
-*Brandenburg concertos*are part of Bach’s collection of concertos (BWV 1046–1051). *Eumeralla, a war requiem for peace,*which was composed by the Australian soprano Deborah Cheetham, is sung in Gunditjmara language.
+- Many people know Australian tenor David Hobson from *La bohème* and *The pirates of Penzance.* Fewer people know that he is the composer of the chamber opera *Remembering Rosie*.
+- The *Brandenburg concertos* are part of Bach’s collection of concertos (BWV 1046–1051).
+- *Eumeralla, a war requiem for peace,*which was composed by the Australian soprano Deborah Cheetham, is sung in Gunditjmara language.
 
 ### Albums and compilations
 
@@ -169,10 +166,10 @@ For names of the soundtracks of films and video games, use italics and sentence 
 
 #### Example
 
-- Himesh Patel performed all songs in the soundtrack for
-*Yesterday.*The filmfeatures new versions of some of The Beatles’s greatest hits, like ‘Hey Jude’ and ‘Here comes the sun’. *Halo original soundtrack*is used in the game*Halo: combat evolved.*
+- Himesh Patel performed all songs in the soundtrack for *Yesterday.*The filmfeatures new versions of some of The Beatles’s greatest hits, like ‘Hey Jude’ and ‘Here comes the sun’.
+- *Halo original soundtrack*is used in the game *Halo: combat evolved.*
 
-Cite the song when you use someone’s lyrics
+## Cite the song when you use someone’s lyrics
 
 Write the name of the song, the author and the year of publication in parentheses when you cite lyrics in a text.
 
@@ -184,7 +181,7 @@ Use single quotation marks and sentence case for the name of the song.
 
 Kevin Parker sings, ‘If it calls you, embrace it / If it haunts you, face it’. We can all learn from that (Tame Impala, ‘Lost in yesterday’ 2020).
 
-Include musical compositions if you’re using a reference list
+## Include musical compositions if you’re using a reference list
 
 In government content, you don’t need to create a reference list to cite musical compositions. If you have a reference list already, add musical compositions to your list.
 
@@ -194,36 +191,11 @@ Rule: Creator C (Year) ‘Title of song: subtitle of song’ [Medium], *Title of
 
 ### Example
 
-- Tones and I (2019) ‘Dance monkey’ [Song],
-*The kids are coming*, Sony Music Australia. - Farnham J (1968)
-*Sadie*[Album], EMI/Columbia.
+- Tones and I (2019) ‘Dance monkey’ [Song], *The kids are coming*, Sony Music Australia.
+- Farnham J (1968) *Sadie*[Album], EMI/Columbia.
 
-Rule: Creator C (Year) *Title of long work or compilation *[Medium], Name of Publisher.
+Rule: Creator C (Year) *Title of long work or compilation*[Medium], Name of Publisher.
 
 ### Example
 
 Bach JS (2010) *The Brandenburg concertos: concertos BWV 1043 & 1060* [Album recorded by Academy of St Martin in the Fields], Decca.
-
-Release notes
-
-The digital edition expands on the information about music provided in the sixth edition. It includes examples to help users cite musical compositions in the correct style.
-
-The sixth edition had brief information about music.
-
-The Content Guide did not have any information about musical compositions.
-
-About this page
-
-### References
-
-American Psychological Association (2020) ‘10.13: Audio works’, *Publication manual of the American Psychological Association*, 7th edn, American Psychological Association, Washington DC.
-
-Department of the Prime Minister and Cabinet (n.d.) [Australian National Anthem](https://www.pmc.gov.au/government/australian-national-anthem), PM&C website, accessed 20 January 2020.
-
-Oxford University Press (2016) ‘18.7: Audio and audiovisual materials’, *New Oxford style manual*, Oxford University Press, Oxford.
-
-University of Chicago (2017) ‘15.57 Citing recordings and multimedia in author-date format’, *Chicago manual of style*, 17th edn, University of Chicago Press, Chicago.
-
-### Last updated
-
-This page was updated Thursday 12 December 2024.

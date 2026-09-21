@@ -1,8 +1,10 @@
+# Make it accessible and inclusive
+
 Accessibility is about writing and designing content for equal access. Government agencies must produce accessible content.
 
 Equal access to government services and information is an obligation under Australian law (e.g. the *Disability Discrimination Act 1992*).
 
-WCAG and user needs
+## WCAG and user needs
 
 WCAG (Web Content Accessibility Guidelines) is the baseline accessibility standard for all Australian Government digital content.
 
@@ -12,9 +14,9 @@ We can describe WCAG in terms of user needs:
 - I need to operate the navigation and interface.
 - My assistive technologies can interpret the content.
 
-Understanding users and their needs is important for all government content (*see* ‘[Understand who you are writing for and why](/node/260)’). Without this knowledge, we risk creating content that alienates and excludes people.
+Understanding users and their needs is important for all government content (*see* ‘[Understand who you are writing for and why](https://www.stylemanual.gov.au/node/260)’). Without this knowledge, we risk creating content that alienates and excludes people.
 
-Inclusive language
+## Inclusive language
 
 Everyone knows that words are powerful. We must use respectful language that talks to the person, not their difference. It’s the law (e.g. the *Racial Discrimination Act 1975*).
 
@@ -97,12 +99,3 @@ Only use gendered terms when gender is important to the topic. Don’t use them 
 - use more space than ‘they’ and ‘them’.
 
 Please remember that language and its usage evolve, often quickly. Make sure you have an up-to-date understanding of users’ needs.
-
-Style Manual pages
-
-- Accessibility requirements appear on most Style Manual pages.
-[Accessible and inclusive content](/node/234)(section)
-
-### Last updated
-
-This page was updated Thursday 19 December 2024.

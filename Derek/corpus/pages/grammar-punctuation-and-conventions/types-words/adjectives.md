@@ -1,11 +1,12 @@
+# Adjectives
+
 Adjectives describe, compare and define nouns and words that act as nouns. Use adjectives to help people understand meaning.
 
+## Adjectives describe nouns
 
-Adjectives describe nouns
+Adjectives describe [nouns](https://www.stylemanual.gov.au/node/122), [noun phrases](https://www.stylemanual.gov.au/node/144#noun_phrases_function_as_a_noun) and [noun clauses](https://www.stylemanual.gov.au/node/143).
 
-Adjectives describe [nouns](/node/122), [noun phrases](/node/144#noun_phrases_function_as_a_noun) and [noun clauses](/node/143).
-
-Adjectives usually go immediately before the noun. They can go elsewhere in a sentence – for example, as [a predicate](/node/120).
+Adjectives usually go immediately before the noun. They can go elsewhere in a sentence – for example, as [a predicate](https://www.stylemanual.gov.au/node/120).
 
 ### Example
 
@@ -25,22 +26,22 @@ Different types of words, such as nouns, can also function as adjectives.
 
 - A moving speech brought the sound of applause. [A verbal noun (gerund) functioning as an adjective]
 
-Adjectives can affect clarity
+## Adjectives can affect clarity
 
-Use adjectives sparingly and only when they are essential for meaning. Remove any adjective that doesn’t play a critical function in a [sentence](/node/204).
+Use adjectives sparingly and only when they are essential for meaning. Remove any adjective that doesn’t play a critical function in a [sentence](https://www.stylemanual.gov.au/node/204).
 
 Because adjectives are modifiers, they can affect clarity. A lack of clarity can cause users to lose trust in government content.
 
-Compound adjectives can have hyphens
+## Compound adjectives can have hyphens
 
-Adjectives can be joined with [hyphens to make compound adjectives](/node/105#use_hyphens_for_some_compound_words). A compound adjective usually has a hyphen if the adjective is before the noun it is describing.
+Adjectives can be joined with [hyphens to make compound adjectives](https://www.stylemanual.gov.au/node/105#use_hyphens_for_some_compound_words). A compound adjective usually has a hyphen if the adjective is before the noun it is describing.
 
 ### Example
 
 - We need a fit-for-purpose strategy to solve this specific problem. [Adjective before the noun ‘strategy’]
 - The strategy is fit for purpose. [Adjective after the noun ‘strategy’]
 
-A compound adjective can be made up of an [adverb](/node/127) and a [verb](/node/128).
+A compound adjective can be made up of an [adverb](https://www.stylemanual.gov.au/node/127) and a [verb](https://www.stylemanual.gov.au/node/128).
 
 A common error with adverbs and hyphens is when people insert a hyphen into this kind of compound adjective. Don’t use hyphens with most adverbs finishing in ‘-ly’.
 
@@ -54,7 +55,7 @@ A common error with adverbs and hyphens is when people insert a hyphen into this
 
 There are few exceptions to this rule, so check a dictionary if you are unsure.
 
-Most adjectives use different degrees for comparisons
+## Most adjectives use different degrees for comparisons
 
 Degree shows the relative scale of the words being described, such as speed, size or quality. Most adjectives can have ‘degree’.
 
@@ -91,13 +92,13 @@ Some adjectives don’t have a different form to show degree. They show degree b
 
 Some adjectives don’t have degree because you can’t compare them. For example, nothing can be more unique than something else.
 
-There is a common order for strings of adjectives
+## There is a common order for strings of adjectives
 
 Write strings of adjectives in an order that creates a more natural-sounding English. This order is determined by the types of adjectives used. List adjectives in this order:
 
-- evaluative – features of a noun that you can measure or compare
-- descriptive – features of a noun that you can’t measure
-- definitive – features of a noun that are intrinsic to the noun.
+1. evaluative – features of a noun that you can measure or compare
+2. descriptive – features of a noun that you can’t measure
+3. definitive – features of a noun that are intrinsic to the noun.
 
 Evaluative adjectives can also express an opinion.
 
@@ -122,13 +123,13 @@ Strings of adjectives have:
 - A large, black nuclear submarine [‘Large’ and ‘black’ are descriptive; ‘nuclear’ is definitive.]
 - A new, red long-range electric car [‘New’ and ‘red’ are descriptive; ‘long-range’ and ‘electric’ are definitive.]
 
-You can also use ‘and’ instead of [commas to help the sentence flow more smoothly](/node/109).
+You can also use ‘and’ instead of [commas to help the sentence flow more smoothly](https://www.stylemanual.gov.au/node/109).
 
 ### Example
 
 - A new and shiny red long-range electric car
 
-The meaning of nouns and adjectives shouldn’t overlap
+## The meaning of nouns and adjectives shouldn’t overlap
 
 Don’t use an adjective if it repeats a quality or property that is part of the noun.
 
@@ -138,33 +139,3 @@ Don’t use an adjective if it repeats a quality or property that is part of the
 - added bonus [All bonuses are added.]
 - emergency situation [An emergency is always a situation.]
 - future prospect [Prospects are always in the future.]
-
-Release notes
-
-The digital edition gives an overview of adjectives based on the information from the sixth edition. It links to other pages that have detailed information on specific aspects of adjectives.
-
-The sixth edition had information about adjectives in many different sections of the manual.
-
-The Content Guide had only a brief mention of adjectives.
-
-About this page
-
-### References
-
-Dixon JC and Bolitho B (2005–2019a) *Course notes and exercises: English grammar for writers, editors and policymakers*, Centre for Continuing Education, Australian National University, Canberra.
-
-Dixon JC and Bolitho B (2005–2019b) *Report writing*, Centre for Continuing Education, Australian National University, Canberra.
-
-Turnbull G (14 March 2014) [ Giles Turnbull interviews Sarah Richards: What we mean when we talk about content design](https://gds.blog.gov.uk/2014/03/14/what-we-mean-when-we-talk-about-content-design/) [interview audio file], UK Government Digital Service blog, accessed 29 June 2020.
-
-Murphy EM with Cadman H (2014) *Effective writing: plain English at work*, 2nd edn, Lacuna, Westgate.
-
-Seely J (2001) *Oxford everyday grammar*, Oxford University Press, Oxford.
-
-Stilman A (2004) *Grammatically correct*, Writer’s Digest Books, Ohio.
-
-Truss L (2003) *Eats, shoots and leaves: the zero tolerance approach to punctuation*, Profile Books, London.
-
-### Last updated
-
-This page was updated Friday 20 December 2024.

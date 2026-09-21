@@ -1,14 +1,14 @@
+# Nationalities, peoples and places outside Australia
+
 Refer to peoples and places outside Australia based on current information. Correct spelling and style avoids causing confusion or offence among users.
 
-
-Check official sources for country and place names
+## Check official sources for country and place names
 
 Some countries have several official names. Consult trusted references to decide which name to use, then use it consistently. Helpful references include:
 
-- the
-[countries, economies and regions](https://www.dfat.gov.au/geo/pages/countries-and-regions)webpages, on the Department of Foreign Affairs and Trade website - the United Nations
-[geographical names database](https://unstats.un.org/unsd/geoinfo/geonames/) - the Australian Bureau of Statistics
-.*Standard Australian classification of countries*
+- the [countries, economies and regions](https://www.dfat.gov.au/geo/pages/countries-and-regions) webpages, on the Department of Foreign Affairs and Trade website
+- the United Nations [geographical names database](https://unstats.un.org/unsd/geoinfo/geonames/)
+- the Australian Bureau of Statistics [*Standard Australian classification of countries*](https://www.abs.gov.au/AUSSTATS/abs@.nsf/Lookup/1269.0Main+Features102016?OpenDocument).
 
 ### Example
 
@@ -22,7 +22,7 @@ The Democratic Republic of the Congo used to be called ‘Zaire’. The former n
 
 Country boundaries can also change.
 
-Spell country names with a capital letter
+## Spell country names with a capital letter
 
 Use initial capitals for:
 
@@ -37,7 +37,7 @@ The definite article ‘the’ isn’t capitalised unless it begins a sentence.
 - the Cayman Islands – the Caymans
 - the Falkland Islands – the Falklands
 
-Shorten a country name only if it is clear to the user
+## Shorten a country name only if it is clear to the user
 
 Use a short form of a country’s name only if it’s clear and accurate. Shortened forms can make it easier to read text or tables, illustrations, notes, lists and bibliographies.
 
@@ -45,17 +45,16 @@ Use a short form of a country’s name only if it’s clear and accurate. Shorte
 
 ‘North Korea’ is the shortened form of the Democratic People’s Republic of Korea.
 
-Use English versions of countries and places in most content
+## Use English versions of countries and places in most content
 
 English-language content usually uses the English version of a country’s name.
 
 ### Example
 
-- ‘Socialist Republic of Vietnam’ is the English version of
-*Cộng hòa xã hội chủ nghĩa Việt Nam*. - ‘Germany’ is the English version of
-*Deutschland*. - ‘New Zealand’ is the English version of
-*Aotearoa*. - ‘The Czech Republic’ or ‘Czechia’ are the English versions of
-*Česká republika*.
+- ‘Socialist Republic of Vietnam’ is the English version of *Cộng hòa xã hội chủ nghĩa Việt Nam*.
+- ‘Germany’ is the English version of *Deutschland*.
+- ‘New Zealand’ is the English version of *Aotearoa*.
+- ‘The Czech Republic’ or ‘Czechia’ are the English versions of *Česká republika*.
 
 There are some cases where the preferred official name isn’t in English.
 
@@ -84,7 +83,7 @@ When the name is used generically, you don’t need an initial capital.
 - venetian blind [A type of screen for a window, not a blind from Venice]
 - french door [A type of door, not a door from France]
 
-Check the official status for area and region names
+## Check the official status for area and region names
 
 Groups of nations or areas that are recognised as political or geographic regions take initial capitals.
 
@@ -107,7 +106,7 @@ Some names that aren’t officially recognised become well known and gain a semi
 
 Kurdistan
 
-Write nationalities, peoples and places with initial capitals
+## Write nationalities, peoples and places with initial capitals
 
 There’s usually a clear relationship between the name of the country or region and the word used for the nationality. It’s not always obvious though, so check a dictionary to ensure you’re using the correct term.
 
@@ -120,7 +119,7 @@ There’s usually a clear relationship between the name of the country or region
 - United Arab Emirates – Emirati
 - New Zealand – New Zealander
 
-Follow guidance for writing non-English [ personal names](/node/90).
+Follow guidance for writing non-English [personal names](https://www.stylemanual.gov.au/node/90).
 
 Capitalise the names of certain groups.
 
@@ -132,7 +131,7 @@ Capitalise the names of certain groups.
 - People who follow particular religions – Jewish, Christian, Muslim, Buddhist, Hindu, Greek Orthodox
 - People who speak particular languages – Hokkien-speaking
 
-Check if an official language differs from the country name
+## Check if an official language differs from the country name
 
 The name of a country’s language isn’t always derived from the name of the country.
 
@@ -142,29 +141,3 @@ The name of a country’s language isn’t always derived from the name of the c
 - Dari and Pashto are the official languages of Afghanistan.
 - While Chileans speak Spanish, Brazilians speak Portuguese.
 - East Timor has 2 official languages: Portuguese and Tetum.
-
-Release notes
-
-The digital edition builds on sixth edition content: it consolidates details about peoples and places outside of Australia. It links to authoritative sources so users can find current spelling for official country and place names.
-
-The guidance on nationalities, language names and groups of peoples relates to guidance on:
-
-The Content Guide had generic advice about capitalisation. It did not go into detail about names of people and places outside Australia.
-
-About this page
-
-### References
-
-Australian Bureau of Statistics (2016) [ Standard Australian classification of countries (SACC)](https://www.abs.gov.au/AUSSTATS/abs@.nsf/Lookup/1269.0Main+Features102016?OpenDocument), catalogue number 1269.0, accessed 8 November 2022.
-
-Department of Foreign Affairs and Trade (n.d.) [ Countries, economies and regions](https://www.dfat.gov.au/geo/countries-economies-and-regions), DFAT website, accessed 8 November 2022.
-
-International Organization for Standardization (n.d.) [ Popular standards: ISO 3166 Country codes](https://www.iso.org/iso-3166-country-codes.html), ISO website, accessed 9 June 2020.
-
-Seterra (20 April 2018) ‘[Countries known by more than one name](https://online.seterra.com/en/p/multiple-names)’, *The Seterra Blog*, accessed 9 June 2020.
-
-United Nations Group of Experts on Geographical Names (2019) [ UNGEGN world geographical names: geographical names database](http://unstats.un.org/unsd/geoinfo/geonames/), UNGEGN website, accessed 8 November 2022.
-
-### Last updated
-
-This page was updated Wednesday 29 October 2025.

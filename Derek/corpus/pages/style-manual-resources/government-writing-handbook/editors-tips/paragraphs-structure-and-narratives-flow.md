@@ -1,3 +1,5 @@
+# Paragraphs, structure and narratives that flow
+
 The first part of this tip (Write this) uses a good structure to explain effective paragraphs.
 
 The second part (Not this) uses the same words. However, there are no headings or lists, and it has longer sentences in an illogical order. Paragraphs also appear in the wrong order. The result is a choppy narrative that is hard to understand.
@@ -23,19 +25,15 @@ Write short paragraphs containing one topic.
 
 The 2 ways to start a paragraph are with a:
 
-topic sentence that tells readers what the paragraph is about
-
-transition sentence that smoothly connects the previous paragraph to the new.
-
+- topic sentence that tells readers what the paragraph is about
+- transition sentence that smoothly connects the previous paragraph to the new.
 
 After the topic or transition sentence comes the body of the paragraph. It contains sentences in a logical order. Each sentence must contain an idea that develops the topic.
 
 The paragraph’s concluding sentence usually does one of these things:
 
-summarises the topic
-
-leads into the next paragraph.
-
+- summarises the topic
+- leads into the next paragraph.
 
 ##### Limit the number of sentences in a paragraph
 
@@ -57,14 +55,8 @@ A heading says, ‘all the paragraphs that follow are related to me by meaning�
 
 Paragraphs are the basic structural units of our writing.
 
-The editor intervenes
+## The editor intervenes
 
 Let’s stop here: I don’t need more confusing paragraphs to make the point.
 
 Apply structure to your text. Limit paragraphs to one topic and arrange sentences and paragraphs in logical order. The narrative will flow and make your writing easier to read.
-
-Style Manual pages
-
-### Last updated
-
-This page was updated Thursday 19 December 2024.
