@@ -1,3 +1,11 @@
-# Runtime + extraction. Deliberately minimal: derek/corpus/ and derek/extract/
-# are stdlib-only so the snapshot workflow can run without the pipeline deps.
-# Detection and interface dependencies are added as those layers land.
+# Runtime, extraction and HTML->Markdown conversion.
+#
+# derek/corpus/to_markdown.py parses the source DOM to preserve heading
+# levels (ADR-020), so the conversion step needs an HTML parser. Everything
+# else in derek/corpus/, derek/extract/ and derek/ledger/ is stdlib-only, so
+# the snapshot workflow does not need the full pipeline requirements.
+#
+# Pinned: a converter change rewrites many content hashes at once and must be
+# a deliberate, reviewed event rather than a silent dependency bump (ADR-001).
+beautifulsoup4==4.12.3
+lxml==5.3.0

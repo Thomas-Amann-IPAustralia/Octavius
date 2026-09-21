@@ -130,9 +130,16 @@ passing dogfood gate.
 ## Code style
 
 **Python.** Type hints throughout (`from __future__ import annotations`). Dataclasses
-for data, plain functions for logic. Stdlib-only in `derek/corpus/` and `derek/extract/`
-so the snapshot workflow does not need the full pipeline requirements. No linter is
-configured; match surrounding code.
+for data, plain functions for logic. No linter is configured; match surrounding code.
+
+**Dependencies are tiered deliberately.** `derek/extract/`, `derek/ledger/` and most of
+`derek/corpus/` are stdlib-only. Two exceptions, both necessary:
+`derek/corpus/to_markdown.py` needs an HTML parser (`beautifulsoup4`, `lxml`) to read
+heading levels from the DOM (ADR-020), and `derek/corpus/fetch.py` needs `selenium`
+and `requests` for the transport. `requirements.txt` therefore carries the parser —
+CI installs only it plus `requirements-dev.txt`, and the tests import
+`derek.corpus.to_markdown`. Keep new dependencies out of `derek/extract/` and
+`derek/ledger/` entirely.
 
 **Determinism.** Layers 0 and 1 must be pure functions. No clock, no randomness, no set
 or dict iteration order leaking into output, no model calls. If you need to sort, sort

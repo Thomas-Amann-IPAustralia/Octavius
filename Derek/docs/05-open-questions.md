@@ -225,8 +225,9 @@ reconciler now handles as a *rehoming* rather than 500 fictional upstream edits.
 
 **Costs, which are real:**
 
-- `derek/extract/` is currently stdlib-only, deliberately, so the snapshot workflow does
-  not need the pipeline dependencies. spaCy plus a model is ~50 MB and breaks that.
+- `derek/extract/` is stdlib-only, deliberately — the only third-party dependency the
+  core carries is an HTML parser, for conversion. spaCy plus a model is ~50 MB and
+  breaks that.
   Mitigation: run tagging in a separate authoring step that writes `statement_form` into
   the ledger, keeping the runtime dependency-free.
 - The tagger has its own false positives. On this corpus it wrongly flags 9 noun
