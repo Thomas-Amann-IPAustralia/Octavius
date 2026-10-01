@@ -23,9 +23,9 @@ Australian Government employees must follow the [Guidance for Australian Public 
 
 Content that you create as part of your work for the Australian Government becomes a record. Records provide evidence of what your organisation has done and why.
 
-Managing and disposing of records properly is a requirement under the [ Archives Act 1983](https://www.legislation.gov.au/Series/C2004A02796). You must follow your organisation’s information management requirements. Visit the National Archives of Australia website for:
+Managing and disposing of records properly is a requirement under the [*Archives Act 1983*](https://www.legislation.gov.au/Series/C2004A02796). You must follow your organisation’s information management requirements. Visit the National Archives of Australia website for:
 
-Define the audience before you write
+## 
 
 Find out who will engage with your post and why before you start writing. Each social media platform has a different audience.
 
@@ -33,7 +33,7 @@ Each platform has its own analytics tool to help you learn about them.
 
 Ensure there's capacity to engage with comments and enquiries on your post.
 
-Design for each relevant platform
+## 
 
 Prepare content specifically for each platform. Check that a social media platform is the best option before you publish.
 
@@ -113,7 +113,7 @@ Instagram content should either:
 
 Links don’t work well on Instagram. Include all your information in the post rather than linking to websites.
 
-Use plain language and the right tone
+## 
 
 Use plain language and a conversational, positive tone on social media. Avoid jargon and acronyms.
 
@@ -132,21 +132,21 @@ Follow your organisation’s guidelines about appropriate use of emojis. Use the
 
 ### Accessibility and inclusivity requirements
 
-Use emojis, not emoticons. Emojis are [standardised pictographs](https://home.unicode.org/emoji/about-emoji/). Emoticons display as punctuation marks in text and are not standardised.
+Use emojis, not emoticons. Emojis are [standardised pictographs](https://home.unicode.org/emoji/about-emoji/). Emoticons display as punctuation marks in text and are not standardised.
 
 Choose common emojis and make sure the user can understand the message if the emoji is removed.
 
 Content needs respect all people, their rights and their heritage. Use inclusive imagery and [inclusive language](/node/178).
 
-Include images and video that enhance the message
+## 
 
 Social media is a visual-first, mobile-first medium. Plan content with this in mind.
 
-Use video and images as the basis of your content wherever possible. Visual content needs to be timely, relevant and engaging. Set the video [aspect and resolution for the user’s device](/node/41#set_the_video_aspect_and_resolution_for_the_users_device).
+Use video and images as the basis of your content wherever possible. Visual content needs to be timely, relevant and engaging. Set the video [aspect and resolution for the user’s device](/node/41#set_the_video_aspect_and_resolution_for_the_users_device).
 
 Use alt text and closed captions, or provide a link to content with these elements. Also ensure you include any text in the image that is in the text of the post itself.
 
-Follow your organisation’s [branding guidelines](/node/41#apply_government_branding_to_all_audio_and_video). Official photography should carry your organisation’s mark or logo in the bottom right-hand corner.
+Follow your organisation’s [branding guidelines](/node/41#apply_government_branding_to_all_audio_and_video). Official photography should carry your organisation’s mark or logo in the bottom right-hand corner.
 
 You might need to use release forms before you use anyone’s image in any social media platform. Before you post, [check if you have the right permissions](/node/41#get_permissions_and_licences_for_copyright_material).
 
@@ -160,9 +160,8 @@ User needs:
 Fundamentals:
 
 - Include images, video and audio on a page only if they meet a real user need. Make sure the contrast is sufficient for all users.
-- Prepare
-.__alt text for images__ - Follow the
-[requirements for video and audio](/node/41).
+- Prepare [__alt text for images__](/node/49) .
+- Follow the [requirements for video and audio](/node/41) .
 
 Web Content Accessibility Guidelines success criteria:
 
@@ -174,9 +173,9 @@ Some material is available under an open access licence, such as [Creative Commo
 
 You must [attribute copyright material](/node/174).
 
-Read the government copyright rules in the [ Australian Government intellectual property manual](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual).
+Read the government copyright rules in the [*Australian Government intellectual property manual*](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual).
 
-Post content at the times that suit the audience
+## 
 
 Timing is a critical component of successful content. Post when something is still fresh and people are still interested. It is this immediacy that gives you authority when you publish something to social media.
 
@@ -204,64 +203,62 @@ Be aware of privacy concerns and offensive material on social media.
 
 ### Privacy requirements
 
-Your organisation has obligations under the [ Privacy Act 1988](https://www.oaic.gov.au/privacy/the-privacy-act/).
+Your organisation has obligations under the [*Privacy Act 1988*](https://www.oaic.gov.au/privacy/the-privacy-act/).
 
 Privacy is relevant whenever it’s possible to identify someone. Treat things that can or might identify an individual as personal information. A social media post might feature someone’s picture as an image or in a video, for example.
 
-When you handle personal information, you must comply with the [Australian Privacy Principles](https://www.oaic.gov.au/privacy/australian-privacy-principles/). Personal information is any information that could identify an individual and apply to any format.
+When you handle personal information, you must comply with the [Australian Privacy Principles](https://www.oaic.gov.au/privacy/australian-privacy-principles/). Personal information is any information that could identify an individual and apply to any format.
 
-The Privacy Act and Privacy Principles also apply to any personal information you collect from a social media platform. People have the right to request access to their personal information under the Privacy Principles and the *Freedom of Information Act 1982**.*
+The Privacy Act and Privacy Principles also apply to any personal information you collect from a social media platform. People have the right to request access to their personal information under the Privacy Principles and the *Freedom of Information Act 1982**.*
 
 The federal regulator for privacy and freedom of information legislation is the [Office of the Australian Information Commissioner](https://www.oaic.gov.au/).
 
-Release notes
+## 
 
 Guidance on social media is new to the digital edition. It covers why and how to use social media, including how to choose a platform, and how to manage it.
 
-About this page
+## 
+
+### Co-created with
+
+- Digital Transformation Agency
 
 ### References
 
-ACT Government (n.d.) [ Social media community guidelines](https://www.act.gov.au/social-media-community-guidelines), ACT Government website, accessed 22 December 2022.
+ACT Government (n.d.) [*Social media community guidelines*](https://www.act.gov.au/social-media-community-guidelines), ACT Government website, accessed 22 December 2022.
 
-Arch A and Pulis S (2019) *How to write more accessible social media posts*, Australian Network on Disability blog, accessed 13 June 2019.
+Arch A and Pulis S (2019) *How to write more accessible social media posts*, Australian Network on Disability blog, accessed 13 June 2019. 
 
-Australian Government (n.d.) [ Social media moderation guidelines](https://www.australia.gov.au/socialmedia), Australia.gov.au, accessed 19 December 2022.
+Australian Government (n.d.) [*Social media moderation guidelines*](https://www.australia.gov.au/socialmedia), Australia.gov.au, accessed 19 December 2022.
 
-Australian Public Service Commission (2020), [ APS values](https://www.apsc.gov.au/aps-values-1), APSC website, accessed 12 December 2022. [
+Australian Public Service Commission (2020), [*APS values*](https://www.apsc.gov.au/aps-values-1), APSC website, accessed 12 December 2022. [[*Public Service Act 1999*](https://www.legislation.gov.au/Series/C2004A00538), s 10.]
 
-[, s 10.]](https://www.legislation.gov.au/Series/C2004A00538)
-
-*Public Service Act 1999*Clement J (2020) [ Device usage of Facebook users worldwide as of July 2020](https://www.statista.com/statistics/377808/distribution-of-facebook-users-by-device/), Statista website, accessed 16 September 2020.
+Clement J (2020) [*Device usage of Facebook users worldwide as of July 2020*](https://www.statista.com/statistics/377808/distribution-of-facebook-users-by-device/), Statista website, accessed 16 September 2020.
 
 Content Design London (2019) ‘[Social media](https://readabilityguidelines.co.uk/audiences-devices-channels/social-media/)’, *Content Design London readability guidelines*, Content Design London website, accessed 16 May 2020.
 
 Facebook for Business (21 April 2019) ‘[Capturing attention in feed: the science behind effective video creative](https://www.facebook.com/business/news/insights/capturing-attention-feed-video-creative)’, *Facebook for Business*, accessed 14 September 2020.
 
-GOV.UK (2018) [ Social media playbook](https://www.gov.uk/guidance/social-media-playbook), GOV.UK, accessed 20 November 2019.
+GOV.UK (2018) [*Social media playbook*](https://www.gov.uk/guidance/social-media-playbook), GOV.UK, accessed 20 November 2019.
 
 Lynch PJ and Horton S (2016) *Web style guide*, 4th edn, Yale University Press, New Haven and London.
 
-NSW Government (2022) [ Social media guidelines](https://www.nsw.gov.au/nsw-government-communications/social-media-guidelines), NSW Government website, accessed 21 December 2022.
+NSW Government (2022) [*Social media guidelines*](https://www.nsw.gov.au/nsw-government-communications/social-media-guidelines), NSW Government website, accessed 21 December 2022.
 
-Queensland Government (2021) [ Use social media](https://www.forgov.qld.gov.au/use-social-media), For government website, accessed 22 December 2022.
+Queensland Government (2021) [*Use social media*](https://www.forgov.qld.gov.au/use-social-media), For government website, accessed 22 December 2022.
 
-Social Media News Australia (2020) [ Social media statistics](https://www.socialmedianews.com.au/social-media-statistics/), SocialMediaNews.com.au, accessed 21 May 2020.
+Social Media News Australia (2020) [*Social media statistics*](https://www.socialmedianews.com.au/social-media-statistics/), SocialMediaNews.com.au, accessed 21 May 2020.
 
-South Australian Government (2022) [ Electronic communication](https://www.dpc.sa.gov.au/responsibilities/ict-digital-cyber-security/policies-and-guidelines/electronic-communication), Department of the Premier and Cabinet website, accessed 22 December 2022.
+South Australian Government (2022) [*Electronic communication*](https://www.dpc.sa.gov.au/responsibilities/ict-digital-cyber-security/policies-and-guidelines/electronic-communication), Department of the Premier and Cabinet website, accessed 22 December 2022.
 
 South Australian Government (2021) ‘[Social media](https://www.accessibility.sa.gov.au/your-role/content/social-media)’, *Online accessibility toolkit*, SA.GOV.AU, accessed 22 December 2022.
 
-Tasmanian Government (2021) [ Social media](http://www.communications.tas.gov.au/channels/social_media), Tasmanian Government Communications website, accessed 21 December 2022.
+Tasmanian Government (2021) [*Social media*](http://www.communications.tas.gov.au/channels/social_media), Tasmanian Government Communications website, accessed 21 December 2022.
 
 Victorian Government (2022) ‘[Use social media: digital guide](https://www.vic.gov.au/use-social-media)’, *Digital guides*, vic.gov.au, accessed 21 December 2022.
 
-Western Australian Government (2019) [ Social media guidelines](https://www.wa.gov.au/government/publications/social-media-guidelines), WA.gov.au, accessed 12 December 2022.
-
-### Co-created by
-
-- This page was co-created by Digital Transformation Agency.
+Western Australian Government (2019) [*Social media guidelines*](https://www.wa.gov.au/government/publications/social-media-guidelines), WA.gov.au, accessed 12 December 2022.
 
 ### Last updated
 
-This page was updated Thursday 12 December 2024.
+This page was updated Wednesday 23 September 2026.

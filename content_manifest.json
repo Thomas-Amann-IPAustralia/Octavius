@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T04:01:59.617593+00:00",
+  "generated_at": "2026-10-01T04:41:03.725819+00:00",
   "files": {
     "content/about-style-manual/acknowledgements.md": "c0ec84bb55b8b95d8cb865ea42da327663828033c92b72abaf6192373258ce98",
     "content/about-style-manual/changelog.md": "4ff179f2af72e8d4097cdfd1d16f7e695cf25bf56f117af11e9b6c49f8de4826",
@@ -21,7 +21,7 @@
     "content/accessible-and-inclusive-content/literacy-and-access.md": "04082849265f3221417c4d18a78550ec9d92bdaf5a02652de276474bb232ea31",
     "content/accessible-and-inclusive-content/make-content-accessible.md": "3cc09bfbf080fada0a851a3a570cfb8da31418fb1a646e1b74d2aecb23a03aec",
     "content/accessible-and-inclusive-content.md": "dcd87ff4a1dc6b5365b4444bdd59b41044c5719b2fe27c5a6956b0d1f2ae6b82",
-    "content/content-types/blogs.md": "3ac9a6dd65d1462f60c414ae9d37f10149a82f7e0a8bb984a27f3f65eb5d8163",
+    "content/content-types/blogs.md": "ef662bb055d7a8d3f0236ad8e62b38d4ea11af4b538101f155fd2c6e2a316aa5",
     "content/content-types/easy-read.md": "d6c922ee6e7d82adad35f500a154d78dc250be1a78dc38a1361476f924c1d64e",
     "content/content-types/emails-and-letters.md": "06fe6d402a4ee373fbb4fb2a579a1fe5f5449db447fefdd6200345745730b056",
     "content/content-types/forms.md": "afd568b41614cc8431eab85861c6b99e09e84b6a58936129dec2b6c96f7b3cd8",
@@ -30,7 +30,7 @@
     "content/content-types/journals-magazines-and-newspapers.md": "ed7ddf3bba416643a466f95a5a540591ab010702ecfac7609f167b5e594b8af9",
     "content/content-types/pdf-portable-document-format.md": "8b779fb8e59e49048a7229fa2f22b453cbf1ee4dee88b2d71fd2b000415c5dce",
     "content/content-types/reports.md": "f973dd3227f17f9ca4a76293aacd98cce90adcfe17a7c24cc17ac8ca9fbb82ac",
-    "content/content-types/social-media.md": "69cbad62298107649da45dcf0f58c6a20b804178b0f0d969ea7fef945ec53297",
+    "content/content-types/social-media.md": "65d8182268defcf7a23a528012aaaa392228ff264b2480b960af40ea7f1643b4",
     "content/content-types/video-and-audio/requirements-and-standards-video-and-audio.md": "b68bcaa6b340f080d1ac053629b2ab025dc4ed0d30c32dce67d19ed5aefcc2e9",
     "content/content-types/video-and-audio.md": "c1b4a7fff3c3e8a938024ca9213712610dd4241c2409887f29fa0f1f10e62a0a",
     "content/content-types.md": "bd5caf1119803367246a80dc4417db95086d621c5ee365942750f257da56e056",
@@ -184,7 +184,7 @@
     "content/writing-and-designing-content/findable-content/page-optimisation.md": "4e3045d9b7169aa8549eb4bbd4d423778886199cb0ecc652fa6ae15337f53c42",
     "content/writing-and-designing-content/findable-content/understanding-search-engines.md": "b3536610aa6b760e30696958d076790c1833ec81d9a30f4b2dc73f3d934da2d8",
     "content/writing-and-designing-content/findable-content.md": "fe553d1f0e40fd09752fc94ed727194dbee91b55b7a69caf8ee4c59cdb1903ff",
-    "content/writing-and-designing-content/security-classifications-and-protective-markings.md": "c7b28d1518a56f8205bad0e2cf9d3e96a8ba168a86e6e15d96aa69a5250dbd95",
+    "content/writing-and-designing-content/security-classifications-and-protective-markings.md": "65a7446159d07ee91279c465add585caa4ebc9d0cac32abc9361ff929615dad3",
     "content/writing-and-designing-content/user-research-and-content.md": "359e689a2281d9b0af1853e315d8c22ace765188be11cddd1c0b38c27f5712a5",
     "content/writing-and-designing-content.md": "16fad45079d1e44b1d9889f6a600e88ef0e16503b72585a1b6930ece0f5cb1d9"
   }

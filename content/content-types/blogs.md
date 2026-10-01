@@ -1,6 +1,6 @@
 Blog posts can help users solve common problems. Use clear structures and ensure content is accessible. Moderate comments if you allow them.
 
-Find out if a blog will meet a user need
+## 
 
 Create a blog if it will help people find and use government services and products.
 
@@ -25,7 +25,7 @@ Things to consider before starting a blog include:
 - How will a blog fit with your organisation’s goals and its communications strategy?
 - Would it be useful to allow comments, and do you have the dedicated staff to monitor them?
 
-Plan blog posts with a specific purpose and structure
+## 
 
 Update the blog regularly. For example, aim for a new post once a week on the same day. But make sure you have something useful to say.
 
@@ -94,10 +94,9 @@ I can understand any information contained in an image or media.
 Fundamentals:
 
 - Include images, video and audio on a page only if they meet a real user need. Make sure the contrast is sufficient for all users.
-- Add
-. For help with writing good alt text: the W3C__alt text for images__[alt decision tree](https://www.w3.org/WAI/tutorials/images/decision-tree/). - Write alternative text that describes the information or function of the image. For help to describe images: the W3C/WAI
-[Web Accessibility Tutorials - Images](https://www.w3.org/WAI/tutorials/images/). - Follow the
-[requirements for video and audio](/node/41).
+- Add [__alt text for images__](/node/49) . For help with writing good alt text: the W3C[alt decision tree](https://www.w3.org/WAI/tutorials/images/decision-tree/) .
+- Write alternative text that describes the information or function of the image. For help to describe images: the W3C/WAI [Web Accessibility Tutorials - Images](https://www.w3.org/WAI/tutorials/images/) .
+- Follow the [requirements for video and audio](/node/41) .
 
 Web Content Accessibility Guidelines success criteria:
 
@@ -107,15 +106,15 @@ You must get permission (a licence) to use copyright material. This includes ima
 
 Some material is available under an open access licence, such as [Creative Commons](https://creativecommons.org.au/).
 
-Read the government copyright rules in the [ Australian Government intellectual property manual](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual).
+Read the government copyright rules in the [*Australian Government intellectual property manual*](https://www.ag.gov.au/rights-and-protections/publications/australian-government-intellectual-property-manual).
 
 #### Privacy requirements
 
-Your organisation has obligations under the [ Privacy Act 1988](https://www.oaic.gov.au/privacy/the-privacy-act/).
+Your organisation has obligations under the [*Privacy Act 1988*](https://www.oaic.gov.au/privacy/the-privacy-act/).
 
 Privacy is relevant whenever it's possible to identify someone. Treat things that can or might identify an individual as personal information. A blog might feature someone's picture as an image or in a video, for example.
 
-When you handle personal information, you must comply with the [Australian Privacy Principles](https://www.oaic.gov.au/privacy/australian-privacy-principles/). Personal information is any information that could identify an individual, in any format.
+When you handle personal information, you must comply with the [Australian Privacy Principles](https://www.oaic.gov.au/privacy/australian-privacy-principles/). Personal information is any information that could identify an individual, in any format.
 
 ### Call to action
 
@@ -130,13 +129,13 @@ Include a call to action at the end of your post. Examples of calls to action in
 
 ### Example
 
-To bookmark the topics you find most useful, visit the [Style Manual](https://www.stylemanual.gov.au/).
+To bookmark the topics you find most useful, visit the [Style Manual](https://www.stylemanual.gov.au/).
 
 ### Promotion
 
 Promote your blog post on [social media](/node/43). Tailor content to suit each platform.
 
-Manage comments if you decide to allow them
+## 
 
 Blogs can encourage dialogue with people who use government services and products.
 
@@ -154,15 +153,17 @@ Social media has mostly replaced blogs for the purpose of encouraging comments.
 
 Blogs that you create for the Australian Government become records. Records provide evidence of what your organisation has done and why.
 
-Managing and disposing of records properly is a requirement under the [ Archives Act 1983](https://www.legislation.gov.au/Series/C2004A02796). You must follow your organisation’s information management requirements. Visit the National Archives of Australia website for
+Managing and disposing of records properly is a requirement under the [*Archives Act 1983*](https://www.legislation.gov.au/Series/C2004A02796). You must follow your organisation’s information management requirements. Visit the National Archives of Australia website for [information management standards](https://www.naa.gov.au/information-management/information-management-standards).
 
-[information management standards](https://www.naa.gov.au/information-management/information-management-standards).
-
-Release notes
+## 
 
 Guidance on blogs is new in the digital edition. It covers when and how to write a government blog, and how to manage it.
 
-About this page
+## 
+
+### Co-created with
+
+- Digital Transformation Agency
 
 ### References
 
@@ -174,12 +175,8 @@ Kelleher T (2009) ‘Conversational voice, communicated commitment, and public r
 
 Murdoch A (21 September 2017) ‘[Why we blog in government](https://gds.blog.gov.uk/2017/09/21/why-we-blog-in-government-blog-camp-2017/)’, *GOV.UK blog*, accessed 11 September 2020.
 
-New Zealand Government (2019) [ How to write for the Digital.govt.nz blog](https://www.digital.govt.nz/home/about-digital-govt-nz/contact-us/how-to-write-for-the-blog/), Digital.govt.nz, accessed 11 September 2020.
-
-### Co-created by
-
-- This page was co-created by Digital Transformation Agency.
+New Zealand Government (2019) [*How to write for the Digital.govt.nz blog*](https://www.digital.govt.nz/home/about-digital-govt-nz/contact-us/how-to-write-for-the-blog/), Digital.govt.nz, accessed 11 September 2020.
 
 ### Last updated
 
-This page was updated Thursday 12 December 2024.
+This page was updated Wednesday 23 September 2026.
