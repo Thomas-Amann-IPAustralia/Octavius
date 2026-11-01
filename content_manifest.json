@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-01T04:41:03.725819+00:00",
+  "generated_at": "2026-11-01T04:53:24.825141+00:00",
   "files": {
     "content/about-style-manual/acknowledgements.md": "c0ec84bb55b8b95d8cb865ea42da327663828033c92b72abaf6192373258ce98",
-    "content/about-style-manual/changelog.md": "4ff179f2af72e8d4097cdfd1d16f7e695cf25bf56f117af11e9b6c49f8de4826",
+    "content/about-style-manual/changelog.md": "cf0066f7bcc505dc346e64ace138661ac029fa1b5e16e16dd237bb6e73173cff",
     "content/about-style-manual/foreword-hon-patrick-gorman-mp.md": "1c323f70be528bce3629f11ae320647511bc3d5e15fbc9d195975b45b1a4215d",
     "content/about-style-manual/how-cite-style-manual.md": "7880c4ba38240b3e36206d8d500557a7a48b03117c0d445ac4dd6376d1bef94a",
     "content/about-style-manual/how-use-style-manual/video-transcript.md": "1d6590e259ed212fcd568412859e29acae01d8ae03bcb36d6cda9f850d2db291",
@@ -28,7 +28,7 @@
     "content/content-types/images/alt-text-captions-and-titles-images.md": "70eebf3c225e507e5ff9228d7a0579d18a6764e8918c2e5c3d562250436b7ebc",
     "content/content-types/images.md": "34ca90133d0dfeab34371ba606208e0d34bd339bb29c223691805cdf64af6d9a",
     "content/content-types/journals-magazines-and-newspapers.md": "ed7ddf3bba416643a466f95a5a540591ab010702ecfac7609f167b5e594b8af9",
-    "content/content-types/pdf-portable-document-format.md": "8b779fb8e59e49048a7229fa2f22b453cbf1ee4dee88b2d71fd2b000415c5dce",
+    "content/content-types/pdf-portable-document-format.md": "6162f089a6cd654fe647f9c9d04aec5a53ba7c4f2a5bde3fb40a2fa7bcd54dab",
     "content/content-types/reports.md": "f973dd3227f17f9ca4a76293aacd98cce90adcfe17a7c24cc17ac8ca9fbb82ac",
     "content/content-types/social-media.md": "65d8182268defcf7a23a528012aaaa392228ff264b2480b960af40ea7f1643b4",
     "content/content-types/video-and-audio/requirements-and-standards-video-and-audio.md": "b68bcaa6b340f080d1ac053629b2ab025dc4ed0d30c32dce67d19ed5aefcc2e9",
@@ -106,8 +106,8 @@
     "content/referencing-and-attribution/author-date/musical-compositions.md": "f5873edf3dd9e350249173f4acac39cd6c2f4adc5a61d03f549e6e6f3b00ee34",
     "content/referencing-and-attribution/author-date/plays-and-poetry.md": "78ff97eadbd2646c82864e93a34d95f5595342043999646a56480686db7fa1c4",
     "content/referencing-and-attribution/author-date/works-art.md": "dd814575b9fa531f4615394805254158019a704f66d338996890fa2489cf09d5",
-    "content/referencing-and-attribution/author-date.md": "776bab317ba7a6fcd84ed5063dd080d6b29cb15ef460ebdab62f952b923e5a2f",
-    "content/referencing-and-attribution/documentary-note.md": "8d66fdbf96278a387abda9dcd773e99abbf34e947177b3761e605b021e4f28b9",
+    "content/referencing-and-attribution/author-date.md": "1e34cd7e6b14921e809222d19abe7a82077ca61a1300f08fc25bfbd38c36f2bb",
+    "content/referencing-and-attribution/documentary-note.md": "df43a29f5692763fd3797625e1df2092654279e615e979125f2fe12ec8a9c7e9",
     "content/referencing-and-attribution/legal-material/acts-parliament.md": "f67a5eb1fdacabe498576a98b2d629db051a94ebd74169b980e77b39f0d86e3c",
     "content/referencing-and-attribution/legal-material/authoritative-reports.md": "7cb23ba553c77cc65636d71822dd62dee667d28f8ca2d51db1e5671ba84c03e1",
     "content/referencing-and-attribution/legal-material/bills-and-explanatory-material.md": "f36fb011df7c573e401bb363d977d7e2ed6a0a00b4ab208ea2859ba9b61f9807",
@@ -119,7 +119,7 @@
     "content/referencing-and-attribution/shortened-forms-used-referencing.md": "a931d98e3013b8e7b608c453caaaf92ce26272df88424d60bc859b1975c290d8",
     "content/referencing-and-attribution.md": "a45cf774e89802cb704e268cec480efa0a21deeab0340c4ba5e012193df7dbdd",
     "content/structuring-content/headings.md": "ae0ea5bcfa00213cbde911fec65ab30cad37406c840c7a27b0b87145d8799fca",
-    "content/structuring-content/links.md": "3ea86e22922b7fbb16712d30f081b99238ee75bb364fd911b1b0f170d87301bc",
+    "content/structuring-content/links.md": "c186958246c9c2e6d3c04bd1550aa30b3d96bb566cdee2df82731a14264b1ad5",
     "content/structuring-content/lists.md": "4066cad320513a5d5979df2462f398eee0c7a5398b6b48133fe61179a58217a1",
     "content/structuring-content/paragraphs.md": "25106e0ed58ae2914cd16ef23b8c038553fee9f3d94b26af1151bcb965b87714",
     "content/structuring-content/tables.md": "e7263d6f00af18d996036944fa0efd1763fa4427710363f8608b73d76964cca3",
@@ -184,7 +184,7 @@
     "content/writing-and-designing-content/findable-content/page-optimisation.md": "4e3045d9b7169aa8549eb4bbd4d423778886199cb0ecc652fa6ae15337f53c42",
     "content/writing-and-designing-content/findable-content/understanding-search-engines.md": "b3536610aa6b760e30696958d076790c1833ec81d9a30f4b2dc73f3d934da2d8",
     "content/writing-and-designing-content/findable-content.md": "fe553d1f0e40fd09752fc94ed727194dbee91b55b7a69caf8ee4c59cdb1903ff",
-    "content/writing-and-designing-content/security-classifications-and-protective-markings.md": "65a7446159d07ee91279c465add585caa4ebc9d0cac32abc9361ff929615dad3",
+    "content/writing-and-designing-content/security-classifications-and-protective-markings.md": "f7614d36e0fbd7c0fb5d1cf35f2e4189e5443988f1a423394622d9d39fb1ccdc",
     "content/writing-and-designing-content/user-research-and-content.md": "359e689a2281d9b0af1853e315d8c22ace765188be11cddd1c0b38c27f5712a5",
     "content/writing-and-designing-content.md": "16fad45079d1e44b1d9889f6a600e88ef0e16503b72585a1b6930ece0f5cb1d9"
   }

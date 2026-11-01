@@ -16,9 +16,9 @@ Implementation of the PSPF by government entities is supported by the [Departmen
 For more information, consult:
 
 - [*PSPF annual release*](https://www.protectivesecurity.gov.au/pspf-annual-release) – sets out what government entities must do
-- [*PSPF guidelines*](https://www.protectivesecurity.gov.au/pspf-annual-release/pspf-guidelines) – best-practice advice for implementing the*PSPF annual release*
-- [*PSPF standards*](https://www.protectivesecurity.gov.au/pspf-annual-release/pspf-standards) , including the[*Australian Government email protective marking standard*](https://www.protectivesecurity.gov.au/publications-library/australian-government-email-protective-marking-standard-2026) .
-- Standards that other ‘controlling authorities’ manage, including the [*Australian Government recordkeeping metadata standard*](https://www.naa.gov.au/information-management/standards/australian-government-recordkeeping-metadata-standard) .
+- [*PSPF guidelines*](https://www.protectivesecurity.gov.au/pspf-annual-release/pspf-guidelines) – best-practice advice for implementing the *PSPF annual release*
+- [*PSPF standards*](https://www.protectivesecurity.gov.au/pspf-annual-release/pspf-standards), including the [*Australian Government email protective marking standard*](https://www.protectivesecurity.gov.au/publications-library/australian-government-email-protective-marking-standard-2026).
+- Standards that other ‘controlling authorities’ manage, including the [*Australian Government recordkeeping metadata standard*](https://www.naa.gov.au/information-management/standards/australian-government-recordkeeping-metadata-standard).
 
 ## 
 
@@ -72,7 +72,7 @@ IMMs are optional markings. To assess when and how you should apply IMMs, consul
 
 - your organisation’s procedures
 - [*PSPF annual release*](https://www.protectivesecurity.gov.au/pspf-annual-release)
-- [*PSPF guidelines*](https://www.protectivesecurity.gov.au/pspf-annual-release/pspf-guidelines) .
+- [*PSPF guidelines*](https://www.protectivesecurity.gov.au/pspf-annual-release/pspf-guidelines).
 
 ### Security caveats
 
@@ -140,9 +140,9 @@ But we do recommend using quotation marks for protective markings that follow ex
 
 ### Write this
 
-- The board kept discussions secret to avoid speculation. [Descriptive use]
-- Only people with a security classification of Negative Vetting 2 or above have ongoing access to TOP SECRET information. [Protective marking, PSPF capitalisation, first mention in body text]
-- The report was stamped ‘OFFICIAL: Sensitive’. [Protective marking, PSPF capitalisation, quotation marks because introduced by ‘stamped’]
+- The board kept discussions secret to avoid speculation. \[Descriptive use\]
+- Only people with a security classification of Negative Vetting 2 or above have ongoing access to TOP SECRET information. \[Protective marking, PSPF capitalisation, first mention in body text\]
+- The report was stamped ‘OFFICIAL: Sensitive’. \[Protective marking, PSPF capitalisation, quotation marks because introduced by ‘stamped’\]
 
 ### Not this
 
@@ -162,11 +162,11 @@ The keyboard shortcut in Word is Ctrl+Shift+Spacebar.
 
 ### Example
 
-- OFFICIAL: Sensitive [Protective marking, non-breaking space before Sensitive]
-- TOP SECRET [Protective marking, non-breaking space before SECRET]
-- Negative Vetting 1 [Security clearance, non-breaking space before Vetting and before 1]
-- Negative Vetting 2 [Security clearance, non-breaking space before Vetting and before 2]
-- Positive Vetting [Security clearance, non-breaking space before Vetting]
+- OFFICIAL: Sensitive \[Protective marking, non-breaking space before Sensitive\]
+- TOP SECRET \[Protective marking, non-breaking space before SECRET\]
+- Negative Vetting 1 \[Security clearance, non-breaking space before Vetting and before 1\]
+- Negative Vetting 2 \[Security clearance, non-breaking space before Vetting and before 2\]
+- Positive Vetting \[Security clearance, non-breaking space before Vetting\]
 
 ### Note on accessibility and readability
 
@@ -256,9 +256,9 @@ Department of Home Affairs (2026) [*PSPF annual release*](https://www.protective
 
 ⸺(2026) ‘9.6: Email protective marking standard’, [*PSPF annual release*](https://www.protectivesecurity.gov.au/pspf-annual-release), protectivesecurity.gov.au, accessed 10 July 2026.
 
-Department of Home Affairs (2025) [*PSPF guidelines*](https://www.protectivesecurity.gov.au/pspf-annual-release/pspf-guidelines), protectivesecurity.gov.au, accessed 20 May 2026.
+Department of Home Affairs (2026) [*PSPF guidelines*](https://www.protectivesecurity.gov.au/pspf-annual-release/pspf-guidelines), protectivesecurity.gov.au, accessed 20 May 2026.
 
-⸺(2026) ‘Figure 10: Marking physical (printed) information’ [image], ‘9.2.3.1: Text-based markings’ [*PSPF guidelines*](https://www.protectivesecurity.gov.au/pspf-annual-release/pspf-guidelines), protectivesecurity.gov.au, accessed 13 July 2026.
+⸺(2026) ‘Figure 10: Marking physical (printed) information’ \[image\], ‘9.2.3.1: Text-based markings’ [*PSPF guidelines*](https://www.protectivesecurity.gov.au/pspf-annual-release/pspf-guidelines), protectivesecurity.gov.au, accessed 13 July 2026.
 
 ⸺(2026) ‘9.2.3.2: Colour-based markings’, [*PSPF guidelines*](https://www.protectivesecurity.gov.au/pspf-annual-release/pspf-guidelines), protectivesecurity.gov.au, accessed 13 July 2026.
 
@@ -272,4 +272,4 @@ National Archives of Australia (2015) [*Australian Government recordkeeping meta
 
 ### Last updated
 
-This page was updated Wednesday 23 September 2026.
+This page was updated Friday 16 October 2026.
